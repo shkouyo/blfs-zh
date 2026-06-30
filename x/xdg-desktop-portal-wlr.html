@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <title>
+      xdg-desktop-portal-wlr-0.8.3
+    </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
+    <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
+    "text/css" media="print" />
+  </head>
+  <body class="blfs" id="blfs-">
+    <div class="navheader">
+      <h4>
+        Beyond Linux<sup>®</sup> From Scratch <span class="phrase">(System
+        V</span> Edition) - Version
+      </h4>
+      <h3>
+        Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
+      </h3>
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="xdg-desktop-portal-gtk.html" title=
+          "xdg-desktop-portal-gtk-1.15.3">Prev</a>
+          <p>
+            xdg-desktop-portal-gtk-1.15.3
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="dm.html" title="Display Managers">Next</a>
+          <p>
+            Display Managers
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="lib.html" title=
+          "Chapter&nbsp;25.&nbsp;Graphical Environment Libraries">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch    (System V Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="sect1">
+      <a id="xdg-desktop-portal-wlr" name=
+      "xdg-desktop-portal-wlr"></a>xdg-desktop-portal-wlr-0.8.3
+    </h1>
+    <div class="sect1" lang="en" xml:lang="en">
+      <div class="package" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Introduction to xdg-desktop-portal-wlr
+        </h2>
+        <p>
+          The xdg-desktop-portal-wlr package provides the screenshot and
+          screencast portal interfaces for wlroots compositors. Most of the
+          other portal interfaces are provided by <a class="xref" href=
+          "xdg-desktop-portal-gtk.html" title=
+          "xdg-desktop-portal-gtk-1.15.3">xdg-desktop-portal-gtk-1.15.3</a>,
+          but isn't strictly required unless you need those interfaces.
+        </p>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            Development versions of BLFS may not build or run some packages
+            properly if LFS or dependencies have been updated since the most
+            recent stable versions of the books.
+          </p>
+        </div>
+        <h3>
+          Package Information
+        </h3>
+        <div class="itemizedlist">
+          <ul class="compact">
+            <li class="listitem">
+              <p>
+                Download (HTTP): <a class="ulink" href=
+                "https://github.com/emersion/xdg-desktop-portal-wlr/archive/v0.8.3/xdg-desktop-portal-wlr-0.8.3.tar.gz">
+                https://github.com/emersion/xdg-desktop-portal-wlr/archive/v0.8.3/xdg-desktop-portal-wlr-0.8.3.tar.gz</a>
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Download MD5 sum: 4a02f0350b69df8168b235994df0e43c
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Download size: 44 KB
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Estimated disk space required: 4 MB
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                Estimated build time: less than 0.1 SBU
+              </p>
+            </li>
+          </ul>
+        </div>
+        <h3>
+          xdg-desktop-portal-wlr Dependencies
+        </h3>
+        <h4>
+          Required
+        </h4>
+        <p class="required">
+          <a class="xref" href="mesa.html" title=
+          "Mesa-26.1.3">Mesa-26.1.3</a>, <a class="xref" href=
+          "../general/inih.html" title="inih-62">inih-62</a>, <a class="xref"
+          href="libdrm.html" title="Libdrm-2.4.134">libdrm-2.4.134</a>,
+          <span class="phrase"><a class="xref" href="../general/elogind.html"
+          title="elogind-257.16">elogind-257.16</a>,</span> <a class="xref"
+          href="../multimedia/pipewire.html" title=
+          "Pipewire-1.6.7">pipewire-1.6.7</a>, <a class="xref" href=
+          "../general/wayland.html" title=
+          "Wayland-1.25.0">Wayland-1.25.0</a>, <a class="xref" href=
+          "../general/wayland-protocols.html" title=
+          "Wayland-Protocols-1.49">wayland-protocols-1.49</a>, and <a class=
+          "xref" href="xdg-desktop-portal.html" title=
+          "xdg-desktop-portal-1.22.1">xdg-desktop-portal-1.22.1</a>
+        </p>
+        <h4>
+          Recommended
+        </h4>
+        <p class="recommended">
+          <a class="xref" href="xdg-desktop-portal-gtk.html" title=
+          "xdg-desktop-portal-gtk-1.15.3">xdg-desktop-portal-gtk-1.15.3</a>
+          (for providing most portals interfaces like getting the preferred
+          file manager)
+        </p>
+        <h4>
+          Optional
+        </h4>
+        <p class="optional">
+          <a class="ulink" href="/slfs/view/dev/general/scdoc.html">scdoc</a>
+        </p>
+      </div>
+      <div class="installation" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Installation of xdg-desktop-portal-wlr
+        </h2>
+        <p>
+          Install xdg-desktop-portal-wlr by running the following commands:
+        </p>
+        <pre class="userinput"><kbd class="command">mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+meson setup --prefix=/usr       \
+            --buildtype=release \
+            .. &amp;&amp;
+ninja</kbd></pre>
+        <p>
+          This package doesn't come with a test suite.
+        </p>
+        <p>
+          Now, as the <code class="systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class="command">ninja install</kbd></pre>
+        <p>
+          Ensure the portal can be detected as the <code class=
+          "systemitem">root</code> user:
+        </p>
+        <pre class="root"><kbd class=
+        "command">cat &gt; /usr/share/xdg-desktop-portal/wlr-portals.conf &lt;&lt; "EOF"
+<code class="literal">[preferred]
+default=wlr</code>
+EOF</kbd></pre>
+      </div>
+      <div class="content" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          Contents
+        </h2>
+        <div class="segmentedlist">
+          <div class="seglistitem">
+            <div class="seg">
+              <strong class="segtitle">Installed Programs:</strong>
+              <span class="segbody">one daemon in /usr/libexec</span>
+            </div>
+            <div class="seg">
+              <strong class="segtitle">Installed Libraries:</strong>
+              <span class="segbody">None</span>
+            </div>
+            <div class="seg">
+              <strong class="segtitle">Installed Directories:</strong>
+              <span class="segbody">/usr/share/xdg-desktop-portal (if no
+              other xdg-desktop-portal backend is installed)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navfooter">
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="xdg-desktop-portal-gtk.html" title=
+          "xdg-desktop-portal-gtk-1.15.3">Prev</a>
+          <p>
+            xdg-desktop-portal-gtk-1.15.3
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="dm.html" title="Display Managers">Next</a>
+          <p>
+            Display Managers
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="lib.html" title=
+          "Chapter&nbsp;25.&nbsp;Graphical Environment Libraries">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch    (System V Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <title>
+      寻求帮助与常见问题
+    </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
+    <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
+    "text/css" media="print" />
+  </head>
+  <body class="blfs" id="blfs-">
+    <div class="navheader">
+      <h4>
+        Beyond Linux<sup>®</sup> From Scratch <span class="phrase">(System
+        V</span> Edition) - Version
+      </h4>
+      <h3>
+        Chapter&nbsp;1.&nbsp;欢迎来到 BLFS
+      </h3>
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="wiki.html" title="编辑者注释">Prev</a>
+          <p>
+            编辑者注释
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="credits.html" title="致谢">Next</a>
+          <p>
+            致谢
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="welcome.html" title=
+          "Chapter&nbsp;1.&nbsp;欢迎来到 BLFS">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch    (System V Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="sect1">
+      <a id="askhelp" name="askhelp"></a>寻求帮助与常见问题
+    </h1>
+    <div class="sect1" lang="en" xml:lang="en">
+      <p>
+        如果您在使用本书时遇到问题，且您的问题未列在 FAQ 中（<a class="ulink" href=
+        "https://www.linuxfromscratch.org/faq">https://www.linuxfromscratch.org/faq</a>），您会发现
+        IRC 和邮件列表上的大多数人都乐意帮助您。LFS 邮件列表的概述可在 <a class="xref" href=
+        "maillists.html" title="邮件列表">邮件列表</a>
+        中找到。为了帮助我们诊断和解决您的问题，请在请求帮助时尽可能包含相关的信息。
+      </p>
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          提问前需检查的事项
+        </h2>
+        <p>
+          在寻求帮助之前，您应检查以下事项：
+        </p>
+        <div class="itemizedlist">
+          <ul>
+            <li class="listitem">
+              <p>
+                硬件支持是编译到内核中，还是作为内核模块可用？如果是模块，是否在 <code class=
+                "filename">modprobe.conf</code> 中正确配置并已加载？您应以 <code class=
+                "systemitem">root</code> 用户身份使用 <span class=
+                "command"><strong>lsmod</strong></span> 查看是否已加载。检查
+                <code class="filename">sys.log</code> 文件，或运行 <span class=
+                "command"><strong>modprobe <em class=
+                "replaceable"><code>&lt;驱动&gt;</code></em></strong></span>
+                以查看任何错误消息。如果加载正常，您可能需要将 <span class=
+                "command"><strong>modprobe</strong></span> 命令添加到您的启动脚本中。
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                您的权限设置是否正确，尤其是设备权限？LFS
+                使用组来简化这些设置，但这也增加了将用户添加到组中以允许访问的步骤。一个简单的 <span class=
+                "command"><strong>usermod -G audio <em class=
+                "replaceable"><code>&lt;用户&gt;</code></em></strong></span>
+                可能就足以让该用户访问声音系统。任何以“以 root
+                身份可以工作，但以……身份不行”开头的问题，在提问之前都需要彻底审查权限。
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                BLFS 大量使用 <code class="filename">/opt/<em class=
+                "replaceable"><code>&lt;软件包&gt;</code></em></code>。对此的主要反对意见集中在需要为放置在那里的每个软件包扩展环境变量（例如，PATH=$PATH:/opt/kde/bin）。在大多数情况下，软件包说明会引导您完成更改，但有些不会。您可以参考名为
+                <span class="quote">“<span class="quote"><a class="xref"
+                href="beyond.html" title="Going Beyond BLFS">Going Beyond
+                BLFS</a></span>”</span> 的小节来帮助您检查。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          需要提及的事项
+        </h2>
+        <p>
+          除了对您遇到的问题进行简要说明外，请求中还应包含以下基本内容：
+        </p>
+        <div class="itemizedlist">
+          <ul>
+            <li class="listitem">
+              <p>
+                您所使用的本书版本（即 ），
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                给您带来问题的软件包或章节，
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                您收到的确切错误消息或症状，
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                您是否完全偏离了本书或 LFS
+                的指导（将本书说明打包成脚本，而本书并未要求这样做，通常被视为偏离，因为已经有太多案例中人们未能注意到脚本与本书之间的细微差别），
+              </p>
+            </li>
+            <li class="listitem">
+              <p>
+                您是否在非 LFS 系统上安装 BLFS 软件包。
+              </p>
+            </li>
+          </ul>
+        </div>
+        <p>
+          请注意，说明您偏离了本书并不意味着我们不会帮助您。这只是帮助我们看到您问题的其他可能原因。如果您偏离了本书，您还应准确说明偏离的内容，以便其他人能够重现。您可以附上脚本以显示您的确切操作（尤其是如果您已经有这样一个脚本，即您已经通过将本书说明打包成脚本并运行而偏离了本书）。
+        </p>
+        <p>
+          期望得到指导而非具体指令。如果被告知要阅读某些内容，请照做。这通常意味着答案过于明显，如果在提问前稍作研究就不会提出该问题。邮件列表中的志愿者不希望被用作替代您在您这边进行合理研究的工具。此外，通过这种研究，您使用
+          BLFS 的体验质量也会大大提高，而志愿者的质量也会提升，因为他们不会觉得自己的时间被滥用，因此他们更有可能参与。
+        </p>
+        <p>
+          Eric S. Raymond 撰写了一篇关于在互联网上寻求帮助的精彩文章。它可以在线获取，地址为 <a class="ulink"
+          href=
+          "http://www.catb.org/~esr/faqs/smart-questions.html">http://www.catb.org/~esr/faqs/smart-questions.html</a>。阅读并遵循该文档中的提示，您更有可能首先获得回复，并得到您实际需要的帮助。
+        </p>
+      </div>
+    </div>
+    <div class="navfooter">
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="wiki.html" title="编辑者注释">Prev</a>
+          <p>
+            编辑者注释
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="credits.html" title="致谢">Next</a>
+          <p>
+            致谢
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="welcome.html" title=
+          "Chapter&nbsp;1.&nbsp;欢迎来到 BLFS">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch    (System V Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
