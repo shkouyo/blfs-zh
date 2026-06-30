@@ -5,25 +5,21 @@
   %general-entities;
 ]>
 
-<sect1 id="foreword" xreflabel="Foreword">
+<sect1 id="foreword" xreflabel="写在前面">
   <?dbhtml filename="foreword.html"?>
 
 
-  <title>Foreword</title>
+  <title>写在前面</title>
 
   <para>
-    This version of the book is intended to be used when building on top of
-    a system built using the LFS book.  Every effort has been made to ensure
-    accuracy and reliability of the instructions. Many people find that using
-    the instructions in this book after building the current stable or
-    development version of LFS provides a stable and very modern Linux system.
+    本书此版本旨在用于在基于 LFS 书籍构建的系统之上进行构建。已尽一切努力确保这些说明的准确性和可靠性。许多人发现，在构建当前稳定版或开发版的 LFS 之后，使用本书中的说明能够提供一个稳定且非常现代化的 Linux 系统。
   </para>
 
-  <para>Enjoy!</para>
+  <para>助您愉快！</para>
 
   <blockquote>
 <literallayout>Randy McMurchy
-August 24th, 2008</literallayout>
+2008 年 8 月 24 日</literallayout>
   </blockquote>
 
 </sect1>

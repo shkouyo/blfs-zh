@@ -5,29 +5,18 @@
   %general-entities;
 ]>
 
-<sect1 id="whoread" xreflabel="Who Would Want to Read this Book">
+<sect1 id="whoread" xreflabel="谁会想要阅读本书">
   <?dbhtml filename="whoread.html"?>
 
 
-  <title>Who Would Want to Read this Book</title>
+  <title>谁会想要阅读本书</title>
 
   <para>
-    This book is mainly aimed at those who have built a system based
-    on the LFS book. It will also be useful for those who are using other
-    distributions, and for one reason or another want to manually build
-    software and need some assistance. Note that the material
-    in this book, in particular the dependency listings,
-    assumes that you are using a basic LFS system with every
-    package listed in the LFS book already installed and configured. BLFS can
-    be used to create a range of diverse systems and so the target audience is
-    probably as wide as that of the LFS book.  If you found LFS useful,
-    you should also like this!
+    本书主要面向那些已基于 LFS 书籍构建系统的人。对于那些使用其他发行版，并且因某种原因想要手动构建软件并需要一些帮助的人，本书也会有用。请注意，本书中的材料，特别是依赖关系列表，假设您使用的是基本的 LFS 系统，并且 LFS 书中列出的每个软件包都已安装和配置。BLFS 可用于创建一系列不同的系统，因此目标受众可能与 LFS 书籍一样广泛。如果您觉得 LFS 有用，您也应该会喜欢本书！
   </para>
 
   <para>
-    Since Release 7.4, the BLFS book version has matched the LFS book version.
-    This book may be incompatible with a previous or later release of the LFS
-    book.
+    自 7.4 版发布以来，BLFS 书籍版本已与 LFS 书籍版本匹配。本书可能与 LFS 书籍的先前或后续版本不兼容。
   </para>
 
 </sect1>

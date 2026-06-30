@@ -5,21 +5,14 @@
   %general-entities;
 ]>
 
-<sect1 id="errata" xreflabel="Errata">
+<sect1 id="errata" xreflabel="勘误">
   <?dbhtml filename="errata.html"?>
 
 
-  <title>Errata</title>
+  <title>勘误</title>
 
   <para>
-    The software used to create BLFS applications is constantly being
-    updated and enhanced. Security warnings and bug fixes may become available
-    after the BLFS book has been released. To check whether the package
-    versions or instructions in this release of BLFS need any modifications to
-    accommodate security vulnerabilities or other bug fixes, please visit
-    <ulink url="&errata;"/> before proceeding with your build. You should note
-    any changes shown and apply them to the relevant section of the book as you
-    progress with building the applications in BLFS.
+    用于创建 BLFS 应用程序的软件在不断更新和增强。安全警告和错误修复可能在 BLFS 书籍发布后出现。要检查此版本 BLFS 中的软件包版本或说明是否需要针对安全漏洞或其他错误修复进行修改，请在开始构建之前访问 <ulink url="&errata;"/>。您应该注意任何显示的更改，并在构建 BLFS 中的应用程序时将其应用到本书的相关部分。
   </para>
 
 </sect1>

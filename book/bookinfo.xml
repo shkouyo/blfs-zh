@@ -10,9 +10,9 @@
   <date>$Date$</date>
 
   <title>Beyond Linux<superscript>&reg;</superscript> From Scratch
-  <phrase revision="systemd">(systemd</phrase>
-  <phrase revision="sysv">(System V</phrase> Edition)</title>
-  <subtitle>Version &version;</subtitle>
+  <phrase revision="systemd">（systemd</phrase>
+  <phrase revision="sysv">（System V</phrase> 版）</title>
+  <subtitle>版本 &version;</subtitle>
 
   <authorgroup>
     <corpauthor>
@@ -20,7 +20,7 @@
     </corpauthor>
   </authorgroup>
 
-  <pubdate>Published &pubdate;</pubdate>
+  <pubdate>发布于 &pubdate;</pubdate>
 
   <copyright id="copyright">
     <year>&copyrightdate;</year>
@@ -28,20 +28,18 @@
   </copyright>
 
   <legalnotice>
-    <para>Copyright &copy; &copyrightdate;, &copyholder;</para>
+    <para>版权所有 &copy; &copyrightdate;, &copyholder;</para>
 
-    <para>All rights reserved.</para>
+    <para>保留所有权利。</para>
 
-    <para>This book is licensed under a <xref linkend="CC"/>.</para>
+    <para>本书在 <xref linkend="CC"/> 许可证下授权。</para>
 
     <para>
-      Computer instructions may be extracted from the book under the
-      <xref linkend="MIT"/>.
+      书中的计算机指令可在 <xref linkend="MIT"/> 许可下提取使用。
     </para>
 
     <para>
-      <trademark class='registered'>Linux</trademark> is a registered trademark
-      of Linus Torvalds.
+      <trademark class='registered'>Linux</trademark> 是 Linus Torvalds 的注册商标。
     </para>
   </legalnotice>
 
@@ -49,214 +47,211 @@
     <revision>
       <revnumber>&version;</revnumber>
       <date>&pubdate;</date>
-      <revremark>Ongoing Release</revremark>
+      <revremark>工作中版本</revremark>
     </revision>
 
     <revision>
       <revnumber>13.0</revnumber>
       <date>2026-03-05</date>
-      <revremark>Thirty-third Release</revremark>
+      <revremark>第 33 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>12.4</revnumber>
       <date>2025-09-01</date>
-      <revremark>Thirty-second Release</revremark>
+      <revremark>第 32 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>12.3</revnumber>
       <date>2025-03-05</date>
-      <revremark>Thirty-first Release</revremark>
+      <revremark>第 31 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>12.2</revnumber>
       <date>2024-09-01</date>
-      <revremark>Thirtieth Release</revremark>
+      <revremark>第 30 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>12.1</revnumber>
       <date>2024-03-01</date>
-      <revremark>Twenty-ninth Release</revremark>
+      <revremark>第 29 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>12.0</revnumber>
       <date>2023-09-01</date>
-      <revremark>Twenty-eighth Release</revremark>
+      <revremark>第 28 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>11.3</revnumber>
       <date>2023-03-01</date>
-      <revremark>Twenty-seventh Release</revremark>
+      <revremark>第 27 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>11.2</revnumber>
       <date>2022-09-01</date>
-      <revremark>Twenty-sixth Release</revremark>
+      <revremark>第 26 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>11.1</revnumber>
       <date>2022-03-01</date>
-      <revremark>Twenty-fifth Release</revremark>
+      <revremark>第 25 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>11.0</revnumber>
       <date>2021-09-01</date>
-      <revremark>Twenty-fourth Release</revremark>
+      <revremark>第 24 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>10.1</revnumber>
       <date>2021-03-01</date>
-      <revremark>Twenty-third Release</revremark>
+      <revremark>第 23 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>10.0</revnumber>
       <date>2020-09-01</date>
-      <revremark>Twenty-second Release</revremark>
+      <revremark>第 22 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>9.1</revnumber>
       <date>2020-03-01</date>
-      <revremark>Twenty-first Release</revremark>
+      <revremark>第 21 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>9.0</revnumber>
       <date>2019-09-01</date>
-      <revremark>Twentieth release</revremark>
+      <revremark>第 20 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>8.4</revnumber>
       <date>2019-03-01</date>
-      <revremark>Nineteenth release</revremark>
+      <revremark>第 19 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>8.3</revnumber>
       <date>2018-09-01</date>
-      <revremark>Eighteenth release</revremark>
+      <revremark>第 18 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>8.2</revnumber>
       <date>2018-03-02</date>
-      <revremark>Seventeenth release</revremark>
+      <revremark>第 17 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>8.1</revnumber>
       <date>2017-09-01</date>
-      <revremark>Sixteenth release</revremark>
+      <revremark>第 16 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>8.0</revnumber>
       <date>2017-02-25</date>
-      <revremark>Fifteenth release</revremark>
+      <revremark>第 15 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.10</revnumber>
       <date>2016-09-07</date>
-      <revremark>Fourteenth release</revremark>
+      <revremark>第 14 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.9</revnumber>
       <date>2016-03-08</date>
-      <revremark>Thirteenth release</revremark>
+      <revremark>第 13 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.8</revnumber>
       <date>2015-10-01</date>
-      <revremark>Twelfth release</revremark>
+      <revremark>第 12 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.7</revnumber>
       <date>2015-03-06</date>
-      <revremark>Eleventh release</revremark>
+      <revremark>第 11 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.6</revnumber>
       <date>2014-09-23</date>
-      <revremark>Tenth release</revremark>
+      <revremark>第 10 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.5</revnumber>
       <date>2014-03-05</date>
-      <revremark>Ninth release</revremark>
+      <revremark>第 9 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>7.4</revnumber>
       <date>2013-09-14</date>
-      <revremark>Eighth release</revremark>
+      <revremark>第 8 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>6.3</revnumber>
       <date>2008-08-24</date>
-      <revremark>Seventh release</revremark>
+      <revremark>第 7 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>6.2</revnumber>
       <date>2007-02-14</date>
-      <revremark>Sixth release</revremark>
+      <revremark>第 6 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>6.1</revnumber>
       <date>2005-08-14</date>
-      <revremark>Fifth release</revremark>
+      <revremark>第 5 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>6.0</revnumber>
       <date>2005-04-02</date>
-      <revremark>Fourth release</revremark>
+      <revremark>第 4 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>5.1</revnumber>
       <date>2004-06-05</date>
-      <revremark>Third release</revremark>
+      <revremark>第 3 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>5.0</revnumber>
       <date>2003-11-06</date>
-      <revremark>Second release</revremark>
+      <revremark>第 2 次发布</revremark>
     </revision>
 
     <revision>
       <revnumber>1.0</revnumber>
       <date>2003-04-25</date>
-      <revremark>First release</revremark>
+      <revremark>首次发布</revremark>
     </revision>
   </revhistory>
 
   <abstract>
     <para>
-      This book follows on from the Linux From Scratch book. It introduces
-      and guides the reader through additions to the system including
-      networking, graphical interfaces, sound support, and printer and scanner
-      support.
+      本书是 Linux From Scratch 一书的延续。它引导读者为系统添加网络、图形界面、声音支持以及打印机和扫描仪支持等内容，并进行介绍和指导。
     </para>
   </abstract>
 
