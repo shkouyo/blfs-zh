@@ -1,8 +1,7 @@
-Ok, so you have downloaded the XML source. Now what? You are probably
-wanting to convert these XML files to easier to read HTML.
+OK，你现在已经下载了这些 XML 源文件。接下来呢？
+你可能希望将这些 XML 文件转换为更易阅读的 HTML。
 
-To install the programs you need to generate html, you need
-to have or install the following packages:
+要安装构建 HTML 所需的程序，请确保您拥有以下软件包：
 
 libxml2
 libxslt
@@ -10,7 +9,4 @@ docbook-xsl-nons-1.79.2
 docbook-4.5-dtd
 tidy
 
-The installation instructions for all these packages are available
-in the BLFS book from one of the mirrors found at
-https://www.linuxfromscratch.org/blfs.
-
+这些软件包的安装说明均可在 BLFS 书中找到。
