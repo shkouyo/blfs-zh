@@ -9,17 +9,13 @@
   <?dbhtml filename="newsserver.html"?>
 
 
-  <title>News Server</title>
+  <title>新闻服务器</title>
 
-  <para>All the mailing lists hosted at &lfs-domainname; are also
-  accessible via the NNTP server. All messages posted to a mailing
-  list will be copied to its correspondent newsgroup. Note, however,
-  that as this is written, it is not possible to write to the mailing
-  lists via the NNTP service.</para>
+  <para>&lfs-domainname; 托管的所有邮件列表也可通过 NNTP 服务器访问。发送到邮件列表的所有消息都将复制到其对应的新闻组。但请注意，截至本文撰写时，尚无法通过 NNTP 服务向邮件列表写入内容。</para>
 
 
-  <para>The news server can be reached at <ulink
-  url="news:news.&lfs-domainname;">news.&lfs-domainname;</ulink>.</para>
+    <para>新闻服务器可通过 <ulink
+  url="news:news.&lfs-domainname;">news.&lfs-domainname;</ulink> 访问。</para>
 
 </sect1>
 

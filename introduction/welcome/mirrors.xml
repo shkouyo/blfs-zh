@@ -5,15 +5,12 @@
   %general-entities;
 ]>
 
-<sect1 id="mirrors" xreflabel="Mirrors">
+<sect1 id="mirrors" xreflabel="镜像站点">
   <?dbhtml filename="mirrors.html"?>
 
 
-  <title>Mirror Sites</title>
+  <title>镜像站点</title>
 
-  <para>The BLFS project has a number of mirrors set up world-wide to make it
-  easier and more convenient for you to access the website. Please visit the
-  <ulink url="https://www.&lfs-domainname;/mirrors.html"/> website for the
-  list of current mirrors.</para>
+  <para>BLFS 项目在全球设有多个镜像站点，以便您更方便快捷地访问网站。请访问 <ulink url="https://www.&lfs-domainname;/mirrors.html"/> 网站以获取当前镜像列表。</para>
 
 </sect1>

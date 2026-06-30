@@ -5,24 +5,17 @@
   %general-entities;
 ]>
 
-<sect1 id="version" xreflabel="Book Version">
+<sect1 id="version" xreflabel="本书版本">
   <?dbhtml filename="version.html"?>
 
 
-  <title>Book Version</title>
+  <title>本书版本</title>
 
-  <para>This is BLFS-BOOK version &version; dated &releasedate;. This is the
-  &blfs-version; branch of the BLFS book, currently targeting the LFS
-  &lfs-version; book. For development versions, if this version is older than a
-  month, it's likely that your mirror hasn't been synchronized recently and a
-  newer version is probably available for download or viewing. Check one of the
-  mirror sites at <ulink url="https://www.&lfs-domainname;/mirrors.html"/> for
-  an updated version.</para>
+  <para>这是 BLFS-BOOK 版本 &version;，日期为 &releasedate;。这是 BLFS 的 &blfs-version; 分支，当前针对 LFS &lfs-version;。对于开发版本，如果此版本已超过一个月，则您的镜像可能最近未同步，可能可以下载或查看更新的版本。请查看 <ulink url="https://www.&lfs-domainname;/mirrors.html"/> 上的镜像站点以获取更新版本。</para>
 
   <!-- This is here only for production releases. Omit the stuff above and
        then uncomment below as needed
 
-  <para>This is BLFS-BOOK version &version; dated &releasedate;. This version
-  is intended as the complement to the LFS-&lfs-version; book.</para> -->
+  <para>这是 BLFS-BOOK 版本 &version;，日期为 &releasedate;。此版本旨在作为 LFS-&lfs-version; 的补充。</para> -->
 
 </sect1>

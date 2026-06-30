@@ -9,14 +9,10 @@
   <?dbhtml filename="contactinfo.html"?>
 
 
-  <title>Contact Information</title>
+  <title>联系信息</title>
 
-  <para>Please direct your emails to one of the BLFS mailing lists. See
-  <xref linkend="maillists"/> for more information on
-  the available mailing lists.</para>
+    <para>请将您的邮件发送至 BLFS 邮件列表之一。有关可用邮件列表的更多信息，请参阅 <xref linkend="maillists"/>。</para>
 <!--
-  <para>The current BLFS maintainer is &maintainer-fullname;.
-  If you need to reach &maintainer-firstname;, send an email to
-  <ulink url="mailto:&maintainer-address;">&maintainer-address;</ulink>.</para> -->
+  <para>当前的 BLFS 维护者是 &maintainer-fullname;。如果您需要联系 &maintainer-firstname;，请发送邮件至 <ulink url="mailto:&maintainer-address;">&maintainer-address;</ulink>。</para> -->
 
 </sect1>

@@ -5,18 +5,14 @@
   %general-entities;
 ]>
 
-<sect1 id="maillists" xreflabel="Mailing lists">
+<sect1 id="maillists" xreflabel="邮件列表">
   <?dbhtml filename="maillists.html"?>
 
 
-  <title>Mailing Lists</title>
+  <title>邮件列表</title>
 
-  <para>The &lfs-domainname; server is hosting a number of mailing
-  lists that are used for the development of the BLFS book. These lists include,
-  among others, the main development and support lists.</para>
+  <para>&lfs-domainname; 服务器托管了多个用于 BLFS 书开发的邮件列表。这些列表包括主要的开发和支持列表等。</para>
 
-  <para>For more information regarding which lists are available, how to
-  subscribe to them, archive locations, etc., visit
-  <ulink url="https://www.&lfs-domainname;/mail.html"/>.</para>
+  <para>有关可用列表、如何订阅、存档位置等更多信息，请访问 <ulink url="https://www.&lfs-domainname;/mail.html"/>。</para>
 
 </sect1>

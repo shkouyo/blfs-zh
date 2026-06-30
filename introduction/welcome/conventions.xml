@@ -9,61 +9,51 @@
   <?dbhtml filename="conventions.html"?>
 
 
-  <title>Conventions Used in this Book</title>
+  <title>本书使用惯例</title>
 
   <sect2>
-  <title>Typographical Conventions</title>
-  <para>To make things easy to follow, a number of conventions are used
-  throughout the book.  Here are some examples:</para>
+  <title>排版惯例</title>
+  <para>为便于理解，全书使用若干惯例。以下是一些示例：</para>
 
 <screen><userinput>./configure --prefix=/usr</userinput></screen>
 
   <blockquote>
-    <para>This form of text should be typed exactly as shown unless
-    otherwise noted in the surrounding text. It is also used to identify
-    references to specific commands.</para>
+    <para>此形式的文本应完全按所示键入，除非周围文本另有说明。它也用于标识对特定命令的引用。</para>
   </blockquote>
 
 <screen><computeroutput>install-info: unknown option
 `--dir-file=/mnt/lfs/usr/info/dir'</computeroutput></screen>
 
   <blockquote>
-    <para>This form of text (blue, fixed width font) shows screen
-    output, probably the result of issuing a command.</para>
+    <para>此形式的文本（蓝色等宽字体）显示屏幕输出，可能是执行命令的结果。</para>
   </blockquote>
 
 <screen><filename>/boot/grub/grub.conf</filename></screen>
   
   <blockquote>
-    <para>This form of text (fixed width font) is used to show filenames.</para>
+    <para>此形式的文本（等宽字体）用于显示文件名。</para>
   </blockquote>
 
   <note>
-    <para>Please configure your browser to display fixed-width text with
-    a good monospaced font, with which you can distinguish the glyphs of
-    <literal>Il1</literal> or <literal>O0</literal> clearly.</para>
+    <para>请将浏览器配置为使用良好的等宽字体显示等宽文本，以便清晰区分 <literal>Il1</literal> 或 <literal>O0</literal> 的字形。</para>
   </note>
 
-  <para><emphasis>Emphasis</emphasis></para>
+  <para><emphasis>强调</emphasis></para>
 
   <blockquote>
-    <para>This form of text is used for several purposes,
-    but mainly to emphasize important points, or to give examples of
-    what to type.</para>
+    <para>此形式的文本有多种用途，但主要用于强调重点，或提供应键入内容的示例。</para>
   </blockquote>
 
   <para><ulink url="https://www.&lfs-domainname;/"/></para>
 
   <blockquote>
-    <para>This form of text is used for hypertext links external to
-    the book, such as HowTos, download locations, websites, etc.</para>
+    <para>此形式的文本用于指向书外的超链接，例如 HowTo、下载位置、网站等。</para>
   </blockquote>
 
   <para><xref linkend="seamonkey"/></para>
 
   <blockquote>
-    <para>This form of text is used for links internal to
-    the book, such as another section describing a different package.</para>
+    <para>此形式的文本用于指向书内的链接，例如描述其他软件包的另一章节。</para>
   </blockquote>
 
 <screen><userinput>cat &gt; $LFS/etc/group &lt;&lt; "EOF"
@@ -73,105 +63,70 @@ bin:x:1:
 EOF</userinput></screen>
 
   <blockquote>
-    <para>This style is mainly used when creating configuration
-    files.  The first command (in bold) tells the system to create
-    the file <filename>$LFS/etc/group</filename> from whatever is typed on the
-    following lines, until the sequence EOF is encountered.
-    Therefore, this whole section is usually typed exactly as shown.
-    Remember, copy and paste is your friend!</para>
+    <para>此样式主要用于创建配置文件。第一条命令（粗体）告诉系统从后续行中键入的内容创建文件 <filename>$LFS/etc/group</filename>，直到遇到 EOF 序列为止。因此，通常完全按所示键入整个部分。请记住，复制和粘贴是您的好帮手！</para>
   </blockquote>
 
-  <para><replaceable>&lt;REPLACED TEXT&gt;</replaceable></para>
+  <para><replaceable>&lt;替换文本&gt;</replaceable></para>
 
   <blockquote>
-    <para>This form of text is used to encapsulate text that should be
-    modified, and is not to be typed as shown, or copied and pasted.
-    The angle brackets are not part of the literal text; they are part of the
-    substitution.</para>
+    <para>此形式的文本用于封装应修改的文本，不应按所示键入或复制粘贴。尖括号不是字面文本的一部分，而是替换的一部分。</para>
   </blockquote>
 
   <para><systemitem class='username'>root</systemitem></para>
 
   <blockquote>
-    <para>This form of text is used to show a specific system user or group
-    reference in the instructions.</para>
+    <para>此形式的文本用于在说明中显示特定的系统用户或组引用。</para>
   </blockquote>
 
   <para>&nbsp;</para> <!-- add extra white space to improve readability -->
   </sect2>
 
   <sect2>
-  <title>Conventions Used for Package Dependencies</title>
+  <title>软件包依赖关系所用惯例</title>
 
-    <para>When new packages are created, the software's authors depend on prior work.  In
-    order to build a package in BLFS, these dependencies must be built before
-    the desired package can be compiled.  For each package, prerequisites are listed
-    in one or more separate sections:  Required, Recommended, and Optional.</para>
+    <para>当新软件包被创建时，软件作者依赖于先前的工作。为了在 BLFS 中构建一个软件包，必须在编译目标软件包之前构建这些依赖项。对于每个软件包，先决条件列在一个或多个独立部分中：必需、推荐和可选。</para>
 
-    <bridgehead renderas="sect3">Required Dependencies</bridgehead>
+    <bridgehead renderas="sect3">必需依赖项</bridgehead>
 
-    <para>These dependencies are the bare minimum needed to
-    build the package.  Packages in LFS, and the required
-    dependencies of these required packages, are omitted from this list.
-    Always remember to check for nested dependencies. If a dependency is
-    said to be <quote>runtime,</quote> it is not needed for building
-    the package, but only to use it after installation.</para>
+    <para>这些依赖项是构建软件包所需的最低要求。LFS 中的软件包以及这些必需依赖项的必需依赖项均从此列表中省略。请始终记得检查嵌套依赖项。如果某个依赖项被说明为“运行时”，则构建软件包时不需要它，而仅在安装后使用它时才需要。</para>
 
-    <bridgehead renderas="sect3">Recommended Dependencies</bridgehead>
+    <bridgehead renderas="sect3">推荐依赖项</bridgehead>
 
-    <para>These are dependencies the BLFS editors have determined
-    are important to give the package reasonable capabilities.  If a
-    recommended dependency is not said to be <quote>runtime,</quote> package
-    installation instructions assume it is installed.  If it
-    is not installed, the instructions may require modification, to
-    accommodate the missing package. A recommended <quote>runtime</quote>
-    dependency does not need to be installed before building the package, but
-    must be built afterwards for running the package with reasonable
-    capabilities.</para>
+    <para>这些是 BLFS 编辑者确定对于赋予软件包合理功能很重要的依赖项。如果推荐依赖项未被说明为“运行时”，则软件包安装说明假定它已安装。如果未安装，则可能需要修改说明以适应缺失的软件包。推荐“运行时”依赖项不需要在构建软件包之前安装，但必须在之后构建，以便以合理功能运行软件包。</para>
 
-    <bridgehead renderas="sect3">Optional Dependencies</bridgehead>
+    <bridgehead renderas="sect3">可选依赖项</bridgehead>
 
-    <para>These are dependencies the package <emphasis>may</emphasis> use.  Integration
-    of optional dependencies may be automatic by the package, or
-    additional steps not presented by BLFS may be necessary.  Optional dependencies are
-    sometimes listed without explicit BLFS instructions.  In this case you must
-    determine how to perform the installation yourself.</para>
+    <para>这些是软件包<emphasis>可能</emphasis>使用的依赖项。可选依赖项的集成可能由软件包自动完成，或者可能需要 BLFS 未提供的额外步骤。可选依赖项有时会在没有明确 BLFS 说明的情况下列出。在这种情况下，您必须自行确定如何执行安装。</para>
 
     <para>&nbsp;</para> <!-- add extra white space to improve readability -->
   </sect2>
 
   <sect2>
-  <title>Conventions Used for Kernel Configuration Options</title>
+  <title>内核配置选项所用惯例</title>
 
-    <para>Some packages require specific kernel configuration options.
-    The general layout for these looks like this:</para>
+    <para>某些软件包需要特定的内核配置选项。其通用布局如下：</para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="conventions-kernel.xml"/>
 
-    <para>[...] on the right gives the symbolic name of the option, so you
-    can easily check whether it is set in your <filename>.config</filename>
-    file. Note that the <filename>.config</filename> file contains a
-    <literal>CONFIG_</literal> prefix before all symbolic names.  The
-    meaning of the various entries is:
+    <para>[…] 右侧给出选项的符号名称，以便您轻松检查它是否已在 <filename>.config</filename> 文件中设置。请注意，<filename>.config</filename> 文件在所有符号名称前都包含 <literal>CONFIG_</literal> 前缀。各项条目的含义如下：
 
     <blockquote>
     <informaltable frame='none'><tgroup cols="2">
       <colspec align="left"/><colspec align="left"/><tbody>
       <row>
         <entry><emphasis role="bold">Master section</emphasis></entry>
-        <entry>top level menu item</entry>
+        <entry>顶级菜单项</entry>
       </row>
       <row>
         <entry><emphasis role="bold">Subsection</emphasis></entry>
-        <entry>submenu item</entry>
+        <entry>子菜单项</entry>
       </row>
       <row>
         <entry>
           <emphasis role="bold">Required parameter</emphasis></entry>
         <entry>
-          the option can either be built-in, or not selected: it must be
-          selected
+          该选项可以内建或未选中：必须选中
         </entry>
       </row>
       <row>
@@ -180,8 +135,7 @@ EOF</userinput></screen>
           module)</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not selected (tri-state):
-          it must be selected as built-in
+          该选项可以内建、作为模块或未选中：必须以内建方式选中
         </entry>
       </row>
       <row>
@@ -190,8 +144,7 @@ EOF</userinput></screen>
           a module)</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not selected:
-          it must be selected, either as built-in or as a module
+          该选项可以内建、作为模块或未选中：必须选中，内建或作为模块均可
         </entry>
       </row>
       <row>
@@ -200,9 +153,7 @@ EOF</userinput></screen>
           a module)</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not selected:
-          it must be selected as a module; selecting it as built-in
-          may cause unwanted effects
+          该选项可以内建、作为模块或未选中：必须作为模块选中；以内建方式选中可能导致不良影响
         </entry>
       </row>
       <row>
@@ -210,9 +161,7 @@ EOF</userinput></screen>
           <emphasis role="bold">Optional parameter</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not
-          selected: it may be selected as a module or built-in if you
-          need it for driving the hardware or optional kernel features
+          该选项可以内建、作为模块或未选中：如果您需要它来驱动硬件或可选内核特性，可以将其选为模块或内建
         </entry>
       </row>
       <row>
@@ -221,10 +170,7 @@ EOF</userinput></screen>
           if enabled)</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not
-          selected: it may be selected as a module if you need it
-          for driving the hardware or optional kernel features, but
-          selecting it as built-in may cause unwanted effects
+          该选项可以内建、作为模块或未选中：如果您需要它来驱动硬件或可选内核特性，可以将其选为模块，但以内建方式选中可能导致不良影响
         </entry>
       </row>
       <row>
@@ -232,8 +178,7 @@ EOF</userinput></screen>
           <emphasis role="bold">Incompatible parameter</emphasis>
         </entry>
         <entry>
-          the option can either be built-in or not selected: it must
-          <emphasis>not</emphasis> be selected
+          该选项可以内建或未选中：必须<emphasis>不</emphasis>选中
         </entry>
       </row>
       <row>
@@ -241,61 +186,32 @@ EOF</userinput></screen>
           <emphasis role="bold">Incompatible parameter (even as module)</emphasis>
         </entry>
         <entry>
-          the option can be built-in, a module, or not selected:
-          it must <emphasis>not</emphasis> be selected
+          该选项可以内建、作为模块或未选中：必须<emphasis>不</emphasis>选中
         </entry>
       </row>
     </tbody></tgroup></informaltable>
     </blockquote>
     </para>
 
-    <para>Note that, depending on other selections, the angle brackets
-    (&lt;&gt;) in the configuration menu may appear as braces ({}) if the option cannot be unselected,
-    or even as dashes (-*- or -M-), when the choice is imposed.
-    The help text describing the option specifies the other selections on which this
-    option relies, and how those other selections are set.</para>
+    <para>请注意，根据其他选择，配置菜单中的尖括号（&lt;&gt;）可能显示为大括号（{}）（如果该选项无法取消选中），甚至显示为破折号（-*- 或 -M-）（当选择被强制时）。描述该选项的帮助文本会说明该选项所依赖的其他选择，以及这些其他选择是如何设置的。</para>
 
     <para>
-      The letter in <emphasis role='blue'>blue</emphasis> is the hotkey
-      for this option.  If you are running
-      <command>make menuconfig</command>, you can press a key to quickly
-      traverse all the options with this key as the hotkey on the screen.
+      以<emphasis role='blue'>蓝色</emphasis>显示的字母是该选项的热键。如果您运行 <command>make menuconfig</command>，可以按一个键快速遍历屏幕上以该键为热键的所有选项。
     </para>
 
     <para>&nbsp;</para> <!-- add extra white space to improve readability -->
   </sect2>
 
   <sect2>
-  <title>SBU values in BLFS</title>
+  <title>BLFS 中的 SBU</title>
 
-    <para>As in LFS, each package in BLFS has a build time listed in Standard
-    Build Units (SBUs).   These times are relative to the time it took to build
-    binutils in LFS, and are intended to provide some insight into how long it
-    will take to build a package. Most times listed are for a single processor
-    or core to build the package. In some cases, large, long running builds
-    tested on multi-core systems have SBU times listed with comments such
-    as '(parallelism=4)'.  These values indicate testing was done using
-    multiple cores.  Note that while this speeds up the build on systems with
-    the appropriate hardware, the speedup is not linear and to some extent
-    depends on the individual package and the specific hardware used.  </para>
+    <para>与 LFS 中一样，BLFS 中的每个软件包都有一个以标准构建单位（SBU）列出的构建时间。这些时间相对于在 LFS 中构建 binutils 所需的时间，旨在提供一些关于构建一个软件包所需时间的参考。所列出的大多数时间都是使用单处理器或单核心构建软件包的时间。在某些情况下，在多核心系统上测试的大型、长时间运行的构建，其 SBU 时间会附带诸如“（并行度=4）”之类的注释。这些值表明测试使用了多个核心。请注意，虽然这能在具有适当硬件的系统上加快构建速度，但加速并非线性，且在某种程度上取决于具体的软件包和所使用的具体硬件。</para>
 
-    <para>For packages which use ninja (i.e., anything using meson) or rust, by
-    default all cores are used; similar comments will be seen on such packages
-    even when the build time is minimal.</para>
+    <para>对于使用 ninja（即任何使用 meson 的软件包）或 rust 的软件包，默认使用所有核心；即使构建时间很短，此类软件包上也会出现类似的注释。</para>
 
-    <para>Where even a parallel build takes more than 15 SBU, on certain
-    machines the time may be considerably greater even when the build does not
-    use swap. In particular, different micro-architectures will build some
-    files at different relative speeds, and this can introduce delays when
-    certain make targets wait for another file to be created. Where a large
-    build uses a lot of C++ files, processors with Simultaneous Multi Threading
-    will share the Floating Point Unit and can take 45% longer than when using
-    four 'prime' cores (measured on an intel i7 using taskset and keeping the
-    other cores idle).</para>
+    <para>即使并行构建耗时超过 15 SBU，在某些机器上时间可能明显更长，即使构建过程中未使用交换分区。尤其是不同的微架构会以不同的相对速度构建某些文件，这可能导致当某些 make 目标等待另一个文件创建时产生延迟。当大型构建使用大量 C++ 文件时，具有同步多线程的处理器将共享浮点单元，其耗时可能比使用四个“主”核心（在 Intel i7 上使用 taskset 并使其他核心空闲时测得）长 45%。</para>
 
-    <para>Some packages do not support parallel builds; for these, the
-    make command must specify -j1.  Packages that are known to impose such limits are
-    so marked in the text.</para>
+    <para>某些软件包不支持并行构建；对于这些软件包，make 命令必须指定 -j1。已知受此类限制的软件包会在正文中注明。</para>
 
   </sect2>
 

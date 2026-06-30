@@ -8,15 +8,11 @@
 <chapter id="welcome">
   <?dbhtml filename="welcome.html"?>
 
-  <title>Welcome to BLFS</title>
+  <title>欢迎来到 BLFS</title>
 
-  <para>The Beyond Linux From Scratch book is designed to carry on from where
-  the LFS book leaves off. But unlike the LFS book, it isn't designed to be
-  followed straight through.  Reading the <xref linkend="whichsections"/>
-  part of this chapter should help guide you through the book.</para>
+  <para>Beyond Linux From Scratch 旨在承接 LFS 书未尽之处。但与 LFS 书不同，它并非设计为顺序通读。阅读本章中的 <xref linkend="whichsections"/> 部分将有助于引导您阅读全书。</para>
 
-  <para>Please read most of this part of the book carefully as it explains
-  quite a few of the conventions used throughout the book.</para>
+  <para>请仔细阅读本书本部分的大部分内容，因为它解释了全书使用的相当多惯例。</para>
 
 <!--  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="acknowledgments.xml"/> -->
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="which.xml"/>

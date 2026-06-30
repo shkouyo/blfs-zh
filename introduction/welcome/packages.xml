@@ -5,35 +5,18 @@
   %general-entities;
 ]>
 
-<sect1 id="packages" xreflabel="Getting the Source Packages">
+<sect1 id="packages" xreflabel="获取源代码包">
   <?dbhtml filename="packages.html"?>
 
 
-  <title>Getting the Source Packages</title>
+  <title>获取源代码包</title>
 
-  <para>Within the BLFS instructions, each package has two references for
-  finding the source files for the package&mdash;an HTTP link and an FTP link
-  (some packages may only list one of these links). Every effort has been made
-  to ensure that these links are accurate. However, the World Wide Web is in
-  continuous flux. Packages are sometimes moved or updated and the exact URL
-  specified is not always available.</para>
+  <para>在 BLFS 的说明中，每个软件包都有两个用于查找其源代码文件的引用——一个 HTTP 链接和一个 FTP 链接（某些软件包可能仅列出其中一个链接）。已尽一切努力确保这些链接准确无误。然而，万维网在不断变化。软件包有时会被移动或更新，所指定的确切 URL 并不总是可用。</para>
 
-  <para>To overcome this problem, the BLFS Team, with the assistance of Oregon
-  State University Open Source Lab, has made an HTTP/FTP site available through
-  world wide mirrors.  See <ulink
+    <para>为解决此问题，BLFS 团队在俄勒冈州立大学开源实验室的协助下，通过全球镜像提供了一个 HTTP/FTP 站点。请参阅 <ulink
   url="https://www.linuxfromscratch.org/blfs/download.html#sources">
-  https://www.linuxfromscratch.org/blfs/download.html#sources</ulink> for a
-  list.  These sites have all the sources of the exact versions of the packages
-  used in BLFS.  If you can't find the BLFS package you need at the listed
-  addresses, get it from these sites.</para>
+  https://www.linuxfromscratch.org/blfs/download.html#sources</ulink> 获取列表。这些站点包含 BLFS 中所用确切版本的所有软件包的源码。如果在所列地址找不到所需的 BLFS 软件包，请从这些站点获取。</para>
 
-  <para>We would like to ask a favor, however.  Although this is a public
-  resource for you to use, please do not abuse it.  We have already had one
-  unthinking individual download over 3 GB of data, including multiple copies of
-  the same files that are placed at different locations (via symlinks) to make
-  finding the right package easier.  This person clearly did not know what files
-  he needed and downloaded everything.  The best place to download files
-  is the site or sites set up by the source code developer.  Please try
-  there first.</para>
+  <para>然而，我们有一个请求。尽管这是供您使用的公共资源，但请不要滥用。我们已经有一个人不假思索地下载了超过 3 GB 的数据，包括通过符号链接放置在不同位置的同一文件的多个副本（以便更容易找到正确的软件包）。此人显然不知道需要哪些文件，便下载了所有内容。下载文件的最佳地点是源代码开发者设立的站点。请首先尝试在那里下载。</para>
 
 </sect1>

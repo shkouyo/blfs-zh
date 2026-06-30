@@ -5,20 +5,16 @@
   %general-entities;
 ]>
 
-<sect1 id="credits" xreflabel="Credits">
+<sect1 id="credits" xreflabel="致谢">
   <?dbhtml filename="credits.html"?>
 
 
-  <title>Credits</title>
+  <title>致谢</title>
 
-  <para>Many people have contributed both directly and indirectly to
-  BLFS. This page lists all of those we can think of.  We may well have
-  left people out and if you feel this is the case, drop us a line.  Many
-  thanks to all of the LFS community for their assistance with
-  this project. </para>
+  <para>许多人直接或间接地为 BLFS 做出了贡献。此页面列出了所有我们能想到的人。我们可能遗漏了一些人，如果您觉得有遗漏，请给我们留言。非常感谢所有 LFS 社区对此项目的帮助。</para>
 
   <sect2>
-    <title>Current Editors</title>
+    <title>现任编辑</title>
 
     <itemizedlist>
 
@@ -34,12 +30,9 @@
   </sect2>
 
   <sect2>
-    <title>Contributors and Past Editors</title>
+    <title>贡献者与前任编辑</title>
 
-    <para>The list of contributors is far too large to provide detailed
-    information about the contributions for each contributor.  Over the years,
-    the following individuals have provided significant inputs to the
-    book:</para>
+    <para>贡献者列表过于庞大，无法为每位贡献者提供详细的贡献信息。多年来，以下个人为本书提供了重要的投入：</para>
 
     <itemizedlist>
 
@@ -95,7 +88,7 @@
   </sect2>
 
   <sect2>
-    <title>General Acknowledgments</title>
+    <title>一般致谢</title>
 
     <itemizedlist>
 

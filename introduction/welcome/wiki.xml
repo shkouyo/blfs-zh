@@ -5,32 +5,21 @@
   %general-entities;
 ]>
 
-<sect1 id="wiki" xreflabel="wiki">
+<sect1 id="wiki" xreflabel="Wiki">
   <?dbhtml filename="wiki.html"?>
 
 
-  <title>Editor Notes</title>
+  <title>编辑者注释</title>
 
-  <para>The BLFS Project has created a Wiki for editors to comment
-  on pages and instructions at <ulink url='&blfs-wiki;'/>.</para>
+  <para>BLFS 项目创建了一个 Wiki，供编辑者在 <ulink url='&blfs-wiki;'/> 上对页面和说明进行评论。</para>
 
-  <para>When <emphasis>editor notes</emphasis> are present, a link
-  appears in the form <literal>&blfs-wiki;/pkgname</literal> right
-  below the dependency list. The idea behind the editor notes is to
-  give additional information about the package and/or its build
-  instructions, common pitfalls or maybe even more sophisticated
-  configuration for special cases of use.</para>
+  <para>当存在<emphasis>编辑者注释</emphasis>时，在依赖项列表正下方会显示一个形式为 <literal>&blfs-wiki;/pkgname</literal> 的链接。编辑者注释背后的想法是提供关于软件包和/或其构建说明的附加信息、常见陷阱，甚至可能为特殊使用情况提供更复杂的配置。</para>
 
-  <para>The vast majority of the packages do not have editor notes.</para>
+  <para>绝大多数软件包没有编辑者注释。</para>
 
-  <note>
+    <note>
     <para>
-      The <emphasis>editor notes</emphasis> might be outdated. Even
-      though the pages should be reviewed when a package is updated,
-      it might happen that there are notes referring to an obsolete
-      version and therefore, the notes might be out of date. Always
-      check the date of the notes and more importantly, the version
-      of the package the notes refer to.
+      <emphasis>编辑者注释</emphasis>可能已过时。尽管在软件包更新时应当审查这些页面，但有时可能会有引用过时版本的注释，因此注释可能已过期。请始终检查注释的日期，更重要的是检查注释所引用的软件包版本。
     </para>
   </note>
 

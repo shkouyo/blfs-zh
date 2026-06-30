@@ -9,18 +9,15 @@
 
 <!-- vim: set expandtab: -->
 
-<sect1 id="changelog" xreflabel="Change Log">
+<sect1 id="changelog" xreflabel="更改日志">
   <?dbhtml filename="changelog.html"?>
 
 
-  <title>Change Log</title>
+  <title>更改日志</title>
 
-  <!-- <para>Please note that the Change Log only lists which editor was
-  responsible for putting the changes into SVN; please read the
-  <xref linkend="credits"/> page in Chapter 1 for details on
-  who wrote what.</para> -->
+  <!-- <para>请注意，更改日志仅列出哪位编辑负责将更改放入 SVN；有关谁写了什么的详细信息，请阅读第 1 章的 <xref linkend="credits"/> 页面。</para> -->
 
-<!-- Changelog template
+<!-- 更改日志模板
     <listitem>
       <para>MMMM DD{nd,st,th}, YYYY</para>
       <itemizedlist>
@@ -34,7 +31,7 @@
     </listitem>
     -->
 
-  <para>Current release: &version; &ndash; &releasedate;</para>
+  <para>当前版本：&version; —— &releasedate;</para>
 
   <itemizedlist>
     <title>Changelog Entries:</title>
