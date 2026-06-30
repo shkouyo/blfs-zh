@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Preface
+      前言
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
@@ -16,62 +16,49 @@
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">(systemd</span> Edition) - Version
+        "phrase">（systemd</span> 版） - 版本
       </h4>
       <ul>
         <li class="next">
-          <a accesskey="n" href="foreword.html" title="Foreword">Next</a>
+          <a accesskey="n" href="foreword.html" title="写在前面">Next</a>
           <p>
-            Foreword
+            写在前面
           </p>
         </li>
         <li class="up">.
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="preface">
-      <a id="preface" name="preface"></a>Preface
+      <a id="preface" name="preface"></a>前言
     </h1>
     <div class="preface" lang="en" xml:lang="en">
       <p>
-        Having helped out with Linux From Scratch for a short time, I noticed
-        that we were getting many queries as to how to do things beyond the
-        base LFS system. At the time, the only assistance specifically
-        offered relating to LFS were the LFS hints (<a class="ulink" href=
-        "https://www.linuxfromscratch.org/hints">https://www.linuxfromscratch.org/hints</a>).
-        Most of the LFS hints are extremely good and well written but I (and
-        others) could still see a need for more comprehensive help to go
-        Beyond LFS — hence BLFS.
+        在协助 Linux From Scratch 项目一段时间后，我注意到我们收到了很多关于如何在基础 LFS
+        系统之外进行扩展的询问。当时，唯一专门针对 LFS 提供的帮助是 LFS 提示（<a class="ulink" href=
+        "https://www.linuxfromscratch.org/hints">https://www.linuxfromscratch.org/hints</a>）。大多数
+        LFS 提示都非常出色且写得很好，但我（以及其他人）仍然能看到需要更全面的帮助来超越 LFS —— 于是 BLFS 诞生了。
       </p>
       <p>
-        BLFS aims to be more than the LFS-hints converted to XML although
-        much of our work is based around the hints and indeed some authors
-        write both hints and the relevant BLFS sections. We hope that we can
-        provide you with enough information to not only manage to build your
-        system up to what you want, whether it be a web server or a
-        multimedia desktop system, but also that you will learn a lot about
-        system configuration as you go.
+        BLFS 的目标不仅仅是把 LFS 提示转换为 XML，尽管我们的很多工作都是基于这些提示，而且确实有些作者同时编写提示和相应的 BLFS
+        章节。我们希望我们能够为您提供足够的信息，不仅能让您成功地将系统构建成您想要的样子——无论是 Web 服务器还是多媒体桌面系统 ——
+        而且还能让您在此过程中学到很多关于系统配置的知识。
       </p>
       <p>
-        Thanks as ever go to everyone in the LFS/BLFS community; especially
-        those who have contributed instructions, written text, answered
-        questions and generally shouted when things were wrong!
+        一如既往地感谢 LFS/BLFS 社区中的每一个人；特别是那些贡献了说明、撰写了文字、回答了问题以及在出现错误时及时报告的朋友们！
       </p>
       <p>
-        Finally, we encourage you to become involved in the community; ask
-        questions on the mailing list or news gateway and join in the fun on
-        #lfs and #lfs-support at Libera. You can find more details about all
-        of these in the <a class="xref" href=
+        最后，我们鼓励您加入社区；在邮件列表或新闻网关中提问，并在 Libera 的 #lfs 和 #lfs-support
+        频道中参与乐趣。您可以在本书的 <a class="xref" href=
         "../introduction/introduction.html" title=
-        "Part&nbsp;I.&nbsp;Introduction">Introduction</a> section of the
-        book.
+        "Part&nbsp;I.&nbsp;Introduction">Introduction</a> 部分找到关于所有这些的更多详细信息。
       </p>
       <p>
-        Enjoy using BLFS.
+        请享受 BLFS。
       </p>
       <div class="blockquote">
         <blockquote class="blockquote">
@@ -79,27 +66,19 @@
             <p>
               Mark&nbsp;Hymers<br />
               markh&nbsp;&lt;at&gt;&nbsp;linuxfromscratch.org<br />
-              BLFS&nbsp;Editor&nbsp;(July&nbsp;2001–March&nbsp;2003)
+              BLFS&nbsp;编辑（2001&nbsp;年&nbsp;7&nbsp;月&nbsp;–&nbsp;2003&nbsp;年&nbsp;3&nbsp;月）
             </p>
           </div>
         </blockquote>
       </div>
       <p>
-        I still remember how I found the BLFS project and started using the
-        instructions that were completed at the time. I could not believe how
-        wonderful it was to get an application up and running very quickly,
-        with explanations as to why things were done a certain way.
-        Unfortunately, for me, it wasn't long before I was opening
-        applications that had nothing more than "To be done" on the page. I
-        did what most would do, I waited for someone else to do it. It wasn't
-        too long before I am looking through <span class=
-        "application">Bugzilla</span> for something easy to do. As with any
-        learning experience, the definition of what was easy kept changing.
+        我仍然记得我是如何发现 BLFS
+        项目并开始使用当时已完成的说明的。我简直不敢相信，能够如此快速地让一个应用程序运行起来，并附带解释为什么以某种方式操作，这是多么美妙的事情。不幸的是，对我来说，没过多久，我打开的应用程序页面上除了“待完成”之外别无他物。我做了大多数人会做的事——等待别人去做。没过多久，我就开始浏览
+        <span class=
+        "application">Bugzilla</span>，寻找一些容易做的事情。如同任何学习经历一样，对“容易”的定义在不断变化。
       </p>
       <p>
-        We still encourage you to become involved as BLFS is never really
-        finished. Contributing or just using, we hope you enjoy your BLFS
-        experience.
+        我们仍然鼓励您参与进来，因为 BLFS 永远不会真正完成。无论是贡献还是仅仅使用，我们都希望您享受 BLFS 的体验。
       </p>
       <div class="blockquote">
         <blockquote class="blockquote">
@@ -107,31 +86,18 @@
             <p>
               Larry&nbsp;Lawrence<br />
               larry&nbsp;&lt;at&gt;&nbsp;linuxfromscratch.org<br />
-              BLFS&nbsp;Editor&nbsp;(March&nbsp;2003–June&nbsp;2004)
+              BLFS&nbsp;编辑（2003&nbsp;年&nbsp;3&nbsp;月&nbsp;–&nbsp;2004&nbsp;年&nbsp;6&nbsp;月）
             </p>
           </div>
         </blockquote>
       </div>
       <p>
-        The BLFS project is a natural progression of LFS. Together, these
-        projects provide a unique resource for the Open Source Community.
-        They take the mystery out of the process of building a complete,
-        functional software system from the source code contributed by many
-        talented individuals throughout the world. They truly allow users to
-        implement the slogan <span class="quote">“<span class=
-        "quote"><span class="emphasis"><em>Your distro, your
-        rules</em></span>.</span>”</span>
+        BLFS 项目是 LFS
+        的自然延伸。这两个项目共同为开源社区提供了独特的资源。它们揭开了从世界各地众多才华横溢的个人贡献的源代码构建一个完整、功能正常的软件系统的神秘面纱。它们真正让用户实现了那句口号：<span class="quote">“<span class="quote"><span class="emphasis"><em>“你的发行版，你做主”</em></span>。</span>”</span>
       </p>
       <p>
-        Our goal is to continue to provide the best resource available that
-        shows you how to integrate many significant Open Source applications.
-        Since these applications are constantly updated and new applications
-        are developed, this book will never be complete. Additionally, there
-        is always room for improvement in explaining the nuances of how to
-        install the different packages. To make these improvements, we need
-        your feedback. I encourage you to participate on the different
-        mailing lists, news groups, and IRC channels to help meet these
-        goals.
+        我们的目标是继续提供最好的可用资源，向您展示如何集成许多重要的开源应用程序。由于这些应用程序不断更新，新的应用程序也在不断开发，这本书永远不会完成。此外，在解释如何安装不同软件包的细微差别方面，总有改进的空间。为了做出这些改进，我们需要您的反馈。我鼓励您参与不同的邮件列表、新闻组和
+        IRC 频道，以帮助实现这些目标。
       </p>
       <div class="blockquote">
         <blockquote class="blockquote">
@@ -139,37 +105,27 @@
             <p>
               Bruce&nbsp;Dubbs<br />
               bdubbs&nbsp;&lt;at&gt;&nbsp;linuxfromscratch.org<br />
-              BLFS&nbsp;Editor&nbsp;(June&nbsp;2004–December&nbsp;2006&nbsp;and&nbsp;February&nbsp;2011–now)
+              BLFS&nbsp;Editor（2004&nbsp;年&nbsp;6&nbsp;月&nbsp;–&nbsp;2006&nbsp;年&nbsp;12&nbsp;月，2011&nbsp;年&nbsp;2&nbsp;月至今）
             </p>
           </div>
         </blockquote>
       </div>
       <p>
-        My introduction to the [B]LFS project was actually by accident. I was
-        trying to build a <span class="application">GNOME</span> environment
-        using some how-tos and other information I found on the web. A couple
-        of times I ran into some build issues and Googling pulled up some old
-        BLFS mailing list messages. Out for curiosity, I visited the Linux
-        From Scratch web site and shortly thereafter was hooked. I've not
-        used any other Linux distribution for personal use since.
+        我与 [B]LFS 项目的结缘其实是一次偶然。我当时正试图使用我在网上找到的一些操作指南和其他信息来构建一个 <span class=
+        "application">GNOME</span> 环境。有几次我遇到了一些构建问题，用 Google 搜索时找到了一些旧的 BLFS
+        邮件列表消息。出于好奇，我访问了 Linux From Scratch 网站，不久之后就迷上了它。从那以后，我再也没有使用过其他
+        Linux 发行版用于个人用途。
       </p>
       <p>
-        I can't promise anyone will feel the sense of satisfaction I felt
-        after building my first few systems using [B]LFS instructions, but I
-        sincerely hope that your BLFS experience is as rewarding for you as
-        it has been for me.
+        我无法保证任何人都会感受到我在使用 [B]LFS 说明构建我的前几个系统后所感受到的那种满足感，但我真诚地希望您的 BLFS
+        体验能像它对我一样给您带来回报。
       </p>
       <p>
-        The BLFS project has grown significantly the last couple of years.
-        There are more package instructions and related dependencies than
-        ever before. The project requires your input for continued success.
-        If you discover that you enjoy building BLFS, please consider helping
-        out in any way you can. BLFS requires hundreds of hours of
-        maintenance to keep it even semi-current. If you feel confident
-        enough in your editing skills, please consider joining the BLFS team.
-        Simply contributing to the mailing list discussions with sound advice
-        and/or providing patches to the book's XML will probably result in
-        you receiving an invitation to join the team.
+        在过去的几年里，BLFS
+        项目取得了显著的增长。软件包说明和相关依赖项比以往任何时候都多。这个项目需要您的投入才能持续成功。如果您发现自己喜欢构建
+        BLFS，请考虑以任何可能的方式提供帮助。BLFS
+        需要数百小时的维护才能保持甚至半最新的状态。如果您对自己的编辑技能有足够的信心，请考虑加入 BLFS
+        团队。仅仅通过提供可靠的建议为邮件列表讨论做出贡献，和/或为本书的 XML 提供补丁，很可能就会让您收到加入团队的邀请。
       </p>
       <div class="blockquote">
         <blockquote class="blockquote">
@@ -177,7 +133,7 @@
             <p>
               Randy&nbsp;McMurchy<br />
               randy&nbsp;&lt;at&gt;&nbsp;linuxfromscratch.org<br />
-              BLFS&nbsp;Editor&nbsp;(December&nbsp;2006–January&nbsp;2011)
+              BLFS&nbsp;编辑（2006&nbsp;年&nbsp;12&nbsp;月&nbsp;–&nbsp;2011&nbsp;年&nbsp;1&nbsp;月）
             </p>
           </div>
         </blockquote>
@@ -188,13 +144,13 @@
         </h3>
         <ul>
           <li class="sect1">
-            <a href="foreword.html">Foreword</a>
+            <a href="foreword.html">写在前面</a>
           </li>
           <li class="sect1">
-            <a href="whoread.html">Who Would Want to Read this Book</a>
+            <a href="whoread.html">谁会想要阅读本书</a>
           </li>
           <li class="sect1">
-            <a href="organization.html">Organization</a>
+            <a href="organization.html">组织结构</a>
           </li>
         </ul>
       </div>
@@ -202,16 +158,16 @@
     <div class="navfooter">
       <ul>
         <li class="next">
-          <a accesskey="n" href="foreword.html" title="Foreword">Next</a>
+          <a accesskey="n" href="foreword.html" title="写在前面">Next</a>
           <p>
-            Foreword
+            写在前面
           </p>
         </li>
         <li class="up">.
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  (systemd  Edition) - Version ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
         </li>
       </ul>
     </div>
