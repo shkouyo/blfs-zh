@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    runs-on: codeberg-small
+    runs-on: codeberg-medium
     permissions:
       contents: write
     steps:
