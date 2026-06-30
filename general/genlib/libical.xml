@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../../general.ent">
+  %general-entities;
+
+  <!ENTITY libical-download-http "https://github.com/libical/libical/releases/download/v&libical-version;/libical-&libical-version;.tar.gz">
+  <!ENTITY libical-download-ftp  " ">
+  <!ENTITY libical-md5sum        "2d25dd342c4f193f957e2d65491b03d2">
+  <!ENTITY libical-size          "1.8 MB">
+  <!ENTITY libical-buildsize     "154 MB (with tests and docs)">
+  <!ENTITY libical-time          "0.4 SBU (using parallelism=4; with tests and docs)">
+<!-- run at -j1 because it fails at -j4 -->
+]>
+
+<sect1 id="libical" xreflabel="libical-&libical-version;">
+  <?dbhtml filename="libical.html"?>
+
+
+  <title>libical-&libical-version;</title>
+
+  <indexterm zone="libical">
+    <primary sortas="a-libical">libical</primary>
+  </indexterm>
+
+  <sect2 role="package">
+    <title>Introduction to libical</title>
+
+    <para>
+      The <application>libical</application> package contains an implementation
+      of the iCalendar protocols and data formats.
+    </para>
+
+    &lfs130_checked;
+
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>
+          Download (HTTP): <ulink url="&libical-download-http;"/>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download (FTP): <ulink url="&libical-download-ftp;"/>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download MD5 sum: &libical-md5sum;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download size: &libical-size;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated disk space required: &libical-buildsize;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated build time: &libical-time;
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <bridgehead renderas="sect3">libical Dependencies</bridgehead>
+
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
+
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      &gobject-introspection;,
+      <xref linkend='libxml2'/>, and
+      <xref linkend="vala"/> (both required for GNOME)
+    </para>
+
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (for the API documentation),
+      <xref linkend="graphviz"/> (for the API documentation),
+      <xref linkend="gtk-doc"/> (for the API documentation),
+      <xref linkend="icu"/>,
+      <!-- <xref linkend="java"/> -->
+      <xref linkend="pygobject3"/> (for some tests), and
+      &berkeley-db;
+    </para>
+
+  </sect2>
+
+  <sect2 role="installation">
+    <title>Installation of libical</title>
+
+    <para>
+      Install <application>libical</application> by running the
+      following commands:
+    </para>
+
+    <!-- Still needed for version 4.0.0 -->
+    &parallel_issues;
+
+<screen><userinput>mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+cmake -D CMAKE_INSTALL_PREFIX=/usr  \
+      -D CMAKE_BUILD_TYPE=Release   \
+      -D LIBICAL_STATIC=NO          \
+      -D LIBICAL_BUILD_DOCS=false   \
+      -D LIBICAL_GLIB_VAPI=true     \
+      -D LIBICAL_JAVA_BINDINGS=OFF  \
+      -D LIBICAL_GOBJECT_INTROSPECTION=true \
+      .. &amp;&amp;
+make -j1</userinput></screen>
+
+    <para>
+      If you have <xref linkend="doxygen"/>, <xref linkend="graphviz"/>,
+      and <xref linkend="gtk-doc"/>
+      installed and wish to build the API documentation,  you should
+      remove the <parameter>-D LIBICAL_BUILD_DOCS=false</parameter> switch
+      and issue:
+    </para>
+
+<screen remap="doc"><userinput>make docs</userinput></screen>
+
+    <para>
+      If you wish to run the tests, issue:
+    </para>
+
+<screen remap="test"><userinput>cmake .. -D LIBICAL_BUILD_TESTING=ON &amp;&amp;
+make &amp;&amp;
+make test</userinput></screen>
+
+    <para>
+      Now, as the <systemitem class="username">root</systemitem> user:
+    </para>
+
+<screen role="root"><userinput>make install</userinput></screen>
+
+    <para>
+      If you have built the API documentation, install by issuing, as
+      <systemitem class="username">root</systemitem> user:
+    </para>
+
+<screen role="root"
+        remap="doc"><userinput>install -vdm755 /usr/share/doc/libical-&libical-version;/html &amp;&amp;
+cp -vr apidocs/html/* /usr/share/doc/libical-&libical-version;/html</userinput></screen>
+
+  </sect2>
+
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+
+    <para>
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
+    </para>
+
+    <para>
+      <parameter>-D LIBICAL_STATIC=NO</parameter>: This switch is used
+      in order to only build the shared libraries.
+    </para>
+
+    <para>
+      <parameter>-D LIBICAL_BUILD_DOCS=false</parameter>: This switch prevents
+      building the <application>GTK</application> documentation. Remove
+      if you want to build the documentation.
+    </para>
+
+    <para>
+      <parameter>-D LIBICAL_GOBJECT_INTROSPECTION=true</parameter>: This switch is used
+      to generate GObject metadata bindings.
+    </para>
+
+    <para>
+      <parameter>-D LIBICAL_GLIB_VAPI=true</parameter>: This switch is used
+      to build bindings for <xref linkend="vala"/>.
+    </para>
+
+    <!-- Leaving commented until tested against JDK.
+    <para>
+      <parameter>-D LIBICAL_JAVA_BINDINGS=OFF</parameter>: This switch is used
+      to disable the Java bindings. Remove it if you have <xref linkend="java"/>
+      installed and want to build them to use in Java applications.
+    </para>
+    -->
+
+    <para>
+      <option>-D LIBICAL_ENABLE_BUILTIN_TZDATA=true</option>: This switch is used
+      to use the included timezone data.
+    </para>
+
+  </sect2>
+
+  <sect2 role="content">
+    <title>Contents</title>
+
+    <segmentedlist>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directory</segtitle>
+
+      <seglistitem>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libical.so,
+          libicalss.so,
+          libicalss_cxx.so,
+          libicalvcal.so,
+          libicalvcard.so (experimental),
+          libical-glib.so, and
+          libical_cxx.so
+        </seg>
+        <seg>
+          /usr/include/libical,
+          /usr/include/libical-glib,
+          /usr/lib/cmake/LibIcal,
+          /usr/libexec/libical,
+          /usr/share/gtk-doc/libical-glib (when docs are built), and
+          /usr/share/doc/libical-&libical-version;
+        </seg>
+      </seglistitem>
+    </segmentedlist>
+
+    <variablelist>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <?dbfo list-presentation="list"?>
+      <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="libical-lib">
+        <term><filename class="libraryfile">libical.so</filename></term>
+        <listitem>
+          <para>
+            contains the <application>libical</application> API
+            functions
+          </para>
+          <indexterm zone="libical libical-lib">
+            <primary sortas="c-libical">libical.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libical_cxx-lib">
+        <term><filename class="libraryfile">libical_cxx.so</filename></term>
+        <listitem>
+          <para>
+            contains the <application>libical</application> C++ bindings
+          </para>
+          <indexterm zone="libical libical_cxx-lib">
+            <primary sortas="c-libical_cxx">libical_cxx.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libical-glib">
+        <term><filename class="libraryfile">libical-glib.so</filename></term>
+        <listitem>
+          <para>
+            contains the <application>libical</application> glib bindings
+          </para>
+          <indexterm zone="libical libical-glib">
+            <primary sortas="c-libical-glib">libical-glib.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libicalss">
+        <term><filename class="libraryfile">libicalss.so</filename></term>
+        <listitem>
+          <para>
+            is a library that allows you to store iCal component data
+            on disk in a variety of ways
+          </para>
+          <indexterm zone="libical libicalss">
+            <primary sortas="c-libicalss">libicalss.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libicalss_cxx">
+        <term><filename class="libraryfile">libicalss_cxx.so</filename></term>
+        <listitem>
+          <para>
+            contains the <application>libicalss</application> C++
+            bindings
+          </para>
+          <indexterm zone="libical libicalss_cxx">
+            <primary sortas="c-libicalss_cxx">libicalss_cxx.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libicalvcal">
+        <term><filename class="libraryfile">libicalvcal.so</filename></term>
+        <listitem>
+          <para>
+            is a vCard/vCalendar C interface
+          </para>
+          <indexterm zone="libical libicalvcal">
+            <primary sortas="c-libicalvcal">libicalvcal.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libicalvcard">
+        <term><filename class="libraryfile">libicalvcard.so</filename></term>
+        <listitem>
+          <para>
+            is an experimental library for handling VCARD formatted data
+          </para>
+          <indexterm zone="libical libicalvcard">
+            <primary sortas="c-libicalvcard">libicalvcard.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+
+  </sect2>
+
+</sect1>

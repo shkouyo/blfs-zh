@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../../../general.ent">
+  %general-entities;
+
+  <!ENTITY my-download-http "&perl_authors;/id/G/GR/GRANTM/XML-Simple-&XML-Simple-version;.tar.gz">
+  <!ENTITY my-md5sum "bb841dce889a26c89a1c2739970e9fbc">
+
+]>
+
+  <!-- Begin XML::Simple -->
+  <sect2 id="perl-xml-simple" xreflabel="XML-Simple-&XML-Simple-version;">
+
+    <title>XML::Simple-&XML-Simple-version;</title>
+
+    <indexterm zone="perl-xml-simple">
+      <primary sortas="a-XML-Simple">XML::Simple</primary>
+    </indexterm>
+
+    <sect3 role="package">
+      <title>Introduction to XML::Simple</title>
+
+      <para>
+        XML::Simple provides an easy API to read and write XML (especially config
+        files). It is deprecated and its use is discouraged.
+         <!-- per https://metacpan.org/pod/XML::Simple :-
+        The use of this module in new code is strongly discouraged. (explanations
+        are given there) -->
+      </para>
+
+      &lfs130_checked;
+
+      <bridgehead renderas="sect4">Package Information</bridgehead>
+      <itemizedlist spacing="compact">
+        <listitem>
+          <para>
+            Download (HTTP): <ulink url="&my-download-http;"/>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Download MD5 sum: &my-md5sum;
+          </para>
+        </listitem>
+      </itemizedlist>
+
+      <bridgehead renderas="sect4">XML::Simple Dependencies</bridgehead>
+
+      <bridgehead renderas="sect5">Recommended</bridgehead>
+      <para role="recommended">
+        <xref linkend="perl-xml-parser"/>
+      </para>
+
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="perl-xml-sax"/> (for an alternative parser which
+        will be used if available)
+        <!-- perl-xml-sax pulls in perl-xml-namespacesupport and
+             perl-xml-sax-base -->
+      </para>
+
+    </sect3>
+
+    <sect3 role="installation">
+      <title>Installation of XML::Simple</title>
+
+      <note>
+        <para>
+          During the configuration process, the build system will complain
+          about missing the <application>XML::SAX::Expat</application> module.
+          If <application>XML::SAX</application> is installed, this module is
+          not necessary as <application>XML::SAX</application> will use the
+          <application>libxml2</application> package instead. However, if it
+          is not installed, <xref linkend="perl-xml-parser"/> will get used
+          instead.
+        </para>
+      </note>
+
+      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+                  href="../../../xincludes/perl-standard-install.xml"/>
+
+    </sect3>
+
+  </sect2>

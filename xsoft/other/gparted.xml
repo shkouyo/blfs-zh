@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../../general.ent">
+  %general-entities;
+
+  <!ENTITY gparted-download-http "&sourceforge-dl;/gparted/gparted-&gparted-version;.tar.gz">
+  <!ENTITY gparted-download-ftp  " ">
+  <!ENTITY gparted-md5sum        "3805a43eafd08277f12dc6c2e0de97c2">
+  <!ENTITY gparted-size          "5.7 MB">
+  <!ENTITY gparted-buildsize     "193 MB (with tests)">
+  <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.3 SBU for tests)">
+]>
+
+<sect1 id="gparted" xreflabel="Gparted-&gparted-version;">
+  <?dbhtml filename="gparted.html"?>
+
+
+  <title>Gparted-&gparted-version;</title>
+
+  <indexterm zone="gparted">
+    <primary sortas="a-Gparted">Gparted</primary>
+  </indexterm>
+
+  <sect2 role="package">
+    <title>Introduction to Gparted</title>
+
+    <para>
+      Gparted is the Gnome Partition Editor, a Gtk 3 GUI for other command line
+      tools that can create, reorganise or delete disk partitions.
+    </para>
+
+    &lfs130_checked;
+
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>
+          Download (HTTP): <ulink url="&gparted-download-http;"/>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download (FTP): <ulink url="&gparted-download-ftp;"/>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download MD5 sum: &gparted-md5sum;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download size: &gparted-size;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated disk space required: &gparted-buildsize;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated build time: &gparted-time;
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <bridgehead renderas="sect3">Gparted Dependencies</bridgehead>
+
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="gtkmm3"/> and
+      <xref linkend="parted"/>
+    </para>
+
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="btrfs-progs"/> (if you are using a btrfs filesystem),
+      <ulink url="https://github.com/exfatprogs/exfatprogs">exfatprogs</ulink>, and
+      <ulink url="https://github.com/pali/udftools">udftools</ulink>
+    </para>
+
+    <para>
+      Additional dependencies may be required depending on the types of
+      filesystems that you are working with. Please read the "Using Gparted"
+      section below for more information.
+    </para>
+  </sect2>
+
+  <sect2 role="installation">
+    <title>Installation of Gparted</title>
+
+    <para>
+      Install <application>Gparted</application> by running the following
+      commands:
+    </para>
+
+<screen><userinput>./configure --prefix=/usr --disable-static &amp;&amp;
+make</userinput></screen>
+
+    <para>
+      To run the tests, issue: <command>make check</command>.
+    </para>
+
+    <para>
+      Now, as the <systemitem class="username">root</systemitem> user:
+    </para>
+
+<screen role="root"><userinput>make install</userinput></screen>
+
+  </sect2>
+
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="../../xincludes/static-libraries.xml"/>
+
+    <!-- Does not seem to be needed with 1.8.1.
+    <para>
+      <parameter>- -disable-doc</parameter>: This switch disables building of
+      the optional documentation. Remove it if you have installed
+      <application>GNOME Doc Utils</application>.
+    </para>
+    -->
+
+<!-- this is an option, not a parameter, but is it still necessary for
+     wayland? -->
+    <para>
+      <option>--enable-xhost-root</option>: This switch provides an
+      interim workaround to allow GParted to run under Wayland by using xhost
+      to grant and revoke root access to the X11 display.
+    </para>
+
+  </sect2>
+
+  <sect2 role="using">
+    <title>Using Gparted</title>
+
+    <para>
+      To manipulate file systems, Gparted has a run time dependency on various
+      file system tools (you only need to install the tools for file systems you
+      actually use):
+      <xref linkend="hdparm"/>
+      (required for optionally displaying the serial number of a device),
+      <xref linkend="btrfs-progs"/>,
+      <xref role="runtime" linkend="dosfstools"/>,
+      e2fsprogs (installed as part of LFS),
+      <xref linkend="jfsutils"/>,
+      <xref linkend="ntfs-3g"/>,
+      <!--<xref linkend="reiserfs"/>,-->
+      <xref linkend="xfsprogs"/>,
+      <ulink url="&gnu-http;/mtools/">mtools</ulink> (required
+      to read and write FAT16/32 volume labels and UUIDs),
+      <ulink url="https://www.mars.org/home/rob/proj/hfs/">hfsutils</ulink>,
+      <ulink url="https://packages.debian.org/sid/hfsprogs">hfsprogs</ulink>,
+      <ulink url="https://nilfs.sourceforge.io/en/">nilfs-utils</ulink>,
+      <ulink url="https://reiser4.wiki.kernel.org/index.php/Reiser4progs">
+      Reiser4progs</ulink>, and
+      <ulink
+        url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
+        reiserfsprogs</ulink>.
+    </para>
+
+    <para>
+      Root privileges are required to run Gparted. If you want to run the
+      application from the menu, further applications and configuration might
+      be necessary depending on your desktop environment. If you are using
+      KDE Plasma, GNOME, or LXQt, your desktop includes an ssh-askpass
+      implementation, or a wrapper around Polkit that provides this
+      functionality for you. If you are not using one of these desktop
+      environments, an easier solution is use the generic
+      <xref linkend="ssh-askpass"/> package.
+    </para>
+
+    <sect3 role="ssh-askpass">
+      <title>ssh-askpass</title>
+        <para>
+          To use <xref linkend="ssh-askpass"/> if it is installed on your
+          system, run the following commands as the &root; user:
+        </para>
+
+<screen role="root"><userinput>cp -v /usr/share/applications/gparted.desktop /usr/share/applications/gparted.desktop.back &amp;&amp;
+sed -i 's/Exec=/Exec=sudo -A /'               /usr/share/applications/gparted.desktop</userinput></screen>
+
+        <para>
+          Now, when you click on the menu item for Gparted, a dialog will appear
+          asking for the administrator password.
+        </para>
+
+    </sect3>
+
+  </sect2>
+
+  <sect2 role="content">
+    <title>Contents</title>
+
+    <segmentedlist>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+
+      <seglistitem>
+        <seg>
+          gparted and gparted_polkit (optional)
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
+      </seglistitem>
+    </segmentedlist>
+
+    <variablelist>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <?dbfo list-presentation="list"?>
+      <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="gparted-prog">
+        <term><command>gparted</command></term>
+        <listitem>
+          <para>
+            is a shell script which sets up the environment before calling
+            <command>gpartedbin</command>
+          </para>
+          <indexterm zone="gparted gparted-prog">
+            <primary sortas="b-gparted">gparted</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="gparted_polkit">
+        <term><command>gparted_polkit</command></term>
+        <listitem>
+          <para>
+            is an optional script which can be used to run gparted with polkit,
+            from a menu
+          </para>
+          <indexterm zone="gparted gparted_polkit">
+            <primary sortas="b-gparted_polkit">gparted_polkit</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+
+  </sect2>
+
+</sect1>

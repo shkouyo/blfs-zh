@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+  <!ENTITY % general-entities SYSTEM "../../general.ent">
+  %general-entities;
+
+  <!ENTITY glycin-buildsize     "1.4 GB (with documentation, add 1 GB for tests)">
+  <!ENTITY glycin-time          "3.8 SBU (with documentation, add 2.5 SBU for tests)">
+]>
+
+<!-- Try to keep the indentation used in this file-->
+<sect1 id="glycin" xreflabel="glycin-&glycin-version;">
+  <?dbhtml filename="glycin.html"?>
+
+  <title>glycin-&glycin-version;</title>
+
+  <indexterm zone="glycin">
+    <primary sortas="a-glycin">glycin</primary>
+  </indexterm>
+
+  <!--Required section-->
+  <sect2 role="package">
+    <title>Introduction to glycin</title>
+
+    <para>
+      The <application>glycin</application> package contains a sandboxed and
+      extendable image loading framework.
+    </para>
+
+    &lfs130_checked;
+
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>
+          Download (HTTP): <ulink url="&glycin-download-http;"/>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download MD5 sum: &glycin-md5sum;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Download size: &glycin-size;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated disk space required: &glycin-buildsize;
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Estimated build time: &glycin-time;
+        </para>
+      </listitem>
+    </itemizedlist>
+
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <itemizedlist spacing="compact">
+      <listitem>
+        <para>
+          Recommended patch (required if installing Xorg into
+          <filename class='directory'>/opt</filename>):
+          <ulink url="&patch-root;/glycin-&glycin-version;-xorg_prefix-1.patch"/>
+        </para>
+      </listitem>
+      <!--
+      <listitem>
+        <para>
+          Recommended patch (required to load XBM and XPM images):
+          <ulink url="&patch-root;/glycin-&glycin-version;-xbm_xpm-1.patch"/>
+        </para>
+      </listitem>
+      -->
+    </itemizedlist>
+
+    <bridgehead renderas="sect3">glycin Dependencies</bridgehead>
+
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="bubblewrap"/> (runtime),
+      <xref linkend="fontconfig"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
+      <xref linkend="lcms2"/>,
+      <xref linkend="libseccomp"/>, and
+      <xref linkend="rust"/>
+    </para>
+
+    &build-use-internet;
+
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend='libheif'/>,
+      <xref linkend='libjxl'/>,
+      <xref linkend='librsvg'/>, and
+      <xref linkend="vala"/>
+    </para>
+
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gi-docgen"/>,
+      <xref linkend="gtk4"/> (for the test suite), and
+      <ulink url="https://libopenraw.freedesktop.org/">libopenraw</ulink>
+    </para>
+
+    <!--  Only use this if you want to note something in the wiki
+    <para condition="html" role="usernotes">
+      Editor Notes: <ulink url="&blfs-wiki;/glycin"/>
+    </para>
+    -->
+  </sect2>
+
+  <sect2 role="installation">
+    <title>Installation of glycin</title>
+
+    <para>
+      If installing Xorg into <filename class='directory'>/opt</filename>,
+      download the needed Rust crates now and apply a patch to allow
+      accessing <filename class='directory'>$XORG_PREFIX/lib</filename> from
+      the sandbox (note that the patch requires <envar>XORG_PREFIX</envar> to
+      be set properly for both the current user and for &root; following
+      <xref linkend='xorg-env'/> before building glycin):
+    </para>
+
+<screen><userinput>cargo vendor &amp;&amp;
+patch -Np1 -i ../glycin-&glycin-version;-xorg_prefix-1.patch</userinput></screen>
+
+<!--https://gitlab.gnome.org/GNOME/glycin/-/merge_requests/396-->
+    <para>
+      Fix a build error when a system <application>libglycin</application>
+      is not yet installed:
+    </para>
+
+<screen><userinput>sed -e "s/get_option('libglycin-gtk4')/(&amp; or get_option('glycin-thumbnailer'))/" \
+    -i meson.build</userinput></screen>
+
+    <para>
+      Install <application>glycin</application> by running the following
+      commands:
+    </para>
+
+<screen><userinput>mkdir build &amp;&amp;
+cd    build &amp;&amp;
+
+meson setup --prefix=/usr           \
+            --buildtype=release     \
+            -D libglycin-gtk4=false \
+            -D tests=false ..       &amp;&amp;
+ninja</userinput></screen>
+
+    <para>
+      If you have installed <xref linkend="gi-docgen"/>, you can build
+      the documentation by issuing:
+    </para>
+
+<screen remap="doc"><userinput>sed "/install_dir:.*doc/s|,$| / 'glycin-' + meson.project_version()&amp;|" \
+    -i ../libglycin/meson.build &amp;&amp;
+
+meson configure -D capi_docs=true &amp;&amp;
+ninja</userinput></screen>
+
+    <para>
+      To test the results, ensure <xref linkend='gtk4'/> is installed, then
+      issue: <command>meson configure -D tests=true &amp;&amp; ninja
+      test</command>.
+    </para>
+
+    <para>
+      Now as the &root; user:
+    </para>
+
+    <screen role="root"><userinput>ninja install</userinput></screen>
+
+  </sect2>
+
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+
+    <para>
+      <parameter>-D glycin_gtk4=false</parameter>: This parameter disables
+      the build of <systemitem class='library'>libglycin-gtk4</systemitem>.
+      This library will be built separately as
+      <xref linkend='glycin-gtk4'/>, to avoid a circular dependency.
+    </para>
+
+    <para>
+      <option>-D glycin-loaders=...</option>: Use this option to specify
+      the image loaders to be built.  The default is
+      <literal>glycin-heif,glycin-image-rs,glycin-jxl,glycin-svg</literal>,
+      covering support for all commonly used image formats. You may
+      remove the <literal>glycin-heif</literal>,
+      <literal>glycin-jxl</literal>, or <literal>glycin-svg</literal> loader
+      if the corresponding recommended dependency is not installed, but
+      doing so will cause test failures and hamper the functionality of this
+      package.  There is also a loader for the RAW format but it is not
+      enabled by default.
+    </para>
+
+    <para>
+      <option>-D vapi=false</option>: This option allows building this
+      package without <xref linkend='vala'/> installed.
+    </para>
+  </sect2>
+
+  <sect2 role="content">
+    <title>Contents</title>
+
+    <segmentedlist>
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directories</segtitle>
+
+      <seglistitem>
+        <seg>
+          glycin-thumbnailer
+        </seg>
+        <seg>
+          libglycin-2.so
+        </seg>
+        <seg>
+          /usr/include/glycin-2,
+          /usr/libexec/glycin-loaders,
+          /usr/share/glycin-loaders, and optionally
+          /usr/share/doc/glycin-&glycin-version;
+        </seg>
+      </seglistitem>
+    </segmentedlist>
+
+    <variablelist>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <?dbfo list-presentation="list"?>
+      <?dbhtml list-presentation="table"?>
+
+      <varlistentry id="glycin-thumbnailer">
+        <term><command>glycin-thumbnailer</command></term>
+        <listitem>
+          <para>
+            creates thumbnails for images in a format supported by glycin
+          </para>
+          <indexterm zone="glycin glycin-thumbnailer">
+            <primary sortas="b-glycin-thumbnailer">glycin-thumbnailer</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry id="libglycin-2">
+        <term><filename class="libraryfile">libglycin-2.so</filename></term>
+        <listitem>
+          <para>
+            contains image loading functions which work by running glycin
+            loaders in a sandbox environment
+          </para>
+          <indexterm zone="glycin libglycin-2">
+            <primary sortas="c-libglycin-2">libglycin-2.so</primary>
+          </indexterm>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </sect2>
+</sect1>
