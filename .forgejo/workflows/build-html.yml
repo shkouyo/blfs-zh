@@ -1,0 +1,54 @@
+name: build html
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+concurrency:
+  group: build-html
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: codeberg-small
+    container:
+      image: docker.io/library/debian:latest
+    permissions:
+      contents: write
+    steps:
+      - name: checkout
+        uses: actions/checkout@v7
+      - name: install dependencies
+        run: |
+          apt-get update
+          apt-get install -y git make libxml2-utils xsltproc docbook-xsl docbook-xml tidy
+      - name: build sysv book
+        run: |
+          mkdir -p /tmp/blfs-output/blfs-book
+          REV=sysv BASEDIR=/tmp/blfs-output/blfs-book make
+      - name: build systemd book
+        run: |
+          mkdir -p /tmp/blfs-output/blfs-systemd
+          REV=systemd BASEDIR=/tmp/blfs-output/blfs-systemd make
+      - name: deploy sysv book
+        run: |
+          git config user.name "Codeberg Actions"
+          git config user.email "actions@codeberg.org"
+          git fetch origin book-sysv:book-sysv || true
+          git checkout book-sysv 2>/dev/null || git checkout --orphan book-sysv
+          git rm -rf .
+          cp -r /tmp/blfs-output/blfs-book/. .
+          git add -A
+          git commit -m "chore: build $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          git push origin book-sysv
+      - name: deploy systemd book
+        run: |
+          git config user.name "Codeberg Actions"
+          git config user.email "actions@codeberg.org"
+          git fetch origin book-systemd:book-systemd || true
+          git checkout book-systemd 2>/dev/null || git checkout --orphan book-systemd
+          git rm -rf .
+          cp -r /tmp/blfs-output/blfs-systemd/. .
+          git add -A
+          git commit -m "chore: build $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+          git push origin book-systemd
+
