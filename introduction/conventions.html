@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <title>
+      本书使用惯例
+    </title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
+    <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
+    <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
+    "text/css" media="print" />
+  </head>
+  <body class="blfs" id="blfs-">
+    <div class="navheader">
+      <h4>
+        Beyond Linux<sup>®</sup> From Scratch <span class=
+        "phrase">(systemd</span> Edition) - Version
+      </h4>
+      <h3>
+        Chapter&nbsp;1.&nbsp;欢迎来到 BLFS
+      </h3>
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="which.html" title="我应该阅读本书的哪个章节？">Prev</a>
+          <p>
+            我应该阅读本书的哪个章节？
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="version.html" title="本书版本">Next</a>
+          <p>
+            本书版本
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="welcome.html" title=
+          "Chapter&nbsp;1.&nbsp;欢迎来到 BLFS">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+    <h1 class="sect1">
+      <a id="conventions" name="conventions"></a>本书使用惯例
+    </h1>
+    <div class="sect1" lang="en" xml:lang="en">
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          排版惯例
+        </h2>
+        <p>
+          为便于理解，全书使用若干惯例。以下是一些示例：
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">./configure --prefix=/usr</kbd></pre>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本应完全按所示键入，除非周围文本另有说明。它也用于标识对特定命令的引用。
+            </p>
+          </blockquote>
+        </div>
+        <pre class="screen"><code class=
+        "computeroutput">install-info: unknown option
+`--dir-file=/mnt/lfs/usr/info/dir'</code></pre>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本（蓝色等宽字体）显示屏幕输出，可能是执行命令的结果。
+            </p>
+          </blockquote>
+        </div>
+        <pre class="screen"><code class=
+        "filename">/boot/grub/grub.conf</code></pre>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本（等宽字体）用于显示文件名。
+            </p>
+          </blockquote>
+        </div>
+        <div class="admon note">
+          <img alt="[Note]" src="../images/note.png" />
+          <h3>
+            Note
+          </h3>
+          <p>
+            请将浏览器配置为使用良好的等宽字体显示等宽文本，以便清晰区分 <code class="literal">Il1</code> 或
+            <code class="literal">O0</code> 的字形。
+          </p>
+        </div>
+        <p>
+          <span class="emphasis"><em>强调</em></span>
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本有多种用途，但主要用于强调重点，或提供应键入内容的示例。
+            </p>
+          </blockquote>
+        </div>
+        <p>
+          <a class="ulink" href=
+          "https://www.linuxfromscratch.org/">https://www.linuxfromscratch.org/</a>
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本用于指向书外的超链接，例如 HowTo、下载位置、网站等。
+            </p>
+          </blockquote>
+        </div>
+        <p>
+          <a class="xref" href="../xsoft/seamonkey.html" title=
+          "Seamonkey-2.53.23">seamonkey-2.53.23</a>
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本用于指向书内的链接，例如描述其他软件包的另一章节。
+            </p>
+          </blockquote>
+        </div>
+        <pre class="userinput"><kbd class=
+        "command">cat &gt; $LFS/etc/group &lt;&lt; "EOF"
+<code class="literal">root:x:0:
+bin:x:1:
+......</code>
+EOF</kbd></pre>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此样式主要用于创建配置文件。第一条命令（粗体）告诉系统从后续行中键入的内容创建文件 <code class=
+              "filename">$LFS/etc/group</code>，直到遇到 EOF
+              序列为止。因此，通常完全按所示键入整个部分。请记住，复制和粘贴是您的好帮手！
+            </p>
+          </blockquote>
+        </div>
+        <p>
+          <em class="replaceable"><code>&lt;替换文本&gt;</code></em>
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本用于封装应修改的文本，不应按所示键入或复制粘贴。尖括号不是字面文本的一部分，而是替换的一部分。
+            </p>
+          </blockquote>
+        </div>
+        <p>
+          <code class="systemitem">root</code>
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <p>
+              此形式的文本用于在说明中显示特定的系统用户或组引用。
+            </p>
+          </blockquote>
+        </div>
+        <p>
+          &nbsp;
+        </p>
+      </div>
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          软件包依赖关系所用惯例
+        </h2>
+        <p>
+          当新软件包被创建时，软件作者依赖于先前的工作。为了在 BLFS
+          中构建一个软件包，必须在编译目标软件包之前构建这些依赖项。对于每个软件包，先决条件列在一个或多个独立部分中：必需、推荐和可选。
+        </p>
+        <h3>
+          必需依赖项
+        </h3>
+        <p>
+          这些依赖项是构建软件包所需的最低要求。LFS
+          中的软件包以及这些必需依赖项的必需依赖项均从此列表中省略。请始终记得检查嵌套依赖项。如果某个依赖项被说明为“运行时”，则构建软件包时不需要它，而仅在安装后使用它时才需要。
+        </p>
+        <h3>
+          推荐依赖项
+        </h3>
+        <p>
+          这些是 BLFS
+          编辑者确定对于赋予软件包合理功能很重要的依赖项。如果推荐依赖项未被说明为“运行时”，则软件包安装说明假定它已安装。如果未安装，则可能需要修改说明以适应缺失的软件包。推荐“运行时”依赖项不需要在构建软件包之前安装，但必须在之后构建，以便以合理功能运行软件包。
+        </p>
+        <h3>
+          可选依赖项
+        </h3>
+        <p>
+          这些是软件包<span class=
+          "emphasis"><em>可能</em></span>使用的依赖项。可选依赖项的集成可能由软件包自动完成，或者可能需要 BLFS
+          未提供的额外步骤。可选依赖项有时会在没有明确 BLFS 说明的情况下列出。在这种情况下，您必须自行确定如何执行安装。
+        </p>
+        <p>
+          &nbsp;
+        </p>
+      </div>
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          内核配置选项所用惯例
+        </h2>
+        <p>
+          某些软件包需要特定的内核配置选项。其通用布局如下：
+        </p>
+        <pre class="screen">M<span class="blue">a</span>ster section ---&gt;
+  <span class="blue">S</span>ubsection ---&gt;
+    [*]     <span class=
+"blue">R</span>equired parameter                                        [REQU_PAR]
+    &lt;*&gt;     <span class=
+"blue">R</span>equired parameter (not as module)                   [REQU_PAR_NMOD]
+    &lt;*/M&gt;   <span class=
+"blue">R</span>equired parameter (could be a module)                [REQU_PAR_MOD]
+    &lt;M&gt;     <span class=
+"blue">R</span>equired parameter (as a module)                 [REQU_PAR_MOD_ONLY]
+    &lt; /*/M&gt; <span class=
+"blue">O</span>ptional parameter                                         [OPT_PAR]
+    &lt; /M&gt;   <span class=
+"blue">O</span>ptional parameter (as a module if enabled)       [OPT_PAR_MOD_ONLY]
+    [ ]     <span class=
+"blue">I</span>ncompatible parameter                                  [INCOMP_PAR]
+    &lt; &gt;     <span class=
+"blue">I</span>ncompatible parameter (even as module)             [INCOMP_PAR_MOD]</pre>
+        <p>
+          […] 右侧给出选项的符号名称，以便您轻松检查它是否已在 <code class="filename">.config</code>
+          文件中设置。请注意，<code class="filename">.config</code> 文件在所有符号名称前都包含
+          <code class="literal">CONFIG_</code> 前缀。各项条目的含义如下：
+        </p>
+        <div class="blockquote">
+          <blockquote class="blockquote">
+            <div class="informaltable">
+              <table class="informaltable" border="0">
+                <colgroup>
+                  <col align="left" />
+                  <col align="left" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Master
+                      section</strong></span>
+                    </td>
+                    <td align="left">
+                      顶级菜单项
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Subsection</strong></span>
+                    </td>
+                    <td align="left">
+                      子菜单项
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Required
+                      parameter</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建或未选中：必须选中
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Required parameter (not as
+                      module)</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：必须以内建方式选中
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Required parameter (could be
+                      a module)</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：必须选中，内建或作为模块均可
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Required parameter (as a
+                      module)</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：必须作为模块选中；以内建方式选中可能导致不良影响
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Optional
+                      parameter</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：如果您需要它来驱动硬件或可选内核特性，可以将其选为模块或内建
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Optional parameter (as a
+                      module if enabled)</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：如果您需要它来驱动硬件或可选内核特性，可以将其选为模块，但以内建方式选中可能导致不良影响
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Incompatible
+                      parameter</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建或未选中：必须<span class=
+                      "emphasis"><em>不</em></span>选中
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">
+                      <span class="bold"><strong>Incompatible parameter (even
+                      as module)</strong></span>
+                    </td>
+                    <td align="left">
+                      该选项可以内建、作为模块或未选中：必须<span class=
+                      "emphasis"><em>不</em></span>选中
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </blockquote>
+        </div>
+        <p>
+          请注意，根据其他选择，配置菜单中的尖括号（&lt;&gt;）可能显示为大括号（{}）（如果该选项无法取消选中），甚至显示为破折号（-*-
+          或 -M-）（当选择被强制时）。描述该选项的帮助文本会说明该选项所依赖的其他选择，以及这些其他选择是如何设置的。
+        </p>
+        <p>
+          以<span class="blue">蓝色</span>显示的字母是该选项的热键。如果您运行 <span class=
+          "command"><strong>make
+          menuconfig</strong></span>，可以按一个键快速遍历屏幕上以该键为热键的所有选项。
+        </p>
+        <p>
+          &nbsp;
+        </p>
+      </div>
+      <div class="sect2" lang="en" xml:lang="en">
+        <h2 class="sect2">
+          BLFS 中的 SBU
+        </h2>
+        <p>
+          与 LFS 中一样，BLFS 中的每个软件包都有一个以标准构建单位（SBU）列出的构建时间。这些时间相对于在 LFS 中构建
+          binutils
+          所需的时间，旨在提供一些关于构建一个软件包所需时间的参考。所列出的大多数时间都是使用单处理器或单核心构建软件包的时间。在某些情况下，在多核心系统上测试的大型、长时间运行的构建，其
+          SBU
+          时间会附带诸如“（并行度=4）”之类的注释。这些值表明测试使用了多个核心。请注意，虽然这能在具有适当硬件的系统上加快构建速度，但加速并非线性，且在某种程度上取决于具体的软件包和所使用的具体硬件。
+        </p>
+        <p>
+          对于使用 ninja（即任何使用 meson 的软件包）或 rust
+          的软件包，默认使用所有核心；即使构建时间很短，此类软件包上也会出现类似的注释。
+        </p>
+        <p>
+          即使并行构建耗时超过 15
+          SBU，在某些机器上时间可能明显更长，即使构建过程中未使用交换分区。尤其是不同的微架构会以不同的相对速度构建某些文件，这可能导致当某些
+          make 目标等待另一个文件创建时产生延迟。当大型构建使用大量 C++
+          文件时，具有同步多线程的处理器将共享浮点单元，其耗时可能比使用四个“主”核心（在 Intel i7 上使用 taskset
+          并使其他核心空闲时测得）长 45%。
+        </p>
+        <p>
+          某些软件包不支持并行构建；对于这些软件包，make 命令必须指定 -j1。已知受此类限制的软件包会在正文中注明。
+        </p>
+      </div>
+    </div>
+    <div class="navfooter">
+      <ul>
+        <li class="prev">
+          <a accesskey="p" href="which.html" title="我应该阅读本书的哪个章节？">Prev</a>
+          <p>
+            我应该阅读本书的哪个章节？
+          </p>
+        </li>
+        <li class="next">
+          <a accesskey="n" href="version.html" title="本书版本">Next</a>
+          <p>
+            本书版本
+          </p>
+        </li>
+        <li class="up">
+          <a accesskey="u" href="welcome.html" title=
+          "Chapter&nbsp;1.&nbsp;欢迎来到 BLFS">Up</a>
+        </li>
+        <li class="home">
+          <a accesskey="h" href="../index.html" title=
+          "Beyond Linux® From Scratch  (systemd  Edition) - Version ">Home</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
