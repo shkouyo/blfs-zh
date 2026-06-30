@@ -1,18 +1,15 @@
-How do I convert these XML files to HTML? You need to have some software
-installed that deal with these conversions. Please read the INSTALL file to
-determine what programs you need to install and where to get instructions to
-install that software.
+我如何将这些 XML 文件转换为 HTML？你需要安装一些软件还处理这些转换。
+请阅读 INSTALL 文件，以确定需要安装哪些程序，以及在哪里获取安装该软件的说明。
 
-After that, you can build the html with a simple 'make' command.
-The default target builds the html in $(HOME)/public_html/blfs-book.
+之后，您可以直接运行 'make' 命令来构建 HTML。
+默认情况下，构建的目标 HTML 在 $(HOME)/public_html/blfs-book 中。
 
-For all targets, setting the parameter REV=systemd is needed to build the
-systemd version of the book.
+对于所有目标，设置参数 REV=systemd 是构建 systemd 版本手册所必需的。
 
-Other Makefile targets are: nochunks, validate, and blfs-patch-list.
+其余的 Makefile 目标包括：nochunks，validate 和 blfs-patch-list。
 
-nochunks: builds BLFS in one huge file.
+nochunks：将 BLFS 构建在单个巨大的文件中。
 
-validate:  does an extensive check for xml errors in the book.
+validate：对手册中的 XML 错误进行检查。
 
-blfs-patch-list: generates a list of all blfs controlled patches in the book.
+blfs-patch-list: 生成手册中所有 BLFS 控制的补丁列表。
