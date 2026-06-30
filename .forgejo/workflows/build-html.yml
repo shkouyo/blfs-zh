@@ -10,8 +10,6 @@ concurrency:
 jobs:
   build:
     runs-on: codeberg-small
-    container:
-      image: docker.io/library/debian:latest
     permissions:
       contents: write
     steps:
