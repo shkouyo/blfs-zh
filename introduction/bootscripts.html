@@ -5,87 +5,75 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      BLFS Boot Scripts
+      BLFS 启动脚本
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g2dba273">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g2dba273
+        V</span> 版） - 版本 g57e8800
       </h4>
       <h3>
-        Chapter&nbsp;2.&nbsp;Important Information
+        Chapter&nbsp;2.&nbsp;重要信息
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="patches.html" title=
-          "Optional Patches">Prev</a>
+          <a accesskey="p" href="patches.html" title="可选补丁">Prev</a>
           <p>
-            Optional Patches
+            可选补丁
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Next</a>
+          "关于 Libtool 存档（.la）文件">Next</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="bootscripts" name="bootscripts"></a>BLFS Boot Scripts
+      <a id="bootscripts" name="bootscripts"></a>BLFS 启动脚本
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        The BLFS Bootscripts package contains the init scripts that are used
-        throughout the book. It is assumed that you will be using the BLFS
-        Bootscripts package in conjunction with a compatible LFS-Bootscripts
-        package. Refer to <a class="ulink" href=
-        "../../../../lfs/view/development/chapter09/bootscripts.html">../../../../lfs/view/development/chapter09/bootscripts.html</a>
-        for more information on the LFS-Bootscripts package.
+        BLFS 启动脚本软件包包含本书中使用的初始化脚本。假定您将 BLFS 启动脚本软件包与兼容的 LFS-Bootscripts
+        软件包结合使用。有关 LFS-Bootscripts 软件包的更多信息，请参阅 <a class="ulink" href=
+        "../../../../lfs/view/development/chapter09/bootscripts.html">../../../../lfs/view/development/chapter09/bootscripts.html</a>。
       </p>
       <div class="itemizedlist">
         <p class="title">
-          <strong>Package Information</strong>
+          <strong>软件包信息</strong>
         </p>
         <ul class="compact">
           <li class="listitem">
             <p>
-              Download: <a class="ulink" href=
-              "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz">
-              https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz</a>
+              下载：<a class="ulink" href=
+              "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz">https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-20251220.tar.xz</a>
             </p>
           </li>
         </ul>
       </div>
       <p>
-        The BLFS Bootscripts package will be used throughout the BLFS book
-        for startup scripts. Unlike LFS, each init script has a separate
-        install target in the BLFS Bootscripts package. It is recommended you
-        keep the package source directory around until completion of your
-        BLFS system. When a script is requested from BLFS Bootscripts, simply
-        change to the directory and as the <code class=
-        "systemitem">root</code> user, execute the given <span class=
-        "command"><strong>make install-<em class=
+        BLFS 启动脚本软件包将在整个 BLFS 书中用于启动脚本。与 LFS 不同，BLFS 启动脚本软件包中的每个 init
+        脚本都有独立的安装目标。建议您保留该软件包源代码目录，直到 BLFS 系统构建完成。当 BLFS
+        启动脚本中请求某个脚本时，只需切换到该目录，并以 <code class="systemitem">root</code>
+        用户身份执行给定的 <span class="command"><strong>make install-<em class=
         "replaceable"><code>&lt;init-script&gt;</code></em></strong></span>
-        command. This command installs the init script to its proper location
-        (along with any auxiliary configuration scripts) and also creates the
-        appropriate symlinks to start and stop the service at the appropriate
-        run-level.
+        命令。此命令会将 init 脚本安装到正确的位置（以及任何辅助配置脚本），并创建适当的符号链接，以便在适当的运行级别启动和停止服务。
       </p>
       <div class="admon note">
         <img alt="[Note]" src="../images/note.png" />
@@ -93,9 +81,7 @@
           Note
         </h3>
         <p>
-          You should review each bootscript before installation to ascertain
-          that it satisfies your need. Also verify that the start and stop
-          symlinks it creates match your preferences.
+          您应在安装每个启动脚本之前仔细检查，以确认它满足您的需求。同时验证它创建的启动和停止符号链接是否符合您的偏好。
         </p>
       </div>
       <div class="admon note">
@@ -104,36 +90,33 @@
           Note
         </h3>
         <p>
-          From time to time the bootscripts are updated to accommodate new
-          packages or to make minor corrections. All versions of the
-          bootscripts are located at <a class="ulink" href=
-          "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/">https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/</a>.
+          启动脚本会不时更新，以适应新的软件包或进行小的修正。所有版本的启动脚本都位于 <a class="ulink" href=
+          "https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/">https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/</a>。
         </p>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="patches.html" title=
-          "Optional Patches">Prev</a>
+          <a accesskey="p" href="patches.html" title="可选补丁">Prev</a>
           <p>
-            Optional Patches
+            可选补丁
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Next</a>
+          "关于 Libtool 存档（.la）文件">Next</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
