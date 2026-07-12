@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本
+        "phrase">（systemd</span> 版） - 版本 g57e8800
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -40,7 +40,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
@@ -139,8 +139,8 @@
         <p class="optional">
           <a class="xref" href="doxygen.html" title=
           "Doxygen-1.17.0">Doxygen-1.17.0</a>, <a class="xref" href=
-          "git.html" title="Git-2.54.0">git-2.54.0</a>, <a class="xref" href=
-          "graphviz.html" title="Graphviz-15.0.0">Graphviz-15.0.0</a>,
+          "git.html" title="Git-2.55.0">git-2.55.0</a>, <a class="xref" href=
+          "graphviz.html" title="Graphviz-15.1.0">Graphviz-15.1.0</a>,
           <a class="xref" href="libunwind.html" title=
           "libunwind-1.8.3">libunwind-1.8.3</a>, <a class="xref" href=
           "libxml2.html" title="libxml2-2.15.3">libxml2-2.15.3</a>, <a class=
@@ -153,7 +153,7 @@
           "rsync-3.4.4">rsync-3.4.4</a> (for tests), <a class="xref" href=
           "python-modules.html#sphinx" title="Sphinx-9.1.0">sphinx-9.1.0</a>,
           <span class="phrase"><a class="xref" href="systemd.html" title=
-          "Systemd-260.2">Systemd-260.2</a> (rebuilt with PAM, for
+          "Systemd-261.1">Systemd-261.1</a> (rebuilt with PAM, for
           tests),</span> <a class="xref" href="../pst/texlive.html" title=
           "texlive-20250308-source">texlive-20250308</a> (or <a class="xref"
           href="../pst/tl-installer.html" title=
@@ -218,7 +218,7 @@ ninja</kbd></pre>
           a large amount of disk space, and the core dump process can
           significantly slow down the testing. To test the results with core
           dump disabled, <span class="phrase">ensure <a class="xref" href=
-          "systemd.html" title="Systemd-260.2">Systemd-260.2</a> and
+          "systemd.html" title="Systemd-261.1">Systemd-261.1</a> and
           <a class="xref" href="../postlfs/shadow.html" title=
           "Shadow-4.19.4">Shadow-4.19.4</a> have been rebuilt with <a class=
           "xref" href="../postlfs/linux-pam.html" title=
@@ -246,10 +246,9 @@ systemd-run --user --pty -d -G -p LimitCORE=0 ninja check-all</kbd></pre>
           "command"><strong>systemd-run</strong></span> command,</span> read
           <a class="xref" href=
           "../introduction/notes-on-building.html#build-in-cgroup" title=
-          "Use Linux Control Group to Limit the Resource Usage">the section
-          called “Use Linux Control Group to Limit the Resource Usage”</a>
-          for details) to limit the number of logical cores for running the
-          tests. Four tests named <code class=
+          "使用 Linux cgroup 限制资源使用">the section called “使用 Linux cgroup
+          限制资源使用”</a> for details) to limit the number of logical cores for
+          running the tests. Four tests named <code class=
           "filename">Linux/pthread_join.cpp</code> are known to fail. One
           test named <code class="filename">Linux/clone_setns.cpp</code> will
           fail if <code class="option">CONFIG_USER_NS</code> is not enabled
@@ -747,7 +746,7 @@ done</kbd></pre>
                   <p>
                     runs clang-format on git generated patches (requires
                     <a class="xref" href="git.html" title=
-                    "Git-2.54.0">git-2.54.0</a>)
+                    "Git-2.55.0">git-2.55.0</a>)
                   </p>
                 </td>
               </tr>
@@ -1862,7 +1861,7 @@ done</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>

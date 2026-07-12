@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Mutt-2.4.0
+      Mutt-2.4.1
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本
+        "phrase">（systemd</span> 版） - 版本 g57e8800
       </h4>
       <h3>
         Chapter&nbsp;19.&nbsp;Mail/News Clients
@@ -41,12 +41,12 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="mutt" name="mutt"></a>Mutt-2.4.0
+      <a id="mutt" name="mutt"></a>Mutt-2.4.1
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -77,12 +77,12 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "http://ftp.mutt.org/pub/mutt/mutt-2.4.0.tar.gz">http://ftp.mutt.org/pub/mutt/mutt-2.4.0.tar.gz</a>
+                "http://ftp.mutt.org/pub/mutt/mutt-2.4.1.tar.gz">http://ftp.mutt.org/pub/mutt/mutt-2.4.1.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: e1fad4af4870175df2ac9e60b58b3791
+                Download MD5 sum: 5013f92c0b45edcac344eaeec68b0e6c
               </p>
             </li>
             <li class="listitem">
@@ -98,20 +98,6 @@
             <li class="listitem">
               <p>
                 Estimated build time: 0.2 SBU
-              </p>
-            </li>
-          </ul>
-        </div>
-        <h3>
-          Additional Downloads
-        </h3>
-        <div class="itemizedlist">
-          <ul class="compact">
-            <li class="listitem">
-              <p>
-                Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.4.0-openssl4-fix-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/mutt-2.4.0-openssl4-fix-1.patch</a>
               </p>
             </li>
           </ul>
@@ -140,10 +126,10 @@
           title="DocBook-utils-0.6.14">DocBook-utils-0.6.14</a>, <a class=
           "xref" href="../general/gdb.html" title="GDB-17.2">GDB-17.2</a>,
           <a class="xref" href="../postlfs/gnupg.html" title=
-          "GnuPG-2.5.20">GnuPG-2.5.20</a>, <a class="xref" href=
+          "GnuPG-2.5.21">GnuPG-2.5.21</a>, <a class="xref" href=
           "../postlfs/gnutls.html" title="GnuTLS-3.8.13">GnuTLS-3.8.13</a>,
           <a class="xref" href="../postlfs/gpgme.html" title=
-          "gpgme-2.1.1">gpgme-2.1.1</a>, <a class="xref" href=
+          "gpgme-2.1.2">gpgme-2.1.2</a>, <a class="xref" href=
           "../general/libidn.html" title="libidn-1.44">libidn-1.44</a>,
           <a class="xref" href="../postlfs/mitkrb.html" title=
           "MIT Kerberos V5-1.22.2">MIT Kerberos V5-1.22.2</a>, an <a class=
@@ -209,11 +195,6 @@
           following commands:
         </p>
         <p>
-          First apply a patch to fix building with OpenSSL-4:
-        </p>
-        <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../mutt-2.4.0-openssl4-fix-1.patch</kbd></pre>
-        <p>
           To ensure that a plain text manual is created when using
           <span class="application">lynx</span> or to otherwise use
           <span class="application">links</span> to produce it (instead of
@@ -231,7 +212,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr                           \
             --sysconfdir=/etc                       \
-            --with-docdir=/usr/share/doc/mutt-2.4.0 \
+            --with-docdir=/usr/share/doc/mutt-2.4.1 \
             --with-ssl                              \
             --enable-external-dotlock               \
             --enable-pop                            \
@@ -389,7 +370,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
             the following command:
           </p>
           <pre class="userinput"><kbd class=
-          "command">cat /usr/share/doc/mutt-2.4.0/samples/gpg.rc &gt;&gt; ~/.muttrc</kbd></pre>
+          "command">cat /usr/share/doc/mutt-2.4.1/samples/gpg.rc &gt;&gt; ~/.muttrc</kbd></pre>
         </div>
       </div>
       <div class="content" lang="en" xml:lang="en">
@@ -409,7 +390,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
             </div>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
-              <span class="segbody">/usr/share/doc/mutt-2.4.0</span>
+              <span class="segbody">/usr/share/doc/mutt-2.4.1</span>
             </div>
           </div>
         </div>
@@ -493,7 +474,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
                   <p>
                     prepares a command line for the <a class="xref" href=
                     "../postlfs/gnupg.html" title=
-                    "GnuPG-2.5.20">GnuPG-2.5.20</a> utilities
+                    "GnuPG-2.5.21">GnuPG-2.5.21</a> utilities
                   </p>
                 </td>
               </tr>
@@ -510,7 +491,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
                     is a key ring dumper for <a class="ulink" href=
                     "https://www.openpgp.org/about/">PGP</a>. It is not
                     needed for <a class="xref" href="../postlfs/gnupg.html"
-                    title="GnuPG-2.5.20">GnuPG-2.5.20</a>
+                    title="GnuPG-2.5.21">GnuPG-2.5.21</a>
                   </p>
                 </td>
               </tr>
@@ -554,7 +535,7 @@ chmod -v 2755 /usr/bin/mutt_dotlock</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>

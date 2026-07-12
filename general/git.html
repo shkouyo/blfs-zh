@@ -5,18 +5,18 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Git-2.54.0
+      Git-2.55.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本
+        "phrase">（systemd</span> 版） - 版本 g57e8800
       </h4>
       <h3>
         Chapter&nbsp;13.&nbsp;Programming
@@ -41,12 +41,12 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="git" name="git"></a>Git-2.54.0
+      <a id="git" name="git"></a>Git-2.55.0
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
@@ -63,7 +63,7 @@
           Branching and merging are fast and easy to do. <span class=
           "application">Git</span> is used for version control of files, much
           like tools such as <a class="xref" href="mercurial.html" title=
-          "Mercurial-7.2.2">mercurial-7.2.2</a>, <span class=
+          "Mercurial-7.2.3">mercurial-7.2.3</a>, <span class=
           "application">Bazaar</span>, <a class="xref" href="subversion.html"
           title="Subversion-1.14.5">Subversion-1.14.5</a>, <a class="ulink"
           href="https://www.nongnu.org/cvs/">CVS</a>, <span class=
@@ -89,30 +89,30 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://www.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz">
-                https://www.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz</a>
+                "https://www.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz">
+                https://www.kernel.org/pub/software/scm/git/git-2.55.0.tar.xz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: eb1137f556bd67cb4cea974275e51297
+                Download MD5 sum: 758c02a1b621cc0868ee0a0d99573e6b
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download size: 7.7 MB
+                Download size: 7.8 MB
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated disk space required: 379 MB (with downloaded
-                documentation; add 22 MB for building docs)
+                Estimated disk space required: 403 MB (with tests and
+                downloaded documentation; add 22 MB for building docs)
               </p>
             </li>
             <li class="listitem">
               <p>
-                Estimated build time: 0.4 SBU (add 2.2 SBU (disk speed
-                dependent) for tests and 1.0 SBU for building docs (all with
+                Estimated build time: 0.4 SBU (add 2.0 SBU for tests (disk
+                speed dependent) and 1.0 SBU for building docs (all with
                 parallelism=4)
               </p>
             </li>
@@ -126,8 +126,8 @@
             <li class="listitem">
               <p>
                 <a class="ulink" href=
-                "https://www.kernel.org/pub/software/scm/git/git-manpages-2.54.0.tar.xz">
-                https://www.kernel.org/pub/software/scm/git/git-manpages-2.54.0.tar.xz</a>
+                "https://www.kernel.org/pub/software/scm/git/git-manpages-2.55.0.tar.xz">
+                https://www.kernel.org/pub/software/scm/git/git-manpages-2.55.0.tar.xz</a>
                 (not needed if you've installed <a class="xref" href=
                 "python-modules.html#asciidoc" title=
                 "Asciidoc-10.2.1">asciidoc-10.2.1</a>, <a class="xref" href=
@@ -138,8 +138,8 @@
             <li class="listitem">
               <p>
                 <a class="ulink" href=
-                "https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.54.0.tar.xz">
-                https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.54.0.tar.xz</a>
+                "https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.55.0.tar.xz">
+                https://www.kernel.org/pub/software/scm/git/git-htmldocs-2.55.0.tar.xz</a>
                 and other docs (not needed if you've installed <a class=
                 "xref" href="python-modules.html#asciidoc" title=
                 "Asciidoc-10.2.1">asciidoc-10.2.1</a> and want to rebuild the
@@ -157,7 +157,9 @@
         <p class="recommended">
           <a class="xref" href="../basicnet/curl.html" title=
           "cURL-8.21.0">cURL-8.21.0</a> (needed to use <span class=
-          "application">Git</span> over http, https, ftp or ftps)
+          "application">Git</span> over http, https, ftp or ftps) and
+          <a class="xref" href="rust.html" title=
+          "Rustc-1.96.0">rustc-1.96.0</a>
         </p>
         <h4>
           Optional
@@ -168,7 +170,7 @@
           href="fcron.html" title="Fcron-3.4.1">Fcron-3.4.1</a> (runtime, for
           scheduling <span class="command"><strong>git
           maintenance</strong></span> jobs), <a class="xref" href=
-          "../postlfs/gnupg.html" title="GnuPG-2.5.20">GnuPG-2.5.20</a>
+          "../postlfs/gnupg.html" title="GnuPG-2.5.21">GnuPG-2.5.21</a>
           (runtime, may be used to sign <span class="application">Git</span>
           commits or tags, or verify the signatures of them), <a class="xref"
           href="../postlfs/openssh.html" title=
@@ -190,7 +192,7 @@
           <span class="command"><strong>git send-email</strong></span> to
           connect to a SMTP server with SSL encryption)<span class="phrase">,
           and <a class="xref" href="systemd.html" title=
-          "Systemd-260.2">Systemd-260.2</a> (runtime, rebuilt with <a class=
+          "Systemd-261.1">Systemd-261.1</a> (runtime, rebuilt with <a class=
           "xref" href="../postlfs/linux-pam.html" title=
           "Linux-PAM-1.7.2">Linux-PAM-1.7.2</a>, for scheduling <span class=
           "command"><strong>git maintenance</strong></span> jobs)</span>
@@ -272,7 +274,7 @@ make</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">make htmldir=/usr/share/doc/git-2.54.0 install-html</kbd></pre>
+        "command">make htmldir=/usr/share/doc/git-2.55.0 install-html</kbd></pre>
         <h3>
           If you downloaded the man pages and/or html docs
         </h3>
@@ -281,19 +283,19 @@ make</kbd></pre>
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">tar -xf ../git-manpages-2.54.0.tar.xz \
+        "command">tar -xf ../git-manpages-2.55.0.tar.xz \
     -C /usr/share/man --no-same-owner --no-overwrite-dir</kbd></pre>
         <p>
           If you downloaded the html docs untar them as the <code class=
           "systemitem">root</code> user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -vp   /usr/share/doc/git-2.54.0 &amp;&amp;
-tar   -xf   ../git-htmldocs-2.54.0.tar.xz \
-      -C    /usr/share/doc/git-2.54.0 --no-same-owner --no-overwrite-dir &amp;&amp;
+        "command">mkdir -vp   /usr/share/doc/git-2.55.0 &amp;&amp;
+tar   -xf   ../git-htmldocs-2.55.0.tar.xz \
+      -C    /usr/share/doc/git-2.55.0 --no-same-owner --no-overwrite-dir &amp;&amp;
 
-find        /usr/share/doc/git-2.54.0 -type d -exec chmod 755 {} \; &amp;&amp;
-find        /usr/share/doc/git-2.54.0 -type f -exec chmod 644 {} \;</kbd></pre>
+find        /usr/share/doc/git-2.55.0 -type d -exec chmod 755 {} \; &amp;&amp;
+find        /usr/share/doc/git-2.55.0 -type f -exec chmod 644 {} \;</kbd></pre>
         <h3>
           Reorganize text and html in the html-docs (both methods)
         </h3>
@@ -303,20 +305,20 @@ find        /usr/share/doc/git-2.54.0 -type f -exec chmod 644 {} \;</kbd></pre>
           user:
         </p>
         <pre class="root"><kbd class=
-        "command">mkdir -vp /usr/share/doc/git-2.54.0/man-pages/{html,text}         &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/{git*.adoc,man-pages/text}     &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/{git*.,index.,man-pages/}html &amp;&amp;
+        "command">mkdir -vp /usr/share/doc/git-2.55.0/man-pages/{html,text}         &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/{git*.adoc,man-pages/text}     &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/{git*.,index.,man-pages/}html &amp;&amp;
 
-mkdir -vp /usr/share/doc/git-2.54.0/technical/{html,text}         &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/technical/{*.adoc,text}        &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/technical/{*.,}html           &amp;&amp;
+mkdir -vp /usr/share/doc/git-2.55.0/technical/{html,text}         &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/technical/{*.adoc,text}        &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/technical/{*.,}html           &amp;&amp;
 
-mkdir -vp /usr/share/doc/git-2.54.0/howto/{html,text}             &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/howto/{*.adoc,text}            &amp;&amp;
-mv        /usr/share/doc/git-2.54.0/howto/{*.,}html               &amp;&amp;
+mkdir -vp /usr/share/doc/git-2.55.0/howto/{html,text}             &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/howto/{*.adoc,text}            &amp;&amp;
+mv        /usr/share/doc/git-2.55.0/howto/{*.,}html               &amp;&amp;
 
-sed -i '/^&lt;a href=/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.html &amp;&amp;
-sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.adoc</kbd></pre>
+sed -i '/^&lt;a href=/s|howto/|&amp;html/|' /usr/share/doc/git-2.55.0/howto-index.html &amp;&amp;
+sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.55.0/howto-index.adoc</kbd></pre>
       </div>
       <div class="commands" lang="en" xml:lang="en">
         <h2 class="sect2">
@@ -346,9 +348,15 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.a
           the <code class="option">--perl-regexp</code> option.
         </p>
         <p>
-          <span class="command"><strong>tar -xf ../git-manpages-2.54.0.tar.gz
+          <code class="envar">NO_RUST=1</code>: Pass this environment
+          variable to <span class="command"><strong>make</strong></span> if
+          <a class="xref" href="rust.html" title=
+          "Rustc-1.96.0">rustc-1.96.0</a> is not installed.
+        </p>
+        <p>
+          <span class="command"><strong>tar -xf ../git-manpages-2.55.0.tar.gz
           -C /usr/share/man --no-same-owner</strong></span>: This untars
-          <code class="filename">git-manpages-2.54.0.tar.gz</code>. The
+          <code class="filename">git-manpages-2.55.0.tar.gz</code>. The
           <code class="option">-C</code> option makes tar change directory to
           <code class="filename">/usr/share/man</code> before it starts to
           decompress the docs. The <code class=
@@ -358,7 +366,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.a
           (potentially) be a security risk.
         </p>
         <p>
-          <span class="command"><strong>mv /usr/share/doc/git-2.54.0
+          <span class="command"><strong>mv /usr/share/doc/git-2.55.0
           ...</strong></span>: These commands move some of the files into
           subfolders to make it easier to sort through the docs and find what
           you're looking for.
@@ -403,7 +411,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.a
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/libexec/git-core,
               /usr/lib/perl5/5.42/site_perl/Git, and
-              /usr/share/{doc/git-2.54.0,git-core,git-gui,gitk,gitweb}</span>
+              /usr/share/{doc/git-2.55.0,git-core,git-gui,gitk,gitweb}</span>
             </div>
           </div>
         </div>
@@ -566,7 +574,7 @@ sed -i '/^\* link:/s|howto/|&amp;html/|' /usr/share/doc/git-2.54.0/howto-index.a
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>

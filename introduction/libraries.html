@@ -5,169 +5,120 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Libraries: Static or shared?
+      库：静态还是共享？
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本
+        "phrase">（systemd</span> 版） - 版本 g57e8800
       </h4>
       <h3>
-        Chapter&nbsp;2.&nbsp;Important Information
+        Chapter&nbsp;2.&nbsp;重要信息
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Prev</a>
+          "关于 Libtool 存档（.la）文件">Prev</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="locale-issues.html" title=
-          "Locale Related Issues">Next</a>
+          "区域设置相关问题">Next</a>
           <p>
-            Locale Related Issues
+            区域设置相关问题
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libraries" name="libraries"></a>Libraries: Static or shared?
+      <a id="libraries" name="libraries"></a>库：静态还是共享？
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <div class="package" lang="en" xml:lang="en">
         <h2 class="sect2">
-          Libraries: Static or shared?
+          库：静态还是共享？
         </h2>
         <p>
-          The original libraries were simply an archive of routines from
-          which the required routines were extracted and linked into the
-          executable program. These are described as static libraries, with
-          names of the form <code class="filename">libfoo.a</code> on
-          UNIX-like operating systems. On some old operating systems they are
-          the only type available.
+          最初的库仅仅是例程的归档文件，从中提取所需的例程并链接到可执行程序中。这些被称为静态库，在类 UNIX 操作系统上名称形式为
+          <code class="filename">libfoo.a</code>。在某些旧操作系统上，它们是唯一可用的类型。
         </p>
         <p>
-          On almost all Linux platforms there are also <span class=
-          "quote">“<span class="quote">shared</span>”</span> (or equivalently
-          <span class="quote">“<span class="quote">dynamic</span>”</span>)
-          libraries (with names of the form <code class=
-          "filename">libfoo.so</code>) – one copy of the library is loaded
-          into virtual memory, and shared by all the programs which call any
-          of its functions. This is space efficient.
+          在几乎所有 Linux 平台上，还有“共享”（或等价地称为“动态”）库（名称形式为 <code class=
+          "filename">libfoo.so</code>）——库的一份副本被加载到虚拟内存中，并由所有调用其任何函数的程序共享。这在空间上更高效。
         </p>
         <p>
-          In the past, essential programs such as a shell were often linked
-          statically so that some form of minimal recovery system would exist
-          even if shared libraries, such as <code class=
-          "filename">libc.so</code>, became damaged (e.g. moved to
-          <code class="filename">lost+found</code> after <span class=
-          "command"><strong>fsck</strong></span> following an unclean
-          shutdown). Nowadays, most people use an alternative system install
-          or a USB stick if they have to recover. Journaling filesystems also
-          reduce the likelihood of this sort of problem.
+          在过去，诸如 shell 之类的关键程序通常被静态链接，以便即使共享库（如 <code class=
+          "filename">libc.so</code>）损坏（例如在非正常关机后执行 <span class=
+          "command"><strong>fsck</strong></span> 时被移至 <code class=
+          "filename">lost+found</code>），也能存在某种形式的最小恢复系统。如今，大多数人在需要恢复时会使用备用系统安装盘或
+          U 盘。日志文件系统也降低了此类问题发生的可能性。
         </p>
         <p>
-          Within the book, there are various places where configure switches
-          such as <em class="parameter"><code>--disable-static</code></em>
-          are employed, and other places where the possibility of using
-          system versions of libraries instead of the versions included
-          within another package is discussed. The main reason for this is to
-          simplify updates of libraries.
+          在本书中，多处使用了诸如 <em class=
+          "parameter"><code>--disable-static</code></em>
+          之类的配置开关，也讨论了使用系统版本库而非其他软件包内部所包含版本的可能性。其主要原因是为了简化库的更新。
         </p>
         <p>
-          If a package is linked to a dynamic library, updating to a newer
-          library version is automatic once the newer library is installed
-          and the program is (re)started (provided the library major version
-          is unchanged, e.g. going from <code class=
-          "filename">libfoo.so.2.0</code> to <code class=
-          "filename">libfoo.so.2.1</code>. Going to <code class=
-          "filename">libfoo.so.3</code> will require recompilation –
-          <span class="command"><strong>ldd</strong></span> can be used to
-          find which programs use the old version). If a program is linked to
-          a static library, the program always has to be recompiled. If you
-          know which programs are linked to a particular static library, this
-          is merely an annoyance. But usually you will <span class=
-          "emphasis"><em>not</em></span> know which programs to recompile.
+          如果某个软件包链接到动态库，那么一旦安装了较新的库版本并（重新）启动该程序，更新到较新库版本就是自动的（前提是库的主版本号不变，例如从
+          <code class="filename">libfoo.so.2.0</code> 升级到 <code class=
+          "filename">libfoo.so.2.1</code>。升级到 <code class=
+          "filename">libfoo.so.3</code> 则需要重新编译——可使用 <span class=
+          "command"><strong>ldd</strong></span>
+          找出哪些程序使用了旧版本）。如果程序链接到静态库，则始终必须重新编译该程序。如果您知道哪些程序链接到特定的静态库，这仅仅是个麻烦事。但通常您并
+          <span class="emphasis"><em>不</em></span> 知道需要重新编译哪些程序。
         </p>
         <p>
-          One way to identify when a static library is used, is to deal with
-          it at the end of the installation of every package. Write a script
-          to find all the static libraries in <code class=
-          "filename">/usr/lib</code> or wherever you are installing to, and
-          either move them to another directory so that they are no longer
-          found by the linker, or rename them so that <code class=
-          "filename">libfoo.a</code> becomes e.g. <code class=
-          "filename">libfoo.a.hidden</code>. The static library can then be
-          temporarily restored if it is ever needed, and the package needing
-          it can be identified. This shouldn't be done blindly since many
-          libraries only exist in a static version. For example, some
-          libraries from the <span class="application">glibc</span> and
-          <span class="application">gcc</span> packages should always be
-          present on the system (<code class="filename">libc_nonshared.a,
-          libg.a, libpthread_nonshared.a, libssp_nonshared.a,
-          libsupc++.a</code> as of glibc-2.36 and gcc-12.2).
+          识别何时使用静态库的一种方法，是在每个软件包安装结束时处理它。编写一个脚本，在 <code class=
+          "filename">/usr/lib</code>
+          或您安装到的任何位置查找所有静态库，然后将它们移到另一个目录，使链接器不再能找到它们，或者将它们重命名，例如将
+          <code class="filename">libfoo.a</code> 改为 <code class=
+          "filename">libfoo.a.hidden</code>。这样，如果将来需要，可以临时恢复静态库，并识别出需要它的软件包。但不应盲目执行此操作，因为许多库仅以静态版本存在。例如，<span class="application">glibc</span>
+          和 <span class="application">gcc</span> 软件包中的某些库应始终存在于系统上（截至
+          glibc-2.36 和 gcc-12.2，这些库包括 <code class=
+          "filename">libc_nonshared.a、libg.a、libpthread_nonshared.a、libssp_nonshared.a、libsupc++.a</code>）。
         </p>
         <p>
-          If you use this approach, you may discover that more packages than
-          you were expecting use a static library. That was the case with
-          <span class="application">nettle-2.4</span> in its default
-          static-only configuration: It was required by <span class=
-          "application">GnuTLS-3.0.19</span>, but also linked into package(s)
-          which used <span class="application">GnuTLS</span>, such as
-          <span class="application">glib-networking-2.32.3</span>.
+          如果您使用这种方法，可能会发现比预期更多的软件包使用了静态库。<span class=
+          "application">nettle-2.4</span> 在其默认的仅静态配置中就是这种情况：它被 <span class=
+          "application">GnuTLS-3.0.19</span> 所需，同时也被链接到使用 <span class=
+          "application">GnuTLS</span> 的软件包中，例如 <span class=
+          "application">glib-networking-2.32.3</span>。
         </p>
         <p>
-          Many packages put some of their common functions into a static
-          library which is only used by the programs within the package and,
-          crucially, the library is <span class=
-          "emphasis"><em>not</em></span> installed as a standalone library.
-          These internal libraries are not a problem – if the package has to
-          be rebuilt to fix a bug or vulnerability, nothing else is linked to
-          them.
+          许多软件包将其部分通用函数放入静态库中，该静态库仅由该软件包内的程序使用，并且关键在于，该库 <span class=
+          "emphasis"><em>不会</em></span>
+          作为独立库安装。这些内部库不是问题——如果为了修复错误或漏洞而需要重新构建该软件包，没有其他东西会链接到它们。
         </p>
         <p>
-          When BLFS mentions system libraries, it means shared versions of
-          libraries. Some packages such as <a class="xref" href=
+          当 BLFS 提及系统库时，指的是库的共享版本。某些软件包（例如 <a class="xref" href=
           "../xsoft/firefox.html" title=
-          "Firefox-140.12.0esr">Firefox-140.12.0</a> and <a class="xref"
-          href="../pst/gs.html" title=
-          "ghostscript-10.07.1">ghostscript-10.07.1</a> bundle many other
-          libraries in their build tree. The version they ship is often older
-          than the version used in the system, so it may contain bugs –
-          sometimes developers go to the trouble of fixing bugs in their
-          included libraries, other times they do not.
+          "Firefox-140.12.0esr">Firefox-140.12.0</a> 和 <a class="xref" href=
+          "../pst/gs.html" title=
+          "ghostscript-10.07.1">ghostscript-10.07.1</a>）在其构建树中捆绑了许多其他库。它们所带的版本通常比系统中使用的版本旧，因此可能包含错误——有时开发人员会费心修复其包含库中的错误，有时则不会。
         </p>
         <p>
-          Sometimes, deciding to use system libraries is an easy decision.
-          Other times it may require you to alter the system version (e.g.
-          for <a class="xref" href="../general/libpng.html" title=
-          "libpng-1.6.58">libpng-1.6.58</a> if used for <a class="xref" href=
+          有时，决定使用系统库很容易。其他时候，可能需要您更改系统版本（例如，用于 <a class="xref" href=
           "../xsoft/firefox.html" title=
-          "Firefox-140.12.0esr">Firefox-140.12.0</a>). Occasionally, a
-          package ships an old library and can no longer link to the current
-          version, but can link to an older version. In this case, BLFS will
-          usually just use the shipped version. Sometimes the included
-          library is no longer developed separately, or its upstream is now
-          the same as the package's upstream and you have no other packages
-          which will use it. In those cases, you'll be lead to use the
-          included library even if you usually prefer to use system
-          libraries.
+          "Firefox-140.12.0esr">Firefox-140.12.0</a> 的 <a class="xref" href=
+          "../general/libpng.html" title=
+          "libpng-1.6.58">libpng-1.6.58</a>）。偶尔，某个软件包会附带一个旧库，并且无法再链接到当前版本，但可以链接到较旧的版本。在这种情况下，BLFS
+          通常只会使用附带的版本。有时包含的库不再单独开发，或者其上游现在与软件包的上游相同，并且您没有其他软件包会使用它。在这些情况下，即使您通常更倾向于使用系统库，也会被引导使用包含的库。
         </p>
       </div>
     </div>
@@ -175,25 +126,25 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Prev</a>
+          "关于 Libtool 存档（.la）文件">Prev</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="locale-issues.html" title=
-          "Locale Related Issues">Next</a>
+          "区域设置相关问题">Next</a>
           <p>
-            Locale Related Issues
+            区域设置相关问题
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>

@@ -5,81 +5,73 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      BLFS Systemd Units
+      BLFS Systemd 单元
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g57e8800">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本
+        "phrase">（systemd</span> 版） - 版本 g57e8800
       </h4>
       <h3>
-        Chapter&nbsp;2.&nbsp;Important Information
+        Chapter&nbsp;2.&nbsp;重要信息
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="patches.html" title=
-          "Optional Patches">Prev</a>
+          <a accesskey="p" href="patches.html" title="可选补丁">Prev</a>
           <p>
-            Optional Patches
+            可选补丁
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Next</a>
+          "关于 Libtool 存档（.la）文件">Next</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="systemd-units" name="systemd-units"></a>BLFS Systemd Units
+      <a id="systemd-units" name="systemd-units"></a>BLFS Systemd 单元
     </h1>
     <div class="sect1" lang="en" xml:lang="en">
       <p>
-        The BLFS Systemd Units package contains the systemd unit files that
-        are used throughout the book.
+        BLFS Systemd 单元软件包包含本书中使用的 systemd 单元文件。
       </p>
       <div class="itemizedlist">
         <p class="title">
-          <strong>Package Information</strong>
+          <strong>软件包信息</strong>
         </p>
         <ul class="compact">
           <li class="listitem">
             <p>
-              Download: <a class="ulink" href=
-              "https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz">
-              https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz</a>
+              下载：<a class="ulink" href=
+              "https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz">https://www.linuxfromscratch.org/blfs/downloads/systemd/blfs-systemd-units-20251204.tar.xz</a>
             </p>
           </li>
         </ul>
       </div>
       <p>
-        The BLFS Systemd Units package will be used throughout the BLFS book
-        for systemd unit files. Each systemd unit has a separate install
-        target. It is recommended that you keep the package source directory
-        around until completion of your BLFS system. When a systemd unit is
-        requested from BLFS Systemd Units, simply change to the directory,
-        and as the <code class="systemitem">root</code> user, execute the
-        given <span class="command"><strong>make install-<em class=
+        BLFS Systemd 单元软件包将在整个 BLFS 书中用于提供 systemd 单元文件。每个 systemd
+        单元都有独立的安装目标。建议您保留该软件包源代码目录，直到 BLFS 系统构建完成。当 BLFS Systemd 单元中请求某个
+        systemd 单元时，只需切换到该目录，并以 <code class="systemitem">root</code>
+        用户身份执行给定的 <span class="command"><strong>make install-<em class=
         "replaceable"><code>&lt;systemd-unit&gt;</code></em></strong></span>
-        command. This command installs the systemd unit to its proper
-        location (along with any auxiliary configuration scripts) and also
-        enables it by default.
+        命令。此命令会将 systemd 单元安装到正确的位置（以及任何辅助配置脚本），并默认启用它。
       </p>
       <div class="admon note">
         <img alt="[Note]" src="../images/note.png" />
@@ -87,34 +79,32 @@
           Note
         </h3>
         <p>
-          It is advisable to peruse each systemd unit before installation to
-          determine whether the installed files meet your needs.
+          建议在安装每个 systemd 单元之前仔细阅读它，以确定安装的文件是否满足您的需求。
         </p>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="patches.html" title=
-          "Optional Patches">Prev</a>
+          <a accesskey="p" href="patches.html" title="可选补丁">Prev</a>
           <p>
-            Optional Patches
+            可选补丁
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="la-files.html" title=
-          "About Libtool Archive (.la) files">Next</a>
+          "关于 Libtool 存档（.la）文件">Next</a>
           <p>
-            About Libtool Archive (.la) files
+            关于 Libtool 存档（.la）文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;Important Information">Up</a>
+          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
         </li>
       </ul>
     </div>
