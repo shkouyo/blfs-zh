@@ -5,13 +5,24 @@ on:
       - main
   workflow_dispatch:
 concurrency:
-  group: build-html
+  group: build-html-${{ matrix.branch }}
   cancel-in-progress: true
+
 jobs:
   build:
     runs-on: codeberg-medium
     permissions:
       contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - rev: sysv
+            branch: book-sysv
+            subdir: blfs-book
+          - rev: systemd
+            branch: book-systemd
+            subdir: blfs-systemd
     steps:
       - name: checkout
         uses: actions/checkout@v7
@@ -19,34 +30,19 @@ jobs:
         run: |
           apt-get update
           apt-get install -y git make libxml2-utils xsltproc docbook-xsl docbook-xml tidy
-      - name: build sysv book
+      - name: build book
         run: |
-          mkdir -p /tmp/blfs-output/blfs-book
-          REV=sysv BASEDIR=/tmp/blfs-output/blfs-book make
-      - name: build systemd book
-        run: |
-          mkdir -p /tmp/blfs-output/blfs-systemd
-          REV=systemd BASEDIR=/tmp/blfs-output/blfs-systemd make
-      - name: deploy sysv book
+          mkdir -p /tmp/blfs-output/${{ matrix.subdir }}
+          REV=${{ matrix.rev }} BASEDIR=/tmp/blfs-output/${{ matrix.subdir }} make
+      - name: deploy book
         run: |
           git config user.name "Codeberg Actions"
           git config user.email "actions@codeberg.org"
-          git fetch origin book-sysv:book-sysv || true
-          git checkout book-sysv 2>/dev/null || git checkout --orphan book-sysv
+          git fetch origin ${{ matrix.branch }}:${{ matrix.branch }} || true
+          git checkout ${{ matrix.branch }} 2>/dev/null || git checkout --orphan ${{ matrix.branch }}
           git rm -rf .
-          cp -r /tmp/blfs-output/blfs-book/. .
+          cp -r /tmp/blfs-output/${{ matrix.subdir }}/. .
           git add -A
           git commit -m "chore: build $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
-          git push origin book-sysv
-      - name: deploy systemd book
-        run: |
-          git config user.name "Codeberg Actions"
-          git config user.email "actions@codeberg.org"
-          git fetch origin book-systemd:book-systemd || true
-          git checkout book-systemd 2>/dev/null || git checkout --orphan book-systemd
-          git rm -rf .
-          cp -r /tmp/blfs-output/blfs-systemd/. .
-          git add -A
-          git commit -m "chore: build $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
-          git push origin book-systemd
+          git push origin ${{ matrix.branch }}
 
