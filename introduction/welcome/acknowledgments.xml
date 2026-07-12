@@ -9,65 +9,48 @@
   <?dbhtml filename="acknowledgments.html"?>
 
 
-  <title>Acknowledgments</title>
+  <title>致谢</title>
 
-  <para>We would like to thank the following people and organizations for their
-  contributions toward the BLFS and LFS projects:</para>
+  <para>我们谨感谢以下个人和组织对 BLFS 和 LFS 项目的贡献：</para>
 
   <itemizedlist>
     <listitem>
-      <para>All those people listed on the Credits page for submitting patches,
-      instructions and corrections to the book.  The former editor would
-      especially like to thank Bruce, Larry and Billy for their enormous inputs
-      to the project.</para>
+      <para>感谢署名页面上列出的所有为本书提交补丁、说明和更正的人。前编辑特别感谢 Bruce、Larry 和 Billy 对项目的巨大投入。</para>
     </listitem>
     <listitem>
-      <para>Jeff Bauman (former co-editor of the book) for his assistance
-      with getting BLFS off the ground.</para>
+      <para>感谢 Jeff Bauman（本书前联合编辑）在 BLFS 起步阶段提供的协助。</para>
     </listitem>
     <listitem>
       <para><ulink url="mailto:gerard@&lfs-domainname;">Gerard Beekmans</ulink>
-      &lt;gerard &lt;at&gt; &lfs-domainname;&gt; for starting and writing the
-      vast majority of the LFS project.</para>
+      &lt;gerard &lt;at&gt; &lfs-domainname;&gt;，感谢他发起并撰写了 LFS 项目的大部分内容。</para>
     </listitem>
     <listitem>
-      <para>Robert Briggs for donating the &lfs-domainname; and
-      linuxfromscratch.com domain names.</para>
+      <para>感谢 Robert Briggs 捐赠了 &lfs-domainname; 和 linuxfromscratch.com 域名。</para>
     </listitem>
     <listitem>
-      <para>DREAMWVR.COM for their sponsorship by donating various resources to
-      the LFS and related sub projects.</para>
+      <para>感谢 DREAMWVR.COM 的赞助，为 LFS 及相关子项目提供各种资源。</para>
     </listitem>
     <listitem>
-      <para>Bruce Dubbs for donating the anduin package server and his
-      substantial contribution to the purchase of the new quantum server.</para>
+      <para>感谢 Bruce Dubbs 捐赠了 anduin 软件包服务器，并为购买新的 quantum 服务器做出了重大贡献。</para>
     </listitem>
     <listitem>
       <para><ulink url="mailto:garrett@linux.com">Garrett LeSage</ulink>
-      &lt;garrett &lt;at&gt; linux.com&gt; for creating the LFS banner.</para>
+      &lt;garrett &lt;at&gt; linux.com&gt;，感谢他创作了 LFS 横幅。</para>
     </listitem>
     <listitem>
-      <para><ulink url="mailto:bkenoah@oswd.org">Frank Skettino</ulink>
-      &lt;bkenoah &lt;at&gt; oswd.org&gt; at <ulink
-      url="http://www.oswd.org">OSWD</ulink> for coming up with the initial
-      design of the LFS and BLFS websites.</para>
+      <para>感谢 <ulink url="http://www.oswd.org">OSWD</ulink> 的 <ulink url="mailto:bkenoah@oswd.org">Frank Skettino</ulink>
+      &lt;bkenoah &lt;at&gt; oswd.org&gt;，感谢他提出了 LFS 和 BLFS 网站的初始设计。</para>
     </listitem>
     <listitem>
       <para><ulink url="mailto:strider@linux.com">Mark Stone</ulink>
-      &lt;mstone &lt;at&gt; linux.com&gt; for donating the original
-      &lfs-domainname; servers.</para>
+      &lt;mstone &lt;at&gt; linux.com&gt;，感谢他捐赠了最初的 &lfs-domainname; 服务器。</para>
     </listitem>
     <listitem>
       <para><ulink url="mailto:highos@&lfs-domainname;">Jesse
-      Tie-Ten-Quee</ulink> &lt;higho &lt;at&gt; &lfs-domainname;&gt; for
-      answering many questions on IRC, having a great deal of patience and for
-      not killing the former editor for the joke in the original BLFS
-      announcement!</para>
+      Tie-Ten-Quee</ulink> &lt;higho &lt;at&gt; &lfs-domainname;&gt;，感谢他在 IRC 上回答了许多问题，表现出极大的耐心，并且没有因为最初 BLFS 公告中的玩笑而杀掉前编辑！</para>
     </listitem>
     <listitem>
-      <para>Countless other people on the various LFS and BLFS mailing lists
-      who are making this book possible by giving their suggestions, testing
-      the book and submitting bug reports.</para>
+      <para>感谢无数其他 LFS 和 BLFS 邮件列表的参与者，他们通过提出建议、测试本书和提交错误报告，使本书得以面世。</para>
     </listitem>
   </itemizedlist>
 

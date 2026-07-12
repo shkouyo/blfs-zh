@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<sect1 id="credits" xreflabel="致谢">
+<sect1 id="credits" xreflabel="署名">
   <?dbhtml filename="credits.html"?>
 
 
-  <title>致谢</title>
+  <title>署名</title>
 
   <para>许多人直接或间接地为 BLFS 做出了贡献。此页面列出了所有我们能想到的人。我们可能遗漏了一些人，如果您觉得有遗漏，请给我们留言。非常感谢所有 LFS 社区对此项目的帮助。</para>
 
