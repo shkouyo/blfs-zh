@@ -9,29 +9,22 @@
   <?dbhtml filename="patches.html"?>
 
 
-  <title>Optional Patches</title>
+  <title>可选补丁</title>
 
-  <para>As you follow the various sections in the book, you will observe that
-  the book occasionally includes patches that are required for a successful and
-  secure installation of the packages. The general policy of the book is to
-  include patches that fall in one of the following criteria:</para>
+  <para>当您按照本书各节进行操作时，会注意到本书偶尔会包含一些补丁，这些补丁是成功且安全地安装软件包所必需的。本书的一般策略是包含符合以下任一标准的补丁：</para>
 
   <itemizedlist>
     <listitem>
-      <para>Fixes a compilation problem.</para>
+      <para>修复编译问题。</para>
     </listitem>
     <listitem>
-      <para>Fixes a security problem.</para>
+      <para>修复安全问题。</para>
     </listitem>
     <listitem>
-      <para>Fixes a broken functionality.</para>
+      <para>修复功能故障。</para>
     </listitem>
   </itemizedlist>
 
-  <para>In short, the book only includes patches that are either required or
-  recommended. There is a
-  <ulink url="https://www.&lfs-domainname;/patches">Patches subproject</ulink>
-  which hosts various patches (including the patches referenced in the books)
-  to enable you to configure your LFS the way you like it.</para>
+  <para>简而言之，本书只包含必需或推荐的补丁。有一个 <ulink url="https://www.&lfs-domainname;/patches">补丁子项目</ulink>，它托管各种补丁（包括本书中引用的补丁），以便您按自己的喜好配置 LFS。</para>
 
 </sect1>

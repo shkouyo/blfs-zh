@@ -9,42 +9,26 @@
   <?dbhtml filename="libraries.html"?>
 
 
-  <title>Libraries: Static or shared?</title>
+  <title>库：静态还是共享？</title>
 
   <!-- section g : 'Others' in longindex.html -->
   <indexterm zone="libraries">
-    <primary sortas="g-libraries">libraries: static or shared</primary>
+    <primary sortas="g-libraries">库：静态或共享</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Libraries: Static or shared?</title>
+    <title>库：静态还是共享？</title>
 
     <para>
-      The original libraries were simply an archive of routines from which
-      the required routines were extracted and linked into the executable
-      program. These are described as static libraries, with names of the form
-      <filename>libfoo.a</filename> on UNIX-like operating systems.
-      On some old operating systems they are the only type available.
+      最初的库仅仅是例程的归档文件，从中提取所需的例程并链接到可执行程序中。这些被称为静态库，在类 UNIX 操作系统上名称形式为 <filename>libfoo.a</filename>。在某些旧操作系统上，它们是唯一可用的类型。
     </para>
 
     <para>
-      On almost all Linux platforms there are also <quote>shared</quote>
-      (or equivalently <quote>dynamic</quote>)
-      libraries (with names of the form <filename>libfoo.so</filename>) &ndash;
-      one copy of the library is loaded into virtual memory, and shared by
-      all the programs which call any of its functions. This is space
-      efficient.
+      在几乎所有 Linux 平台上，还有“共享”（或等价地称为“动态”）库（名称形式为 <filename>libfoo.so</filename>）——库的一份副本被加载到虚拟内存中，并由所有调用其任何函数的程序共享。这在空间上更高效。
     </para>
 
     <para>
-      In the past, essential programs such as a shell were often linked
-      statically so that some form of minimal recovery system would exist even
-      if shared libraries, such as <filename>libc.so</filename>, became
-      damaged (e.g. moved to <filename class="directory">lost+found</filename>
-      after <command>fsck</command> following an unclean shutdown). Nowadays,
-      most people use an alternative system install or a USB stick if they
-      have to recover. Journaling filesystems also reduce the likelihood of
-      this sort of problem.
+      在过去，诸如 shell 之类的关键程序通常被静态链接，以便即使共享库（如 <filename>libc.so</filename>）损坏（例如在非正常关机后执行 <command>fsck</command> 时被移至 <filename class="directory">lost+found</filename>），也能存在某种形式的最小恢复系统。如今，大多数人在需要恢复时会使用备用系统安装盘或 U 盘。日志文件系统也降低了此类问题发生的可能性。
     </para>
 
 <!-- really?
@@ -54,26 +38,11 @@
     </para>
 -->
     <para>
-      Within the book, there are various places where configure switches
-      such as <parameter>--disable-static</parameter> are employed, and
-      other places where the possibility of using system versions of
-      libraries instead of the versions included within another package is
-      discussed. The main reason for this is to simplify updates of libraries.
+      在本书中，多处使用了诸如 <parameter>--disable-static</parameter> 之类的配置开关，也讨论了使用系统版本库而非其他软件包内部所包含版本的可能性。其主要原因是为了简化库的更新。
     </para>
-
+dd
     <para>
-      If a package is linked to a dynamic library, updating to a newer
-      library version is automatic once the newer library is installed and the
-      program is (re)started (provided the library major version is unchanged,
-      e.g. going from <filename>libfoo.so.2.0</filename> to
-      <filename>libfoo.so.2.1</filename>. Going to
-      <filename>libfoo.so.3</filename> will require recompilation &ndash;
-      <command>ldd</command> can be used to find which programs use the old
-      version). If a program is linked to a static
-      library, the program always has to be recompiled. If you know which
-      programs are linked to a particular static library, this is merely an
-      annoyance. But usually you will <emphasis>not</emphasis> know which
-      programs to recompile.
+      如果某个软件包链接到动态库，那么一旦安装了较新的库版本并（重新）启动该程序，更新到较新库版本就是自动的（前提是库的主版本号不变，例如从 <filename>libfoo.so.2.0</filename> 升级到 <filename>libfoo.so.2.1</filename>。升级到 <filename>libfoo.so.3</filename> 则需要重新编译——可使用 <command>ldd</command> 找出哪些程序使用了旧版本）。如果程序链接到静态库，则始终必须重新编译该程序。如果您知道哪些程序链接到特定的静态库，这仅仅是个麻烦事。但通常您并 <emphasis>不</emphasis> 知道需要重新编译哪些程序。
     </para>
 <!-- obsolete with /usr merge
     <para>Most libraries are shared, but if you do something unusual, such as
@@ -84,57 +53,17 @@
     will be silently linked into the programs which need it.</para>
 -->
     <para>
-      One way to identify when a static library is used, is to deal with
-      it at the end of the installation of every package.  Write a script
-      to find all the static libraries in <filename
-        class="directory">/usr/lib</filename> or wherever you are installing
-      to, and either move them to another directory so that they are no
-      longer found by the linker, or rename them so that
-      <filename>libfoo.a</filename> becomes
-      e.g. <filename>libfoo.a.hidden</filename>. The static library can then
-      be temporarily restored if it is ever needed, and the package needing
-      it can be identified. This shouldn't be done blindly since many
-      libraries only exist in a static version. For example, some libraries
-      from the <application>glibc</application> and
-      <application>gcc</application> packages should always be
-      present on the system (<filename>libc_nonshared.a, libg.a,
-        libpthread_nonshared.a, libssp_nonshared.a, libsupc++.a</filename>
-      as of glibc-2.36 and gcc-12.2).
+      识别何时使用静态库的一种方法，是在每个软件包安装结束时处理它。编写一个脚本，在 <filename class="directory">/usr/lib</filename> 或您安装到的任何位置查找所有静态库，然后将它们移到另一个目录，使链接器不再能找到它们，或者将它们重命名，例如将 <filename>libfoo.a</filename> 改为 <filename>libfoo.a.hidden</filename>。这样，如果将来需要，可以临时恢复静态库，并识别出需要它的软件包。但不应盲目执行此操作，因为许多库仅以静态版本存在。例如，<application>glibc</application> 和 <application>gcc</application> 软件包中的某些库应始终存在于系统上（截至 glibc-2.36 和 gcc-12.2，这些库包括 <filename>libc_nonshared.a、libg.a、libpthread_nonshared.a、libssp_nonshared.a、libsupc++.a</filename>）。
     </para>
 
 <!-- versions hardcoded in this para, it's a comment on those versions  -->
-    <para>If you use this approach, you may discover that more packages than
-    you were expecting use a static library. That was the case with
-    <application>nettle-2.4</application> in its default static-only
-    configuration: It was required by <application>GnuTLS-3.0.19</application>,
-    but also linked into package(s) which used
-    <application>GnuTLS</application>, such as
-    <application>glib-networking-2.32.3</application>.</para>
+    <para>如果您使用这种方法，可能会发现比预期更多的软件包使用了静态库。<application>nettle-2.4</application> 在其默认的仅静态配置中就是这种情况：它被 <application>GnuTLS-3.0.19</application> 所需，同时也被链接到使用 <application>GnuTLS</application> 的软件包中，例如 <application>glib-networking-2.32.3</application>。</para>
 
-    <para>Many packages put some of their common functions into a static
-    library which is only used by the programs within the package and,
-    crucially, the library is <emphasis>not</emphasis> installed as a
-    standalone library. These internal libraries are not a problem &ndash; if
-    the package has to be rebuilt to fix a bug or vulnerability, nothing else
-    is linked to them.</para>
+    <para>许多软件包将其部分通用函数放入静态库中，该静态库仅由该软件包内的程序使用，并且关键在于，该库 <emphasis>不会</emphasis> 作为独立库安装。这些内部库不是问题——如果为了修复错误或漏洞而需要重新构建该软件包，没有其他东西会链接到它们。</para>
 
-    <para>When BLFS mentions system libraries, it means shared versions of
-    libraries. Some packages such as <xref linkend="firefox"/> and
-    <xref linkend="gs"/> bundle many other libraries in their build tree.
-    The version they ship is often older than the version used in the system,
-    so it may contain bugs &ndash; sometimes developers go to the trouble of
-    fixing bugs in their included libraries, other times they do not.</para>
+    <para>当 BLFS 提及系统库时，指的是库的共享版本。某些软件包（例如 <xref linkend="firefox"/> 和 <xref linkend="gs"/>）在其构建树中捆绑了许多其他库。它们所带的版本通常比系统中使用的版本旧，因此可能包含错误——有时开发人员会费心修复其包含库中的错误，有时则不会。</para>
 
-    <para>Sometimes, deciding to use system libraries is an easy decision.
-    Other times it may require you to alter the system version (e.g. for
-    <xref linkend="libpng"/> if used for <xref linkend="firefox"/>).
-    Occasionally, a package ships an old library and can no longer link to
-    the current version, but can link to an older version. In this case, BLFS
-    will usually just use the shipped version. Sometimes the included library
-    is no longer developed separately, or its upstream is now the same as the
-    package&apos;s upstream and you have no other packages which will use it.
-    In those cases, you'll be lead to use the included library even if
-    you usually prefer to use system libraries.</para>
+    <para>有时，决定使用系统库很容易。其他时候，可能需要您更改系统版本（例如，用于 <xref linkend="firefox"/> 的 <xref linkend="libpng"/>）。偶尔，某个软件包会附带一个旧库，并且无法再链接到当前版本，但可以链接到较旧的版本。在这种情况下，BLFS 通常只会使用附带的版本。有时包含的库不再单独开发，或者其上游现在与软件包的上游相同，并且您没有其他软件包会使用它。在这些情况下，即使您通常更倾向于使用系统库，也会被引导使用包含的库。</para>
 
   </sect2>
 

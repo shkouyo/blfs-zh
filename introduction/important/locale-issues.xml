@@ -5,143 +5,72 @@
   %general-entities;
 ]>
 
-<sect1 id="locale-issues" xreflabel="Locale Related Issues">
+<sect1 id="locale-issues" xreflabel="区域设置相关问题">
   <?dbhtml filename="locale-issues.html"?>
 
 
-  <title>Locale Related Issues</title>
+  <title>区域设置相关问题</title>
 
-  <para>This page contains information about locale related problems and
-  issues. In the following paragraphs you'll find a generic overview of
-  things that can come up when configuring your system for various locales.
-  Many (but not all) existing locale related problems can be classified
-  and fall under one of the headings below. The severity ratings below use
-  the following criteria:</para>
+  <para>此页面包含与区域设置相关的问题和事项。在以下段落中，您将找到在为各种区域设置配置系统时可能出现的通用概述。许多（但不是全部）现有的区域设置相关问题都可以分类并归于以下标题之一。下面的严重性评级使用以下标准：</para>
 
   <itemizedlist>
     <listitem>
-      <para>Critical: The program doesn't perform its main function.
-      The fix would be very intrusive, it's better to search for a
-      replacement.</para>
+      <para>严重：程序无法执行其主要功能。修复会非常侵入，最好寻找替代品。</para>
     </listitem>
     <listitem>
-      <para>High: Part of the functionality that the program provides
-      is not usable. If that functionality is required, it's better to
-      search for a replacement.</para>
+      <para>高：程序提供的部分功能不可用。如果该功能是必需的，最好寻找替代品。</para>
     </listitem>
     <listitem>
-      <para>Low: The program works in all typical use cases, but lacks
-      some functionality normally provided by its equivalents.</para>
+      <para>低：程序在所有典型用例中都能工作，但缺少其同类程序通常提供的某些功能。</para>
     </listitem>
   </itemizedlist>
 
-  <para>If there is a known workaround for a specific package, it will
-    appear on that package's page.</para>
+  <para>如果某个特定软件包有已知的解决方法，它将会出现在该软件包的页面上。</para>
 
   <sect2 id="locale-not-valid-option"
-         xreflabel="Needed Encoding Not a Valid Option">
+         xreflabel="所需编码不是有效选项">
 
-    <title>The Needed Encoding is Not a Valid Option in the Program</title>
+    <title>所需编码不是程序中的有效选项</title>
 
-    <para>Severity: Critical</para>
+    <para>严重性：严重</para>
 
-    <para>Some programs require the user to specify the character encoding
-    for their input or output data and present only a limited choice of
-    encodings. This is the case for the <option>-X</option> option in
-<!--    <xref linkend="a2ps"/> and --><xref linkend="enscript"/>,
-    the <option>-input-charset</option> option in unpatched
-    <xref linkend="cdrtools"/>, and the character sets offered for display
-    in the menu of <xref linkend="Links"/>. If the required encoding is not
-    in the list, the program usually becomes completely unusable. For
-    non-interactive programs, it may be possible to work around this by
-    converting the document to a supported input character set before
-    submitting to the program.</para>
+    <para>某些程序要求用户为其输入或输出数据指定字符编码，并且只提供有限的编码选择。<xref linkend="enscript"/> 的 <option>-X</option> 选项（<!--<xref linkend="a2ps"/> 和 -->）、未打补丁的 <xref linkend="cdrtools"/> 的 <option>-input-charset</option> 选项，以及 <xref linkend="Links"/> 菜单中提供的显示字符集就是这种情况。如果所需的编码不在列表中，该程序通常会完全无法使用。对于非交互式程序，可以通过在提交给程序之前将文档转换为支持的输入字符集来解决此问题。</para>
 
-    <para>A solution to this type of problem is to implement the necessary
-    support for the missing encoding as a patch to the original program or to
-    find a replacement.</para>
+    <para>解决此类问题的方法是为缺失的编码实现必要的支持，作为原始程序的补丁，或者寻找替代品。</para>
 
   </sect2>
 
   <sect2 id="locale-assumed-encoding"
-         xreflabel="Program Assumes Encoding">
+         xreflabel="程序假定了编码">
 
-    <title>The Program Assumes the Locale-Based Encoding of External
-    Documents</title>
+    <title>程序假定外部文档采用基于区域设置的编码</title>
 
-    <para>Severity: High for non-text documents, low for text
-    documents</para>
+    <para>严重性：非文本文档为高，文本文档为低</para>
 
-    <para>Some programs, <xref linkend="nano"/> or
-    <xref linkend="joe"/> for example, assume that documents are always
-    in the encoding implied by the current locale. While this assumption
-    may be valid for the user-created documents, it is not safe for
-    external ones. When this assumption fails, non-ASCII characters are
-    displayed incorrectly, and the document may become unreadable.</para>
+    <para>某些程序，例如 <xref linkend="nano"/> 或 <xref linkend="joe"/>，假定文档始终采用当前区域设置所隐含的编码。虽然这种假设对于用户创建的文档可能成立，但对于外部文档则不安全。当这种假设不成立时，非 ASCII 字符会显示错误，文档可能变得不可读。</para>
 
-    <para>If the external document is entirely text based, it can be
-    converted to the current locale encoding using the
-    <command>iconv</command> program.</para>
+    <para>如果外部文档完全是基于文本的，可以使用 <command>iconv</command> 程序将其转换为当前区域设置的编码。</para>
 
-    <para>For documents that are not text-based, this is not possible.
-    In fact, the assumption made in the program may be completely
-    invalid for documents where the Microsoft Windows operating system
-    has set de facto standards. An example of this problem is ID3v1 tags
-    in MP3 files. For these cases, the only solution is to find a
-    replacement program that doesn't have the issue (e.g., one that
-    will allow you to specify the assumed document encoding).</para>
+    <para>对于非基于文本的文档，这是不可能的。事实上，对于 Microsoft Windows 操作系统已设定事实标准的文档，程序中的这种假设可能完全无效。此问题的一个示例是 MP3 文件中的 ID3v1 标签。对于这些情况，唯一的解决方案是寻找没有此问题的替代程序（例如，允许您指定假定文档编码的程序）。</para>
 
-    <para>Among BLFS packages, this problem applies to
-    <xref linkend="nano"/>, <xref linkend="joe"/>, and all media players
-    except <xref linkend="audacious"/>.</para>
+    <para>在 BLFS 软件包中，此问题适用于 <xref linkend="nano"/>、<xref linkend="joe"/> 以及除 <xref linkend="audacious"/> 之外的所有媒体播放器。</para>
 
-    <para>Another problem in this category is when someone cannot read
-    the documents you've sent them because their operating system is
-    set up to handle character encodings differently. This can happen
-    often when the other person is using Microsoft Windows, which only
-    provides one character encoding for a given country. For example,
-    this causes problems with UTF-8 encoded TeX documents created in
-    Linux. On Windows, most applications will assume that these documents
-    have been created using the default Windows 8-bit encoding.
-    </para>
+    <para>此类别中的另一个问题是，当您发送给别人的文档他们无法阅读，因为他们的操作系统设置处理字符编码的方式不同。当对方使用 Microsoft Windows 时，这种情况经常发生，因为 Windows 对给定国家/地区只提供一种字符编码。例如，这会导致在 Linux 中创建的 UTF-8 编码的 TeX 文档出现问题。在 Windows 上，大多数应用程序会假定这些文档是使用默认的 Windows 8 位编码创建的。</para>
 
-    <para>In extreme cases, Windows encoding compatibility issues may be
-    solved only by running Windows programs under
-    <ulink url="https://www.winehq.org/">Wine</ulink>.</para>
+    <para>在极端情况下，Windows 编码兼容性问题可能只能通过在 <ulink url="https://www.winehq.org/">Wine</ulink> 下运行 Windows 程序来解决。</para>
 
   </sect2>
 
   <sect2 id="locale-wrong-filename-encoding"
-         xreflabel="Wrong Filename Encoding">
+         xreflabel="错误的文件名编码">
 
-    <title>The Program Uses or Creates Filenames in the Wrong Encoding</title>
+    <title>程序使用或创建错误编码的文件名</title>
 
-    <para>Severity: Critical</para>
+    <para>严重性：严重</para>
 
-    <para>The POSIX standard mandates that the filename encoding is
-    the encoding implied by the current LC_CTYPE locale category. This
-    information is well-hidden on the page which specifies the behavior
-    of <application>Tar</application> and <application>Cpio</application>
-    programs. Some programs get it wrong by default (or simply don't
-    have enough information to get it right). The result is that they
-    create filenames which are not subsequently shown correctly by
-    <command>ls</command>, or they refuse to accept filenames that
-    <command>ls</command> shows properly. For the <xref linkend="glib2"/>
-    library, the problem can be corrected by setting the
-    <envar>G_FILENAME_ENCODING</envar> environment variable to the special
-    "@locale" value. <application>Glib2</application> based programs that
-    don't respect that environment variable are buggy.</para>
+    <para>POSIX 标准规定文件名编码是当前 LC_CTYPE 区域设置类别所隐含的编码。此信息在指定 <application>Tar</application> 和 <application>Cpio</application> 程序行为的页面上隐藏得很深。某些程序默认会弄错（或者根本没有足够的信息来正确处理）。结果是它们创建的文件名随后无法被 <command>ls</command> 正确显示，或者它们拒绝接受 <command>ls</command> 正确显示的文件名。对于 <xref linkend="glib2"/> 库，可以通过将 <envar>G_FILENAME_ENCODING</envar> 环境变量设置为特殊的 "@locale" 值来纠正此问题。不尊重该环境变量的基于 <application>Glib2</application> 的程序是有缺陷的。</para>
 
-    <para>The <filename class='extension'>.zip</filename> format has this
-    problem because it does not save the encoding for the names of the
-    archived files.  When <command>unzip</command> (actually, a symlink to
-    <command>bsdunzip</command> from <xref linkend='libarchive'/>) extracts
-    it, by default the names are assumed to be encoded as CP850, the Windows
-    code page for Western European languages.  But the names may be actually
-    encoded in a different way if it contains non-Latin characters (for
-    example, CP936 for Simplified Chinese).  Then without manually
-    specifying the encoding, those non-Latin characters will be turned into
-    unreadable sequences by <command>bsdunzip</command>.</para>
+    <para><filename class='extension'>.zip</filename> 格式存在此问题，因为它不保存存档文件中名称的编码。当 <command>unzip</command>（实际上是指向 <xref linkend='libarchive'/> 中 <command>bsdunzip</command> 的符号链接）解压它时，默认情况下名称被假定为使用 CP850 编码，这是西欧语言的 Windows 代码页。但如果名称包含非拉丁字符（例如简体中文的 CP936），则实际编码可能不同。如果不手动指定编码，<command>bsdunzip</command> 会将这些非拉丁字符转换成不可读的序列。</para>
 
     <!--<para>On the other hand,
     <application>Nautilus CD Burner</application> checks names of
@@ -152,90 +81,47 @@
     <parameter>-input-charset UTF-8</parameter> parameter, which is
     only correct in UTF-8 locales.</para>-->
 
-    <para>The general rule for avoiding this class of problems is to
-    avoid installing broken programs. If this is impossible, the
-    <ulink url="https://j3e.de/linux/convmv/">convmv</ulink>
-    command-line tool can be used to fix filenames created by these
-    broken programs, or intentionally mangle the existing filenames
-    to meet the broken expectations of such programs.</para>
+    <para>避免此类问题的一般规则是避免安装有缺陷的程序。如果这不可能，可以使用 <ulink url="https://j3e.de/linux/convmv/">convmv</ulink> 命令行工具来修复这些有缺陷程序创建的文件名，或者有意地修改现有文件名以满足此类程序的错误预期。</para>
 
-    <para>In other cases, a similar problem is caused by importing
-    filenames from a system using a different locale with a tool that
-    is not locale-aware (e.g., <!--<xref linkend="nfs-utils"/> or-->
-    <xref linkend="openssh"/>). In order to avoid mangling non-ASCII
-    characters when transferring files to a system with a different
-    locale, any of the following methods can be used:</para>
+    <para>在其他情况下，类似的问题是由于使用不支持区域设置的工具（例如 <xref linkend="openssh"/>）从使用不同区域设置的系统导入文件名而引起的。为了避免在将文件传输到具有不同区域设置的系统时损坏非 ASCII 字符，可以使用以下任何方法：</para>
 
     <itemizedlist>
       <listitem>
-        <para>Transfer anyway, fix the damage with
-        <command>convmv</command>.</para>
+        <para>直接传输，然后使用 <command>convmv</command> 修复损坏。</para>
       </listitem>
       <listitem>
-        <para>On the sending side, create a tar archive with the
-        <parameter>--format=posix</parameter> switch passed to
-        <command>tar</command> (this will be the default in a future
-        version of <command>tar</command>).</para>
+        <para>在发送端，使用传递给 <command>tar</command> 的 <parameter>--format=posix</parameter> 选项创建 tar 归档文件（这将在未来版本的 <command>tar</command> 中成为默认值）。</para>
       </listitem>
       <listitem>
-        <para>Mail the files as attachments. Mail clients specify the
-        encoding of attached filenames.</para>
+        <para>将文件作为附件通过邮件发送。邮件客户端会指定附件文件名的编码。</para>
       </listitem>
       <listitem>
-        <para>Write the files to a removable disk formatted with a FAT or
-        FAT32 filesystem.</para>
+        <para>将文件写入格式化为 FAT 或 FAT32 文件系统的可移动磁盘。</para>
       </listitem>
       <listitem>
-        <para>Transfer the files using Samba.</para>
+        <para>使用 Samba 传输文件。</para>
       </listitem>
       <listitem>
-        <para>Transfer the files via FTP using RFC2640-aware server
-        (this currently means only wu-ftpd, which has bad security history)
-        and client (e.g., lftp).</para>
+        <para>通过 FTP 使用支持 RFC2640 的服务器（目前仅指 wu-ftpd，但其安全记录不佳）和客户端（例如 lftp）传输文件。</para>
       </listitem>
     </itemizedlist>
 
-    <para>The last four methods work because the filenames are automatically
-    converted from the sender's locale to UNICODE and stored or sent in this
-    form. They are then transparently converted from UNICODE to the
-    recipient's locale encoding.</para>
+    <para>最后四种方法之所以有效，是因为文件名会自动从发送方的区域设置转换为 UNICODE，并以这种形式存储或发送。然后它们会从 UNICODE 透明地转换为接收方区域设置的编码。</para>
 
   </sect2>
 
   <sect2 id="locale-wrong-multibyte-characters"
-         xreflabel="Breaks Multibyte Characters">
+         xreflabel="错误的多字节字符">
 
-    <title>The Program Breaks Multibyte Characters or Doesn't Count
-    Character Cells Correctly</title>
+    <title>程序破坏多字节字符或不正确计算字符单元格</title>
 
-    <para>Severity: High or critical</para>
+    <para>严重性：高或严重</para>
 
-    <para>Many programs were written in an older era where multibyte
-    locales were not common. Such programs assume that C "char" data
-    type, which is one byte, can be used to store single characters.
-    Further, they assume that any sequence of characters is a valid
-    string and that every character occupies a single character cell.
-    Such assumptions completely break in UTF-8 locales. The visible
-    manifestation is that the program truncates strings prematurely
-    (i.e., at 80 bytes instead of 80 characters). Terminal-based
-    programs don't place the cursor correctly on the screen, don't react
-    to the "Backspace" key by erasing one character, and leave junk
-    characters around when updating the screen, usually turning the
-    screen into a complete mess.</para>
+    <para>许多程序是在多字节区域设置不常见的较老时代编写的。此类程序假定 C 语言的 "char" 数据类型（一个字节）可用于存储单个字符。此外，它们假定任何字符序列都是有效字符串，并且每个字符都占据单个字符单元格。这种假设在 UTF-8 区域设置中完全失效。可见的表现是程序过早地截断字符串（例如在 80 字节处而非 80 个字符处）。基于终端的程序无法将光标正确定位在屏幕上，无法通过按 "Backspace" 键删除一个字符，并且在更新屏幕时会留下垃圾字符，通常会使屏幕变得一团糟。</para>
 
-    <para>Fixing this kind of problems is a tedious task from a
-    programmer's point of view, like all other cases of retrofitting new
-    concepts into the old flawed design. In this case, one has to redesign
-    all data structures in order to accommodate to the fact that a complete
-    character may span a variable number of "char"s (or switch to wchar_t
-    and convert as needed). Also, for every call to the "strlen" and
-    similar functions, find out whether a number of bytes, a number of
-    characters, or the width of the string was really meant. Sometimes it
-    is faster to write a program with the same functionality from scratch.
-    </para>
+    <para>从程序员的角度来看，修复这类问题是一项繁琐的任务，就像其他所有将新概念改造到旧有缺陷设计中的情况一样。在这种情况下，必须重新设计所有数据结构以适应完整字符可能跨越可变数量 "char" 的事实（或者切换到 wchar_t 并按需转换）。此外，对于每次调用 "strlen" 及类似函数，需要确定真正需要的是字节数、字符数还是字符串的宽度。有时从头开始编写具有相同功能的程序会更快。</para>
 
-    <para>Among BLFS packages, this problem applies to
-    <xref linkend="xine-ui"/> and all the shells.</para>
+    <para>在 BLFS 软件包中，此问题适用于 <xref linkend="xine-ui"/> 以及所有 shell。</para>
 
   </sect2>
 

@@ -9,53 +9,34 @@
   <?dbhtml filename="bootscripts.html"?>
 
 
-  <title>BLFS Boot Scripts</title>
+  <title>BLFS 启动脚本</title>
 
   <indexterm zone="bootscripts">
-    <primary sortas="a-BLFS-Bootscripts">BLFS Bootscripts</primary>
+    <primary sortas="a-BLFS-Bootscripts">BLFS 启动脚本</primary>
   </indexterm>
 
   <indexterm zone="bootscripts">
-    <primary sortas="f-AA-General-Information">General Information</primary>
+    <primary sortas="f-AA-General-Information">通用信息</primary>
   </indexterm>
 
-  <para>The BLFS Bootscripts package contains the init
-  scripts that are used throughout the book. It is assumed that you will be
-  using the BLFS Bootscripts package in conjunction with a compatible
-  LFS-Bootscripts package. Refer to
-  <ulink url="&lfs-root;/chapter09/bootscripts.html"/> for more
-  information on the LFS-Bootscripts package.</para>
+  <para>BLFS 启动脚本软件包包含本书中使用的初始化脚本。假定您将 BLFS 启动脚本软件包与兼容的 LFS-Bootscripts 软件包结合使用。有关 LFS-Bootscripts 软件包的更多信息，请参阅 <ulink url="&lfs-root;/chapter09/bootscripts.html"/>。</para>
 
   <itemizedlist spacing='compact'>
-    <title>Package Information</title>
+    <title>软件包信息</title>
     <listitem>
-      <para>Download: <ulink
+      <para>下载：<ulink
         url="&sources-anduin-http;/blfs-bootscripts/blfs-bootscripts-&blfs-bootscripts-version;.tar.xz"/></para>
     </listitem>
   </itemizedlist>
 
-  <para>The BLFS Bootscripts package will be used throughout the BLFS book
-  for startup scripts.  Unlike LFS, each init script has a separate install target
-  in the BLFS Bootscripts package. It is recommended you keep the package source
-  directory around until completion of your BLFS system. When a script is
-  requested from BLFS Bootscripts, simply change to the directory and as the
-  <systemitem class="username">root</systemitem> user, execute the given
-  <command>make install-<replaceable>&lt;init-script&gt;</replaceable></command>
-  command. This command installs the init script to its proper location (along
-  with any auxiliary configuration scripts) and also creates the appropriate
-  symlinks to start and stop the service at the appropriate run-level.</para>
+  <para>BLFS 启动脚本软件包将在整个 BLFS 书中用于启动脚本。与 LFS 不同，BLFS 启动脚本软件包中的每个 init 脚本都有独立的安装目标。建议您保留该软件包源代码目录，直到 BLFS 系统构建完成。当 BLFS 启动脚本中请求某个脚本时，只需切换到该目录，并以 <systemitem class="username">root</systemitem> 用户身份执行给定的 <command>make install-<replaceable>&lt;init-script&gt;</replaceable></command> 命令。此命令会将 init 脚本安装到正确的位置（以及任何辅助配置脚本），并创建适当的符号链接，以便在适当的运行级别启动和停止服务。</para>
 
   <note>
-    <para>You should review each bootscript before installation to
-    ascertain that it satisfies your need. Also verify that the start and stop
-    symlinks it creates match your preferences.</para>
+    <para>您应在安装每个启动脚本之前仔细检查，以确认它满足您的需求。同时验证它创建的启动和停止符号链接是否符合您的偏好。</para>
   </note>
 
   <note>
-    <para>From time to time the bootscripts are updated to accommodate
-    new packages or to make minor corrections.  All versions of the
-    bootscripts are located at <ulink
-    url="&sources-anduin-http;/blfs-bootscripts/"/>.</para>
+    <para>启动脚本会不时更新，以适应新的软件包或进行小的修正。所有版本的启动脚本都位于 <ulink url="&sources-anduin-http;/blfs-bootscripts/"/>。</para>
   </note>
 
 </sect1>
