@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g2dba273">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本
+        V</span> 版） - 版本 g2dba273
       </h4>
       <h3>
         Chapter&nbsp;20.&nbsp;Major Servers
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>
@@ -138,7 +138,7 @@
           <a class="xref" href="../general/doxygen.html" title=
           "Doxygen-1.17.0">Doxygen-1.17.0</a>, <a class="xref" href=
           "../general/graphviz.html" title=
-          "Graphviz-15.0.0">Graphviz-15.0.0</a>, <a class="xref" href=
+          "Graphviz-15.1.0">Graphviz-15.1.0</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx_rtd_theme" title=
           "Sphinx_rtd_theme-3.1.0">sphinx_rtd_theme-3.1.0</a>, and <a class=
           "xref" href="../pst/texlive.html" title=
@@ -188,7 +188,14 @@
        src/lib/asiodns/io_fetch.cc                               \
        src/lib/asiodns/tests/io_fetch_unittest.cc                &amp;&amp;
 sed -e "/lexical_cast.hpp/a #include &lt;boost/static_assert.hpp&gt;"  \
-    -i src/lib/log/logger_level_impl.cc</kbd></pre>
+    -i src/lib/log/logger_level_impl.cc                          \
+       src/lib/dns/rdataclass.cc</kbd></pre>
+        <p>
+          Also apply a fix for building with OpenSSL-4:
+        </p>
+        <pre class="userinput"><kbd class=
+        "command">sed -e 's/^[ ]*\(::X509_NAME\)/const \1/' \
+    -i src/lib/asiolink/openssl_tls.h</kbd></pre>
         <p>
           Now, install <span class="application">ISC Kea DHCP Server</span>
           by running the following commands:
@@ -863,7 +870,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g2dba273">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本
+        V</span> 版） - 版本 g2dba273
       </h4>
       <h3>
         Chapter&nbsp;15.&nbsp;Networking Programs
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>
@@ -113,18 +113,19 @@
           "net-tools-automate-example"></a> The instructions below automate
           the configuration process by piping <span class=
           "command"><strong>yes</strong></span> to the <span class=
-          "command"><strong>make</strong></span> command. If you wish to run
-          the interactive configuration process (by changing the instruction
-          to just <span class="command"><strong>make</strong></span>), but
-          you are not sure how to answer all the questions, then just accept
-          the defaults. This will be just fine in the majority of cases. What
-          you're asked here is a bunch of questions about which network
-          protocols you've enabled in your kernel. The default answers will
-          enable the tools from this package to work with the most common
-          protocols: TCP, PPP, and several others. You still need to actually
-          enable these protocols in the kernel—what you do here is merely
-          tell the package to include support for those protocols in its
-          programs, but it's up to the kernel to make the protocols
+          "command"><strong>make config</strong></span> command. If you wish
+          to run the interactive configuration process (by changing the
+          instruction to just <span class="command"><strong>make
+          config</strong></span>), but you are not sure how to answer all the
+          questions, then just accept the defaults, except for anything
+          touching X25, ROSE, and NETROM, which have been disabled in
+          linux-7.1. What you're asked here is a bunch of questions about
+          which network protocols you've enabled in your kernel. The default
+          answers will enable the tools from this package to work with the
+          most common protocols: TCP, PPP, and several others. You still need
+          to actually enable these protocols in the kernel—what you do here
+          is merely tell the package to include support for those protocols
+          in its programs, but it's up to the kernel to make the protocols
           available.
         </p>
         <div class="admon note">
@@ -152,7 +153,11 @@
         </p>
         <pre class="userinput"><kbd class=
         "command">export BINDIR='/usr/bin' SBINDIR='/usr/bin' &amp;&amp;
-yes "" | make -j1                           &amp;&amp;
+yes "" | make config                        &amp;&amp;
+sed -e /ROM/s/0/1/  \
+    -e /X25/s/0/1/  \
+    -e /ROSE/s/0/1/ \
+    -i config.h                             &amp;&amp;
 make DESTDIR=$PWD/install -j1 install       &amp;&amp;
 rm    install/usr/bin/{nis,yp}domainname    &amp;&amp;
 rm    install/usr/bin/{hostname,dnsdomainname,domainname,ifconfig} &amp;&amp;
@@ -179,10 +184,15 @@ cp -a install/* /</kbd></pre>
           installed in the correct location.
         </p>
         <p>
-          <span class="command"><strong>yes "" | make</strong></span> :
+          <span class="command"><strong>yes "" | make config</strong></span>:
           Piping <span class="command"><strong>yes</strong></span> to
           <span class="command"><strong>make config</strong></span> skips the
           interactive configuration and accepts the defaults.
+        </p>
+        <p>
+          <span class="command"><strong>sed -e ...</strong></span>: This
+          disables building protocols that are not available anymore in the
+          kernel.
         </p>
         <p>
           <span class="command"><strong>rm ...</strong></span>: Remove
@@ -392,7 +402,7 @@ cp -a install/* /</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>

@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-">
+  <body class="blfs" id="blfs-g2dba273">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本
+        V</span> 版） - 版本 g2dba273
       </h4>
       <h3>
         Chapter&nbsp;7.&nbsp;Shells
@@ -41,7 +41,7 @@
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>
@@ -241,6 +241,81 @@ install -v -m644 zsh.{html,txt} Etc/FAQ /usr/share/doc/zsh-5.9.1</kbd></pre>
             manual pages.
           </p>
           <p>
+            Create a basic <code class="filename">/etc/zsh/zprofile</code>
+            file. Like <code class="filename">/etc/profile</code> provided in
+            <a class="xref" href="profile.html" title=
+            "The Bash Shell Startup Files">The Bash Shell Startup Files</a>,
+            it sets up some helper functions and some basic parameters, then
+            loads the scripts in <code class=
+            "filename">/etc/profile.d</code>:
+          </p>
+          <pre class="root"><kbd class=
+          "command">install -vdm755 /etc/zsh &amp;&amp;
+cat &gt; /etc/zsh/zprofile &lt;&lt; "EOF"
+<code class="literal"># Begin /etc/zsh/zprofile
+# Written for Beyond Linux From Scratch
+
+# System wide environment variables and startup programs.
+
+# Functions to help us manage paths.  Second argument is the name of the
+# path variable to be modified (default: PATH)
+pathremove () {
+        local IFS=':'
+        local NEWPATH
+        local DIR
+        local PATHVARIABLE=${2:-PATH}
+        for DIR in ${(P)=PATHVARIABLE} ; do
+                if [ "$DIR" != "$1" ] ; then
+                  NEWPATH=${NEWPATH:+$NEWPATH:}$DIR
+                fi
+        done
+        export $PATHVARIABLE="$NEWPATH"
+}
+
+pathprepend () {
+        pathremove $1 $2
+        local PATHVARIABLE=${2:-PATH}
+        export $PATHVARIABLE="$1${(P)PATHVARIABLE:+:${(P)PATHVARIABLE}}"
+}
+
+pathappend () {
+        pathremove $1 $2
+        local PATHVARIABLE=${2:-PATH}
+        export $PATHVARIABLE="${(P)PATHVARIABLE:+${(P)PATHVARIABLE}:}$1"
+}
+
+# Set the initial path
+export PATH=/usr/bin
+
+# Attempt to provide backward compatibility with LFS earlier than 11
+if [ ! -L /bin ]; then
+        pathappend /bin
+fi
+
+if [ $EUID -eq 0 ] ; then
+        pathappend /usr/sbin
+        if [ ! -L /sbin ]; then
+                pathappend /sbin
+        fi
+        unset HISTFILE
+fi
+
+# Set some defaults for graphical systems
+export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/share}
+export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/etc/xdg}
+export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/xdg-$USER}
+
+for script in /etc/profile.d/*.sh ; do
+        if [ -r $script ] ; then
+                . $script
+        fi
+done
+
+unset script
+
+# End /etc/zsh/zprofile</code>
+EOF</kbd></pre>
+          <p>
             The first time zsh is executed, you will be prompted by messages
             asking several questions. The answers will be used to create a
             <code class="filename">~/.zshrc</code> file. If you wish to run
@@ -356,7 +431,7 @@ EOF</kbd></pre>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 ">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 g2dba273">Home</a>
         </li>
       </ul>
     </div>
