@@ -87,7 +87,7 @@ tar -xvf filename.tar.bz2</userinput></screen>
 
     <para><replaceable>密钥 ID</replaceable> 应替换为来自 <emphasis role="bold">您信任</emphasis> 的某个地方的密钥 ID（例如，使用 https 从上游官方网站复制）。现在您可以使用以下命令验证签名：</para>
 
-<screen><userinput>gpg --verify <replaceable>文件</replaceable>.sig <replaceable>file</replaceable></userinput></screen>
+<screen><userinput>gpg --verify <replaceable>文件</replaceable>.sig <replaceable>文件</replaceable></userinput></screen>
 
     <para>签名的优势在于，一旦导入了可信的公钥，您就可以从同一非官方位置同时下载软件包及其签名，并使用公钥进行验证。这样您就不需要为每个新版本都连接到上游官方网站获取校验和。您只需在公钥过期或撤销时更新它即可。</para>
 
