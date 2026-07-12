@@ -40,7 +40,6 @@
     <para>
       在本书中，多处使用了诸如 <parameter>--disable-static</parameter> 之类的配置开关，也讨论了使用系统版本库而非其他软件包内部所包含版本的可能性。其主要原因是为了简化库的更新。
     </para>
-dd
     <para>
       如果某个软件包链接到动态库，那么一旦安装了较新的库版本并（重新）启动该程序，更新到较新库版本就是自动的（前提是库的主版本号不变，例如从 <filename>libfoo.so.2.0</filename> 升级到 <filename>libfoo.so.2.1</filename>。升级到 <filename>libfoo.so.3</filename> 则需要重新编译——可使用 <command>ldd</command> 找出哪些程序使用了旧版本）。如果程序链接到静态库，则始终必须重新编译该程序。如果您知道哪些程序链接到特定的静态库，这仅仅是个麻烦事。但通常您并 <emphasis>不</emphasis> 知道需要重新编译哪些程序。
     </para>
