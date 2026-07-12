@@ -8,11 +8,9 @@
 <chapter id="important">
   <?dbhtml filename="important.html"?>
 
-  <title>Important Information</title>
+  <title>重要信息</title>
 
-  <para>This chapter is used to explain some of the policies used throughout
-  the book, to introduce important concepts and to explain some issues you may
-  see with some of the included packages.</para>
+  <para>本章用于解释本书中使用的部分策略、介绍重要概念，并说明您在使用某些包含的软件包时可能遇到的一些问题。</para>
 
   <!-- Moved to LFS
      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="pkgmgt.xml"/>

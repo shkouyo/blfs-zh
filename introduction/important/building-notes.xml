@@ -9,53 +9,27 @@
   <?dbhtml filename="notes-on-building.html"?>
 
 
-  <title>Notes on Building Software</title>
+  <title>构建软件注意事项</title>
 
-  <para>Those people who have built an LFS system may be aware
-  of the general principles of downloading and unpacking software. Some
-  of that information is repeated here for those new to building
-  their own software.</para>
+  <para>已经构建过 LFS 系统的人可能了解下载和解压软件的一般原则。此处重复一些信息，供初次构建自己软件的人参考。</para>
 
-  <para>Each set of installation instructions contains a URL from which you
-  can download the package.  The patches; however, are stored on the LFS
-  servers and are available via HTTP.  These are referenced as needed in the
-  installation instructions.</para>
+  <para>每组安装说明都包含一个可下载软件包的 URL。而补丁则存储在 LFS 服务器上，可通过 HTTP 获取。安装说明中会在需要时引用这些补丁。</para>
 
-  <para>While you can keep the source files anywhere you like, we assume that
-  you have unpacked the package and changed into the directory created by the
-  unpacking process (the source directory).  We also assume you have
-  uncompressed any required patches and they are in the directory
-  immediately above the source directory.</para>
+  <para>您可以将源代码文件保存在任何位置，但我们假定您已解压软件包，并进入解压过程所创建的目录（源代码目录）。我们还假定您已解压所有必需的补丁，并且它们位于源代码目录的上一级目录中。</para>
 
-  <para>We can not emphasize strongly enough that you should start from a
-  <emphasis>clean source tree</emphasis> each time. This means that if
-  you have had an error during configuration or compilation, it's usually
-  best to delete the source tree and
-  re-unpack it <emphasis>before</emphasis> trying again. This obviously
-  doesn't apply if you're an advanced user used to hacking
-  <filename>Makefile</filename>s and C code, but if in doubt, start from a
-  clean tree.</para>
+  <para>怎么强调都不为过：您每次都应该从一个<emphasis>干净的源代码树</emphasis>开始。这意味着，如果在配置或编译过程中出现错误，通常最好删除源代码树，并在重试<emphasis>之前</emphasis>重新解压它。如果您是习惯于修改 <filename>Makefile</filename> 和 C 代码的高级用户，这显然不适用；但若有疑问，请从干净的源代码树开始。</para>
 
   <sect2>
-    <title>Building Software as an Unprivileged (non-root) User</title>
+    <title>以非特权（non-root）用户身份构建软件</title>
 
-    <para>The golden rule of Unix System Administration is to use your
-    superpowers only when necessary. Hence, BLFS recommends that you
-    build software as an unprivileged user and only become the
-    <systemitem class='username'>root</systemitem> user when installing the
-    software. This philosophy is followed in all the packages in this book.
-    Unless otherwise specified, all instructions should be executed as an
-    unprivileged user. The book will advise you on instructions that need
-    <systemitem class='username'>root</systemitem> privileges.</para>
+    <para>Unix 系统管理的黄金法则是仅在必要时使用超级用户权限。因此，BLFS 建议您以非特权用户身份构建软件，仅在安装软件时才切换为 <systemitem class='username'>root</systemitem> 用户。本书中的所有软件包都遵循此原则。除非另有说明，所有指令都应以非特权用户身份执行。本书会提示哪些指令需要 <systemitem class='username'>root</systemitem> 权限。</para>
 
   </sect2>
 
   <sect2>
-    <title>Unpacking the Software</title>
+    <title>解压软件</title>
 
-    <para>If a file is in <filename class='extension'>.tar</filename> format
-    and compressed, it is unpacked by running one of the following
-    commands:</para>
+    <para>如果文件是 <filename class='extension'>.tar</filename> 格式且已压缩，则通过运行以下命令之一解压：</para>
 
 <screen><userinput>tar -xvf filename.tar.gz
 tar -xvf filename.tgz
@@ -63,29 +37,21 @@ tar -xvf filename.tar.Z
 tar -xvf filename.tar.bz2</userinput></screen>
 
     <note>
-      <para>You may omit using the <option>v</option> parameter in the commands
-      shown above and below if you wish to suppress the verbose listing of all
-      the files in the archive as they are extracted. This can help speed up the
-      extraction as well as make any errors produced during the extraction
-      more obvious to you.</para>
+      <para>如果您希望抑制解压时列出所有文件的详细输出，可以在上述和下述命令中省略 <option>v</option> 参数。这有助于加快解压速度，并使解压过程中产生的任何错误更加明显。</para>
     </note>
 
-    <para>You can also use a slightly different method:</para>
+    <para>您也可以使用另一个略微不同的方法：</para>
 
 <screen><userinput>bzcat filename.tar.bz2 | tar -xv</userinput></screen>
 
     <para>
-      Finally, sometimes we have a compressed patch file in
-      <filename class='extension'>.patch.gz</filename> or
-      <filename class='extension'>.patch.bz2</filename> format.
-      The best way to apply the patch is piping the output of the
-      decompressor to the <command>patch</command> utility.  For example:
+      最后，有时我们会遇到 <filename class='extension'>.patch.gz</filename> 或 <filename class='extension'>.patch.bz2</filename> 格式的压缩补丁文件。应用补丁的最佳方法是将解压程序的输出通过管道传递给 <command>patch</command> 工具。例如：
     </para>
 
     <screen><userinput>zcat ../patchname.patch.gz | patch -p1</userinput></screen>
 
     <para>
-      Or for a patch compressed with <command>bzip2</command>:
+      对于使用 <command>bzip2</command> 压缩的补丁：
     </para>
 
     <screen><userinput>bzcat ../patchname.patch.bz2 | patch -p1</userinput></screen>
@@ -93,222 +59,115 @@ tar -xvf filename.tar.bz2</userinput></screen>
   </sect2>
 
   <sect2>
-    <title>Verifying File Integrity</title>
+    <title>验证文件完整性</title>
 
-    <para>Generally, to verify that the downloaded file is complete,
-    many package maintainers also distribute md5sums of the files. To verify the
-    md5sum of the downloaded files, download both the file and the
-    corresponding md5sum file to the same directory (preferably from different
-    on-line locations), and (assuming <filename>file.md5sum</filename> is the
-    md5sum file downloaded) run the following command:</para>
+    <para>通常，为了验证下载的文件是否完整，许多软件包维护者还会发布文件的 md5sum。要验证下载文件的 md5sum，请将文件和相应的 md5sum 文件下载到同一目录（最好来自不同的在线位置），然后（假设 <filename>file.md5sum</filename> 是下载的 md5sum 文件）运行以下命令：</para>
 
 <screen><userinput>md5sum -c file.md5sum</userinput></screen>
 
-    <para>If there are any errors, they will be reported. Note that the BLFS
-    book includes md5sums for all the source files also. To use the BLFS
-    supplied md5sums, you can create a <filename>file.md5sum</filename> (place
-    the md5sum data and the exact name of the downloaded file on the same
-    line of a file, separated by white space) and run the command shown above.
-    Alternately, simply run the command shown below and compare the output
-    to the md5sum data shown in the BLFS book.</para>
+    <para>如果有任何错误，会报告出来。请注意，BLFS 本书也包含了所有源代码文件的 md5sum。要使用 BLFS 提供的 md5sum，您可以创建一个 <filename>file.md5sum</filename>（将 md5sum 数据和下载文件的确切名称放在文件的同一行，用空格分隔），然后运行上述命令。或者，直接运行以下命令并将输出与 BLFS 书中显示的 md5sum 数据进行比较。</para>
 
-<screen><userinput>md5sum <replaceable>&lt;name_of_downloaded_file&gt;</replaceable></userinput></screen>
+<screen><userinput>md5sum <replaceable>&lt;下载的文件&gt;</replaceable></userinput></screen>
 
-    <para>MD5 is not cryptographically secure, so the md5sums are only
-    provided for detecting unmalicious changes to the file content.  For
-    example, an error or truncation introduced during network transfer, or
-    a <quote>stealth</quote> update to the package from the upstream
-    (updating the content of a released tarball instead of making a new
-    release properly).</para>
+    <para>MD5 在密码学上并不安全，因此 md5sum 仅用于检测文件内容的非恶意更改。例如，网络传输过程中引入的错误或截断，或者上游对软件包进行“静默”更新（更新已发布 tarball 的内容而不是正确地发布新版本）。</para>
 
-    <para>There is no <quote>100%</quote> secure way to make
-    sure the genuity of the source files.  Assuming the upstream is managing
-    their website correctly (the private key is not leaked and the domain is
-    not hijacked), and the trust anchors have been set up correctly using
-    <xref linkend="make-ca"/> on the BLFS system, we can reasonably trust
-    download URLs to the upstream official website
-    <emphasis role="bold">with https protocol</emphasis>.  Note that
-    BLFS book itself is published on a website with https, so you should
-    already have some confidence in https protocol or you wouldn't trust the
-    book content.</para>
+    <para>没有 100% 安全的方法来确保源文件的真实性。假设上游正确管理其网站（私钥未泄露且域名未被劫持），并且在 BLFS 系统上使用 <xref linkend="make-ca"/> 正确设置了信任锚点，我们可以合理地信任上游官方网站 <emphasis role="bold">使用 https 协议</emphasis> 的下载 URL。请注意，BLFS 本书本身也发布在使用 https 的网站上，因此您应该已经对 https 协议有一定的信任，否则您也不会信任本书的内容。</para>
 
-    <para>If the package is downloaded from an unofficial location (for
-    example a local mirror), checksums generated by cryptographically secure
-    digest algorithms (for example SHA256) can be used to verify the
-    genuity of the package.  Download the checksum file from the upstream
-    <emphasis role="bold">official</emphasis> website (or somewhere
-    <emphasis role="bold">you can trust</emphasis>) and compare the
-    checksum of the package from unofficial location with it.  For example,
-    SHA256 checksum can be checked with the command:</para>
+    <para>如果软件包是从非官方位置（例如本地镜像）下载的，则可以使用密码学上安全的摘要算法（例如 SHA256）生成的校验和来验证软件包的真实性。从上游 <emphasis role="bold">官方</emphasis> 网站（或 <emphasis role="bold">您信任</emphasis> 的某个地方）下载校验和文件，并将其与从非官方位置下载的软件包的校验和进行比较。例如，可以使用以下命令检查 SHA256 校验和：</para>
 
     <note>
-      <para>If the checksum and the package are downloaded from the same
-      untrusted location, you won't gain security enhancement by verifying
-      the package with the checksum. The attacker can fake the checksum as
-      well as compromising the package itself.</para>
+      <para>如果校验和与软件包来自同一不可信位置，则通过校验和验证软件包不会获得安全增强。攻击者可以伪造校验和并同时破坏软件包本身。</para>
     </note>
 
-<screen><userinput>sha256sum -c <replaceable>file</replaceable>.sha256sum</userinput></screen>
+<screen><userinput>sha256sum -c <replaceable>文件</replaceable>.sha256sum</userinput></screen>
 
-    <para>If <xref linkend="gnupg2"/> is installed, you can also verify the
-    genuity of the package with a GPG signature.  Import the upstream GPG
-    public key with:</para>
+    <para>如果安装了 <xref linkend="gnupg2"/>，您还可以使用 GPG 签名验证软件包的真实性。使用以下命令导入上游 GPG 公钥：</para>
 
 <screen><userinput>gpg --recv-key <replaceable>keyID</replaceable></userinput></screen>
 
-    <para><replaceable>keyID</replaceable> should be replaced with the key ID
-    from somewhere <emphasis role="bold">you can trust</emphasis> (for
-    example, copy it from the upstream official website using https).  Now
-    you can verify the signature with:</para>
+    <para><replaceable>密钥 ID</replaceable> 应替换为来自 <emphasis role="bold">您信任</emphasis> 的某个地方的密钥 ID（例如，使用 https 从上游官方网站复制）。现在您可以使用以下命令验证签名：</para>
 
-<screen><userinput>gpg --verify <replaceable>file</replaceable>.sig <replaceable>file</replaceable></userinput></screen>
+<screen><userinput>gpg --verify <replaceable>文件</replaceable>.sig <replaceable>file</replaceable></userinput></screen>
 
-    <para>The advantage of <application>GnuPG</application> signature is,
-    once you imported a public key which can be trusted, you can download
-    both the package and its signature from the same unofficial location and
-    verify them with the public key.  So you won't need to connect to the
-    official upstream website to retrieve a checksum for each new release.
-    You only need to update the public key if it's expired or revoked.
-    </para>
+    <para>签名的优势在于，一旦导入了可信的公钥，您就可以从同一非官方位置同时下载软件包及其签名，并使用公钥进行验证。这样您就不需要为每个新版本都连接到上游官方网站获取校验和。您只需在公钥过期或撤销时更新它即可。</para>
 
   </sect2>
 
   <sect2>
-    <title>Creating Log Files During Installation</title>
+    <title>创建安装过程中的日志文件</title>
 
-    <para>For larger packages, it is convenient to create log files instead of
-    staring at the screen hoping to catch a particular error or warning. Log
-    files are also useful for debugging and keeping records. The following
-    command allows you to create an installation log. Replace
-    <replaceable>&lt;command&gt;</replaceable> with the command you intend to execute.</para>
+    <para>对于较大的软件包，创建日志文件比盯着屏幕希望能捕捉到特定错误或警告更方便。日志文件也便于调试和记录。以下命令允许您创建安装日志。将 <replaceable>&lt;command&gt;</replaceable> 替换为您要执行的命令。</para>
 
 <screen><userinput>( <replaceable>&lt;command&gt;</replaceable> 2&gt;&amp;1 | tee compile.log &amp;&amp; exit $PIPESTATUS )</userinput></screen>
 
-    <para><option>2&gt;&amp;1</option> redirects error messages to the same
-    location as standard output. The <command>tee</command> command allows
-    viewing of the output while logging the results to a file. The parentheses
-    around the command run the entire command in a subshell and finally the
-    <command>exit $PIPESTATUS</command> command ensures the result of the
-    <replaceable>&lt;command&gt;</replaceable> is returned as the result and not the
-    result of the <command>tee</command> command.</para>
+    <para><option>2&gt;&amp;1</option> 将错误消息重定向到与标准输出相同的位置。<command>tee</command> 命令允许在记录结果到文件的同时查看输出。命令周围的括号使整个命令在子 shell 中运行，最后的 <command>exit $PIPESTATUS</command> 命令确保返回 <replaceable>&lt;command&gt;</replaceable> 的结果，而不是 <command>tee</command> 命令的结果。</para>
 
   </sect2>
 
-  <sect2 id="parallel-builds" xreflabel="Using Multiple Processors">
-    <title>Using Multiple Processors</title>
+  <sect2 id="parallel-builds" xreflabel="使用多个处理器核心">
+    <title>使用多个处理器核心</title>
 
-    <para>For many modern systems with multiple processors (or cores) the
-    compilation time for a package can be reduced by performing a "parallel
-    make" by either setting an environment variable or telling the make program
-    to simultaneously execute multiple jobs.</para>
+    <para>对于许多具有多个处理器（或核心）的现代系统，可以通过设置环境变量或告诉 make 程序同时执行多个任务来执行“并行 make”，从而减少软件包的编译时间。</para>
 
-    <para>For instance, an Intel Core i9-13900K CPU contains 8 performance
-    (P) cores and 16 efficiency (E) cores, and the P cores support SMT
-    (Simultaneous MultiThreading, also known as
-    <quote>Hyper-Threading</quote>) so each P core can run two threads
-    simultaneously and the Linux kernel will treat each P core as two
-    logical cores.  As a result, there are 32 logical cores in total.
-    To utilize all these logical cores running <command>make</command>, we
-    can set an environment variable to tell <command>make</command> to
-    run 32 jobs simultaneously:</para>
+    <para>例如，Intel Core i9-13900K CPU 包含 8 个性能（P）核和 16 个能效（E）核，并且 P 核支持 SMT（同步多线程，也称为“超线程”），因此每个 P 核可以同时运行两个线程，Linux 内核会将每个 P 核视为两个逻辑核。因此，总共有 32 个逻辑核。要利用所有这些逻辑核运行 <command>make</command>，我们可以设置环境变量告诉 <command>make</command> 同时运行 32 个任务：</para>
 
     <screen><userinput>export MAKEFLAGS='-j32'</userinput></screen>
 
-    <para>or just building with:</para>
+    <para>或者直接使用以下命令构建：</para>
 
     <screen><userinput>make -j32</userinput></screen>
 
     <para>
-      If you have applied the optional <command>sed</command> when building
-      <application>ninja</application> in LFS, you can use:
+      如果您在 LFS 中构建 <application>ninja</application> 时应用了可选的 <command>sed</command>，则可以使用：
     </para>
 
     <screen><userinput>export NINJAJOBS=32</userinput></screen>
 
     <para>
-      when a package uses <command>ninja</command>, or just:
+      当软件包使用 <command>ninja</command> 时，或者直接：
     </para>
 
     <screen><userinput>ninja -j32</userinput></screen>
 
     <para>
-      If you are not sure about the number of logical cores, run the
-      <command>nproc</command> command.
+      如果不确定你的逻辑核的数量，请运行 <command>nproc</command> 命令。
     </para>
 
     <para>
-      For <command>make</command>, the default number of jobs is 1.  But
-      for <command>ninja</command>, the default number of jobs is N + 2 if
-      the number of logical cores N is greater than 2; or N + 1 if
-      N is 1 or 2.  The reason to use a number of jobs slightly greater
-      than the number of logical cores is keeping all logical
-      processors busy even if some jobs are performing I/O operations.
+      对于 <command>make</command>，默认任务数为 1。但对于 <command>ninja</command>，如果逻辑核数 N 大于 2，则默认任务数为 N + 2；如果 N 为 1 或 2，则为 N + 1。使用略大于逻辑核数的任务数是为了让所有逻辑处理器保持忙碌，即使某些任务正在进行 I/O 操作。
     </para>
 
     <para>
-      Note that the <option>-j</option> switches only limits the parallel
-      jobs started by <command>make</command> or <command>ninja</command>,
-      but each job may still spawn its own processes or threads.  For
-      example, some tests of packages can spawn multiple threads for
-      testing thread safety properties.  There is no generic way for the
-      building system to know the number of processes or threads spawned by
-      a job. So generally we should not consider the value passed with
-      <option>-j</option> a hard limit of the number of logical cores to
-      use.  Read <xref linkend='build-in-cgroup'/> if you want to set such
-      a hard limit.
+      请注意，<option>-j</option> 开关仅限制 <command>make</command> 或 <command>ninja</command> 启动的并行任务数，但每个任务仍可能自行生成进程或线程。例如，某些软件包的测试可能会生成多个线程来测试线程安全属性。构建系统无法通用地知道一个任务会生成多少进程或线程。因此，通常我们不应将 <option>-j</option> 传递的值视为要使用的逻辑核数的硬限制。如果您想设置这样的硬限制，请阅读 <xref linkend='build-in-cgroup'/>。
     </para>
 
-    <para>Generally the number of processes should not exceed the number of
-    cores supported by the CPU too much.  To list the processors on your
-    system, issue: <userinput>grep processor /proc/cpuinfo</userinput>.
+    <para>通常，进程数不应超过 CPU 支持的核心数太多。要列出系统上的处理器，请执行：<userinput>grep processor /proc/cpuinfo</userinput>。
     </para>
 
-    <para>In some cases, using multiple processes may result in a race
-    condition where the success of the build depends on the order of the
-    commands run by the <command>make</command> program.  For instance, if an
-    executable needs File A and File B, attempting to link the program before
-    one of the dependent components is available will result in a failure.
-    This condition usually arises because the upstream developer has not
-    properly designated all the prerequisites needed to accomplish a step in the
-    Makefile.</para>
+    <para>在某些情况下，使用多个进程可能导致竞争条件，即构建的成功取决于 <command>make</command> 程序运行的命令顺序。例如，如果可执行文件需要文件 A 和文件 B，在依赖组件之一可用之前尝试链接程序将导致失败。这种情况通常是因为上游开发人员没有正确指定 Makefile 中完成某个步骤所需的所有前提条件。</para>
 
-    <para>If this occurs, the best way to proceed is to drop back to a
-    single processor build.  Adding <option>-j1</option> to a make command
-    will override the similar setting in the <envar>MAKEFLAGS</envar>
-    environment variable.</para>
+    <para>如果发生这种情况，最好的方法是回退到单处理器构建。在 make 命令中添加 <option>-j1</option> 将覆盖 <envar>MAKEFLAGS</envar> 环境变量中的类似设置。</para>
 
     <important>
       <para>
-        Another problem may occur with modern CPU's, which have a lot of cores.
-        Each job started consumes memory, and if the sum of the needed
-        memory for each job exceeds the available memory, you may encounter
-        either an OOM (Out of Memory) kernel interrupt or intense swapping
-        that will slow the build beyond reasonable limits.
+        现代 CPU 拥有大量核心时还可能遇到另一个问题。每个启动的任务都会消耗内存，如果每个任务所需内存的总和超过可用内存，您可能会遇到 OOM（内存不足）内核中断或严重的交换，从而使构建速度慢到不合理的程度。
       </para>
 
       <para>
-        Some compilations with <command>g++</command> may consume up to 2.5 GB
-        of memory, so to be safe, you should restrict the number of jobs
-        to (Total Memory in GB)/2.5, at least for big packages such as LLVM,
-        WebKitGtk, QtWebEngine, or libreoffice.
+        某些使用 <command>g++</command> 的编译可能消耗高达 2.5 GB 的内存，因此为安全起见，您应将任务数限制为（总内存 GB）/2.5，至少对于 LLVM、WebKitGtk、QtWebEngine 或 libreoffice 等大型软件包应如此。
       </para>
     </important>
   </sect2>
 
   <sect2 id="build-in-cgroup">
-    <title>Use Linux Control Group to Limit the Resource Usage</title>
+    <title>使用 Linux cgroup 限制资源使用</title>
 
     <para>
-      Sometimes we want to limit the resource usage when we build a
-      package.  For example, when we have 8 logical cores, we may want
-      to use only 6 cores for building the package and reserve another
-      2 cores for playing a movie.  The Linux kernel provides a feature
-      called control groups (cgroup) for such a need.
+      有时我们希望限制构建软件包时的资源使用。例如，当有 8 个逻辑核时，我们可能只想使用 6 个核心构建软件包，保留另外 2 个核心用于播放电影。Linux 内核提供了名为控制组（cgroup）的功能来满足此类需求。
     </para>
 
     <para>
-      Enable control group in the kernel configuration, then rebuild the
-      kernel and reboot if necessary:
+      在内核配置中启用控制组，然后重新构建内核并在必要时重启：
     </para>
 
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -318,14 +177,7 @@ tar -xvf filename.tar.bz2</userinput></screen>
          systemd itself in LFS systemd, mountvirtfs script in LFS sysv. -->
 
     <para revision='systemd'>
-      Ensure <xref linkend='systemd'/> and <xref linkend='shadow'/> have
-      been rebuilt with <xref linkend='linux-pam'/> support (if you are
-      interacting via a SSH or graphical session, also ensure the
-      <xref linkend='openssh'/> server or the desktop manager has been
-      built with <xref linkend='linux-pam'/>).  As the &root; user, create
-      a configuration file to allow resource control without &root;
-      privilege, and instruct <command>systemd</command> to reload the
-      configuration:
+      确保 <xref linkend='systemd'/> 和 <xref linkend='shadow'/> 已使用 <xref linkend='linux-pam'/> 支持重新构建（如果您通过 SSH 或图形会话交互，还确保 <xref linkend='openssh'/> 服务器或桌面管理器已使用 <xref linkend='linux-pam'/> 构建）。以 &root; 用户身份创建配置文件以允许非 &root; 用户进行资源控制，并指示 <command>systemd</command> 重新加载配置：
     </para>
 
     <screen revision="systemd" role="nodump"><userinput>mkdir -pv /etc/systemd/system/user@.service.d &amp;&amp;
@@ -336,8 +188,7 @@ EOF
 systemctl daemon-reload</userinput></screen>
 
     <para revision='systemd'>
-      Then logout and login again.  Now to run <command>make -j5</command>
-      with the first 4 logical cores and 8 GB of system memory, issue:
+      然后注销并重新登录。现在要使用前 4 个逻辑核和 8 GB 系统内存运行 <command>make -j5</command>，请执行：
     </para>
 
     <screen revision="systemd" role="nodump"><userinput>systemctl   --user start dbus                &amp;&amp;
@@ -347,9 +198,7 @@ systemd-run --user --pty --pipe --wait -G -d \
             make -j5</userinput></screen>
 
     <para revision='sysv'>
-      Ensure <xref linkend='sudo'/> is installed.  To run
-      <command>make -j5</command> with the first 4 logical cores and 8 GB
-      of system memory, issue:
+      确保安装了 <xref linkend='sudo'/>。要使用前 4 个逻辑核和 8 GB 系统内存运行 <command>make -j5</command>，请执行：
     </para>
 
     <!-- "\EOF" because we expect $$ to be expanded by the "bash -e"
@@ -373,31 +222,21 @@ systemd-run --user --pty --pipe --wait -G -d \
 EOF</userinput></screen>
 
     <para>
-      With
+      使用
       <phrase revision='systemd'>
-        <parameter>MemoryHigh=8G</parameter>,
+        <parameter>MemoryHigh=8G</parameter>，
       </phrase>
       <phrase revision='sysv'>
-        <literal>8589934592</literal> (the output of
-        <userinput>bc -e '8*2^30'</userinput>, 2^30 represents
-        2<superscript>30</superscript>, i.e. a Gigabyte) in the
-        <filename>memory.high</filename> entry,
-      </phrase> a soft limit of memory usage is set.
-      If the processes in the cgroup (<command>make</command> and all the
-      descendants of it) uses more than 8 GB of system memory in total,
-      the kernel will throttle down the processes and try to reclaim the
-      system memory from them.  But they can still use more than 8 GB of
-      system memory.  If you want to make a hard limit instead, replace
+        <literal>8589934592</literal>（<userinput>bc -e '8*2^30'</userinput> 的输出，2^30 表示 2<superscript>30</superscript>，即 1 GB）作为 <filename>memory.high</filename> 条目的值，
+      </phrase>
+      设置了内存使用的软限制。如果 cgroup 中的进程（<command>make</command> 及其所有后代进程）总共使用超过 8 GB 的系统内存，内核将限制这些进程并尝试从它们回收系统内存。但它们仍然可以使用超过 8 GB 的系统内存。如果您想设置硬限制，请将
       <phrase revision='systemd'>
-        <parameter>MemoryHigh</parameter> with
-        <parameter>MemoryMax</parameter>.
+        <parameter>MemoryHigh</parameter> 替换为 <parameter>MemoryMax</parameter>。
       </phrase>
       <phrase revision='sysv'>
-        <filename>memory.high</filename> with
-        <filename>memory.max</filename>.
+        <filename>memory.high</filename> 替换为 <filename>memory.max</filename>。
       </phrase>
-      But doing so will cause the processes killed if 8 GB is not enough
-      for them.
+      但这样做如果 8 GB 不够用，会导致进程被杀死。
     </para>
 
     <para>
@@ -405,80 +244,37 @@ EOF</userinput></screen>
         <parameter>AllowedCPUs=0-3</parameter>
       </phrase>
       <phrase revision='sysv'>
-        <literal>0-3</literal> in the <filename>cpuset.cpus</filename>
-        entry
-      </phrase> makes the kernel only run the processes in the cgroup on
-      the logical cores with numbers 0, 1, 2, or 3.  You may need to
-      adjust this setting based the mapping between the logical cores and the
-      physical cores.  For example, with an Intel Core i9-13900K CPU,
-      the logical cores 0, 2, 4, ..., 14 are mapped to the first threads of
-      the eight physical P cores, the logical cores 1, 3, 5, ..., 15 are
-      mapped to the second threads of the physical P cores, and the logical
-      cores 16, 17, ..., 31 are mapped to the 16 physical E cores.  So if
-      we want to use four threads from four different P cores, we need to
-      specify <literal>0,2,4,6</literal> instead of <literal>0-3</literal>.
-      Note that the other CPU models may use a different mapping scheme.
-      If you are not sure about the mapping between the logical cores
-      and the physical cores, run the <command>lscpu --extended</command>
-      command which will output logical core IDs in the
-      <computeroutput>CPU</computeroutput> column, and physical core
-      IDs in the <computeroutput>CORE</computeroutput> column.
+        <literal>0-3</literal>（在 <filename>cpuset.cpus</filename> 条目中）
+      </phrase>
+      使内核仅在编号为 0、1、2 或 3 的逻辑核上运行 cgroup 中的进程。您可能需要根据逻辑核与物理核的映射关系调整此设置。例如，对于 Intel Core i9-13900K CPU，逻辑核 0、2、4、……、14 映射到 8 个物理 P 核的第一个线程，逻辑核 1、3、5、……、15 映射到物理 P 核的第二个线程，逻辑核 16、17、……、31 映射到 16 个物理 E 核。因此，如果我们想使用来自四个不同 P 核的四个线程，需要指定 <literal>0,2,4,6</literal> 而不是 <literal>0-3</literal>。请注意，其他 CPU 型号可能使用不同的映射方案。如果不确定逻辑核与物理核之间的映射，请运行 <command>lscpu --extended</command> 命令，该命令会在 <computeroutput>CPU</computeroutput> 列输出逻辑核 ID，在 <computeroutput>CORE</computeroutput> 列输出物理核 ID。
     </para>
 
     <para>
-      When the <command>nproc</command> or <command>ninja</command> command
-      runs in a cgroup, it will use the number of logical cores assigned to
-      the cgroup as the <quote>system logical core count.</quote>  For
-      example, in a cgroup with logical cores 0-3 assigned,
-      <command>nproc</command> will print
-      <computeroutput>4</computeroutput>, and <command>ninja</command>
-      will run 6 (4 + 2) jobs simultaneously if no <option>-j</option>
-      setting is explicitly given.
+      当 <command>nproc</command> 或 <command>ninja</command> 命令在 cgroup 中运行时，它会将分配给 cgroup 的逻辑核数用作“系统逻辑核数”。例如，在分配了逻辑核 0-3 的 cgroup 中，<command>nproc</command> 将输出 <computeroutput>4</computeroutput>，而如果没有明确给出 <option>-j</option> 设置，<command>ninja</command> 将同时运行 6（4 + 2）个任务。
     </para>
 
     <para revision="systemd">
-      Read the man pages <ulink role='man'
-      url='&man;systemd-run.1'>systemd-run(1)</ulink> and
+      阅读 man 手册 <ulink role='man'
+      url='&man;systemd-run.1'>systemd-run(1)</ulink> 和
       <ulink role='man'
   url='&man;systemd.resource-control.5'>systemd.resource-control(5)</ulink>
-      for the detailed explanation of parameters in the command.
+      以获取命令中参数的详细说明。
     </para>
 
     <para revision="sysv">
-      Read the <filename>Documentation/admin-guide/cgroup-v2.rst</filename>
-      file in the Linux kernel source tree for the detailed explanation of
-      <systemitem class="filesystem">cgroup2</systemitem> pseudo file
-      system entries referred in the command.
+      阅读 Linux 内核源代码树中的 <filename>Documentation/admin-guide/cgroup-v2.rst</filename> 文件，以获取命令中所引用的 <systemitem class="filesystem">cgroup2</systemitem> 伪文件系统条目的详细说明。
     </para>
 
   </sect2>
 
-  <sect2 id="automating-builds" xreflabel="Automated Building Procedures">
-    <title>Automated Building Procedures</title>
+  <sect2 id="automating-builds" xreflabel="自动化构建过程">
+    <title>自动化构建过程</title>
 
-    <para>There are times when automating the building of a package can come in
-    handy. Everyone has their own reasons for wanting to automate building,
-    and everyone goes about it in their own way. Creating
-    <filename>Makefile</filename>s, <application>Bash</application> scripts,
-    <application>Perl</application> scripts or simply a list of commands used
-    to cut and paste are just some of the methods you can use to automate
-    building BLFS packages. Detailing how and providing examples of the many
-    ways you can automate the building of packages is beyond the scope of this
-    section. This section will expose you to using file redirection and the
-    <command>yes</command> command to help provide ideas on how to automate
-    your builds.</para>
+    <para>有时自动化构建软件包会非常方便。每个人都可能有自己自动化构建的理由，并且各有各的方法。创建 <filename>Makefile</filename>、<application>Bash</application> 脚本、<application>Perl</application> 脚本，或者仅仅是一组用于剪切粘贴的命令列表，都只是您可以用来自动化构建 BLFS 软件包的一些方法。详细说明并提供各种自动化构建方法示例超出了本节的范围。本节将向您介绍使用文件重定向和 <command>yes</command> 命令，以帮助提供自动化构建的思路。</para>
 
-    <bridgehead renderas="sect3">File Redirection to Automate Input</bridgehead>
+    <bridgehead renderas="sect3">文件重定向自动化输入</bridgehead>
 
-    <para>You will find times throughout your BLFS journey when you will come
-    across a package that has a command prompting you for information. This
-    information might be configuration details, a directory path, or a response
-    to a license agreement. This can present a challenge to automate the
-    building of that package. Occasionally, you will be prompted for different
-    information in a series of questions. One method to automate this type of
-    scenario requires putting the desired responses in a file and using
-    redirection so that the program uses the data in the file as the answers to
-    the questions.</para>
+    <para>在您的 BLFS 旅程中，您会遇到一些软件包，其命令会提示您输入信息。这些信息可能是配置细节、目录路径或对许可协议的响应。这给自动化构建该软件包带来了挑战。有时，您会在一系列问题中被提示输入不同的信息。自动化此类场景的一种方法是将所需的响应放入一个文件，并使用重定向，以便程序使用该文件中的数据作为问题的答案。</para>
 <!-- outdated
     <para>Building the <application>CUPS</application> package is a good
     example of how redirecting a file as input to prompts can help you automate
@@ -490,347 +286,176 @@ EOF</userinput></screen>
 
 <screen><userinput>make check &lt; ../cups-1.1.23-testsuite_parms</userinput></screen>
 -->
-    <para>This effectively makes the test suite use the responses in the file
-    as the input to the questions. Occasionally you may end up doing a bit of
-    trial and error determining the exact format of your input file for some
-    things, but once figured out and documented you can use this to automate
-    building the package.</para>
+    <para>这实际上使测试套件使用文件中的响应作为问题的输入。有时您可能需要进行一些反复试验来确定某些内容的输入文件的确切格式，但一旦弄清楚并记录下来，您就可以使用它来自动化构建软件包。</para>
 
-    <bridgehead renderas="sect3">Using <command>yes</command> to Automate
-    Input</bridgehead>
+    <bridgehead renderas="sect3">使用 <command>yes</command> 自动化输入</bridgehead>
 
-    <para>Sometimes you will only need to provide one response, or provide the
-    same response to many prompts. For these instances, the
-    <command>yes</command> command works really well. The
-    <command>yes</command> command can be used to provide a response (the same
-    one) to one or more instances of questions. It can be used to simulate
-    pressing just the <keycap>Enter</keycap> key, entering the
-    <keycap>Y</keycap> key or entering a string of text. Perhaps the easiest
-    way to show its use is in an example.</para>
+    <para>有时您只需要提供一个响应，或者对许多提示提供相同的响应。对于这些情况，<command>yes</command> 命令非常有效。<command>yes</command> 命令可用于为一个或多个问题实例提供（相同的）响应。它可以用来模拟仅按 <keycap>Enter</keycap> 键、输入 <keycap>Y</keycap> 键或输入一串文本。展示其用法的最简单方法可能是在示例中。</para>
 
-    <para>First, create a short <application>Bash</application> script by
-    entering the following commands:</para>
+    <para>首先，通过输入以下命令创建一个简短的 <application>Bash</application> 脚本：</para>
 
 <screen><userinput>cat &gt; blfs-yes-test1 &lt;&lt; "EOF"
 <literal>#!/bin/bash
 
-echo -n -e "\n\nPlease type something (or nothing) and press Enter ---> "
+echo -n -e "\n\n请键入一些内容（或什么都不键入）并按 Enter 键 ---> "
 
 read A_STRING
 
-if test "$A_STRING" = ""; then A_STRING="Just the Enter key was pressed"
-else A_STRING="You entered '$A_STRING'"
+if test "$A_STRING" = ""; then A_STRING="仅按了 Enter 键"
+else A_STRING="您输入了 '$A_STRING'"
 fi
 
 echo -e "\n\n$A_STRING\n\n"</literal>
 EOF
 chmod 755 blfs-yes-test1</userinput></screen>
 
-    <para>Now run the script by issuing <command>./blfs-yes-test1</command> from
-    the command line. It will wait for a response, which can be anything (or
-    nothing) followed by the <keycap>Enter</keycap> key. After entering
-    something, the result will be echoed to the screen. Now use the
-    <command>yes</command> command to automate the entering of a
-    response:</para>
+    <para>现在从命令行运行脚本 <command>./blfs-yes-test1</command>。它将等待一个响应，可以是任何内容（或空），然后按 <keycap>Enter</keycap> 键。输入内容后，结果将回显到屏幕上。现在使用 <command>yes</command> 命令自动化输入响应：</para>
 
 <screen><userinput>yes | ./blfs-yes-test1</userinput></screen>
 
-    <para>Notice that piping <command>yes</command> by itself to the script
-    results in <keycap>y</keycap> being passed to the script. Now try it with a
-    string of text:</para>
+    <para>请注意，仅将 <command>yes</command> 通过管道传给脚本，会导致将 <keycap>y</keycap> 传递给脚本。现在尝试使用一串文本：</para>
 
-<screen><userinput>yes 'This is some text' | ./blfs-yes-test1</userinput></screen>
+<screen><userinput>yes '这是一些文本' | ./blfs-yes-test1</userinput></screen>
 
-    <para>The exact string was used as the response to the script. Finally,
-    try it using an empty (null) string:</para>
+    <para>该确切字符串被用作脚本的响应。最后，尝试使用空（null）字符串：</para>
 
 <screen><userinput>yes '' | ./blfs-yes-test1</userinput></screen>
 
-    <para>Notice this results in passing just the press of the
-    <keycap>Enter</keycap> key to the script. This is useful for times when the
-    default answer to the prompt is sufficient. This syntax is used in the
-    <xref linkend="net-tools-automate-example"/> instructions to accept all the
-    defaults to the many prompts during the configuration step. You may now
-    remove the test script, if desired.</para>
+    <para>请注意，这会导致仅将按 <keycap>Enter</keycap> 键传递给脚本。这在提示的默认答案就足够时非常有用。在 <xref linkend="net-tools-automate-example"/> 指令中使用了此语法，以接受配置步骤中许多提示的所有默认值。如果愿意，您现在可以删除测试脚本。</para>
 
-    <bridgehead renderas="sect3">File Redirection to Automate Output</bridgehead>
+    <bridgehead renderas="sect3">文件重定向自动化输出</bridgehead>
 
-    <para>In order to automate the building of some packages, especially those
-    that require you to read a license agreement one page at a time, requires
-    using a method that avoids having to press a key to display each page.
-    Redirecting the output to a file can be used in these instances to assist
-    with the automation. The previous section on this page touched on creating
-    log files of the build output. The redirection method shown there used the
-    <command>tee</command> command to redirect output to a file while also
-    displaying the output to the screen. Here, the output will only be sent to
-    a file.</para>
+    <para>为了自动化构建某些软件包，特别是那些要求您逐页阅读许可协议的软件包，需要使用一种避免按键显示每一页的方法。在这些情况下，将输出重定向到文件可用于辅助自动化。本节前一页提到了创建构建输出的日志文件。那里显示的重定向方法使用 <command>tee</command> 命令将输出重定向到文件，同时还将输出显示在屏幕上。这里，输出将仅发送到文件。</para>
 
-    <para>Again, the easiest way to demonstrate the technique is to show an
-    example. First, issue the command:</para>
+    <para>同样，展示该技术的最简单方法是通过示例。首先，执行命令：</para>
 
 <screen><userinput>ls -l /usr/bin | less</userinput></screen>
 
-    <para>Of course, you'll be required to view the output one page at a time
-    because the <command>less</command> filter was used. Now try the same
-    command, but this time redirect the output to a file. The special file
-    <filename>/dev/null</filename> can be used instead of the filename shown,
-    but you will have no log file to examine:</para>
+    <para>当然，因为使用了 <command>less</command> 过滤器，您需要逐页查看输出。现在尝试相同的命令，但这次将输出重定向到文件。可以使用特殊文件 <filename>/dev/null</filename> 代替所示文件名，但这样就没有日志文件可供检查了：</para>
 
 <screen><userinput>ls -l /usr/bin | less &gt; redirect_test.log 2&gt;&amp;1</userinput></screen>
 
-    <para>Notice that this time the command immediately returned to the shell
-    prompt without having to page through the output. You may now remove the
-    log file.</para>
+    <para>请注意，这次命令立即返回到 shell 提示符，而无需逐页翻阅输出。您现在可以删除日志文件。</para>
 
-    <para>The last example will use the <command>yes</command> command in
-    combination with output redirection to bypass having to page through the
-    output and then provide a <keycap>y</keycap> to a prompt. This technique
-    could be used in instances when otherwise you would have to page through
-    the output of a file (such as a license agreement) and then answer the
-    question of <computeroutput>do you accept the above?</computeroutput>.
-    For this example,
-    another short <application>Bash</application> script is required:</para>
+    <para>最后一个示例将结合使用 <command>yes</command> 命令和输出重定向，以绕过必须逐页翻阅输出然后对提示输入 <keycap>y</keycap> 的步骤。这种技术可用于那些否则您需要逐页翻阅文件（如许可协议）然后回答“您是否接受上述内容？”的情况。为此，需要另一个简短的 <application>Bash</application> 脚本：</para>
 
 <screen><userinput>cat &gt; blfs-yes-test2 &lt;&lt; "EOF"
 <literal>#!/bin/bash
 
 ls -l /usr/bin | less
 
-echo -n -e "\n\nDid you enjoy reading this? (y,n) "
+echo -n -e "\n\n您喜欢阅读这些内容吗？(y,n) "
 
 read A_STRING
 
-if test "$A_STRING" = "y"; then A_STRING="You entered the 'y' key"
-else A_STRING="You did NOT enter the 'y' key"
+if test "$A_STRING" = "y"; then A_STRING="您输入了 'y' 键"
+else A_STRING="您没有输入 'y' 键"
 fi
 
 echo -e "\n\n$A_STRING\n\n"</literal>
 EOF
 chmod 755 blfs-yes-test2</userinput></screen>
 
-    <para>This script can be used to simulate a program that requires you to
-    read a license agreement, then respond appropriately to accept the
-    agreement before the program will install anything. First, run the script
-    without any automation techniques by issuing
-    <command>./blfs-yes-test2</command>.</para>
+    <para>此脚本可用于模拟需要您阅读许可协议，然后适当响应以接受协议，之后程序才会安装任何内容的程序。首先，在不使用任何自动化技术的情况下运行脚本：<command>./blfs-yes-test2</command>。</para>
 
-    <para>Now issue the following command which uses two automation techniques,
-    making it suitable for use in an automated build script:</para>
+    <para>现在执行以下命令，它使用了两种自动化技术，适合在自动化构建脚本中使用：</para>
 
 <screen><userinput>yes | ./blfs-yes-test2 &gt; blfs-yes-test2.log 2&gt;&amp;1</userinput></screen>
 
-    <para>If desired, issue <command>tail blfs-yes-test2.log</command> to see
-    the end of the paged output, and confirmation that <keycap>y</keycap> was
-    passed through to the script. Once satisfied that it works as it should,
-    you may remove the script and log file.</para>
+    <para>如果需要，执行 <command>tail blfs-yes-test2.log</command> 查看分页输出的末尾，并确认 <keycap>y</keycap> 已传递给脚本。一旦确认其工作正常，您可以删除脚本和日志文件。</para>
 
-    <para>Finally, keep in mind that there are many ways to automate and/or
-    script the build commands. There is not a single <quote>correct</quote> way
-    to do it. Your imagination is the only limit.</para>
+    <para>最后，请记住，有很多方法可以自动化或编写构建命令的脚本。没有唯一的“正确”方法。您的想象力是唯一的限制。</para>
 
   </sect2>
 
   <sect2>
-    <title>Dependencies</title>
+    <title>依赖关系</title>
 
-    <para>For each package described, BLFS lists the known dependencies.
-    These are listed under several headings, whose meaning is as follows:</para>
+    <para>对于每个描述的软件包，BLFS 都会列出已知的依赖关系。这些依赖关系按几个标题列出，其含义如下：</para>
 
     <itemizedlist>
       <listitem>
-        <para><emphasis>Required</emphasis> means that the target package
-        cannot be correctly built without the dependency having first been
-        installed, except if the dependency is said to be
-        <quote>runtime</quote> which means the target package can be built but
-        cannot function without it.</para>
+        <para><emphasis>必需</emphasis> 意味着目标软件包在未首先安装依赖关系的情况下无法正确构建，除非该依赖关系被标注为“运行时”，这意味着目标软件包可以构建，但缺少它则无法运行。</para>
         <para>
-          Note that a target package can start to <quote>function</quote>
-          in many subtle ways: an installed configuration file can make the
-          init system, cron daemon, or bus daemon to run a program
-          automatically; another package using the target package as a
-          dependency can run a program from the target package in the
-          building system; and the configuration sections in the BLFS book
-          may also run a program from a just installed package.  So if
-          you are installing the target package without a
-          <emphasis>Required (runtime)</emphasis> dependency installed,
-          You should install the dependency as soon as possible after the
-          installation of the target package.
+          请注意，目标软件包可以以多种微妙的方式开始“运行”：已安装的配置文件可以使 init 系统、cron 守护进程或总线守护进程自动运行某个程序；另一个使用目标软件包作为依赖关系的软件包可以在构建系统中运行目标软件包中的程序；BLFS 本书中的配置章节也可能运行刚安装的软件包中的程序。因此，如果您在未安装 <emphasis>必需（运行时）</emphasis> 依赖关系的情况下安装目标软件包，则应在安装目标软件包后尽快安装该依赖关系。
         </para>
       </listitem>
       <listitem>
-        <para><emphasis>Recommended</emphasis> means that BLFS strongly
-        suggests this package is installed first (except if said to be
-        <quote>runtime,</quote> see below) for a clean and trouble-free
-        build, that won't have issues either during the build process, or at
-        run-time.  The instructions in the book assume these packages are
-        installed.  In many cases, if a recommended dependency (not just
-        <quote>runtime</quote>) is not installed, the built package may
-        lack some important functionalities (for example, a video player
-        may be only able to play audio). Sometimes, it's needed to modify
-        the book instructions to disable those important functionalities.
-        In other cases, the build system of the package may build a copy
-        of the dependency (often outdated and sometimes with known security
-        vulnerabilities) shipped in the source tree, or may be downloaded from
-        the Internet during the build process. This increases build time and
-        disk usage. This could potentially cause other problems.
+        <para><emphasis>推荐</emphasis> 意味着 BLFS 强烈建议首先安装此软件包（除非标注为“运行时”，见下文），以获得干净且无故障的构建，在构建过程或运行时不会出现问题。本书中的指令假定已安装这些软件包。在许多情况下，如果未安装推荐的依赖关系（不仅仅是“运行时”），构建的软件包可能缺少某些重要功能（例如，视频播放器可能只能播放音频）。有时需要修改本书指令以禁用这些重要功能。在其他情况下，软件包的构建系统可能会构建源代码树中附带的依赖关系副本（通常已过时，有时存在已知安全漏洞），或者在构建过程中从互联网下载。这会增加构建时间和磁盘使用量，并可能导致其他问题。
 
-        If a recommended dependency is said
-        to be <quote>runtime,</quote> it means that BLFS strongly suggests
-        that this dependency is installed before using the package, for
-        getting full functionality.</para>
+        如果推荐的依赖关系被标注为“运行时”，则意味着 BLFS 强烈建议在使用该软件包之前安装该依赖关系，以获得完整功能。</para>
       </listitem>
       <listitem>
-        <para><emphasis>Optional</emphasis> means that this package might be
-        installed for added functionality. Often BLFS will describe the
-        dependency to explain the added functionality that will result.
-        Some optional dependencies are automatically picked up by the target
-        package if the dependency is installed, while others
-        also need additional configuration options to be enabled
-        when the target package is built.  Such additional options are
-        often documented in the BLFS book.  If an optional dependency is
-        said to be <quote>runtime,</quote> it means you may install
-        the dependency after installing the target package to support some
-        optional features of the target package if you need these
-        features.</para>
-        <para>An optional dependency may be out of BLFS.  If you need such
-        an <emphasis>external</emphasis> optional dependency for some
-        features you need, read <xref linkend='beyond'/> for the general
-        hint about installing an out-of-BLFS package.  Note that the BLFS
-        editors don't test a configuration with external packages in
-        general, thus there is absolutely no quality assurance for the
-        external dependencies listed in the book.  The list of external
-        dependencies may be incomplete or contain some redundant item.
-        In the worst case, the mere existence of an external dependency
-        on the system can trigger a bug in the package, causing a build
-        or runtime failure.</para>
+        <para><emphasis>可选</emphasis> 意味着可以安装此软件包以获得附加功能。BLFS 通常会描述该依赖关系以说明由此产生的附加功能。某些可选依赖关系在安装后会被目标软件包自动识别，而另一些则还需要在构建目标软件包时启用额外的配置选项。此类额外选项通常记录在 BLFS 书中。如果可选依赖关系被标注为“运行时”，则意味着您可以在安装目标软件包后安装该依赖关系，以支持目标软件包的某些可选功能（如果您需要这些功能）。</para>
+        <para>可选依赖关系可能不在 BLFS 中。如果您需要此类 <emphasis>外部</emphasis> 可选依赖关系以实现某些功能，请阅读 <xref linkend='beyond'/> 以获取关于安装非 BLFS 软件包的一般提示。请注意，BLFS 编辑通常不会测试带有外部软件包的配置，因此书中列出的外部依赖关系绝对没有质量保证。外部依赖关系列表可能不完整或包含某些冗余项。在最坏情况下，系统上仅存在某个外部依赖关系就可能触发软件包中的错误，导致构建或运行时失败。</para>
       </listitem>
     </itemizedlist>
 
   </sect2>
 
   <sect2 id="package_updates">
-    <title>Using the Most Current Package Sources</title>
+    <title>使用最新的软件源码</title>
 
-    <para>On occasion you may run into a situation in the book when a package
-    will not build or work properly. Though the Editors attempt to ensure
-    that every package in the book builds and works properly, sometimes a
-    package has been overlooked or was not tested with this particular version
-    of BLFS.</para>
+    <para>有时您可能会遇到书中某个软件包无法构建或无法正常工作的情况。尽管编辑们努力确保书中每个软件包都能构建并正常工作，但有时某个软件包可能被忽视，或者未在此特定版本的 BLFS 上进行测试。</para>
 
-    <para>If you discover that a package will not build or work properly, you
-    should see if there is a more current version of the package. Typically
-    this means you go to the maintainer's web site and download the most current
-    tarball and attempt to build the package. If you cannot determine the
-    maintainer's web site by looking at the download URLs, use Google and query
-    the package's name. For example, in the Google search bar type:
-    'package_name download' (omit the quotes) or something similar. Sometimes
-    typing: 'package_name home page' will result in you finding the
-    maintainer's web site.</para>
+    <para>如果您发现某个软件包无法构建或无法正常工作，您应该查看是否有更新版本的软件包。通常这意味着您需要访问维护者的网站并下载最新的 tarball，然后尝试构建该软件包。如果您无法通过查看下载 URL 确定维护者的网站，请使用 Google 查询软件包名称。例如，在 Google 搜索栏中输入：“package_name download”（不含引号）或类似内容。有时输入：“package_name home page” 会使您找到维护者的网站。</para>
 
   </sect2>
 
   <sect2 id="stripping">
-    <title>Stripping One More Time</title>
+    <title>再谈剥离</title>
 
     <para>
-      In LFS, stripping of debugging symbols and unneeded symbol table
-      entries was discussed a couple of times.  When building BLFS packages,
-      there are generally no special instructions that discuss stripping
-      again. Stripping can be done while installing a package, or
-      afterwards.
+      在 LFS 中，已经多次讨论了调试符号和不需要的符号表条目的剥离。构建 BLFS 软件包时，通常没有特别说明再次进行剥离。剥离可以在安装软件包时进行，也可以在之后进行。
     </para>
 
-    <bridgehead renderas="sect3" id="stripping-install">Stripping while Installing a Package</bridgehead>
+    <bridgehead renderas="sect3" id="stripping-install">安装软件包时剥离</bridgehead>
 
     <para>
-      There are several ways to strip executables installed by a
-      package. They depend on the build system used (see below <link
-        linkend="buildsystems">the section about build systems</link>),
-      so only some
-      generalities can be listed here:
+      有几种方法可以剥离软件包安装的可执行文件。它们取决于所使用的构建系统（见下文 <link
+        linkend="buildsystems">关于构建系统的章节</link>），因此这里只能列出一些通用方法：
     </para>
 
     <note>
       <para>
-        The following methods using the feature of a building system
-        (autotools, meson, or cmake) will not strip static libraries if any
-        is installed.  Fortunately there are not too many static libraries
-        in BLFS, and a static library can always be stripped safely by
-        running <command>strip --strip-unneeded</command> on it manually.
+        以下使用构建系统（autotools、meson 或 cmake）功能的方法不会剥离任何已安装的静态库。幸运的是，BLFS 中静态库不多，并且始终可以安全地手动运行 <command>strip --strip-unneeded</command> 来剥离静态库。
       </para>
     </note>
 
     <itemizedlist>
       <listitem>
         <para>
-          The packages using autotools usually have an
-          <parameter>install-strip</parameter> target in their generated
-          <filename>Makefile</filename> files. So installing stripped
-          executables is just a matter of using
-          <command>make install-strip</command> instead of
-          <command>make install</command>.
+          使用 autotools 的软件包通常在其生成的 <filename>Makefile</filename> 文件中有一个 <parameter>install-strip</parameter> 目标。因此，安装剥离后的可执行文件只需使用 <command>make install-strip</command> 代替 <command>make install</command>。
         </para>
       </listitem>
       <listitem>
         <para>
-          The packages using the meson build system can accept
-          <parameter>-D strip=true</parameter> when running
-          <command>meson</command>.  If you've forgot to add this option
-          running the <command>meson</command>, you can also run
-          <command>meson install --strip</command> instead of
-          <command>ninja install</command>.
+          使用 meson 构建系统的软件包可以在运行 <command>meson</command> 时接受 <parameter>-D strip=true</parameter>。如果您忘记在运行 <command>meson</command> 时添加此选项，也可以运行 <command>meson install --strip</command> 代替 <command>ninja install</command>。
         </para>
       </listitem>
       <listitem>
         <para>
-          <command>cmake</command> generates
-          <parameter>install/strip</parameter> targets for both the
-          <parameter>Unix Makefiles</parameter> and
-          <parameter>Ninja</parameter> generators (the default is
-          <parameter>Unix Makefiles</parameter> on linux). So just run
-          <command>make install/strip</command> or
-          <command>ninja install/strip</command> instead of the
-          <command>install</command> counterparts.
+          <command>cmake</command> 为 <parameter>Unix Makefiles</parameter> 和 <parameter>Ninja</parameter> 生成器（Linux 上默认是 <parameter>Unix Makefiles</parameter>）生成 <parameter>install/strip</parameter> 目标。因此只需运行 <command>make install/strip</command> 或 <command>ninja install/strip</command> 代替相应的 <command>install</command> 目标。
         </para>
       </listitem>
       <listitem>
         <para>
-          Removing (or not generating) debug symbols can also be
-          achieved by removing the
-          <parameter>-g&lt;something&gt;</parameter> options
-          in C/C++ calls. How to do that is very specific for each
-          package.  And, it does not remove unneeded symbol table entries.
-          So it will not be explained in detail here. See also below
-          the paragraphs about optimization.
+          移除（或不生成）调试符号也可以通过移除 C/C++ 调用中的 <parameter>-g&lt;something&gt;</parameter> 选项来实现。如何做到这一点对于每个软件包都非常具体。而且，这不会移除不需要的符号表条目。因此这里不再详细解释。另请参阅下面关于优化的段落。
         </para>
       </listitem>
     </itemizedlist>
 
-    <bridgehead renderas="sect3" id="stripping-installed">Stripping Installed Executables</bridgehead>
+    <bridgehead renderas="sect3" id="stripping-installed">剥离已安装的可执行文件</bridgehead>
 
     <para>
-      The <command>strip</command> utility changes files in place, which may
-      break anything using it if it is loaded in memory. Note that if a file is
-      in use but just removed from the disk (i.e. not overwritten nor
-      modified), this is not a problem since the kernel can use
-      <quote>deleted</quote> files.  Look at <filename>/proc/*/maps</filename>
-      and it is likely that you'll see some <emphasis>(deleted)</emphasis>
-      entries. The <command>mv</command> just removes the destination file from
-      the directory but does not touch its content, so that it satisfies the
-      condition for the kernel to use the old (deleted) file.
-      But this approach can detach hard links into duplicated copies,
-      causing a bloat which is obviously unwanted as we are stripping to
-      reduce system size.  If two files in a same file system share the
-      same inode number, they are hard links to each other and we should
-      reconstruct the link.  The script below is just an example.
-      It should be run as the &root; user:
+      <command>strip</command> 工具会原地修改文件，如果文件已加载到内存中，可能会破坏任何使用它的程序。请注意，如果文件正在使用但只是从磁盘删除（即未覆盖或修改），则这不是问题，因为内核可以使用“已删除”的文件。查看 <filename>/proc/*/maps</filename>，您很可能会看到一些 <emphasis>(deleted)</emphasis> 条目。<command>mv</command> 仅从目录中删除目标文件，但不修改其内容，因此满足内核使用旧（已删除）文件的条件。但这种方法可能会将硬链接拆分为重复副本，导致膨胀，这显然是我们不希望的，因为我们剥离是为了减小系统大小。如果同一文件系统中的两个文件共享相同的 inode 编号，则它们是彼此的硬链接，我们应该重建链接。下面的脚本只是一个示例。它应以 &root; 用户身份运行：
     </para>
 
 <screen><userinput>cat &gt; /usr/sbin/strip-all.sh &lt;&lt; "EOF"
 <literal>#!/usr/bin/bash
 
 if [ $EUID -ne 0 ]; then
-  echo "Need to be root"
+  echo "需要 root 权限"
   exit 1
 fi
 
@@ -860,16 +485,12 @@ EOF
 chmod 744 /usr/sbin/strip-all.sh</userinput></screen>
 
     <para>
-      If you install programs in other directories such as <filename
-      class="directory">/opt</filename> or <filename
-      class="directory">/usr/local</filename>, you may want to strip the files
-      there too. Just add other directories to scan in the compound list of
-      <command>find</command> commands between the braces.
+      如果您在 <filename class="directory">/opt</filename> 或 <filename class="directory">/usr/local</filename> 等其他目录中安装程序，您可能也希望剥离那里的文件。只需在大括号之间的 <command>find</command> 命令组合列表中添加其他要扫描的目录。
     </para>
 
     <para>
-      For more information on stripping, see <ulink
-      url="https://www.technovelty.org/linux/stripping-shared-libraries.html"/>.
+      有关剥离的更多信息，请参阅 <ulink
+      url="https://www.technovelty.org/linux/stripping-shared-libraries.html"/>。
     </para>
 
   </sect2>
@@ -898,122 +519,54 @@ chmod 744 /usr/sbin/strip-all.sh</userinput></screen>
   </sect2>
 -->
   <sect2 id="buildsystems">
-    <title>Working with different build systems</title>
+    <title>使用不同的构建系统</title>
 
     <para>
-      There are now three different build systems in common use for
-      converting C or C++ source code into compiled programs or
-      libraries and their details (particularly, finding out about available
-      options and their default values) differ. It may be easiest to understand
-      the issues caused by some choices (typically slow execution or
-      unexpected use of, or omission of, optimizations) by starting with
-      the <envar>CFLAGS</envar>, <envar>CXXFLAGS</envar>, and
-      <envar>LDFLAGS</envar> environment variables.  There are also some
-      programs which use Rust.
+      目前有三种常见的构建系统用于将 C 或 C++ 源代码转换为编译后的程序或库，它们的细节（特别是了解可用选项及其默认值）各不相同。从 <envar>CFLAGS</envar>、<envar>CXXFLAGS</envar> 和 <envar>LDFLAGS</envar> 环境变量开始，可能最容易理解某些选择（通常导致执行缓慢或意外使用或省略优化）引起的问题。还有一些程序使用 Rust。
     </para>
 
     <para>
-      Most LFS and BLFS builders are probably aware of the basics of
-      <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar> for altering how a
-      program is compiled. Typically, some form of optimization is used by
-      upstream developers (<option>-O2</option> or <option>-O3</option>),
-      sometimes with the creation of debug symbols (<option>-g</option>),
-      as defaults.
+      大多数 LFS 和 BLFS 构建者可能都了解 <envar>CFLAGS</envar> 和 <envar>CXXFLAGS</envar> 的基本知识，用于改变程序的编译方式。通常，上游开发人员会使用某种优化形式（<option>-O2</option> 或 <option>-O3</option>），有时还会创建调试符号（<option>-g</option>）作为默认值。
     </para>
 
     <para>
-      If there are contradictory flags (e.g. multiple different
-      <option>-O</option> values),
-      the <emphasis>last</emphasis> value will be used. Sometimes this means
-      that flags specified in environment variables will be picked up before
-      values hardcoded in the Makefile, and therefore ignored.  For example,
-      where a user specifies <option>-O2</option> and that is followed by
-      <option>-O3</option> the build will use <option>-O3</option>.
+      如果存在矛盾的标志（例如多个不同的 <option>-O</option> 值），则 <emphasis>最后</emphasis> 一个值将被使用。有时这意味着环境变量中指定的标志会在 Makefile 中硬编码的值之前被拾取，从而被忽略。例如，如果用户指定了 <option>-O2</option>，随后是 <option>-O3</option>，则构建将使用 <option>-O3</option>。
     </para>
 
     <para>
-      There are various other things which can be passed in CFLAGS or
-      CXXFLAGS, such as allowing using the instruction set extensions
-      available with a specific microarchitecture (e.g.
-      <option>-march=amdfam10</option> or <option>-march=native</option>),
-      tune the generated code for a specific microarchitecture (e. g.
-      <option>-mtune=tigerlake</option> or <option>-mtune=native</option>,
-      if <option>-mtune=</option> is not used, the microarchitecture from
-      <option>-march=</option> setting will be used), or specifying a
-      specific standard for C or C++ (<option>-std=c++17</option> for
-      example).  But one thing which has now come to light is that
-      programmers might include debug assertions in their code, expecting
-      them to be disabled in releases by using <option>-D NDEBUG</option>.
-      Specifically, if <xref linkend="mesa"/> is built with these
-      assertions enabled, some activities such as loading levels of games
-      can take extremely long times, even on high-class video cards.
+      还可以在 CFLAGS 或 CXXFLAGS 中传递各种其他内容，例如允许使用特定微架构可用的指令集扩展（例如 <option>-march=amdfam10</option> 或 <option>-march=native</option>），为特定微架构调整生成的代码（例如 <option>-mtune=tigerlake</option> 或 <option>-mtune=native</option>，如果未使用 <option>-mtune=</option>，则将使用 <option>-march=</option> 设置中的微架构），或指定 C 或 C++ 的特定标准（例如 <option>-std=c++17</option>）。但现在已经浮现的一件事是，程序员可能会在代码中包含调试断言，期望通过使用 <option>-D NDEBUG</option> 在发布版本中禁用它们。特别是，如果 <xref linkend="mesa"/> 启用了这些断言进行构建，那么某些活动（例如加载游戏关卡）即使使用高端显卡也可能花费极长的时间。
     </para>
 
-    <bridgehead renderas="sect3" id="autotools-info">Autotools with Make</bridgehead>
+    <bridgehead renderas="sect3" id="autotools-info">Autotools 与 Make</bridgehead>
 
       <para>
-        This combination is often described as <quote>CMMI</quote>
-        (configure, make, make install) and is used here to also cover
-        the few packages which have a configure script that is not
-        generated by autotools.
+        这种组合通常被描述为“CMMI”（configure、make、make install），此处也用于涵盖少数具有非 autotools 生成的 configure 脚本的软件包。
       </para>
 
       <para>
-        Sometimes running <command>./configure --help</command> will produce
-        useful options about switches which might be used.  At other times,
-        after looking at the output from configure you may need to look
-        at the details of the script to find out what it was actually searching
-        for.
+        有时运行 <command>./configure --help</command> 会生成关于可能使用的开关的有用选项。在其他时候，查看 configure 的输出后，您可能需要查看脚本的细节以了解它实际在查找什么。
       </para>
 
       <para>
-       Many configure scripts will pick up any CFLAGS or CXXFLAGS from the
-       environment, but CMMI packages vary about how these will be mixed with
-       any flags which would otherwise be used (<emphasis>variously</emphasis>:
-       ignored, used to replace the programmer's suggestion, used before the
-       programmer's suggestion, or used after the programmer's suggestion).
+        许多 configure 脚本会从环境中拾取任何 CFLAGS 或 CXXFLAGS，但 CMMI 软件包在如何将这些与环境中的标志混合（<emphasis>各不相同</emphasis>：忽略、用于替换程序员的建议、在程序员建议之前使用、或在程序员建议之后使用）方面各不相同。
       </para>
 
       <para>
-        In most CMMI packages, running <command>make</command> will list
-        each command and run it, interspersed with any warnings. But some
-        packages try to be <quote>silent</quote> and only show which file
-        they are compiling or linking instead of showing the command line.
-        If you need to inspect the command, either because of an error, or
-        just to see what options and flags are being used, adding
-        <option>V=1</option> to the make invocation may help.
+        在大多数 CMMI 软件包中，运行 <command>make</command> 将列出每个命令并运行它，其间夹杂任何警告。但有些软件包试图“静默”，只显示正在编译或链接的文件，而不显示命令行。如果您需要检查命令，无论是由于错误，还是仅仅为了查看正在使用的选项和标志，在 make 调用中添加 <option>V=1</option> 可能会有所帮助。
       </para>
 
     <bridgehead renderas="sect3" id="cmake-info">CMake</bridgehead>
 
       <para>
-        CMake works in a very different way, and it has two backends which
-        can be used on BLFS: <command>make</command> and
-        <command>ninja</command>. The default backend is make, but
-        ninja can be faster on large packages with multiple processors. To
-        use ninja, specify <option>-G Ninja</option> in the cmake command.
-        However, there are some packages which create fatal errors in their
-        ninja files but build successfully using the default of Unix
-        Makefiles.
+        CMake 的工作方式非常不同，它有两个可以在 BLFS 上使用的后端：<command>make</command> 和 <command>ninja</command>。默认后端是 make，但 ninja 在多处理器的大型软件包上可能更快。要使用 ninja，请在 cmake 命令中指定 <option>-G Ninja</option>。然而，有些软件包在其 ninja 文件中会产生致命错误，但使用默认的 Unix Makefiles 却能成功构建。
       </para>
 
       <para>
-        The hardest part of using CMake is knowing what options you might wish
-        to specify. The only way to get a list of what the package knows about
-        is to run <command>cmake -LAH</command> and look at the output for that
-        default configuration.
+        使用 CMake 最难的部分是了解您可能希望指定哪些选项。获取软件包已知选项列表的唯一方法是运行 <command>cmake -LAH</command> 并查看该默认配置的输出。
       </para>
 
       <para>
-        Perhaps the most-important thing about CMake is that it has a variety
-        of CMAKE_BUILD_TYPE values, and these affect the flags. The default
-        is that this is not set and no flags are generated. Any
-        <envar>CFLAGS</envar> or <envar>CXXFLAGS</envar> in the environment
-        will be used. If the programmer has coded any debug assertions,
-        those will be enabled unless -D NDEBUG is used. The following
-        CMAKE_BUILD_TYPE values will generate the flags shown, and these
-        will come <emphasis>after</emphasis> any flags in the environment
-        and therefore take precedence.
+        关于 CMake 最重要的一点可能是它有多种 CMAKE_BUILD_TYPE 值，这些值会影响标志。默认情况下未设置此值，且不生成任何标志。环境中的任何 <envar>CFLAGS</envar> 或 <envar>CXXFLAGS</envar> 都将被使用。如果程序员编写了任何调试断言，除非使用 -D NDEBUG，否则它们将被启用。以下 CMAKE_BUILD_TYPE 值将生成如下所示的标志，这些标志将 <emphasis>位于</emphasis> 环境中的任何标志 <emphasis>之后</emphasis>，并因此优先。
       </para>
 
       <informaltable align="center">
@@ -1021,7 +574,7 @@ chmod 744 /usr/sbin/strip-all.sh</userinput></screen>
           <colspec colnum="1" align="center"/>
           <colspec colnum="2" align="center"/>
           <thead>
-            <row><entry>Value</entry><entry>Flags</entry></row>
+            <row><entry>值</entry><entry>标志</entry></row>
           </thead>
           <tbody>
             <row>
@@ -1041,75 +594,45 @@ chmod 744 /usr/sbin/strip-all.sh</userinput></screen>
       </informaltable>
 
       <para>
-        CMake tries to produce quiet builds. To see the details of the commands
-        which are being run, use <command>make VERBOSE=1</command> or
-        <command>ninja -v</command>.
+        CMake 试图生成安静的构建。要查看正在运行的命令的详细信息，请使用 <command>make VERBOSE=1</command> 或 <command>ninja -v</command>。
       </para>
 
       <para>
-        By default, CMake treats file installation differently from the other
-        build systems: if a file already exists and is not newer than a file
-        that would overwrite it, then the file is not installed. This may be
-        a problem if a user wants to record which file belongs to a package,
-        either using <envar>LD_PRELOAD</envar>, or by listing files newer
-        than a timestamp. The default can be changed by setting the variable
-        <envar>CMAKE_INSTALL_ALWAYS</envar> to 1 in the
-        <emphasis>environment</emphasis>, for example by
-        <command>export</command>'ing it.
+        默认情况下，CMake 处理文件安装的方式与其他构建系统不同：如果文件已存在且不比要覆盖的文件更新，则该文件不会被安装。如果用户想记录文件属于哪个软件包，无论是使用 <envar>LD_PRELOAD</envar> 还是通过列出比时间戳更新的文件，这可能是个问题。可以通过在 <emphasis>环境</emphasis> 中将变量 <envar>CMAKE_INSTALL_ALWAYS</envar> 设置为 1 来更改默认设置，例如通过 <command>export</command> 导出。
       </para>
 
     <bridgehead renderas="sect3" id="meson-info">Meson</bridgehead>
 
       <para>
-        Meson has some similarities to CMake, but many differences. To get
-        details of the defines that you may wish to change you can look at
-        <filename>meson_options.txt</filename> which is usually in the
-        top-level directory.
+        Meson 与 CMake 有一些相似之处，但也有许多不同之处。要获取您可能希望更改的定义的详细信息，您可以查看通常位于顶层目录中的 <filename>meson_options.txt</filename>。
       </para>
 
       <para>
-        If you have already configured the package by running
-        <command>meson</command> and now wish to change one or more settings,
-        you can either remove the build directory, recreate it, and use the
-        altered options, or within the build directory run <command>meson
-        configure</command>, e.g. to set an option:
+        如果您已经通过运行 <command>meson</command> 配置了软件包，现在希望更改一个或多个设置，您可以删除构建目录、重新创建它并使用更改后的选项，或者在构建目录内运行 <command>meson configure</command>，例如设置一个选项：
       </para>
 
-<screen><userinput>meson configure -D &lt;some_option&gt;=true</userinput></screen>
+<screen><userinput>meson configure -D &lt;某个选项&gt;=true</userinput></screen>
 
       <para>
-        If you do that, the file <filename>meson-private/cmd_line.txt</filename>
-        will show the <emphasis>last</emphasis> commands which were used.
+        如果这样做，文件 <filename>meson-private/cmd_line.txt</filename> 将显示 <emphasis>最后</emphasis> 使用的命令。
       </para>
 
       <para>
-        Meson provides the following buildtype values, and the flags they enable
-        come <emphasis>after</emphasis> any flags supplied in the environment and
-        therefore take precedence.
+        Meson 提供以下 buildtype 值，它们启用的标志 <emphasis>位于</emphasis> 环境中提供的任何标志 <emphasis>之后</emphasis>，并因此优先。
       </para>
 
       <itemizedlist>
         <listitem>
-          <para>plain: no added flags. This is for distributors to supply their
-          own <envar>CFLAGS</envar>, <envar>CXXFLAGS</envar> and
-          <envar>LDFLAGS</envar>. There is no obvious reason to use
-          this in BLFS.</para>
+          <para>plain：不添加任何标志。这供发行版提供自己的 <envar>CFLAGS</envar>、<envar>CXXFLAGS</envar> 和 <envar>LDFLAGS</envar>。在 BLFS 中没有明显的理由使用此选项。</para>
         </listitem>
         <listitem>
-          <para>debug: <option>-g</option> - this is the default if
-          nothing is specified in either <filename>meson.build</filename>
-          or the command line. However it results large and slow binaries,
-          so we should override it in BLFS.</para>
+          <para>debug：<option>-g</option> —— 如果在 <filename>meson.build</filename> 或命令行中未指定任何内容，则为默认值。但它会产生庞大且缓慢的二进制文件，因此我们应在 BLFS 中覆盖它。</para>
         </listitem>
         <listitem>
-          <para>debugoptimized: <option>-O2 -g</option> - this is the
-          default specified in <filename>meson.build</filename> of some
-          packages.</para>
+          <para>debugoptimized：<option>-O2 -g</option> —— 这是某些软件包的 <filename>meson.build</filename> 中指定的默认值。</para>
         </listitem>
         <listitem>
-          <para>release: <option>-O3</option> (occasionally a package will
-          force <option>-O2</option> here) - this is the buildtype we use
-          for most packages with Meson build system in BLFS.</para>
+          <para>release：<option>-O3</option>（偶尔某个软件包会在此处强制使用 <option>-O2</option>）—— 这是我们在 BLFS 中对大多数使用 Meson 构建系统的软件包使用的 buildtype。</para>
         </listitem>
       </itemizedlist>
 
@@ -1118,95 +641,37 @@ chmod 744 /usr/sbin/strip-all.sh</userinput></screen>
            true, false, if-release.  Some packages sets it to if-release
            so we mistakenly believed if-release had been the default.  -->
       <para>
-        The <option>-D NDEBUG</option> flag is implied by the release
-        buildtype for some packages (for example <xref linkend='mesa'/>).
-        It can also be provided explicitly by passing
-        <option>-D b_ndebug=true</option>.
+        对于某些软件包（例如 <xref linkend='mesa'/>），release buildtype 隐含了 <option>-D NDEBUG</option> 标志。也可以通过传递 <option>-D b_ndebug=true</option> 显式提供它。
       </para>
 
       <para>
-        To see the details of the commands which are being run in a package using
-        meson, use <command>ninja -v</command>.
+        要查看使用 meson 的软件包中正在运行的命令的详细信息，请使用 <command>ninja -v</command>。
       </para>
 
-    <bridgehead renderas="sect3" id="rust-info">Rustc and Cargo</bridgehead>
+    <bridgehead renderas="sect3" id="rust-info">Rustc 和 Cargo</bridgehead>
 
       <para>
-        Most released rustc programs are provided as crates (source tarballs)
-        which will query a server to check current versions of dependencies
-        and then download them as necessary.  These packages are built using
-        <command>cargo --release</command>. In theory, you can manipulate the
-        RUSTFLAGS to change the optimize-level (default for
-        <option>--release</option> is 3, i. e.
-        <option>-Copt-level=3</option>, like <option>-O3</option>) or to
-        force it to build for the machine it is being compiled on, using
-        <option>-Ctarget-cpu=native</option> but in practice this seems to
-        make no significant difference.
+        大多数发布的 rustc 程序以 crate（源代码 tarball）形式提供，它们会查询服务器以检查依赖项的当前版本，然后根据需要下载它们。这些软件包使用 <command>cargo --release</command> 构建。理论上，您可以操作 RUSTFLAGS 来更改优化级别（<option>--release</option> 的默认值为 3，即 <option>-Copt-level=3</option>，类似于 <option>-O3</option>）或强制其为编译所在的机器构建，使用 <option>-Ctarget-cpu=native</option>，但实践中这似乎没有显著差异。
       </para>
 
       <para>
-        If you are compiling a standalone Rust program (as an unpackaged
-        <filename class='extension'>.rs</filename> file) by running
-        <command>rustc</command> directly, you should specify
-        <option>-O</option> (the abbreviation of
-        <option>-Copt-level=2</option>) or <option>-Copt-level=3</option>
-        otherwise it will do an unoptimized compile and run
-        <emphasis>much</emphasis> slower.  If you are compiling the program
-        for debugging it, replace the <option>-O</option> or
-        <option>-Copt-level=</option> options with <option>-g</option> to
-        produce an unoptimized program with debug info.
+        如果您通过直接运行 <command>rustc</command> 编译独立的 Rust 程序（作为未打包的 <filename class='extension'>.rs</filename> 文件），您应指定 <option>-O</option>（<option>-Copt-level=2</option> 的缩写）或 <option>-Copt-level=3</option>，否则它将进行未优化的编译并运行 <emphasis>慢得多</emphasis>。如果您正在为调试而编译程序，请将 <option>-O</option> 或 <option>-Copt-level=</option> 选项替换为 <option>-g</option>，以生成带有调试信息的未优化程序。
       </para>
 
       <para>
-        Like <command>ninja</command>, by default <command>cargo</command>
-        uses all logical cores.  This can often be worked around,
-        either by exporting
-        <envar>CARGO_BUILD_JOBS=<replaceable>&lt;N&gt;</replaceable></envar>
-        or passing
-        <option>--jobs <replaceable>&lt;N&gt;</replaceable></option> to
-        <command>cargo</command>.
-        For compiling rustc itself, specifying
-        <option>--jobs <replaceable>&lt;N&gt;</replaceable></option> for
-        invocations of <command>x.py</command>
-        (together with the <envar>CARGO_BUILD_JOBS</envar> environment
-        variable, which looks like a <quote>belt and braces</quote>
-        approach but seems to be necessary) mostly works. The exception is
-        running the tests when building rustc, some of them will
-        nevertheless use all online CPUs, at least as of rustc-1.42.0.
+        与 <command>ninja</command> 一样，默认情况下 <command>cargo</command> 使用所有逻辑核。这通常可以通过导出 <envar>CARGO_BUILD_JOBS=<replaceable>&lt;N&gt;</replaceable></envar> 或将 <option>--jobs <replaceable>&lt;N&gt;</replaceable></option> 传递给 <command>cargo</command> 来解决。对于编译 rustc 本身，为 <command>x.py</command> 调用指定 <option>--jobs <replaceable>&lt;N&gt;</replaceable></option>（连同 <envar>CARGO_BUILD_JOBS</envar> 环境变量，这看起来像“双保险”方法，但似乎是必要的）大部分有效。例外是运行 rustc 的测试时，至少从 rustc-1.42.0 开始，其中一些测试仍将使用所有在线 CPU。
       </para>
 
-      <bridgehead renderas="sect4" id="cargo-offline">Building offline with Cargo</bridgehead>
+      <bridgehead renderas="sect4" id="cargo-offline">使用 Cargo 离线构建</bridgehead>
 
       <para>
-        One of the problems with <application>Cargo</application> is that the
-        needed crates are downloaded on the fly, which makes it so that
-        <command>cargo build</command> cannot be run offline. Another annoyance
-        is that the needed crates are downloaded to the directory
-        <filename class="directory">~/.cargo</filename>, which may clutter
-        the user's or &root;'s home directory. For those who want to have
-        some more control on the download location for the crates, it is
-        possible to set the variable <envar>CARGO_HOME</envar> to the desired
-        location in the environment, for example:
+        <application>Cargo</application> 的问题之一是所需的 crate 会在构建过程中动态下载，这使得 <command>cargo build</command> 无法离线运行。另一个令人烦恼的是所需的 crate 会下载到目录 <filename class="directory">~/.cargo</filename>，这可能会弄乱用户或 &root; 的主目录。对于那些希望对 crate 的下载位置有更多控制权的人来说，可以在环境中将变量 <envar>CARGO_HOME</envar> 设置为所需位置，例如：
       </para>
 
 <screen role='nodump'><userinput>export CARGO_HOME=<replaceable>/sources/cargo</replaceable></userinput></screen>
 
       <para>
-        It is also possible to have all the needed crates downloaded at once
-        before building a package. We'll give two methods, which may have to
-        be adapted to the particular package that is built. The simplest one
-        is to download the needed packages by running <command>cargo fetch</command>
-        from the directory containing the top-level <filename>Cargo.toml</filename>
-        file. The packages are downloaded to <envar>$CARGO_HOME</envar> (or
-        <filename class='directory'>~/.cargo</filename>), and can be used
-        offline in the build instructions. But this may fail in some cases,
-        for example for packages that redefine <envar>CARGO_HOME</envar> in
-        their build system. In this case, the following instructions (run from
-        the directory containing the top <filename>Cargo.toml</filename>), will
-        create a <quote>vendor</quote> directory containing the source crates and
-        will use it offline. Note that the crates are also downloaded
-        to <envar>$CARGO_HOME</envar> by the <command>cargo vendor</command>
-        command:
+        也可以在构建软件包之前一次性下载所有需要的 crate。我们将给出两种方法，可能需要根据所构建的特定软件包进行调整。最简单的方法是从包含顶层 <filename>Cargo.toml</filename> 文件的目录运行 <command>cargo fetch</command> 来下载所需的软件包。这些软件包将下载到 <envar>$CARGO_HOME</envar>（或 <filename class='directory'>~/.cargo</filename>），并且可以在构建指令中离线使用。但在某些情况下可能会失败，例如对于在其构建系统中重新定义 <envar>CARGO_HOME</envar> 的软件包。在这种情况下，以下指令（从包含顶层 <filename>Cargo.toml</filename> 的目录运行）将创建一个包含源代码 crate 的“vendor”目录，并离线使用它。请注意，<command>cargo vendor</command> 命令也会将 crate 下载到 <envar>$CARGO_HOME</envar>：
       </para>
 
 <screen role='nodump'><userinput>cargo vendor    &amp;&amp;
@@ -1220,249 +685,119 @@ directory = "vendor"</literal>
 EOF</userinput></screen>
 
       <para>
-        After this, the instructions can be run as in the book.
+        之后，可以按照书中的说明运行指令。
       </para>
 
   </sect2>
 
   <sect2 id="optimizations">
-    <title>Optimizing the build</title>
+    <title>优化构建</title>
 
       <para>
-        Many people will prefer to optimize compiles as they see fit, by providing
-        <envar>CFLAGS</envar> or <envar>CXXFLAGS</envar>. For an
-        introduction to the options available with gcc and g++ see <ulink
-        url="https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/Optimize-Options.html"/>.
-        The same content can be also found in <command>info gcc</command>.
+        许多人倾向于通过提供 <envar>CFLAGS</envar> 或 <envar>CXXFLAGS</envar> 来按需优化编译。有关 gcc 和 g++ 可用选项的介绍，请参阅 <ulink
+        url="https://gcc.gnu.org/onlinedocs/gcc-&gcc-version;/gcc/Optimize-Options.html"/>。相同内容也可以在 <command>info gcc</command> 中找到。
       </para>
 
       <para>
-        Some packages default to <option>-O2 -g</option>, others to
-        <option>-O3 -g</option>, and if <envar>CFLAGS</envar> or
-        <envar>CXXFLAGS</envar> are supplied they might be added to the
-        package's defaults, replace the package's defaults, or even be
-        ignored.  There are details on some desktop packages which were
-        mostly current in April 2019 at
-        <ulink url="https://www.linuxfromscratch.org/~ken/tuning/"/> - in
-        particular, <filename>README.txt</filename>,
-        <filename>tuning-1-packages-and-notes.txt</filename>, and
-        <filename>tuning-notes-2B.txt</filename>. The particular thing to
-        remember is that if you want to try some of the more interesting
-        flags you may need to force verbose builds to confirm what is being
-        used.
+        有些软件包默认使用 <option>-O2 -g</option>，另一些使用 <option>-O3 -g</option>，如果提供了 <envar>CFLAGS</envar> 或 <envar>CXXFLAGS</envar>，它们可能会被添加到软件包的默认值中、替换软件包的默认值，甚至被忽略。关于一些桌面软件包的详细信息（大部分截至 2019 年 4 月）可在 <ulink url="https://www.linuxfromscratch.org/~ken/tuning/"/> 找到——特别是 <filename>README.txt</filename>、<filename>tuning-1-packages-and-notes.txt</filename> 和 <filename>tuning-notes-2B.txt</filename>。需要特别记住的是，如果您想尝试一些更有趣的标志，您可能需要强制详细构建以确认实际使用了哪些标志。
       </para>
 
       <para>
-        Clearly, if you are optimizing your own program you can spend time to
-        profile it and perhaps recode some of it if it is too slow. But for
-        building a whole system that approach is impractical. In general,
-        <option>-O3</option> usually produces faster programs than
-        <option>-O2</option>.  Specifying
-        <option>-march=native</option> is also beneficial, but means that
-        you cannot move the binaries to an incompatible machine - this can
-        also apply to newer machines, not just to older machines. For
-        example programs compiled for <literal>amdfam10</literal> run on
-        old Phenoms, Kaveris, and Ryzens, but programs compiled for a
-        Kaveri will not run on a Ryzen because certain op-codes are not
-        present.  Similarly, if you build for a Haswell not everything will
-        run on a SandyBridge.
+        显然，如果您在优化自己的程序，可以花时间对其进行分析，如果太慢，甚至可能重新编写部分代码。但对于构建整个系统，这种方法不切实际。一般来说，<option>-O3</option> 通常比 <option>-O2</option> 产生更快的程序。指定 <option>-march=native</option> 也是有益的，但这意味着您不能将二进制文件移动到不兼容的机器上——这也适用于较新的机器，而不仅仅是较旧的机器。例如，为 <literal>amdfam10</literal> 编译的程序可以在旧 Phenom、Kaveri 和 Ryzen 上运行，但为 Kaveri 编译的程序不能在 Ryzen 上运行，因为缺少某些操作码。类似地，如果您为 Haswell 构建，并非所有内容都能在 SandyBridge 上运行。
       </para>
 
       <note>
         <para>
-          Be careful that the name of a <option>-march</option> setting
-          does not always match the baseline of the microarchitecture
-          with the same name.  For example, the Skylake-based Intel Celeron
-          processors do not support AVX at all, but
-          <option>-march=skylake</option> assumes AVX and even AVX2.
+          请注意，<option>-march</option> 设置的名称并不总是与同名的微架构基线匹配。例如，基于 Skylake 的 Intel Celeron 处理器根本不支持 AVX，但 <option>-march=skylake</option> 假设支持 AVX 甚至 AVX2。
         </para>
       </note>
 
       <para>
-        When a shared library is built by GCC, a feature named
-        <quote>semantic interposition</quote> is enabled by default.  When
-        the shared library refers to a symbol name with external linkage
-        and default visibility, if the symbol exists in both the shared
-        library and the main executable, semantic interposition guarantees
-        the symbol in the main executable is always used.  This feature
-        was invented in an attempt to make the behavior of linking a shared
-        library and linking a static library as similar as possible.  Today
-        only a small number of packages still depend on semantic
-        interposition, but the feature is still on by the default of GCC,
-        causing many optimizations disabled for shared libraries because
-        they conflict with semantic interposition.  The
-        <option>-fno-semantic-interposition</option> option can be passed
-        to <command>gcc</command> or <command>g++</command> to disable
-        semantic interposition and enable more optimizations for shared
-        libraries.  This option is used as the default of some packages
-        (for example <xref linkend='python3'/>), and it's also the default
-        of Clang.
+        当 GCC 构建共享库时，默认启用名为“语义介入”的功能。当共享库引用具有外部链接和默认可见性的符号名称时，如果该符号同时存在于共享库和主可执行文件中，语义介入保证始终使用主可执行文件中的符号。此功能旨在使链接共享库和链接静态库的行为尽可能相似。如今只有少数软件包仍然依赖语义介入，但该功能在 GCC 中默认仍然开启，导致共享库的许多优化被禁用，因为它们与语义介入冲突。可以将 <option>-fno-semantic-interposition</option> 选项传递给 <command>gcc</command> 或 <command>g++</command> 以禁用语义介入并为共享库启用更多优化。此选项被某些软件包（例如 <xref linkend='python3'/>）用作默认值，也是 Clang 的默认值。
       </para>
 
       <para>
-        There are also various other options which some people claim are
-        beneficial. At worst, you get to recompile and test, and then
-        discover that in your usage the options do not provide a benefit.
+        还有其他各种选项，有些人声称它们有益。最坏的情况下，您会重新编译和测试，然后发现在您的使用场景中这些选项并未带来好处。
       </para>
 
       <para>
-        If building Perl or Python modules,
-        in general the <envar>CFLAGS</envar> and <envar>CXXFLAGS</envar>
-        used are those which were used by those <quote>parent</quote>
-        packages.
+        如果构建 Perl 或 Python 模块，通常使用的 <envar>CFLAGS</envar> 和 <envar>CXXFLAGS</envar> 是那些“父”软件包所使用的。
       </para>
 
       <para>
-        For <envar>LDFLAGS</envar>, three options can be used
-        for optimization.  They are quite safe to use and the building
-        system of some packages use some of these options as the default.
+        对于 <envar>LDFLAGS</envar>，可以使用三个选项进行优化。它们使用起来相当安全，并且某些软件包的构建系统默认使用其中一些选项。
       </para>
 
       <para>
-        With <option>-Wl,-O1</option>, the linker will
-        optimize the hash table to speed up the dynamic linking.
-        Note that <option>-Wl,-O1</option> is completely unrelated to the
-        compiler optimization flag <option>-O1</option>.
+        使用 <option>-Wl,-O1</option>，链接器将优化哈希表以加速动态链接。注意 <option>-Wl,-O1</option> 与编译器优化标志 <option>-O1</option> 完全无关。
       </para>
 
       <para>
-        With <option>-Wl,--as-needed</option>, the linker will disregard
-        unnecessary <option>-l<replaceable>foo</replaceable></option> options
-        from the command line, i. e. the shared library <systemitem
-        class='library'>lib<replaceable>foo</replaceable></systemitem>
-        will only be linked if a symbol in <systemitem
-        class='library'>lib<replaceable>foo</replaceable></systemitem> is
-        really referred from the executable or shared library being linked.
-        This can sometimes mitigate the <quote>excessive dependencies to
-        shared libraries</quote> issues caused by
-        <application>libtool</application>.
+        使用 <option>-Wl,--as-needed</option>，链接器将忽略命令行中不必要的 <option>-l<replaceable>foo</replaceable></option> 选项，即仅当可执行文件或正在链接的共享库中确实引用了 <systemitem class='library'>lib<replaceable>foo</replaceable></systemitem> 中的符号时，才会链接该共享库。这有时可以缓解由 <application>libtool</application> 引起的“对共享库的过度依赖”问题。
       </para>
 
       <para>
-        With <option>-Wl,-z,pack-relative-relocs</option>, the linker
-        generates a more compacted form of the relative relocation entries
-        for PIEs and shared libraries.  It reduces the size of the linked
-        PIE or shared library, and speeds up the loading of the PIE or
-        shared library.
+        使用 <option>-Wl,-z,pack-relative-relocs</option>，链接器会为 PIE 和共享库生成更紧凑的相对重定位条目形式。这减小了链接后的 PIE 或共享库的大小，并加快了 PIE 或共享库的加载速度。
       </para>
 
       <para>
-        The <option>-Wl,</option> prefix is necessary because despite the
-        variable is named <envar>LDFLAGS</envar>, its content is actually
-        passed to <command>gcc</command> (or <command>g++</command>,
-        <command>clang</command>, etc.) during the link stage, not directly
-        passed to <command>ld</command>.
+        <option>-Wl,</option> 前缀是必要的，因为尽管变量名为 <envar>LDFLAGS</envar>，但其内容实际上是在链接阶段传递给 <command>gcc</command>（或 <command>g++</command>、<command>clang</command> 等），而不是直接传递给 <command>ld</command>。
       </para>
 
   </sect2>
 
   <sect2 id="hardening">
-    <title>Options for hardening the build</title>
+    <title>构建加固选项</title>
 
       <para>
-        Even on desktop systems, there are still a lot of exploitable
-        vulnerabilities. For many of these, the attack comes via javascript
-        in a browser. Often, a series of vulnerabilities are used to gain
-        access to data (or sometimes to pwn, i.e. own, the machine and
-        install rootkits).  Most commercial distros will apply various
-        hardening measures.
+        即使在桌面系统上，仍然存在大量可利用的漏洞。其中许多攻击通过浏览器中的 javascript 进行。通常，一系列漏洞被用于获取数据（有时或用于 pwn，即控制机器并安装 rootkit）。大多数商业发行版会应用各种加固措施。
       </para>
 
       <para>
-        In the past, there was Hardened LFS where gcc (a much older version)
-        was forced to use hardening (with options to turn some of it off on a
-        per-package basis).  The current LFS and BLFS books are carrying
-        forward a part of its spirit by enabling PIE
-        (<option>-fPIE -pie</option>) and SSP
-        (<option>-fstack-protector-strong</option>) as the defaults
-        for GCC and clang.  And, the linker (<command>ld</command>)
-        has also enabled
-        <option>-Wl,-z,relro</option> which makes a part of the Global
-        Offset Table (GOT) immutable,
-        by default since Binutils 2.27. What is being covered here is
-        different - first you have to make sure that the package is indeed
-        using your added flags and not over-riding them.
+        过去曾有 Hardened LFS，其中 gcc（更旧的版本）被强制使用加固（并提供了按软件包关闭其中一些功能的选项）。当前的 LFS 和 BLFS 书籍通过将 PIE（<option>-fPIE -pie</option>）和 SSP（<option>-fstack-protector-strong</option>）作为 GCC 和 clang 的默认值来延续其部分精神。而且，链接器（<command>ld</command>）自 Binutils 2.27 起也默认启用了 <option>-Wl,-z,relro</option>，它使全局偏移表（GOT）的一部分变为不可变。这里要讨论的内容不同——首先您必须确保软件包确实使用了您添加的标志，而不是覆盖了它们。
       </para>
 
       <para>
-        For hardening options which are reasonably cheap, there is some
-        discussion in the 'tuning' link above (occasionally, one or more
-        of these options might be inappropriate for a package). These
-        options are <option>-D _FORTIFY_SOURCE=2</option>
-        (or <option>-D _FORTIFY_SOURCE=3</option> which is more secure but
-        with a larger performance overhead) and
-        (for C++) <option>-D _GLIBCXX_ASSERTIONS</option>. On modern
-        machines these should only have a little impact on how fast things
-        run, and often they will not be noticeable.
+        对于成本合理的加固选项，上述“tuning”链接中有一些讨论（偶尔，其中一个或多个选项可能不适合某个软件包）。这些选项是 <option>-D _FORTIFY_SOURCE=2</option>（或 <option>-D _FORTIFY_SOURCE=3</option>，更安全但性能开销更大）和（对于 C++）<option>-D _GLIBCXX_ASSERTIONS</option>。在现代机器上，这些应该对运行速度影响很小，通常不会明显感觉到。
       </para>
 
       <para>
-        The main distros use much more, such as:
+        主流发行版使用更多，例如：
       </para>
 
       <itemizedlist>
         <listitem>
           <para>
-            <option>-Wl,-z,now</option>: disables lazy binding to enhance
-            <option>-Wl,-z,relro</option>, so the
-            <emphasis>entire</emphasis> GOT can be made immutable.
+            <option>-Wl,-z,now</option>：禁用延迟绑定以增强 <option>-Wl,-z,relro</option>，从而使<emphasis>整个</emphasis> GOT 变为不可变。
           </para>
         </listitem>
         <listitem>
           <para>
-            <option>-fstack-clash-protection</option>: prevents the attacker
-            from using an offset large enough and not adequately checked to
-            jump over the stack guard page placed by the kernel and the
-            stack canary placed by
-            <option>-fstack-protector=strong</option>, and modify the stack
-            from a heap address, or vice versa.
+            <option>-fstack-clash-protection</option>：防止攻击者使用足够大且未充分检查的偏移量来跳越内核放置的堆栈保护页和 <option>-fstack-protector=strong</option> 放置的堆栈金丝雀，并从堆地址修改堆栈，反之亦然。
           </para>
         </listitem>
         <listitem>
           <para>
-            <option>-ftrivial-auto-var-init=zero</option>: initializes
-            some variables by filling zero bytes if they are not
-            initialized by other means.
+            <option>-ftrivial-auto-var-init=zero</option>：如果某些变量未通过其他方式初始化，则用零字节填充它们。
           </para>
         </listitem>
         <listitem>
           <para>
-            <option>-fcf-protection=full</option>: utilizes Intel and AMD
-            CET technology to limit the target addresses of control-flow
-            transfer instructions.  To make it really effective for a
-            package, all packages providing a shared library for the
-            package to use must be built with this option, as well as that
-            package itself, Glibc must be configured with the
-            <option>--enable-cet</option> option enabled, and the system
-            must run on Intel Tiger Lake or newer, or AMD Zen 3 or newer.
-            If the criteria is not met the program compiled with this
-            option will still run, but not really protected by CET.
+            <option>-fcf-protection=full</option>：利用 Intel 和 AMD CET 技术限制控制流转移指令的目标地址。要使它对某个软件包真正有效，所有为该软件包提供共享库的软件包都必须使用此选项构建，该软件包本身也必须使用此选项构建，Glibc 必须启用 <option>--enable-cet</option> 选项配置，并且系统必须在 Intel Tiger Lake 或更新版本、或 AMD Zen 3 或更新版本上运行。如果不满足这些条件，使用此选项编译的程序仍会运行，但不会真正受到 CET 保护。
           </para>
         </listitem>
       </itemizedlist>
 
       <para>
-        In GCC 14, the option <option>-fhardened</option> is a shorthand
-        to enable all the hardening options mentioned above.  It sets
-        <option>-D _FORTIFY_SOURCE=3</option> instead of
-        <option>-D _FORTIFY_SOURCE=2</option>.
+        在 GCC 14 中，选项 <option>-fhardened</option> 是启用上述所有加固选项的简写。它设置 <option>-D _FORTIFY_SOURCE=3</option> 而不是 <option>-D _FORTIFY_SOURCE=2</option>。
       </para>
 
       <para>
-        You may also
-        encounter the so-called <quote>userspace retpoline</quote>
-        (<option>-mindirect-branch=thunk</option> etc.) which
-        is the equivalent of the spectre mitigations applied to the linux
-        kernel in late 2018. The kernel mitigations caused a lot of complaints
-        about lost performance, if you have a production server you might wish
-        to consider testing that, along with the other available options, to
-        see if performance is still sufficient.
+        您还可能遇到所谓的“用户空间 retpoline”（<option>-mindirect-branch=thunk</option> 等），这相当于 2018 年底应用于 Linux 内核的 spectre 缓解措施。内核缓解措施引起了大量关于性能损失的抱怨，如果您有生产服务器，您可能希望考虑测试它以及其他可用选项，以查看性能是否仍然足够。
       </para>
 
       <para>
-        Whilst gcc has many hardening options, clang/LLVM's strengths lie
-        elsewhere. Some options which gcc provides are said to be less effective
-        in clang/LLVM.
+        虽然 gcc 有许多加固选项，但 clang/LLVM 的优势在其他地方。据说 gcc 提供的某些选项在 clang/LLVM 中效果较差。
       </para>
 
   </sect2>
