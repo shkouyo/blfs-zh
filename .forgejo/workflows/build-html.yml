@@ -4,15 +4,15 @@ on:
     branches:
       - main
   workflow_dispatch:
-concurrency:
-  group: build-html-${{ matrix.branch }}
-  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: codeberg-medium
     permissions:
       contents: write
+    concurrency:
+      group: build-html-${{ matrix.branch }}
+      cancel-in-progress: true
     strategy:
       fail-fast: false
       matrix:
