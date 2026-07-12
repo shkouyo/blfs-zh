@@ -37,6 +37,210 @@
     <title>更新条目：</title>
 
     <listitem>
+      <para>July 5th, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to mutt-2.4.1. Fixes
+          <ulink url="&blfs-ticket-root;23560">#23560</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to numpy-2.5.1 (Python Module). Fixes
+          <ulink url="&blfs-ticket-root;23559">#23559</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to bluez-5.87. Fixes
+          <ulink url="&blfs-ticket-root;23558">#23558</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to enchant-2.8.18. Fixes
+          <ulink url="&blfs-ticket-root;23557">#23557</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>July 4th, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[pierre] - Update to mutter-50.3. Fixes
+          <ulink url="&blfs-ticket-root;23556">#23556</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Add rust as a recommended dependency to git. Fixes (again)
+          <ulink url="&blfs-ticket-root;23525">#23525</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to hwdata-0.409. Fixes
+          <ulink url="&blfs-ticket-root;23555">#23555</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to accountsservice-26.27.3. Fixes
+          <ulink url="&blfs-ticket-root;23554">#23554</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to tiff-4.7.2. Fixes
+          <ulink url="&blfs-ticket-root;23553">#23553</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>July 3rd, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to libva-2.24.0. Fixes
+          <ulink url="&blfs-ticket-root;23552">#23552</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to geoclue-2.8.2. Fixes
+          <ulink url="&blfs-ticket-root;23551">#23551</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to upower-1.91.3. Fixes
+          <ulink url="&blfs-ticket-root;23550">#23550</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to poppler-26.07.0. Fixes
+          <ulink url="&blfs-ticket-root;23549">#23549</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to gnupg-2.5.21 (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23548">#23548</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>July 2nd, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[bdubbs] - Update to glycin-2.1.5. Fixes
+          <ulink url="&blfs-ticket-root;23538">#23538</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to gnome-shell-50.3. Fixes
+          <ulink url="&blfs-ticket-root;23526">#23526</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to mercurial-7.2.3. Fixes
+          <ulink url="&blfs-ticket-root;23526">#23526</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to git-2.55.0. Fixes
+          <ulink url="&blfs-ticket-root;23525">#23525</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to shared-mime-info-2.5.1. Fixes
+          <ulink url="&blfs-ticket-root;23524">#23524</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libjxl-0.12.0 (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23547">#23547</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libseccomp-2.6.1 (Security Upate). Fixes
+          <ulink url="&blfs-ticket-root;23546">#23546</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to jansson-2.15.1. Fixes
+          <ulink url="&blfs-ticket-root;23545">#23545</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to pinentry-1.3.3. Fixes
+          <ulink url="&blfs-ticket-root;23544">#23544</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to graphviz-15.1.0. Fixes
+          <ulink url="&blfs-ticket-root;23543">#23543</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to SDL3-3.4.12. Fixes
+          <ulink url="&blfs-ticket-root;23542">#23542</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>July 1st, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to thunderbird-140.12.1esr (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23539">#23539</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libevent-2.1.3 (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23540">#23540</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to transmission-4.1.3. Fixes
+          <ulink url="&blfs-ticket-root;23537">#23537</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to cython-3.2.8 (Python module). Fixes
+          <ulink url="&blfs-ticket-root;23535">#23535</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to LMDB-1.0.0. Fixes
+          <ulink url="&blfs-ticket-root;23536">#23536</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libjpeg-turbo-3.2.0. Fixes
+          <ulink url="&blfs-ticket-root;23534">#23534</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libxmlb-0.3.28. Fixes
+          <ulink url="&blfs-ticket-root;23533">#23533</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to enchant-2.8.17. Fixes
+          <ulink url="&blfs-ticket-root;23532">#23532</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to gpgme-2.1.2. Fixes
+          <ulink url="&blfs-ticket-root;23531">#23531</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to xarchiver-0.5.4.27. Fixes
+          <ulink url="&blfs-ticket-root;23529">#23529</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to nasm-3.02. Fixes
+          <ulink url="&blfs-ticket-root;23527">#23527</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to systemd-261.1. Fixes
+          <ulink url="&blfs-ticket-root;23475">#23475</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[bdubbs] - Update to vim-9.2.0752 (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23530">#23530</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>June 30th, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to stunnel-5.79. Fixes
+          <ulink url="&blfs-ticket-root;23523">#23523</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libadwaita-1.9.2. Fixes
+          <ulink url="&blfs-ticket-root;23522">#23522</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to gjs-1.88.1. Fixes
+          <ulink url="&blfs-ticket-root;23521">#23521</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to glibmm-2.66.9 and glibmm-2.88.1. Fixes
+          <ulink url="&blfs-ticket-root;23520">#23520</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>June 29th, 2026</para>
       <itemizedlist>
         <listitem>
