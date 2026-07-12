@@ -5,14 +5,14 @@
   %general-entities;
 ]>
 
-<appendix id="CC" xreflabel="Creative Commons License">
+<appendix id="CC" xreflabel="Creative Commons 许可证">
   <?dbhtml filename="creat-comm.html" dir="appendices"?>
 
   <appendixinfo>
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>Creative Commons License</title>
+  <title>Creative Commons 许可证</title>
 
   <para role='title'>
     Creative Commons Legal Code

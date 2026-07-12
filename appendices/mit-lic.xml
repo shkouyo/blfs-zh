@@ -5,14 +5,14 @@
   %general-entities;
 ]>
 
-<appendix id="MIT" xreflabel="MIT License">
+<appendix id="MIT" xreflabel="MIT 许可证">
   <?dbhtml filename="mit.html" ?>
 
   <appendixinfo>
     <date>$Date$</date>
   </appendixinfo>
 
-  <title>The MIT License</title>
+  <title>MIT 许可证</title>
 
   <para>
     Copyright &copy; &copyrightdate; &copyholder;

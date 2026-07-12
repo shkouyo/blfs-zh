@@ -10,10 +10,10 @@
     <date>$Date$</date>
   </glossaryinfo>
   <?dbhtml filename="glossary.html" dir="appendices"?>
-  <title>Glossary</title>
+  <title>术语表</title>
 
   <glossdiv>
-    <title>Acronyms</title>
+    <title>缩略词</title>
 
     <glossentry id="g669">
       <glossterm>
@@ -21,7 +21,7 @@
       </glossterm>
       <glossdef>
         <para>
-          UNIS/Composer 669 Module
+          UNIS/Composer 669 模块（UNIS/Composer 669 Module）
         </para>
       </glossdef>
     </glossentry>
@@ -32,7 +32,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Application Binary Interface
+          应用程序二进制接口（Application Binary Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -43,7 +43,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Asymmetric Digital Subscriber Line
+          非对称数字用户线路（Asymmetric Digital Subscriber Line）
         </para>
       </glossdef>
     </glossentry>
@@ -54,7 +54,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Andrew File System
+          Andrew 文件系统（Andrew File System）
         </para>
       </glossdef>
     </glossentry>
@@ -65,7 +65,7 @@
       </glossterm>
       <glossdef>
         <para>
-          AMD Generic Encapsulated Software Architecture
+          AMD 通用封装软件架构（AMD Generic Encapsulated Software Architecture）
         </para>
       </glossdef>
     </glossentry>
@@ -76,7 +76,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Audio Interchange File Format
+          音频交换文件格式（Audio Interchange File Format）
         </para>
       </glossdef>
     </glossentry>
@@ -87,7 +87,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Advanced Linux Sound Architecture
+          高级 Linux 声音架构（Advanced Linux Sound Architecture）
         </para>
       </glossdef>
     </glossentry>
@@ -98,7 +98,7 @@
       </glossterm>
       <glossdef>
         <para>
-          American National Standards Institute
+          美国国家标准学会（American National Standards Institute）
         </para>
       </glossdef>
     </glossentry>
@@ -109,7 +109,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Application Programming Interface
+          应用程序编程接口（Application Programming Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -120,7 +120,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Apache Portable Runtime
+          Apache 可移植运行时（Apache Portable Runtime）
         </para>
       </glossdef>
     </glossentry>
@@ -131,7 +131,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Address Resolution Protocol
+          地址解析协议（Address Resolution Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -142,7 +142,7 @@
       </glossterm>
       <glossdef>
         <para>
-          American Standard Code for Information Interchange
+          美国信息交换标准码（American Standard Code for Information Interchange）
         </para>
       </glossdef>
     </glossentry>
@@ -153,7 +153,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Address Space Layout Randomization
+          地址空间布局随机化（Address Space Layout Randomization）
         </para>
       </glossdef>
     </glossentry>
@@ -164,7 +164,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Abstract Syntax Notation
+          抽象语法记法（Abstract Syntax Notation）
         </para>
       </glossdef>
     </glossentry>
@@ -175,7 +175,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Advanced Streaming Format
+          高级流格式（Advanced Streaming Format）
         </para>
       </glossdef>
     </glossentry>
@@ -186,7 +186,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Advanced Technology Attachment
+          高级技术附件（Advanced Technology Attachment）
         </para>
       </glossdef>
     </glossentry>
@@ -197,7 +197,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Advanced Television Systems Committee
+          高级电视系统委员会（Advanced Television Systems Committee）
         </para>
       </glossdef>
     </glossentry>
@@ -208,7 +208,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Accessibility ToolKit
+          辅助功能工具包（Accessibility ToolKit）
         </para>
       </glossdef>
     </glossentry>
@@ -219,7 +219,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Audio Video Interleave
+          音频视频交错（Audio Video Interleave）
         </para>
       </glossdef>
     </glossentry>
@@ -230,7 +230,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Abstract Window Toolkit
+          抽象窗口工具包（Abstract Window Toolkit）
         </para>
       </glossdef>
     </glossentry>
@@ -241,7 +241,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Basic Encoding Rules
+          基本编码规则（Basic Encoding Rules）
         </para>
       </glossdef>
     </glossentry>
@@ -252,7 +252,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Berkeley Internet Name Domain
+          Berkeley 互联网名称域（Berkeley Internet Name Domain）
         </para>
       </glossdef>
     </glossentry>
@@ -263,7 +263,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Basic Input/Output System
+          基本输入/输出系统（Basic Input/Output System）
         </para>
       </glossdef>
     </glossentry>
@@ -285,7 +285,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Bit MaP
+          位图（Bit MaP）
         </para>
       </glossdef>
     </glossentry>
@@ -296,7 +296,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Compact Disk
+          光盘（Compact Disk）
         </para>
       </glossdef>
     </glossentry>
@@ -307,7 +307,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Compact Disc Digital Audio
+          光盘数字音频（Compact Disc Digital Audio）
         </para>
       </glossdef>
     </glossentry>
@@ -318,7 +318,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Common Internet File System
+          通用互联网文件系统（Common Internet File System）
         </para>
         <glossseealso otherterm="gSMB">SMB</glossseealso>
       </glossdef>
@@ -330,7 +330,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Cryptographic Message Syntax
+          加密消息语法（Cryptographic Message Syntax）
         </para>
       </glossdef>
     </glossentry>
@@ -341,7 +341,7 @@
       </glossterm>
       <glossdef>
         <para>
-          COmpression/DECompression module
+          压缩/解压缩模块（COmpression/DECompression module）
         </para>
       </glossdef>
     </glossentry>
@@ -352,7 +352,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Common Object Request Broker Architecture
+          通用对象请求代理架构（Common Object Request Broker Architecture）
         </para>
       </glossdef>
     </glossentry>
@@ -363,7 +363,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Central Processing Unit
+          中央处理器（Central Processing Unit）
         </para>
       </glossdef>
     </glossentry>
@@ -374,7 +374,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Color Rendering Dictionary
+          颜色渲染字典（Color Rendering Dictionary）
         </para>
       </glossdef>
     </glossentry>
@@ -385,18 +385,18 @@
       </glossterm>
       <glossdef>
         <para>
-          Color Space Array
+          颜色空间数组（Color Space Array）
         </para>
       </glossdef>
     </glossentry>
 
     <glossentry id="gCSSdvd">
       <glossterm>
-        <acronym>CSS</acronym> (on DVD)
+        <acronym>CSS</acronym> （on DVD）
       </glossterm>
       <glossdef>
         <para>
-          Contents Scrambling System
+          内容加扰系统（Contents Scrambling System）
         </para>
       </glossdef>
     </glossentry>
@@ -407,7 +407,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Cascading Style Sheets
+          层叠样式表（Cascading Style Sheets）
         </para>
       </glossdef>
     </glossentry>
@@ -418,7 +418,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Common Unix Printing System
+          通用 Unix 打印系统（Common Unix Printing System）
         </para>
       </glossdef>
     </glossentry>
@@ -429,7 +429,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Concurrent Versions System
+          并发版本系统（Concurrent Versions System）
         </para>
       </glossdef>
     </glossentry>
@@ -440,7 +440,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Disc At Once
+          整盘刻录（Disc At Once）
         </para>
       </glossdef>
     </glossentry>
@@ -451,7 +451,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Directory Address Resolution Protocol Allocation
+          目录地址解析协议分配（Directory Address Resolution Protocol Allocation）
         </para>
       </glossdef>
     </glossentry>
@@ -462,7 +462,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Digital Equipment Corporation
+          数字设备公司（Digital Equipment Corporation）
         </para>
       </glossdef>
     </glossentry>
@@ -473,7 +473,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Distinguished Encoding Rules
+          可辨别编码规则（Distinguished Encoding Rules）
         </para>
       </glossdef>
     </glossentry>
@@ -484,7 +484,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Data Encryption Standard
+          数据加密标准（Data Encryption Standard）
         </para>
       </glossdef>
     </glossentry>
@@ -495,7 +495,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Dynamic Host Configuration Protocol
+          动态主机配置协议（Dynamic Host Configuration Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -506,7 +506,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Dictionary Server Protocol (RFC 2229)
+          字典服务器协议（Dictionary Server Protocol，RFC 2229）
         </para>
       </glossdef>
     </glossentry>
@@ -517,7 +517,7 @@
       </glossterm>
       <glossdef>
         <para>
-          German Industrial Norm
+          德国工业标准（German Industrial Norm）
         </para>
       </glossdef>
     </glossentry>
@@ -528,7 +528,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Domain Name Service
+          域名服务（Domain Name Service）
         </para>
       </glossdef>
     </glossentry>
@@ -539,7 +539,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Disk Operating System
+          磁盘操作系统（Disk Operating System）
         </para>
       </glossdef>
     </glossentry>
@@ -550,7 +550,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Direct Rendering Infrastructure
+          直接渲染基础设施（Direct Rendering Infrastructure）
         </para>
       </glossdef>
     </glossentry>
@@ -561,7 +561,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Document Structuring Conventions
+          文档结构约定（Document Structuring Conventions）
         </para>
       </glossdef>
     </glossentry>
@@ -572,7 +572,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Dynamic Shared Objects
+          动态共享对象（Dynamic Shared Objects）
         </para>
       </glossdef>
     </glossentry>
@@ -583,7 +583,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Document Style Semantics and Specification Language
+          文档样式语义和规范语言（Document Style Semantics and Specification Language）
         </para>
       </glossdef>
     </glossentry>
@@ -594,7 +594,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Digital Video
+          数字视频（Digital Video）
         </para>
       </glossdef>
     </glossentry>
@@ -605,7 +605,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Digital Versatile Disk (also Digital Video Disk)
+          数字通用光盘（Digital Versatile Disk，也称为数字视频光盘）
         </para>
       </glossdef>
     </glossentry>
@@ -616,7 +616,7 @@
       </glossterm>
       <glossdef>
         <para>
-          DeVice Independent
+          设备无关（DeVice Independent）
         </para>
       </glossdef>
     </glossentry>
@@ -627,7 +627,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Executable and Linking Format
+          可执行与链接格式（Executable and Linking Format）
         </para>
       </glossdef>
     </glossentry>
@@ -638,7 +638,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Enhanced Parallel Port
+          增强型并行端口（Enhanced Parallel Port）
         </para>
       </glossdef>
     </glossentry>
@@ -649,7 +649,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Encapsulated PostScript
+          封装 PostScript（Encapsulated PostScript）
         </para>
       </glossdef>
     </glossentry>
@@ -660,7 +660,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Enlighten Sound Daemon
+          Enlighten 声音守护进程（Enlighten Sound Daemon）
         </para>
       </glossdef>
     </glossentry>
@@ -671,7 +671,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Extended Simple Mail Transfer Protocol
+          扩展简单邮件传输协议（Extended Simple Mail Transfer Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -682,7 +682,7 @@
       </glossterm>
       <glossdef>
         <para>
-          File Alteration Monitor
+          文件更改监视器（File Alteration Monitor）
         </para>
       </glossdef>
     </glossentry>
@@ -693,7 +693,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Fast Assembly Mpeg Encoder
+          快速汇编 MPEG 编码器（Fast Assembly Mpeg Encoder）
         </para>
       </glossdef>
     </glossentry>
@@ -704,7 +704,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Frequently Asked Questions
+          常见问题（Frequently Asked Questions）
         </para>
       </glossdef>
     </glossentry>
@@ -715,7 +715,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Facsimile
+          传真（Facsimile）
         </para>
       </glossdef>
     </glossentry>
@@ -726,7 +726,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Frame Buffer
+          帧缓冲（Frame Buffer）
         </para>
       </glossdef>
     </glossentry>
@@ -737,7 +737,7 @@
       </glossterm>
       <glossdef>
         <para>
-          File Hierarchy Standard
+          文件层次结构标准（File Hierarchy Standard）
         </para>
       </glossdef>
     </glossentry>
@@ -748,7 +748,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Free Lossless Audio <acronym>CODEC</acronym>
+          自由无损音频编解码器（Free Lossless Audio <acronym>CODEC</acronym>）
         </para>
       </glossdef>
     </glossentry>
@@ -759,7 +759,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Formatted Objects
+          格式化对象（Formatted Objects）
         </para>
       </glossdef>
     </glossentry>
@@ -770,7 +770,7 @@
       </glossterm>
       <glossdef>
         <para>
-          File Transfer Protocol
+          文件传输协议（File Transfer Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -781,7 +781,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym> Compiler Collection
+          GNU 编译器套件（<acronym>GNU</acronym> Compiler Collection）
         </para>
       </glossdef>
     </glossentry>
@@ -792,7 +792,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym> DataBase Manager
+          GNU 数据库管理器（<acronym>GNU</acronym> DataBase Manager）
         </para>
       </glossdef>
     </glossentry>
@@ -803,7 +803,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GTK</acronym>+ Drawing Kit
+          GTK+ 绘图工具包（<acronym>GTK</acronym>+ Drawing Kit）
         </para>
       </glossdef>
     </glossentry>
@@ -814,7 +814,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNOME</acronym> Display Manager
+          GNOME 显示管理器（<acronym>GNOME</acronym> Display Manager）
         </para>
       </glossdef>
     </glossentry>
@@ -825,7 +825,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Group IDentity
+          组标识（Group IDentity）
         </para>
       </glossdef>
     </glossentry>
@@ -836,7 +836,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Graphics Interchange Format
+          图形交换格式（Graphics Interchange Format）
         </para>
       </glossdef>
     </glossentry>
@@ -847,7 +847,7 @@
       </glossterm>
       <glossdef>
         <para>
-          OpenGL Utility Toolkit
+          OpenGL 实用工具包（OpenGL Utility Toolkit）
         </para>
       </glossdef>
     </glossentry>
@@ -858,7 +858,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym> Multiple Precision Arithmetic
+          GNU 多精度算术库（<acronym>GNU</acronym> Multiple Precision Arithmetic）
         </para>
       </glossdef>
     </glossentry>
@@ -869,7 +869,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym> NYU Ada 9x Translator
+          GNU NYU Ada 9x 翻译器（<acronym>GNU</acronym> NYU Ada 9x Translator）
         </para>
       </glossdef>
     </glossentry>
@@ -880,7 +880,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym> Network Object Model Environment
+          GNU 网络对象模型环境（<acronym>GNU</acronym> Network Object Model Environment）
         </para>
       </glossdef>
     </glossentry>
@@ -891,7 +891,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GNU</acronym>'s Not Unix
+          GNU 不是 Unix（<acronym>GNU</acronym>'s Not Unix）
         </para>
       </glossdef>
     </glossentry>
@@ -902,7 +902,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Global Offset Table
+          全局偏移表（Global Offset Table）
         </para>
       </glossdef>
     </glossentry>
@@ -913,7 +913,7 @@
       </glossterm>
       <glossdef>
         <para>
-          General Public License
+          通用公共许可证（General Public License）
         </para>
       </glossdef>
     </glossentry>
@@ -924,7 +924,7 @@
       </glossterm>
       <glossdef>
         <para>
-          General Purpose Mouse
+          通用鼠标（General Purpose Mouse）
         </para>
       </glossdef>
     </glossentry>
@@ -935,7 +935,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Generic Security Service
+          通用安全服务（Generic Security Service）
         </para>
       </glossdef>
     </glossentry>
@@ -946,7 +946,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Generic Security Service Application Programming Interface
+          通用安全服务应用程序编程接口（Generic Security Service Application Programming Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -957,7 +957,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>GIMP</acronym> ToolKit
+          GIMP 工具包（<acronym>GIMP</acronym> ToolKit）
         </para>
       </glossdef>
     </glossentry>
@@ -968,7 +968,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Graphical User Interface
+          图形用户界面（Graphical User Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -979,7 +979,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Hierarchical File System
+          分层文件系统（Hierarchical File System）
         </para>
       </glossdef>
     </glossentry>
@@ -990,7 +990,7 @@
       </glossterm>
       <glossdef>
         <para>
-          HyperText Markup Language
+          超文本标记语言（HyperText Markup Language）
         </para>
       </glossdef>
     </glossentry>
@@ -1001,7 +1001,7 @@
       </glossterm>
       <glossdef>
         <para>
-          HyperText Transfer Protocol
+          超文本传输协议（HyperText Transfer Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1012,7 +1012,7 @@
       </glossterm>
       <glossdef>
         <para>
-          HyperText Transfer Protocol Secured
+          安全超文本传输协议（HyperText Transfer Protocol Secured）
         </para>
       </glossdef>
     </glossentry>
@@ -1023,7 +1023,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Hang UP
+          挂断（Hang UP）
         </para>
       </glossdef>
     </glossentry>
@@ -1034,7 +1034,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Assigned Numbers Authority
+          互联网号码分配机构（Internet Assigned Numbers Authority）
         </para>
       </glossdef>
     </glossentry>
@@ -1045,7 +1045,7 @@
       </glossterm>
       <glossdef>
         <para>
-          International Color Consortium
+          国际色彩联盟（International Color Consortium）
         </para>
       </glossdef>
     </glossentry>
@@ -1056,7 +1056,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Control Message Protocol
+          互联网控制消息协议（Internet Control Message Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1067,12 +1067,12 @@
       </glossterm>
       <glossdef>
         <para>
-          Integrated Drive Electronics
+          集成驱动电子设备（Integrated Drive Electronics）
         </para>
       </glossdef>
       <glossdef>
         <para>
-          Integrated Development Environment
+          集成开发环境（Integrated Development Environment）
         </para>
       </glossdef>
     </glossentry>
@@ -1083,7 +1083,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Interface Definition Language
+          接口定义语言（Interface Definition Language）
         </para>
       </glossdef>
     </glossentry>
@@ -1094,7 +1094,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Ink Jet Systems
+          喷墨系统（Ink Jet Systems）
         </para>
       </glossdef>
     </glossentry>
@@ -1105,7 +1105,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Location Server
+          互联网定位服务器（Internet Location Server）
         </para>
       </glossdef>
     </glossentry>
@@ -1116,7 +1116,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Message Access Protocol
+          互联网消息访问协议（Internet Message Access Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1127,7 +1127,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Inode MONitor
+          inode 监视器（Inode MONitor）
         </para>
       </glossdef>
     </glossentry>
@@ -1138,7 +1138,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Protocol
+          互联网协议（Internet Protocol）
         </para>
         <glossseealso otherterm="gTCP">TCP</glossseealso>
       </glossdef>
@@ -1150,7 +1150,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internetwork Packet eXchange
+          互联网分组交换（Internetwork Packet eXchange）
         </para>
       </glossdef>
     </glossentry>
@@ -1161,7 +1161,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Relay Chat
+          互联网中继聊天（Internet Relay Chat）
         </para>
       </glossdef>
     </glossentry>
@@ -1172,7 +1172,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Integrated Services Digital Network
+          综合业务数字网（Integrated Services Digital Network）
         </para>
       </glossdef>
     </glossentry>
@@ -1183,7 +1183,7 @@
       </glossterm>
       <glossdef>
         <para>
-          International Standards Organisation
+          国际标准化组织（International Standards Organisation）
         </para>
       </glossdef>
     </glossentry>
@@ -1194,7 +1194,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Internet Service Provider
+          互联网服务提供商（Internet Service Provider）
         </para>
       </glossdef>
     </glossentry>
@@ -1205,7 +1205,7 @@
       </glossterm>
       <glossdef>
         <para>
-          ImpulseTracker Module
+          ImpulseTracker 模块（ImpulseTracker Module）
         </para>
       </glossdef>
     </glossentry>
@@ -1216,7 +1216,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Java Advanced Imaging
+          Java 高级成像（Java Advanced Imaging）
         </para>
       </glossdef>
     </glossentry>
@@ -1227,7 +1227,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Java ARchive
+          Java 归档（Java ARchive）
         </para>
       </glossdef>
     </glossentry>
@@ -1238,7 +1238,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Java Development Kit
+          Java 开发工具包（Java Development Kit）
         </para>
       </glossdef>
     </glossentry>
@@ -1249,7 +1249,7 @@
       </glossterm>
       <glossdef>
         <para>
-          <acronym>JPEG</acronym> File Interchange Format
+          JPEG 文件交换格式（<acronym>JPEG</acronym> File Interchange Format）
         </para>
       </glossdef>
     </glossentry>
@@ -1260,7 +1260,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Joint Photographic Experts Group
+          联合图像专家组（Joint Photographic Experts Group）
         </para>
       </glossdef>
     </glossentry>
@@ -1271,7 +1271,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Key Distribution Center
+          密钥分发中心（Key Distribution Center）
         </para>
       </glossdef>
     </glossentry>
@@ -1282,7 +1282,7 @@
       </glossterm>
       <glossdef>
         <para>
-          KDesktop Environment
+          K 桌面环境（KDesktop Environment）
         </para>
       </glossdef>
     </glossentry>
@@ -1293,7 +1293,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Lame Ain't an MP3 Encoder
+          Lame 不是 MP3 编码器（Lame Ain't an MP3 Encoder）
         </para>
       </glossdef>
     </glossentry>
@@ -1304,7 +1304,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Local Area Network
+          局域网（Local Area Network）
         </para>
       </glossdef>
     </glossentry>
@@ -1315,7 +1315,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Lightweight Directory Access Protocol
+          轻量级目录访问协议（Lightweight Directory Access Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1326,7 +1326,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Lightweight Data Interchange Format
+          轻量级数据交换格式（Lightweight Data Interchange Format）
         </para>
       </glossdef>
     </glossentry>
@@ -1337,7 +1337,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Linux From Scratch
+          Linux From Scratch（Linux From Scratch）
         </para>
       </glossdef>
     </glossentry>
@@ -1348,7 +1348,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Library General Public License
+          库通用公共许可证（Library General Public License）
         </para>
       </glossdef>
     </glossentry>
@@ -1359,7 +1359,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Line PRinter
+          行式打印机（Line PRinter）
         </para>
       </glossdef>
     </glossentry>
@@ -1370,7 +1370,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Lempel-Ziv-Oberhumer
+          Lempel-Ziv-Oberhumer（Lempel-Ziv-Oberhumer）
         </para>
       </glossdef>
     </glossentry>
@@ -1381,7 +1381,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Lempel-Ziv-Welch
+          Lempel-Ziv-Welch（Lempel-Ziv-Welch）
         </para>
       </glossdef>
     </glossentry>
@@ -1392,7 +1392,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Media Access Control
+          介质访问控制（Media Access Control）
         </para>
       </glossdef>
     </glossentry>
@@ -1403,7 +1403,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Multimedia COmmunication Protocol
+          多媒体通信协议（Multimedia COmmunication Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1414,7 +1414,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Multipoint Control Unit
+          多点控制单元（Multipoint Control Unit）
         </para>
       </glossdef>
     </glossentry>
@@ -1425,7 +1425,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Message-Digest
+          消息摘要（Message-Digest）
         </para>
       </glossdef>
     </glossentry>
@@ -1436,7 +1436,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Mail Delivery Agent
+          邮件投递代理（Mail Delivery Agent）
         </para>
       </glossdef>
     </glossentry>
@@ -1447,7 +1447,7 @@
       </glossterm>
       <glossdef>
         <para>
-          MED/OctaMED Module
+          MED/OctaMED 模块（MED/OctaMED Module）
         </para>
       </glossdef>
     </glossentry>
@@ -1458,7 +1458,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Musical Instrument Digital Interface
+          乐器数字接口（Musical Instrument Digital Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -1469,7 +1469,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Maker Interchange Format
+          Maker 交换格式（Maker Interchange Format）
         </para>
       </glossdef>
     </glossentry>
@@ -1480,7 +1480,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Media Independent Interface
+          介质无关接口（Media Independent Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -1491,7 +1491,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Multipurpose Internet Mail Extensions
+          多用途互联网邮件扩展（Multipurpose Internet Mail Extensions）
         </para>
       </glossdef>
     </glossentry>
@@ -1502,7 +1502,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Massachusetts Institute of Technology
+          麻省理工学院（Massachusetts Institute of Technology）
         </para>
       </glossdef>
     </glossentry>
@@ -1513,7 +1513,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Multiple-image Network Graphics
+          多图像网络图形（Multiple-image Network Graphics）
         </para>
       </glossdef>
     </glossentry>
@@ -1524,7 +1524,7 @@
       </glossterm>
       <glossdef>
         <para>
-          ProTracker Module
+          ProTracker 模块（ProTracker Module）
         </para>
       </glossdef>
     </glossentry>
@@ -1535,7 +1535,7 @@
       </glossterm>
       <glossdef>
         <para>
-          MPEG-1 audio layer 3
+          MPEG-1 音频层 3（MPEG-1 audio layer 3）
         </para>
       </glossdef>
     </glossentry>
@@ -1546,7 +1546,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Moving Picture Experts Group
+          运动图像专家组（Moving Picture Experts Group）
         </para>
       </glossdef>
     </glossentry>
@@ -1557,7 +1557,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Magick Scripting Language
+          Magick 脚本语言（Magick Scripting Language）
         </para>
       </glossdef>
     </glossentry>
@@ -1568,7 +1568,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Mail Transport Agent
+          邮件传输代理（Mail Transport Agent）
         </para>
       </glossdef>
     </glossentry>
@@ -1579,7 +1579,7 @@
       </glossterm>
       <glossdef>
         <para>
-          MultiTracker Module
+          MultiTracker 模块（MultiTracker Module）
         </para>
       </glossdef>
     </glossentry>
@@ -1590,7 +1590,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Mail User Agent
+          邮件用户代理（Mail User Agent）
         </para>
       </glossdef>
     </glossentry>
@@ -1601,7 +1601,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Netwide ASseMbler
+          Netwide 汇编器（Netwide ASseMbler）
         </para>
       </glossdef>
     </glossentry>
@@ -1612,7 +1612,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Network News Transfer Protocol
+          网络新闻传输协议（Network News Transfer Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1623,7 +1623,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Network File System
+          网络文件系统（Network File System）
         </para>
       </glossdef>
     </glossentry>
@@ -1634,7 +1634,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Network Information Service
+          网络信息服务（Network Information Service）
         </para>
       </glossdef>
     </glossentry>
@@ -1645,7 +1645,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Native Posix Thread Library
+          原生 POSIX 线程库（Native Posix Thread Library）
         </para>
       </glossdef>
     </glossentry>
@@ -1656,7 +1656,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Netscape Portable Runtime
+          Netscape 可移植运行时（Netscape Portable Runtime）
         </para>
       </glossdef>
     </glossentry>
@@ -1667,7 +1667,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Network Security Services
+          网络安全服务（Network Security Services）
         </para>
       </glossdef>
     </glossentry>
@@ -1678,7 +1678,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Network Time Protocol
+          网络时间协议（Network Time Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1689,7 +1689,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Object Activation Framework
+          对象激活框架（Object Activation Framework）
         </para>
       </glossdef>
     </glossentry>
@@ -1700,7 +1700,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Open DataBase Connectivity
+          开放数据库连接（Open DataBase Connectivity）
         </para>
       </glossdef>
     </glossentry>
@@ -1711,7 +1711,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Open Metadata Framework
+          开放元数据框架（Open Metadata Framework）
         </para>
       </glossdef>
     </glossentry>
@@ -1722,7 +1722,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Object Request Broker
+          对象请求代理（Object Request Broker）
         </para>
         <glossseealso otherterm="gCORBA">CORBA</glossseealso>
       </glossdef>
@@ -1734,7 +1734,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Object Relational Database Management System
+          对象关系数据库管理系统（Object Relational Database Management System）
         </para>
       </glossdef>
     </glossentry>
@@ -1745,7 +1745,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Operating System
+          操作系统（Operating System）
         </para>
       </glossdef>
     </glossentry>
@@ -1756,7 +1756,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Open Software Foundation
+          开放软件基金会（Open Software Foundation）
         </para>
       </glossdef>
     </glossentry>
@@ -1767,7 +1767,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Open Sound System
+          开放声音系统（Open Sound System）
         </para>
       </glossdef>
     </glossentry>
@@ -1778,7 +1778,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Pluggable authentication Modules
+          可插拔认证模块（Pluggable authentication Modules）
         </para>
       </glossdef>
     </glossentry>
@@ -1789,7 +1789,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable BitMap
+          可移植位图（Portable BitMap）
         </para>
       </glossdef>
     </glossentry>
@@ -1800,7 +1800,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Peripheral Component Interconnect
+          外设组件互连（Peripheral Component Interconnect）
         </para>
       </glossdef>
     </glossentry>
@@ -1811,7 +1811,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Printer Control Language
+          打印机控制语言（Printer Control Language）
         </para>
       </glossdef>
     </glossentry>
@@ -1822,7 +1822,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Pulse Code Modulation
+          脉冲编码调制（Pulse Code Modulation）
         </para>
       </glossdef>
     </glossentry>
@@ -1833,7 +1833,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Primary Domain Controller
+          主域控制器（Primary Domain Controller）
         </para>
       </glossdef>
     </glossentry>
@@ -1844,7 +1844,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable Document Format
+          可移植文档格式（Portable Document Format）
         </para>
       </glossdef>
     </glossentry>
@@ -1855,7 +1855,7 @@
       </glossterm>
       <glossdef>
         <para>
-          PHP Extension and Application Repository
+          PHP 扩展与应用仓库（PHP Extension and Application Repository）
         </para>
       </glossdef>
     </glossentry>
@@ -1866,7 +1866,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable Grey Map
+          可移植灰度图（Portable Grey Map）
         </para>
       </glossdef>
     </glossentry>
@@ -1877,7 +1877,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Pretty Good Privacy
+          优良保密协议（Pretty Good Privacy）
         </para>
       </glossdef>
     </glossentry>
@@ -1888,7 +1888,7 @@
       </glossterm>
       <glossdef>
         <para>
-          PHP Hypertext Preprocessor
+          PHP 超文本预处理器（PHP Hypertext Preprocessor）
         </para>
       </glossdef>
     </glossentry>
@@ -1899,7 +1899,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Position Independent Executable
+          位置无关可执行文件（Position Independent Executable）
         </para>
       </glossdef>
     </glossentry>
@@ -1910,7 +1910,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Personal Information Manager
+          个人信息管理器（Personal Information Manager）
         </para>
       </glossdef>
     </glossentry>
@@ -1921,7 +1921,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Parallel Line Internet Protocol
+          并行线路互联网协议（Parallel Line Internet Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1932,7 +1932,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable Network Graphics
+          可移植网络图形（Portable Network Graphics）
         </para>
       </glossdef>
     </glossentry>
@@ -1943,7 +1943,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable Object
+          可移植对象（Portable Object）
         </para>
       </glossdef>
     </glossentry>
@@ -1954,7 +1954,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Plain Old Documentation
+          普通旧文档（Plain Old Documentation）
         </para>
       </glossdef>
     </glossentry>
@@ -1965,7 +1965,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Post Office Protocol
+          邮局协议（Post Office Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -1976,7 +1976,7 @@
       </glossterm>
       <glossdef>
         <para>
-          PostScript Printer Description
+          PostScript 打印机描述（PostScript Printer Description）
         </para>
       </glossdef>
     </glossentry>
@@ -1987,7 +1987,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Portable Pixel Map
+          可移植像素图（Portable Pixel Map）
         </para>
       </glossdef>
     </glossentry>
@@ -1998,7 +1998,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Point-to-Point Protocol
+          点对点协议（Point-to-Point Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2009,7 +2009,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Point-to-Point Protocol over Ethernet
+          以太网上的点对点协议（Point-to-Point Protocol over Ethernet）
         </para>
       </glossdef>
     </glossentry>
@@ -2020,7 +2020,7 @@
       </glossterm>
       <glossdef>
         <para>
-          PostScript
+          PostScript（PostScript）
         </para>
       </glossdef>
     </glossentry>
@@ -2031,7 +2031,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Remote Authentication Dial-In User Service
+          远程认证拨号用户服务（Remote Authentication Dial-In User Service）
         </para>
       </glossdef>
     </glossentry>
@@ -2042,7 +2042,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Random Access Memory
+          随机存取存储器（Random Access Memory）
         </para>
       </glossdef>
     </glossentry>
@@ -2053,7 +2053,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Reverse Address Resolution Protocol
+          反向地址解析协议（Reverse Address Resolution Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2064,7 +2064,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Revision Control System
+          修订控制系统（Revision Control System）
         </para>
       </glossdef>
     </glossentry>
@@ -2075,7 +2075,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Request For Comments
+          请求意见稿（Request For Comments）
         </para>
       </glossdef>
     </glossentry>
@@ -2086,7 +2086,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Red Green Blue
+          红绿蓝（Red Green Blue）
         </para>
       </glossdef>
     </glossentry>
@@ -2097,7 +2097,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Red Green Blue Alpha
+          红绿蓝 Alpha（Red Green Blue Alpha）
         </para>
       </glossdef>
     </glossentry>
@@ -2108,7 +2108,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Read-Only Memory
+          只读存储器（Read-Only Memory）
         </para>
       </glossdef>
     </glossentry>
@@ -2119,7 +2119,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Roaring Penguin
+          咆哮企鹅（Roaring Penguin）
         </para>
       </glossdef>
     </glossentry>
@@ -2130,7 +2130,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Remote Procedure Call
+          远程过程调用（Remote Procedure Call）
         </para>
       </glossdef>
     </glossentry>
@@ -2141,7 +2141,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Real Time Clock
+          实时时钟（Real Time Clock）
         </para>
       </glossdef>
     </glossentry>
@@ -2152,7 +2152,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Real Time Protocol
+          实时协议（Real Time Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2163,7 +2163,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Read Write
+          读写（Read Write）
         </para>
       </glossdef>
     </glossentry>
@@ -2174,7 +2174,7 @@
       </glossterm>
       <glossdef>
         <para>
-          ScreamTracker Version 3 Module
+          ScreamTracker 第 3 版模块（ScreamTracker Version 3 Module）
         </para>
       </glossdef>
     </glossentry>
@@ -2185,7 +2185,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Secure/<acronym>MIME</acronym>
+          安全/MIME（Secure/<acronym>MIME</acronym>）
         </para>
       </glossdef>
     </glossentry>
@@ -2196,7 +2196,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Scanner Access Now Easy
+          现在轻松扫描（Scanner Access Now Easy）
         </para>
       </glossdef>
     </glossentry>
@@ -2207,7 +2207,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Simple Authentication and Security Layer
+          简单认证与安全层（Simple Authentication and Security Layer）
         </para>
       </glossdef>
     </glossentry>
@@ -2218,7 +2218,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Serial Advanced Technology Attachment
+          串行高级技术附件（Serial Advanced Technology Attachment）
         </para>
       </glossdef>
     </glossentry>
@@ -2229,7 +2229,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Standard Build Unit
+          标准构建单元（Standard Build Unit）
         </para>
       </glossdef>
     </glossentry>
@@ -2240,7 +2240,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Small Computer System Interface
+          小型计算机系统接口（Small Computer System Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -2251,7 +2251,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Software Development Kit
+          软件开发工具包（Software Development Kit）
         </para>
       </glossdef>
     </glossentry>
@@ -2262,7 +2262,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Standard Generalized Markup Language
+          标准通用标记语言（Standard Generalized Markup Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2273,7 +2273,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Self Monitoring Analysis and Reporting Technology
+          自我监测分析与报告技术（Self Monitoring Analysis and Reporting Technology）
         </para>
       </glossdef>
     </glossentry>
@@ -2284,7 +2284,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Server Message Block
+          服务器消息块（Server Message Block）
         </para>
       </glossdef>
     </glossentry>
@@ -2295,7 +2295,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Synchronized Multimedia Integration Language
+          同步多媒体集成语言（Synchronized Multimedia Integration Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2306,7 +2306,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Simple Mail Transfer Protocol
+          简单邮件传输协议（Simple Mail Transfer Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2317,7 +2317,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Structured Query Language
+          结构化查询语言（Structured Query Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2328,7 +2328,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Secure SHell
+          安全外壳（Secure SHell）
         </para>
       </glossdef>
     </glossentry>
@@ -2339,7 +2339,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Secure Sockets Layer
+          安全套接字层（Secure Sockets Layer）
         </para>
       </glossdef>
     </glossentry>
@@ -2350,7 +2350,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Stack Smash Protection
+          堆栈破坏保护（Stack Smash Protection）
         </para>
       </glossdef>
     </glossentry>
@@ -2361,7 +2361,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Set User IDentity
+          设置用户标识（Set User IDentity）
         </para>
       </glossdef>
     </glossentry>
@@ -2372,7 +2372,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Scalable Vector Graphics
+          可缩放矢量图形（Scalable Vector Graphics）
         </para>
       </glossdef>
     </glossentry>
@@ -2383,7 +2383,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Super Video Graphics Array
+          超级视频图形阵列（Super Video Graphics Array）
         </para>
       </glossdef>
     </glossentry>
@@ -2394,7 +2394,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Tool Command Language
+          工具命令语言（Tool Command Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2405,7 +2405,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Transmission Control Protocol
+          传输控制协议（Transmission Control Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2416,7 +2416,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Ticket-Granting Ticket
+          票据授予票据（Ticket-Granting Ticket）
         </para>
       </glossdef>
     </glossentry>
@@ -2427,7 +2427,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Tag(ged) Image File Format
+          标记图像文件格式（Tag(ged) Image File Format）
         </para>
       </glossdef>
     </glossentry>
@@ -2438,7 +2438,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Transport Layer Security
+          传输层安全（Transport Layer Security）
         </para>
       </glossdef>
     </glossentry>
@@ -2449,7 +2449,7 @@
       </glossterm>
       <glossdef>
         <para>
-          TrueType Font
+          TrueType 字体（TrueType Font）
         </para>
       </glossdef>
     </glossentry>
@@ -2460,7 +2460,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Text To Speech
+          文本到语音（Text To Speech）
         </para>
       </glossdef>
     </glossentry>
@@ -2471,7 +2471,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Universal Character Set
+          通用字符集（Universal Character Set）
         </para>
       </glossdef>
     </glossentry>
@@ -2482,7 +2482,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Universal Disk Format
+          通用磁盘格式（Universal Disk Format）
         </para>
       </glossdef>
     </glossentry>
@@ -2493,7 +2493,7 @@
       </glossterm>
       <glossdef>
         <para>
-          User IDentity
+          用户标识（User IDentity）
         </para>
       </glossdef>
     </glossentry>
@@ -2504,7 +2504,7 @@
       </glossterm>
       <glossdef>
         <para>
-          User Datagram Protocol
+          用户数据报协议（User Datagram Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2515,7 +2515,7 @@
       </glossterm>
       <glossdef>
         <para>
-          User Interface
+          用户界面（User Interface）
         </para>
       </glossdef>
     </glossentry>
@@ -2526,7 +2526,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Unified Modelling Language
+          统一建模语言（Unified Modelling Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2537,7 +2537,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Uniform Resource Locator
+          统一资源定位符（Uniform Resource Locator）
         </para>
       </glossdef>
     </glossentry>
@@ -2548,7 +2548,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Universal Serial Bus
+          通用串行总线（Universal Serial Bus）
         </para>
       </glossdef>
     </glossentry>
@@ -2559,7 +2559,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Upstream Ready
+          上游就绪（Upstream Ready）
         </para>
       </glossdef>
     </glossentry>
@@ -2570,7 +2570,7 @@
       </glossterm>
       <glossdef>
         <para>
-          UCS Transformation Format
+          UCS 转换格式（UCS Transformation Format）
         </para>
       </glossdef>
     </glossentry>
@@ -2581,7 +2581,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Unix-to-Unix Copy Protocol
+          Unix 到 Unix 复制协议（Unix-to-Unix Copy Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2592,7 +2592,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Video Compact Disk
+          视频光盘（Video Compact Disk）
         </para>
       </glossdef>
     </glossentry>
@@ -2603,7 +2603,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Version Control System
+          版本控制系统（Version Control System）
         </para>
       </glossdef>
     </glossentry>
@@ -2614,7 +2614,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Video Electronics Standards Association
+          视频电子标准协会（Video Electronics Standards Association）
         </para>
       </glossdef>
     </glossentry>
@@ -2625,7 +2625,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Video Graphics Array
+          视频图形阵列（Video Graphics Array）
         </para>
       </glossdef>
     </glossentry>
@@ -2636,7 +2636,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Virtual Network Computer
+          虚拟网络计算机（Virtual Network Computer）
         </para>
       </glossdef>
     </glossentry>
@@ -2647,7 +2647,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Video OBject
+          视频对象（Video OBject）
         </para>
       </glossdef>
     </glossentry>
@@ -2658,7 +2658,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Voice Over IP
+          IP 语音（Voice Over IP）
         </para>
       </glossdef>
     </glossentry>
@@ -2669,7 +2669,7 @@
       </glossterm>
       <glossdef>
         <para>
-          World Wide Web Consortium
+          万维网联盟（World Wide Web Consortium）
         </para>
       </glossdef>
     </glossentry>
@@ -2680,7 +2680,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Waveform Audio
+          波形音频（Waveform Audio）
         </para>
       </glossdef>
     </glossentry>
@@ -2691,7 +2691,7 @@
       </glossterm>
       <glossdef>
         <para>
-          World Wide Web
+          万维网（World Wide Web）
         </para>
       </glossdef>
     </glossentry>
@@ -2702,7 +2702,7 @@
       </glossterm>
       <glossdef>
         <para>
-          XDisplay Manager Control Protocol
+          X 显示管理器控制协议（XDisplay Manager Control Protocol）
         </para>
       </glossdef>
     </glossentry>
@@ -2713,7 +2713,7 @@
       </glossterm>
       <glossdef>
         <para>
-          FastTracker Module
+          FastTracker 模块（FastTracker Module）
         </para>
       </glossdef>
     </glossentry>
@@ -2724,7 +2724,7 @@
       </glossterm>
       <glossdef>
         <para>
-          eXtensible Markup Language
+          可扩展标记语言（eXtensible Markup Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2735,7 +2735,7 @@
       </glossterm>
       <glossdef>
         <para>
-          eXtensible Style Language
+          可扩展样式语言（eXtensible Style Language）
         </para>
       </glossdef>
     </glossentry>
@@ -2746,7 +2746,7 @@
       </glossterm>
       <glossdef>
         <para>
-          eXtensible Style Language Transformation
+          可扩展样式语言转换（eXtensible Style Language Transformation）
         </para>
       </glossdef>
     </glossentry>
@@ -2757,7 +2757,7 @@
       </glossterm>
       <glossdef>
         <para>
-          X/Open System Management
+          X/Open 系统管理（X/Open System Management）
         </para>
       </glossdef>
     </glossentry>
@@ -2768,7 +2768,7 @@
       </glossterm>
       <glossdef>
         <para>
-          XMultiMedia System
+          X 多媒体系统（XMultiMedia System）
         </para>
       </glossdef>
     </glossentry>
@@ -2779,7 +2779,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Yellow Pages
+          黄页（Yellow Pages）
         </para>
       </glossdef>
     </glossentry>
@@ -2790,7 +2790,7 @@
       </glossterm>
       <glossdef>
         <para>
-          Luminance-Bandwidth-Chrominance
+          亮度-带宽-色度（Luminance-Bandwidth-Chrominance）
         </para>
       </glossdef>
     </glossentry>
