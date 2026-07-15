@@ -16,7 +16,6 @@
     <application>Perl</application> 和 <application>Python</application>
     的语言支持。本章提供了构建许多流行编程环境的说明，以大幅扩展您系统的开发能力。
   </para>
-</chapter>
 
   <!--xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="autoconf213.xml"/-->
 <!--  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bazaar.xml"/> -->
