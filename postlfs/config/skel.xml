@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-config-skel" xreflabel="Configuring for Adding Users">
+<sect1 id="postlfs-config-skel" xreflabel="为添加用户进行配置">
   <?dbhtml filename="skel.html"?>
 
 
-  <title>Configuring for Adding Users</title>
+  <title>为添加用户进行配置</title>
 
   <indexterm zone="postlfs-config-skel">
     <primary sortas="e-etc-skel">/etc/skel/*</primary>
@@ -20,133 +20,68 @@
   </indexterm>
 
   <para>
-    Together, the <command>/usr/sbin/useradd</command> command and <filename
-    class="directory">/etc/skel</filename> directory (both are easy to
-    set up and use) provide a way to assure new users are added to your LFS
-    system with the same beginning settings for things such as the
-    <envar>PATH</envar>, keyboard processing and other environmental variables.
-    Using these two facilities makes it easier to assure this initial state for
-    each new user added to the system.
+    <command>/usr/sbin/useradd</command> 命令和 <filename class="directory">/etc/skel</filename> 目录（两者都易于设置和使用）共同提供了一种方法，确保新用户添加到您的 LFS 系统时，在 <envar>PATH</envar>、键盘处理和其他环境变量等方面具有相同的初始设置。使用这两种工具可以更轻松地确保系统中每个新添加的用户都具有这种初始状态。
   </para>
 
   <para>
-    The <filename class="directory">/etc/skel</filename> directory holds
-    copies of various initialization and other files that may be copied to the
-    new user's home directory when the <command>/usr/sbin/useradd</command>
-    program adds the new user.
+    <filename class="directory">/etc/skel</filename> 目录保存了各种初始化文件和其他文件的副本，当 <command>/usr/sbin/useradd</command> 程序添加新用户时，这些文件可能会被复制到新用户的主目录中。
   </para>
 
   <bridgehead renderas="sect5">Useradd</bridgehead>
 
   <para>
-    The <command>useradd</command> program uses a collection of default
-    values kept in <filename>/etc/default/useradd</filename>. This file
-    is created in a base LFS installation by the
-    <application>Shadow</application> package. If it has been removed or
-    renamed, the <command>useradd</command> program uses some internal
-    defaults.  You can see the default values by running
-    <command>/usr/sbin/useradd -D</command>.
+    <command>useradd</command> 程序使用保存在 <filename>/etc/default/useradd</filename> 中的一组默认值。该文件由 <application>Shadow</application> 包在基础 LFS 安装中创建。如果它已被删除或重命名，<command>useradd</command> 程序会使用一些内部默认值。您可以通过运行 <command>/usr/sbin/useradd -D</command> 来查看默认值。
   </para>
 
   <para>
-    To change these values, simply modify the
-    <filename>/etc/default/useradd</filename> file as the
-    <systemitem class='username'>root</systemitem> user. An alternative to
-    directly modifying the file is to run <command>useradd</command> as the
-    <systemitem class='username'>root</systemitem> user while supplying the
-    desired modifications on the command line. Information on how to do this
-    can be found in the <command>useradd</command> man page.
+    要更改这些值，只需以 <systemitem class='username'>root</systemitem> 用户身份修改 <filename>/etc/default/useradd</filename> 文件。另一种替代直接修改文件的方法是以 <systemitem class='username'>root</systemitem> 用户身份运行 <command>useradd</command>，并在命令行中提供所需的修改。有关如何执行此操作的信息，可以在 <command>useradd</command> 手册页中找到。
   </para>
 
   <bridgehead renderas="sect5">/etc/skel</bridgehead>
 
   <para>
-    To get started, create an
-    <filename class="directory">/etc/skel</filename> directory and make sure it
-    is writable only by the system administrator, usually
-    <systemitem class="username">root</systemitem>. Creating the directory as
-    <systemitem class="username">root</systemitem> is the best way to go.
+    首先，创建一个 <filename class="directory">/etc/skel</filename> 目录，并确保它仅对系统管理员（通常是 <systemitem class="username">root</systemitem>）可写。以 <systemitem class="username">root</systemitem> 身份创建该目录是最佳做法。
   </para>
 
   <para>
-    The mode of any files from this part of the book that you put in <filename
-    class="directory">/etc/skel</filename> should be writable only by the
-    owner. Also, since there is no telling what kind of sensitive information
-    a user may eventually place in their copy of these files, you should
-    make them unreadable by "group" and "other".
+    您从本书此部分放入 <filename class="directory">/etc/skel</filename> 的任何文件的模式应仅对所有者可写。此外，由于无法预知用户最终可能会在其副本中放置何种敏感信息，您应使其对“组”和“其他”不可读。
   </para>
 
   <para>
-    You can also put other files in
-    <filename class="directory">/etc/skel</filename> and
-    different permissions may be needed for them.
+    您也可以将其他文件放入 <filename class="directory">/etc/skel</filename>，它们可能需要不同的权限。
   </para>
 
   <para>
-    Decide which initialization files should be provided in every (or most)
-    new user's home directory. The decisions you make will affect what you
-    do in the next two sections, <xref linkend="postlfs-config-profile"/> and
-    <xref linkend="postlfs-config-vimrc"/>. Some or all of those files will be
-    useful for <systemitem class="username">root</systemitem>, any
-    already-existing users, and new users.
+    决定应在每个（或大多数）新用户的主目录中提供哪些初始化文件。您的决定将影响您在接下来的两节（<xref linkend="postlfs-config-profile"/> 和 <xref linkend="postlfs-config-vimrc"/>）中的操作。这些文件中的部分或全部将对 <systemitem class="username">root</systemitem>、任何已有用户和新用户有用。
   </para>
 
   <para>
-    The files from those sections that you might want to place in
-    <filename class="directory">/etc/skel</filename> include
-    <filename>.inputrc</filename>, <filename>.bash_profile</filename>,
-    <filename>.bashrc</filename>, <filename>.bash_logout</filename>,
-    <filename>.dircolors</filename>, and <filename>.vimrc</filename>. If
-    you are unsure which of these should be placed there, just continue to
-    the following sections, read each section and any references provided,
-    and then make your decision.
+    您可能想要放入 <filename class="directory">/etc/skel</filename> 的那些章节中的文件包括 <filename>.inputrc</filename>、<filename>.bash_profile</filename>、<filename>.bashrc</filename>、<filename>.bash_logout</filename>、<filename>.dircolors</filename> 和 <filename>.vimrc</filename>。如果您不确定其中哪些应放在那里，只需继续阅读以下各节，阅读每节及其提供的任何参考资料，然后做出决定。
   </para>
 
   <para>
-    You will run a slightly modified set of commands for files which are
-    placed in <filename class="directory">/etc/skel</filename>. Each section
-    will remind you of this. In brief, the book's commands have been written
-    for files <emphasis>not</emphasis> added to <filename class="directory">
-    /etc/skel</filename> and instead just sends the results to the user's
-    home directory. If the file is going to be in <filename class="directory">
-    /etc/skel</filename>, change the book's command(s) to send output there
-    instead and then just copy the file from <filename class="directory">
-    /etc/skel</filename> to the appropriate directories, like <filename
-    class="directory">/etc</filename>, <filename class="directory">~
-    </filename> or the home directory of any other user already in the system.
+    对于放入 <filename class="directory">/etc/skel</filename> 的文件，您将运行一组略有修改的命令。每节都会提醒您这一点。简而言之，本书中的命令是为 <emphasis>不</emphasis> 添加到 <filename class="directory">/etc/skel</filename> 的文件编写的，而是直接将结果发送到用户的主目录。如果文件将放入 <filename class="directory">/etc/skel</filename>，请修改本书的命令以将输出发送到那里，然后将文件从 <filename class="directory">/etc/skel</filename> 复制到相应的目录，例如 <filename class="directory">/etc</filename>、<filename class="directory">~</filename> 或系统中任何其他已有用户的主目录。
   </para>
 
-  <bridgehead renderas="sect5">When Adding a User</bridgehead>
+  <bridgehead renderas="sect5">添加用户时</bridgehead>
 
   <para>
-    When adding a new user with <command>useradd</command>, use
-    the <option>-m</option> parameter, which tells
-    <command>useradd</command> to create the user's home directory and
-    copy files from <filename class="directory">/etc/skel</filename> (can be
-    overridden) to the new user's home directory.  For example (perform as the
-    <systemitem class="username">root</systemitem> user):
+    当使用 <command>useradd</command> 添加新用户时，请使用 <option>-m</option> 参数，该参数告诉 <command>useradd</command> 创建用户的主目录，并将文件从 <filename class="directory">/etc/skel</filename>（可覆盖）复制到新用户的主目录。例如（以 <systemitem class="username">root</systemitem> 用户身份执行）：
   </para>
 
-<screen role="root"><userinput>useradd -m <replaceable>&lt;newuser&gt;</replaceable></userinput></screen>
+<screen role="root"><userinput>useradd -m <replaceable>&lt;新用户&gt;</replaceable></userinput></screen>
 
   <para>
-    If you are sharing a <filename class="directory">/home</filename>
-    or <filename class="directory">/usr/src</filename> with another
-    Linux distro (for example, the host distro used for building LFS), you
-    can create a user with the same UID (and, same primary group GID) to
-    keep the file ownership consistent across the systems.  First, on
-    <emphasis>the other distro</emphasis>, get the UID of the user and the
-    GID of the user's primary group:
+    如果您与其他 Linux 发行版（例如用于构建 LFS 的主机发行版）共享 <filename class="directory">/home</filename> 或 <filename class="directory">/usr/src</filename>，您可以创建具有相同 UID（以及相同的主组 GID）的用户，以保持文件所有权在各个系统间一致。首先，在 <emphasis>其他发行版</emphasis> 上，获取该用户的 UID 和用户主组的 GID：
   </para>
 
-<screen role="nodump"><userinput>getent passwd <replaceable>&lt;username&gt;</replaceable> | cut -d ':' -f 3,4</userinput></screen>
+<screen role="nodump"><userinput>getent passwd <replaceable>&lt;用户名&gt;</replaceable> | cut -d ':' -f 3,4</userinput></screen>
 
   <para>
-    The command should output the UID and GID, separated by a colon.  Now
-    on the BLFS system, create the primary group and the user:
+    该命令应输出 UID 和 GID，以冒号分隔。现在，在 BLFS 系统上，创建主组和用户：
   </para>
 
-<screen role="root"><userinput>groupadd -g <replaceable>&lt;GID&gt;</replaceable> <replaceable>&lt;username&gt;</replaceable> &amp;&amp;
-useradd -u <replaceable>&lt;UID&gt;</replaceable> -g <replaceable>&lt;username&gt;</replaceable> <replaceable>&lt;username&gt;</replaceable></userinput></screen>
+<screen role="root"><userinput>groupadd -g <replaceable>&lt;GID&gt;</replaceable> <replaceable>&lt;用户名&gt;</replaceable> &amp;&amp;
+useradd -u <replaceable>&lt;UID&gt;</replaceable> -g <replaceable>&lt;用户名&gt;</replaceable> <replaceable>&lt;用户名&gt;</replaceable></userinput></screen>
 
 </sect1>

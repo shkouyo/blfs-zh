@@ -5,50 +5,34 @@
   %general-entities;
 ]>
 
-<chapter id="postlfs-config" xreflabel="After LFS Configuration Issues">
+<chapter id="postlfs-config" xreflabel="后续 LFS 配置问题">
   <?dbhtml filename="config.html"?>
 
-  <title>After LFS Configuration Issues</title>
+  <title>后续 LFS 配置问题</title>
 
   <para>
-    The intention of LFS is to provide a basic system which you can
-    build upon.  There are several things about tidying up the system which
-    many people wonder about once they have done the base install.
-    We hope to cover these issues in this chapter.
+    LFS 的宗旨是提供一个可供您继续构建的基础系统。完成基础安装后，许多人会对系统整理方面的若干问题感到疑惑。我们希望在本章中讨论这些问题。
   </para>
 
   <para>
-    Most people coming from non-Unix like backgrounds to Linux find the
-    concept of text-only configuration files slightly strange.  In Linux, just
-    about all configuration is done via the manipulation of text files. The
-    majority of these files can be found in the <filename
-    class='directory'>/etc</filename> hierarchy. There are often graphical
-    configuration programs available for different subsystems but most
-    are simply pretty front ends to the process of editing a text file. The
-    advantage of text-only configuration is that you can edit parameters using
-    your favorite text editor, whether that be <command>vim</command>,
-    <command>emacs</command>, or any other editor.
+    大多数来自非 Unix 背景的 Linux 用户会发现纯文本配置文件的概念有些奇怪。在 Linux 中，几乎所有配置都是通过编辑文本文件来完成的。
+    这些文件中的大部分位于 <filename class='directory'>/etc</filename> 目录树中。虽然不同子系统通常有图形化的配置程序可用，但大多数只是编辑文本文件过程的漂亮前端。
+    纯文本配置的优势在于，您可以使用自己喜爱的文本编辑器（无论是 <command>vim</command>、<command>emacs</command> 还是其他编辑器）来编辑参数。
   </para>
 
   <para>
-    The first task is making a recovery boot device in <xref
-    linkend="postlfs-config-bootdisk"/> because it's the most critical need.
-    Hardware issues relevant to firmware and other devices is addressed next.
-    The system is then configured to ease addition of new users, because this
-    can affect the choices you make in the two subsequent
-    topics&mdash;<xref linkend="postlfs-config-profile"/> and
-    <xref linkend="postlfs-config-vimrc"/>.
+    第一个任务是制作恢复启动设备，参见 <xref linkend="postlfs-config-bootdisk"/>，因为这是最迫切的需求。
+    接下来是与固件及其他设备相关的硬件问题。然后配置系统以方便添加新用户，因为这会影响您在后续两个主题（<xref linkend="postlfs-config-profile"/> 和 <xref linkend="postlfs-config-vimrc"/>）中的选择。
   </para>
 
   <para revision="sysv">
-    The remaining topics, <xref linkend="postlfs-config-logon"/> and
-    <xref linkend="postlfs-config-random"/> are then addressed, in that order.
-    They don't have much interaction with the other topics in this chapter.
+    其余主题依次为 <xref linkend="postlfs-config-logon"/> 和 <xref linkend="postlfs-config-random"/>。
+    它们与本章其他主题的关联不大。
   </para>
 
   <para revision="systemd">
-    There is one remaining topic: <xref linkend="postlfs-config-logon"/>.
-    It doesn't have much interaction with the other topics in this chapter.
+    还有一个主题：<xref linkend="postlfs-config-logon"/>。
+    它与本章其他主题的关联不大。
   </para>
 <!-- autofs has been moved to sysutils -->
 

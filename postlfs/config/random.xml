@@ -5,36 +5,26 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-config-random" xreflabel="Random number generation" revision="sysv">
+<sect1 id="postlfs-config-random" xreflabel="随机数生成" revision="sysv">
   <?dbhtml filename="random.html"?>
 
 
-  <title>Random Number Generation</title>
+  <title>随机数生成</title>
 
   <indexterm zone="postlfs-config-random">
     <primary sortas="f-random">random</primary>
   </indexterm>
 
   <para>
-    The Linux kernel supplies a random number generator which is accessed
-    through <filename class="devicefile">/dev/random</filename> and
-    <filename class="devicefile">/dev/urandom</filename>. Programs that utilize
-    the random and urandom devices, such as <application>OpenSSH</application>,
-    will benefit from these instructions.
+    Linux 内核提供了一个随机数生成器，可通过 <filename class="devicefile">/dev/random</filename> 和 <filename class="devicefile">/dev/urandom</filename> 访问。使用 random 和 urandom 设备的程序（如 <application>OpenSSH</application>）将受益于这些说明。
   </para>
 
   <para>
-    When a Linux system starts up without much operator interaction, the
-    entropy pool (data used to compute a random number) may be in a fairly
-    predictable state.  This creates the real possibility that the number
-    generated at startup may always be the same.  In order to counteract
-    this effect, you should carry the entropy pool information across your
-    shut-downs and start-ups.
+    当 Linux 系统在缺少大量用户交互的情况下启动时，熵池（用于计算随机数的数据）可能处于相当可预测的状态。这带来了一个现实的可能性，即启动时生成的数字可能总是相同的。为了抵消这种影响，您应该在关机与启动之间保存熵池信息。
   </para>
 
   <para>
-    Install the <filename>/etc/rc.d/init.d/random</filename> init script
-    included with the <xref linkend="bootscripts"/> package.
+    安装 <xref linkend="bootscripts"/> 软件包中包含的 <filename>/etc/rc.d/init.d/random</filename> 初始化脚本。
   </para>
 
 <screen role="root"><userinput>make install-random</userinput></screen>

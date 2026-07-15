@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-config-vimrc" xreflabel="The vimrc Files">
+<sect1 id="postlfs-config-vimrc" xreflabel="vimrc 文件">
   <?dbhtml filename="vimrc.html"?>
 
 
-  <title>The /etc/vimrc and ~/.vimrc Files</title>
+  <title>/etc/vimrc 和 ~/.vimrc 文件</title>
 
   <indexterm zone="postlfs-config-vimrc">
     <primary sortas="e-etc-vimrc">/etc/vimrc</primary>
@@ -20,35 +20,15 @@
   </indexterm>
 
   <para>
-    The LFS book installs <application>Vim</application> as its text editor.
-    At this point it should be noted that there are a <emphasis>lot</emphasis>
-    of different editing applications out there including
-    <application>Emacs</application>, <application>nano</application>,
-    <application>Joe</application> and many more.  Anyone who has been
-    around the Internet (especially usenet) for a short time will certainly
-    have observed at least one flame war, usually involving
-    <application>Vim</application> and <application>Emacs</application> users!
+    LFS 手册将 <application>Vim</application> 安装为其文本编辑器。此时应注意，存在 <emphasis>很多</emphasis> 不同的编辑应用程序，包括 <application>Emacs</application>、<application>nano</application>、<application>Joe</application> 等等。任何在网上（尤其是新闻组）待过一段时间的人，肯定至少见过一次争论，通常涉及 <application>Vim</application> 和 <application>Emacs</application> 用户！
   </para>
 
   <para>
-    The LFS book creates a basic <filename>vimrc</filename> file. In this
-    section you'll find an attempt to enhance this file. At startup,
-    <command>vim</command> reads the global configuration file
-    (<filename>/etc/vimrc</filename>) as well as a user-specific file
-    (<filename>~/.vimrc</filename>). Either or both can be tailored to suit
-    the needs of your particular system.
+    LFS 手册创建了一个基本的 <filename>vimrc</filename> 文件。在本节中，我们将尝试增强此文件。启动时，<command>vim</command> 会读取全局配置文件（<filename>/etc/vimrc</filename>）以及用户特定的文件（<filename>~/.vimrc</filename>）。可以调整其中一个或两者，以适应您特定系统的需求。
   </para>
 
   <para>
-    Here is a slightly expanded <filename>.vimrc</filename> that you can put
-    in <filename>~/.vimrc</filename> to provide user specific effects. Of
-    course, if you put it into <filename>/etc/skel/.vimrc</filename> instead,
-    it will be made available to users you add to the system later. You
-    can also copy the file from <filename>/etc/skel/.vimrc</filename> to
-    the home directory of users already on the system, such as <systemitem
-    class='username'>root</systemitem>. Be sure to set permissions, owner,
-    and group if you do copy anything directly from <filename
-    class="directory">/etc/skel</filename>.
+    以下是一个稍微扩展的 <filename>.vimrc</filename>，您可以将其放入 <filename>~/.vimrc</filename> 中以提供用户特定的效果。当然，如果您将其放入 <filename>/etc/skel/.vimrc</filename>，则以后添加到系统的用户都将获得它。您也可以将文件从 <filename>/etc/skel/.vimrc</filename> 复制到系统上已有用户（如 <systemitem class='username'>root</systemitem>）的家目录中。如果您直接从 <filename class="directory">/etc/skel</filename> 复制任何内容，请务必设置权限、所有者和组。
   </para>
 
 <screen><literal>" Begin .vimrc
@@ -60,14 +40,11 @@ set ruler
 " End .vimrc</literal></screen>
 
   <para>
-    Note that the comment tags are " instead of the more
-    usual # or //.  This is correct, the syntax for
-    <filename>vimrc</filename> is slightly unusual.
+    请注意，注释标记是 " 而不是更常见的 # 或 //。这是正确的，<filename>vimrc</filename> 的语法略有不同。
   </para>
 
   <para>
-    Below you'll find a quick explanation of what each of the
-    options in this example file means here:
+    以下是对此示例文件中每个选项含义的快速说明：
   </para>
 
   <itemizedlist>
@@ -91,8 +68,7 @@ set ruler
     -->
     <listitem>
       <para>
-        <option>set columns=80</option>: This simply sets the
-        number of columns used on the screen.
+        <option>set columns=80</option>：这只是设置屏幕上使用的列数。
       </para>
     </listitem>
     <!--
@@ -106,8 +82,7 @@ set ruler
     -->
     <listitem>
       <para>
-        <option>set wrapmargin=8</option>: This is the number of
-        characters from the right window border where wrapping starts.
+        <option>set wrapmargin=8</option>：这是从右窗口边框开始换行的字符数。
       </para>
     </listitem>
     <!--
@@ -120,20 +95,13 @@ set ruler
     -->
     <listitem>
       <para>
-        <option>set ruler</option>: This makes <command>vim</command>
-        show the current row and column at the bottom right of the screen.
+        <option>set ruler</option>：这会使 <command>vim</command> 在屏幕右下角显示当前行号和列号。
       </para>
     </listitem>
   </itemizedlist>
 
   <para>
-    More information on the <emphasis>many</emphasis>
-    <command>vim</command> options can be found by reading the help
-    inside <command>vim</command> itself.  Do this by typing
-    <command>:</command><option>help</option> in
-    <command>vim</command> to get the general help, or by typing
-    <command>:</command><option>help usr_toc.txt</option> to view
-    the User Manual Table of Contents.
+    关于 <command>vim</command> <emphasis>众多</emphasis> 选项的更多信息，可以在 <command>vim</command> 内部阅读帮助。在 <command>vim</command> 中键入 <command>:</command><option>help</option> 获取通用帮助，或键入 <command>:</command><option>help usr_toc.txt</option> 查看用户手册目录。
   </para>
 
 </sect1>

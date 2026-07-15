@@ -9,38 +9,27 @@
   <?dbhtml filename="devices.html"?>
 
 
-  <title>About Devices</title>
+  <title>关于设备</title>
 
   <indexterm zone="postlfs-devices">
     <primary sortas="e-etc-udev-rules">/etc/udev/rules.d</primary>
   </indexterm>
 
   <para>
-    Although most devices needed by packages in BLFS and beyond are set up
-    properly by <application>udev</application> using the default rules
-    installed by LFS in <filename
-    class="directory">/etc/udev/rules.d</filename>, there are cases where
-    the rules must be modified or augmented.
+    尽管 BLFS 及更高版本中包所需的大多数设备都由 <application>udev</application> 使用 LFS 在 <filename class="directory">/etc/udev/rules.d</filename> 中安装的默认规则正确设置，但在某些情况下必须修改或扩充规则。
   </para>
 
   <sect2>
-    <title>Multiple Sound Cards</title>
+    <title>多个声卡</title>
 
     <para>
-      If there are multiple sound cards in a system, the "default"
-      sound card becomes random.  The method to establish sound card order
-      depends on whether the drivers are modules or not.  If the sound card
-      drivers are compiled into the kernel, control is via kernel command line
-      parameters in <filename>/boot/grub/grub.cfg</filename>.  For example,
-      if a system has both an FM801 card and a SoundBlaster PCI card, the
-      following can be appended to the command line:
+      如果系统中有多个声卡，“默认”声卡会变为随机。建立声卡顺序的方法取决于驱动程序是否为模块。如果声卡驱动程序编译进内核，则通过 <filename>/boot/grub/grub.cfg</filename> 中的内核命令行参数进行控制。例如，如果系统同时拥有 FM801 卡和 SoundBlaster PCI 卡，则可以将以下内容附加到命令行：
     </para>
 
 <screen><literal>snd-fm801.index=0 snd-ens1371.index=1</literal></screen>
 
     <para>
-      If the sound card drivers are built as modules, the order can be
-      established in the <filename>/etc/modprobe.conf</filename> file with:
+      如果声卡驱动程序构建为模块，则可以在 <filename>/etc/modprobe.conf</filename> 文件中通过以下方式建立顺序：
     </para>
 
 <screen><literal>options snd-fm801 index=0
@@ -49,66 +38,35 @@ options snd-ens1371 index=1</literal></screen>
   </sect2>
 
   <sect2 id="usb-device-issues">
-    <title>USB Device Issues</title>
+    <title>USB 设备问题</title>
 
     <para>
-      USB devices usually have two kinds of device nodes associated with them.
+      USB 设备通常有两种与之关联的设备节点。
     </para>
 
     <para>
-      The first kind is created by device-specific drivers (e.g.,
-      usb_storage/sd_mod or usblp) in the kernel. For example, a USB mass
-      storage device would be /dev/sdb, and a USB printer would be
-      /dev/usb/lp0. These device nodes exist only when the device-specific
-      driver is loaded.
+      第一种由内核中的设备特定驱动程序（例如 usb_storage/sd_mod 或 usblp）创建。例如，USB 大容量存储设备为 /dev/sdb，USB 打印机为 /dev/usb/lp0。这些设备节点仅在设备特定驱动程序加载时才存在。
     </para>
 
     <para>
-      The second kind of device nodes (/dev/bus/usb/BBB/DDD, where BBB is
-      the bus number and DDD is the device number) are created even if the
-      device doesn't have a kernel driver. By using these "raw" USB device
-      nodes, an application can exchange arbitrary USB packets with the
-      device, i.e., bypass the possibly-existing kernel driver.
+      第二种设备节点（/dev/bus/usb/BBB/DDD，其中 BBB 是总线编号，DDD 是设备编号）即使设备没有内核驱动程序也会被创建。通过使用这些“原始”USB 设备节点，应用程序可以与设备交换任意 USB 数据包，即绕过可能存在的内核驱动程序。
     </para>
 
     <para>
-      Access to raw USB device nodes is needed when a userspace program is
-      acting as a device driver. However, for the program to open the device
-      successfully, the permissions have to be set correctly. By default, due
-      to security concerns, all raw USB devices are owned by user root and
-      group root, and have 0664 permissions (the read access is needed, e.g.,
-      for lsusb to work and for programs to access USB hubs). Packages (such
-      as SANE and libgphoto2) containing userspace USB device drivers also
-      ship udev rules that change the permissions of the controlled raw USB
-      devices. That is, rules installed by SANE change permissions for known
-      scanners, but not printers.  If a package maintainer forgot to write
-      a rule for your device, report a bug to both BLFS (if the package is
-      there) and upstream, and you will need to write your own rule.
+      当用户空间程序充当设备驱动程序时，需要访问原始 USB 设备节点。但是，要使程序成功打开设备，必须正确设置权限。默认情况下，出于安全考虑，所有原始 USB 设备由用户 root 和组 root 拥有，权限为 0664（需要读取权限，例如，使 lsusb 工作以及程序访问 USB 集线器）。包含用户空间 USB 设备驱动程序的包（例如 SANE 和 libgphoto2）也会附带 udev 规则，更改受控原始 USB 设备的权限。也就是说，SANE 安装的规则会更改已知扫描仪的权限，但不会更改打印机的。如果包维护者忘记为您的设备编写规则，请向 BLFS（如果该包在其中）和上游报告错误，并且您将需要编写自己的规则。
     </para>
 
     <para>
-      Before Linux-2.6.15, raw USB device access was performed not with
-      /dev/bus/usb/BBB/DDD device nodes, but with /proc/bus/usb/BBB/DDD
-      pseudofiles. Some applications still use only
-      this deprecated technique and can't use the new device nodes.  They
-      cannot work with Linux kernel version 3.5 or newer.  If you need to
-      run such an application, contact the developer of it for a fix.
+      在 Linux-2.6.15 之前，原始 USB 设备访问不是通过 /dev/bus/usb/BBB/DDD 设备节点进行的，而是通过 /proc/bus/usb/BBB/DDD 伪文件进行的。某些应用程序仍然仅使用这种已弃用的技术，并且无法使用新的设备节点。它们无法与 Linux 内核 3.5 或更高版本一起工作。如果您需要运行此类应用程序，请联系其开发人员以获取修复。
     </para>
 
   </sect2>
 
   <sect2>
-    <title>Udev Device Attributes</title>
+    <title>Udev 设备属性</title>
 
     <para>
-      Fine-tuning of device attributes such as group name and permissions
-      is possible by creating extra <application>udev</application> rules,
-      matching on something like this. The vendor and product can be found by
-      searching the <filename class='directory'>/sys/devices</filename>
-      directory entries or using <command>udevadm info</command> after the
-      device has been attached. See the documentation in the current
-      <application>udev</application> directory of <filename
-      class='directory'>/usr/share/doc</filename> for details.
+      可以通过创建额外的 <application>udev</application> 规则来微调设备属性（例如组名和权限），匹配类似以下内容。供应商和产品可以通过搜索 <filename class='directory'>/sys/devices</filename> 目录条目或在设备连接后使用 <command>udevadm info</command> 找到。有关详细信息，请参阅当前 <application>udev</application> 目录中 <filename class='directory'>/usr/share/doc</filename> 的文档。
     </para>
 
 <screen><literal>SUBSYSTEM=="usb_device", SYSFS{idVendor}=="05d8", SYSFS{idProduct}=="4002", \
@@ -116,9 +74,7 @@ options snd-ens1371 index=1</literal></screen>
 
     <note>
       <para>
-        The above line is used for descriptive purposes only. The
-        scanner <application>udev</application> rules are put into place when
-        installing <xref linkend='sane'/>.
+        上面一行仅用于描述目的。扫描仪 <application>udev</application> 规则在安装 <xref linkend='sane'/> 时会被放置到位。
       </para>
     </note>
 
@@ -136,29 +92,19 @@ options snd-ens1371 index=1</literal></screen>
      In addition, we should probably verify that these are valid on SysV too.-->
 
   <sect2 revision="sysv">
-    <title>Devices for Servers</title>
+    <title>服务器设备</title>
 
     <para>
-      In some cases, it makes sense to disable
-      <application>udev</application> completely and create static devices.
-      Servers are one example of this situation.  Does a server need the
-      capability of handling dynamic devices?  Only the system administrator
-      can answer that question, but in many cases the answer will be no.
+      在某些情况下，完全禁用 <application>udev</application> 并创建静态设备是有意义的。服务器就是这种情况的一个例子。服务器需要处理动态设备的能力吗？只有系统管理员才能回答这个问题，但在许多情况下答案是否定的。
     </para>
 
     <para>
-      If dynamic devices are not desired, then static devices must be
-      created on the system.  In the default configuration, the
-      <filename>/etc/rc.d/rcS.d/S10udev</filename> boot script mounts a
-      <systemitem class="filesystem">tmpfs</systemitem> partition over the
-      <filename class="directory">/dev</filename> directory. This problem can
-      be overcome by mounting the root partition temporarily:
+      如果不需要动态设备，则必须在系统上创建静态设备。在默认配置中，<filename>/etc/rc.d/rcS.d/S10udev</filename> 启动脚本会在 <filename class="directory">/dev</filename> 目录上挂载 <systemitem class="filesystem">tmpfs</systemitem> 分区。可以通过临时挂载根分区来克服此问题：
     </para>
 
     <warning>
       <para>
-        If the instructions below are not followed carefully, your
-        system could become unbootable.
+        如果不仔细遵循以下说明，您的系统可能会无法启动。
       </para>
     </warning>
 
@@ -169,30 +115,20 @@ rm /etc/rc.d/rcS.d/{S10udev,S50udev_retry}
 umount /mnt</userinput></screen>
 
     <para>
-      At this point, the system will use static devices upon the next
-      reboot.  Create any desired additional devices using
-      <command>mknod</command>.
+      此时，系统将在下次重新启动时使用静态设备。使用 <command>mknod</command> 创建任何所需的其他设备。
     </para>
 
     <para>
-      If you want to restore the dynamic devices, recreate the
-      <filename>/etc/rc.d/rcS.d/{S10udev,S50udev_retry}</filename> symbolic
-      links and reboot again.  Static devices do not need to be removed
-      (console and null are always needed) because they are covered by the
-      <systemitem class="filesystem">tmpfs</systemitem> partition.  Disk
-      usage for devices is negligible (about 20&ndash;30 bytes per entry).
+      如果您想恢复动态设备，请重新创建 <filename>/etc/rc.d/rcS.d/{S10udev,S50udev_retry}</filename> 符号链接，并再次重新启动。静态设备不需要删除（console 和 null 始终是必需的），因为它们被 <systemitem class="filesystem">tmpfs</systemitem> 分区覆盖。设备的磁盘占用可以忽略不计（每个条目约 20&ndash;30 字节）。
     </para>
 
   </sect2>
 
   <sect2 id="dev-dvd">
-    <title>Devices for DVD Drives</title>
+    <title>DVD 驱动器的设备</title>
 
     <para>
-      If the initial boot process does not set up the
-      <systemitem>/dev/dvd</systemitem> device properly, it can
-      be installed using the following modification to the default udev rules.
-      As the <systemitem class="username">root</systemitem> user, run:
+      如果初始启动过程未正确设置 <systemitem>/dev/dvd</systemitem> 设备，可以通过对默认 udev 规则进行以下修改来安装它。以 <systemitem class="username">root</systemitem> 用户身份运行：
     </para>
 
 <screen><userinput>sed '1d;/SYMLINK.*cdrom/ a\

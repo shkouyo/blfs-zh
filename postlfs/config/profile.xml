@@ -5,83 +5,47 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-config-profile" xreflabel="The Bash Shell Startup Files">
+<sect1 id="postlfs-config-profile" xreflabel="Bash Shell 启动文件">
   <?dbhtml filename="profile.html"?>
 
 
-  <title>The Bash Shell Startup Files</title>
+  <title>Bash Shell 启动文件</title>
 
   <para>
-    The shell program <filename>/bin/bash</filename> (hereafter referred to
-    as just "the shell") uses a collection of startup files to help create
-    an environment.  Each file has a specific use and may affect login and
-    interactive environments differently.  The files in the <filename
-    class="directory">/etc</filename> directory generally provide global
-    settings. If an equivalent file exists in your home directory it may
-    override the global settings.
+    Shell 程序 <filename>/bin/bash</filename>（此后简称为 “shell”）使用一系列启动文件来帮助建立环境。每个文件都有特定的用途，对登录环境和交互式环境的影响可能不同。<filename class="directory">/etc</filename> 目录中的文件通常提供全局设置。如果您的家目录中存在同名文件，则可能会覆盖全局设置。
   </para>
 
   <para>
-    An interactive login shell is started after a successful login, using
-    <filename>/bin/login</filename>, by reading the
-    <filename>/etc/passwd</filename> file. This shell invocation normally reads
-    <filename>/etc/profile</filename> and its private equivalent
-    <filename>~/.bash_profile</filename> (or <filename>~/.profile</filename>
-    if called as <command>/bin/sh</command>) upon startup.
+    交互式登录 shell 在成功登录后启动，通过 <filename>/bin/login</filename> 读取 <filename>/etc/passwd</filename> 文件。这种 shell 调用在启动时通常会读取 <filename>/etc/profile</filename> 及其对应的私有文件 <filename>~/.bash_profile</filename>（如果以 <command>/bin/sh</command> 调用，则读取 <filename>~/.profile</filename>）。
   </para>
 
   <para>
-    An interactive non-login shell is normally started at the command-line
-    using a shell program (e.g.,
-    <prompt>[prompt]$</prompt><command>/bin/bash</command>) or by the
-    <command>/bin/su</command> command.  An interactive non-login shell is also
-    started with a terminal program such as <command>xterm</command> or
-    <command>konsole</command> from within a graphical environment. This type
-    of shell invocation normally copies the parent environment and then reads
-    the user's <filename>~/.bashrc</filename> file for additional startup
-    configuration instructions.
+    交互式非登录 shell 通常在命令行中使用 shell 程序启动（例如 <prompt>[prompt]$</prompt><command>/bin/bash</command>），或者由 <command>/bin/su</command> 命令启动。交互式非登录 shell 也可以在图形环境中由终端程序（如 <command>xterm</command> 或 <command>konsole</command>）启动。这种 shell 调用通常会复制父环境，然后读取用户的 <filename>~/.bashrc</filename> 文件以获取额外的启动配置指令。
   </para>
 
   <para>
-    A non-interactive shell is usually present when a shell script is
-    running.  It is non-interactive because it is processing a script and not
-    waiting for user input between commands. For these shell invocations, only
-    the environment inherited from the parent shell is used.
+    非交互式 shell 通常在运行 shell 脚本时存在。它是非交互式的，因为它在处理脚本，而不是在命令之间等待用户输入。对于这些 shell 调用，仅使用从父 shell 继承的环境。
   </para>
 
   <para>
-    The file <filename>~/.bash_logout</filename> is not used for an
-    invocation of the shell.  It is read and executed when a user exits from an
-    interactive login shell.
+    <filename>~/.bash_logout</filename> 文件不用于 shell 调用。它在用户退出交互式登录 shell 时被读取和执行。
   </para>
 
   <para>
-    Many distributions use <filename>/etc/bashrc</filename> for system wide
-    initialization of non-login shells. This file is usually called from the
-    user's <filename>~/.bashrc</filename> file and is not built directly into
-    <command>bash</command> itself.  This convention is followed in this
-    section.
+    许多发行版使用 <filename>/etc/bashrc</filename> 进行非登录 shell 的系统范围初始化。该文件通常从用户的 <filename>~/.bashrc</filename> 文件中调用，并非直接内置于 <command>bash</command> 本身。本节遵循此约定。
   </para>
 
   <para>
-    For more information see <command>info bash</command> --
-    <emphasis role="strong">Nodes: Bash Startup Files and Interactive
-    Shells</emphasis>.
+    更多信息请参阅 <command>info bash</command> —— <emphasis role="strong">节点：Bash 启动文件和交互式 Shell</emphasis>。
   </para>
 
   <note>
     <para>
-      Most of the instructions below are used to create files located in the
-      <filename class='directory'>/etc</filename> directory structure which
-      requires you to execute the commands as the <systemitem
-      class='username'>root</systemitem> user. If you elect to create the
-      files in user's home directories instead, you should run the commands
-      as an unprivileged user.
+      以下大部分说明用于创建位于 <filename class='directory'>/etc</filename> 目录结构中的文件，这需要您以 <systemitem class='username'>root</systemitem> 用户身份执行命令。如果您选择在用户的家目录中创建文件，则应使用非特权用户运行命令。
     </para>
   </note>
 
-  <para condition="html" role="usernotes">Editor Notes:
-  <ulink url="&blfs-wiki;/bash-shell-startup-files"/></para>
+  <para condition="html" role="usernotes">编者注：<ulink url="&blfs-wiki;/bash-shell-startup-files"/></para>
 
   <sect2 id="etc-profile-profile">
     <title>/etc/profile</title>
@@ -91,14 +55,7 @@
     </indexterm>
 
     <para>
-      Here is a base <filename>/etc/profile</filename>. This file starts by
-      setting up some helper functions and some basic parameters. It specifies
-      some <command>bash</command> history parameters and, for security
-      purposes, disables keeping a permanent history file for the <systemitem
-      class="username">root</systemitem> user.
-      It then calls small, single purpose scripts in the <filename
-      class='directory'>/etc/profile.d</filename> directory to provide most
-      of the initialization.
+      这是一个基础的 <filename>/etc/profile</filename>。该文件首先设置一些辅助函数和一些基本参数。它指定了一些 <command>bash</command> 历史记录参数，并且出于安全考虑，禁止为 <systemitem class="username">root</systemitem> 用户保留永久历史记录文件。然后它调用 <filename class='directory'>/etc/profile.d</filename> 目录中的小型、单一用途的脚本，以提供大部分初始化功能。
     </para>
 
 <screen role="root"><?dbfo keep-together="auto"?><userinput>cat &gt; /etc/profile &lt;&lt; "EOF"
@@ -107,15 +64,12 @@
 # by James Robertson &lt;jameswrobertson@earthlink.net&gt;
 # modifications by Dagmar d'Surreal &lt;rivyqntzne@pbzpnfg.arg&gt;
 
-# System wide environment variables and startup programs.
+# 系统范围的环境变量和启动程序。
 
-# System wide aliases and functions should go in /etc/bashrc.  Personal
-# environment variables and startup programs should go into
-# ~/.bash_profile.  Personal aliases and functions should go into
-# ~/.bashrc.
+# 系统范围的别名和函数应放在 /etc/bashrc 中。个人环境变量和启动程序应放在
+# ~/.bash_profile 中。个人别名和函数应放在 ~/.bashrc 中。
 
-# Functions to help us manage paths.  Second argument is the name of the
-# path variable to be modified (default: PATH)
+# 用于管理路径的函数。第二个参数是要修改的路径变量名（默认：PATH）
 pathremove () {
         local IFS=':'
         local NEWPATH
@@ -143,10 +97,10 @@ pathappend () {
 
 export -f pathremove pathprepend pathappend
 
-# Set the initial path
+# 设置初始路径
 export PATH=/usr/bin
 
-# Attempt to provide backward compatibility with LFS earlier than 11
+# 尝试提供与 LFS 早期版本（早于 11）的向后兼容性
 if [ ! -L /bin ]; then
         pathappend /bin
 fi
@@ -159,11 +113,11 @@ if [ $EUID -eq 0 ] ; then
         unset HISTFILE
 fi
 
-# Set up some environment variables.
+# 设置一些环境变量。
 export HISTSIZE=1000
 export HISTIGNORE="&amp;:[bf]g:exit"
 
-# Set some defaults for graphical systems
+# 为图形系统设置一些默认值
 export XDG_DATA_DIRS=${XDG_DATA_DIRS:-/usr/share}
 export XDG_CONFIG_DIRS=${XDG_CONFIG_DIRS:-/etc/xdg}
 export XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/tmp/xdg-$USER}
@@ -180,15 +134,14 @@ unset script
 EOF</userinput></screen>
 
     <sect3 id="etc-profile.d">
-      <title>The /etc/profile.d Directory</title>
+      <title>/etc/profile.d 目录</title>
 
       <indexterm zone="postlfs-config-profile etc-profile.d">
         <primary sortas="e-etc-profile.d">/etc/profile.d</primary>
       </indexterm>
 
       <para>
-        Now create the <filename class='directory'>/etc/profile.d</filename>
-        directory, where the individual initialization scripts are placed:
+        现在创建 <filename class='directory'>/etc/profile.d</filename> 目录，用于存放各个初始化脚本：
       </para>
 
 <screen role="root"><userinput>install --directory --mode=0755 --owner=root --group=root /etc/profile.d</userinput></screen>
@@ -204,37 +157,31 @@ EOF</userinput></screen>
 
       <note>
         <para>
-          Using the bash completion script below is controversial. Not all
-          users like it.  It adds many (usually over 1000) lines to the bash
-          environment and makes it difficult to use the 'set' command to
-          examine simple environment variables.  Omitting this script does
-          not interfere with the ability of bash to use the tab key for file
-          name completion.
+          使用下面的 bash 补全脚本存在争议。并非所有用户都喜欢它。它会向 bash 环境添加许多（通常超过 1000 行）内容，并使使用 'set' 命令检查简单环境变量变得困难。省略此脚本不会影响 bash 使用 Tab 键进行文件名补全的功能。
         </para>
       </note>
 
       <para>
-        This script imports bash completion scripts, installed by many
-        other BLFS packages, to allow TAB command line completion.
+        此脚本导入许多其他 BLFS 软件包安装的 bash 补全脚本，以允许 Tab 命令行补全。
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/bash_completion.sh &lt;&lt; "EOF"
 <literal># Begin /etc/profile.d/bash_completion.sh
 # Import bash completion scripts
 
-# If the bash-completion package is installed, use its configuration instead
+# 如果安装了 bash-completion 软件包，则使用其配置
 if [ -f /usr/share/bash-completion/bash_completion ]; then
 
-  # Check for interactive bash and that we haven't already been sourced.
+  # 检查是否为交互式 bash，并且我们尚未被引用。
   if [ -n "${BASH_VERSION-}" -a -n "${PS1-}" -a -z "${BASH_COMPLETION_VERSINFO-}" ]; then
 
-    # Check for recent enough version of bash.
+    # 检查 bash 版本是否足够新。
     if [ ${BASH_VERSINFO[0]} -gt 4 ] || \
        [ ${BASH_VERSINFO[0]} -eq 4 -a ${BASH_VERSINFO[1]} -ge 1 ]; then
        [ -r "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion" ] &amp;&amp; \
             . "${XDG_CONFIG_HOME:-$HOME/.config}/bash_completion"
        if shopt -q progcomp &amp;&amp; [ -r /usr/share/bash-completion/bash_completion ]; then
-          # Source completion code.
+          # 引用补全代码。
           . /usr/share/bash-completion/bash_completion
        fi
     fi
@@ -242,7 +189,7 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
 
 else
 
-  # bash-completions are not installed, use only bash completion directory
+  # bash-completion 未安装，仅使用 bash 补全目录
   if shopt -q progcomp; then
     for script in /usr/share/bash-completion/completions/* ; do
       if [ -r $script ] ; then
@@ -256,14 +203,13 @@ fi
 EOF</userinput></screen>
 
       <para>
-        Make sure that the directory exists:
+        确保目录存在：
       </para>
 
 <screen role="root"><userinput>install -dm755 /etc/bash_completion.d</userinput></screen>
 
       <para>
-        For a more complete installation, see
-        <ulink url="&blfs-wiki;/bash-shell-startup-files#bash-completions"/>.
+        有关更完整的安装，请参见 <ulink url="&blfs-wiki;/bash-shell-startup-files#bash-completions"/>。
       </para>
 
     </sect3>
@@ -276,9 +222,7 @@ EOF</userinput></screen>
       </indexterm>
 
       <para>
-        This script adds some useful paths to the <envar>PATH</envar> and
-        can be used to customize other PATH related environment variables
-        (e.g. LD_LIBRARY_PATH, etc) that may be needed for all users.
+        此脚本向 <envar>PATH</envar> 添加一些有用的路径，并可用于自定义其他与 PATH 相关的环境变量（例如 LD_LIBRARY_PATH 等），这些变量可能对所有用户都是必需的。
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/extrapaths.sh &lt;&lt; "EOF"
@@ -296,24 +240,13 @@ if [ -d /usr/local/share ]; then
         pathprepend /usr/local/share XDG_DATA_DIRS
 fi
 
-# Set some defaults before other applications add to these paths.
+# 在其他应用程序添加到这些路径之前设置一些默认值。
 pathappend /usr/share/info INFOPATH</literal>
 EOF</userinput></screen>
 
       <note>
         <para>
-          The <command>man</command> program automatically deduces the search
-          path for man pages by examining the content of the
-          <envar>PATH</envar> variable, see
-          <ulink role='man' url='&man;manpath.5'>manpath(5)</ulink> for
-          details.  Setting the <envar>MANPATH</envar> variable may override
-          the automatic deduction, so the BLFS editors do not recommend 
-          setting it.  If you must set it for any reason, it's better to start
-          its value with a colon (<literal>:</literal>), for example
-          <command>MANPATH=:/opt/somepkg/share/man:/opt/otherpkg/share/man</command>
-          so the paths listed in the <envar>MANPATH</envar> variable will
-          be appended to the automatically deduced value instead of
-          overriding it.
+          <command>man</command> 程序通过检查 <envar>PATH</envar> 变量的内容自动推断 man 页面的搜索路径，详情请参见 <ulink role='man' url='&man;manpath.5'>manpath(5)</ulink>。设置 <envar>MANPATH</envar> 变量可能会覆盖自动推断，因此 BLFS 编辑者不建议设置它。如果您因任何原因必须设置它，最好将其值以冒号（<literal>:</literal>）开头，例如 <command>MANPATH=:/opt/somepkg/share/man:/opt/otherpkg/share/man</command>，这样 <envar>MANPATH</envar> 变量中列出的路径将附加到自动推断的值之后，而不是覆盖它。
         </para>
       </note>
 
@@ -327,13 +260,11 @@ EOF</userinput></screen>
       </indexterm>
 
       <para>
-        This script sets up the default <filename>inputrc</filename>
-        configuration file. If the user does not have individual settings, it
-        uses the global file.
+        此脚本设置默认的 <filename>inputrc</filename> 配置文件。如果用户没有个人设置，则使用全局文件。
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/readline.sh &lt;&lt; "EOF"
-<literal># Set up the INPUTRC environment variable.
+<literal># 设置 INPUTRC 环境变量。
 if [ -z "$INPUTRC" -a ! -f "$HOME/.inputrc" ] ; then
         INPUTRC=/etc/inputrc
 fi
@@ -350,13 +281,11 @@ EOF</userinput></screen>
       </indexterm>
 
       <para>
-        Setting the <command>umask</command> value is important for security.
-        Here the default group write permissions are turned off for system
-        users and when the user name and group name are not the same.
+        设置 <command>umask</command> 值对于安全性很重要。此处默认为系统用户关闭组写入权限，并且当用户名和组名不同时也关闭。
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/umask.sh &lt;&lt; "EOF"
-<literal># By default, the umask should be set.
+<literal># 默认情况下，应设置 umask。
 if [ "$(id -gn)" = "$(id -un)" -a $EUID -gt 99 ] ; then
   umask 002
 else
@@ -375,8 +304,7 @@ EOF</userinput></screen>
       </indexterm>
 
       <para>
-        If <application>X</application> is installed, the <envar>PATH</envar>
-        and <envar>PKG_CONFIG_PATH</envar> variables are also updated.
+        如果安装了 <application>X</application>，还会更新 <envar>PATH</envar> 和 <envar>PKG_CONFIG_PATH</envar> 变量。
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/X.sh &lt;&lt; "EOF"
@@ -401,15 +329,11 @@ EOF</userinput></screen>
     </indexterm>
 
       <para>
-        This script sets an environment variable necessary for
-        native language support. A full discussion on determining this
-        variable can be found on the <ulink
-        url="&lfs-root;/chapter09/locale.html">Configuring the System
-        Locale</ulink> page.
+        此脚本设置本地语言支持所需的环境变量。关于确定此变量的完整讨论，请参见 <ulink url="&lfs-root;/chapter09/locale.html">配置系统区域设置</ulink> 页面。
       </para>
 
 <screen role="root" revision="sysv"><userinput>cat &gt; /etc/profile.d/i18n.sh &lt;&lt; "EOF"
-<literal># Set up i18n variables
+<literal># 设置 i18n 变量
 for i in $(locale); do
   unset ${i%=*}
 done
@@ -422,7 +346,7 @@ fi</literal>
 EOF</userinput></screen>
 
 <screen role="root" revision="systemd"><userinput>cat &gt; /etc/profile.d/i18n.sh &lt;&lt; "EOF"
-<literal># Set up i18n variables
+<literal># 设置 i18n 变量
 for i in $(locale); do
   unset ${i%=*}
 done
@@ -444,12 +368,10 @@ EOF</userinput></screen>
     </sect3>
 
     <sect3>
-      <title>Other Initialization Values</title>
+      <title>其他初始化值</title>
 
       <para>
-        Other initialization can easily be added to the
-        <filename>profile</filename> by adding additional scripts to the
-        <filename class='directory'>/etc/profile.d</filename> directory.
+        通过向 <filename class='directory'>/etc/profile.d</filename> 目录添加其他脚本，可以轻松地将其他初始化添加到 <filename>profile</filename> 中。
       </para>
 
     </sect3>
@@ -464,8 +386,7 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-      Here is a base <filename>/etc/bashrc</filename>.  Comments in the
-      file should explain everything you need.
+      这是一个基础的 <filename>/etc/bashrc</filename>。文件中的注释应能解释您需要的一切。
     </para>
 
 <screen role="root"><userinput>cat &gt; /etc/bashrc &lt;&lt; "EOF"
@@ -474,14 +395,12 @@ EOF</userinput></screen>
 # by James Robertson &lt;jameswrobertson@earthlink.net&gt;
 # updated by Bruce Dubbs &lt;bdubbs@&lfs-domainname;&gt;
 
-# System wide aliases and functions.
+# 系统范围的别名和函数。
 
-# System wide environment variables and startup programs should go into
-# /etc/profile.  Personal environment variables and startup programs
-# should go into ~/.bash_profile.  Personal aliases and functions should
-# go into ~/.bashrc
+# 系统范围的环境变量和启动程序应放在 /etc/profile 中。个人环境变量和启动程序
+# 应放在 ~/.bash_profile 中。个人别名和函数应放在 ~/.bashrc 中
 
-# Provides colored /bin/ls and /bin/grep commands.
+# 提供彩色的 /bin/ls 和 /bin/grep 命令。
 
 if [ -f "/etc/dircolors" ] ; then
         eval $(dircolors -b /etc/dircolors)
@@ -494,10 +413,8 @@ fi
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
-# Provides prompt for interactive shells, specifically shells started
-# in the X environment. [Review the LFS archive thread titled
-# PS1 Environment Variable for a great case study behind this script
-# addendum.]
+# 为交互式 shell 提供提示符，特别是在 X 环境中启动的 shell。
+# [请参阅 LFS 存档线程标题为 PS1 环境变量，了解此脚本附录背后的优秀案例研究。]
 
 NORMAL="\[\e[0m\]"
 RED="\[\e[1;31m\]"
@@ -510,30 +427,19 @@ fi
 
 unset RED GREEN NORMAL
 
-# GnuPG wants this or it'll fail with pinentry-curses under some
-# circumstances (for example signing a Git commit)
-# Note that tty -s will "succeed" in LFS chroot environment so we cannot
-# use -s instead of redirecting to /dev/null.
+# GnuPG 需要这个，否则在某些情况下（例如签名 Git 提交）它会因 pinentry-curses 而失败。
+# 注意 tty -s 在 LFS chroot 环境中会“成功”，因此我们不能使用 -s，而是重定向到 /dev/null。
 $(tty &amp;>/dev/null) &amp;&amp; export GPG_TTY=$(tty)
 
 # End /etc/bashrc</literal>
 EOF</userinput></screen>
 
     <para>
-      The script above uses the <filename>~/.dircolors</filename> and
-      <filename>/etc/dircolors</filename> files to control the colors of
-      file names in a directory listing. They control colorized output of
-      things like <command>ls --color</command>.  The explanation of how to
-      initialize these files is at the end of this section.  The setting
-      also depends on the terminal being used, so it needs to be set for
-      each interactive shell, instead of only the login shell.
+      上面的脚本使用 <filename>~/.dircolors</filename> 和 <filename>/etc/dircolors</filename> 文件来控制目录列表中文件名的颜色。它们控制诸如 <command>ls --color</command> 等命令的彩色输出。如何初始化这些文件的说明在本节末尾。该设置还取决于所使用的终端，因此需要为每个交互式 shell 设置，而不仅仅是登录 shell。
     </para>
 
     <para>
-      For more information on the escape sequences you can use for your prompt
-      (i.e., the <envar>PS1</envar> environment variable) see <command>info
-      bash</command> -- <emphasis role="strong">Node: Printing a
-      Prompt</emphasis>.
+      有关可用于提示符（即 <envar>PS1</envar> 环境变量）的转义序列的更多信息，请参见 <command>info bash</command> —— <emphasis role="strong">节点：打印提示符</emphasis>。
     </para>
 
   </sect2>
@@ -546,13 +452,7 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-      Here is a base <filename>~/.bash_profile</filename>.  If you want each
-        new user to have this file automatically, just change the output of
-      the command to <filename>/etc/skel/.bash_profile</filename> and check the
-      permissions after the command is run. You can then copy <filename>
-      /etc/skel/.bash_profile</filename> to the home directories of already
-      existing users, including <systemitem class="username">root</systemitem>,
-      and set the owner and group appropriately.
+      这是一个基础的 <filename>~/.bash_profile</filename>。如果您希望每个新用户自动拥有此文件，只需将命令的输出更改为 <filename>/etc/skel/.bash_profile</filename>，并在命令运行后检查权限。然后您可以将 <filename>/etc/skel/.bash_profile</filename> 复制到已有用户（包括 <systemitem class="username">root</systemitem>）的家目录中，并设置适当的所有者和组。
     </para>
 
 <screen><userinput>cat &gt; ~/.bash_profile &lt;&lt; "EOF"
@@ -561,11 +461,10 @@ EOF</userinput></screen>
 # by James Robertson &lt;jameswrobertson@earthlink.net&gt;
 # updated by Bruce Dubbs &lt;bdubbs@&lfs-domainname;&gt;
 
-# Personal environment variables and startup programs.
+# 个人环境变量和启动程序。
 
-# Personal aliases and functions should go in ~/.bashrc.  System wide
-# environment variables and startup programs are in /etc/profile.
-# System wide aliases and functions are in /etc/bashrc.
+# 个人别名和函数应放在 ~/.bashrc 中。系统范围的环境变量和启动程序在 /etc/profile 中。
+# 系统范围的别名和函数在 /etc/bashrc 中。
 
 if [ -f "$HOME/.bashrc" ] ; then
   source $HOME/.bashrc
@@ -575,7 +474,7 @@ if [ -d "$HOME/bin" ] ; then
   pathprepend $HOME/bin
 fi
 
-# Having . in the PATH is dangerous
+# 将 . 放在 PATH 中是危险的
 #if [ $EUID -gt 99 ]; then
 #  pathappend .
 #fi
@@ -593,21 +492,18 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-      Here is a base <filename>~/.profile</filename>. The comments and
-      instructions for using <filename class="directory">/etc/skel</filename>
-      for <filename>.bash_profile</filename> above also apply here. Only the
-      target file names are different.
+      这是一个基础的 <filename>~/.profile</filename>。上面关于 <filename>.bash_profile</filename> 的注释和使用 <filename class="directory">/etc/skel</filename> 的说明也适用于此。只有目标文件名不同。
     </para>
 
 <screen><userinput>cat &gt; ~/.profile &lt;&lt; "EOF"
 <literal># Begin ~/.profile
-# Personal environment variables and startup programs.
+# 个人环境变量和启动程序。
 
 if [ -d "$HOME/bin" ] ; then
   pathprepend $HOME/bin
 fi
 
-# Set up user specific i18n variables
+# 设置用户特定的 i18n 变量
 #export LANG=<replaceable>&lt;ll&gt;</replaceable>_<replaceable>&lt;CC&gt;</replaceable>.<replaceable>&lt;charmap&gt;</replaceable><replaceable>&lt;@modifiers&gt;</replaceable>
 
 # End ~/.profile</literal>
@@ -623,7 +519,7 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-      Here is a base <filename>~/.bashrc</filename>.
+      这是一个基础的 <filename>~/.bashrc</filename>。
     </para>
 
 <screen><userinput>cat &gt; ~/.bashrc &lt;&lt; "EOF"
@@ -631,18 +527,16 @@ EOF</userinput></screen>
 # Written for Beyond Linux From Scratch
 # by James Robertson &lt;jameswrobertson@earthlink.net&gt;
 
-# Personal aliases and functions.
+# 个人别名和函数。
 
-# Personal environment variables and startup programs should go in
-# ~/.bash_profile.  System wide environment variables and startup
-# programs are in /etc/profile.  System wide aliases and functions are
-# in /etc/bashrc.
+# 个人环境变量和启动程序应放在 ~/.bash_profile 中。系统范围的环境变量和启动
+# 程序在 /etc/profile 中。系统范围的别名和函数在 /etc/bashrc 中。
 
 if [ -f "/etc/bashrc" ] ; then
   source /etc/bashrc
 fi
 
-# Set up user specific i18n variables
+# 设置用户特定的 i18n 变量
 #export LANG=<replaceable>&lt;ll&gt;</replaceable>_<replaceable>&lt;CC&gt;</replaceable>.<replaceable>&lt;charmap&gt;</replaceable><replaceable>&lt;@modifiers&gt;</replaceable>
 
 # End ~/.bashrc</literal>
@@ -659,11 +553,7 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-      This is an empty <filename>~/.bash_logout</filename> that can be used as
-      a template.  You will notice that the base <filename>~/.bash_logout
-      </filename> does not include a <userinput>clear</userinput> command.
-      This is because the clear is handled in the
-      <filename>/etc/issue</filename> file.
+      这是一个空的 <filename>~/.bash_logout</filename>，可用作模板。您会注意到基础的 <filename>~/.bash_logout</filename> 不包含 <userinput>clear</userinput> 命令。这是因为 clear 在 <filename>/etc/issue</filename> 文件中处理。
     </para>
 
 <screen><userinput>cat &gt; ~/.bash_logout &lt;&lt; "EOF"
@@ -671,7 +561,7 @@ EOF</userinput></screen>
 # Written for Beyond Linux From Scratch
 # by James Robertson &lt;jameswrobertson@earthlink.net&gt;
 
-# Personal items to perform on logout.
+# 注销时执行的个人操作。
 
 # End ~/.bash_logout</literal>
 EOF</userinput></screen>
@@ -691,28 +581,18 @@ EOF</userinput></screen>
     </indexterm>
 
     <para>
-       If you want to use the <filename>dircolors</filename> capability, then
-       run the following command. The <filename class="directory">/etc/skel
-       </filename> setup steps shown above also can be used here to provide
-       a <filename>~/.dircolors</filename> file when a new user is set up.
-       As before, just change the output file name on the following command
-       and assure the permissions, owner, and group are correct on the files
-       created and/or copied.
+      如果您想使用 <filename>dircolors</filename> 功能，请运行以下命令。上面显示的 <filename class="directory">/etc/skel</filename> 设置步骤也可在此处使用，以便在设置新用户时提供 <filename>~/.dircolors</filename> 文件。和之前一样，只需更改以下命令的输出文件名，并确保创建和/或复制的文件的权限、所有者和组正确。
     </para>
 
 <screen role="root"><userinput>dircolors -p > /etc/dircolors</userinput></screen>
 
     <para>
-      If you wish to customize the colors used for different file types, you
-      can edit the <filename>/etc/dircolors</filename> file. The instructions
-      for setting the colors are embedded in the file.
+      如果您想自定义不同文件类型使用的颜色，可以编辑 <filename>/etc/dircolors</filename> 文件。设置颜色的说明内嵌在文件中。
     </para>
 
 
     <para>
-      Finally, Ian Macdonald has written an excellent collection of tips and
-      tricks to enhance your shell environment.  You can read it online at
-      <ulink url="https://caliban.org/bash/index.shtml"/>.
+      最后，Ian Macdonald 撰写了一本优秀的技巧和窍门集，用于增强您的 shell 环境。您可以在 <ulink url="https://caliban.org/bash/index.shtml"/> 在线阅读。
     </para>
 
   </sect2>

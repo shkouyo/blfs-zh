@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-users-groups" xreflabel="About System Users and Groups">
+<sect1 id="postlfs-users-groups" xreflabel="关于系统用户和组">
   <?dbhtml filename="users.html"?>
 
 
-  <title>About System Users and Groups</title>
+  <title>关于系统用户和组</title>
 
   <indexterm zone="postlfs-users-groups">
     <primary sortas="e-etc-passwd">/etc/passwd</primary>
@@ -24,52 +24,30 @@
   </indexterm>
 
   <para>
-    Throughout BLFS, many packages install programs that run as daemons or in
-    some way should have a user or group name assigned.  Generally these
-    names are used to map a user ID (uid) or group ID (gid) for system use.
-    Generally the specific uid or gid numbers used by these applications are
-    not significant.  The exception of course, is that <systemitem
-    class='username'>root</systemitem> has a uid and gid of 0 (zero) that
-    is indeed special.  The uid values are stored in
-    <filename>/etc/passwd</filename> and the gid values are found in
-    <filename>/etc/group</filename>.
+    在整个 BLFS 中，许多包会安装以守护进程方式运行的程序，或者在某种程度上应分配有用户或组名称。通常这些名称用于映射系统使用的用户 ID（uid）或组 ID（gid）。通常这些应用程序使用的具体 uid 或 gid 编号并不重要。当然，例外的是 <systemitem class='username'>root</systemitem> 的 uid 和 gid 为 0（零），这确实是特殊的。uid 值存储在 <filename>/etc/passwd</filename> 中，gid 值在 <filename>/etc/group</filename> 中。
   </para>
 
   <para>
-    Customarily, Unix systems classify users and groups into two categories:
-    system users and regular users.  The system users and groups are given
-    low numbers and regular users and groups have numeric values greater
-    than all the system values.  The cutoff for these numbers is found in
-    two parameters in the <filename>/etc/login.defs</filename> configuration
-    file.  The default UID_MIN value is 1000 and the default GID_MIN value
-    is 1000.  If a specific uid or gid value is not specified when creating
-    a user with <command>useradd</command> or a group with
-    <command>groupadd</command> the values assigned will always be above
-    these cutoff values.
+    按照惯例，Unix 系统将用户和组分为两类：系统用户和普通用户。系统用户和组被赋予较小的编号，而普通用户和组的数值大于所有系统值。这些编号的界限在 <filename>/etc/login.defs</filename> 配置文件中的两个参数中定义。默认的 UID_MIN 值为 1000，默认的 GID_MIN 值为 1000。如果在使用 <command>useradd</command> 创建用户或使用 <command>groupadd</command> 创建组时未指定特定的 uid 或 gid 值，则分配的值将始终高于这些界限值。
   </para>
 
   <para>
-    Additionally, the <ulink url=
-      "https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
-    Linux Standard Base</ulink> recommends that system uid and gid values
-    should be below 100.
+    此外，<ulink url="https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">Linux 标准规范</ulink> 建议系统 uid 和 gid 值应低于 100。
   </para>
 
   <para>
-    Below is a table of suggested uid/gid values used in BLFS beyond those
-    defined in a base LFS installation.  These can be changed as desired, but
-    provide a suggested set of consistent values.
+    下表列出了 BLFS 中在基础 LFS 安装所定义值之外建议使用的 uid/gid 值。这些值可以根据需要更改，但提供了一组建议的一致值。
   </para>
 
   <table id="uidgid" class="uidvalues">
-    <title>UID/GID Suggested Values</title>
+    <title>UID/GID 建议值</title>
     <?dbfo table-width="2in" ?>
     <tgroup cols="3">
       <colspec colnum="1" colwidth="1.2in"/>
       <colspec colnum="2" colwidth=".4in"/>
       <colspec colnum="3" colwidth=".4in"/>
       <thead>
-        <row><entry>Name</entry><entry>uid</entry><entry>gid</entry></row>
+        <row><entry>名称</entry><entry>uid</entry><entry>gid</entry></row>
       </thead>
       <tbody>
         <row><entry>bin     </entry><entry> 1</entry><entry>  </entry></row>
