@@ -9,97 +9,50 @@
   <?dbhtml filename="vulnerabilities.html"?>
 
 
-  <title>Vulnerabilities</title>
+  <title>漏洞</title>
 
   <!-- section g : 'Others' in longindex.html -->
   <indexterm zone="vulnerabilities">
-    <primary sortas="g-vulnerabilities">vulnerability links</primary>
+    <primary sortas="g-vulnerabilities">漏洞链接</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>About vulnerabilities</title>
+    <title>关于漏洞</title>
 
     <para>
-      All software has bugs. Sometimes, a bug can be exploited, for example to
-      allow users to gain enhanced privileges (perhaps gaining a root shell,
-      or simply accessing or deleting other user&apos;s files), or to allow a
-      remote site to crash an application (denial of service), or for theft of
-      data. These bugs are labelled as vulnerabilities.
+      所有软件都有缺陷。有时，缺陷可能被利用，例如允许用户获得提升的权限（可能获得 root shell，或者仅仅访问或删除其他用户的文件），或允许远程站点使应用程序崩溃（拒绝服务），或窃取数据。这些缺陷被标记为漏洞。
     </para>
 
     <para>
-      The main place where vulnerabilities get logged is
-      <ulink url="https://cve.mitre.org">cve.mitre.org</ulink>. Unfortunately,
-      many vulnerability numbers (CVE-yyyy-nnnn) are initially only labelled
-      as "reserved" when distributions start issuing fixes.  Also, some
-      vulnerabilities apply to particular combinations of
-      <command>configure</command> options, or only apply to old versions of
-      packages which have long since been updated in BLFS.
+      漏洞记录的主要地点是 <ulink url="https://cve.mitre.org">cve.mitre.org</ulink>。不幸的是，许多漏洞编号（CVE-yyyy-nnnn）在发行版开始发布修复程序时最初仅被标记为“保留”。此外，某些漏洞可能适用于特定的 <command>configure</command> 选项组合，或者仅适用于 BLFS 中早已更新的旧版本软件包。
     </para>
 
     <para>
-      BLFS differs from distributions&mdash;there is no BLFS security team, and
-      the editors only become aware of vulnerabilities after they are public
-      knowledge. Sometimes, a package with a vulnerability will not be updated
-      in the book for a long time.  Issues can be logged in the Trac system,
-      which might speed up resolution.
+      BLFS 与发行版不同——没有 BLFS 安全团队，编辑人员只有在漏洞公开后才意识到它们。有时，存在漏洞的软件包在书中很长时间不会更新。问题可以记录在 Trac 系统中，这可能会加快解决速度。
     </para>
 
     <para>
-      The normal way for BLFS to fix a vulnerability is, ideally, to update
-      the book to a new fixed release of the package.  Sometimes that happens
-      even before the vulnerability is public knowledge, so there is no
-      guarantee that it will be shown as a vulnerability fix in the Changelog.
-      Alternatively, a <command>sed</command> command, or a patch taken from
-      a distribution, may be appropriate.
+      BLFS 修复漏洞的正常方式，理想情况下，是将书中软件包更新到新的修复版本。有时这甚至在漏洞公开之前就已发生，因此不能保证在更新日志中会显示为漏洞修复。或者，可能适用 <command>sed</command> 命令或从发行版中获取的补丁。
     </para>
 
     <para>
-      The bottom line is that you are responsible for your own security, and
-      for assessing the potential impact of any problems.
+      最重要的是，您对自己的安全以及评估任何问题的潜在影响负责。
     </para>
 
     <para>
-      The editors now issue Security Advisories for packages in BLFS (and LFS),
-      which can be found at <ulink
-      url="https://www.linuxfromscratch.org/advisories/">Linux From Scratch
-      Security Advisories</ulink>, and grade the severity according to what
-      upstream reports, or to what is shown at <ulink
-      url="https://nvd.nist.gov/">nvd.nist.gov</ulink> if that has details.
+      编辑人员现在为 BLFS（和 LFS）中的软件包发布安全公告，可在 <ulink url="https://www.linuxfromscratch.org/advisories/">Linux From Scratch 安全公告</ulink> 中找到，并根据上游报告或 <ulink url="https://nvd.nist.gov/">nvd.nist.gov</ulink>（如果有详细信息）中显示的内容评定严重性。
     </para>
 
     <para>
-      To keep track of what is being discovered, you may wish to follow the
-      security announcements of one or more distributions. For example, Debian
-      has <ulink url="https://www.debian.org/security">Debian security</ulink>.
-      Fedora's links on security are at <ulink
-        url="https://fedoraproject.org/wiki/category:Security">the Fedora wiki</ulink>.
-      Details of Gentoo linux security announcements are discussed at
-      <ulink url="https://security.gentoo.org">Gentoo security</ulink>.
-      Finally, the Slackware archives of security announcements are at
-      <!-- To editors: the https version redirects back to the non-https
-           version.  Not sure why they must do this, but please check
-           before turning this to https.  -->
-      <ulink url="http://slackware.com/security/">Slackware security</ulink>.
+      为了跟踪新发现的问题，您可能希望关注一个或多个发行版的安全公告。例如，Debian 有 <ulink url="https://www.debian.org/security">Debian 安全</ulink>。Fedora 的安全链接位于 <ulink url="https://fedoraproject.org/wiki/category:Security">Fedora 维基</ulink>。Gentoo Linux 安全公告的详细信息在 <ulink url="https://security.gentoo.org">Gentoo 安全</ulink> 中讨论。最后，Slackware 的安全公告存档位于 <ulink url="http://slackware.com/security/">Slackware 安全</ulink>。
     </para>
 
     <para>
-      The most general English source is perhaps
-      <ulink url="https://seclists.org/fulldisclosure">the Full Disclosure
-      Mailing List</ulink>, but please read the comment on that page. If you
-      use other languages you may prefer other sites such as <ulink
-        url="https://www.heise.de/security">heise.de</ulink> (German) or <ulink
-        url="https://www.cert.hr">cert.hr</ulink> (Croatian). These are not
-      linux-specific. There is also a daily update at lwn.net for subscribers
-      (free access to the data after 2 weeks, but their vulnerabilities
-      database at <ulink
-        url="https://lwn.net/Alerts/">lwn.net/Alerts</ulink>
-      is unrestricted).
+      最通用的英文来源可能是 <ulink url="https://seclists.org/fulldisclosure">Full Disclosure 邮件列表</ulink>，但请阅读该页面上的评论。如果您使用其他语言，您可能更喜欢其他站点，如 <ulink url="https://www.heise.de/security">heise.de</ulink>（德语）或 <ulink url="https://www.cert.hr">cert.hr</ulink>（克罗地亚语）。这些并非特定于 Linux。此外，lwn.net 每天为订阅者提供更新（数据在 2 周后免费访问，但他们在 <ulink url="https://lwn.net/Alerts/">lwn.net/Alerts</ulink> 的漏洞数据库不受限制）。
     </para>
 
     <para>
-      For some packages, subscribing to their &apos;announce&apos; lists
-      will provide prompt news of newer versions.
+      对于某些软件包，订阅其“公告”列表将及时提供新版本的消息。
     </para>
 
   </sect2>

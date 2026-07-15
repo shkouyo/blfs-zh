@@ -8,13 +8,10 @@
 <chapter id="postlfs-shells">
   <?dbhtml filename="shells.html"?>
 
-  <title>Shells</title>
+  <title>Shell</title>
 
   <para>
-    We are all familiar with the Bourne Again SHell, but there are two
-    other user interfaces that are considered useful modern shells &ndash; the
-    Berkeley Unix C shell and the Korn shell.  This chapter installs
-    packages compatible with these additional shell types.
+    我们都熟悉 Bourne Again SHell，但还有另外两个被认为是有用的现代 Shell 用户界面 —— Berkeley Unix C shell 和 Korn shell。本章安装与这些额外 Shell 类型兼容的软件包。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dash.xml"/>

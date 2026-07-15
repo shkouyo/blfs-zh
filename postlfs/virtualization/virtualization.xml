@@ -8,14 +8,10 @@
 <chapter id="postlfs-virtualization">
   <?dbhtml filename="virtualization.html"?>
 
-  <title>Virtualization</title>
+  <title>虚拟化</title>
 
   <para>
-    Virtualization allows running a complete operating system, or virtual
-    machine (VM), within another operating environment as a task.  There are
-    several commercial and open source environments that either emulate another
-    processor or utilize the hardware virtualization features of the host
-    processor.
+    虚拟化允许在另一个操作环境中作为任务运行完整的操作系统或虚拟机（VM）。有几种商业和开源环境，它们要么模拟另一个处理器，要么利用宿主处理器的硬件虚拟化功能。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="qemu.xml"/>

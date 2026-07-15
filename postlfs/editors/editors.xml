@@ -8,13 +8,10 @@
 <chapter id="postlfs-editors">
   <?dbhtml filename="editors.html"?>
 
-  <title>Text Editors</title>
+  <title>文本编辑器</title>
 
   <para>
-    This chapter is referenced in the LFS book for those wishing to
-    use other editors on their LFS system. You're also shown how some LFS
-    installed programs benefit from being recompiled after GUI libraries
-    have been installed.
+    本章供希望在 LFS 系统上使用其他编辑器的 LFS 读者参考。同时，您也会看到，在安装 GUI 库之后重新编译某些 LFS 已安装的程序会带来什么好处。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bluefish.xml"/>

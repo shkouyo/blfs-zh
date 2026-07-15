@@ -9,62 +9,48 @@
   <?dbhtml filename="aboutlvm.html"?>
 
 
-  <title>About Logical Volume Management (LVM)</title>
+  <title>关于逻辑卷管理（LVM）</title>
 
   <para>
-    LVM manages disk drives.  It allows multiple drives and partitions
-    to be combined into larger <emphasis>volume groups</emphasis>, assists in
-    making backups through a <emphasis>snapshot</emphasis>, and allows for
-    dynamic volume resizing. It can also provide mirroring similar to
-    a RAID 1 array.
+    LVM 管理磁盘驱动器。它可以将多个驱动器和分区组合成更大的<emphasis>卷组</emphasis>，通过<emphasis>快照</emphasis>辅助备份，并支持动态调整卷的大小。它还可以提供类似于 RAID 1 阵列的镜像功能。
   </para>
 
   <para>
-    A complete discussion of LVM is beyond the scope of this introduction,
-    but basic concepts are presented below.
+    对 LVM 的完整讨论超出了本简介的范围，但以下介绍基本概念。
   </para>
 
   <para>
-    To run any of the commands presented here, the <xref linkend='lvm2'/>
-    package must be installed.  All commands must be run as the <systemitem
-    class="username">root</systemitem> user.
+    要运行此处介绍的任何命令，必须安装 <xref linkend='lvm2'/> 软件包。所有命令都必须以 <systemitem class="username">root</systemitem> 用户身份执行。
   </para>
 
   <para>
-    Management of disks with lvm is accomplished using the following concepts:
+    使用 lvm 管理磁盘通过以下概念实现：
   </para>
 
   <variablelist>
     <varlistentry>
-      <term>physical volumes</term>
+      <term>物理卷</term>
       <listitem>
         <para>
-          These are physical disks or partitions such as
-          /dev/sda3 or /dev/sdb.
+          即物理磁盘或分区，例如 /dev/sda3 或 /dev/sdb。
         </para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>volume groups</term>
+      <term>卷组</term>
       <listitem>
         <para>
-          These are named groups of physical volumes that
-          can be manipulated by the administrator.  The number of physical
-          volumes that make up a volume group is arbitrary.  Physical volumes
-          can be dynamically added or removed from a volume group.
+          这是由管理员操作的、命名的物理卷组。构成卷组的物理卷数量任意。物理卷可以动态地添加到卷组中或从中移除。
         </para>
       </listitem>
     </varlistentry>
 
     <varlistentry>
-      <term>logical volumes</term>
+      <term>逻辑卷</term>
       <listitem>
         <para>
-          Volume groups may be subdivided into logical volumes. Each logical
-          volume can then be individually formatted as if it were a regular
-          Linux partition. Logical volumes may be dynamically resized by
-          the administrator according to need.
+          卷组可以细分为逻辑卷。每个逻辑卷随后可以像普通 Linux 分区一样单独格式化。管理员可以根据需要动态调整逻辑卷的大小。
         </para>
       </listitem>
 
@@ -72,55 +58,44 @@
   </variablelist>
 
   <para>
-    To give a concrete example, suppose that you have two 2 TB disks. Also
-    suppose a really large amount of space is required for a very large
-    database, mounted on <filename class='directory'>/srv/mysql</filename>.
-    This is what the initial set of partitions would look like:
+    举一个具体例子，假设您有两个 2 TB 的磁盘。再假设一个非常大的数据库需要非常大量的空间，挂载在 <filename class='directory'>/srv/mysql</filename> 下。初始分区设置如下所示：
   </para>
 
-  <screen><literal>Partition  Use    Size      Partition Type
-/dev/sda1  /boot  100MB     83 (Linux)
-/dev/sda2  /       10GB     83 (Linux)
-/dev/sda3  swap     2GB     82 (Swap)
-/dev/sda4  LVM    remainder 8e (LVM)
-/dev/sdb1  swap     2GB     82 (Swap)
-/dev/sdb2  LVM    remainder 8e (LVM)</literal></screen>
+  <screen><literal>分区       用途      大小      分区类型
+/dev/sda1  /boot    100 MB    83（Linux）
+/dev/sda2  /         10 GB    83（Linux）
+/dev/sda3  swap       2 GB    82（Swap）
+/dev/sda4  LVM        剩余    8e（LVM）
+/dev/sdb1  swap       2 GB    82（Swap）
+/dev/sdb2  LVM        剩余    8e（LVM）</literal></screen>
 
   <para>
-    First initialize the physical volumes:
+    首先初始化物理卷：
   </para>
 
   <screen><userinput>pvcreate /dev/sda4 /dev/sdb2</userinput></screen>
 
   <note>
     <para>
-      A full disk can be used as part of a physical volume, but
-      beware that the <command>pvcreate</command> command will destroy any
-      partition information on that disk.
+      整个磁盘可以用作物理卷的一部分，但请注意，<command>pvcreate</command> 命令会销毁该磁盘上的任何分区信息。
     </para>
   </note>
 
   <para>
-    Next create a volume group named lfs-lvm:
+    接下来创建一个名为 lfs-lvm 的卷组：
   </para>
 
   <screen><userinput>vgcreate lfs-lvm /dev/sda4  /dev/sdb2</userinput></screen>
 
   <para>
-    The status of the volume group can be checked by running the command
-    <command>vgscan</command>. Now create the logical volumes.  Since there
-    is about 3900 GB available, leave about 900 GB free for expansion. Note
-    that the logical volume named <emphasis>mysql</emphasis> is larger than
-    any physical disk.
+    可以通过运行 <command>vgscan</command> 命令检查卷组的状态。现在创建逻辑卷。由于大约有 3900 GB 可用空间，保留约 900 GB 用于扩展。请注意，名为 <emphasis>mysql</emphasis> 的逻辑卷大于任何单个物理磁盘。
   </para>
 
   <screen><userinput>lvcreate --name mysql --size 2500G lfs-lvm
 lvcreate --name home  --size  500G lfs-lvm</userinput></screen>
 
   <para>
-    Finally the logical volumes can be formatted and mounted.  In this
-    example, the jfs file system (<xref linkend='jfsutils'/>) is used for
-    demonstration purposes.
+    最后，可以格式化并挂载逻辑卷。在此示例中，使用 jfs 文件系统（<xref linkend='jfsutils'/>）进行演示。
   </para>
 
   <screen><userinput>mkfs -t ext4 /dev/lfs-lvm/home
@@ -130,41 +105,26 @@ mkdir -p /srv/mysql
 mount /dev/lfs-lvm/mysql /srv/mysql</userinput></screen>
 
   <para>
-    It may be needed to activate those logical volumes, for them to
-    appear in <filename class="directory">/dev</filename>. They can all
-    be activated at the same time by issuing, as the
-    <systemitem class="username">root</systemitem> user:
+    可能需要激活这些逻辑卷，以便它们出现在 <filename class="directory">/dev</filename> 中。以 <systemitem class="username">root</systemitem> 用户身份执行以下命令，可以同时激活所有逻辑卷：
   </para>
 
 <screen role="root"><userinput>vgchange -a y</userinput></screen>
 
   <para revision="sysv">
-    The LFS boot scripts automatically make these logical volumes available to
-    the system in the <command>udev</command> script. Edit the
-    <filename>/etc/fstab</filename> file as required to automatically mount
-    them.
+    LFS 启动脚本在 <command>udev</command> 脚本中自动将这些逻辑卷提供给系统。根据需要编辑 <filename>/etc/fstab</filename> 文件以自动挂载它们。
   </para>
 
   <para>
-    A LVM logical volume can host a root filesystem, but requires the use
-    of an initramfs (initial RAM file system). The initramfs proposed in
-    <xref linkend="initramfs"/> allows to pass the lvm volume in
-    the <parameter>root=</parameter> switch of the kernel command line.
+    LVM 逻辑卷可以承载根文件系统，但需要使用 initramfs（初始 RAM 文件系统）。<xref linkend="initramfs"/> 中提供的 initramfs 允许在内核命令行中通过 <parameter>root=</parameter> 参数传递 lvm 卷。
   </para>
 
   <para revision="systemd">
-    If not using an initramfs, there is a race condition in <application>
-    systemd</application> preventing mounting logical volumes through
-    <filename>/etc/fstab</filename>. You must create a <quote>mount</quote>
-    unit (see <ulink role='man'
-    url='&man;systemd.mount.5'>systemd.mount(5)</ulink>) as in the following
-    example, which mounts the <filename class="directory">/home</filename>
-    directory automatically at boot:
+    如果不使用 initramfs，<application>systemd</application> 中存在竞争条件，会阻止通过 <filename>/etc/fstab</filename> 挂载逻辑卷。您必须创建一个 <quote>挂载</quote> 单元（参见 <ulink role='man' url='&man;systemd.mount.5'>systemd.mount(5)</ulink>），如下例所示，该单元在启动时自动挂载 <filename class="directory">/home</filename> 目录：
   </para>
 
 <screen role="root" revision="systemd"><userinput>cat &gt; /etc/systemd/system/home.mount &lt;&lt; EOF
 <literal>[Unit]
-Description=Mount the lvm volume /dev/lfs-lvm/home to /home
+Description=将 lvm 卷 /dev/lfs-lvm/home 挂载到 /home
 
 [Mount]
 What=/dev/lfs-lvm/home
@@ -178,24 +138,18 @@ EOF</userinput></screen>
 
   <note revision="systemd">
     <para>
-    The name of the unit must be the name of the mount point with the
-    `/' character replaced by `-', omitting the leading one.
+    单元的名称必须是挂载点的名称，将“/”字符替换为“-”，并省略前导的“/”。
     </para>
   </note>
 
   <para revision="systemd">
-    Next the unit must be enabled with:
+    接下来，必须启用该单元：
   </para>
 
 <screen role="root" revision="systemd"><userinput>systemctl enable home.mount</userinput></screen>
 
   <para>
-    For more information about LVM, see the <ulink
-    url="https://tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
-    the lvm man pages. A good in-depth
-    <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
-    guide</ulink> is available from RedHat<superscript>&reg;</superscript>,
-    although it makes sometimes reference to proprietary tools.
+    有关 LVM 的更多信息，请参见 <ulink url="https://tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> 和 lvm 手册页。RedHat<superscript>&reg;</superscript> 提供了一份详尽的 <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">指南</ulink>，尽管其中有时会引用专有工具。
   </para>
 
 </sect1>

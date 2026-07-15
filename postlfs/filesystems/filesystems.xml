@@ -8,15 +8,10 @@
 <chapter id="postlfs-filesystems">
   <?dbhtml filename="filesystems.html"?>
 
-  <title>File Systems and Disk Management</title>
+  <title>文件系统与磁盘管理</title>
 
   <para>
-    Journaling file systems reduce the time needed to recover a file system
-    that was not unmounted properly.  While this can be extremely important in
-    reducing downtime for servers, it has also become popular for desktop
-    environments.  This chapter contains other journaling file systems you can
-    use instead of the default LFS extended file system (ext2/3/4). It also
-    provides introductory material on managing disk arrays.
+    日志文件系统可减少恢复未正确卸载的文件系统所需的时间。虽然这对于减少服务器停机时间极为重要，但它在桌面环境中也变得很流行。本章包含您可以使用的其他日志文件系统，以替代默认的 LFS 扩展文件系统（ext2/3/4）。本章还提供了有关管理磁盘阵列的入门材料。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="initramfs.xml"/>
