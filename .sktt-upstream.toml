@@ -1,5 +1,5 @@
 [upstream]
 git_url = "https://git.linuxfromscratch.org/blfs.git"
 branch = "trunk"
-commit_hash = "baabac3da20093b3d44a88874a747ca9a524ea75"
+commit_hash = "e10b0c874828781508d5bf4716c6fe4e087467e0"
 source_dir = "/"

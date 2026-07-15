@@ -37,6 +37,50 @@
     <title>更新条目：</title>
 
     <listitem>
+      <para>July 14th, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to ruby-4.0.6. Fixes
+          <ulink url="&blfs-ticket-root;23595">#23595</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to libqalculate-5.12.0. Fixes
+          <ulink url="&blfs-ticket-root;23594">#23594</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
+      <para>July 13th, 2026</para>
+      <itemizedlist>
+        <listitem>
+          <para>[jlocash] - Update to libpsl-0.23.0. Fixes
+          <ulink url="&blfs-ticket-root;23593">#23593</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to zsh-5.9.2. Fixes
+          <ulink url="&blfs-ticket-root;23592">#23592</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to xvinfo-1.1.6 xwd-1.0.10 xwud-1.0.8 (Xorg apps). Fixes
+          <ulink url="&blfs-ticket-root;23591">#23591</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to xsetroot-1.1.4 (Xorg app). Fixes
+          <ulink url="&blfs-ticket-root;23590">#23590</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to blueprint-compiler-0.22.2 (Python module). Fixes
+          <ulink url="&blfs-ticket-root;23589">#23589</ulink>.</para>
+        </listitem>
+        <listitem>
+          <para>[jlocash] - Update to p11-kit-0.26.4 (Security Update). Fixes
+          <ulink url="&blfs-ticket-root;23588">#23588</ulink>.</para>
+        </listitem>
+      </itemizedlist>
+    </listitem>
+
+    <listitem>
       <para>July 5th, 2026</para>
       <itemizedlist>
         <listitem>
