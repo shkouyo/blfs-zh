@@ -105,6 +105,7 @@ $(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML) version
                 --stringparam chunk.quietly $(CHUNK_QUIET) \
                 --stringparam rootid "$(ROOT_ID)"          \
                 --stringparam base.dir $(BASEDIR)/         \
+		          --stringparam l10n.gentext.language zh_cn  \
                 stylesheets/blfs-chunked.xsl               \
                 $(RENDERTMP)/$(BLFSHTML)
 
@@ -137,6 +138,7 @@ $(BASEDIR)/$(NOCHUNKS_OUTPUT): $(RENDERTMP)/$(BLFSHTML) version
 	@echo "Generating non-chunked XHTML file..."
 	$(Q)xsltproc --nonet                                \
                 --stringparam rootid "$(ROOT_ID)"      \
+			       --stringparam l10n.gentext.language zh_cn \
                 --output $(BASEDIR)/$(NOCHUNKS_OUTPUT) \
                 stylesheets/blfs-nochunks.xsl          \
                 $(RENDERTMP)/$(BLFSHTML)

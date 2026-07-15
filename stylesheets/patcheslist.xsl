@@ -29,10 +29,10 @@ function copy
    cp $1 $2 >>copyerrs 2>&amp;1
 }
 
-# Create dest.dir if it doesn't exist
-# Change to it
-# Remove old patches and possible list of missing patches
-# Ensure correct ownership
+# 如果目标目录不存在则创建它
+# 切换到目标目录
+# 删除旧补丁和可能的缺失补丁列表
+# 确保正确的所有权
 
 mkdir -p </xsl:text>
     <xsl:value-of select="$dest.dir"/>

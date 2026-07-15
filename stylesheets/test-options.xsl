@@ -58,7 +58,7 @@
 
     <xsl:if test="not(contains($config-string, $param-string))">
       <xsl:copy-of select="string()"/>
-      <xsl:text> is a parameter, but is not in config string
+      <xsl:text> 是一个参数，但不在配置字符串中。
 </xsl:text>
     </xsl:if>
   </xsl:template>
@@ -83,7 +83,7 @@
 
     <xsl:if test="contains($config-string, $option-string)">
       <xsl:copy-of select="string()"/>
-      <xsl:text> is an option, but is in config string
+      <xsl:text> 是一个选项，但在配置字符串中。
 </xsl:text>
     </xsl:if>
   </xsl:template>

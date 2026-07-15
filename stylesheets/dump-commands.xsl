@@ -49,9 +49,9 @@
         <xsl:when test="@role = 'nodump'"/>
         <xsl:when test="@role = 'root'">
           <xsl:text>
-# Run this as root</xsl:text>
+# 以 root 身份运行</xsl:text>
           <xsl:apply-templates select="userinput"/>
-          <xsl:text># End root commands
+          <xsl:text># 结束 root 命令
 </xsl:text>
         </xsl:when>
         <xsl:otherwise>
@@ -64,13 +64,13 @@
   <xsl:template match="userinput">
     <xsl:text>&#xA;</xsl:text>
     <xsl:if test=".//replaceable">
-      <xsl:text># This block must be edited to suit your needs.</xsl:text>
+      <xsl:text># 此区块必须根据您的需要进行编辑。</xsl:text>
     </xsl:if>
     <xsl:text>&#xA;</xsl:text>
     <xsl:apply-templates/>
     <xsl:text>&#xA;</xsl:text>
     <xsl:if test=".//replaceable">
-      <xsl:text># End of editable block.</xsl:text>
+      <xsl:text># 可编辑区块结束。</xsl:text>
     </xsl:if>
     <xsl:text>&#xA;</xsl:text>
   </xsl:template>
