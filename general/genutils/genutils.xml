@@ -8,14 +8,10 @@
 <chapter id="general-genutils">
   <?dbhtml filename="genutils.html"?>
 
-  <title>General Utilities</title>
+  <title>通用实用工具</title>
 
   <para>
-    This chapter contains various utilities that do not fit conveniently into
-    other chapters.  Programs include some documentation generators, several
-    utilities for manipulating text and graphics, programs for listing files,
-    a program for entering PIN numbers and pass-phrases, and a connection
-    manager.
+    本章包含各种不便归入其他章节的实用工具。程序包括一些文档生成器、若干用于处理文本和图形的实用工具、用于列出文件的程序、一个用于输入 PIN 码和口令的程序，以及一个连接管理器。
   </para>
 
 <!--

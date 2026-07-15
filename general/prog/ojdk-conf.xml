@@ -1,38 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
   <!ENTITY % general-entities SYSTEM "../../general.ent">
   %general-entities;
 ]>
 
-<sect1 id="ojdk-conf" xreflabel="Configuring the Java environment">
+<sect1 id="ojdk-conf" xreflabel="配置 Java 环境">
   <?dbhtml filename="ojdk-conf.html"?>
 
 
-  <title>Configuring the Java environment</title>
+  <title>配置 Java 环境</title>
 
   <sect2 id="java-profile">
-    <title>Setting up the environment</title>
+    <title>设置环境</title>
 
     <para>
-      After the package installation is complete, the next step is to make sure
-      that the system can properly find the files.  If you set up your login
-      scripts as recommended in <xref linkend='postlfs-config-profile'/>, update
-      the environment by creating the <filename>openjdk.sh</filename> script,
-      as the <systemitem class="username">root</systemitem> user:
+      软件包安装完成后，下一步是确保系统能够正确找到这些文件。如果您按照 <xref linkend='postlfs-config-profile'/> 中的建议设置了登录脚本，请以 <systemitem class="username">root</systemitem> 用户身份创建 <filename>openjdk.sh</filename> 脚本来更新环境：
     </para>
 
 <screen role="root"><userinput>cat &gt; /etc/profile.d/openjdk.sh &lt;&lt; "EOF"
 <literal># Begin /etc/profile.d/openjdk.sh
 
-# Set JAVA_HOME directory
+# 设置 JAVA_HOME 目录
 JAVA_HOME=/opt/jdk
 
-# Adjust PATH
+# 调整 PATH
 pathappend $JAVA_HOME/bin
 
-# Auto Java CLASSPATH: Copy jar files to, or create symlinks in, the
-# /usr/share/java directory.
+# 自动 Java CLASSPATH：将 jar 文件复制到 /usr/share/java 目录，或在该目录中创建符号链接。
 
 AUTO_CLASSPATH_DIR=/usr/share/java
 
@@ -48,10 +40,9 @@ done
 
 export JAVA_HOME
 
-# By default, Java creates several files in a directory named
-# /tmp/hsperfdata_[username]. This directory contains files that are used for
-# performance monitoring and profiling, but aren't normally needed on a BLFS
-# system. This environment variable disables that feature.
+# 默认情况下，Java 会在 /tmp/hsperfdata_[用户名] 目录中创建几个文件。
+# 该目录包含用于性能监控和分析的文件，但在 BLFS 系统上通常不需要。
+# 此环境变量禁用该功能。
 _JAVA_OPTIONS="-XX:-UsePerfData"
 
 export _JAVA_OPTIONS
@@ -62,9 +53,7 @@ unset AUTO_CLASSPATH_DIR dir jar _JAVA_OPTIONS
 EOF</userinput></screen>
 
     <para>
-      If <xref linkend="sudo"/> is installed, the super user should have
-      access to the above variables. Execute the following commands as the
-       <systemitem class="username">root</systemitem> user:
+      如果安装了 <xref linkend="sudo"/>，超级用户应能访问上述变量。请以 <systemitem class="username">root</systemitem> 用户身份执行以下命令：
     </para>
 
 <screen role="root"><userinput>cat &gt; /etc/sudoers.d/java &lt;&lt; "EOF"
@@ -74,9 +63,7 @@ Defaults env_keep += _JAVA_OPTIONS</literal>
 EOF</userinput></screen>
 
     <para>
-      To use <command>mandb</command> to include the OpenJDK man pages
-      in its database, issue, as the <systemitem class="username">root
-      </systemitem> user:
+      要使用 <command>mandb</command> 将 OpenJDK 手册页包含到其数据库中，请以 <systemitem class="username">root</systemitem> 用户身份执行：
     </para>
 
 <screen role="root"><userinput>cat &gt;&gt; /etc/man_db.conf &lt;&lt; "EOF" &amp;&amp;
@@ -92,42 +79,28 @@ mandb -c /opt/jdk/man</userinput></screen>
 
   </sect2>
 
-  <sect2 id="ojdk-certs" xreflabel="installing the JVM Certificate Authority Certificates">
+  <sect2 id="ojdk-certs" xreflabel="安装 JVM 证书颁发机构证书">
 
-    <title>Setting up the Certificate Authority Certificates for Java</title>
+    <title>为 Java 设置证书颁发机构证书</title>
 
     <para>
-      <application>OpenJDK</application> uses its own format for the
-      CA certificates. The Java security modules use
-      <envar>$JAVA_HOME</envar><filename>/lib/security/cacerts</filename> by
-      default. In order to keep all the certificates in one place, we use
-      <filename>/etc/pki/tls/java/cacerts</filename>. The instructions
-      on the <xref linkend="make-ca"/> page previously created the file
-      located in <filename class="directory">/etc/pki/tls/java</filename>.
-      Set up a symlink in the default location as the
-      <systemitem class="username">root</systemitem> user:
+      <application>OpenJDK</application> 使用自己的格式存储 CA 证书。Java 安全模块默认使用 <envar>$JAVA_HOME</envar><filename>/lib/security/cacerts</filename>。为了将所有证书集中存放，我们使用 <filename>/etc/pki/tls/java/cacerts</filename>。<xref linkend="make-ca"/> 页面上的说明此前已在 <filename class="directory">/etc/pki/tls/java</filename> 中创建了该文件。请以 <systemitem class="username">root</systemitem> 用户身份在默认位置设置符号链接：
     </para>
 
 <screen role="root"><userinput>ln -sfv /etc/pki/tls/java/cacerts /opt/jdk/lib/security/cacerts</userinput></screen>
 
     <para>
-      Use the following command to check if the <filename>cacerts</filename>
-      file has been successfully installed:
+      使用以下命令检查 <filename>cacerts</filename> 文件是否已成功安装：
     </para>
 
 <screen role="root"><userinput>/opt/jdk/bin/keytool -list -cacerts</userinput></screen>
 
     <para>
-      At the prompt <computeroutput>Enter keystore password:</computeroutput>,
-      enter <userinput>changeit</userinput> (the default) or just press the
-      <quote>Enter</quote> key. If the <filename>cacerts</filename> file was
-      installed correctly, you will see a list of the certificates with
-      related information for each one. If not, you need to reinstall them.
+      在提示 <computeroutput>Enter keystore password：</computeroutput> 时，输入 <userinput>changeit</userinput>（默认值）或直接按 <quote>Enter</quote> 键。如果 <filename>cacerts</filename> 文件安装正确，您将看到证书列表及其各自的相关信息。如果没有，则需要重新安装它们。
     </para>
 
     <para>
-      If you later install a new JVM, you just have to create the symlink in
-      the default location to be able to use the cacerts.
+      如果以后安装了新的 JVM，只需在默认位置创建符号链接即可使用 cacerts。
     </para>
 
   </sect2>

@@ -5,77 +5,69 @@
   %general-entities;
 ]>
 
-<sect1 id="svnserver" xreflabel="Running a Subversion Server">
+<sect1 id="svnserver" xreflabel="运行 Subversion 服务器">
   <?dbhtml filename="svnserver.html"?>
 
 
-  <title>Running a Subversion Server</title>
+  <title>运行 Subversion 服务器</title>
 
   <sect2 role="package">
-    <title>Running a Subversion Server</title>
+    <title>运行 Subversion 服务器</title>
 
     <para>
-      This section will describe how to set up, administer and secure
-      a <application>Subversion</application> server.
+      本节将介绍如何设置、管理和保护
+      <application>Subversion</application> 服务器。
     </para>
 
-    <bridgehead renderas="sect3">Subversion Server Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Subversion 服务器依赖</bridgehead>
 
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">必需</bridgehead>
     <para role="required">
-      <xref linkend="subversion"/> and
+      <xref linkend="subversion"/> 和
       <xref linkend="openssh"/>
     </para>
 
   </sect2>
 
   <sect2 role="configuration">
-    <title>Setting up a Subversion Server.</title>
+    <title>设置 Subversion 服务器</title>
 
     <para>
-      The following instructions will install a
-      <application>Subversion</application> server, which will be set up
-      to use <application>OpenSSH</application> as the secure remote access
-      method, with <command>svnserve</command> available for anonymous
-      access.
+      以下说明将安装一个
+      <application>Subversion</application> 服务器，该服务器将配置为
+      使用 <application>OpenSSH</application> 作为安全远程访问方法，并提供
+      <command>svnserve</command> 用于匿名访问。
     </para>
 
     <para>
-      Configuration of the <application>Subversion</application> server
-      consists of the following steps:
+      <application>Subversion</application> 服务器的配置包括以下步骤：
     </para>
 
     <sect3>
-      <title>1. Set Uup Users, Groups, and Permissions</title>
+      <title>1. 设置用户、组和权限</title>
 
       <para>
-        You'll need to be user
-        <systemitem class='username'>root</systemitem> for the initial portion
-        of configuration. Create the <systemitem
-        class="username">svn</systemitem> user and group with the following
-        commands:
+        配置的初始部分需要以
+        <systemitem class='username'>root</systemitem> 用户身份执行。使用以下命令创建
+        <systemitem class="username">svn</systemitem> 用户和组：
       </para>
 
 <screen role="root"><userinput>groupadd -g 56 svn &amp;&amp;
 useradd -c "SVN Owner" -d /home/svn -m -g svn -s /bin/false -u 56 svn</userinput></screen>
 
       <para>
-        If you plan to have multiple repositories, you should have a
-        group dedicated to each repository for ease of administration. Create
-        the <systemitem class="groupname">svntest</systemitem> group for the
-        test repository and add the <systemitem
-        class="username">svn</systemitem> user to that group with the
-        following commands:
+        如果计划拥有多个仓库，应该为每个仓库设置一个专用组以方便管理。使用以下
+        命令为测试仓库创建 <systemitem class="groupname">svntest</systemitem> 组，并将
+        <systemitem class="username">svn</systemitem> 用户添加到该组：
       </para>
 
 <screen role="root"><userinput>groupadd -g 57 svntest &amp;&amp;
 usermod -G svntest -a svn</userinput></screen>
 
       <para>
-        Additionally you should set <command>umask 002</command> while
-        working with a repository so that all new files will be writable by
-        owner and group. This is made mandatory by creating a wrapper script
-        for <command>svn</command> and <command>svnserve</command>:
+        此外，在处理仓库时应设置 <command>umask 002</command>，以便所有新建文件
+        都可被所有者和组写入。可以通过为 <command>svn</command> 和
+        <command>svnserve</command> 创建包装脚本来强制实现这一点：
       </para>
 
 <screen role="root"><userinput>mv /usr/bin/svn /usr/bin/svn.orig &amp;&amp;
@@ -94,29 +86,26 @@ chmod 0755 /usr/bin/svn{,serve}</userinput></screen>
 
       <note>
         <para>
-          If you use <application>Apache</application> for working with
-          the repository over HTTP, even for anonymous access, you should wrap
-          <command>/usr/sbin/httpd</command> in a similar script.
+          如果使用 <application>Apache</application> 通过 HTTP 访问仓库，
+          即使是匿名访问，也应该用类似的脚本包装
+          <command>/usr/sbin/httpd</command>。
         </para>
       </note>
 
     </sect3>
 
     <sect3>
-      <title>2. Create a Subversion repository.</title>
+      <title>2. 创建 Subversion 仓库</title>
 
       <para>
-        There are several ways to set up a subversion repository. It is
-        recommended to have a look at the <ulink
-        url="https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
-        Book</ulink> corresponding chapter. A basic repository can be set up
-        with the instructions below.
+        有几种方法可以设置 Subversion 仓库。建议查看 <ulink
+        url="https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">《SVN
+        Book》</ulink> 的相应章节。可以使用以下说明设置一个基本仓库。
       </para>
 
       <para>
-        Create a new <application>Subversion</application> repository with
-        the following commands (as the <systemitem class="username">root
-        </systemitem> user):
+        使用以下命令（以 <systemitem class="username">root
+        </systemitem> 用户身份）创建一个新的 <application>Subversion</application> 仓库：
       </para>
 
 <screen role="root"><userinput>install -v -m 0755 -d /srv/svn &amp;&amp;
@@ -124,27 +113,24 @@ install -v -m 0755 -o svn -g svn -d /srv/svn/repositories &amp;&amp;
 svnadmin create /srv/svn/repositories/svntest</userinput></screen>
 
       <para>
-        Now that the repository is created, it should be populated with
-        something useful. You'll need to have a predefined directory
-        layout set up exactly as you want your repository to look. For
-        example, here is a sample BLFS layout setup with a root of
-        <filename>svntest/</filename>. You'll need to set up a directory
-        tree similar to the following:
+        仓库创建完成后，应该填充一些有用的内容。你需要预先设置好
+        目录结构，确保它完全按照你希望仓库的样子来组织。例如，
+        这里是一个以 <filename>svntest/</filename> 为根的示例 BLFS 布局设置。
+        你需要设置类似于以下的目录树：
       </para>
 
-<screen><literal>svntest/            # The name of the repository
-   trunk/           # Contains the existing source tree
+<screen><literal>svntest/            # 仓库名称
+   trunk/           # 包含现有的源代码树
       BOOK/
       bootscripts/
       edguide/
       patches/
       scripts/
-   branches/        # Needed for additional branches
-   tags/            # Needed for tagging release points</literal></screen>
+   branches/        # 额外分支所需
+   tags/            # 标记发布点所需</literal></screen>
 
       <para>
-        Once you've created your directory layout as shown above, you
-        are ready to do the initial import:
+        按照上述内容创建目录布局后，就可以进行初始导入：
       </para>
 
 <screen role="root"><userinput>svn import -m "Initial import." \
@@ -152,10 +138,9 @@ svnadmin create /srv/svn/repositories/svntest</userinput></screen>
     file:///srv/svn/repositories/svntest</userinput></screen>
 
       <para>
-        Now change owner and group information on the
-        repository, and add an unprivileged user to the
-        <systemitem class="groupname">svn</systemitem> and
-        <systemitem class="groupname">svntest</systemitem> groups:
+        现在修改仓库的所有者和组信息，并将一个非特权用户添加到
+        <systemitem class="groupname">svn</systemitem> 和
+        <systemitem class="groupname">svntest</systemitem> 组：
       </para>
 
 <screen role="root"><userinput>chown -R svn:svntest /srv/svn/repositories/svntest    &amp;&amp;
@@ -164,62 +149,51 @@ chmod g+s            /srv/svn/repositories/svntest/db &amp;&amp;
 usermod -G svn,svntest -a <replaceable>&lt;username&gt;</replaceable></userinput></screen>
 
       <para>
-        <systemitem class="groupname">svntest</systemitem> is the group
-        assigned to the svntest repository. As mentioned earlier, this eases
-        administration of multiple repositories when using
-        <application>OpenSSH</application> for authentication. Going forward,
-        you'll need to add your unprivileged user, and any additional users
-        that you wish to have write access to the repository, to the
-        <systemitem class="groupname">svn</systemitem> and <systemitem
-        class="groupname">svntest</systemitem> groups.
+        <systemitem class="groupname">svntest</systemitem> 是分配给
+        svntest 仓库的组。如前所述，这在使用 <application>OpenSSH</application> 进行认证时，
+        可以简化多个仓库的管理。接下来，你需要将非特权用户以及任何希望获得
+        仓库写入权限的其他用户添加到 <systemitem class="groupname">svn</systemitem> 和
+        <systemitem class="groupname">svntest</systemitem> 组。
       </para>
 
       <para>
-        In addition, you'll notice that the new repository's
-        <filename>db</filename> directory is set-groupID. If the reasoning is
-        not immediately obvious, when using any external authentication method
-        (such as <command>ssh</command>), the sticky bit is set so that all
-        new files will be owned by the user, but group of
-        <systemitem class="groupname">svntest</systemitem>. Anyone in the
-        <systemitem class="groupname">svntest</systemitem> group can create
-        files, but still give the entire group write access to those
-        files. This avoids locking out other users from the repository.
+        此外，你会注意到新仓库的 <filename>db</filename> 目录设置了 set-groupID
+        位。如果原因不显而易见，当使用任何外部认证方法（例如
+        <command>ssh</command>）时，设置粘滞位是为了使所有新文件的所有者都是该用户，
+        但组为 <systemitem class="groupname">svntest</systemitem>。
+        <systemitem class="groupname">svntest</systemitem> 组中的任何人都可以创建文件，
+        同时仍然给予整个组对这些文件的写入权限。这可以避免将其他用户锁定在仓库之外。
       </para>
 
       <para>
-        Now, return to an unprivileged user account, and take a
-        look at the new repository using <command>svnlook</command>:
+        现在，返回到非特权用户帐户，使用 <command>svnlook</command> 查看新仓库：
       </para>
 
 <screen><userinput>svnlook tree /srv/svn/repositories/svntest/</userinput></screen>
 
       <note>
         <para>
-          You may need to log out and back in again to refresh your group
-          memberships. <command>su
+          可能需要注销并重新登录以刷新组成员资格。<command>su
           <replaceable>&lt;username&gt;</replaceable></command>
-          should work as well.
+          也应该有效。
         </para>
       </note>
 
     </sect3>
 
     <sect3>
-      <title>3. Configure the Server</title>
+      <title>3. 配置服务器</title>
 
       <para>
-        As mentioned previously, these instructions will configure the
-        server to use only <command>ssh</command> for write access to the
-        repository and to provide anonymous access using
-        <command>svnserve</command>. There are several other ways to provide
-        access to the repository. These additional configurations are best
-        explained at <ulink url="https://svnbook.red-bean.com/"/>.
+        如前所述，这些说明将配置服务器仅使用 <command>ssh</command> 对仓库进行
+        写入访问，并使用 <command>svnserve</command> 提供匿名访问。还有几种
+        其他方法可以提供对仓库的访问。这些额外配置的最佳说明请参阅
+        <ulink url="https://svnbook.red-bean.com/"/>。
       </para>
 
       <para>
-        Access configuration needs to be done for each repository.
-        Create the <filename>svnserve.conf</filename> file for the svntest
-        repository using the following commands:
+        需要为每个仓库进行访问配置。使用以下命令为 svntest 仓库创建
+        <filename>svnserve.conf</filename> 文件：
       </para>
 
 <screen role="root"><userinput>cp /srv/svn/repositories/svntest/conf/svnserve.conf \
@@ -232,26 +206,25 @@ auth-access = write</literal>
 EOF</userinput></screen>
 
       <para>
-        There is not a lot to the configuration file at all. You'll notice
-        that only the general section is required. Take a look at the
-        <filename>svnserve.conf.default</filename> file for information on
-        using <command>svnserve</command>'s built-in authentication method.
+        配置文件的内容其实不多。你会注意到只需要 general 段。
+        查看 <filename>svnserve.conf.default</filename> 文件以获取有关使用
+        <command>svnserve</command> 内置认证方法的信息。
       </para>
 
     </sect3>
 
     <sect3 id="svnserver-init">
-      <title>4. Starting the Server</title>
+      <title>4. 启动服务器</title>
 
       <para revision="sysv">
-        To start the server at boot time, install the svn
-        bootscript included in the <xref linkend="bootscripts"/> package:
+        要在启动时启动服务器，请安装包含在 <xref linkend="bootscripts"/> 软件包中的 svn
+        启动脚本：
       </para>
 
       <para revision="systemd">
-        To start the server at boot time, install the
-        <filename>svnserve.service</filename> unit from the
-        <xref linkend="systemd-units"/> package:
+        要在启动时启动服务器，请从
+        <xref linkend="systemd-units"/> 软件包安装
+        <filename>svnserve.service</filename> 单元：
       </para>
 
       <indexterm zone="svnserver svnserver-init" revision="sysv">
@@ -267,19 +240,16 @@ EOF</userinput></screen>
 <screen role="root" revision="systemd"><userinput>make install-svnserve</userinput></screen>
 
       <para revision="systemd">
-        Additionally, the instructions above require
-        that svn server uses <command>umask 002</command> so that all new files
-        will be writable by owner and group. This can be achieved by creating
-        a systemd unit override file by running the following command:
+        此外，上述说明要求 svn 服务器使用 <command>umask 002</command>，以便所有新建文件
+        都可被所有者和组写入。可以通过运行以下命令创建 systemd 单元覆盖文件来实现这一点：
       </para>
 
 <screen role="root" revision="systemd"><userinput>mkdir -p /etc/systemd/system/svnserve.service.d
 echo "UMask=0002" > /etc/systemd/system/svnserve.service.d/99-user.conf</userinput></screen>
 
       <para revision="systemd">
-        Options which are passed to
-        <command>svnserve</command> daemon can be changed in
-        <filename>/etc/default/svnserve</filename>.
+        传递给 <command>svnserve</command> 守护进程的选项可以在
+        <filename>/etc/default/svnserve</filename> 中更改。
       </para>
 
     </sect3>

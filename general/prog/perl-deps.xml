@@ -5,54 +5,40 @@
   %general-entities;
 ]>
 
-<sect1 id="perl-deps" xreflabel="Perl Module Dependencies">
+<sect1 id="perl-deps" xreflabel="Perl 模块依赖">
   <?dbhtml filename="perl-deps.html" ?>
 
 
-  <title>Perl Module Dependencies</title>
+  <title>Perl 模块依赖</title>
 
   <indexterm zone="perl-deps">
-    <primary sortas="a-perl-module-dependencies">Perl Module Dependencies</primary>
+    <primary sortas="a-perl-module-dependencies">Perl 模块依赖</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Perl Modules which are only required by other modules</title>
+    <title>仅被其他模块需要的 Perl 模块</title>
 
     <para>
-      The modules on the previous page are referenced from other pages in BLFS,
-      but these modules are only in the book as dependencies of those modules.
-      If you use the CPAN install method, you do not need to read this page.
-   </para>
+      前一页中的模块被 BLFS 中其他页面引用，但这些模块仅作为那些模块的依赖项出现在本书中。如果您使用 CPAN 安装方法，则无需阅读本页。
+    </para>
 
     <para>
-      The BLFS editors pay much less attention to these modules, and the
-      versions will not be regularly reviewed. In all cases, only the required or
-      recommended dependencies are listed - there might be other modules which
-      allow more tests to be run, but omitting them will still allow the tests to
-      <literal>PASS</literal>.
+      BLFS 编辑对这些模块的关注要少得多，其版本也不会定期审查。在所有情况下，仅列出必需或推荐的依赖项——可能还有其他模块允许运行更多测试，但省略它们仍能使测试结果为 <literal>PASS</literal>。
     </para>
 
     <note>
       <para>
-        The links on this page (to metacpan.org) should go to "known good"
-        versions, for which their dependencies are correct. If you wish to use a
-        later version, please check the Changes file at https://metacpan.org -
-        sometimes added dependencies are listed, other times not. Some of these
-        modules have very frequent updates, often bringing different dependencies.
+        本页中的链接（指向 metacpan.org）应指向“已知良好”的版本，其依赖关系是正确的。如果您希望使用更新的版本，请查看 https://metacpan.org 上的 Changes 文件——有时会列出新增的依赖项，有时则不会。其中一些模块更新非常频繁，通常会带来不同的依赖项。
         <!-- FIXME - change or comment this when necessary -->
-        The linked metacpan.org versions below were known to work with the
-        module versions in BLFS when last reviewed.
+        下面链接的 metacpan.org 版本在最后一次审查时已知可与 BLFS 中的模块版本正常工作。
       </para>
 
       <para>
-        However, if you notice that the Changes file for a newer version than is
-        in the current development book reports a fix for a security issue, please
-        report this to either the blfs-dev or the blfs-support list.
+        但是，如果您注意到当前开发版本书籍中更新的版本的 Changes 文件报告了安全问题的修复，请将此报告给 blfs-dev 或 blfs-support 邮件列表。
       </para>
 
       <para>
-        Similarly, if you discover that an updated module on the previous page
-        needs an extra dependency, please report this.
+        同样，如果您发现前一页中某个更新的模块需要额外的依赖项，也请报告此问题。
       </para>
     </note>
 

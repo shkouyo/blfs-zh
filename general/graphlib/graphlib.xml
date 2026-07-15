@@ -8,13 +8,10 @@
 <chapter id="general-graphlib">
   <?dbhtml filename="graphlib.html"?>
 
-  <title>Graphics and Font Libraries</title>
+  <title>图形与字体库</title>
 
   <para>
-    Depending on what your system will be used for, you may or
-    may not require the graphics and font libraries. Most desktop machines will
-    want them for use with graphical applications.  Most servers on the
-    other hand, will not require them.
+    根据您系统的用途，您可能可能需要也可能不需要图形与字体库。大多数台式机都会需要它们，以便用于图形应用程序。而另一方面，大多数服务器则不需要它们。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="aalib.xml"/>

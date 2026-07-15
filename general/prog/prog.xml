@@ -8,16 +8,15 @@
 <chapter id="general-prog">
   <?dbhtml filename="prog.html" ?>
 
-  <title>Programming</title>
+  <title>编程</title>
 
   <para>
-    A base LFS system can be used as a development
-    platform, however the base system only includes language support for
-    <application>C</application>, <application>C++</application>,
-    <application>Perl</application>, and <application>Python</application>.
-    This chapter provides instructions to build many popular programming
-    environments to greatly expand your system's development capabilities.
+    基础的 LFS 系统可以用作开发平台，但基础系统仅包含对
+    <application>C</application>、<application>C++</application>、
+    <application>Perl</application> 和 <application>Python</application>
+    的语言支持。本章提供了构建许多流行编程环境的说明，以大幅扩展您系统的开发能力。
   </para>
+</chapter>
 
   <!--xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="autoconf213.xml"/-->
 <!--  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bazaar.xml"/> -->

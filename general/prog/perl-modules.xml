@@ -5,18 +5,18 @@
   %general-entities;
 ]>
 
-<sect1 id="perl-modules" xreflabel="Perl Modules">
+<sect1 id="perl-modules" xreflabel="Perl 模块">
   <?dbhtml filename="perl-modules.html" ?>
 
 
-  <title>Perl Modules</title>
+  <title>Perl 模块</title>
 
   <indexterm zone="perl-modules">
-    <primary sortas="a-perl-Modules">Perl Modules</primary>
+    <primary sortas="a-perl-Modules">Perl 模块</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Perl Modules</title>
+    <title>Perl 模块简介</title>
 
  <!-- note for editors:
       When testing the dependencies for a new/updated module, it is possible
@@ -36,59 +36,35 @@
       please try without it to see if the tests can still pass. -->
 
     <para>
-      The <application>Perl</application> module packages (also referred to as
-      Distributions, because each can contain multiple modules) add useful
-      objects to the <application>Perl</application> language. The packages
-      listed on this page are required or recommended for other packages in
-      the book. If they have dependent modules, those are either on this page
-      or else on the next page (<xref linkend="perl-deps"/>).
-   </para>
-
-    <para>
-      In many cases, only the required or recommended dependencies are listed -
-      there might be other modules which allow more tests to be run, but
-      omitting them will still allow the tests to <literal>PASS</literal>.
+      <application>Perl</application> 模块包（也称为发行版，因为每个包可以包含多个模块）为 <application>Perl</application> 语言添加了有用的对象。本页列出的包是本书中其他包所必需或推荐的。如果它们有依赖模块，则这些依赖模块要么在本页，要么在下一页（<xref linkend="perl-deps"/>）。
     </para>
 
     <para>
-      For a few modules, the BLFS editors have determined that other modules
-      still listed as prerequisites are not required, and omitted them.
+      在许多情况下，仅列出必需或推荐的依赖项——可能还有其他模块允许运行更多测试，但省略它们仍能使测试结果为 <literal>PASS</literal>。
     </para>
 
     <para>
-      Where an alphabetically-earlier dependency of the same module pulls in a
-      dependency, it is not mentioned for the later dependencies of the same
-      module. You should build the listed dependencies in order.
+      对于少数模块，BLFS 编辑确定其他仍列为先决条件的模块并非必需，因此将其省略。
     </para>
 
     <para>
-      It is generally worth running the tests for perl modules, they often
-      can show problems such as missing dependencies which are required to
-      use the module.  Here, the editors have attempted to separate those
-      dependencies which are only required for running test suites, but they
-      will not be mentioned for a module where one of its dependencies uses
-      that module for its own test suite.  That is to say, if you intend to
-      run the test suites, please run them for each dependency of the module.
+      如果同一模块的按字母顺序较早的依赖项引入了某个依赖项，则对于该模块的较晚依赖项不再重复提及。您应按所列顺序构建依赖项。
     </para>
 
     <para>
-      It is possible to automatically install the current versions of a module
-      and <emphasis>all</emphasis> missing or too-old dependencies
-      <emphasis>recommended by upstream</emphasis> using CPAN. See
-      <xref linkend="perl-alternatives"/> at the end of this page.
+      通常值得运行 perl 模块的测试，它们常常能显示诸如缺少使用该模块所需的依赖项之类的问题。在此，编辑已尝试区分那些仅用于运行测试套件的依赖项，但如果某个模块的依赖项在其自己的测试套件中使用了该模块，则不会为该模块提及这些依赖项。也就是说，如果您打算运行测试套件，请为模块的每个依赖项都运行测试。
     </para>
 
     <para>
-      Most of these modules only install files below <filename
-      class="directory">/usr/lib/perl5/site_perl/5.xx.y</filename> and those will
-      not be documented. One or two install programs (mostly, perl scripts), or
-      a library, into <filename class="directory">/usr/bin/</filename> or
-      <filename class="directory">/usr/lib/</filename> and these
-      <emphasis>are</emphasis> documented.
+      可以使用 CPAN 自动安装模块的当前版本以及上游<emphasis>推荐</emphasis>的<emphasis>所有</emphasis>缺失或过旧的依赖项。请参见本页末尾的 <xref linkend="perl-alternatives"/>。
+    </para>
+
+    <para>
+      这些模块中的大多数仅将文件安装到 <filename class="directory">/usr/lib/perl5/site_perl/5.xx.y</filename> 目录下，这些文件将不予文档记录。有一两个模块会将程序（主要是 perl 脚本）或库安装到 <filename class="directory">/usr/bin/</filename> 或 <filename class="directory">/usr/lib/</filename> 中，这些<emphasis>会</emphasis>被文档记录。
     </para>
 
     <para condition="html" role="usernotes">
-      Editor Notes: <ulink url="&blfs-wiki;/perl-modules"/>
+      编辑者注释：<ulink url="&blfs-wiki;/perl-modules"/>
     </para>
 
 

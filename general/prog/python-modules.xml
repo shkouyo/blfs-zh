@@ -5,23 +5,21 @@
   %general-entities;
 ]>
 
-<sect1 id="python-modules" xreflabel="Python Modules">
+<sect1 id="python-modules" xreflabel="Python 模块">
   <?dbhtml filename="python-modules.html" ?>
 
 
-  <title>Python Modules</title>
+  <title>Python 模块</title>
 
   <indexterm zone="python-modules">
-    <primary sortas="a-Python-Modules">Python Modules</primary>
+    <primary sortas="a-Python-Modules">Python 模块</primary>
   </indexterm>
 
   <sect2 role="package">
-    <title>Introduction to Python Modules</title>
+    <title>Python 模块简介</title>
 
     <para>
-      The <application>Python</application> module packages add useful objects
-      to the <application>Python</application> language. Modules utilized by
-      packages throughout BLFS are listed here, along with their dependencies.
+      <application>Python</application> 模块包为 <application>Python</application> 语言添加了有用的对象。BLFS 中各包所使用的模块在此列出，连同它们的依赖关系。
     </para>
 
 <!-- This is no longer needed since sqlite is built before Python in LFS
@@ -38,28 +36,13 @@
 
     <important>
       <para>
-        In BLFS, we normally build and install Python 3 modules with
-        <command>pip3</command>.  Please take care that the
-        <command>pip3 install</command> commands in the book should be
-        run as &root; unless it's for a Python virtual environment.  Running
-        <command>pip3 install</command> as a non-&root; user may seem to
-        work fine, but it will cause the installed module to be inaccessible by
-        other users.
+        在 BLFS 中，我们通常使用 <command>pip3</command> 构建并安装 Python 3 模块。请注意，书中 <command>pip3 install</command> 命令应以 &root; 用户身份运行，除非用于 Python 虚拟环境。以非 &root; 用户身份运行 <command>pip3 install</command> 可能看起来工作正常，但会导致已安装的模块对其他用户不可访问。
       </para>
       <para>
-        <command>pip3 install</command> will not reinstall an already
-        installed module by default.  For using the
-        <command>pip3 install</command> command to upgrade a module (for
-        example, from meson-0.61.3 to meson-0.62.0), insert
-        <parameter>--upgrade</parameter> into the command line.  If it's really
-        necessary to downgrade a module or reinstall the same version for
-        some reason, insert <parameter>--force-reinstall</parameter> into
-        the command line.
+        <command>pip3 install</command> 默认不会重新安装已安装的模块。若要使用 <command>pip3 install</command> 命令升级模块（例如，从 meson-0.61.3 升级到 meson-0.62.0），请在命令行中插入 <parameter>--upgrade</parameter>。如果由于某种原因确实需要降级模块或重新安装相同版本，请在命令行中插入 <parameter>--force-reinstall</parameter>。
       </para>
       <para>
-        If you have installed <xref linkend="make-ca" role="nodep"/> before and
-        have copied files from /etc/profile.d to a new system, you must install
-        make-ca first prior to installing any Python modules from this page.
+        如果您之前安装过 <xref linkend="make-ca" role="nodep"/> 并已将文件从 /etc/profile.d 复制到新系统，则在安装本页任何 Python 模块之前，必须先安装 make-ca。
       </para>
     </important>
 

@@ -8,12 +8,10 @@
 <chapter id="general-sysutils">
   <?dbhtml filename="sysutils.html"?>
 
-  <title>System Utilities</title>
+  <title>系统实用工具</title>
 
   <para>
-    This chapter contains mainly hardware utilities. It also contains
-    some applications used by other applications in the book for
-    installation or configuration purposes.
+    本章主要介绍硬件实用程序。此外，还包含一些本书中其他应用程序在安装或配置过程中会用到的应用程序。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="7zip.xml"/>
