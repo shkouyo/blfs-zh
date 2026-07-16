@@ -5,44 +5,25 @@
   %general-entities;
 ]>
 
-<sect1 id="wireless-kernel" xreflabel="Configuring the Linux Kernel for Wireless">
+<sect1 id="wireless-kernel" xreflabel="为无线网络配置 Linux 内核">
   <?dbhtml filename="wireless-kernel.html"?>
 
 
-  <title>Configuring the Linux Kernel for Wireless</title>
+  <title>为无线网络配置 Linux 内核</title>
 
   <para>
-    Before using any userspace tools for connecting to a wireless AP,
-    the Linux kernel must be configured to drive the wireless NIC properly.
-    Enable the following options in the kernel configuration as well as
-    specific device drivers for your hardware and recompile the kernel if
-    necessary:
+    在使用任何用户空间工具连接无线 AP 之前，必须配置 Linux 内核以正确驱动无线网卡。在内核配置中启用以下选项以及适用于您硬件的特定设备驱动程序，必要时重新编译内核：
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
     href="wireless-kernel-kernel.xml"/>
 
   <para>
-    Open the <quote>Wireless LAN</quote> submenu and select the options that
-    support your hardware. <command>lspci</command> from
-    <xref linkend="pciutils"/> or <command>lsusb</command> from
-    <xref linkend="usbutils"/> can be used to
-    view your hardware configuration.  Note that many (though not all)
-    options for the wireless NICs depend on
-    <parameter>CONFIG_MAC80211</parameter>. After the correct drivers are
-    loaded, the interface will appear in
-    <filename>/sys/class/net</filename>, or in the output of the
-    <command>ip link</command> command.
+    打开 <quote>Wireless LAN</quote> 子菜单，选择支持您硬件的选项。可以使用 <xref linkend="pciutils"/> 提供的 <command>lspci</command> 或 <xref linkend="usbutils"/> 提供的 <command>lsusb</command> 查看硬件配置。注意，无线网卡的许多选项（但并非全部）依赖于 <parameter>CONFIG_MAC80211</parameter>。加载正确的驱动程序后，接口将出现在 <filename>/sys/class/net</filename> 中，或显示在 <command>ip link</command> 命令的输出中。
   </para>
 
   <para>
-    Many wireless NIC drivers require firmware. If you've enabled the
-    correct driver in the kernel configuration but it fails to load (with
-    messages like <computeroutput>Direct firmware load for
-    <replaceable>&lt;filename</replaceable>&gt; failed with error
-    -2</computeroutput>, it means that you need to install the firmware
-    or the wireless NIC won't work. Read <xref linkend='postlfs-firmware'/>
-    for more details.
+    许多无线网卡驱动程序需要固件。如果您已在内核配置中启用了正确的驱动程序，但它加载失败（出现类似 <computeroutput>Direct firmware load for <replaceable>&lt;filename</replaceable>&gt; failed with error -2</computeroutput> 的消息），这意味着您需要安装固件，否则无线网卡将无法工作。阅读 <xref linkend='postlfs-firmware'/> 了解更多详情。
   </para>
 
 </sect1>

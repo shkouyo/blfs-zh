@@ -8,11 +8,10 @@
 <chapter id="netutils">
   <?dbhtml filename="netutils.html"?>
 
-  <title>Networking Utilities</title>
+  <title>网络实用工具</title>
 
   <para>
-    This chapter contains some tools that come in handy when the network
-    needs investigating.
+    本章包含一些在网络需要排查时派上用场的工具。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="avahi.xml"/>

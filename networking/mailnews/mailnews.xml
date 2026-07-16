@@ -7,19 +7,14 @@
 
 <chapter id="basicnet-mailnews">
   <?dbhtml filename="mailnews.html"?>
-  <title>Mail/News Clients</title>
+  <title>邮件与新闻客户端</title>
 
   <para>
-    Mail Clients help you retrieve (Fetchmail), sort (Procmail), read and
-    compose responses (Heirloom mailx, Mutt, Pine, Kmail, Balsa, Evolution,
-    SeaMonkey) to email.
+    邮件客户端帮助您接收（Fetchmail）、分类（Procmail）、阅读并撰写回复（Heirloom mailx、Mutt、Pine、Kmail、Balsa、Evolution、SeaMonkey）电子邮件。
   </para>
 
   <para>
-    News clients also help you retrieve, sort, read and compose
-    responses, but these messages travel through USENET (a worldwide
-    bulletin board system) using the Network News Transfer Protocol
-    (NNTP).
+    新闻客户端也帮助您接收、分类、阅读并撰写回复，但这些消息通过 USENET（一个全球公告板系统）使用网络新闻传输协议（NNTP）进行传输。
   </para>
 
 <!--  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="alpine.xml"/>-->
@@ -30,3 +25,4 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="other.xml"/>
 
 </chapter>
+

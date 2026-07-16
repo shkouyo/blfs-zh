@@ -5,11 +5,11 @@
   %general-entities;
 ]>
 
-<sect1 id="postlfs-config-netfs"  xreflabel="Configuring for Network Filesystems" revision="sysv">
+<sect1 id="postlfs-config-netfs"  xreflabel="为网络文件系统进行配置" revision="sysv">
   <?dbhtml filename="netfs.html"?>
 
 
-  <title>Configuring for Network Filesystems</title>
+  <title>为网络文件系统进行配置</title>
 
   <!-- Fake the zone for index formatting -->
   <indexterm zone="postlfs-config-netfs postlfs-config-netfs">
@@ -17,20 +17,11 @@
   </indexterm>
 
   <para>
-    While LFS is capable of mounting network file systems such as NFS,
-    these are not mounted by the <filename>mountfs</filename> init script.
-    Network file systems must be mounted after the networking is activated and
-    unmounted before the network goes down.  The <filename>netfs</filename>
-    bootscript was written to handle both boot-time mounting of network
-    filesystems, if the entry in <filename>/etc/fstab</filename> contains the
-    <option>_netdev</option> option, and unmounting of all network filesystems
-    before the network is brought down.
+    尽管 LFS 能够挂载网络文件系统（例如 NFS），但这些文件系统并不会由 <filename>mountfs</filename> 初始化脚本挂载。网络文件系统必须在网络激活之后挂载，并在网络关闭之前卸载。<filename>netfs</filename> 启动脚本正是为此编写：它既负责在引导时挂载网络文件系统（只要 <filename>/etc/fstab</filename> 中的条目包含 <option>_netdev</option> 选项），也负责在网络关闭之前卸载所有网络文件系统。
   </para>
 
   <para>
-    As the <systemitem class="username">root</systemitem> user, install the
-    <filename>/etc/rc.d/init.d/netfs</filename> bootscript included with the
-    <xref linkend="bootscripts"/> package.
+    以 <systemitem class="username">root</systemitem> 用户身份，安装 <xref linkend="bootscripts"/> 软件包中提供的 <filename>/etc/rc.d/init.d/netfs</filename> 启动脚本。
   </para>
 
 <screen role='root'><userinput>make install-netfs</userinput></screen>

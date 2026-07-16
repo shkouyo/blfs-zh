@@ -8,13 +8,10 @@
 <chapter id="basicnet-netlibs">
   <?dbhtml filename="netlibs.html"?>
 
-  <title>Networking Libraries</title>
+  <title>网络库</title>
 
   <para>
-    These applications are support libraries for other applications in the
-    book. It is unlikely that you would just install these libraries, you
-    will generally find that you will be referred to this chapter to satisfy
-    a dependency of other applications.
+    这些应用程序是本书中其他应用程序的支持库。您不太可能仅仅为了安装这些库而安装它们，通常您会发现是被指引到本章以满足其他应用程序的依赖关系。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="c-ares.xml"/>

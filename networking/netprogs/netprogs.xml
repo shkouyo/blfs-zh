@@ -8,14 +8,11 @@
 <chapter id="netprogs">
   <?dbhtml filename="netprogs.html"?>
 
-  <title>Networking Programs</title>
+  <title>网络程序</title>
 
   <para>
-    These applications are generally client applications used to
-    access the appropriate server across the building or across the world.
-    <application>Tcpwrappers</application> and
-    <application>portmap</application> are support programs for daemons that
-    you may have running on your machine.
+    这些应用程序通常是客户端应用程序，用于访问同一建筑内或世界各地的相应服务器。<application>Tcpwrappers</application> 和
+    <application>portmap</application> 是守护进程的支持程序，您的机器上可能正在运行这些守护进程。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bridgeutils.xml"/>

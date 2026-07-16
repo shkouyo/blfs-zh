@@ -9,17 +9,16 @@
   <?dbhtml filename="advanced-network.html"?>
 
 
-  <title>Advanced Network Setup</title>
+  <title>高级网络设置</title>
 
   <sect2 id="network-bridge">
-    <title>Network Bridge</title>
+    <title>网络桥接</title>
 
     <sect3 role="kernel" id="advanced-network-bridge-kernel">
-      <title>Kernel Configuration</title>
+      <title>内核配置</title>
 
       <para>
-        Enable the following options in the kernel configuration
-        and recompile the kernel if necessary:
+        在内核配置中启用以下选项，如有必要则重新编译内核：
       </para>
 
 <screen><literal>Networking support: Y
@@ -27,26 +26,20 @@
     802.1d Ethernet Bridging: M or Y</literal></screen>
 
       <indexterm zone="advanced-network advanced-network-bridge-kernel">
-        <primary sortas="d-advanced-network-bridge">Advanced Network Bridge</primary>
+        <primary sortas="d-advanced-network-bridge">高级网络桥接</primary>
       </indexterm>
 
     </sect3>
 
     <sect3>
-      <title>Setting up a Network Bridge</title>
+      <title>设置网络桥接</title>
 
       <para>
-        In this section we are going to discuss how to set up a network
-        bridge using <command>systemd-networkd</command>. In the examples
-        below, <replaceable>eth0</replaceable> represents the external
-        interface that is being bridged, while <replaceable>br0</replaceable>
-        represents the bridge interface.
+        本节将讨论如何使用 <command>systemd-networkd</command> 设置网络桥接。在以下示例中，<replaceable>eth0</replaceable> 表示被桥接的外部接口，而 <replaceable>br0</replaceable> 表示桥接接口。
       </para>
 
       <para>
-        To create a bridge interface, create the following configuration file
-        by running the following command as the
-        <systemitem class="username">root</systemitem> user:
+        要创建桥接接口，请以 <systemitem class="username">root</systemitem> 用户身份运行以下命令来创建配置文件：
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/systemd/network/50-br0.netdev &lt;&lt; EOF
@@ -56,9 +49,7 @@ Kind=bridge</literal>
 EOF</userinput></screen>
 
       <para>
-        To assign a network interface to a bridge, create the following
-        configuration file by running the following command as the
-        <systemitem class="username">root</systemitem> user:
+        要将网络接口分配给桥接，请以 <systemitem class="username">root</systemitem> 用户身份运行以下命令来创建配置文件：
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/systemd/network/51-eth0.network &lt;&lt; EOF
@@ -70,17 +61,11 @@ Bridge=<replaceable>br0</replaceable></literal>
 EOF</userinput></screen>
 
       <para>
-        Repeat the process for any other interfaces that need to be bridged.
-        Note that it is important that nothing assigns any addresses to the
-        bridged interfaces. If you are using <xref linkend="NetworkManager"/>,
-        <!--or <xref linkend="wicd"/>i,--> make sure you configure them to ignore
-        the bridged interfaces, as well as the bridge interface itself.
+        对需要桥接的其他任何接口重复此过程。请注意，务必不要让任何程序为被桥接的接口分配地址。如果您正在使用 <xref linkend="NetworkManager"/>，<!--or <xref linkend="wicd"/>i,--> 请确保将其配置为忽略被桥接的接口，以及桥接接口本身。
       </para>
 
       <para>
-        If you are on a network which uses DHCP for assigning ip addresses,
-        create the following configuration file by running the following
-        command as the <systemitem class="username">root</systemitem> user:
+        如果您所在网络使用 DHCP 分配 IP 地址，请以 <systemitem class="username">root</systemitem> 用户身份运行以下命令来创建配置文件：
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/systemd/network/60-br0.network &lt;&lt; EOF
@@ -92,9 +77,7 @@ DHCP=yes</literal>
 EOF</userinput></screen>
 
       <para>
-        Alternatively, if using a static ip setup, create the following
-        configuration file by running the following command as the
-        &root; user:
+        或者，如果使用静态 IP 设置，请以 &root; 用户身份运行以下命令来创建配置文件：
       </para>
 
 <screen role="root"><userinput>cat &gt; /etc/systemd/network/60-br0.network &lt;&lt; EOF
@@ -108,17 +91,13 @@ DNS=192.168.0.1</literal>
 EOF</userinput></screen>
 
       <para>
-        If you want to contact another system connected to the bridge,
-        for example a qemu instance, then you also need to enable IP forwarding.
-        Again as the &root; user, do: 
+        如果您希望与连接到桥接的其他系统通信，例如 qemu 实例，则还需要启用 IP 转发。同样以 &root; 用户身份执行：
       </para>
 
 <screen role="root"><userinput>echo 'IPForward=ipv4' >> /etc/systemd/network/60-br0.network</userinput></screen>
 
       <para>
-        To bring up the bridge interface, simply restart the
-        <command>systemd-networkd</command> daemon by running the following
-        command as the  <systemitem class="username">root</systemitem> user:
+        要启用桥接接口，只需以 <systemitem class="username">root</systemitem> 用户身份运行以下命令重启 <command>systemd-networkd</command> 守护进程：
       </para>
 
 <screen role="root"><userinput>systemctl restart systemd-networkd</userinput></screen>

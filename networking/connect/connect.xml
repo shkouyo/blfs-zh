@@ -8,19 +8,13 @@
 <chapter id="basicnet-connect">
   <?dbhtml filename="connect.html"?>
 
-  <title>Connecting to a Network</title>
+  <title>连接到网络</title>
 
   <para>
-    The LFS book covers setting up networking by connecting to a LAN
-  with a static IP address. There are other methods used to obtain an IP
-  address and connect to a LAN and other networks (such as the Internet).
-  The most popular methods (DHCP and PPP) are covered in this chapter.</para>
+    LFS 一书介绍了通过静态 IP 地址连接到局域网来设置网络。还有其他方法可用于获取 IP 地址并连接到局域网及其他网络（如 Internet）。本章将介绍最常用的方法（DHCP 和 PPP）。</para>
 
   <para>
-    DHCP stands for Dynamic Host Configuration Protocol. It is a protocol used
-    by many sites to automatically provide information such as IP addresses,
-    subnet masks and routing information to computers.  If your network uses
-    DHCP, you will need a DHCP client in order to connect to it.
+    DHCP 是动态主机配置协议的缩写。它是一种被许多站点使用的协议，用于自动向计算机提供诸如 IP 地址、子网掩码和路由信息等信息。如果你的网络使用 DHCP，你需要一个 DHCP 客户端才能连接到它。
   </para>
 <!-- we do not include ppp
   <para>

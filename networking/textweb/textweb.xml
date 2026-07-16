@@ -8,22 +8,10 @@
 <chapter id="basicnet-textweb">
   <?dbhtml filename="textweb.html"?>
 
-  <title>Text Web Browsers</title>
+  <title>文本网页浏览器</title>
 
   <para>
-    People who are new to Unix-based systems tend to ask the question "Why on
-    earth would I want a text-mode browser? I'm going to compile
-    <application>X</application> and use <application>
-    Firefox</application>/<application>Falkon</application>/Whatever!".
-    Those who have been around systems for a while know that when (not if)
-    you manage to mess up your graphical browser install and you need to
-    look up some information on the web, a console based browser will save
-    you.  Also, there are quite a few people who prefer to use one of these
-    browsers as their primary method of browsing; either to avoid the clutter
-    and bandwidth which accompanies images or because they may use a
-    text-to-speech synthesizer which can read the page to them (of use for
-    instance to partially sighted or blind users). In this chapter you will
-    find installation instructions for two console web browsers:
+    初接触基于 Unix 的系统的人往往会问：“我到底为什么要一个文本模式的浏览器？我要编译 <application>X</application> 然后用 <application>Firefox</application>/<application>Falkon</application> 或者别的什么！”那些在系统领域摸爬滚打一段时间的人都知道，当（不是“如果”）你把图形浏览器安装搞砸了、需要上网查资料时，控制台浏览器会救你一命。此外，也有不少人将这些浏览器作为主要的浏览方式——或是为了避免图片带来的杂乱和带宽消耗，或是配合文本转语音合成器让页面被朗读出来（例如对视力部分受损或盲人用户很有用）。本章包含两个控制台网页浏览器的安装说明：
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="links.xml"/>
