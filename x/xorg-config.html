@@ -12,36 +12,36 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;24.&nbsp;Graphical Environments
+        第&nbsp;24&nbsp;章&nbsp;Graphical Environments
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xinit.html" title="xinit-1.4.4">Prev</a>
+          <a accesskey="p" href="xinit.html" title="xinit-1.4.4">上一页</a>
           <p>
             xinit-1.4.4
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="tuning-fontconfig.html" title=
-          "Tuning Fontconfig">Next</a>
+          "Tuning Fontconfig">下一页</a>
           <p>
             Tuning Fontconfig
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">Up</a>
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
@@ -49,15 +49,15 @@
       <a id="xorg-config" name="xorg-config"></a>Xorg-7 Testing and
       Configuration
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="sect2" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="X11-testing" name="X11-testing"></a>Testing Xorg
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Before starting Xorg for the first time, is useful to rebuild the
@@ -67,9 +67,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Before starting Xorg for the first time, is often needed to
@@ -80,9 +80,9 @@
           </p>
         </div>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If Xorg hangs for some reason (for example, lacking a proper
@@ -118,9 +118,9 @@
           your system by the other two xterms.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             When testing <span class="application">Xorg</span> with the
@@ -135,9 +135,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             On systems with NVIDIA GPUs which are using the Nouveau kernel
@@ -150,11 +150,11 @@
           Generally, there is no specific configuration required for
           <span class="application">Xorg</span>, but customization is
           possible. For details, see <a class="xref" href=
-          "xorg-config.html#xconfig" title="Setting up Xorg Devices">the
-          section called “Setting up Xorg Devices”</a> below.
+          "xorg-config.html#xconfig" title="Setting up Xorg Devices">“Setting
+          up Xorg Devices”一节</a> below.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="checking-dri" name="checking-dri"></a>Checking the Direct
           Rendering Infrastructure (DRI) Installation
@@ -178,9 +178,9 @@
 (II) modeset(0): [DRI2]   DRI driver: crocus
 (II) modeset(0): [DRI2]   VDPAU driver: va_gl</code></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             DRI configuration may differ if you are using alternate drivers,
@@ -251,7 +251,7 @@ OpenGL version string: 3.0 Mesa 10.4.5</code></pre>
           rate.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="xorg-debug" name="xorg-debug"></a>Debugging Xorg
         </h2>
@@ -317,7 +317,7 @@ EOF
 
 usermod -a -G video &lt;user running xorg&gt;</kbd></pre>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="hybrid-graphics" name="hybrid-graphics"></a>Hybrid Graphics
         </h2>
@@ -356,9 +356,9 @@ Provider 1: id: 0x56 cap: 0xf, Source Output, Sink Output, Source Offload, Sink 
         "command">xrandr --setprovideroffloadsink <em class=
         "replaceable"><code>&lt;provider&gt; &lt;sink&gt;</code></em></kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             With the <span class="application">Xorg</span> modesetting
@@ -382,7 +382,7 @@ Provider 1: id: 0x56 cap: 0xf, Source Output, Sink Output, Source Offload, Sink 
           installation.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="xconfig" name="xconfig"></a>Setting up Xorg Devices
         </h2>
@@ -393,7 +393,7 @@ Provider 1: id: 0x56 cap: 0xf, Source Output, Sink Output, Source Offload, Sink 
           incorrect. Following are some example manual configuration items
           that may be of use in these instances.
         </p>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="xinput" name="xinput"></a>Setting up X Input Devices
           </h3>
@@ -422,7 +422,7 @@ EOF</kbd></pre>
             not needed for a QWERTY (US) keyboard.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="xdisplay" name="xdisplay"></a>Fine Tuning Display Settings
           </h3>
@@ -564,25 +564,25 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="xinit.html" title="xinit-1.4.4">Prev</a>
+          <a accesskey="p" href="xinit.html" title="xinit-1.4.4">上一页</a>
           <p>
             xinit-1.4.4
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="tuning-fontconfig.html" title=
-          "Tuning Fontconfig">Next</a>
+          "Tuning Fontconfig">下一页</a>
           <p>
             Tuning Fontconfig
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">Up</a>
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;15.&nbsp;Networking Programs
+        第&nbsp;15&nbsp;章&nbsp;网络程序
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="rsync.html" title="rsync-3.4.4">Prev</a>
+          <a accesskey="p" href="rsync.html" title="rsync-3.4.4">上一页</a>
           <p>
             rsync-3.4.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="wget.html" title="Wget-1.25.0">Next</a>
+          <a accesskey="n" href="wget.html" title="Wget-1.25.0">下一页</a>
           <p>
             Wget-1.25.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="samba" name="samba"></a>Samba-4.24.3
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Samba
         </h2>
@@ -62,9 +62,9 @@
           provides LAN browsing support).
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -224,7 +224,7 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/samba4">https://wiki.linuxfromscratch.org/blfs/wiki/samba4</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Samba
         </h2>
@@ -265,9 +265,9 @@ make</kbd></pre>
           be found in <code class="filename">./st/summary</code>.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Additionally, developer test suites are available. If you've
@@ -315,7 +315,7 @@ install -v -m644    examples/LDAP/samba* \
 install -v -m755    examples/LDAP/{get*,ol*} \
                     /etc/openldap/schema</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -390,11 +390,11 @@ install -v -m755    examples/LDAP/{get*,ol*} \
           minimum values which must be set.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Samba
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="samba-config" name="samba-config"></a>Config Files
           </h3>
@@ -402,7 +402,7 @@ install -v -m755    examples/LDAP/{get*,ol*} \
             /etc/samba/smb.conf
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Printing to SMB Clients
           </h3>
@@ -417,7 +417,7 @@ install -v -m755    examples/LDAP/{get*,ol*} \
           "command">install -dvm 755 /usr/lib/cups/backend &amp;&amp;
 ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -432,9 +432,9 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
             of <span class="application">Samba</span> installation.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               You may find it easier to copy the configuration parameters
@@ -453,7 +453,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id56341" name="id56341"></a>Scenario 1: Minimal
+                    <a id="id55804" name="id55804"></a>Scenario 1: Minimal
                     Standalone Client-Only Installation
                   </h5>
                 </div>
@@ -504,7 +504,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id56366" name="id56366"></a>Scenario 2: Standalone
+                    <a id="id55829" name="id55829"></a>Scenario 2: Standalone
                     File/Print Server
                   </h5>
                 </div>
@@ -597,7 +597,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id56403" name="id56403"></a>Advanced Requirements
+                    <a id="id55866" name="id55866"></a>Advanced Requirements
                   </h5>
                 </div>
               </div>
@@ -618,7 +618,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id56408" name="id56408"></a>Guest account
+                    <a id="id55871" name="id55871"></a>Guest account
                   </h5>
                 </div>
               </div>
@@ -664,7 +664,7 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -1575,24 +1575,24 @@ ln -v -sf /usr/bin/smbspool /usr/lib/cups/backend/smb</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="rsync.html" title="rsync-3.4.4">Prev</a>
+          <a accesskey="p" href="rsync.html" title="rsync-3.4.4">上一页</a>
           <p>
             rsync-3.4.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="wget.html" title="Wget-1.25.0">Next</a>
+          <a accesskey="n" href="wget.html" title="Wget-1.25.0">下一页</a>
           <p>
             Wget-1.25.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

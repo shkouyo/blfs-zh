@@ -5,91 +5,79 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Perl Module Dependencies
+      Perl 模块依赖
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="perl-modules.html" title=
-          "Perl Modules">Prev</a>
+          <a accesskey="p" href="perl-modules.html" title="Perl 模块">上一页</a>
           <p>
-            Perl Modules
+            Perl 模块
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="php.html" title="PHP-8.5.7">Next</a>
+          <a accesskey="n" href="php.html" title="PHP-8.5.7">下一页</a>
           <p>
             PHP-8.5.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="perl-deps" name="perl-deps"></a>Perl Module Dependencies
+      <a id="perl-deps" name="perl-deps"></a>Perl 模块依赖
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Perl Modules which are only required by other modules
+          仅被其他模块需要的 Perl 模块
         </h2>
         <p>
-          The modules on the previous page are referenced from other pages in
-          BLFS, but these modules are only in the book as dependencies of
-          those modules. If you use the CPAN install method, you do not need
-          to read this page.
+          前一页中的模块被 BLFS 中其他页面引用，但这些模块仅作为那些模块的依赖项出现在本书中。如果您使用 CPAN
+          安装方法，则无需阅读本页。
         </p>
         <p>
-          The BLFS editors pay much less attention to these modules, and the
-          versions will not be regularly reviewed. In all cases, only the
-          required or recommended dependencies are listed - there might be
-          other modules which allow more tests to be run, but omitting them
-          will still allow the tests to <code class="literal">PASS</code>.
+          BLFS
+          编辑对这些模块的关注要少得多，其版本也不会定期审查。在所有情况下，仅列出必需或推荐的依赖项——可能还有其他模块允许运行更多测试，但省略它们仍能使测试结果为
+          <code class="literal">PASS</code>。
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
-            The links on this page (to metacpan.org) should go to "known
-            good" versions, for which their dependencies are correct. If you
-            wish to use a later version, please check the Changes file at
-            https://metacpan.org - sometimes added dependencies are listed,
-            other times not. Some of these modules have very frequent
-            updates, often bringing different dependencies. The linked
-            metacpan.org versions below were known to work with the module
-            versions in BLFS when last reviewed.
+            本页中的链接（指向 metacpan.org）应指向“已知良好”的版本，其依赖关系是正确的。如果您希望使用更新的版本，请查看
+            https://metacpan.org 上的 Changes
+            文件——有时会列出新增的依赖项，有时则不会。其中一些模块更新非常频繁，通常会带来不同的依赖项。 下面链接的
+            metacpan.org 版本在最后一次审查时已知可与 BLFS 中的模块版本正常工作。
           </p>
           <p>
-            However, if you notice that the Changes file for a newer version
-            than is in the current development book reports a fix for a
-            security issue, please report this to either the blfs-dev or the
-            blfs-support list.
+            但是，如果您注意到当前开发版本书籍中更新的版本的 Changes 文件报告了安全问题的修复，请将此报告给 blfs-dev 或
+            blfs-support 邮件列表。
           </p>
           <p>
-            Similarly, if you discover that an updated module on the previous
-            page needs an extra dependency, please report this.
+            同样，如果您发现前一页中某个更新的模块需要额外的依赖项，也请报告此问题。
           </p>
         </div>
         <div class="itemizedlist">
@@ -710,12 +698,12 @@
           </ul>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-algorithm-diff" name=
           "perl-algorithm-diff"></a>Algorithm::Diff-1.201
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Algorithm::Diff
           </h3>
@@ -724,9 +712,9 @@
             files or lists.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -754,7 +742,7 @@
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Algorithm::Diff
           </h3>
@@ -772,12 +760,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-alien-build" name=
           "perl-alien-build"></a>Alien::Build-2.84
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Alien::Build
           </h3>
@@ -786,9 +774,9 @@ make test</kbd></pre>
             dependencies for CPAN.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -832,7 +820,7 @@ make test</kbd></pre>
             "File::chdir-0.1011">File-chdir-0.1011</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Alien::Build
           </h3>
@@ -850,12 +838,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-alien-build-plugin-download-gitlab" name=
           "perl-alien-build-plugin-download-gitlab"></a>Alien::Build::Plugin::Download::GitLab-0.01
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Alien::Build::Plugin::Download::GitLab
           </h3>
@@ -865,9 +853,9 @@ make test</kbd></pre>
             required library is already installed on the system).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -906,7 +894,7 @@ make test</kbd></pre>
             href="perl-modules.html#perl-uri" title="URI-5.35">URI-5.35</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Alien::Build::Plugin::Download::GitLab
           </h3>
@@ -924,12 +912,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-alien-libxml2" name=
           "perl-alien-libxml2"></a>Alien::Libxml2-0.20
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Alien::Libxml2
           </h3>
@@ -941,9 +929,9 @@ make test</kbd></pre>
             "libxml2-2.15.3">libxml2-2.15.3</a>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -993,7 +981,7 @@ make test</kbd></pre>
             "Test::Simple-1.302222">Test-Simple-1.302222</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Alien::Libxml2
           </h3>
@@ -1011,11 +999,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-b-cow" name="perl-b-cow"></a>B::COW-0.007
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to B::COW
           </h3>
@@ -1024,9 +1012,9 @@ make test</kbd></pre>
             Copy On Write.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1054,7 +1042,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of B::COW
           </h3>
@@ -1072,12 +1060,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-b-hooks-endofscope" name=
           "perl-b-hooks-endofscope"></a>B::Hooks::EndOfScope-0.28
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to B::Hooks::EndOfScope
           </h3>
@@ -1086,9 +1074,9 @@ make test</kbd></pre>
             finishes compiling the surrounding scope.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1139,7 +1127,7 @@ make test</kbd></pre>
             "Try::Tiny-0.32">Try-Tiny-0.32</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of B::Hooks::EndOfScope
           </h3>
@@ -1157,12 +1145,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-business-isbn-data" name=
           "perl-business-isbn-data"></a>Business::ISBN::Data-20260617.001
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Business-ISBN-Data
           </h3>
@@ -1170,9 +1158,9 @@ make test</kbd></pre>
             Business-ISBN-Data is a data pack for Business::ISBN.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1200,14 +1188,14 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Business-ISBN-Data
           </h3>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               A harmless warning may be output during the creation of the
@@ -1229,12 +1217,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-capture-tiny" name=
           "perl-capture-tiny"></a>Capture::Tiny-0.50
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Capture::Tiny
           </h3>
@@ -1244,9 +1232,9 @@ make test</kbd></pre>
             programs.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1274,7 +1262,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Capture::Tiny
           </h3>
@@ -1292,12 +1280,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-class-data-inheritable" name=
           "perl-class-data-inheritable"></a>Class::Data::Inheritable-0.10
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Class::Data::Inheritable
           </h3>
@@ -1307,9 +1295,9 @@ make test</kbd></pre>
             class as a whole (instead of about a single object).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1337,7 +1325,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Class::Data::Inheritable
           </h3>
@@ -1355,12 +1343,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-class-inspector" name=
           "perl-class-inspector"></a>Class::Inspector-1.36
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Class::Inspector
           </h3>
@@ -1369,9 +1357,9 @@ make test</kbd></pre>
             class.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1399,7 +1387,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Class::Inspector
           </h3>
@@ -1417,12 +1405,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-class-singleton" name=
           "perl-class-singleton"></a>Class::Singleton-1.6
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Class::Singleton
           </h3>
@@ -1433,9 +1421,9 @@ make test</kbd></pre>
             derived.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1463,7 +1451,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Class::Singleton
           </h3>
@@ -1481,12 +1469,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-class-tiny" name=
           "perl-class-tiny"></a>Class::Tiny-1.008
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Class::Tiny
           </h3>
@@ -1494,9 +1482,9 @@ make test</kbd></pre>
             Class::Tiny offers a minimalist class construction kit.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1524,7 +1512,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Class::Tiny
           </h3>
@@ -1542,11 +1530,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-clone" name="perl-clone"></a>Clone-0.50
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Clone
           </h3>
@@ -1554,9 +1542,9 @@ make test</kbd></pre>
             Clone recursively copies perl datatypes.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1594,7 +1582,7 @@ make test</kbd></pre>
             "B::COW-0.007">B-COW-0.007</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Clone
           </h3>
@@ -1612,11 +1600,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-clone-pp" name="perl-clone-pp"></a>Clone::PP-1.08
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Clone::PP
           </h3>
@@ -1625,9 +1613,9 @@ make test</kbd></pre>
             copy of a given Perl data structure.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1655,7 +1643,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Clone::PP
           </h3>
@@ -1673,12 +1661,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-config-autoconf" name=
           "perl-config-autoconf"></a>Config::AutoConf-0.320
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Config::AutoConf
           </h3>
@@ -1688,9 +1676,9 @@ make test</kbd></pre>
             perl.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1730,7 +1718,7 @@ make test</kbd></pre>
             "File::Slurper-0.014">File-Slurper-0.014</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Config::AutoConf
           </h3>
@@ -1748,12 +1736,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-cpan-meta-check" name=
           "perl-cpan-meta-check"></a>CPAN::Meta::Check-0.018
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to CPAN::Meta::Check
           </h3>
@@ -1762,9 +1750,9 @@ make test</kbd></pre>
             CPAN::Meta object are present.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1792,7 +1780,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of CPAN::Meta::Check
           </h3>
@@ -1810,11 +1798,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-datetime" name="perl-datetime"></a>DateTime-1.66
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to DateTime
           </h3>
@@ -1822,9 +1810,9 @@ make test</kbd></pre>
             DateTime is a date and time object for perl.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1877,7 +1865,7 @@ make test</kbd></pre>
             "Test::Without::Module-0.23">Test-Without-Module-0.23</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of DateTime
           </h3>
@@ -1895,12 +1883,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-datetime-format-strptime" name=
           "perl-datetime-format-strptime"></a>DateTime::Format::Strptime-1.80
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to DateTime::Format::Strptime
           </h3>
@@ -1911,9 +1899,9 @@ make test</kbd></pre>
             object.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1951,7 +1939,7 @@ make test</kbd></pre>
             "DateTime-1.66">DateTime-1.66</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of DateTime::Format::Strptime
           </h3>
@@ -1969,12 +1957,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-datetime-locale" name=
           "perl-datetime-locale"></a>DateTime::Locale-1.45
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to DateTime::Locale
           </h3>
@@ -1984,9 +1972,9 @@ make test</kbd></pre>
             "DateTime-1.66">DateTime-1.66</a>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2043,7 +2031,7 @@ make test</kbd></pre>
             "Test::File::ShareDir-1.001002">Test-File-ShareDir-1.001002</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of DateTime::Locale
           </h3>
@@ -2061,12 +2049,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-datetime-timezone" name=
           "perl-datetime-timezone"></a>DateTime::TimeZone-2.68
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to DateTime::TimeZone
           </h3>
@@ -2076,9 +2064,9 @@ make test</kbd></pre>
             which describes the offset from GMT for a given time period.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2132,7 +2120,7 @@ make test</kbd></pre>
             dependency) has already been installed.
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of DateTime::TimeZone
           </h3>
@@ -2150,12 +2138,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-devel-stacktrace" name=
           "perl-devel-stacktrace"></a>Devel::StackTrace-2.05
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Devel::StackTrace
           </h3>
@@ -2163,9 +2151,9 @@ make test</kbd></pre>
             Devel::StackTrace provides an object representing a stack trace.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2193,7 +2181,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Devel::StackTrace
           </h3>
@@ -2211,12 +2199,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-dist-checkconflicts" name=
           "perl-dist-checkconflicts"></a>Dist::CheckConflicts-0.11
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Dist::CheckConflicts
           </h3>
@@ -2226,9 +2214,9 @@ make test</kbd></pre>
             distributions.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2273,7 +2261,7 @@ make test</kbd></pre>
             "Test::Fatal-0.018">Test-Fatal-0.018</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Dist::CheckConflicts
           </h3>
@@ -2291,12 +2279,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-encode-locale" name=
           "perl-encode-locale"></a>Encode::Locale-1.05
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Encode::Locale
           </h3>
@@ -2304,9 +2292,9 @@ make test</kbd></pre>
             Encode::Locale determines the locale encoding.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2334,7 +2322,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Encode::Locale
           </h3>
@@ -2352,12 +2340,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-eval-closure" name=
           "perl-eval-closure"></a>Eval::Closure-0.14
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Eval::Closure
           </h3>
@@ -2366,9 +2354,9 @@ make test</kbd></pre>
             eval.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2408,7 +2396,7 @@ make test</kbd></pre>
             "Test::Requires-0.11">Test-Requires-0.11</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Eval::Closure
           </h3>
@@ -2426,12 +2414,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-exception-class" name=
           "perl-exception-class"></a>Exception::Class-1.45
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Exception::Class
           </h3>
@@ -2440,9 +2428,9 @@ make test</kbd></pre>
             <span class="application">Perl</span>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2483,7 +2471,7 @@ make test</kbd></pre>
             title="Devel::StackTrace-2.05">Devel-StackTrace-2.05</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Exception::Class
           </h3>
@@ -2501,12 +2489,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-exporter-tiny" name=
           "perl-exporter-tiny"></a>Exporter::Tiny-1.006003
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Exporter::Tiny
           </h3>
@@ -2515,9 +2503,9 @@ make test</kbd></pre>
             but only core dependencies.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2545,7 +2533,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Exporter::Tiny
           </h3>
@@ -2563,12 +2551,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-extutils-config" name=
           "perl-extutils-config"></a>ExtUtils::Config-0.010
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to ExtUtils::Config
           </h3>
@@ -2576,9 +2564,9 @@ make test</kbd></pre>
             ExtUtils::Config is a wrapper for Perl's configuration system.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2606,7 +2594,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of ExtUtils::Config
           </h3>
@@ -2624,12 +2612,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-extutils-helpers" name=
           "perl-extutils-helpers"></a>ExtUtils::Helpers-0.028
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to ExtUtils::Helpers
           </h3>
@@ -2638,9 +2626,9 @@ make test</kbd></pre>
             module builders.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2668,7 +2656,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of ExtUtils::Helpers
           </h3>
@@ -2686,12 +2674,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-extutils-installpaths" name=
           "perl-extutils-installpaths"></a>ExtUtils::InstallPaths-0.015
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to ExtUtils::InstallPaths
           </h3>
@@ -2700,9 +2688,9 @@ make test</kbd></pre>
             paths.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2730,7 +2718,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of ExtUtils::InstallPaths
           </h3>
@@ -2748,12 +2736,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-extutils-libbuilder" name=
           "perl-extutils-libbuilder"></a>ExtUtils::LibBuilder-0.09
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to ExtUtils::LibBuilder
           </h3>
@@ -2761,9 +2749,9 @@ make test</kbd></pre>
             ExtUtils::LibBuilder is a tool to build C libraries.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2801,7 +2789,7 @@ make test</kbd></pre>
             "Module::Build-0.4234">Module-Build-0.4234</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of ExtUtils::LibBuilder
           </h3>
@@ -2819,12 +2807,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">./Build install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-ffi-checklib" name=
           "perl-ffi-checklib"></a>FFI::CheckLib-0.31
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to FFI::CheckLib
           </h3>
@@ -2833,9 +2821,9 @@ make test</kbd></pre>
             available for FFI (Foreign Function Interface) to use.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2879,7 +2867,7 @@ make test</kbd></pre>
             "Test::Simple-1.302222">Test-Simple-1.302222</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of FFI::CheckLib
           </h3>
@@ -2897,12 +2885,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-chdir" name=
           "perl-file-chdir"></a>File::chdir-0.1011
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::chdir
           </h3>
@@ -2917,9 +2905,9 @@ make test</kbd></pre>
             alternative, $CWD and @CWD.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2947,7 +2935,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::chdir
           </h3>
@@ -2965,12 +2953,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-copy-recursive" name=
           "perl-file-copy-recursive"></a>File::Copy::Recursive-0.45
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::Copy::Recursive
           </h3>
@@ -2980,9 +2968,9 @@ make test</kbd></pre>
             or directory's mode.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3028,7 +3016,7 @@ make test</kbd></pre>
             "Test::Warnings-0.038">Test-Warnings-0.038</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::Copy::Recursive
           </h3>
@@ -3046,12 +3034,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-find-rule" name=
           "perl-file-find-rule"></a>File::Find::Rule-0.35
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::Find::Rule
           </h3>
@@ -3061,9 +3049,9 @@ make test</kbd></pre>
             directories.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3103,7 +3091,7 @@ make test</kbd></pre>
             "Text::Glob-0.11">Text-Glob-0.11</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::Find::Rule
           </h3>
@@ -3120,7 +3108,7 @@ make test</kbd></pre>
           </p>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3161,12 +3149,12 @@ make test</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-listing" name=
           "perl-file-listing"></a>File::Listing-6.16
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::Listing
           </h3>
@@ -3174,9 +3162,9 @@ make test</kbd></pre>
             File::Listing parses a directory listing.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3214,7 +3202,7 @@ make test</kbd></pre>
             "HTTP::Date-6.06">HTTP-Date-6.06</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::Listing
           </h3>
@@ -3232,12 +3220,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-sharedir" name=
           "perl-file-sharedir"></a>File::ShareDir-1.118
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::ShareDir
           </h3>
@@ -3246,9 +3234,9 @@ make test</kbd></pre>
             installed by File::ShareDir::Install.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3288,7 +3276,7 @@ make test</kbd></pre>
             "File::ShareDir::Install-0.14">File-ShareDir-Install-0.14</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::ShareDir
           </h3>
@@ -3306,12 +3294,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-file-sharedir-install" name=
           "perl-file-sharedir-install"></a>File::ShareDir::Install-0.14
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to File::ShareDir::Install
           </h3>
@@ -3320,9 +3308,9 @@ make test</kbd></pre>
             files from a distribution.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3350,7 +3338,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of File::ShareDir::Install
           </h3>
@@ -3368,12 +3356,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-html-tagset" name=
           "perl-html-tagset"></a>HTML::Tagset-3.24
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTML::Tagset
           </h3>
@@ -3381,9 +3369,9 @@ make test</kbd></pre>
             HTML::Tagset provides several data tables useful in parsing HTML.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3411,7 +3399,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTML::Tagset
           </h3>
@@ -3429,12 +3417,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-http-cookiejar" name=
           "perl-http-cookiejar"></a>HTTP::CookieJar-0.014
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTTP::CookieJar
           </h3>
@@ -3442,9 +3430,9 @@ make test</kbd></pre>
             HTTP::CookieJar provides a minimalist HTTP user agent cookie jar.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3492,7 +3480,7 @@ make test</kbd></pre>
             href="perl-modules.html#perl-uri" title="URI-5.35">URI-5.35</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTTP::CookieJar
           </h3>
@@ -3510,12 +3498,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-http-cookies" name=
           "perl-http-cookies"></a>HTTP::Cookies-6.11
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTTP::Cookies
           </h3>
@@ -3528,9 +3516,9 @@ make test</kbd></pre>
             about.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3568,7 +3556,7 @@ make test</kbd></pre>
             "HTTP::Message-7.02">HTTP-Message-7.02</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTTP::Cookies
           </h3>
@@ -3586,11 +3574,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-http-date" name="perl-http-date"></a>HTTP::Date-6.06
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTTP::Date
           </h3>
@@ -3599,9 +3587,9 @@ make test</kbd></pre>
             by the HTTP protocol and also with some other date formats.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3640,7 +3628,7 @@ make test</kbd></pre>
             other than GMT and numeric)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTTP::Date
           </h3>
@@ -3658,12 +3646,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-http-message" name=
           "perl-http-message"></a>HTTP::Message-7.02
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTTP::Message
           </h3>
@@ -3672,9 +3660,9 @@ make test</kbd></pre>
             objects.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3731,7 +3719,7 @@ make test</kbd></pre>
             "Try::Tiny-0.32">Try-Tiny-0.32</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTTP::Message
           </h3>
@@ -3749,12 +3737,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-http-negotiate" name=
           "perl-http-negotiate"></a>HTTP::Negotiate-6.01
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to HTTP::Negotiate
           </h3>
@@ -3763,9 +3751,9 @@ make test</kbd></pre>
             content negotiation algorithm.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3803,7 +3791,7 @@ make test</kbd></pre>
             "HTTP::Message-7.02">HTTP-Message-7.02</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of HTTP::Negotiate
           </h3>
@@ -3821,11 +3809,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-io-html" name="perl-io-html"></a>IO::HTML-1.004
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to IO::HTML
           </h3>
@@ -3834,9 +3822,9 @@ make test</kbd></pre>
             detection.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3864,7 +3852,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of IO::HTML
           </h3>
@@ -3882,12 +3870,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-ipc-system-simple" name=
           "perl-ipc-system-simple"></a>IPC::System::Simple-1.30
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to IPC::System::Simple
           </h3>
@@ -3896,9 +3884,9 @@ make test</kbd></pre>
             commands and producing detailed diagnostics.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3926,7 +3914,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of IPC::System::Simple
           </h3>
@@ -3944,12 +3932,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-list-moreutils-xs" name=
           "perl-list-moreutils-xs"></a>List::MoreUtils::XS-0.430
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to List::MoreUtils::XS
           </h3>
@@ -3957,9 +3945,9 @@ make test</kbd></pre>
             List::MoreUtils::XS is a compiled backend for List::MoreUtils
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3987,7 +3975,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of List::MoreUtils::XS
           </h3>
@@ -4005,12 +3993,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-list-someutils" name=
           "perl-list-someutils"></a>List::SomeUtils-0.59
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to List::SomeUtils
           </h3>
@@ -4018,9 +4006,9 @@ make test</kbd></pre>
             List::SomeUtils provides the stuff missing in List::Util.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4061,7 +4049,7 @@ make test</kbd></pre>
             title="List::SomeUtils::XS-0.59">List-SomeUtils-XS-0.59</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of List::SomeUtils
           </h3>
@@ -4079,12 +4067,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-list-someutils-xs" name=
           "perl-list-someutils-xs"></a>List::SomeUtils::XS-0.59
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to List::SomeUtils::XS
           </h3>
@@ -4093,9 +4081,9 @@ make test</kbd></pre>
             implementation for List::SomeUtils.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4135,7 +4123,7 @@ make test</kbd></pre>
             "Test::Warnings-0.038">Test-Warnings-0.038</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of List::SomeUtils::XS
           </h3>
@@ -4153,12 +4141,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-list-utilsby" name=
           "perl-list-utilsby"></a>List::UtilsBy-0.12
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to List::UtilsBy
           </h3>
@@ -4167,9 +4155,9 @@ make test</kbd></pre>
             functions.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4197,7 +4185,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of List::UtilsBy
           </h3>
@@ -4215,12 +4203,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-lwp-mediatypes" name=
           "perl-lwp-mediatypes"></a>LWP::MediaTypes-6.04
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to LWP::MediaTypes
           </h3>
@@ -4229,9 +4217,9 @@ make test</kbd></pre>
             file or URL.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4269,7 +4257,7 @@ make test</kbd></pre>
             "Test::Fatal-0.018">Test-Fatal-0.018</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of LWP::MediaTypes
           </h3>
@@ -4287,12 +4275,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-mime-base32" name=
           "perl-mime-base32"></a>MIME::Base32-1.303
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to MIME::Base32
           </h3>
@@ -4300,9 +4288,9 @@ make test</kbd></pre>
             MIME::Base32 is for Encoding/Decoding data.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4330,7 +4318,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of MIME::Base32
           </h3>
@@ -4348,12 +4336,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-mime-charset" name=
           "perl-mime-charset"></a>MIME::Charset-1.013.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to MIME::Charset
           </h3>
@@ -4362,9 +4350,9 @@ make test</kbd></pre>
             MIME messages on the internet, such as their encodings.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4408,7 +4396,7 @@ make test</kbd></pre>
             "biber-2.21">biber-2.21</a>)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of MIME::Charset
           </h3>
@@ -4425,7 +4413,7 @@ make test</kbd></pre>
           </p>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4438,12 +4426,12 @@ make test</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-module-build-tiny" name=
           "perl-module-build-tiny"></a>Module::Build::Tiny-0.053
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Module::Build::Tiny
           </h3>
@@ -4453,9 +4441,9 @@ make test</kbd></pre>
             "Module::Build-0.4234">Module-Build-0.4234</a>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4498,7 +4486,7 @@ make test</kbd></pre>
             "ExtUtils::InstallPaths-0.015">ExtUtils-InstallPaths-0.015</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Module::Build::Tiny
           </h3>
@@ -4516,12 +4504,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">./Build install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-module-implementation" name=
           "perl-module-implementation"></a>Module::Implementation-0.09
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Module::Implementation
           </h3>
@@ -4531,9 +4519,9 @@ make test</kbd></pre>
             Perl, or an implementation for a given OS).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4582,7 +4570,7 @@ make test</kbd></pre>
             "Test::Requires-0.11">Test-Requires-0.11</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Module::Implementation
           </h3>
@@ -4600,12 +4588,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-module-pluggable" name=
           "perl-module-pluggable"></a>Module::Pluggable-6.3
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Module::Pluggable
           </h3>
@@ -4614,9 +4602,9 @@ make test</kbd></pre>
             module.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4644,7 +4632,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Module::Pluggable
           </h3>
@@ -4662,12 +4650,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-module-runtime" name=
           "perl-module-runtime"></a>Module::Runtime-0.018
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Module::Runtime
           </h3>
@@ -4676,9 +4664,9 @@ make test</kbd></pre>
             of <span class="application">Perl</span> modules.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4706,7 +4694,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Module::Runtime
           </h3>
@@ -4729,11 +4717,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-mro-compat" name="perl-mro-compat"></a>MRO::Compat-0.15
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to MRO::Compat
           </h3>
@@ -4744,9 +4732,9 @@ make test</kbd></pre>
             earlier versions of Perl.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4774,7 +4762,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of MRO::Compat
           </h3>
@@ -4792,12 +4780,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-namespace-autoclean" name=
           "perl-namespace-autoclean"></a>namespace::autoclean-0.31
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to namespace::autoclean
           </h3>
@@ -4808,9 +4796,9 @@ make test</kbd></pre>
             anything that looks like a method.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4855,7 +4843,7 @@ make test</kbd></pre>
             "Test::Needs-0.002010">Test-Needs-0.002010</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of namespace::autoclean
           </h3>
@@ -4873,12 +4861,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-namespace-clean" name=
           "perl-namespace-clean"></a>namespace::clean-0.27
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to namespace::clean
           </h3>
@@ -4887,9 +4875,9 @@ make test</kbd></pre>
             namespace.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4929,7 +4917,7 @@ make test</kbd></pre>
             "Package::Stash-0.40">Package-Stash-0.40</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of namespace::clean
           </h3>
@@ -4947,11 +4935,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-net-http" name="perl-net-http"></a>Net::HTTP-6.24
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Net::HTTP
           </h3>
@@ -4960,9 +4948,9 @@ make test</kbd></pre>
             the class represents a connection to an HTTP server.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5000,7 +4988,7 @@ make test</kbd></pre>
             "URI-5.35">URI-5.35</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Net::HTTP
           </h3>
@@ -5018,11 +5006,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-net-ssleay" name="perl-net-ssleay"></a>Net::SSLeay-1.96
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Net::SSLeay
           </h3>
@@ -5030,9 +5018,9 @@ make test</kbd></pre>
             Net::SSLeay is a Perl extension for using OpenSSL.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5074,7 +5062,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Net::SSLeay
           </h3>
@@ -5096,7 +5084,7 @@ make test</kbd></pre>
           </p>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5108,12 +5096,12 @@ make test</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-number-compare" name=
           "perl-number-compare"></a>Number::Compare-0.03
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Number::Compare
           </h3>
@@ -5123,9 +5111,9 @@ make test</kbd></pre>
             It understands IEC standard magnitudes (k, ki, m, mi, g, gi).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5153,7 +5141,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Number::Compare
           </h3>
@@ -5171,12 +5159,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-package-stash" name=
           "perl-package-stash"></a>Package::Stash-0.40
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Package::Stash
           </h3>
@@ -5186,9 +5174,9 @@ make test</kbd></pre>
             module hides all of that behind a simple API.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5240,7 +5228,7 @@ make test</kbd></pre>
             "Test::Needs-0.002010">Test-Needs-0.002010</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Package::Stash
           </h3>
@@ -5258,12 +5246,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-params-validate" name=
           "perl-params-validate"></a>Params::Validate-1.31
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Params::Validate
           </h3>
@@ -5272,9 +5260,9 @@ make test</kbd></pre>
             parameters to an arbitrary level of specificity.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5323,7 +5311,7 @@ make test</kbd></pre>
             "Test::Requires-0.11">Test-Requires-0.11</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Params::Validate
           </h3>
@@ -5341,12 +5329,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">./Build install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-params-validationcompiler" name=
           "perl-params-validationcompiler"></a>Params::ValidationCompiler-0.31
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Params::ValidationCompiler
           </h3>
@@ -5355,9 +5343,9 @@ make test</kbd></pre>
             parameter validator.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5407,7 +5395,7 @@ make test</kbd></pre>
             "Test2::Plugin::NoWarnings-0.10">Test2-Plugin-NoWarnings-0.10</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Params::ValidationCompiler
           </h3>
@@ -5425,11 +5413,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-path-tiny" name="perl-path-tiny"></a>Path::Tiny-0.150
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Path::Tiny
           </h3>
@@ -5438,9 +5426,9 @@ make test</kbd></pre>
             paths.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5468,7 +5456,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Path::Tiny
           </h3>
@@ -5486,12 +5474,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-role-tiny" name=
           "perl-role-tiny"></a>Role::Tiny-2.002005
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Role::Tiny
           </h3>
@@ -5499,9 +5487,9 @@ make test</kbd></pre>
             Role::Tiny is a minimalist role composition tool.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5529,7 +5517,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Role::Tiny
           </h3>
@@ -5547,12 +5535,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-scope-guard" name=
           "perl-scope-guard"></a>Scope::Guard-0.21
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Scope::Guard
           </h3>
@@ -5561,9 +5549,9 @@ make test</kbd></pre>
             other forms of resource management at the end of a scope.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5591,7 +5579,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Scope::Guard
           </h3>
@@ -5609,11 +5597,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-specio" name="perl-specio"></a>Specio-0.53
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Specio
           </h3>
@@ -5622,9 +5610,9 @@ make test</kbd></pre>
             coercion, along with syntax sugar for declaring them.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5695,7 +5683,7 @@ make test</kbd></pre>
             (for the test suite)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Specio
           </h3>
@@ -5713,12 +5701,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-sub-exporter-progressive" name=
           "perl-sub-exporter-progressive"></a>Sub::Exporter::Progressive-0.001013
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sub::Exporter::Progressive
           </h3>
@@ -5726,9 +5714,9 @@ make test</kbd></pre>
             Sub::Exporter::Progressive is a wrapper for Sub::Exporter.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5756,7 +5744,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sub::Exporter::Progressive
           </h3>
@@ -5774,12 +5762,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-sub-quote" name=
           "perl-sub-quote"></a>Sub::Quote-2.006009
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sub::Quote
           </h3>
@@ -5787,9 +5775,9 @@ make test</kbd></pre>
             Sub::Quote provides ways to generate subroutines from strings.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5817,7 +5805,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sub::Quote
           </h3>
@@ -5835,12 +5823,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-sub-uplevel" name=
           "perl-sub-uplevel"></a>Sub::Uplevel-0.2800
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sub::Uplevel
           </h3>
@@ -5849,9 +5837,9 @@ make test</kbd></pre>
             higher stack frame.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5879,7 +5867,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sub::Uplevel
           </h3>
@@ -5897,12 +5885,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-term-table" name=
           "perl-term-table"></a>Term::Table-0.028
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Term::Table
           </h3>
@@ -5912,9 +5900,9 @@ make test</kbd></pre>
             wrong.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5952,7 +5940,7 @@ make test</kbd></pre>
             "Test::Simple-1.302222">Test-Simple-1.302222</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Term::Table
           </h3>
@@ -5970,11 +5958,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-deep" name="perl-test-deep"></a>Test::Deep-1.205
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Deep
           </h3>
@@ -5983,9 +5971,9 @@ make test</kbd></pre>
             you got is the result you were expecting.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6013,7 +6001,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Deep
           </h3>
@@ -6031,12 +6019,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-exception" name=
           "perl-test-exception"></a>Test::Exception-0.43
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Exception
           </h3>
@@ -6045,9 +6033,9 @@ make test</kbd></pre>
             exception based code.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6085,7 +6073,7 @@ make test</kbd></pre>
             "Sub::Uplevel-0.2800">Sub-Uplevel-0.2800</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Exception
           </h3>
@@ -6103,12 +6091,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-fatal" name=
           "perl-test-fatal"></a>Test::Fatal-0.018
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Fatal
           </h3>
@@ -6117,9 +6105,9 @@ make test</kbd></pre>
             which throws exceptions.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6157,7 +6145,7 @@ make test</kbd></pre>
             "Try::Tiny-0.32">Try-Tiny-0.32</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Fatal
           </h3>
@@ -6175,11 +6163,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-file" name="perl-test-file"></a>Test::File-1.995
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::File
           </h3>
@@ -6188,9 +6176,9 @@ make test</kbd></pre>
             attributes.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6228,7 +6216,7 @@ make test</kbd></pre>
             "Test::utf8-1.03">Test-utf8-1.03</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::File
           </h3>
@@ -6246,12 +6234,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-file-sharedir" name=
           "perl-test-file-sharedir"></a>Test::File::ShareDir-1.001002
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::File::ShareDir
           </h3>
@@ -6266,9 +6254,9 @@ make test</kbd></pre>
             system where you are testing.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6321,7 +6309,7 @@ make test</kbd></pre>
             "Test::Fatal-0.018">Test-Fatal-0.018</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::File::ShareDir
           </h3>
@@ -6339,12 +6327,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-leaktrace" name=
           "perl-test-leaktrace"></a>Test::LeakTrace-0.17
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::LeakTrace
           </h3>
@@ -6352,9 +6340,9 @@ make test</kbd></pre>
             Test::LeakTrace traces memory leaks.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6382,7 +6370,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::LeakTrace
           </h3>
@@ -6400,12 +6388,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-needs" name=
           "perl-test-needs"></a>Test::Needs-0.002010
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Needs
           </h3>
@@ -6413,9 +6401,9 @@ make test</kbd></pre>
             Test::Needs skips tests if a requested module is not present.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6443,7 +6431,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Needs
           </h3>
@@ -6461,12 +6449,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-requires" name=
           "perl-test-requires"></a>Test::Requires-0.11
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Requires
           </h3>
@@ -6475,9 +6463,9 @@ make test</kbd></pre>
             be loaded, and if not it skips all the current tests.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6505,7 +6493,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Requires
           </h3>
@@ -6523,12 +6511,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-requiresinternet" name=
           "perl-test-requiresinternet"></a>Test::RequiresInternet-0.05
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::RequiresInternet
           </h3>
@@ -6538,9 +6526,9 @@ make test</kbd></pre>
             non-local Internet resources.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6568,7 +6556,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::RequiresInternet
           </h3>
@@ -6586,12 +6574,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-simple" name=
           "perl-test-simple"></a>Test::Simple-1.302222
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Simple
           </h3>
@@ -6599,9 +6587,9 @@ make test</kbd></pre>
             Test::Simple contains basic utilities for writing tests.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6639,7 +6627,7 @@ make test</kbd></pre>
             "Term::Table-0.028">Term-Table-0.028</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Simple
           </h3>
@@ -6657,11 +6645,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-utf8" name="perl-test-utf8"></a>Test::utf8-1.03
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::utf8
           </h3>
@@ -6670,9 +6658,9 @@ make test</kbd></pre>
             strings in <span class="application">Perl</span>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6700,7 +6688,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::utf8
           </h3>
@@ -6718,12 +6706,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-warnings" name=
           "perl-test-warnings"></a>Test::Warnings-0.038
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Warnings
           </h3>
@@ -6731,9 +6719,9 @@ make test</kbd></pre>
             Test::Warnings tests for warnings and the lack of them.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6761,7 +6749,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Warnings
           </h3>
@@ -6779,12 +6767,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test-without-module" name=
           "perl-test-without-module"></a>Test::Without::Module-0.23
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test::Without::Module
           </h3>
@@ -6795,9 +6783,9 @@ make test</kbd></pre>
             module is not installed.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6825,7 +6813,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test::Without::Module
           </h3>
@@ -6843,12 +6831,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-test2-plugin-nowarnings" name=
           "perl-test2-plugin-nowarnings"></a>Test2::Plugin::NoWarnings-0.10
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Test2::Plugin::NoWarnings
           </h3>
@@ -6857,9 +6845,9 @@ make test</kbd></pre>
             warnings while they run.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6906,7 +6894,7 @@ make test</kbd></pre>
             "Module::Pluggable-6.3">Module-Pluggable-6.3</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Test2::Plugin::NoWarnings
           </h3>
@@ -6924,12 +6912,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-text-csv_xs" name=
           "perl-text-csv_xs"></a>Text::CSV_XS-1.62
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Text::CSV_XS
           </h3>
@@ -6938,9 +6926,9 @@ make test</kbd></pre>
             decomposition of comma-separated values.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6968,7 +6956,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Text::CSV_XS
           </h3>
@@ -6986,11 +6974,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-text-diff" name="perl-text-diff"></a>Text::Diff-1.45
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Text::Diff
           </h3>
@@ -6998,9 +6986,9 @@ make test</kbd></pre>
             Text::Diff performs diffs on files and record sets.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7038,7 +7026,7 @@ make test</kbd></pre>
             "Algorithm::Diff-1.201">Algorithm-Diff-1.201</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Text::Diff
           </h3>
@@ -7056,11 +7044,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-text-glob" name="perl-text-glob"></a>Text::Glob-0.11
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Text::Glob
           </h3>
@@ -7071,9 +7059,9 @@ make test</kbd></pre>
             names from a filesystem.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7101,7 +7089,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Text::Glob
           </h3>
@@ -7119,11 +7107,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-tie-cycle" name="perl-tie-cycle"></a>Tie::Cycle-1.233
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Tie::Cycle
           </h3>
@@ -7134,9 +7122,9 @@ make test</kbd></pre>
             that for you.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7164,7 +7152,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Tie::Cycle
           </h3>
@@ -7182,11 +7170,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-timedate" name="perl-timedate"></a>TimeDate-2.35
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to TimeDate
           </h3>
@@ -7194,9 +7182,9 @@ make test</kbd></pre>
             TimeDate provides miscellaneous timezone manipulation routines.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7224,7 +7212,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of TimeDate
           </h3>
@@ -7242,11 +7230,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-try-tiny" name="perl-try-tiny"></a>Try::Tiny-0.32
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Try::Tiny
           </h3>
@@ -7258,9 +7246,9 @@ make test</kbd></pre>
             "application">Perl</span> and common mistakes.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7298,7 +7286,7 @@ make test</kbd></pre>
             "Capture::Tiny-0.50">Capture-Tiny-0.50</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Try::Tiny
           </h3>
@@ -7316,12 +7304,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-variable-magic" name=
           "perl-variable-magic"></a>Variable::Magic-0.64
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Variable::Magic
           </h3>
@@ -7330,9 +7318,9 @@ make test</kbd></pre>
             can add your own magic to any variable.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7360,7 +7348,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Variable::Magic
           </h3>
@@ -7378,12 +7366,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-www-robotrules" name=
           "perl-www-robotrules"></a>WWW::RobotRules-6.03
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to WWW::RobotRules
           </h3>
@@ -7393,9 +7381,9 @@ make test</kbd></pre>
             access to a given URL is prohibited.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7434,7 +7422,7 @@ make test</kbd></pre>
             module first and install that later)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of WWW::RobotRules
           </h3>
@@ -7452,12 +7440,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-xml-libxml" name=
           "perl-xml-libxml"></a>XML::LibXML-2.0213
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to XML::LibXML
           </h3>
@@ -7466,9 +7454,9 @@ make test</kbd></pre>
             "libxml2.html" title="libxml2-2.15.3">libxml2-2.15.3</a>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7508,7 +7496,7 @@ make test</kbd></pre>
             "XML::SAX-1.02">XML-SAX-1.02</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of XML::LibXML
           </h3>
@@ -7526,12 +7514,12 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-xml-namespacesupport" name=
           "perl-xml-namespacesupport"></a>XML::NamespaceSupport-1.12
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to XML::NamespaceSupport
           </h3>
@@ -7540,9 +7528,9 @@ make test</kbd></pre>
             XML names from within any application that may need them.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7570,7 +7558,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of XML::NamespaceSupport
           </h3>
@@ -7588,11 +7576,11 @@ make test</kbd></pre>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-xml-sax" name="perl-xml-sax"></a>XML::SAX-1.02
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to XML::SAX
           </h3>
@@ -7603,9 +7591,9 @@ make test</kbd></pre>
             user's system.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7647,7 +7635,7 @@ make test</kbd></pre>
             "XML::SAX::Base-1.09">XML-SAX-Base-1.09</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of XML::SAX
           </h3>
@@ -7664,7 +7652,7 @@ make test</kbd></pre>
           </p>
           <pre class="root"><kbd class="command">make install</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7676,12 +7664,12 @@ make test</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="perl-xml-sax-base" name=
           "perl-xml-sax-base"></a>XML::SAX::Base-1.09
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to XML::SAX::Base
           </h3>
@@ -7690,9 +7678,9 @@ make test</kbd></pre>
             PerlSAX drivers and filters.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7720,7 +7708,7 @@ make test</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of XML::SAX-Base
           </h3>
@@ -7742,25 +7730,24 @@ make test</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="perl-modules.html" title=
-          "Perl Modules">Prev</a>
+          <a accesskey="p" href="perl-modules.html" title="Perl 模块">上一页</a>
           <p>
-            Perl Modules
+            Perl 模块
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="php.html" title="PHP-8.5.7">Next</a>
+          <a accesskey="n" href="php.html" title="PHP-8.5.7">下一页</a>
           <p>
             PHP-8.5.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,67 +5,60 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Important Notes About Upgrading Database Server Software
+      关于升级数据库服务器软件的重要说明
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;22.&nbsp;Databases
+        第&nbsp;22&nbsp;章&nbsp;数据库
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="databases.html" title="Databases">Prev</a>
+          <a accesskey="p" href="databases.html" title="数据库">上一页</a>
           <p>
-            Databases
+            数据库
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lmdb.html" title="lmdb-1.0.0">Next</a>
+          <a accesskey="n" href="lmdb.html" title="lmdb-1.0.0">下一页</a>
           <p>
             lmdb-1.0.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="databases.html" title=
-          "Chapter&nbsp;22.&nbsp;Databases">Up</a>
+          "第&nbsp;22&nbsp;章&nbsp;数据库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="upgradedb" name="upgradedb"></a>Important Notes About Upgrading
-      Database Server Software
+      <a id="upgradedb" name="upgradedb"></a>关于升级数据库服务器软件的重要说明
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <div class="admon note">
-        <img alt="[Note]" src="../images/note.png" />
+        <img alt="[注意]" src="../images/note.png" />
         <h3>
-          Note
+          注意
         </h3>
         <p>
-          This section is about reinstalling database software when an
-          existing database is in use. It is not applicable for initial
-          installations or if there is no existing database for the package
-          being updated, but users should read through it to become aware of
-          issues that can arise in the future.
+          本节讨论的是在已有数据库正在使用的情况下重新安装数据库软件。这不适用于初次安装，也不适用于被更新的软件包没有现存数据库的情况，但用户应当通读本节，以了解未来可能出现的各种问题。
         </p>
       </div>
       <p>
-        Let's start this chapter with a dramatic screenshot of an error that
-        really happened. This error will not occur if you are installing
-        database software for the first time:
+        让我们用一个真实发生过的错误截屏来开始本章的内容。如果你是第一次安装数据库软件，这个错误不会出现：
       </p>
       <pre class="screen">$ sudo systemctl status postgresql
 -- postgresql.service - PostgreSQL database server
@@ -86,240 +79,165 @@ Oct 26 17:11:53 SRVNAME systemd[1]: postgresql.service: Control process exited, 
 Oct 26 17:11:53 SRVNAME systemd[1]: postgresql.service: Failed with result 'exit-code'.
 Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.</pre>
       <p>
-        To avoid situations like this (i.e., your database server software
-        refuses to start), read the following discussion of the best way to
-        upgrade a DBMS (Database Management System).
+        为避免出现此类情况（即数据库服务器软件拒绝启动），请阅读以下关于升级 DBMS（数据库管理系统）最佳方式的讨论。
       </p>
       <p>
-        The root cause of the error shown above was an upgrade of the server
-        software to a newer major version which left the data files
-        untouched. In this case, the administrator was able to recover the
-        DBMS without any loss of data.
+        上述错误的根本原因是服务器软件升级到了更新的主版本，而数据文件原封未动。在该案例中，管理员得以在没有任何数据丢失的情况下恢复 DBMS。
       </p>
       <p>
-        Even if you are doing an initial DBMS install, read through this
-        section. It provides information about implementing backup and
-        restore procedures (or at least a strategy for creating them) which
-        will satisfy your needs and guarantee the safety of your data.
+        即便你是在初次安装
+        DBMS，也请通读本节。本节提供了有关实现备份和恢复流程（或至少是创建这些流程的策略）的信息，以满足你的需求并保证数据安全。
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Upgrade Database Server Packages
+          升级数据库服务器软件包
         </h2>
         <p>
-          Database systems work on files which hold the database metadata and
-          the data itself. The internal structure of these files is optimized
-          for use by the server software. When such server software is
-          upgraded, the new software may utilize a different file format than
-          had previously been used. Sometimes the new software can work with
-          the old format as well as the new one—but without the performance
-          improvements the new format provides. Other times, the new server
-          software will reformat the data files automatically after the
-          upgrade.
+          数据库系统所操作的文件，保存着数据库的元数据以及数据本身。这些文件的内部结构是针对服务器软件的使用而优化的。当此类服务器软件升级时，新软件所使用的文件格式可能与先前不同。有时新软件既能使用旧格式，也能使用新格式——但无法获得新格式带来的性能提升。还有些时候，新的服务器软件会在升级之后自动重新格式化数据文件。
         </p>
         <p>
-          Unfortunately, the most likely case is that the new server software
-          complains about out of date file formats and exits. When this
-          happens, and you have overwritten the old server software, you may
-          end up with a broken system and lost data.
+          然而不幸的是，最可能的情况是新的服务器软件抱怨文件格式过时并退出。一旦发生这种情况，而你已经覆盖了旧的服务器软件，最终可能得到一个损坏的系统以及丢失的数据。
         </p>
         <p>
-          Changes in data file formats usually happen at major version
-          changes, but they can also occur at other times. Before upgrading
-          any DBMS software, check the documentation to see if this upgrade
-          makes changes which require reformatting the database.
+          数据文件格式的变更通常发生在主版本更替之时，但也可能在其他时候出现。在升级任何 DBMS
+          软件之前，请查阅文档，确认此次升级是否引入了需要重新格式化数据库的变更。
         </p>
         <p>
-          Of course, if you have databases with content that is not easily
-          rebuilt, it is always a good idea to create backups of the database
-          from time to time. Before upgrading the server software, you should
-          run another backup.
+          当然，如果你的数据库中存放着不易重建的内容，定期为数据库创建备份始终是个好主意。在升级服务器软件之前，你还应当再执行一次备份。
         </p>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            Upgrade by Backup and Restore
+            通过备份和恢复进行升级
           </h3>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
-              A backup is useless if there is no verified process to restore
-              the data from this backup. When running a database server, you
-              should not only create backups; you should also verify that the
-              restore process really works. The time to test the restore
-              procedure is <span class="emphasis"><em>before</em></span> you
-              urgently need to recover lost data.
+              如果没有经过验证的、从该备份恢复数据的流程，备份就毫无意义。在运行数据库服务器时，你不仅要创建备份，还要验证恢复流程确实可行。测试恢复流程的时机应当是在你<span class="emphasis"><em>急需</em></span>恢复丢失数据之前。
             </p>
           </div>
           <p>
-            Most database server software provides some basic tools to create
-            backups of your data. Usually the backups created with those
-            tools can be read by newer versions of the software (via a
-            restore tool). Using older restore tools with newer backup data
-            is a bad idea; you should <span class=
-            "emphasis"><em>never</em></span> blindly assume that it will
-            work. It might, but usually it doesn't.
+            大多数数据库服务器软件都提供了一些基本工具来为数据创建备份。通常，用这些工具创建的备份可以由更新版本的软件读取（通过恢复工具）。用旧的恢复工具去读取新备份的数据是个糟糕的主意；你应当<span class="emphasis"><em>绝不</em></span>盲目假定它会奏效。也许可行，但通常都不行。
           </p>
           <p>
-            The easiest way to upgrade your database files is to
+            升级数据库文件最简单的方式如下：
           </p>
           <div class="itemizedlist">
             <ul>
               <li class="listitem">
                 <p>
-                  Create a full database backup using the old tools.
+                  使用旧工具创建完整的数据库备份。
                 </p>
                 <p>
-                  This step creates an offline copy of the database files—for
-                  long term archiving, for disaster recovery, or as
-                  preparation for an upgrade. This offline backup consists of
-                  either (1) a full one-to-one copy of the current database
-                  files, or (2) a full backup of the database files from a
-                  certain point in time, plus all the journal data (that is
-                  Oracle® terminology, it is called "Continuous Archiving" or
-                  "write ahead log (WAL)" in Postgresql) describing the
-                  changes made after that point in time. This second form
-                  takes less time to create (if the DB software provides this
-                  type of journaling) because you only have to save the data
-                  that have changed since the last full backup was created.
+                  这一步会创建数据库文件的离线副本——用于长期归档、灾难恢复，或作为升级前的准备。这种离线备份要么是（1）当前数据库文件的完整一对一副本，要么是（2）某一时间点的数据库文件完整备份，再加上该时间点之后描述所有变更的日志数据（这是
+                  Oracle® 的术语，在 PostgreSQL 中称为“Continuous Archiving”或“write
+                  ahead log（WAL）”）。第二种形式创建起来更快（前提是 DB
+                  软件提供此类日志功能），因为你只需保存自上次完整备份以来发生变化的数据。
                 </p>
                 <p>
-                  When upgrading database server software, a full backup
-                  (which can be used for subsequent incremental backups)
-                  should be created; but if there is a lot of data, an
-                  incremental backup will suffice. The best strategy for you
-                  depends on the amount of data stored in your database (is
-                  it a few hundred table rows, or is it hundreds of
-                  terabytes?). A full backup in the latter case can't be done
-                  quickly. To fully protect your data, create a backup of the
-                  old programs (and/or their sources) and save it, along with
-                  the data files, to be certain there is a fallback solution
-                  if the new software cannot read the old data.
+                  在升级数据库服务器软件时，应当创建一次完整备份（可用于后续的增量备份）；但如果数据量很大，增量备份也足够了。最合适的策略取决于你数据库中存储的数据量（是几百行表记录，还是几百
+                  TB？）。后一种情况下，完整备份无法迅速完成。为了全面保护你的数据，请创建旧程序（和/或其源代码）的备份并将其与数据文件一同保存，以确保在新软件无法读取旧数据时存在回退方案。
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Upgrade the server software
+                  升级服务器软件
                 </p>
                 <p>
-                  In this step, instructions to build the database server
-                  software are executed just as they are shown in subsequent
-                  sections talking about the DBMs like MariaDB or Postgresql.
-                  That is, build the software as usual using BLFS
-                  instructions.
+                  在这一步中，按照后续章节中关于 MariaDB 或 PostgreSQL 等 DBMS
+                  的说明来执行数据库服务器软件的构建，正如其中所示。也就是说，像往常一样使用 BLFS 说明来构建软件。
                 </p>
               </li>
               <li class="listitem">
                 <p>
-                  Restore the database by using the new tools.
+                  使用新工具恢复数据库。
                 </p>
                 <p>
-                  To restore the data, the tools of the newly installed
-                  server software should be used. During the restoration
-                  process, the new tools will create and/or upgrade the data
-                  files in the format the new software requires. It is
-                  assumed that newer software is capable of reading old data.
+                  恢复数据时，应当使用新安装的服务器软件所提供的工具。在恢复过程中，新工具会以新软件所需的格式创建和/或升级数据文件。此处假定较新的软件能够读取旧数据。
                 </p>
               </li>
             </ul>
           </div>
           <p>
-            Since you already have a backup procedure in place (and you have
-            tested your restore procedure, right?), this might be the easiest
-            way to upgrade as you can use your well known processes to
-            upgrade just as you always do—at least in terms of the backup and
-            restore.
+            既然你已经有了一套备份流程（而且你已经测试过恢复流程，对吧？），这可能是最简单的升级方式——至少在备份和恢复方面，你可以使用自己熟悉的一贯流程来进行升级。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            Upgrade the Database Files by Using System Tools
+            使用系统工具升级数据库文件
           </h3>
           <p>
-            Some database systems (for instance Postgresql) provide a tool
-            which can reformat (upgrade) the existing database files to the
-            new format. If you need to restore from a backup (for example,
-            running the upgrade tool failed) you will have to reinstall the
-            old software to recover your data.
+            某些数据库系统（例如
+            PostgreSQL）提供了一种工具，能够将现有数据库文件重新格式化（升级）为新格式。如果你需要从备份恢复（例如，运行升级工具失败），就不得不重新安装旧软件来恢复数据。
           </p>
           <p>
-            Even though the reformatting tools might work as advertised, you
-            should create a full backup before running them. A failure could
-            cause serious damage to the database.
+            即便重新格式化工具如其所述那样工作，在运行它们之前你也应当创建一次完整备份。一次失败可能对数据库造成严重损害。
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Notes for Specific DBMS
+          特定 DBMS 的说明
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             PostgreSQL
           </h3>
           <p>
-            Upstream documentation for Backup/Restore: <a class="ulink" href=
+            上游关于备份/恢复的文档： <a class="ulink" href=
             "https://www.postgresql.org/docs/current/backup.html">https://www.postgresql.org/docs/current/backup.html</a>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             MariaDB
           </h3>
           <p>
-            Upstream documentation for Backup/Restore: <a class="ulink" href=
+            上游关于备份/恢复的文档： <a class="ulink" href=
             "https://mariadb.com/kb/en/backup-and-restore-overview/">https://mariadb.com/kb/en/backup-and-restore-overview/</a>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Sqlite
           </h3>
           <p>
-            Do not underestimate <span class="application">Sqlite</span>. It
-            is a feature-rich DBMS. The main difference from the two big
-            players above is that Sqlite does not provide access via a
-            network API. Sqlite databases are always stored on the machine
-            running the program which uses the database. The manipulation of
-            data content is done via API calls to library functions directly
-            within the program.
+            不要小看 <span class="application">Sqlite</span>。它是一个功能丰富的
+            DBMS。它与上述两大主流产品的主要区别在于，Sqlite 不通过网络 API 提供访问。Sqlite
+            数据库始终存储在运行使用该数据库的程序所在的那台机器上。数据内容的操纵是通过在程序内部直接调用库函数的 API 来完成的。
           </p>
           <p>
-            In the upstream documentation you may find the following useful:
+            在上游文档中，你可能会发现以下内容有用：
           </p>
           <p>
-            Documentation of the sqlite3 command line tool: <a class="ulink"
-            href=
+            sqlite3 命令行工具文档： <a class="ulink" href=
             "https://www.sqlite.org/cli.html">https://www.sqlite.org/cli.html</a>
           </p>
           <p>
-            Documentation of backup API calls: <a class="ulink" href=
+            备份 API 调用文档： <a class="ulink" href=
             "https://www.sqlite.org/backup.html">https://www.sqlite.org/backup.html</a>
           </p>
           <p>
-            Unfortunately, there is no dedicated chapter in the upstream
-            documentation talking about backup/restore, but there are several
-            articles about it on the Internet. Here is an example.
+            遗憾的是，上游文档中并没有专门讨论备份/恢复的章节，但在互联网上有若干相关文章。这里是一个示例。
           </p>
           <p>
-            Documentation for Backup/Restore: <a class="ulink" href=
+            备份/恢复文档： <a class="ulink" href=
             "https://database.guide/backup-sqlite-database/">https://database.guide/backup-sqlite-database/</a>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             LMDB
           </h3>
           <p>
-            Like <span class="application">Sqlite</span>, this software acts
-            on local database files; there is no network interface.
+            与 <span class="application">Sqlite</span>
+            类似，本软件作用于本地数据库文件；没有网络接口。
           </p>
           <p>
-            The relevant resources to back up/restore a LMDB database are the
-            man pages for <code class="filename">mdb_dump</code> and its
-            counterpart <code class="filename">mdb_load</code>.
+            备份/恢复 LMDB 数据库的相关资源是 <code class="filename">mdb_dump</code>
+            及其对应工具 <code class="filename">mdb_load</code> 的 man 手册页。
           </p>
         </div>
       </div>
@@ -327,24 +245,24 @@ Oct 26 17:11:53 SRVNAME systemd[1]: Failed to start PostgreSQL database server.<
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="databases.html" title="Databases">Prev</a>
+          <a accesskey="p" href="databases.html" title="数据库">上一页</a>
           <p>
-            Databases
+            数据库
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="lmdb.html" title="lmdb-1.0.0">Next</a>
+          <a accesskey="n" href="lmdb.html" title="lmdb-1.0.0">下一页</a>
           <p>
             lmdb-1.0.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="databases.html" title=
-          "Chapter&nbsp;22.&nbsp;Databases">Up</a>
+          "第&nbsp;22&nbsp;章&nbsp;数据库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -12,45 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;8.&nbsp;Virtualization
+        第&nbsp;8&nbsp;章&nbsp;虚拟化
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="virtualization.html" title=
-          "Virtualization">Prev</a>
+          <a accesskey="p" href="virtualization.html" title="虚拟化">上一页</a>
           <p>
-            Virtualization
+            虚拟化
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="../general/general.html" title=
-          "General Libraries and Utilities">Next</a>
+          "通用库与实用工具">下一页</a>
           <p>
-            General Libraries and Utilities
+            通用库与实用工具
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="virtualization.html" title=
-          "Chapter&nbsp;8.&nbsp;Virtualization">Up</a>
+          "第&nbsp;8&nbsp;章&nbsp;虚拟化">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="qemu" name="qemu"></a>qemu-11.0.2
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to qemu
         </h2>
@@ -60,9 +59,9 @@
           extensions (Intel VT or AMD-V).
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -128,9 +127,9 @@
           "sdl2-compat-2.32.70">sdl2-compat-2.32.70</a>
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If <a class="xref" href="../general/dtc.html" title=
@@ -229,9 +228,9 @@
           "Sphinx_rtd_theme-3.1.0">sphinx_rtd_theme-3.1.0</a>
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             This optional dependencies list is not comprehensive. See the
@@ -244,7 +243,7 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/qemu">https://wiki.linuxfromscratch.org/blfs/wiki/qemu</a>
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="qemu-prereq" name="qemu-prereq"></a>KVM Prerequisites
         </h2>
@@ -261,7 +260,7 @@
           back to your LFS instance.
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="qemu-kernel" name="qemu-kernel"></a>Kernel Configuration
         </h2>
@@ -304,7 +303,7 @@
     &lt;*/M&gt;   <span class=
 "blue">U</span>niversal TUN/TAP device driver support                        [TUN]</pre>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of qemu
         </h2>
@@ -330,9 +329,9 @@
           following commands:
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Qemu is capable of running many targets. The build process is
@@ -383,9 +382,9 @@ make</kbd></pre>
           the <code class="systemitem">root</code> user, issue:
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             You need to add any users who might use the <span class=
@@ -400,9 +399,9 @@ make</kbd></pre>
         "command">chgrp kvm  /usr/libexec/qemu-bridge-helper &amp;&amp;
 chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             For convenience you may want to create a symbolic link to run the
@@ -413,7 +412,7 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           "command">ln -sv qemu-system-`uname -m` /usr/bin/qemu</kbd></pre>
         </div>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -445,7 +444,7 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           "option">--audio-drv-list=alsa,pa</code>.
         </p>
       </div>
-      <div class="using" lang="en" xml:lang="en">
+      <div class="using" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Using Qemu
         </h2>
@@ -463,9 +462,9 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           "filename">/usr/share/doc/qemu-11.0.2/qemu-doc.html</code>.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             It is standard practice to name the computer running qemu
@@ -476,9 +475,9 @@ chmod 4750 /usr/libexec/qemu-bridge-helper</kbd></pre>
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The following instructions assume the optional symbolic link,
@@ -671,8 +670,8 @@ qemu-img create -f qcow2 $VDISK_FILENAME $VDISK_SIZE</kbd></pre>
           To set the resolution of the emulated display for a Xorg server
           running in the guest Linux system, read <a class="xref" href=
           "../x/xorg-config.html#xdisplay" title=
-          "Fine Tuning Display Settings">the section called “Fine Tuning
-          Display Settings”</a>.
+          "Fine Tuning Display Settings">“Fine Tuning Display
+          Settings”一节</a>.
         </p>
         <h3>
           Networking
@@ -712,7 +711,7 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
           "parameter"><code>-netdev bridge,...</code></em>.
         </p>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -916,26 +915,25 @@ echo allow br0 &gt; /etc/qemu/bridge.conf</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="virtualization.html" title=
-          "Virtualization">Prev</a>
+          <a accesskey="p" href="virtualization.html" title="虚拟化">上一页</a>
           <p>
-            Virtualization
+            虚拟化
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="../general/general.html" title=
-          "General Libraries and Utilities">Next</a>
+          "通用库与实用工具">下一页</a>
           <p>
-            General Libraries and Utilities
+            通用库与实用工具
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="virtualization.html" title=
-          "Chapter&nbsp;8.&nbsp;Virtualization">Up</a>
+          "第&nbsp;8&nbsp;章&nbsp;虚拟化">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,116 +5,105 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Running a Subversion Server
+      运行 Subversion 服务器
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="subversion.html" title=
-          "Subversion-1.14.5">Prev</a>
+          "Subversion-1.14.5">上一页</a>
           <p>
             Subversion-1.14.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="swig.html" title="SWIG-4.4.1">Next</a>
+          <a accesskey="n" href="swig.html" title="SWIG-4.4.1">下一页</a>
           <p>
             SWIG-4.4.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="svnserver" name="svnserver"></a>Running a Subversion Server
+      <a id="svnserver" name="svnserver"></a>运行 Subversion 服务器
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Running a Subversion Server
+          运行 Subversion 服务器
         </h2>
         <p>
-          This section will describe how to set up, administer and secure a
-          <span class="application">Subversion</span> server.
+          本节将介绍如何设置、管理和保护 <span class="application">Subversion</span> 服务器。
         </p>
         <h3>
-          Subversion Server Dependencies
+          Subversion 服务器依赖
         </h3>
         <h4>
-          Required
+          必需
         </h4>
         <p class="required">
           <a class="xref" href="subversion.html" title=
-          "Subversion-1.14.5">Subversion-1.14.5</a> and <a class="xref" href=
+          "Subversion-1.14.5">Subversion-1.14.5</a> 和 <a class="xref" href=
           "../postlfs/openssh.html" title="OpenSSH-10.3p1">OpenSSH-10.3p1</a>
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Setting up a Subversion Server.
+          设置 Subversion 服务器
         </h2>
         <p>
-          The following instructions will install a <span class=
-          "application">Subversion</span> server, which will be set up to use
-          <span class="application">OpenSSH</span> as the secure remote
-          access method, with <span class=
-          "command"><strong>svnserve</strong></span> available for anonymous
-          access.
+          以下说明将安装一个 <span class="application">Subversion</span> 服务器，该服务器将配置为
+          使用 <span class="application">OpenSSH</span> 作为安全远程访问方法，并提供
+          <span class="command"><strong>svnserve</strong></span> 用于匿名访问。
         </p>
         <p>
-          Configuration of the <span class="application">Subversion</span>
-          server consists of the following steps:
+          <span class="application">Subversion</span> 服务器的配置包括以下步骤：
         </p>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            1. Set Uup Users, Groups, and Permissions
+            1. 设置用户、组和权限
           </h3>
           <p>
-            You'll need to be user <code class="systemitem">root</code> for
-            the initial portion of configuration. Create the <code class=
-            "systemitem">svn</code> user and group with the following
-            commands:
+            配置的初始部分需要以 <code class="systemitem">root</code> 用户身份执行。使用以下命令创建
+            <code class="systemitem">svn</code> 用户和组：
           </p>
           <pre class="root"><kbd class=
           "command">groupadd -g 56 svn &amp;&amp;
 useradd -c "SVN Owner" -d /home/svn -m -g svn -s /bin/false -u 56 svn</kbd></pre>
           <p>
-            If you plan to have multiple repositories, you should have a
-            group dedicated to each repository for ease of administration.
-            Create the <code class="systemitem">svntest</code> group for the
-            test repository and add the <code class="systemitem">svn</code>
-            user to that group with the following commands:
+            如果计划拥有多个仓库，应该为每个仓库设置一个专用组以方便管理。使用以下 命令为测试仓库创建 <code class=
+            "systemitem">svntest</code> 组，并将 <code class=
+            "systemitem">svn</code> 用户添加到该组：
           </p>
           <pre class="root"><kbd class=
           "command">groupadd -g 57 svntest &amp;&amp;
 usermod -G svntest -a svn</kbd></pre>
           <p>
-            Additionally you should set <span class="command"><strong>umask
-            002</strong></span> while working with a repository so that all
-            new files will be writable by owner and group. This is made
-            mandatory by creating a wrapper script for <span class=
-            "command"><strong>svn</strong></span> and <span class=
-            "command"><strong>svnserve</strong></span>:
+            此外，在处理仓库时应设置 <span class="command"><strong>umask
+            002</strong></span>，以便所有新建文件 都可被所有者和组写入。可以通过为 <span class=
+            "command"><strong>svn</strong></span> 和 <span class=
+            "command"><strong>svnserve</strong></span> 创建包装脚本来强制实现这一点：
           </p>
           <pre class="root"><kbd class=
           "command">mv /usr/bin/svn /usr/bin/svn.orig &amp;&amp;
@@ -131,60 +120,51 @@ umask 002
 EOF
 chmod 0755 /usr/bin/svn{,serve}</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
-              If you use <span class="application">Apache</span> for working
-              with the repository over HTTP, even for anonymous access, you
-              should wrap <span class=
-              "command"><strong>/usr/sbin/httpd</strong></span> in a similar
-              script.
+              如果使用 <span class="application">Apache</span> 通过 HTTP 访问仓库，
+              即使是匿名访问，也应该用类似的脚本包装 <span class=
+              "command"><strong>/usr/sbin/httpd</strong></span>。
             </p>
           </div>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            2. Create a Subversion repository.
+            2. 创建 Subversion 仓库
           </h3>
           <p>
-            There are several ways to set up a subversion repository. It is
-            recommended to have a look at the <a class="ulink" href=
-            "https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
-            Book</a> corresponding chapter. A basic repository can be set up
-            with the instructions below.
+            有几种方法可以设置 Subversion 仓库。建议查看 <a class="ulink" href=
+            "https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">《SVN
+            Book》</a> 的相应章节。可以使用以下说明设置一个基本仓库。
           </p>
           <p>
-            Create a new <span class="application">Subversion</span>
-            repository with the following commands (as the <code class=
-            "systemitem">root</code> user):
+            使用以下命令（以 <code class="systemitem">root</code> 用户身份）创建一个新的
+            <span class="application">Subversion</span> 仓库：
           </p>
           <pre class="root"><kbd class=
           "command">install -v -m 0755 -d /srv/svn &amp;&amp;
 install -v -m 0755 -o svn -g svn -d /srv/svn/repositories &amp;&amp;
 svnadmin create /srv/svn/repositories/svntest</kbd></pre>
           <p>
-            Now that the repository is created, it should be populated with
-            something useful. You'll need to have a predefined directory
-            layout set up exactly as you want your repository to look. For
-            example, here is a sample BLFS layout setup with a root of
-            <code class="filename">svntest/</code>. You'll need to set up a
-            directory tree similar to the following:
+            仓库创建完成后，应该填充一些有用的内容。你需要预先设置好 目录结构，确保它完全按照你希望仓库的样子来组织。例如， 这里是一个以
+            <code class="filename">svntest/</code> 为根的示例 BLFS 布局设置。
+            你需要设置类似于以下的目录树：
           </p>
           <pre class="screen"><code class=
-          "literal">svntest/            # The name of the repository
-   trunk/           # Contains the existing source tree
+          "literal">svntest/            # 仓库名称
+   trunk/           # 包含现有的源代码树
       BOOK/
       bootscripts/
       edguide/
       patches/
       scripts/
-   branches/        # Needed for additional branches
-   tags/            # Needed for tagging release points</code></pre>
+   branches/        # 额外分支所需
+   tags/            # 标记发布点所需</code></pre>
           <p>
-            Once you've created your directory layout as shown above, you are
-            ready to do the initial import:
+            按照上述内容创建目录布局后，就可以进行初始导入：
           </p>
           <pre class="root"><kbd class=
           "command">svn import -m "Initial import." \
@@ -192,9 +172,8 @@ svnadmin create /srv/svn/repositories/svntest</kbd></pre>
 "replaceable"><code>&lt;/path/to/source/tree&gt;</code></em>      \
     file:///srv/svn/repositories/svntest</kbd></pre>
           <p>
-            Now change owner and group information on the repository, and add
-            an unprivileged user to the <code class="systemitem">svn</code>
-            and <code class="systemitem">svntest</code> groups:
+            现在修改仓库的所有者和组信息，并将一个非特权用户添加到 <code class="systemitem">svn</code> 和
+            <code class="systemitem">svntest</code> 组：
           </p>
           <pre class="root"><kbd class=
           "command">chown -R svn:svntest /srv/svn/repositories/svntest    &amp;&amp;
@@ -203,65 +182,52 @@ chmod g+s            /srv/svn/repositories/svntest/db &amp;&amp;
 usermod -G svn,svntest -a <em class=
 "replaceable"><code>&lt;username&gt;</code></em></kbd></pre>
           <p>
-            <code class="systemitem">svntest</code> is the group assigned to
-            the svntest repository. As mentioned earlier, this eases
-            administration of multiple repositories when using <span class=
-            "application">OpenSSH</span> for authentication. Going forward,
-            you'll need to add your unprivileged user, and any additional
-            users that you wish to have write access to the repository, to
-            the <code class="systemitem">svn</code> and <code class=
-            "systemitem">svntest</code> groups.
+            <code class="systemitem">svntest</code> 是分配给 svntest
+            仓库的组。如前所述，这在使用 <span class="application">OpenSSH</span> 进行认证时，
+            可以简化多个仓库的管理。接下来，你需要将非特权用户以及任何希望获得 仓库写入权限的其他用户添加到 <code class=
+            "systemitem">svn</code> 和 <code class="systemitem">svntest</code>
+            组。
           </p>
           <p>
-            In addition, you'll notice that the new repository's <code class=
-            "filename">db</code> directory is set-groupID. If the reasoning
-            is not immediately obvious, when using any external
-            authentication method (such as <span class=
-            "command"><strong>ssh</strong></span>), the sticky bit is set so
-            that all new files will be owned by the user, but group of
-            <code class="systemitem">svntest</code>. Anyone in the
-            <code class="systemitem">svntest</code> group can create files,
-            but still give the entire group write access to those files. This
-            avoids locking out other users from the repository.
+            此外，你会注意到新仓库的 <code class="filename">db</code> 目录设置了 set-groupID
+            位。如果原因不显而易见，当使用任何外部认证方法（例如 <span class=
+            "command"><strong>ssh</strong></span>）时，设置粘滞位是为了使所有新文件的所有者都是该用户，
+            但组为 <code class="systemitem">svntest</code>。 <code class=
+            "systemitem">svntest</code> 组中的任何人都可以创建文件，
+            同时仍然给予整个组对这些文件的写入权限。这可以避免将其他用户锁定在仓库之外。
           </p>
           <p>
-            Now, return to an unprivileged user account, and take a look at
-            the new repository using <span class=
-            "command"><strong>svnlook</strong></span>:
+            现在，返回到非特权用户帐户，使用 <span class=
+            "command"><strong>svnlook</strong></span> 查看新仓库：
           </p>
           <pre class="userinput"><kbd class=
           "command">svnlook tree /srv/svn/repositories/svntest/</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
-              You may need to log out and back in again to refresh your group
-              memberships. <span class="command"><strong>su <em class=
+              可能需要注销并重新登录以刷新组成员资格。<span class="command"><strong>su <em class=
               "replaceable"><code>&lt;username&gt;</code></em></strong></span>
-              should work as well.
+              也应该有效。
             </p>
           </div>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            3. Configure the Server
+            3. 配置服务器
           </h3>
           <p>
-            As mentioned previously, these instructions will configure the
-            server to use only <span class=
-            "command"><strong>ssh</strong></span> for write access to the
-            repository and to provide anonymous access using <span class=
-            "command"><strong>svnserve</strong></span>. There are several
-            other ways to provide access to the repository. These additional
-            configurations are best explained at <a class="ulink" href=
-            "https://svnbook.red-bean.com/">https://svnbook.red-bean.com/</a>.
+            如前所述，这些说明将配置服务器仅使用 <span class=
+            "command"><strong>ssh</strong></span> 对仓库进行 写入访问，并使用 <span class=
+            "command"><strong>svnserve</strong></span> 提供匿名访问。还有几种
+            其他方法可以提供对仓库的访问。这些额外配置的最佳说明请参阅 <a class="ulink" href=
+            "https://svnbook.red-bean.com/">https://svnbook.red-bean.com/</a>。
           </p>
           <p>
-            Access configuration needs to be done for each repository. Create
-            the <code class="filename">svnserve.conf</code> file for the
-            svntest repository using the following commands:
+            需要为每个仓库进行访问配置。使用以下命令为 svntest 仓库创建 <code class=
+            "filename">svnserve.conf</code> 文件：
           </p>
           <pre class="root"><kbd class=
           "command">cp /srv/svn/repositories/svntest/conf/svnserve.conf \
@@ -273,24 +239,19 @@ anon-access = read
 auth-access = write</code>
 EOF</kbd></pre>
           <p>
-            There is not a lot to the configuration file at all. You'll
-            notice that only the general section is required. Take a look at
-            the <code class="filename">svnserve.conf.default</code> file for
-            information on using <span class=
-            "command"><strong>svnserve</strong></span>'s built-in
-            authentication method.
+            配置文件的内容其实不多。你会注意到只需要 general 段。 查看 <code class=
+            "filename">svnserve.conf.default</code> 文件以获取有关使用 <span class=
+            "command"><strong>svnserve</strong></span> 内置认证方法的信息。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            <a id="svnserver-init" name="svnserver-init"></a>4. Starting the
-            Server
+            <a id="svnserver-init" name="svnserver-init"></a>4. 启动服务器
           </h3>
           <p>
-            To start the server at boot time, install the svn bootscript
-            included in the <a class="xref" href=
+            要在启动时启动服务器，请安装包含在 <a class="xref" href=
             "../introduction/bootscripts.html" title=
-            "BLFS 启动脚本">blfs-bootscripts-20251220</a> package:
+            "BLFS 启动脚本">blfs-bootscripts-20251220</a> 软件包中的 svn 启动脚本：
           </p>
           <pre class="root"><kbd class="command">make install-svn</kbd></pre>
         </div>
@@ -300,24 +261,24 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="subversion.html" title=
-          "Subversion-1.14.5">Prev</a>
+          "Subversion-1.14.5">上一页</a>
           <p>
             Subversion-1.14.5
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="swig.html" title="SWIG-4.4.1">Next</a>
+          <a accesskey="n" href="swig.html" title="SWIG-4.4.1">下一页</a>
           <p>
             SWIG-4.4.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

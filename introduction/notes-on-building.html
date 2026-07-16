@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;2.&nbsp;重要信息
+        第&nbsp;2&nbsp;章&nbsp;重要信息
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="important.html" title="重要信息">Prev</a>
+          <a accesskey="p" href="important.html" title="重要信息">上一页</a>
           <p>
             重要信息
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="position.html" title=
-          "/usr 与 /usr/local 之争">Next</a>
+          "/usr 与 /usr/local 之争">下一页</a>
           <p>
             /usr 与 /usr/local 之争
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
+          "第&nbsp;2&nbsp;章&nbsp;重要信息">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="unpacking" name="unpacking"></a>构建软件注意事项
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
         已经构建过 LFS 系统的人可能了解下载和解压软件的一般原则。此处重复一些信息，供初次构建自己软件的人参考。
       </p>
@@ -64,7 +64,7 @@
         <code class="filename">Makefile</code> 和 C
         代码的高级用户，这显然不适用；但若有疑问，请从干净的源代码树开始。
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           以非特权（non-root）用户身份构建软件
         </h2>
@@ -75,7 +75,7 @@
           "systemitem">root</code> 权限。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           解压软件
         </h2>
@@ -87,9 +87,9 @@ tar -xvf filename.tgz
 tar -xvf filename.tar.Z
 tar -xvf filename.tar.bz2</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             如果您希望抑制解压时列出所有文件的详细输出，可以在上述和下述命令中省略 <code class="option">v</code>
@@ -114,7 +114,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">bzcat ../patchname.patch.bz2 | patch -p1</kbd></pre>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           验证文件完整性
         </h2>
@@ -154,9 +154,9 @@ tar -xvf filename.tar.bz2</kbd></pre>
           的某个地方）下载校验和文件，并将其与从非官方位置下载的软件包的校验和进行比较。例如，可以使用以下命令检查 SHA256 校验和：
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             如果校验和与软件包来自同一不可信位置，则通过校验和验证软件包不会获得安全增强。攻击者可以伪造校验和并同时破坏软件包本身。
@@ -183,7 +183,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
           签名的优势在于，一旦导入了可信的公钥，您就可以从同一非官方位置同时下载软件包及其签名，并使用公钥进行验证。这样您就不需要为每个新版本都连接到上游官方网站获取校验和。您只需在公钥过期或撤销时更新它即可。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           创建安装过程中的日志文件
         </h2>
@@ -204,7 +204,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
           <span class="command"><strong>tee</strong></span> 命令的结果。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="parallel-builds" name="parallel-builds"></a>使用多个处理器核心
         </h2>
@@ -252,8 +252,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
           启动的并行任务数，但每个任务仍可能自行生成进程或线程。例如，某些软件包的测试可能会生成多个线程来测试线程安全属性。构建系统无法通用地知道一个任务会生成多少进程或线程。因此，通常我们不应将
           <code class="option">-j</code> 传递的值视为要使用的逻辑核数的硬限制。如果您想设置这样的硬限制，请阅读
           <a class="xref" href="notes-on-building.html#build-in-cgroup"
-          title="使用 Linux cgroup 限制资源使用">the section called “使用 Linux cgroup
-          限制资源使用”</a>。
+          title="使用 Linux cgroup 限制资源使用">“使用 Linux cgroup 限制资源使用”一节</a>。
         </p>
         <p>
           通常，进程数不应超过 CPU 支持的核心数太多。要列出系统上的处理器，请执行：<strong class=
@@ -271,9 +270,9 @@ tar -xvf filename.tar.bz2</kbd></pre>
           环境变量中的类似设置。
         </p>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             现代 CPU 拥有大量核心时还可能遇到另一个问题。每个启动的任务都会消耗内存，如果每个任务所需内存的总和超过可用内存，您可能会遇到
@@ -286,7 +285,7 @@ tar -xvf filename.tar.bz2</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="build-in-cgroup" name="build-in-cgroup"></a>使用 Linux cgroup
           限制资源使用
@@ -364,7 +363,7 @@ EOF</kbd></pre>
           文件，以获取命令中所引用的 <code class="systemitem">cgroup2</code> 伪文件系统条目的详细说明。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="automating-builds" name="automating-builds"></a>自动化构建过程
         </h2>
@@ -506,7 +505,7 @@ chmod 755 blfs-yes-test2</kbd></pre>
           最后，请记住，有很多方法可以自动化或编写构建命令的脚本。没有唯一的“正确”方法。您的想象力是唯一的限制。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           依赖关系
         </h2>
@@ -554,7 +553,7 @@ chmod 755 blfs-yes-test2</kbd></pre>
           </ul>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="package_updates" name="package_updates"></a>使用最新的软件源码
         </h2>
@@ -569,7 +568,7 @@ chmod 755 blfs-yes-test2</kbd></pre>
           home page” 会使您找到维护者的网站。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="stripping" name="stripping"></a>再谈剥离
         </h2>
@@ -586,9 +585,9 @@ chmod 755 blfs-yes-test2</kbd></pre>
           "使用不同的构建系统">关于构建系统的章节</a>），因此这里只能列出一些通用方法：
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             以下使用构建系统（autotools、meson 或 cmake）功能的方法不会剥离任何已安装的静态库。幸运的是，BLFS
@@ -700,7 +699,7 @@ chmod 744 /usr/sbin/strip-all.sh</kbd></pre>
           https://www.technovelty.org/linux/stripping-shared-libraries.html</a>。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="buildsystems" name="buildsystems"></a>使用不同的构建系统
         </h2>
@@ -993,7 +992,7 @@ EOF</kbd></pre>
           之后，可以按照书中的说明运行指令。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="optimizations" name="optimizations"></a>优化构建
         </h2>
@@ -1026,9 +1025,9 @@ EOF</kbd></pre>
           构建，并非所有内容都能在 SandyBridge 上运行。
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             请注意，<code class="option">-march</code> 设置的名称并不总是与同名的微架构基线匹配。例如，基于
@@ -1084,7 +1083,7 @@ EOF</kbd></pre>
           "command"><strong>ld</strong></span>。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="hardening" name="hardening"></a>构建加固选项
         </h2>
@@ -1166,25 +1165,25 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="important.html" title="重要信息">Prev</a>
+          <a accesskey="p" href="important.html" title="重要信息">上一页</a>
           <p>
             重要信息
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="position.html" title=
-          "/usr 与 /usr/local 之争">Next</a>
+          "/usr 与 /usr/local 之争">下一页</a>
           <p>
             /usr 与 /usr/local 之争
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="important.html" title=
-          "Chapter&nbsp;2.&nbsp;重要信息">Up</a>
+          "第&nbsp;2&nbsp;章&nbsp;重要信息">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

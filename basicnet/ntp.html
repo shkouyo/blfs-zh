@@ -12,44 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;15.&nbsp;Networking Programs
+        第&nbsp;15&nbsp;章&nbsp;网络程序
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="netfs.html" title=
-          "Configuring for Network Filesystems">Prev</a>
+          <a accesskey="p" href="netfs.html" title="为网络文件系统进行配置">上一页</a>
           <p>
-            Configuring for Network Filesystems
+            为网络文件系统进行配置
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="rpcbind.html" title="rpcbind-1.2.9">Next</a>
+          <a accesskey="n" href="rpcbind.html" title="rpcbind-1.2.9">下一页</a>
           <p>
             rpcbind-1.2.9
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="ntp" name="ntp"></a>ntp-4.2.8p18
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to ntp
         </h2>
@@ -60,9 +59,9 @@
           implementation of the NTP protocol.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -147,7 +146,7 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/ntp">https://wiki.linuxfromscratch.org/blfs/wiki/ntp</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of ntp
         </h2>
@@ -201,7 +200,7 @@ make</kbd></pre>
         <pre class="root"><kbd class="command">make install &amp;&amp;
 install -v -o ntp -g ntp -d /var/lib/ntp</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -225,11 +224,11 @@ install -v -o ntp -g ntp -d /var/lib/ntp</kbd></pre>
           installed, otherwise no readline capabilities will be compiled.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring ntp
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="ntp-config" name="ntp-config"></a>Config Files
           </h3>
@@ -237,7 +236,7 @@ install -v -o ntp -g ntp -d /var/lib/ntp</kbd></pre>
             <code class="filename">/etc/ntp.conf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -292,7 +291,7 @@ restrict 127.0.0.1
 restrict ::1</code>
 EOF</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="ntp-init" name="ntp-init"></a>Synchronizing the Time
           </h3>
@@ -338,7 +337,7 @@ ln -v -sf ../init.d/setclock /etc/rc.d/rc6.d/K46setclock</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -551,9 +550,9 @@ ln -v -sf ../init.d/setclock /etc/rc.d/rc6.d/K46setclock</kbd></pre>
                     leap-second definition file.
                   </p>
                   <div class="admon note">
-                    <img alt="[Note]" src="../images/note.png" />
+                    <img alt="[注意]" src="../images/note.png" />
                     <h3>
-                      Note
+                      注意
                     </h3>
                     <p>
                       In November 2022, at the 27th General Conference on
@@ -574,25 +573,24 @@ ln -v -sf ../init.d/setclock /etc/rc.d/rc6.d/K46setclock</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="netfs.html" title=
-          "Configuring for Network Filesystems">Prev</a>
+          <a accesskey="p" href="netfs.html" title="为网络文件系统进行配置">上一页</a>
           <p>
-            Configuring for Network Filesystems
+            为网络文件系统进行配置
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="rpcbind.html" title="rpcbind-1.2.9">Next</a>
+          <a accesskey="n" href="rpcbind.html" title="rpcbind-1.2.9">下一页</a>
           <p>
             rpcbind-1.2.9
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

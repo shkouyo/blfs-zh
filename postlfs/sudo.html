@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;4.&nbsp;Security
+        第&nbsp;4&nbsp;章&nbsp;安全
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="stunnel.html" title="stunnel-5.79">Prev</a>
+          <a accesskey="p" href="stunnel.html" title="stunnel-5.79">上一页</a>
           <p>
             stunnel-5.79
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="tripwire.html" title=
-          "Tripwire-2.4.3.7">Next</a>
+          "Tripwire-2.4.3.7">下一页</a>
           <p>
             Tripwire-2.4.3.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="sudo" name="sudo"></a>Sudo-1.9.17p2
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Sudo
         </h2>
@@ -61,9 +61,9 @@
           and arguments.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -117,18 +117,17 @@
           "mitkrb.html" title="MIT Kerberos V5-1.22.2">MIT Kerberos
           V5-1.22.2</a>, <a class="xref" href="../server/openldap.html"
           title="OpenLDAP-2.6.13">OpenLDAP-2.6.13</a>, <a class="xref" href=
-          "../server/mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> (that provides
-          a <span class="command"><strong>sendmail</strong></span> command),
-          <a class="ulink" href="https://www.openafs.org/">AFS</a>, <a class=
-          "ulink" href=
-          "https://github.com/linux-audit/audit-userspace">libaudit</a>,
+          "../server/mail.html" title="第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">MTA</a>
+          (that provides a <span class=
+          "command"><strong>sendmail</strong></span> command), <a class=
+          "ulink" href="https://www.openafs.org/">AFS</a>, <a class="ulink"
+          href="https://github.com/linux-audit/audit-userspace">libaudit</a>,
           <a class="ulink" href=
           "https://downloads.sourceforge.net/opie/">Opie</a>, and <a class=
           "ulink" href="https://sssd.io/">Sssd</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Sudo
         </h2>
@@ -161,7 +160,7 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -204,9 +203,9 @@ make</kbd></pre>
           Various sets of insults can be selected with some other switches.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             There are many options to <span class="application">sudo</span>'s
@@ -216,11 +215,11 @@ make</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Sudo
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="sudo-config" name="sudo-config"></a>Config File
           </h3>
@@ -228,7 +227,7 @@ make</kbd></pre>
             <code class="filename">/etc/sudoers</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -253,9 +252,9 @@ make</kbd></pre>
 %wheel ALL=(ALL) ALL</code>
 EOF</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               In very simple installations where there is only one user, it
@@ -277,9 +276,9 @@ EOF</kbd></pre>
             sudoers</strong></span>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               The <span class="application">Sudo</span> developers highly
@@ -320,7 +319,7 @@ EOF
 chmod 644 /etc/pam.d/sudo</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -467,25 +466,25 @@ chmod 644 /etc/pam.d/sudo</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="stunnel.html" title="stunnel-5.79">Prev</a>
+          <a accesskey="p" href="stunnel.html" title="stunnel-5.79">上一页</a>
           <p>
             stunnel-5.79
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="tripwire.html" title=
-          "Tripwire-2.4.3.7">Next</a>
+          "Tripwire-2.4.3.7">下一页</a>
           <p>
             Tripwire-2.4.3.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

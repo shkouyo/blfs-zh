@@ -5,56 +5,52 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Configuring the Linux Kernel for Wireless
+      为无线网络配置 Linux 内核
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;15.&nbsp;Networking Programs
+        第&nbsp;15&nbsp;章&nbsp;网络程序
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="wget.html" title="Wget-1.25.0">Prev</a>
+          <a accesskey="p" href="wget.html" title="Wget-1.25.0">上一页</a>
           <p>
             Wget-1.25.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="iw.html" title="iw-6.17">Next</a>
+          <a accesskey="n" href="iw.html" title="iw-6.17">下一页</a>
           <p>
             iw-6.17
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="wireless-kernel" name="wireless-kernel"></a>Configuring the
-      Linux Kernel for Wireless
+      <a id="wireless-kernel" name="wireless-kernel"></a>为无线网络配置 Linux 内核
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        Before using any userspace tools for connecting to a wireless AP, the
-        Linux kernel must be configured to drive the wireless NIC properly.
-        Enable the following options in the kernel configuration as well as
-        specific device drivers for your hardware and recompile the kernel if
-        necessary:
+        在使用任何用户空间工具连接无线 AP 之前，必须配置 Linux
+        内核以正确驱动无线网卡。在内核配置中启用以下选项以及适用于您硬件的特定设备驱动程序，必要时重新编译内核：
       </p>
       <pre class="screen">[*] N<span class=
       "blue">e</span>tworking support ---&gt;                                                [NET]
@@ -71,52 +67,47 @@
     [*] <span class=
 "blue">W</span>ireless LAN ---&gt;                                                 [WLAN]</pre>
       <p>
-        Open the <span class="quote">“<span class="quote">Wireless
-        LAN</span>”</span> submenu and select the options that support your
-        hardware. <span class="command"><strong>lspci</strong></span> from
-        <a class="xref" href="../general/pciutils.html" title=
-        "pciutils-3.15.0">pciutils-3.15.0</a> or <span class=
-        "command"><strong>lsusb</strong></span> from <a class="xref" href=
-        "../general/usbutils.html" title="usbutils-019">usbutils-019</a> can
-        be used to view your hardware configuration. Note that many (though
-        not all) options for the wireless NICs depend on <em class=
-        "parameter"><code>CONFIG_MAC80211</code></em>. After the correct
-        drivers are loaded, the interface will appear in <code class=
-        "filename">/sys/class/net</code>, or in the output of the
-        <span class="command"><strong>ip link</strong></span> command.
+        打开 <span class="quote">“<span class="quote">Wireless
+        LAN</span>”</span> 子菜单，选择支持您硬件的选项。可以使用 <a class="xref" href=
+        "../general/pciutils.html" title=
+        "pciutils-3.15.0">pciutils-3.15.0</a> 提供的 <span class=
+        "command"><strong>lspci</strong></span> 或 <a class="xref" href=
+        "../general/usbutils.html" title="usbutils-019">usbutils-019</a> 提供的
+        <span class="command"><strong>lsusb</strong></span>
+        查看硬件配置。注意，无线网卡的许多选项（但并非全部）依赖于 <em class=
+        "parameter"><code>CONFIG_MAC80211</code></em>。加载正确的驱动程序后，接口将出现在
+        <code class="filename">/sys/class/net</code> 中，或显示在 <span class=
+        "command"><strong>ip link</strong></span> 命令的输出中。
       </p>
       <p>
-        Many wireless NIC drivers require firmware. If you've enabled the
-        correct driver in the kernel configuration but it fails to load (with
-        messages like <code class="computeroutput">Direct firmware load for
-        <em class="replaceable"><code>&lt;filename</code></em>&gt; failed
-        with error -2</code>, it means that you need to install the firmware
-        or the wireless NIC won't work. Read <a class="xref" href=
-        "../postlfs/firmware.html" title="About Firmware">About Firmware</a>
-        for more details.
+        许多无线网卡驱动程序需要固件。如果您已在内核配置中启用了正确的驱动程序，但它加载失败（出现类似 <code class=
+        "computeroutput">Direct firmware load for <em class=
+        "replaceable"><code>&lt;filename</code></em>&gt; failed with error
+        -2</code> 的消息），这意味着您需要安装固件，否则无线网卡将无法工作。阅读 <a class="xref" href=
+        "../postlfs/firmware.html" title="关于固件">关于固件</a> 了解更多详情。
       </p>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="wget.html" title="Wget-1.25.0">Prev</a>
+          <a accesskey="p" href="wget.html" title="Wget-1.25.0">上一页</a>
           <p>
             Wget-1.25.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="iw.html" title="iw-6.17">Next</a>
+          <a accesskey="n" href="iw.html" title="iw-6.17">下一页</a>
           <p>
             iw-6.17
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

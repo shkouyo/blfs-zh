@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;6.&nbsp;Text Editors
+        第&nbsp;6&nbsp;章&nbsp;文本编辑器
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="nano.html" title="Nano-9.1">Prev</a>
+          <a accesskey="p" href="nano.html" title="Nano-9.1">上一页</a>
           <p>
             Nano-9.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="shells.html" title="Shells">Next</a>
+          <a accesskey="n" href="shells.html" title="Shell">下一页</a>
           <p>
-            Shells
+            Shell
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="editors.html" title=
-          "Chapter&nbsp;6.&nbsp;Text Editors">Up</a>
+          "第&nbsp;6&nbsp;章&nbsp;文本编辑器">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="vim" name="vim"></a>Vim-9.2.0752
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Vim
         </h2>
@@ -69,9 +69,9 @@
           "application">X</span> support is automatically detected.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The version of vim changes daily. To get the latest version, go
@@ -80,9 +80,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -133,7 +133,7 @@
         </h4>
         <p class="recommended">
           <a class="xref" href="../x/installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">a graphical
           environment</a> and <a class="xref" href="../x/gtk3.html" title=
           "GTK-3.24.52">GTK-3.24.52</a>
         </p>
@@ -150,20 +150,20 @@
           "libcanberra-0.30">libcanberra-0.30</a>, <a class="xref" href=
           "../general/lua.html" title="Lua-5.4.8">Lua-5.4.8</a>, <a class=
           "xref" href="../general/ruby.html" title=
-          "Ruby-4.0.5">Ruby-4.0.5</a>, <a class="xref" href=
+          "Ruby-4.0.6">Ruby-4.0.6</a>, <a class="xref" href=
           "../basicnet/rsync.html" title="rsync-3.4.4">rsync-3.4.4</a>, and
           <a class="ulink" href=
           "https://libsodium.gitbook.io/doc/">libsodium</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Vim
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If you recompile <span class="application">Vim</span> to link
@@ -183,9 +183,9 @@
           following commands:
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If you intend to run the tests and have not installed Xorg in
@@ -203,9 +203,9 @@ echo '#define SYS_GVIMRC_FILE "/etc/gvimrc"' &gt;&gt; src/feature.h &amp;&amp;
             --with-tlib=ncursesw &amp;&amp;
 make</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If the global configuration file <code class=
@@ -234,9 +234,9 @@ make</kbd></pre>
           session.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If running the tests with <a class="xref" href=
@@ -248,9 +248,9 @@ make</kbd></pre>
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Some color tests expect to be executed under the <span class=
@@ -288,7 +288,7 @@ make</kbd></pre>
         "command">make -C src installruntime &amp;&amp;
 vim -c ":helptags /usr/share/doc/vim-9.2.0752" -c ":q"</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -334,11 +334,11 @@ vim -c ":helptags /usr/share/doc/vim-9.2.0752" -c ":q"</kbd></pre>
           names with old versions.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Vim
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="vim-config" name="vim-config"></a>Config Files
           </h3>
@@ -347,7 +347,7 @@ vim -c ":helptags /usr/share/doc/vim-9.2.0752" -c ":q"</kbd></pre>
             "filename">~/.vimrc</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="vim-init" name="vim-init"></a>Configuration Information
           </h3>
@@ -388,13 +388,13 @@ vim -c ":helptags /usr/share/doc/vim-9.2.0752" -c ":q"</kbd></pre>
           <p>
             For additional information on setting up <span class=
             "application">Vim</span> configuration files, see <a class="xref"
-            href="vimrc.html" title="The /etc/vimrc and ~/.vimrc Files">The
-            vimrc Files</a> and <a class="ulink" href=
+            href="vimrc.html" title="/etc/vimrc 和 ~/.vimrc 文件">vimrc 文件</a>
+            and <a class="ulink" href=
             "https://vim.fandom.com/wiki/Example_vimrc">https://vim.fandom.com/wiki/Example_vimrc</a>.
           </p>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -530,24 +530,24 @@ vim -c ":helptags /usr/share/doc/vim-9.2.0752" -c ":q"</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="nano.html" title="Nano-9.1">Prev</a>
+          <a accesskey="p" href="nano.html" title="Nano-9.1">上一页</a>
           <p>
             Nano-9.1
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="shells.html" title="Shells">Next</a>
+          <a accesskey="n" href="shells.html" title="Shell">下一页</a>
           <p>
-            Shells
+            Shell
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="editors.html" title=
-          "Chapter&nbsp;6.&nbsp;Text Editors">Up</a>
+          "第&nbsp;6&nbsp;章&nbsp;文本编辑器">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

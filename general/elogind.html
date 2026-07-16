@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class="phrase">（System
-        V</span> 版） - 版本 g57e8800
+        V</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;12.&nbsp;System Utilities
+        第&nbsp;12&nbsp;章&nbsp;系统实用工具
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">Prev</a>
+          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">上一页</a>
           <p>
             dbus-1.16.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="blocaled.html" title="blocaled-0.7">Next</a>
+          <a accesskey="n" href="blocaled.html" title="blocaled-0.7">下一页</a>
           <p>
             blocaled-0.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="elogind" name="elogind"></a>elogind-257.16
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to elogind
         </h2>
@@ -66,9 +66,9 @@
           "filename">/run/systemd</code> layout.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -137,7 +137,7 @@
         <p class="optional">
           <a class="xref" href="python-modules.html#lxml" title=
           "lxml-6.1.1">lxml-6.1.1</a>, <a class="xref" href=
-          "../postlfs/zsh.html" title="zsh-5.9.1">zsh-5.9.1</a>, <a class=
+          "../postlfs/zsh.html" title="zsh-5.9.2">zsh-5.9.2</a>, <a class=
           "xref" href="valgrind.html" title=
           "Valgrind-3.27.1">Valgrind-3.27.1</a> (needed for tests), <a class=
           "ulink" href=
@@ -154,7 +154,7 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/Logind">https://wiki.linuxfromscratch.org/blfs/wiki/Logind</a>
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="elogind-kernel" name="elogind-kernel"></a>Kernel
           Configuration
@@ -184,7 +184,7 @@
     &lt;*/M&gt; H<span class=
 "blue">a</span>sh algorithms                                 [CRYPTO_USER_API_HASH]</pre>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of elogind
         </h2>
@@ -220,7 +220,7 @@ ninja</kbd></pre>
 ln -sfv  libelogind.pc /usr/lib/pkgconfig/libsystemd.pc &amp;&amp;
 ln -sfvn elogind /usr/include/systemd</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -279,11 +279,11 @@ ln -sfvn elogind /usr/include/systemd</kbd></pre>
           systemd-compatible library and headers.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring elogind
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="elogind-config" name="elogind-config"></a>Config File
           </h3>
@@ -291,7 +291,7 @@ ln -sfvn elogind /usr/include/systemd</kbd></pre>
             <code class="filename">/etc/elogind/logind.conf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -371,9 +371,9 @@ rpc: files
 # End /etc/nsswitch.conf</code>
 EOF</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               The <code class="literal">myhostname</code>, <code class=
@@ -384,9 +384,9 @@ EOF</kbd></pre>
             </p>
           </div>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               After completion of <span class="application">elogind</span>,
@@ -400,7 +400,7 @@ EOF</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -540,24 +540,24 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">Prev</a>
+          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">上一页</a>
           <p>
             dbus-1.16.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="blocaled.html" title="blocaled-0.7">Next</a>
+          <a accesskey="n" href="blocaled.html" title="blocaled-0.7">下一页</a>
           <p>
             blocaled-0.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch    （System V 版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch    （System V 版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
