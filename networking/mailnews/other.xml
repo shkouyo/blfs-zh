@@ -9,7 +9,7 @@
   <?dbhtml filename="othermn.html"?>
 
 
-  <title>Other Mail and News Programs</title>
+  <title>其它邮件与新闻客户端</title>
   <!--
   <para>
     <xref linkend="pan"/> is a GTK2 based newsreader program.
@@ -28,22 +28,21 @@
   </para>
   -->
   <para>
-    <xref linkend="balsa"/> is a GTK2 based mail client.
+    <xref linkend="balsa"/> 是一个基于 GTK2 的邮件客户端。
   </para>
 
   <para>
-    <xref linkend="seamonkey"/> includes both a mail client and newsreader in
-    its installation.
+    <xref linkend="seamonkey"/> 同时包含了一个邮件客户端和一个新闻阅读器。
   </para>
 
   <para>
-    <xref linkend="thunderbird"/> is a mail/news client based on the
-    <application>Mozilla</application> code base.
+    <xref linkend="thunderbird"/> 是一个由
+    <application>Mozilla</application> 开发的邮件与新闻客户端。
   </para>
 
   <para>
-    <xref linkend="evolution"/> is a mail client and organizer from the
-    <application>GNOME</application> desktop.
+    <xref linkend="evolution"/> 是一个来自
+    <application>GNOME</application> 桌面的邮件客户端。
   </para>
 
 </sect1>
