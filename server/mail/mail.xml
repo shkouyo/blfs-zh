@@ -8,20 +8,14 @@
 <chapter id="server-mail" xreflabel="MTA">
   <?dbhtml filename="mail.html"?>
 
-  <title>Mail Server Software</title>
+  <title>邮件服务器软件</title>
 
   <para>
-    MTAs are the programs which transport mail from one machine to the
-    other. The traditional MTA is <application>Sendmail</application>, however
-    there are several other choices. BLFS does not include the
-    <application>Sendmail</application> package anymore, but both
-    <application>Exim</application> and <application>Postfix</application>
-    provide the same functionality as well as a compatibility symlink for
-    applications that expect <application>Sendmail</application> to be present.
+    MTA 是将邮件从一台机器传输到另一台机器的程序。传统的 MTA 是 <application>Sendmail</application>，不过还有其他几种选择。BLFS 已不再包含 <application>Sendmail</application> 软件包，但 <application>Exim</application> 和 <application>Postfix</application> 都提供了相同的功能，并为那些期望系统中存在 <application>Sendmail</application> 的应用程序提供了兼容性符号链接。
   </para>
 
   <para>
-    In addition to the SMTP servers, there is also a POP3/IMAP server (Dovecot).
+    除了 SMTP 服务器外，还有一个 POP3/IMAP 服务器（Dovecot）。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="dovecot.xml"/>

@@ -8,14 +8,10 @@
 <chapter id="server-databases">
   <?dbhtml filename="databases.html"?>
 
-  <title>Databases</title>
+  <title>数据库</title>
 
   <para>
-    This chapter includes databases that range from single-user
-    read/write to industrial database servers with transaction support.
-    Generally, you will be sent here to satisfy dependencies to other
-    applications although building a SQL server on a base LFS system is
-    entirely possible.
+    本章收录的数据库，从单用户读写类型到支持事务的生产级数据库服务器一应俱全。通常，你是为了满足其他应用程序的依赖关系才被引导到这里来的，不过在基础 LFS 系统上构建一个 SQL 服务器也完全可行。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="upgradedb.xml"/>

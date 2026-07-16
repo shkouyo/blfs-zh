@@ -8,15 +8,10 @@
 <chapter id="server-other">
   <?dbhtml filename="other.html"?>
 
-  <title>Other Server Software</title>
+  <title>其他服务器软件</title>
 
   <para>
-    Here you will find many ways to share your machine with the rest
-    of the world or your local network.  Before installing
-    any packages in this chapter, you need to be sure you understand what
-    the package does and how to set it up correctly.  It might also be
-    helpful to learn about the consequences of an improper setup so
-    that you can analyze the risks.
+    在这里，你会找到许多将你的机器共享给外部世界或本地网络的方法。在安装本章中的任何软件包之前，你需要确保自己理解该软件包的功能以及如何正确配置它。了解配置不当可能带来的后果也会有所帮助，这样你就能分析其中的风险。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="openldap.xml"/>

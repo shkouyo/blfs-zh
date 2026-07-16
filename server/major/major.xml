@@ -8,11 +8,10 @@
 <chapter id="server-major">
   <?dbhtml filename="majorservers.html"?>
 
-  <title>Major Servers</title>
+  <title>主服务器</title>
 
   <para>
-    Major servers are the programs that provide content or services
-    to users or other programs.
+    主服务器是指向用户或其他程序提供内容或服务的程序。
   </para>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="apache.xml"/>
@@ -22,3 +21,4 @@
 <!--  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="vsftpd.xml"/> -->
 
 </chapter>
+
