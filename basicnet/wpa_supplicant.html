@@ -12,45 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;15.&nbsp;Networking Programs
+        第&nbsp;15&nbsp;章&nbsp;网络程序
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="wireless_tools.html" title=
-          "Wireless Tools-29">Prev</a>
+          "Wireless Tools-29">上一页</a>
           <p>
             Wireless Tools-29
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="netutils.html" title=
-          "Networking Utilities">Next</a>
+          <a accesskey="n" href="netutils.html" title="网络实用工具">下一页</a>
           <p>
-            Networking Utilities
+            网络实用工具
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="wpa_supplicant" name="wpa_supplicant"></a>wpa_supplicant-2.11
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to WPA Supplicant
         </h2>
@@ -65,9 +64,9 @@
           access point.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -130,8 +129,7 @@
         </h4>
         <p class="nodump">
           <a class="xref" href="wireless-kernel.html" title=
-          "Configuring the Linux Kernel for Wireless">Configuring the Linux
-          Kernel for Wireless</a>
+          "为无线网络配置 Linux 内核">为无线网络配置 Linux 内核</a>
         </p>
         <h4>
           Recommended
@@ -148,7 +146,7 @@
           "libxml2-2.15.3">libxml2-2.15.3</a>
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="wpa_supplicant-kernel" name=
           "wpa_supplicant-kernel"></a>Kernel Configuration
@@ -157,11 +155,10 @@
           To use <span class="application">wpa_supplicant</span>, the kernel
           must have the appropriate drivers and other support available. Read
           <a class="xref" href="wireless-kernel.html" title=
-          "Configuring the Linux Kernel for Wireless">Configuring the Linux
-          Kernel for Wireless</a> for details.
+          "为无线网络配置 Linux 内核">为无线网络配置 Linux 内核</a> for details.
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of WPA Supplicant
         </h2>
@@ -259,9 +256,9 @@ install -v -d -m755 /etc/dbus-1/system.d &amp;&amp;
 install -v -m644 dbus/dbus-wpa_supplicant.conf \
                  /etc/dbus-1/system.d/wpa_supplicant.conf</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             You will need to restart the system <span class=
@@ -271,14 +268,14 @@ install -v -m644 dbus/dbus-wpa_supplicant.conf \
           </p>
         </div>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring wpa_supplicant
         </h2>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             If you are using WPA Supplicant with <a class="xref" href=
@@ -290,7 +287,7 @@ install -v -m644 dbus/dbus-wpa_supplicant.conf \
             simultaneously can cause subtle issues.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="wpa_supplicant-config" name=
             "wpa_supplicant-config"></a>Config File
@@ -300,7 +297,7 @@ install -v -m644 dbus/dbus-wpa_supplicant.conf \
             "filename">/etc/wpa_supplicant/wpa_supplicant-*.conf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -364,7 +361,7 @@ update_config=1</pre>
             source tree.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Connecting to an Access Point
           </h3>
@@ -427,9 +424,9 @@ update_config=1</pre>
             Network Configuration</a> page in LFS.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Ensure that the <code class="literal">systemd-networkd</code>
@@ -438,7 +435,7 @@ update_config=1</pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -526,25 +523,24 @@ update_config=1</pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="wireless_tools.html" title=
-          "Wireless Tools-29">Prev</a>
+          "Wireless Tools-29">上一页</a>
           <p>
             Wireless Tools-29
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="netutils.html" title=
-          "Networking Utilities">Next</a>
+          <a accesskey="n" href="netutils.html" title="网络实用工具">下一页</a>
           <p>
-            Networking Utilities
+            网络实用工具
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

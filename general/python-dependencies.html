@@ -5,89 +5,80 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Python Dependencies
+      Python 依赖项
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="python-modules.html" title=
-          "Python Modules">Prev</a>
+          "Python 模块">上一页</a>
           <p>
-            Python Modules
+            Python 模块
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ruby.html" title="Ruby-4.0.5">Next</a>
+          <a accesskey="n" href="ruby.html" title="Ruby-4.0.6">下一页</a>
           <p>
-            Ruby-4.0.5
+            Ruby-4.0.6
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="python-dependencies" name="python-dependencies"></a>Python
-      Dependencies
+      <a id="python-dependencies" name="python-dependencies"></a>Python 依赖项
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Introduction to Python Dependencies
+          Python 依赖项简介
         </h2>
         <p>
-          Python modules listed in <a class="xref" href="python-modules.html"
-          title="Python Modules">Python Modules</a> have dependencies that
-          are not referenced by other packages in BLFS. These dependencies
-          are listed here. They will not get updated on regular basis, unless
-          a more recent version is needed.
+          <a class="xref" href="python-modules.html" title="Python 模块">Python
+          模块</a> 中列出的 Python 模块具有一些 BLFS
+          中其他软件包未引用的依赖项。这些依赖项在此列出。除非需要更新版本，否则它们不会定期更新。
         </p>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
-            In BLFS, we normally build and install Python 3 modules with
-            <span class="command"><strong>pip3</strong></span>. Please take
-            care that the <span class="command"><strong>pip3
-            install</strong></span> commands in the book should be run as
-            <code class="systemitem">root</code> unless it's for a Python
-            virtual environment. Running <span class="command"><strong>pip3
-            install</strong></span> as a non-<code class=
-            "systemitem">root</code> user may seem to work fine, but it will
-            cause the installed module to be inaccessible by other users.
+            在 BLFS 中，我们通常使用 <span class=
+            "command"><strong>pip3</strong></span> 构建并安装 Python 3 模块。请注意，本书中的
+            <span class="command"><strong>pip3 install</strong></span> 命令应以
+            <code class="systemitem">root</code> 用户身份运行，除非是针对 Python 虚拟环境。以非
+            <code class="systemitem">root</code> 用户身份运行 <span class=
+            "command"><strong>pip3 install</strong></span>
+            可能看起来工作正常，但会导致已安装的模块对其他用户不可用。
           </p>
           <p>
-            <span class="command"><strong>pip3 install</strong></span> will
-            not reinstall an already installed module by default. For using
-            the <span class="command"><strong>pip3 install</strong></span>
-            command to upgrade a module (for example, from meson-0.61.3 to
-            meson-0.62.0), insert <em class=
-            "parameter"><code>--upgrade</code></em> into the command line. If
-            it's really necessary to downgrade a module or reinstall the same
-            version for some reason, insert <em class=
-            "parameter"><code>--force-reinstall</code></em> into the command
-            line.
+            <span class="command"><strong>pip3 install</strong></span>
+            默认不会重新安装已安装的模块。要使用 <span class="command"><strong>pip3
+            install</strong></span> 命令升级模块（例如，从 meson-0.61.3 升级到
+            meson-0.62.0），请在命令行中插入 <em class=
+            "parameter"><code>--upgrade</code></em>。如果确实需要降级模块或因某种原因重新安装相同版本，请在命令行中插入
+            <em class="parameter"><code>--force-reinstall</code></em>。
           </p>
         </div>
         <div class="itemizedlist">
@@ -358,11 +349,11 @@
           </ul>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="alabaster" name="alabaster"></a>Alabaster-1.0.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Alabaster Module
           </h3>
@@ -373,9 +364,9 @@
             for sphinx.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -418,7 +409,7 @@
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Alabaster
           </h3>
@@ -436,7 +427,7 @@
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user alabaster</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -489,7 +480,7 @@
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -513,11 +504,11 @@
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="babel" name="babel"></a>babel-2.18.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Babel Module
           </h3>
@@ -528,9 +519,9 @@
             emphasis on web-based applications.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -593,7 +584,7 @@
             "https://pypi.org/project/pytest-cov/">pytest-cov</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Babel
           </h3>
@@ -620,7 +611,7 @@ pip3 install pytest-cov freezegun              &amp;&amp;
 python3 /usr/bin/pytest
 deactivate</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -679,7 +670,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -731,11 +722,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="certifi" name="certifi"></a>certifi-2026.6.17
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Certifi Module
           </h3>
@@ -746,9 +737,9 @@ deactivate</kbd></pre>
             verifying the identity of TLS hosts.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -791,7 +782,7 @@ deactivate</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of certifi
           </h3>
@@ -806,7 +797,7 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user certifi</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -859,7 +850,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -883,11 +874,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="chardet" name="chardet"></a>Chardet-5.2.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to chardet Module
           </h3>
@@ -896,9 +887,9 @@ deactivate</kbd></pre>
             encoding detector.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -958,7 +949,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Chardet
           </h3>
@@ -977,7 +968,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -1030,7 +1021,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -1081,12 +1072,12 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="charset-normalizer" name=
           "charset-normalizer"></a>Charset-normalizer-3.4.7
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to charset-normalizer Module
           </h3>
@@ -1095,9 +1086,9 @@ deactivate</kbd></pre>
             helps with reading text from an unknown character encoding.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1151,7 +1142,7 @@ deactivate</kbd></pre>
             "https://pypi.org/project/pytest-cov/">pytest-cov</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Charset-normalizer
           </h3>
@@ -1178,7 +1169,7 @@ pip3 install pytest-cov                        &amp;&amp;
 python3 /usr/bin/pytest                        &amp;&amp;
 deactivate</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -1237,7 +1228,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -1290,11 +1281,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="commonmark" name="commonmark"></a>Commonmark-0.9.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Commonmark Module
           </h3>
@@ -1303,9 +1294,9 @@ deactivate</kbd></pre>
             CommonMark Markdown specification.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1359,7 +1350,7 @@ deactivate</kbd></pre>
             "https://pypi.org/project/hypothesis/">hypothesis</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Commonmark
           </h3>
@@ -1386,7 +1377,7 @@ python3 /usr/bin/pytest commonmark/tests/unit_tests.py
 python3 commonmark/tests/run_spec_tests.py
 deactivate</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -1445,7 +1436,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -1497,11 +1488,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="editables" name="editables"></a>Editables-0.6
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Editables Module
           </h3>
@@ -1511,9 +1502,9 @@ deactivate</kbd></pre>
             wheels.</span>”</span>
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1566,7 +1557,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Editables
           </h3>
@@ -1585,7 +1576,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -1638,7 +1629,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -1662,11 +1653,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="hatchling" name="hatchling"></a>Hatchling-1.30.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Hatchling Module
           </h3>
@@ -1675,9 +1666,9 @@ deactivate</kbd></pre>
             standards compliant build backend for python modules.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1736,7 +1727,7 @@ deactivate</kbd></pre>
             "Trove-Classifiers-2026.1.14.14">trove-classifiers-2026.1.14.14</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Hatchling
           </h3>
@@ -1754,7 +1745,7 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user hatchling</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -1807,7 +1798,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -1858,12 +1849,12 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="hatch-fancy-pypi-readme" name=
           "hatch-fancy-pypi-readme"></a>Hatch-Fancy-Pypi-Readme-25.1.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Hatch-Fancy-Pypi-Readme Module
           </h3>
@@ -1874,9 +1865,9 @@ deactivate</kbd></pre>
             module.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -1938,7 +1929,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Hatch-Fancy-Pypi-Readme
           </h3>
@@ -1957,7 +1948,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2010,7 +2001,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2035,11 +2026,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="hatch-vcs" name="hatch-vcs"></a>Hatch_vcs-0.5.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Hatch-vcs Module
           </h3>
@@ -2050,9 +2041,9 @@ deactivate</kbd></pre>
             "VCS"><acronym class="acronym">VCS</acronym></a> ).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2115,7 +2106,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Hatch_vcs
           </h3>
@@ -2137,7 +2128,7 @@ deactivate</kbd></pre>
             pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2190,7 +2181,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2214,11 +2205,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="idna" name="idna"></a>Idna-3.18
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Idna Module
           </h3>
@@ -2228,9 +2219,9 @@ deactivate</kbd></pre>
             protocol as specified in RFC 5891.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2283,7 +2274,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Idna
           </h3>
@@ -2302,7 +2293,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2355,7 +2346,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2379,11 +2370,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="imagesize" name="imagesize"></a>Imagesize-1.4.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Imagesize Module
           </h3>
@@ -2393,9 +2384,9 @@ deactivate</kbd></pre>
             with JPEG/JPEG 2000/PNG/GIF/TIFF/SVG/Netpbm/WebP formats.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2450,7 +2441,7 @@ deactivate</kbd></pre>
             "Requests-2.34.2">requests-2.34.2</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Imagesize
           </h3>
@@ -2470,7 +2461,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2523,7 +2514,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2547,11 +2538,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="iniconfig" name="iniconfig"></a>Iniconfig-2.3.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Iniconfig Module
           </h3>
@@ -2560,9 +2551,9 @@ deactivate</kbd></pre>
             INI-file parser module.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2622,7 +2613,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Iniconfig
           </h3>
@@ -2641,7 +2632,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2694,7 +2685,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2718,11 +2709,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="maturin" name="maturin"></a>maturin-1.14.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to the maturin Module
           </h3>
@@ -2732,9 +2723,9 @@ deactivate</kbd></pre>
             packages.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -2809,7 +2800,7 @@ deactivate</kbd></pre>
             "https://pypi.org/project/virtualenv/">virtualenv</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of maturin
           </h3>
@@ -2846,7 +2837,7 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
             known to fail.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -2899,7 +2890,7 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -2951,11 +2942,11 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="markdown" name="markdown"></a>Markdown-3.10.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Markdown Module
           </h3>
@@ -2964,9 +2955,9 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
             John Gruber's Markdown specification.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3022,7 +3013,7 @@ PATH=$PWD/testenv/bin:$PATH cargo test</kbd></pre>
             "https://pypi.org/project/coverage/">coverage</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Markdown
           </h3>
@@ -3057,7 +3048,7 @@ deactivate</kbd></pre>
             will output a deprecation warning because of Python 3.14.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -3116,7 +3107,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3167,11 +3158,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="meson_python" name="meson_python"></a>Meson_python-0.20.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Meson_python Module
           </h3>
@@ -3180,9 +3171,9 @@ deactivate</kbd></pre>
             a Python build backend (PEP 517) for Meson projects.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3256,7 +3247,7 @@ deactivate</kbd></pre>
             "https://pypi.org/project/pytest-mock/">pytest-mock</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Meson_python
           </h3>
@@ -3285,7 +3276,7 @@ deactivate</kbd></pre>
 testenv/bin/pip3 install --group=test          &amp;&amp;
 HOME= testenv/bin/python -m pytest</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -3344,7 +3335,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3368,11 +3359,11 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="msgpack" name="msgpack"></a>Msgpack-1.2.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Msgpack Module
           </h3>
@@ -3383,9 +3374,9 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             provides CPython bindings for reading and writing Msgpack data.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3446,7 +3437,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Msgpack
           </h3>
@@ -3465,7 +3456,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -3518,7 +3509,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3542,11 +3533,11 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="pathspec" name="pathspec"></a>Pathspec-1.1.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Pathspec Module
           </h3>
@@ -3555,9 +3546,9 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             for pattern matching of file paths.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3610,7 +3601,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Pathspec
           </h3>
@@ -3629,7 +3620,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -3682,7 +3673,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3706,11 +3697,11 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="pluggy" name="pluggy"></a>Pluggy-1.6.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Pluggy Module
           </h3>
@@ -3725,9 +3716,9 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "quote">pluggable</span>”</span> systems.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3787,7 +3778,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Pluggy
           </h3>
@@ -3806,7 +3797,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -3859,7 +3850,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -3883,12 +3874,12 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="pyproject-hooks" name=
           "pyproject-hooks"></a>Pyproject_Hooks-1.2.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Pyproject_Hooks Module
           </h3>
@@ -3898,9 +3889,9 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "filename">pyproject.toml</code>-based projects.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -3954,7 +3945,7 @@ HOME= testenv/bin/python -m pytest</kbd></pre>
             "https://pypi.org/project/testpath/">testpath</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Pyproject_Hooks
           </h3>
@@ -3981,7 +3972,7 @@ pip3 install testpath                          &amp;&amp;
 python3 -m pytest
 deactivate</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4040,7 +4031,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4065,12 +4056,12 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="pyproject-metadata" name=
           "pyproject-metadata"></a>Pyproject-Metadata-0.11.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Pyproject-Metadata Module
           </h3>
@@ -4081,9 +4072,9 @@ deactivate</kbd></pre>
             metadata</span>”</span> (PEP 643) generation.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4137,7 +4128,7 @@ deactivate</kbd></pre>
             "https://pypi.org/project/exceptiongroup/">exceptiongroup</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Pyproject-Metadata
           </h3>
@@ -4161,7 +4152,7 @@ deactivate</kbd></pre>
 testenv/bin/pip3 install exceptiongroup        &amp;&amp;
 testenv/bin/python3 -m pytest</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4214,7 +4205,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4239,11 +4230,11 @@ testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="pytz" name="pytz"></a>Pytz-2026.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Pytz Module
           </h3>
@@ -4253,9 +4244,9 @@ testenv/bin/python3 -m pytest</kbd></pre>
             timezone calculations.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4308,7 +4299,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Pytz
           </h3>
@@ -4328,7 +4319,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             issued.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4381,7 +4372,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4405,12 +4396,12 @@ testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="roman-numerals" name=
           "roman-numerals"></a>Roman-numerals-4.1.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Roman-numerals Module
           </h3>
@@ -4419,9 +4410,9 @@ testenv/bin/python3 -m pytest</kbd></pre>
             library for manipulating well-formed Roman numerals.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4474,7 +4465,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Roman-numerals
           </h3>
@@ -4493,7 +4484,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4546,7 +4537,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4571,12 +4562,12 @@ testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="semantic_version" name=
           "semantic_version"></a>semantic_version-2.10.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to the semantic_version Module
           </h3>
@@ -4587,9 +4578,9 @@ testenv/bin/python3 -m pytest</kbd></pre>
             Python.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4643,7 +4634,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "http://www.djangoproject.com/">Django</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of semantic_version
           </h3>
@@ -4663,7 +4654,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             issued due to deprecated syntax with newer versions of Python.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4716,7 +4707,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4741,12 +4732,12 @@ testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="setuptools_rust" name=
           "setuptools_rust"></a>setuptools_rust-1.12.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to the setuptools_rust Module
           </h3>
@@ -4756,9 +4747,9 @@ testenv/bin/python3 -m pytest</kbd></pre>
             Python extensions in Rust.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -4818,7 +4809,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of setuptools_rust
           </h3>
@@ -4839,7 +4830,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             deprecation.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -4892,7 +4883,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -4917,12 +4908,12 @@ testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="setuptools_scm" name=
           "setuptools_scm"></a>Setuptools_scm-10.1.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Setuptools_scm Module
           </h3>
@@ -4932,9 +4923,9 @@ testenv/bin/python3 -m pytest</kbd></pre>
             instead of declaring them.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5009,7 +5000,7 @@ testenv/bin/python3 -m pytest</kbd></pre>
             "ulink" href="https://pypi.org/project/flake8/">flake8</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Setuptools_scm
           </h3>
@@ -5046,7 +5037,7 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
             and request a password.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5099,7 +5090,7 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -5124,11 +5115,11 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="smartypants" name="smartypants"></a>Smartypants-2.0.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Smartypants Module
           </h3>
@@ -5139,9 +5130,9 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
             punctuation HTML entities.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5198,7 +5189,7 @@ TZ=UTC HOME= testenv/bin/python3 -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Smartypants
           </h3>
@@ -5227,7 +5218,7 @@ pytest</kbd></pre>
             to print a warning about upcoming changes in docutils.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5280,7 +5271,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -5330,12 +5321,12 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="snowballstemmer" name=
           "snowballstemmer"></a>Snowballstemmer-3.1.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Snowballstemmer Module
           </h3>
@@ -5356,9 +5347,9 @@ pytest</kbd></pre>
             documents which only have the other forms.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5401,7 +5392,7 @@ pytest</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Snowballstemmer
           </h3>
@@ -5419,7 +5410,7 @@ pytest</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user snowballstemmer</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5472,7 +5463,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -5497,12 +5488,12 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-applehelp" name=
           "sc-applehelp"></a>Sphinxcontrib-applehelp-2.0.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-applehelp Module
           </h3>
@@ -5512,9 +5503,9 @@ pytest</kbd></pre>
             which outputs Apple help books.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5569,7 +5560,7 @@ pytest</kbd></pre>
             "Sphinx-9.1.0">sphinx-9.1.0</a> (circular dependency)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-applehelp
           </h3>
@@ -5588,7 +5579,7 @@ pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5641,7 +5632,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -5665,12 +5656,12 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-devhelp" name=
           "sc-devhelp"></a>Sphinxcontrib-devhelp-2.0.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-devhelp Module
           </h3>
@@ -5681,9 +5672,9 @@ pytest</kbd></pre>
             "https://wiki.gnome.org/Apps/Devhelp">Devhelp</a> documents.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5738,7 +5729,7 @@ pytest</kbd></pre>
             "Sphinx-9.1.0">sphinx-9.1.0</a> (circular dependency)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-devhelp
           </h3>
@@ -5761,7 +5752,7 @@ pytest</kbd></pre>
             sphinx-11.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5814,7 +5805,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -5838,12 +5829,12 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-htmlhelp" name=
           "sc-htmlhelp"></a>Sphinxcontrib-htmlhelp-2.1.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-htmlhelp Module
           </h3>
@@ -5853,9 +5844,9 @@ pytest</kbd></pre>
             which renders HTML help files.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -5912,7 +5903,7 @@ pytest</kbd></pre>
             "html5lib-1.1">html5lib-1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-htmlhelp
           </h3>
@@ -5939,7 +5930,7 @@ pytest</kbd></pre>
             in sphinx-11.x.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -5992,7 +5983,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6016,11 +6007,11 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-jquery" name="sc-jquery"></a>Sphinxcontrib-jquery-4.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-jquery Module
           </h3>
@@ -6030,9 +6021,9 @@ pytest</kbd></pre>
             includes jQuery on newer Sphinx releases.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6092,7 +6083,7 @@ pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-jquery
           </h3>
@@ -6110,7 +6101,7 @@ pytest</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user sphinxcontrib-jquery</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -6163,7 +6154,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6187,11 +6178,11 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-jsmath" name="sc-jsmath"></a>Sphinxcontrib-jsmath-1.0.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-jsmath Module
           </h3>
@@ -6201,9 +6192,9 @@ pytest</kbd></pre>
             renders display math in HTML via JavaScript.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6272,7 +6263,7 @@ pytest</kbd></pre>
             "Sphinx-9.1.0">sphinx-9.1.0</a> (circular dependency)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-jsmath
           </h3>
@@ -6297,7 +6288,7 @@ pytest</kbd></pre>
           </p>
           <pre class="userinput"><kbd class="command">pytest</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -6350,7 +6341,7 @@ pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6374,11 +6365,11 @@ pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-qthelp" name="sc-qthelp"></a>Sphinxcontrib-qthelp-2.0.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-qthelp Module
           </h3>
@@ -6388,9 +6379,9 @@ pytest</kbd></pre>
             outputs QtHelp documents.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6447,7 +6438,7 @@ pytest</kbd></pre>
             "https://pypi.org/project/defusedxml/">defusedxml</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-qthelp
           </h3>
@@ -6473,7 +6464,7 @@ testenv/bin/python -m pytest</kbd></pre>
             Sphinx.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -6532,7 +6523,7 @@ testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6556,12 +6547,12 @@ testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sc-serializinghtml" name=
           "sc-serializinghtml"></a>Sphinxcontrib-serializinghtml-2.0.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Sphinxcontrib-serializinghtml Module
           </h3>
@@ -6573,9 +6564,9 @@ testenv/bin/python -m pytest</kbd></pre>
             "quote">serialized</span>”</span> HTML files (json and pickle).
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6630,7 +6621,7 @@ testenv/bin/python -m pytest</kbd></pre>
             "Sphinx-9.1.0">sphinx-9.1.0</a> (circular dependency)
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Sphinxcontrib-serializinghtml
           </h3>
@@ -6652,7 +6643,7 @@ testenv/bin/python -m pytest</kbd></pre>
             print two warnings about upcoming changes in Sphinx.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -6705,7 +6696,7 @@ testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6729,12 +6720,12 @@ testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="trove-classifiers" name=
           "trove-classifiers"></a>Trove-Classifiers-2026.1.14.14
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Trove-Classifiers Module
           </h3>
@@ -6746,9 +6737,9 @@ testenv/bin/python -m pytest</kbd></pre>
             <code class="literal">Development Status :: 6 - Mature</code>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6801,7 +6792,7 @@ testenv/bin/python -m pytest</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Trove-Classifiers
           </h3>
@@ -6828,7 +6819,7 @@ testenv/bin/python -m pytest</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -6881,7 +6872,7 @@ testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -6906,11 +6897,11 @@ testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="typogrify" name="typogrify"></a>Typogrify-2.1.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Typogrify Module
           </h3>
@@ -6920,9 +6911,9 @@ testenv/bin/python -m pytest</kbd></pre>
             templates.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -6977,7 +6968,7 @@ testenv/bin/python -m pytest</kbd></pre>
             "Smartypants-2.0.2">smartypants-2.0.2</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Typogrify
           </h3>
@@ -6995,7 +6986,7 @@ testenv/bin/python -m pytest</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user typogrify</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7048,7 +7039,7 @@ testenv/bin/python -m pytest</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -7072,11 +7063,11 @@ testenv/bin/python -m pytest</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="urllib3" name="urllib3"></a>Urllib3-2.7.0
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Urllib3 Module
           </h3>
@@ -7087,9 +7078,9 @@ testenv/bin/python -m pytest</kbd></pre>
             libraries.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7166,7 +7157,7 @@ testenv/bin/python -m pytest</kbd></pre>
             "ulink" href="https://pypi.org/project/trustme/">trustme</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of Urllib3
           </h3>
@@ -7209,9 +7200,9 @@ deactivate</kbd></pre>
             "parameter"><code>--timeout</code></em> switch.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               The tests are currently broken with OpenSSL-4 as the pyopenssl
@@ -7221,7 +7212,7 @@ deactivate</kbd></pre>
             </p>
           </div>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7280,7 +7271,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -7304,11 +7295,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="uv_build" name="uv_build"></a>uv_build-0.11.24
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to the uv_build Module
           </h3>
@@ -7318,9 +7309,9 @@ deactivate</kbd></pre>
             system.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7373,7 +7364,7 @@ deactivate</kbd></pre>
             "maturin-1.14.1">maturin-1.14.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of uv_build
           </h3>
@@ -7391,7 +7382,7 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user uv_build</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7444,7 +7435,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -7468,12 +7459,12 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="vcs_versioning" name=
           "vcs_versioning"></a>vcs_versioning-2.1.2
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to vcs_versioning Module
           </h3>
@@ -7483,9 +7474,9 @@ deactivate</kbd></pre>
             module to properly set version control metadata.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7539,7 +7530,7 @@ deactivate</kbd></pre>
             "Pytest-9.1.1">pytest-9.1.1</a>
           </p>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of vcs_versioning
           </h3>
@@ -7558,7 +7549,7 @@ deactivate</kbd></pre>
             "command"><strong>pytest</strong></span>.
           </p>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7611,7 +7602,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -7636,11 +7627,11 @@ deactivate</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="webencodings" name="webencodings"></a>webencodings-0.5.1
         </h2>
-        <div class="package" lang="en" xml:lang="en">
+        <div class="package" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Introduction to Webencodings Module
           </h3>
@@ -7650,9 +7641,9 @@ deactivate</kbd></pre>
             "https://encoding.spec.whatwg.org/">WHATWG Encoding standard</a>.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Development versions of BLFS may not build or run some packages
@@ -7695,7 +7686,7 @@ deactivate</kbd></pre>
             </ul>
           </div>
         </div>
-        <div class="installation" lang="en" xml:lang="en">
+        <div class="installation" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of webencodings
           </h3>
@@ -7710,7 +7701,7 @@ deactivate</kbd></pre>
           <pre class="root"><kbd class=
           "command">pip3 install --no-index --find-links dist --no-user webencodings</kbd></pre>
         </div>
-        <div class="commands" lang="en" xml:lang="en">
+        <div class="commands" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Command Explanations
           </h3>
@@ -7763,7 +7754,7 @@ deactivate</kbd></pre>
             --force-reinstall options.
           </p>
         </div>
-        <div class="content" lang="en" xml:lang="en">
+        <div class="content" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Contents
           </h3>
@@ -7792,24 +7783,24 @@ deactivate</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="python-modules.html" title=
-          "Python Modules">Prev</a>
+          "Python 模块">上一页</a>
           <p>
-            Python Modules
+            Python 模块
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ruby.html" title="Ruby-4.0.5">Next</a>
+          <a accesskey="n" href="ruby.html" title="Ruby-4.0.6">下一页</a>
           <p>
-            Ruby-4.0.5
+            Ruby-4.0.6
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

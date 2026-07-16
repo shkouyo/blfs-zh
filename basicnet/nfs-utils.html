@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;15.&nbsp;Networking Programs
+        第&nbsp;15&nbsp;章&nbsp;网络程序
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="net-tools.html" title=
-          "Net-tools-2.10">Prev</a>
+          "Net-tools-2.10">上一页</a>
           <p>
             Net-tools-2.10
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ntp.html" title="ntp-4.2.8p18">Next</a>
+          <a accesskey="n" href="ntp.html" title="ntp-4.2.8p18">下一页</a>
           <p>
             ntp-4.2.8p18
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="nfs-utils" name="nfs-utils"></a>NFS-Utils-2.9.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to NFS Utilities
         </h2>
@@ -60,9 +60,9 @@
           over the network.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -150,7 +150,7 @@
           "rpcbind-1.2.9">rpcbind-1.2.9</a>
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="nfs-utils-kernel" name="nfs-utils-kernel"></a>Kernel
           Configuration
@@ -172,9 +172,9 @@
           options are selected.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             In BLFS we assume that NFSv3 will be used. If the <span class=
@@ -202,7 +202,7 @@
           </p>
         </div>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="nfs-utils-install" name="nfs-utils-install"></a>Installation
           of NFS Utilities
@@ -236,7 +236,7 @@ chown nobody:nogroup /var/lib/nfs</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make check</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -261,11 +261,11 @@ chown nobody:nogroup /var/lib/nfs</kbd></pre>
           sets those to unprivileged entries.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring NFS Utilities
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="nfs-utils-server-config" name=
             "nfs-utils-server-config"></a>Server Configuration
@@ -288,9 +288,9 @@ chown nobody:nogroup /var/lib/nfs</kbd></pre>
 "replaceable"><code>/home 192.168.0.0/24</code></em>(rw,subtree_check,anonuid=99,anongid=99)
 EOF</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Be sure to replace the directory, network address. and prefix
@@ -334,7 +334,7 @@ EOF</kbd></pre>
             </p>
           </div>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="nfs-utils-client-config" name=
             "nfs-utils-client-config"></a>Client Configuration
@@ -389,9 +389,9 @@ EOF</kbd></pre>
               </div>
             </div>
             <div class="admon note">
-              <img alt="[Note]" src="../images/note.png" />
+              <img alt="[注意]" src="../images/note.png" />
               <h3>
-                Note
+                注意
               </h3>
               <p>
                 The following <span class="phrase">systemd units are</span>
@@ -410,7 +410,7 @@ EOF</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -715,24 +715,24 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="net-tools.html" title=
-          "Net-tools-2.10">Prev</a>
+          "Net-tools-2.10">上一页</a>
           <p>
             Net-tools-2.10
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ntp.html" title="ntp-4.2.8p18">Next</a>
+          <a accesskey="n" href="ntp.html" title="ntp-4.2.8p18">下一页</a>
           <p>
             ntp-4.2.8p18
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netprogs.html" title=
-          "Chapter&nbsp;15.&nbsp;Networking Programs">Up</a>
+          "第&nbsp;15&nbsp;章&nbsp;网络程序">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

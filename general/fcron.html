@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;12.&nbsp;System Utilities
+        第&nbsp;12&nbsp;章&nbsp;系统实用工具
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">Prev</a>
+          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">上一页</a>
           <p>
             dbus-1.16.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="gpm.html" title="GPM-1.20.7">Next</a>
+          <a accesskey="n" href="gpm.html" title="GPM-1.20.7">下一页</a>
           <p>
             GPM-1.20.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="fcron" name="fcron"></a>Fcron-3.4.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Fcron
         </h2>
@@ -58,9 +58,9 @@
           "application">Vixie Cron</span>.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -109,18 +109,17 @@
         </h4>
         <p class="optional">
           An <a class="xref" href="../server/mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a>, <a class=
-          "ulink" href="../postlfs/editors.html">text editor</a> (default is
-          <span class="command"><strong>vi</strong></span> from the <a class=
-          "xref" href="../postlfs/vim.html" title=
-          "Vim-9.2.0752">Vim-9.2.0752</a> package), <a class="xref" href=
-          "../postlfs/linux-pam.html" title=
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">MTA</a>, <a class="ulink" href=
+          "../postlfs/editors.html">text editor</a> (default is <span class=
+          "command"><strong>vi</strong></span> from the <a class="xref" href=
+          "../postlfs/vim.html" title="Vim-9.2.0752">Vim-9.2.0752</a>
+          package), <a class="xref" href="../postlfs/linux-pam.html" title=
           "Linux-PAM-1.7.2">Linux-PAM-1.7.2</a>, and <a class="xref" href=
           "../pst/docbook-utils.html" title=
           "DocBook-utils-0.6.14">DocBook-utils-0.6.14</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Fcron
         </h2>
@@ -164,7 +163,7 @@ make</kbd></pre>
           the DESTDIR before doing the install.
         </p>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -173,12 +172,11 @@ make</kbd></pre>
           default, <span class="application">Fcron</span> will attempt to use
           the <span class="command"><strong>sendmail</strong></span> command
           from an <a class="xref" href="../server/mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> package to
-          email you the results of the <span class=
-          "command"><strong>fcron</strong></span> script. This switch is used
-          to disable default email notification. Omit the switch to enable
-          the default. Alternatively, you can use the <code class=
-          "option">--with-sendmail=<em class=
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">MTA</a> package to email you the
+          results of the <span class="command"><strong>fcron</strong></span>
+          script. This switch is used to disable default email notification.
+          Omit the switch to enable the default. Alternatively, you can use
+          the <code class="option">--with-sendmail=<em class=
           "replaceable"><code>&lt;/path/to/MTA command&gt;</code></em></code>
           to use a different mailer command.
         </p>
@@ -207,11 +205,11 @@ make</kbd></pre>
           "filename">/usr/share/sgml/docbook/dsssl-stylesheets-1.79</code>.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Fcron
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="fcron-config" name="fcron-config"></a>Config Files
           </h3>
@@ -221,7 +219,7 @@ make</kbd></pre>
             "filename">/etc/fcron.deny</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="run-parts" name="run-parts"></a>Configuration Information
           </h3>
@@ -329,7 +327,7 @@ chmod -v 755 /usr/bin/run-parts</kbd></pre>
 &amp;bootrun 42 4 1 * * root run-parts /etc/cron.monthly</code>
 EOF</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="fcron-init" name="fcron-init"></a> Systemd Unit
           </h3>
@@ -349,7 +347,7 @@ EOF</kbd></pre>
 fcrontab -z -u systab</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -451,24 +449,24 @@ fcrontab -z -u systab</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">Prev</a>
+          <a accesskey="p" href="dbus.html" title="dbus-1.16.2">上一页</a>
           <p>
             dbus-1.16.2
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="gpm.html" title="GPM-1.20.7">Next</a>
+          <a accesskey="n" href="gpm.html" title="GPM-1.20.7">下一页</a>
           <p>
             GPM-1.20.7
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

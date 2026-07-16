@@ -12,44 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;12.&nbsp;System Utilities
+        第&nbsp;12&nbsp;章&nbsp;系统实用工具
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="sysstat.html" title=
-          "Sysstat-12.7.9">Prev</a>
+          <a accesskey="p" href="sysstat.html" title="Sysstat-12.7.9">上一页</a>
           <p>
             Sysstat-12.7.9
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="udisks2.html" title="UDisks-2.11.1">Next</a>
+          <a accesskey="n" href="udisks2.html" title="UDisks-2.11.1">下一页</a>
           <p>
             UDisks-2.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="systemd" name="systemd"></a>Systemd-261.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to systemd
         </h2>
@@ -64,9 +63,9 @@
           provides many additional features for dependent packages.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -115,9 +114,9 @@
           Recommended
         </h4>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             <a class="xref" href="../postlfs/linux-pam.html" title=
@@ -164,7 +163,7 @@
           href="../postlfs/make-ca.html" title=
           "make-ca-1.16.1">make-ca-1.16.1</a>, <a class="xref" href=
           "../postlfs/p11-kit.html" title=
-          "p11-kit-0.26.2">p11-kit-0.26.2</a>, <a class="xref" href=
+          "p11-kit-0.26.4">p11-kit-0.26.4</a>, <a class="xref" href=
           "../postlfs/qemu.html" title="qemu-11.0.2">qemu-11.0.2</a>,
           <a class="xref" href="libqrencode.html" title=
           "libqrencode-4.1.1">libqrencode-4.1.1</a>, <a class="xref" href=
@@ -173,7 +172,7 @@
           "Sphinx-9.1.0">sphinx-9.1.0</a>, <a class="xref" href=
           "valgrind.html" title="Valgrind-3.27.1">Valgrind-3.27.1</a>,
           <a class="xref" href="../postlfs/zsh.html" title=
-          "zsh-5.9.1">zsh-5.9.1</a> (for the zsh completions), <a class=
+          "zsh-5.9.2">zsh-5.9.2</a> (for the zsh completions), <a class=
           "ulink" href="https://www.apparmor.net/">AppArmor</a>, <a class=
           "ulink" href=
           "https://github.com/linux-audit/audit-userspace">audit-userspace</a>,
@@ -218,14 +217,14 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/Logind">https://wiki.linuxfromscratch.org/blfs/wiki/Logind</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of systemd
         </h2>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If a previous version of systemd has been installed, remove a
@@ -272,9 +271,9 @@ meson setup ..                 \
 
 ninja</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             For the best test results, make sure you run the test suite from
@@ -295,7 +294,7 @@ ninja</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">ninja install</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -340,7 +339,7 @@ ninja</kbd></pre>
           <span class="command"><strong>meson setup</strong></span> command.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring systemd
         </h2>
@@ -456,9 +455,9 @@ systemctl --user daemon-reload</kbd></pre>
           the generator.
         </p>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             Now ensure <a class="xref" href="../postlfs/shadow.html" title=
@@ -476,9 +475,9 @@ systemctl --user daemon-reload</kbd></pre>
           </p>
         </div>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If you are upgrading from a previous version of systemd and an
@@ -487,7 +486,7 @@ systemctl --user daemon-reload</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -597,25 +596,24 @@ systemctl --user daemon-reload</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="sysstat.html" title=
-          "Sysstat-12.7.9">Prev</a>
+          <a accesskey="p" href="sysstat.html" title="Sysstat-12.7.9">上一页</a>
           <p>
             Sysstat-12.7.9
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="udisks2.html" title="UDisks-2.11.1">Next</a>
+          <a accesskey="n" href="udisks2.html" title="UDisks-2.11.1">下一页</a>
           <p>
             UDisks-2.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="sysutils.html" title=
-          "Chapter&nbsp;12.&nbsp;System Utilities">Up</a>
+          "第&nbsp;12&nbsp;章&nbsp;系统实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

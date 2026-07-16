@@ -12,45 +12,45 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;25.&nbsp;Graphical Environment Libraries
+        第&nbsp;25&nbsp;章&nbsp;Graphical Environment Libraries
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="pangomm2.html" title=
-          "Pangomm-2.56.2">Prev</a>
+          "Pangomm-2.56.2">上一页</a>
           <p>
             Pangomm-2.56.2
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.11.1">Next</a>
+          "QtWebEngine-6.11.1">下一页</a>
           <p>
             QtWebEngine-6.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="lib.html" title=
-          "Chapter&nbsp;25.&nbsp;Graphical Environment Libraries">Up</a>
+          "第&nbsp;25&nbsp;章&nbsp;Graphical Environment Libraries">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="qt6" name="qt6"></a>Qt-6.11.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Qt6
         </h2>
@@ -63,9 +63,9 @@
           as command-line tools and consoles for servers.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -216,9 +216,9 @@
           <a class="ulink" href="http://www.tslib.org/">tslib</a>
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Either the gstreamer stack or ffmpeg must be installed to use
@@ -229,7 +229,7 @@
           </p>
         </div>
       </div>
-      <div class="qt6-prefix" lang="en" xml:lang="en">
+      <div class="qt6-prefix" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Setting the installation prefix
         </h2>
@@ -246,9 +246,9 @@
         <pre class="userinput"><kbd class=
         "command">export QT6PREFIX=/opt/qt6</kbd></pre>
         <div class="admon tip">
-          <img alt="[Tip]" src="../images/tip.png" />
+          <img alt="[提示]" src="../images/tip.png" />
           <h3>
-            Tip
+            提示
           </h3>
           <p>
             Sometimes the installation paths are hardcoded into installed
@@ -270,9 +270,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If any of <a class="xref" href="../lxqt/libqtxdg.html" title=
@@ -288,14 +288,14 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Qt6
         </h2>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If <span class="application">Qt6</span> is being reinstalled into
@@ -308,9 +308,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
         <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
+          <img alt="[小心]" src="../images/caution.png" />
           <h3>
-            Caution
+            小心
           </h3>
           <p>
             If you did not install some of the recommended dependencies,
@@ -320,9 +320,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The build time and space required for the full <span class=
@@ -333,9 +333,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The BLFS editors do not recommend installing <span class=
@@ -350,9 +350,9 @@ ln -sfnv qt-6.11.1 /opt/qt6</kbd></pre>
         <pre class="userinput"><kbd class=
         "command">patch -Np1 -i ../../qt-everywhere-src-6.11.1-openssl4_fix-1.patch -d qtbase/</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The above command is correct, as <span class=
@@ -487,7 +487,7 @@ Type=Application
 Categories=Qt;Development;Debugger;</code>
 EOF</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -537,11 +537,11 @@ EOF</kbd></pre>
           usage of libproxy for determining proxy server information.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Qt6
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="qt6-config" name="qt6-config"></a>Configuration
             Information
@@ -595,7 +595,7 @@ export QT6DIR
 EOF</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -1188,25 +1188,25 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="pangomm2.html" title=
-          "Pangomm-2.56.2">Prev</a>
+          "Pangomm-2.56.2">上一页</a>
           <p>
             Pangomm-2.56.2
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="qtwebengine.html" title=
-          "QtWebEngine-6.11.1">Next</a>
+          "QtWebEngine-6.11.1">下一页</a>
           <p>
             QtWebEngine-6.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="lib.html" title=
-          "Chapter&nbsp;25.&nbsp;Graphical Environment Libraries">Up</a>
+          "第&nbsp;25&nbsp;章&nbsp;Graphical Environment Libraries">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

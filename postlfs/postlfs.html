@@ -5,94 +5,91 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Part&nbsp;II.&nbsp;Post LFS Configuration and Extra Software
+      第 II 部分 LFS 的后续配置与额外软件
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <ul>
         <li class="prev">
           <a accesskey="p" href="../introduction/beyond.html" title=
-          "超越 BLFS">Prev</a>
+          "超越 BLFS">上一页</a>
           <p>
             超越 BLFS
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="config.html" title=
-          "After LFS Configuration Issues">Next</a>
+          <a accesskey="n" href="config.html" title="后续 LFS 配置问题">下一页</a>
           <p>
-            After LFS Configuration Issues
+            后续 LFS 配置问题
           </p>
         </li>
         <li class="up">.
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="part">
-      <a id="postlfs" name="postlfs"></a>Post LFS Configuration and Extra
-      Software
+      <a id="postlfs" name="postlfs"></a>LFS 的后续配置与额外软件
     </h1>
     <div class="part">
       <div class="toc">
         <h3>
-          Table of Contents
+          目录
         </h3>
         <ul>
           <li class="chapter">
             <h4>
-              <a href="config.html">3. After LFS Configuration Issues</a>
+              <a href="config.html">3. 后续 LFS 配置问题</a>
             </h4>
             <ul>
               <li class="sect1">
-                <a href="bootdisk.html">Creating a Custom Boot Device</a>
+                <a href="bootdisk.html">创建自定义启动设备</a>
               </li>
               <li class="sect1">
-                <a href="console-fonts.html">About Console Fonts</a>
+                <a href="console-fonts.html">关于控制台字体</a>
               </li>
               <li class="sect1">
-                <a href="firmware.html">About Firmware</a>
+                <a href="firmware.html">关于固件</a>
               </li>
               <li class="sect1">
-                <a href="devices.html">About Devices</a>
+                <a href="devices.html">关于设备</a>
               </li>
               <li class="sect1">
-                <a href="skel.html">Configuring for Adding Users</a>
+                <a href="skel.html">为添加用户进行配置</a>
               </li>
               <li class="sect1">
-                <a href="users.html">About System Users and Groups</a>
+                <a href="users.html">关于系统用户和组</a>
               </li>
               <li class="sect1">
-                <a href="profile.html">The Bash Shell Startup Files</a>
+                <a href="profile.html">Bash Shell 启动文件</a>
               </li>
               <li class="sect1">
-                <a href="vimrc.html">The /etc/vimrc and ~/.vimrc Files</a>
+                <a href="vimrc.html">/etc/vimrc 和 ~/.vimrc 文件</a>
               </li>
               <li class="sect1">
-                <a href="logon.html">Customizing your Logon with
-                /etc/issue</a>
+                <a href="logon.html">使用 /etc/issue 自定义登录界面</a>
               </li>
             </ul>
           </li>
           <li class="chapter">
             <h4>
-              <a href="security.html">4. Security</a>
+              <a href="security.html">4. 安全</a>
             </h4>
             <ul>
               <li class="sect1">
-                <a href="vulnerabilities.html">Vulnerabilities</a>
+                <a href="vulnerabilities.html">漏洞</a>
               </li>
               <li class="sect1">
                 <a href="make-ca.html">make-ca-1.16.1</a>
@@ -122,7 +119,7 @@
                 <a href="iptables.html">iptables-1.8.13</a>
               </li>
               <li class="sect1">
-                <a href="firewall.html">Setting Up a Network Firewall</a>
+                <a href="firewall.html">设置网络防火墙</a>
               </li>
               <li class="sect1">
                 <a href="libcap.html">libcap-2.78 with PAM</a>
@@ -149,7 +146,7 @@
                 <a href="openssh.html">OpenSSH-10.3p1</a>
               </li>
               <li class="sect1">
-                <a href="p11-kit.html">p11-kit-0.26.2</a>
+                <a href="p11-kit.html">p11-kit-0.26.4</a>
               </li>
               <li class="sect1">
                 <a href="polkit.html">Polkit-127</a>
@@ -176,12 +173,11 @@
           </li>
           <li class="chapter">
             <h4>
-              <a href="filesystems.html">5. File Systems and Disk
-              Management</a>
+              <a href="filesystems.html">5. 文件系统与磁盘管理</a>
             </h4>
             <ul>
               <li class="sect1">
-                <a href="initramfs.html">About initramfs</a>
+                <a href="initramfs.html">关于 initramfs</a>
               </li>
               <li class="sect1">
                 <a href="btrfs-progs.html">btrfs-progs-7.0</a>
@@ -199,11 +195,10 @@
                 <a href="lvm2.html">LVM2-2.03.41</a>
               </li>
               <li class="sect1">
-                <a href="aboutlvm.html">About Logical Volume Management
-                (LVM)</a>
+                <a href="aboutlvm.html">关于逻辑卷管理（LVM）</a>
               </li>
               <li class="sect1">
-                <a href="raid.html">About RAID</a>
+                <a href="raid.html">关于 RAID</a>
               </li>
               <li class="sect1">
                 <a href="mdadm.html">mdadm-4.6</a>
@@ -236,7 +231,7 @@
           </li>
           <li class="chapter">
             <h4>
-              <a href="editors.html">6. Text Editors</a>
+              <a href="editors.html">6. 文本编辑器</a>
             </h4>
             <ul>
               <li class="sect1">
@@ -267,7 +262,7 @@
           </li>
           <li class="chapter">
             <h4>
-              <a href="shells.html">7. Shells</a>
+              <a href="shells.html">7. Shell</a>
             </h4>
             <ul>
               <li class="sect1">
@@ -277,13 +272,13 @@
                 <a href="tcsh.html">Tcsh-6.24.16</a>
               </li>
               <li class="sect1">
-                <a href="zsh.html">zsh-5.9.1</a>
+                <a href="zsh.html">zsh-5.9.2</a>
               </li>
             </ul>
           </li>
           <li class="chapter">
             <h4>
-              <a href="virtualization.html">8. Virtualization</a>
+              <a href="virtualization.html">8. 虚拟化</a>
             </h4>
             <ul>
               <li class="sect1">
@@ -298,23 +293,22 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="../introduction/beyond.html" title=
-          "超越 BLFS">Prev</a>
+          "超越 BLFS">上一页</a>
           <p>
             超越 BLFS
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="config.html" title=
-          "After LFS Configuration Issues">Next</a>
+          <a accesskey="n" href="config.html" title="后续 LFS 配置问题">下一页</a>
           <p>
-            After LFS Configuration Issues
+            后续 LFS 配置问题
           </p>
         </li>
         <li class="up">.
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

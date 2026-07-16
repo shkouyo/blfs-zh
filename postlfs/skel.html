@@ -5,207 +5,171 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Configuring for Adding Users
+      为添加用户进行配置
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="devices.html" title="About Devices">Prev</a>
+          <a accesskey="p" href="devices.html" title="关于设备">上一页</a>
           <p>
-            About Devices
+            关于设备
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="users.html" title=
-          "About System Users and Groups">Next</a>
+          <a accesskey="n" href="users.html" title="关于系统用户和组">下一页</a>
           <p>
-            About System Users and Groups
+            关于系统用户和组
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-config-skel" name="postlfs-config-skel"></a>Configuring
-      for Adding Users
+      <a id="postlfs-config-skel" name="postlfs-config-skel"></a>为添加用户进行配置
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        Together, the <span class=
-        "command"><strong>/usr/sbin/useradd</strong></span> command and
-        <code class="filename">/etc/skel</code> directory (both are easy to
-        set up and use) provide a way to assure new users are added to your
-        LFS system with the same beginning settings for things such as the
-        <code class="envar">PATH</code>, keyboard processing and other
-        environmental variables. Using these two facilities makes it easier
-        to assure this initial state for each new user added to the system.
+        <span class="command"><strong>/usr/sbin/useradd</strong></span> 命令和
+        <code class="filename">/etc/skel</code>
+        目录（两者都易于设置和使用）共同提供了一种方法，确保新用户添加到您的 LFS 系统时，在 <code class=
+        "envar">PATH</code>、键盘处理和其他环境变量等方面具有相同的初始设置。使用这两种工具可以更轻松地确保系统中每个新添加的用户都具有这种初始状态。
       </p>
       <p>
-        The <code class="filename">/etc/skel</code> directory holds copies of
-        various initialization and other files that may be copied to the new
-        user's home directory when the <span class=
-        "command"><strong>/usr/sbin/useradd</strong></span> program adds the
-        new user.
+        <code class="filename">/etc/skel</code> 目录保存了各种初始化文件和其他文件的副本，当
+        <span class="command"><strong>/usr/sbin/useradd</strong></span>
+        程序添加新用户时，这些文件可能会被复制到新用户的主目录中。
       </p>
       <h5>
         Useradd
       </h5>
       <p>
-        The <span class="command"><strong>useradd</strong></span> program
-        uses a collection of default values kept in <code class=
-        "filename">/etc/default/useradd</code>. This file is created in a
-        base LFS installation by the <span class="application">Shadow</span>
-        package. If it has been removed or renamed, the <span class=
-        "command"><strong>useradd</strong></span> program uses some internal
-        defaults. You can see the default values by running <span class=
-        "command"><strong>/usr/sbin/useradd -D</strong></span>.
+        <span class="command"><strong>useradd</strong></span> 程序使用保存在
+        <code class="filename">/etc/default/useradd</code> 中的一组默认值。该文件由
+        <span class="application">Shadow</span> 包在基础 LFS
+        安装中创建。如果它已被删除或重命名，<span class=
+        "command"><strong>useradd</strong></span> 程序会使用一些内部默认值。您可以通过运行
+        <span class="command"><strong>/usr/sbin/useradd -D</strong></span>
+        来查看默认值。
       </p>
       <p>
-        To change these values, simply modify the <code class=
-        "filename">/etc/default/useradd</code> file as the <code class=
-        "systemitem">root</code> user. An alternative to directly modifying
-        the file is to run <span class=
-        "command"><strong>useradd</strong></span> as the <code class=
-        "systemitem">root</code> user while supplying the desired
-        modifications on the command line. Information on how to do this can
-        be found in the <span class="command"><strong>useradd</strong></span>
-        man page.
+        要更改这些值，只需以 <code class="systemitem">root</code> 用户身份修改 <code class=
+        "filename">/etc/default/useradd</code> 文件。另一种替代直接修改文件的方法是以
+        <code class="systemitem">root</code> 用户身份运行 <span class=
+        "command"><strong>useradd</strong></span>，并在命令行中提供所需的修改。有关如何执行此操作的信息，可以在
+        <span class="command"><strong>useradd</strong></span> 手册页中找到。
       </p>
       <h5>
         /etc/skel
       </h5>
       <p>
-        To get started, create an <code class="filename">/etc/skel</code>
-        directory and make sure it is writable only by the system
-        administrator, usually <code class="systemitem">root</code>. Creating
-        the directory as <code class="systemitem">root</code> is the best way
-        to go.
+        首先，创建一个 <code class="filename">/etc/skel</code> 目录，并确保它仅对系统管理员（通常是
+        <code class="systemitem">root</code>）可写。以 <code class=
+        "systemitem">root</code> 身份创建该目录是最佳做法。
       </p>
       <p>
-        The mode of any files from this part of the book that you put in
-        <code class="filename">/etc/skel</code> should be writable only by
-        the owner. Also, since there is no telling what kind of sensitive
-        information a user may eventually place in their copy of these files,
-        you should make them unreadable by "group" and "other".
+        您从本书此部分放入 <code class="filename">/etc/skel</code>
+        的任何文件的模式应仅对所有者可写。此外，由于无法预知用户最终可能会在其副本中放置何种敏感信息，您应使其对“组”和“其他”不可读。
       </p>
       <p>
-        You can also put other files in <code class=
-        "filename">/etc/skel</code> and different permissions may be needed
-        for them.
+        您也可以将其他文件放入 <code class="filename">/etc/skel</code>，它们可能需要不同的权限。
       </p>
       <p>
-        Decide which initialization files should be provided in every (or
-        most) new user's home directory. The decisions you make will affect
-        what you do in the next two sections, <a class="xref" href=
-        "profile.html" title="The Bash Shell Startup Files">The Bash Shell
-        Startup Files</a> and <a class="xref" href="vimrc.html" title=
-        "The /etc/vimrc and ~/.vimrc Files">The vimrc Files</a>. Some or all
-        of those files will be useful for <code class=
-        "systemitem">root</code>, any already-existing users, and new users.
+        决定应在每个（或大多数）新用户的主目录中提供哪些初始化文件。您的决定将影响您在接下来的两节（<a class="xref" href=
+        "profile.html" title="Bash Shell 启动文件">Bash Shell 启动文件</a> 和
+        <a class="xref" href="vimrc.html" title=
+        "/etc/vimrc 和 ~/.vimrc 文件">vimrc 文件</a>）中的操作。这些文件中的部分或全部将对
+        <code class="systemitem">root</code>、任何已有用户和新用户有用。
       </p>
       <p>
-        The files from those sections that you might want to place in
-        <code class="filename">/etc/skel</code> include <code class=
-        "filename">.inputrc</code>, <code class=
-        "filename">.bash_profile</code>, <code class=
-        "filename">.bashrc</code>, <code class=
-        "filename">.bash_logout</code>, <code class=
-        "filename">.dircolors</code>, and <code class=
-        "filename">.vimrc</code>. If you are unsure which of these should be
-        placed there, just continue to the following sections, read each
-        section and any references provided, and then make your decision.
+        您可能想要放入 <code class="filename">/etc/skel</code> 的那些章节中的文件包括
+        <code class="filename">.inputrc</code>、<code class=
+        "filename">.bash_profile</code>、<code class=
+        "filename">.bashrc</code>、<code class=
+        "filename">.bash_logout</code>、<code class=
+        "filename">.dircolors</code> 和 <code class=
+        "filename">.vimrc</code>。如果您不确定其中哪些应放在那里，只需继续阅读以下各节，阅读每节及其提供的任何参考资料，然后做出决定。
       </p>
       <p>
-        You will run a slightly modified set of commands for files which are
-        placed in <code class="filename">/etc/skel</code>. Each section will
-        remind you of this. In brief, the book's commands have been written
-        for files <span class="emphasis"><em>not</em></span> added to
-        <code class="filename">/etc/skel</code> and instead just sends the
-        results to the user's home directory. If the file is going to be in
-        <code class="filename">/etc/skel</code>, change the book's command(s)
-        to send output there instead and then just copy the file from
-        <code class="filename">/etc/skel</code> to the appropriate
-        directories, like <code class="filename">/etc</code>, <code class=
-        "filename">~</code> or the home directory of any other user already
-        in the system.
+        对于放入 <code class="filename">/etc/skel</code>
+        的文件，您将运行一组略有修改的命令。每节都会提醒您这一点。简而言之，本书中的命令是为 <span class=
+        "emphasis"><em>不</em></span> 添加到 <code class=
+        "filename">/etc/skel</code> 的文件编写的，而是直接将结果发送到用户的主目录。如果文件将放入
+        <code class="filename">/etc/skel</code>，请修改本书的命令以将输出发送到那里，然后将文件从
+        <code class="filename">/etc/skel</code> 复制到相应的目录，例如 <code class=
+        "filename">/etc</code>、<code class="filename">~</code>
+        或系统中任何其他已有用户的主目录。
       </p>
       <h5>
-        When Adding a User
+        添加用户时
       </h5>
       <p>
-        When adding a new user with <span class=
-        "command"><strong>useradd</strong></span>, use the <code class=
-        "option">-m</code> parameter, which tells <span class=
-        "command"><strong>useradd</strong></span> to create the user's home
-        directory and copy files from <code class="filename">/etc/skel</code>
-        (can be overridden) to the new user's home directory. For example
-        (perform as the <code class="systemitem">root</code> user):
+        当使用 <span class="command"><strong>useradd</strong></span> 添加新用户时，请使用
+        <code class="option">-m</code> 参数，该参数告诉 <span class=
+        "command"><strong>useradd</strong></span> 创建用户的主目录，并将文件从 <code class=
+        "filename">/etc/skel</code>（可覆盖）复制到新用户的主目录。例如（以 <code class=
+        "systemitem">root</code> 用户身份执行）：
       </p>
       <pre class="root"><kbd class="command">useradd -m <em class=
-      "replaceable"><code>&lt;newuser&gt;</code></em></kbd></pre>
+      "replaceable"><code>&lt;新用户&gt;</code></em></kbd></pre>
       <p>
-        If you are sharing a <code class="filename">/home</code> or
-        <code class="filename">/usr/src</code> with another Linux distro (for
-        example, the host distro used for building LFS), you can create a
-        user with the same UID (and, same primary group GID) to keep the file
-        ownership consistent across the systems. First, on <span class=
-        "emphasis"><em>the other distro</em></span>, get the UID of the user
-        and the GID of the user's primary group:
+        如果您与其他 Linux 发行版（例如用于构建 LFS 的主机发行版）共享 <code class=
+        "filename">/home</code> 或 <code class=
+        "filename">/usr/src</code>，您可以创建具有相同 UID（以及相同的主组
+        GID）的用户，以保持文件所有权在各个系统间一致。首先，在 <span class=
+        "emphasis"><em>其他发行版</em></span> 上，获取该用户的 UID 和用户主组的 GID：
       </p>
       <pre class="userinput"><kbd class="command">getent passwd <em class=
-      "replaceable"><code>&lt;username&gt;</code></em> | cut -d ':' -f 3,4</kbd></pre>
+      "replaceable"><code>&lt;用户名&gt;</code></em> | cut -d ':' -f 3,4</kbd></pre>
       <p>
-        The command should output the UID and GID, separated by a colon. Now
-        on the BLFS system, create the primary group and the user:
+        该命令应输出 UID 和 GID，以冒号分隔。现在，在 BLFS 系统上，创建主组和用户：
       </p>
       <pre class="root"><kbd class="command">groupadd -g <em class=
       "replaceable"><code>&lt;GID&gt;</code></em> <em class=
-      "replaceable"><code>&lt;username&gt;</code></em> &amp;&amp;
+      "replaceable"><code>&lt;用户名&gt;</code></em> &amp;&amp;
 useradd -u <em class=
-"replaceable"><code>&lt;UID&gt;</code></em> -g <em class="replaceable"><code>&lt;username&gt;</code></em> <em class="replaceable"><code>&lt;username&gt;</code></em></kbd></pre>
+"replaceable"><code>&lt;UID&gt;</code></em> -g <em class="replaceable"><code>&lt;用户名&gt;</code></em> <em class="replaceable"><code>&lt;用户名&gt;</code></em></kbd></pre>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="devices.html" title="About Devices">Prev</a>
+          <a accesskey="p" href="devices.html" title="关于设备">上一页</a>
           <p>
-            About Devices
+            关于设备
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="users.html" title=
-          "About System Users and Groups">Next</a>
+          <a accesskey="n" href="users.html" title="关于系统用户和组">下一页</a>
           <p>
-            About System Users and Groups
+            关于系统用户和组
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

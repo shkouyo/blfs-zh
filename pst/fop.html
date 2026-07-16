@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;50.&nbsp;PostScript
+        第&nbsp;50&nbsp;章&nbsp;PostScript
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="epdfview.html" title=
-          "ePDFView-gtk3-20200814">Prev</a>
+          "ePDFView-gtk3-20200814">上一页</a>
           <p>
             ePDFView-gtk3-20200814
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mupdf.html" title="MuPDF-1.26.12">Next</a>
+          <a accesskey="n" href="mupdf.html" title="MuPDF-1.26.12">下一页</a>
           <p>
             MuPDF-1.26.12
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="ps.html" title=
-          "Chapter&nbsp;50.&nbsp;PostScript">Up</a>
+          "第&nbsp;50&nbsp;章&nbsp;PostScript">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="fop" name="fop"></a>fop-2.11
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to fop
         </h2>
@@ -64,9 +64,9 @@
           text. The primary output target is PDF.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -173,14 +173,14 @@
         </h4>
         <p class="optional">
           <a class="xref" href="../x/installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">a graphical
           environment</a> (to run tests), <a class="ulink" href=
           "https://jai-tools.blogspot.com/">JAI Image I/O Tools</a>, and
           <a class="ulink" href=
           "https://jeuclid.sourceforge.net/">JEuclid</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of fop
         </h2>
@@ -192,7 +192,7 @@
           corresponding <code class="filename">.jar</code> files can be found
           via the <code class="envar">CLASSPATH</code> environment variable.
         </p>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installing OFFO Hyphenation Patterns
           </h3>
@@ -205,7 +205,7 @@
 cp offo-hyphenation/hyph/* fop/hyph &amp;&amp;
 rm -rf offo-hyphenation</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installing a temporary Maven binary
           </h3>
@@ -217,7 +217,7 @@ rm -rf offo-hyphenation</kbd></pre>
           <pre class="userinput"><kbd class=
           "command">tar -xf ../apache-maven-3.9.12-bin.tar.gz -C /tmp</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installing fop Components
           </h3>
@@ -265,7 +265,7 @@ ln -v -sfn fop-2.11 /opt/fop</kbd></pre>
           "command">rm -rf /tmp/apache-maven-3.9.12</kbd></pre>
         </div>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -300,11 +300,11 @@ ln -v -sfn fop-2.11 /opt/fop</kbd></pre>
           change.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring fop
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="fop-config" name="fop-config"></a>Config Files
           </h3>
@@ -312,7 +312,7 @@ ln -v -sfn fop-2.11 /opt/fop</kbd></pre>
             <code class="filename">~/.foprc</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -374,9 +374,9 @@ pathappend /opt/fop
 # End /etc/profile.d/fop.sh</code>
 EOF</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               Running <span class="command"><strong>fop</strong></span> can
@@ -392,7 +392,7 @@ EOF</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -466,24 +466,24 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="epdfview.html" title=
-          "ePDFView-gtk3-20200814">Prev</a>
+          "ePDFView-gtk3-20200814">上一页</a>
           <p>
             ePDFView-gtk3-20200814
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mupdf.html" title="MuPDF-1.26.12">Next</a>
+          <a accesskey="n" href="mupdf.html" title="MuPDF-1.26.12">下一页</a>
           <p>
             MuPDF-1.26.12
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="ps.html" title=
-          "Chapter&nbsp;50.&nbsp;PostScript">Up</a>
+          "第&nbsp;50&nbsp;章&nbsp;PostScript">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

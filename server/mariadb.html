@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;22.&nbsp;Databases
+        第&nbsp;22&nbsp;章&nbsp;数据库
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lmdb.html" title="lmdb-1.0.0">Prev</a>
+          <a accesskey="p" href="lmdb.html" title="lmdb-1.0.0">上一页</a>
           <p>
             lmdb-1.0.0
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="postgresql.html" title=
-          "PostgreSQL-18.4">Next</a>
+          "PostgreSQL-18.4">下一页</a>
           <p>
             PostgreSQL-18.4
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="databases.html" title=
-          "Chapter&nbsp;22.&nbsp;Databases">Up</a>
+          "第&nbsp;22&nbsp;章&nbsp;数据库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="mariadb" name="mariadb"></a>MariaDB-12.3.2
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to MariaDB
         </h2>
@@ -59,9 +59,9 @@
           "application">MySQL</span> relational database management system.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -119,9 +119,9 @@
           </ul>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The installed size of MariaDB is 778 MB, but this can be reduced
@@ -131,9 +131,9 @@
           </p>
         </div>
         <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
+          <img alt="[小心]" src="../images/caution.png" />
           <h3>
-            Caution
+            小心
           </h3>
           <p>
             If you are upgrading an existing database, please see the
@@ -181,7 +181,7 @@
           "xref" href="../postlfs/mitkrb.html" title=
           "MIT Kerberos V5-1.22.2">MIT Kerberos V5-1.22.2</a>, <a class=
           "xref" href="../general/ruby.html" title=
-          "Ruby-4.0.5">Ruby-4.0.5</a>, <a class="xref" href=
+          "Ruby-4.0.6">Ruby-4.0.6</a>, <a class="xref" href=
           "../general/python-modules.html#sphinx" title=
           "Sphinx-9.1.0">sphinx-9.1.0</a>, <a class="xref" href=
           "../general/unixodbc.html" title=
@@ -200,14 +200,14 @@
           "ulink" href="https://zeromq.org/">ZeroMQ</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of MariaDB
         </h2>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             MariaDB and MySQL cannot be installed on the same system without
@@ -216,9 +216,9 @@
           </p>
         </div>
         <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
+          <img alt="[小心]" src="../images/caution.png" />
           <h3>
-            Caution
+            小心
           </h3>
           <p>
             If you are upgrading MariaDB from 11.x to 12.x, please pay
@@ -282,7 +282,7 @@ make</kbd></pre>
         </p>
         <pre class="root"><kbd class="command">make install</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -312,9 +312,9 @@ make</kbd></pre>
           turns off some warnings that are only useful for developers.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             There are numerous options available to <span class=
@@ -324,11 +324,11 @@ make</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring MariaDB
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="mariadb-config" name="mariadb-config"></a>Config Files
           </h3>
@@ -337,7 +337,7 @@ make</kbd></pre>
             "filename">~/.my.cnf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -449,7 +449,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
           <pre class="root"><kbd class=
           "command">mariadb-admin -p shutdown</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="mariadb-init" name="mariadb-init"></a> Systemd Unit
           </h3>
@@ -465,9 +465,9 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
           <pre class="root"><kbd class=
           "command">make install-mariadb</kbd></pre>
           <div class="admon caution">
-            <img alt="[Caution]" src="../images/caution.png" />
+            <img alt="[小心]" src="../images/caution.png" />
             <h3>
-              Caution
+              小心
             </h3>
             <p>
               Upgrading MariaDB from version 11 to 12 requires a full backup,
@@ -480,7 +480,7 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -1420,25 +1420,25 @@ mariadbd-safe --user=mariadb 2&gt;&amp;1 &gt;/dev/null &amp;</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="lmdb.html" title="lmdb-1.0.0">Prev</a>
+          <a accesskey="p" href="lmdb.html" title="lmdb-1.0.0">上一页</a>
           <p>
             lmdb-1.0.0
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="postgresql.html" title=
-          "PostgreSQL-18.4">Next</a>
+          "PostgreSQL-18.4">下一页</a>
           <p>
             PostgreSQL-18.4
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="databases.html" title=
-          "Chapter&nbsp;22.&nbsp;Databases">Up</a>
+          "第&nbsp;22&nbsp;章&nbsp;数据库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,270 +5,209 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      About Console Fonts
+      关于控制台字体
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="bootdisk.html" title=
-          "Creating a Custom Boot Device">Prev</a>
+          <a accesskey="p" href="bootdisk.html" title="创建自定义启动设备">上一页</a>
           <p>
-            Creating a Custom Boot Device
+            创建自定义启动设备
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="firmware.html" title=
-          "About Firmware">Next</a>
+          <a accesskey="n" href="firmware.html" title="关于固件">下一页</a>
           <p>
-            About Firmware
+            关于固件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-console-fonts" name="postlfs-console-fonts"></a>About
-      Console Fonts
+      <a id="postlfs-console-fonts" name="postlfs-console-fonts"></a>关于控制台字体
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        An LFS system can be used without a graphical desktop, and unless or
-        until you install <a class="xref" href="../x/installing.html" title=
-        "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
-        environment</a> you will have to work in the console. Most, if not
-        all, PCs boot with an 8x16 font - whatever the actual screen size.
-        There are a few things you can do to alter the display on the
-        console. Most of them involve changing the font, but the first alters
-        the commandline used by grub.
+        LFS 系统可以在没有图形桌面的情况下使用，除非您安装了 <a class="xref" href=
+        "../x/installing.html" title=
+        "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">a graphical
+        environment</a>，否则您将不得不在控制台中工作。大多数（即便不是全部）PC 都以 8x16
+        字体启动——无论实际屏幕尺寸如何。您可以通过一些操作来改变控制台的显示效果。其中大部分涉及更改字体，但第一个操作会更改 GRUB 命令行。
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="grub-video" name="grub-video"></a>Setting a smaller screen
-          resolution in grub
+          <a id="grub-video" name="grub-video"></a>在 GRUB 中设置较小的屏幕分辨率
         </h2>
         <p>
-          Modern screens often have a lot more pixels than the screens used
-          in the past. If your screen is 1600 pixels wide, an 8x16 font will
-          give you 200 columns of text - unless your monitor is enormous, the
-          text will be tiny. One of the ways to work around this is to tell
-          GRUB and the kernel to use a smaller resolution, such as 1024x768
-          or 800x600 or even 640x480. Even if your screen does not have a 4:3
-          aspect ratio, this should work.
+          现代屏幕的像素数通常比过去的屏幕多得多。如果您的屏幕宽 1600 像素，使用 8x16 字体将为您提供 200
+          列文本——除非您的显示器很大，否则文本会非常小。解决此问题的方法之一是告诉 GRUB 和内核使用较小的分辨率，例如
+          1024x768、800x600 甚至 640x480。即使您的屏幕不是 4:3 的宽高比，这通常也能工作。
         </p>
         <p>
-          If you've followed the LFS book to configure your kernel with
-          SimpleDRM enabled and the kernel driver dedicated for your GPU (for
-          example i915 or AMDGPU) is built as a kernel module, before the
-          dedicated driver is loaded, the SimpleDRM driver will be used for
-          displaying. The SimpleDRM driver itself cannot change the
-          resolution, so you need to tell GRUB to set the suitable resolution
-          before loading the kernel by modifying the <code class=
-          "literal">set gfxpayload=1024x768x32</code> line in <a class=
-          "ulink" href="../../../../lfs/view/systemd/chapter10/grub.html">the
-          <code class="filename">grub.cfg</code> file</a>.
+          如果您按照 LFS 手册配置内核时启用了 SimpleDRM，并且专用于您 GPU 的内核驱动程序（例如 i915 或
+          AMDGPU）是作为内核模块构建的，那么在专用驱动程序加载之前，SimpleDRM 驱动程序将用于显示。SimpleDRM
+          驱动程序本身无法更改分辨率，因此您需要修改 <a class="ulink" href=
+          "../../../../lfs/view/systemd/chapter10/grub.html"><code class=
+          "filename">grub.cfg</code> 文件</a> 中的 <code class="literal">set
+          gfxpayload=1024x768x32</code> 行，告诉 GRUB 在加载内核之前设置合适的分辨率。
         </p>
         <p>
-          When the dedicated GPU driver starts to work (once the kernel or
-          the module is loaded depending on if you've built it as a part of
-          the kernel image or a module), it takes the display control away
-          from the SimpleDRM driver and changes the display resolution. To
-          make it use the resolution you want, again edit the <code class=
-          "filename">grub.cfg</code> file to insert a <code class=
-          "literal">video=</code> parameter into the kernel command line, for
-          example <code class="literal">root=/dev/sda2 video=DP-1:800x600
-          ro</code>. Note that it's necessary to explicitly specify the
-          output name like <code class="literal">DP-1</code> here: a
-          <code class="literal">video=</code> parameter without an output
-          name is only recognized by GRUB (as a deprecated alias of
-          <code class="literal">set gfxpayload=</code>) and completely
-          ignored by the kernel. The content of <code class=
-          "filename">/sys/class/drm/</code> can be helpful for figuring out
-          the output name, for example the <code class=
-          "filename">card1-DP-1</code> subdirectory indicates an output named
-          <code class="literal">DP-1</code>. To align the output name with
-          your monitor, install the <a class="xref" href=
-          "../general/libdisplay-info.html" title=
-          "libdisplay-info-0.3.0">libdisplay-info-0.3.0</a> package and run
-          the <span class="command"><strong>di-edid-decode
-          /sys/class/drm/card<em class="replaceable"><code>&lt;card
-          ID&gt;</code></em>-<em class="replaceable"><code>&lt;output
-          name&gt;</code></em>/edid</strong></span> command to show the info
-          (including the model name and the supported resolutions) about the
-          the monitor connected on the output.
+          当专用 GPU 驱动程序开始工作（一旦内核或模块被加载，取决于您将其构建为内核映像的一部分还是模块）时，它会从 SimpleDRM
+          驱动程序手中接管显示控制并更改显示分辨率。要让它使用您想要的分辨率，再次编辑 <code class=
+          "filename">grub.cfg</code> 文件，在内核命令行中插入一个 <code class=
+          "literal">video=</code> 参数，例如 <code class="literal">root=/dev/sda2
+          video=DP-1:800x600 ro</code>。注意，这里必须显式指定输出名称，如 <code class=
+          "literal">DP-1</code>：没有输出名称的 <code class="literal">video=</code>
+          参数仅被 GRUB 识别（作为 <code class="literal">set gfxpayload=</code>
+          的已弃用别名），而内核会完全忽略它。<code class="filename">/sys/class/drm/</code>
+          的内容有助于确定输出名称，例如 <code class="filename">card1-DP-1</code> 子目录表示一个名为
+          <code class="literal">DP-1</code> 的输出。为使输出名称与您的显示器匹配，请安装 <a class=
+          "xref" href="../general/libdisplay-info.html" title=
+          "libdisplay-info-0.3.0">libdisplay-info-0.3.0</a> 软件包，并运行
+          <span class="command"><strong>di-edid-decode
+          /sys/class/drm/card<em class="replaceable"><code>&lt;卡
+          ID&gt;</code></em>-<em class=
+          "replaceable"><code>&lt;输出名称&gt;</code></em>/edid</strong></span>
+          命令以显示该输出上所连接显示器的信息（包括型号名称和支持的分辨率）。
         </p>
         <p>
-          If you decide that you wish to do this, you can then (as the
-          <code class="systemitem">root</code> user) edit <code class=
-          "filename">/boot/grub/grub.cfg</code>.
+          如果您决定这样做，可以（以 <code class="systemitem">root</code> 用户身份）编辑
+          <code class="filename">/boot/grub/grub.cfg</code>。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="psf-fonts" name="psf-fonts"></a>Using the standard psf fonts
+          <a id="psf-fonts" name="psf-fonts"></a>使用标准的 PSF 字体
         </h2>
         <p>
-          In LFS the <span class="application">kbd</span> package is used.
-          The fonts it provides are PC Screen Fonts, usually called PSF, and
-          they were installed into <code class=
-          "filename">/usr/share/consolefonts</code>. Where these include a
-          unicode mapping table, the file suffix is often changed to
-          <code class="literal">.psfu</code> although packages such as
-          <span class="application">terminus-font</span> (see below) do not
-          add the 'u'. These fonts are usually compressed with gzip to save
-          space, but that is not essential.
+          在 LFS 中使用了 <span class="application">kbd</span> 软件包。它提供的字体是 PC
+          屏幕字体（通常称为 PSF），它们被安装到 <code class=
+          "filename">/usr/share/consolefonts</code> 中。如果这些字体包含 unicode
+          映射表，文件后缀通常改为 <code class="literal">.psfu</code>，尽管诸如 <span class=
+          "application">terminus-font</span>（见下文）之类的软件包不加 'u'。这些字体通常用 gzip
+          压缩以节省空间，但这并非必须。
         </p>
         <p>
-          The initial PC text screens had 8 colours, or 16 colours if the
-          bright versions of the original 8 colours were used. A PSF font can
-          include up to 256 characters (technically, glyphs) while allowing
-          16 colours, or up to 512 characters (in which case, the bright
-          colours will not be available). Clearly, these console fonts cannot
-          be used to display CJK text - that would need thousands of
-          available glyphs.
+          最初的 PC 文本屏幕有 8 种颜色，如果使用原始 8 种颜色的亮色版本，则有 16 种颜色。PSF 字体在允许 16
+          种颜色的情况下最多可包含 256 个字符（技术上称为字形），或者在允许 512
+          个字符的情况下（此时亮色将不可用）。显然，这些控制台字体无法用于显示中日韩（CJK）文本——那需要数千个可用的字形。
         </p>
         <p>
-          Some fonts in <span class="application">kbd</span> can cover more
-          than 512 codepoints ('characters'), with varying degrees of
-          fidelity: unicode contains several whitespace codepoints which can
-          all be mapped to a space, varieties of dashes can be mapped to a
-          minus sign, smart quotes can map to the regular ASCII quotes rather
-          than to whatever is used for "codepoint not present or invalid",
-          and those cyrillic or greek letters which look like latin letters
-          can be mapped onto them, so 'A' can also do duty for cyrillic A and
-          greek Alpha, and 'P' can also do duty for cyrillic ER and greek
-          RHO. Unfortunately, where a font has been created from a BDF file
-          (the method in terminus and Debian's <a class="ulink" href=
+          <span class="application">kbd</span> 中的某些字体可以覆盖超过 512
+          个码位（“字符”），但保真度各不相同：unicode
+          包含几个空白码位，它们都可以映射到空格；各种破折号可以映射到减号；智能引号可以映射到常规 ASCII
+          引号，而不是映射到“码位不存在或无效”所使用的字符；那些看起来像拉丁字母的西里尔字母或希腊字母也可以映射到它们，因此 'A'
+          也可以充当西里尔字母 A 和希腊字母 Alpha，'P' 也可以充当西里尔字母 ER 和希腊字母 RHO。遗憾的是，如果字体是从
+          BDF 文件（terminus 和 Debian 的 <a class="ulink" href=
           "https://packages.debian.org/stable/console-setup">console-setup</a>
-          ) such mapping of additional codepoints onto an existing glyph is
-          not always done, although the terminus ter-vXXn fonts do this well.
+          所采用的方法）创建的，那么将额外码位映射到现有字形的操作并不总是执行，尽管 terminus ter-vXXn 字体在这方面做得很好。
         </p>
         <p>
-          There are over 120 combinations of font and size in <span class=
-          "application">kbd</span>: often a font is provided at several
-          character sizes, and sometimes varieties cover different subsets of
-          unicode. Most are 8 pixels wide, in heights from 8 to 16 pixels,
-          but there are a few which are 9 pixels wide, some others which are
-          12x22, and even one (<code class=
-          "filename">latarcyrheb-sun32.psfu</code>) which has been scaled up
-          to 16x32. Using a bigger font is another way of making text on a
-          large screen easier to read.
+          <span class="application">kbd</span> 中有超过 120
+          种字体和尺寸的组合：通常一种字体提供多种字符尺寸，有时不同变体涵盖不同的 unicode 子集。大多数宽度为 8 像素，高度从 8 到
+          16 像素，但也有少数宽度为 9 像素，还有一些为 12x22，甚至有一种（<code class=
+          "filename">latarcyrheb-sun32.psfu</code>）被放大到
+          16x32。使用更大的字体是在大屏幕上使文本更易于阅读的另一种方法。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="testing-fonts" name="testing-fonts"></a>Testing different
-          fonts
+          <a id="testing-fonts" name="testing-fonts"></a>测试不同的字体
         </h2>
         <p>
-          You can test fonts as a normal user. If you have a font which has
-          not been installed, you can load it with :
+          您可以以普通用户身份测试字体。如果您有一个尚未安装的字体，可以使用以下命令加载它：
         </p>
         <pre class="userinput"><kbd class=
         "command">setfont /path/to/yourfont.ext</kbd></pre>
         <p>
-          For the fonts already installed you only need the name, so using
-          <code class="filename">gr737a-9x16.psfu.gz</code> as an example:
+          对于已安装的字体，您只需提供名称，以 <code class=
+          "filename">gr737a-9x16.psfu.gz</code> 为例：
         </p>
         <pre class="userinput"><kbd class=
         "command">setfont gr737a-9x16</kbd></pre>
         <p>
-          To see the glyphs in the font, use:
+          要查看字体中的字形，请使用：
         </p>
         <pre class="userinput"><kbd class=
         "command">showconsolefont</kbd></pre>
         <p>
-          If the font looks as if it might be useful, you can then go on to
-          test it more thoroughly.
+          如果该字体看起来可能有用，您可以接着进行更彻底的测试。
         </p>
         <p>
-          When you find a font which you wish to use, as the <code class=
-          "systemitem">root</code> user) edit <span class=
-          "phrase"><code class="filename">/etc/vconsole.conf</code> as
-          described in LFS section 9.6 <a class="ulink" href=
-          "../../../../lfs/view/systemd/chapter09/console.html">../../../../lfs/view/systemd/chapter09/console.html</a>.</span>
+          当找到您希望使用的字体后，以 <code class="systemitem">root</code> 用户身份编辑
+          <span class="phrase"><code class=
+          "filename">/etc/vconsole.conf</code>，如 LFS 第 9.6 节 <a class="ulink"
+          href=
+          "../../../../lfs/view/systemd/chapter09/console.html">../../../../lfs/view/systemd/chapter09/console.html</a>
+          所述。</span>
         </p>
         <p>
-          For fonts not supplied with the <span class=
-          "application">kbd</span> package you will need to optionally
-          compress it / them with <span class=
-          "command"><strong>gzip</strong></span> and then install it / them
-          as the <code class="systemitem">root</code> user.
+          对于 <span class="application">kbd</span> 包未提供的字体，您需要可选择地用
+          <span class="command"><strong>gzip</strong></span> 压缩它/它们，然后以
+          <code class="systemitem">root</code> 用户身份安装它/它们。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="psf-tools" name="psf-tools"></a>Editing fonts using
-          psf-tools
+          <a id="psf-tools" name="psf-tools"></a>使用 psf-tools 编辑字体
         </h2>
         <p>
-          Although some console fonts are created from BDF files, which is a
-          text format with hex values for the pixels in each row of the
-          character, there are more-modern tools available for editing psf
-          fonts. The <a class="ulink" href=
-          "https://www.seasip.info/Unix/PSF/">psftools</a> package allows you
-          to dump a font to a text representation with a dash for a pixel
-          which is off (black) and a hash for a pixel which is on (white).
-          You can then edit the text file to add more characters, or reshape
-          them, or map extra codepoints onto them, and then create a new psf
-          font with your changes.
+          尽管某些控制台字体是从 BDF 文件（一种文本格式，包含字符每行像素的十六进制值）创建的，但还有更现代的工具可用于编辑 PSF
+          字体。<a class="ulink" href=
+          "https://www.seasip.info/Unix/PSF/">psftools</a>
+          包允许您将字体转储为文本表示形式，其中关闭的像素（黑色）用短横线表示，开启的像素（白色）用井号表示。然后您可以编辑文本文件以添加更多字符、重塑它们或将额外码位映射到它们，最后使用您的更改创建新的
+          PSF 字体。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="terminus-font" name="terminus-font"></a>Using fonts from
-          Terminus-font
+          <a id="terminus-font" name="terminus-font"></a>使用 Terminus-font
+          中的字体
         </h2>
         <p>
-          The <a class="ulink" href=
-          "https://terminus-font.sourceforge.net/">Terminus Font</a> package
-          provides fixed-width bitmap fonts designed for long (8 hours and
-          more per day) work with computers. Under 'Character variants' on
-          that page is a list of patches (in the <code class=
-          "filename">alt/</code> directory). If you are using a graphical
-          browser to look at that page, you can see what the patches do, e.g.
-          'll2' makes 'l' more visibly different from 'i' and '1'.
+          <a class="ulink" href=
+          "https://terminus-font.sourceforge.net/">Terminus Font</a>
+          包提供了固定宽度的点阵字体，专为长时间（每天 8 小时及以上）使用计算机而设计。在该页面的“Character
+          variants”下，有一系列补丁列表（位于 <code class="filename">alt/</code>
+          目录中）。如果您使用图形浏览器查看该页面，可以看到这些补丁的作用，例如“ll2”使“l”与“i”和“1”的区别更明显。
         </p>
         <p>
-          By default <span class="application">terminus-fonts</span> will try
-          to create several types of font, and it will fail if <span class=
-          "command"><strong>bdftopcf</strong></span> from <a class="xref"
-          href="../x/x7app.html" title="Xorg Applications">Xorg
-          Applications</a> has not been installed. The configure script is
-          only really useful if you go on to install <span class=
-          "emphasis"><em>all</em></span> the fonts (console and X11 bitmap)
-          to the correct directories, as in a distro. To build only the PSF
-          fonts and their dependencies, run:
+          默认情况下，<span class="application">terminus-fonts</span>
+          会尝试创建多种类型的字体，如果未安装 <a class="xref" href="../x/x7app.html" title=
+          "Xorg Applications">Xorg Applications</a> 中的 <span class=
+          "command"><strong>bdftopcf</strong></span>，则会失败。configure 脚本仅在您继续将
+          <span class="emphasis"><em>所有</em></span> 字体（控制台和 X11
+          位图字体）安装到正确目录（如在发行版中）时才有实际用途。要仅构建 PSF 字体及其依赖项，请运行：
         </p>
         <pre class="userinput"><kbd class="command">make psf</kbd></pre>
         <p>
-          This will create more than 240 ter-*.psf fonts. The 'b' suffix
-          indicates bright, 'n' indicates normal. You can then test them to
-          see if any fit your requirements. Unless you are creating a distro,
-          there seems little point in installing them all.
+          这将创建超过 240 个 ter-*.psf
+          字体。“b”后缀表示亮色（bright），“n”表示正常（normal）。然后您可以测试它们，看看是否有符合您要求的。除非您正在创建发行版，否则似乎没有必要全部安装。
         </p>
         <p>
-          As an example, to install the last of these fonts, you can gzip it
-          and then as the <code class="systemitem">root</code> user:
+          例如，要安装这些字体中的最后一个，您可以将其用 gzip 压缩，然后以 <code class=
+          "systemitem">root</code> 用户身份执行：
         </p>
         <pre class="userinput"><kbd class=
         "command">install -v -m644 ter-v32n.psf.gz /usr/share/consolefonts</kbd></pre>
@@ -277,26 +216,24 @@
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="bootdisk.html" title=
-          "Creating a Custom Boot Device">Prev</a>
+          <a accesskey="p" href="bootdisk.html" title="创建自定义启动设备">上一页</a>
           <p>
-            Creating a Custom Boot Device
+            创建自定义启动设备
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="firmware.html" title=
-          "About Firmware">Next</a>
+          <a accesskey="n" href="firmware.html" title="关于固件">下一页</a>
           <p>
-            About Firmware
+            关于固件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,51 +5,51 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      libqalculate-5.11.0
+      libqalculate-5.12.0
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;9.&nbsp;General Libraries
+        第&nbsp;9&nbsp;章&nbsp;通用库
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="libptytty.html" title=
-          "libptytty-2.0">Prev</a>
+          "libptytty-2.0">上一页</a>
           <p>
             libptytty-2.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libqmi.html" title="libqmi-1.38.0">Next</a>
+          <a accesskey="n" href="libqmi.html" title="libqmi-1.38.0">下一页</a>
           <p>
             libqmi-1.38.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          "第&nbsp;9&nbsp;章&nbsp;通用库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="libqalculate" name="libqalculate"></a>libqalculate-5.11.0
+      <a id="libqalculate" name="libqalculate"></a>libqalculate-5.12.0
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to libqalculate
         </h2>
@@ -58,9 +58,9 @@
           a library that provides functions for a multi-purpose calculator.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -76,13 +76,13 @@
             <li class="listitem">
               <p>
                 Download (HTTP): <a class="ulink" href=
-                "https://github.com/Qalculate/libqalculate/releases/download/v5.11.0/libqalculate-5.11.0.tar.gz">
-                https://github.com/Qalculate/libqalculate/releases/download/v5.11.0/libqalculate-5.11.0.tar.gz</a>
+                "https://github.com/Qalculate/libqalculate/releases/download/v5.12.0/libqalculate-5.12.0.tar.gz">
+                https://github.com/Qalculate/libqalculate/releases/download/v5.12.0/libqalculate-5.12.0.tar.gz</a>
               </p>
             </li>
             <li class="listitem">
               <p>
-                Download MD5 sum: 7a442ecab06ed65e2eae3a9b2abfbe0d
+                Download MD5 sum: 46f93f638b6ce747f17dba955f95c9cf
               </p>
             </li>
             <li class="listitem">
@@ -124,7 +124,7 @@
           "http://www.gnuplot.info/download.html">gnuplot</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of libqalculate
         </h2>
@@ -135,7 +135,7 @@
         <pre class="userinput"><kbd class=
         "command">./configure --prefix=/usr    \
             --disable-static \
-            --docdir=/usr/share/doc/libqalculate-5.11.0 &amp;&amp;
+            --docdir=/usr/share/doc/libqalculate-5.12.0 &amp;&amp;
 make</kbd></pre>
         <p>
           To test the results, issue: <span class="command"><strong>make
@@ -160,7 +160,7 @@ make</kbd></pre>
         <pre class="root"><kbd class=
         "command">rm -v /usr/lib/libqalculate.la</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -169,7 +169,7 @@ make</kbd></pre>
           switch prevents installation of static versions of the libraries.
         </p>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -186,7 +186,7 @@ make</kbd></pre>
             <div class="seg">
               <strong class="segtitle">Installed Directories:</strong>
               <span class="segbody">/usr/include/libqalculate,
-              /usr/share/doc/libqalculate-5.11.0, and
+              /usr/share/doc/libqalculate-5.12.0, and
               /usr/share/qalculate</span>
             </div>
           </div>
@@ -239,24 +239,24 @@ make</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="libptytty.html" title=
-          "libptytty-2.0">Prev</a>
+          "libptytty-2.0">上一页</a>
           <p>
             libptytty-2.0
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="libqmi.html" title="libqmi-1.38.0">Next</a>
+          <a accesskey="n" href="libqmi.html" title="libqmi-1.38.0">下一页</a>
           <p>
             libqmi-1.38.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="genlib.html" title=
-          "Chapter&nbsp;9.&nbsp;General Libraries">Up</a>
+          "第&nbsp;9&nbsp;章&nbsp;通用库">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

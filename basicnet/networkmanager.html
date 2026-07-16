@@ -12,45 +12,45 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;16.&nbsp;Networking Utilities
+        第&nbsp;16&nbsp;章&nbsp;网络实用工具
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="bind-utils.html" title=
-          "BIND Utilities-9.20.23">Prev</a>
+          "BIND Utilities-9.20.23">上一页</a>
           <p>
             BIND Utilities-9.20.23
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="network-manager-applet.html" title=
-          "network-manager-applet-1.34.0">Next</a>
+          "network-manager-applet-1.34.0">下一页</a>
           <p>
             network-manager-applet-1.34.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netutils.html" title=
-          "Chapter&nbsp;16.&nbsp;Networking Utilities">Up</a>
+          "第&nbsp;16&nbsp;章&nbsp;网络实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="NetworkManager" name="NetworkManager"></a>NetworkManager-1.56.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to NetworkManager
         </h2>
@@ -63,9 +63,9 @@
           re-joined automatically the next time it's available.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -74,9 +74,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Make sure that you disable the <span class=
@@ -141,7 +141,7 @@
           GObject Introspection), <a class="xref" href=
           "../postlfs/iptables.html" title=
           "iptables-1.8.13">iptables-1.8.13</a>, <a class="xref" href=
-          "libpsl.html" title="libpsl-0.22.0">libpsl-0.22.0</a>, <a class=
+          "libpsl.html" title="libpsl-0.23.0">libpsl-0.23.0</a>, <a class=
           "xref" href="../general/newt.html" title=
           "newt-0.52.25">newt-0.52.25</a> (for <span class=
           "command"><strong>nmtui</strong></span>), <a class="xref" href=
@@ -192,7 +192,7 @@
           "https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</a>
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="NetworkManager-kernel" name=
           "NetworkManager-kernel"></a>Kernel Configuration
@@ -263,7 +263,7 @@
     &lt;*/M&gt;   <span class=
 "blue">V</span>irtual Routing and Forwarding (Lite)                      [NET_VRF]</pre>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of NetworkManager
         </h2>
@@ -328,7 +328,7 @@ done</kbd></pre>
         <pre class="root"><kbd class=
         "command">cp -Rv ../docs/{api,libnm} /usr/share/doc/NetworkManager-1.56.1</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -417,11 +417,11 @@ done</kbd></pre>
           some features (for example 802.1X).
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring NetworkManager
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="NetworkManager-config" name=
             "NetworkManager-config"></a>Config Files
@@ -431,7 +431,7 @@ done</kbd></pre>
             "filename">/etc/NetworkManager/NetworkManager.conf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -497,7 +497,7 @@ cat &gt; /usr/share/polkit-1/rules.d/org.freedesktop.NetworkManager.rules &lt;&l
 });</code>
 EOF</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="NetworkManager-init" name="NetworkManager-init"></a>
             Systemd Unit
@@ -510,9 +510,9 @@ EOF</kbd></pre>
             user:
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               If using <span class="application">Network Manager</span> to
@@ -538,7 +538,7 @@ EOF</kbd></pre>
           "command">systemctl disable NetworkManager-wait-online</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -701,25 +701,25 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="bind-utils.html" title=
-          "BIND Utilities-9.20.23">Prev</a>
+          "BIND Utilities-9.20.23">上一页</a>
           <p>
             BIND Utilities-9.20.23
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="network-manager-applet.html" title=
-          "network-manager-applet-1.34.0">Next</a>
+          "network-manager-applet-1.34.0">下一页</a>
           <p>
             network-manager-applet-1.34.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="netutils.html" title=
-          "Chapter&nbsp;16.&nbsp;Networking Utilities">Up</a>
+          "第&nbsp;16&nbsp;章&nbsp;网络实用工具">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

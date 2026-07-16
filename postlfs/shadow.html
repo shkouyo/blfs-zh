@@ -12,45 +12,45 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;4.&nbsp;Security
+        第&nbsp;4&nbsp;章&nbsp;安全
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="polkit-gnome.html" title=
-          "polkit-gnome-0.105">Prev</a>
+          "polkit-gnome-0.105">上一页</a>
           <p>
             polkit-gnome-0.105
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="ssh-askpass.html" title=
-          "ssh-askpass-10.3p1">Next</a>
+          "ssh-askpass-10.3p1">下一页</a>
           <p>
             ssh-askpass-10.3p1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="shadow" name="shadow"></a>Shadow-4.19.4
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Shadow
         </h2>
@@ -65,9 +65,9 @@
           "command"><strong>su</strong></span> to utilize PAM.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -128,14 +128,14 @@
           "ulink" href="https://www.openwall.com/tcb/">tcb</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Shadow
         </h2>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             The installation commands shown below are for installations where
@@ -178,7 +178,7 @@ make</kbd></pre>
         <pre class="root"><kbd class=
         "command">make -C man install-man</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -229,14 +229,14 @@ make</kbd></pre>
           these configuration files explicitly.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Linux-PAM to Work with Shadow
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The rest of this page is devoted to configuring <span class=
@@ -244,7 +244,7 @@ make</kbd></pre>
             "application">Linux-PAM</span>.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="pam.d" name="pam.d"></a>Config Files
           </h3>
@@ -255,7 +255,7 @@ make</kbd></pre>
             "filename">/etc/security/*</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -335,7 +335,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10664" name="id10664"></a>Configuring the
+                    <a id="id10125" name="id10125"></a>Configuring the
                     /etc/pam.d/ Files
                   </h5>
                 </div>
@@ -366,7 +366,7 @@ done</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10675" name="id10675"></a>'login'
+                    <a id="id10136" name="id10136"></a>'login'
                   </h5>
                 </div>
               </div>
@@ -422,7 +422,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10680" name="id10680"></a>'passwd'
+                    <a id="id10141" name="id10141"></a>'passwd'
                   </h5>
                 </div>
               </div>
@@ -441,7 +441,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10685" name="id10685"></a>'su'
+                    <a id="id10146" name="id10146"></a>'su'
                   </h5>
                 </div>
               </div>
@@ -481,7 +481,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10690" name="id10690"></a>'chpasswd' and
+                    <a id="id10151" name="id10151"></a>'chpasswd' and
                     'newusers'
                   </h5>
                 </div>
@@ -509,7 +509,7 @@ sed -e s/chpasswd/newusers/ /etc/pam.d/chpasswd &gt;/etc/pam.d/newusers</kbd></p
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10695" name="id10695"></a>'chage'
+                    <a id="id10156" name="id10156"></a>'chage'
                   </h5>
                 </div>
               </div>
@@ -533,7 +533,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id10700" name="id10700"></a>Other shadow utilities
+                    <a id="id10161" name="id10161"></a>Other shadow utilities
                   </h5>
                 </div>
               </div>
@@ -546,9 +546,9 @@ do
     sed -i "s/chage/$PROGRAM/" /etc/pam.d/${PROGRAM}
 done</kbd></pre>
             <div class="admon warning">
-              <img alt="[Warning]" src="../images/warning.png" />
+              <img alt="[警告]" src="../images/warning.png" />
               <h3>
-                Warning
+                警告
               </h3>
               <p>
                 At this point, you should do a simple test to see if
@@ -622,9 +622,9 @@ done</kbd></pre>
             <pre class="root"><kbd class=
             "command">if [ -f /etc/limits ]; then mv -v /etc/limits{,.NOUSE}; fi</kbd></pre>
             <div class="admon caution">
-              <img alt="[Caution]" src="../images/caution.png" />
+              <img alt="[小心]" src="../images/caution.png" />
               <h3>
-                Caution
+                小心
               </h3>
               <p>
                 Be sure to test the login capabilities of the system before
@@ -636,7 +636,7 @@ done</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -652,25 +652,25 @@ done</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="polkit-gnome.html" title=
-          "polkit-gnome-0.105">Prev</a>
+          "polkit-gnome-0.105">上一页</a>
           <p>
             polkit-gnome-0.105
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="ssh-askpass.html" title=
-          "ssh-askpass-10.3p1">Next</a>
+          "ssh-askpass-10.3p1">下一页</a>
           <p>
             ssh-askpass-10.3p1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

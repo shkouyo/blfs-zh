@@ -5,90 +5,76 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Chapter&nbsp;4.&nbsp;Security
+      第&nbsp;4&nbsp;章&nbsp;安全
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Part&nbsp;II.&nbsp;Post LFS Configuration and Extra Software
+        第 II 部分 LFS 的后续配置与额外软件
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="logon.html" title=
-          "Customizing your Logon with /etc/issue">Prev</a>
+          "使用 /etc/issue 自定义登录界面">上一页</a>
           <p>
-            Customizing your Logon with /etc/issue
+            使用 /etc/issue 自定义登录界面
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="vulnerabilities.html" title=
-          "Vulnerabilities">Next</a>
+          <a accesskey="n" href="vulnerabilities.html" title="漏洞">下一页</a>
           <p>
-            Vulnerabilities
+            漏洞
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="postlfs.html" title=
-          "Part&nbsp;II.&nbsp;Post LFS Configuration and Extra Software">Up</a>
+          "第 II 部分 LFS 的后续配置与额外软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="chapter">
-      <a id="postlfs-security" name="postlfs-security"></a>Security
+      <a id="postlfs-security" name="postlfs-security"></a>安全
     </h1>
-    <div class="chapter" lang="en" xml:lang="en">
+    <div class="chapter" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        Security takes many forms in a computing environment. After some
-        initial discussion, this chapter gives examples of three different
-        types of security: access, prevention and detection.
+        在计算环境中，安全有多种形式。在初步讨论之后，本章给出了三种不同类型安全的示例：访问、预防和检测。
       </p>
       <p>
-        Access for users is usually handled by <span class=
-        "command"><strong>login</strong></span> or an application designed to
-        handle the login function. In this chapter, we show how to enhance
-        <span class="command"><strong>login</strong></span> by setting
-        policies with <span class="application">PAM</span> modules. Access
-        via networks can also be secured by policies set by <span class=
-        "application">iptables</span>, commonly referred to as a firewall.
-        The Network Security Services (NSS) and Netscape Portable Runtime
-        (NSPR) libraries can be installed and shared among the many
-        applications requiring them. For applications that don't offer the
-        best security, you can use the <span class=
-        "application">Stunnel</span> package to wrap an application daemon
-        inside an SSL tunnel.
+        用户的访问通常由 <span class="command"><strong>login</strong></span>
+        或专为处理登录功能而设计的应用程序处理。在本章中，我们将展示如何使用 <span class=
+        "application">PAM</span> 模块设置策略来增强 <span class=
+        "command"><strong>login</strong></span>。通过网络进行的访问也可以通过 <span class=
+        "application">iptables</span> 设置的策略来保护，通常称为防火墙。可以安装网络安全服务（NSS）和
+        Netscape 可移植运行时（NSPR）库，并在许多需要它们的应用程序之间共享。对于不能提供最佳安全性的应用程序，您可以使用
+        <span class="application">Stunnel</span> 包将应用程序守护进程包装在 SSL 隧道中。
       </p>
       <p>
-        Prevention of breaches, like a trojan, are assisted by applications
-        like <span class="application">GnuPG</span>, specifically the ability
-        to confirm signed packages, which recognizes modifications of the
-        tarball after the packager creates it.
+        预防入侵（如木马）可通过 <span class="application">GnuPG</span>
+        等应用程序辅助，特别是验证签名包的能力，该功能可识别打包者创建 tarball 后对其所做的修改。
       </p>
       <p>
-        Finally, we touch on detection with a package that stores
-        "signatures" of critical files (defined by the administrator) and
-        then regenerates those "signatures" and compares for files that have
-        been changed.
+        最后，我们通过一个包来触及检测，该包存储关键文件（由管理员定义）的“签名”，然后重新生成这些“签名”并比较以发现被更改的文件。
       </p>
       <div class="toc">
         <h3>
-          Table of Contents
+          目录
         </h3>
         <ul>
           <li class="sect1">
-            <a href="vulnerabilities.html">Vulnerabilities</a>
+            <a href="vulnerabilities.html">漏洞</a>
           </li>
           <li class="sect1">
             <a href="make-ca.html">make-ca-1.16.1</a>
@@ -118,7 +104,7 @@
             <a href="iptables.html">iptables-1.8.13</a>
           </li>
           <li class="sect1">
-            <a href="firewall.html">Setting Up a Network Firewall</a>
+            <a href="firewall.html">设置网络防火墙</a>
           </li>
           <li class="sect1">
             <a href="libcap.html">libcap-2.78 with PAM</a>
@@ -145,7 +131,7 @@
             <a href="openssh.html">OpenSSH-10.3p1</a>
           </li>
           <li class="sect1">
-            <a href="p11-kit.html">p11-kit-0.26.2</a>
+            <a href="p11-kit.html">p11-kit-0.26.4</a>
           </li>
           <li class="sect1">
             <a href="polkit.html">Polkit-127</a>
@@ -175,25 +161,24 @@
       <ul>
         <li class="prev">
           <a accesskey="p" href="logon.html" title=
-          "Customizing your Logon with /etc/issue">Prev</a>
+          "使用 /etc/issue 自定义登录界面">上一页</a>
           <p>
-            Customizing your Logon with /etc/issue
+            使用 /etc/issue 自定义登录界面
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="vulnerabilities.html" title=
-          "Vulnerabilities">Next</a>
+          <a accesskey="n" href="vulnerabilities.html" title="漏洞">下一页</a>
           <p>
-            Vulnerabilities
+            漏洞
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="postlfs.html" title=
-          "Part&nbsp;II.&nbsp;Post LFS Configuration and Extra Software">Up</a>
+          "第 II 部分 LFS 的后续配置与额外软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

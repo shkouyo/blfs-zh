@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;24.&nbsp;Graphical Environments
+        第&nbsp;24&nbsp;章&nbsp;Graphical Environments
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="installing.html" title=
-          "Graphical Environments">Prev</a>
+          "Graphical Environments">上一页</a>
           <p>
             Graphical Environments
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="util-macros.html" title=
-          "util-macros-1.20.2">Next</a>
+          "util-macros-1.20.2">下一页</a>
           <p>
             util-macros-1.20.2
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">Up</a>
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="xorg7" name="xorg7"></a>Introduction to Xorg-7
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
         <span class="application">Xorg</span> is a freely redistributable,
         open-source implementation of the <span class="application">X</span>
@@ -84,9 +84,9 @@
         space.
       </p>
       <div class="admon note">
-        <img alt="[Note]" src="../images/note.png" />
+        <img alt="[注意]" src="../images/note.png" />
         <h3>
-          Note
+          注意
         </h3>
         <p>
           Even if you intend to download only the necessary packages, you
@@ -114,21 +114,21 @@
         "parameter"><code>:NOPASSWD</code></em> configuration option for the
         user that will be building the xorg packages.
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="xorg-env" name="xorg-env"></a>Setting up the Xorg Build
           Environment
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p class="required">
             The following instructions assume that the shell startup files
             have been set up as described in <a class="xref" href=
-            "../postlfs/profile.html" title=
-            "The Bash Shell Startup Files">The Bash Shell Startup Files</a>.
+            "../postlfs/profile.html" title="Bash Shell 启动文件">Bash Shell
+            启动文件</a>.
           </p>
         </div>
         <p>
@@ -168,20 +168,20 @@
         "command">export XORG_CONFIG="--prefix=$XORG_PREFIX --sysconfdir=/etc \
     --localstatedir=/var --disable-static"</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             We will use <code class="envar">$XORG_CONFIG</code> in the
             instructions for many packages belonging to or related to Xorg.
             These instructions won't work properly with the default behavior
             of <a class="xref" href="../postlfs/zsh.html" title=
-            "zsh-5.9.1">zsh-5.9.1</a>. So if you are using <a class="xref"
-            href="../postlfs/zsh.html" title="zsh-5.9.1">zsh-5.9.1</a> as the
+            "zsh-5.9.2">zsh-5.9.2</a>. So if you are using <a class="xref"
+            href="../postlfs/zsh.html" title="zsh-5.9.2">zsh-5.9.2</a> as the
             interactive shell and building a package for which the
             instruction uses this variable, make <a class="xref" href=
-            "../postlfs/zsh.html" title="zsh-5.9.1">zsh-5.9.1</a> behavior
+            "../postlfs/zsh.html" title="zsh-5.9.2">zsh-5.9.2</a> behavior
             expanding <code class="envar">$XORG_CONFIG</code> same as bash:
           </p>
           <pre class="userinput"><kbd class=
@@ -204,9 +204,9 @@ export XORG_PREFIX XORG_CONFIG</code>
 EOF
 chmod 644 /etc/profile.d/xorg.sh</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             There is some confusion about the above 'here' document. The
@@ -233,9 +233,9 @@ EOF</kbd></pre>
           If you are not using the standard Xorg prefix...
         </h2>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If you've decided to use the standard <code class=
@@ -318,25 +318,25 @@ EOF</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="installing.html" title=
-          "Graphical Environments">Prev</a>
+          "Graphical Environments">上一页</a>
           <p>
             Graphical Environments
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="util-macros.html" title=
-          "util-macros-1.20.2">Next</a>
+          "util-macros-1.20.2">下一页</a>
           <p>
             util-macros-1.20.2
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">Up</a>
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

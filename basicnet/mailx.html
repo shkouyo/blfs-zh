@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;19.&nbsp;Mail/News Clients
+        第&nbsp;19&nbsp;章&nbsp;邮件与新闻客户端
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="fetchmail.html" title=
-          "Fetchmail-6.6.6">Prev</a>
+          "Fetchmail-6.6.6">上一页</a>
           <p>
             Fetchmail-6.6.6
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mutt.html" title="Mutt-2.4.1">Next</a>
+          <a accesskey="n" href="mutt.html" title="Mutt-2.4.1">下一页</a>
           <p>
             Mutt-2.4.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mailnews.html" title=
-          "Chapter&nbsp;19.&nbsp;Mail/News Clients">Up</a>
+          "第&nbsp;19&nbsp;章&nbsp;邮件与新闻客户端">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="mailx" name="mailx"></a>mailx-12.5
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Heirloom mailx
         </h2>
@@ -67,9 +67,9 @@
           useful for writing scripts and batch processing.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -137,17 +137,17 @@
           "../postlfs/mitkrb.html" title="MIT Kerberos V5-1.22.2">MIT
           Kerberos V5-1.22.2</a> (for IMAP GSSAPI authentication), and an
           <a class="xref" href="../server/mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a>
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">MTA</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Heirloom mailx
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             This package does not support parallel build.
@@ -180,7 +180,7 @@ ln -v -sf mailx /usr/bin/nail &amp;&amp;
 install -v -m755 -d     /usr/share/doc/heirloom-mailx-12.5 &amp;&amp;
 install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -200,11 +200,11 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
           <code class="filename">/usr/ucb</code>.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Heirloom mailx
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="mailx-config" name="mailx-config"></a>Config Files
           </h3>
@@ -213,7 +213,7 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
             "filename">~/.mailrc</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -258,16 +258,16 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
           <p>
             Depending on which kind of <a class="xref" href=
             "../server/mail.html" title=
-            "Chapter&nbsp;21.&nbsp;Mail Server Software">MTA</a> is
-            installed, it might be necessary to set the MAILDIR variable so
-            that <span class="application">mailx</span> is able to find mail
-            as the <code class="systemitem">root</code> user:
+            "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">MTA</a> is installed, it might be
+            necessary to set the MAILDIR variable so that <span class=
+            "application">mailx</span> is able to find mail as the
+            <code class="systemitem">root</code> user:
           </p>
           <pre class="userinput"><kbd class=
           "command">echo "set MAILDIR=Maildir" &gt;&gt; /etc/nail.rc</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -352,24 +352,24 @@ install -v -m644 README /usr/share/doc/heirloom-mailx-12.5</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="fetchmail.html" title=
-          "Fetchmail-6.6.6">Prev</a>
+          "Fetchmail-6.6.6">上一页</a>
           <p>
             Fetchmail-6.6.6
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mutt.html" title="Mutt-2.4.1">Next</a>
+          <a accesskey="n" href="mutt.html" title="Mutt-2.4.1">下一页</a>
           <p>
             Mutt-2.4.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mailnews.html" title=
-          "Chapter&nbsp;19.&nbsp;Mail/News Clients">Up</a>
+          "第&nbsp;19&nbsp;章&nbsp;邮件与新闻客户端">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

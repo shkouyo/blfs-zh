@@ -12,45 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;4.&nbsp;Security
+        第&nbsp;4&nbsp;章&nbsp;安全
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="vulnerabilities.html" title=
-          "Vulnerabilities">Prev</a>
+          <a accesskey="p" href="vulnerabilities.html" title="漏洞">上一页</a>
           <p>
-            Vulnerabilities
+            漏洞
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="cracklib.html" title=
-          "CrackLib-2.10.3">Next</a>
+          "CrackLib-2.10.3">下一页</a>
           <p>
             CrackLib-2.10.3
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="make-ca" name="make-ca"></a>make-ca-1.16.1
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to make-ca
         </h2>
@@ -78,9 +77,9 @@
           here</a>.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -124,9 +123,9 @@
           </ul>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             This package ships a CA certificate for validating the identity
@@ -148,7 +147,7 @@
         </h4>
         <p class="required">
           <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.26.2">p11-kit-0.26.2</a> (runtime, built after <a class=
+          "p11-kit-0.26.4">p11-kit-0.26.4</a> (runtime, built after <a class=
           "xref" href="../general/libtasn1.html" title=
           "libtasn1-4.21.0">libtasn1-4.21.0</a>, required in the following
           instructions to generate certificate stores from trust anchors, and
@@ -163,7 +162,7 @@
           generate a shared NSSDB)
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of make-ca and Generation of the CA-certificates
           stores
@@ -182,7 +181,7 @@
           and process the certificates included in the <code class=
           "filename">certdata.txt</code> file for use as trust anchors for
           the <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.26.2">p11-kit-0.26.2</a> trust module. Additionally, it
+          "p11-kit-0.26.4">p11-kit-0.26.4</a> trust module. Additionally, it
           will generate system certificate stores used by BLFS applications
           (if the recommended and optional applications are present on the
           system). Any local certificates stored in <code class=
@@ -203,9 +202,9 @@
         <pre class="root"><kbd class="command">make install &amp;&amp;
 install -vdm755 /etc/ssl/local</kbd></pre>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             Technically, this package is already installed at this point. But
@@ -227,9 +226,9 @@ install -vdm755 /etc/ssl/local</kbd></pre>
           command:
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If running the script a second time with the same version of
@@ -258,7 +257,7 @@ install -vdm755 /etc/ssl/local</kbd></pre>
         <pre class="root"><kbd class=
         "command">systemctl enable update-pki.timer</kbd></pre>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="make-ca-config" name="make-ca-config"></a>Configuring
           make-ca
@@ -311,13 +310,13 @@ install -vdm755 /etc/ssl/local</kbd></pre>
           available to add additional CA certificates to the system trust
           store. This directory is also used to store certificates that were
           added to or modified in the system trust store by <a class="xref"
-          href="p11-kit.html" title="p11-kit-0.26.2">p11-kit-0.26.2</a> so
+          href="p11-kit.html" title="p11-kit-0.26.4">p11-kit-0.26.4</a> so
           that trust values are maintained across upgrades. Files in this
           directory must be in the <span class="application">OpenSSL</span>
           trusted certificate format. Certificates imported using the
           <span class="command"><strong>trust</strong></span> utility from
           <a class="xref" href="p11-kit.html" title=
-          "p11-kit-0.26.2">p11-kit-0.26.2</a> will utilize the x509 Extended
+          "p11-kit-0.26.4">p11-kit-0.26.4</a> will utilize the x509 Extended
           Key Usage values to assign default trust values for the system
           anchors.
         </p>
@@ -368,7 +367,7 @@ openssl x509 -in class3.crt -text -fingerprint -setalias "CAcert Class 3 root" \
        &gt; /etc/ssl/local/Disabled_Makebelieve_CA_Root.pem &amp;&amp;
 /usr/sbin/make-ca -r</kbd></pre>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="make-ca-python" name="make-ca-python"></a>Using make-ca with
           Python3
@@ -389,7 +388,7 @@ openssl x509 -in class3.crt -text -fingerprint -setalias "CAcert Class 3 root" \
           in charge of which certificates are available. Now that <a class=
           "xref" href="make-ca.html" title=
           "make-ca-1.16.1">make-ca-1.16.1</a> and <a class="xref" href=
-          "p11-kit.html" title="p11-kit-0.26.2">p11-kit-0.26.2</a> have been
+          "p11-kit.html" title="p11-kit-0.26.4">p11-kit-0.26.4</a> have been
           installed and <span class="application">make-ca</span> has been
           configured, it is possible to make <span class=
           "command"><strong>pip3</strong></span> use the system certificates.
@@ -409,9 +408,9 @@ openssl x509 -in class3.crt -text -fingerprint -setalias "CAcert Class 3 root" \
         <pre class="userinput"><kbd class=
         "command">export _PIP_STANDALONE_CERT=/etc/pki/tls/certs/ca-bundle.crt</kbd></pre>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
             If you have created virtual environments, for example when
@@ -438,7 +437,7 @@ export _PIP_STANDALONE_CERT=/etc/pki/tls/certs/ca-bundle.crt
 # End /etc/profile.d/pythoncerts.sh</code>
 EOF</kbd></pre>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -489,26 +488,25 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="vulnerabilities.html" title=
-          "Vulnerabilities">Prev</a>
+          <a accesskey="p" href="vulnerabilities.html" title="漏洞">上一页</a>
           <p>
-            Vulnerabilities
+            漏洞
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="cracklib.html" title=
-          "CrackLib-2.10.3">Next</a>
+          "CrackLib-2.10.3">下一页</a>
           <p>
             CrackLib-2.10.3
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="security.html" title=
-          "Chapter&nbsp;4.&nbsp;Security">Up</a>
+          "第&nbsp;4&nbsp;章&nbsp;安全">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

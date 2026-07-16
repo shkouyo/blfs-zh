@@ -12,37 +12,37 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;30.&nbsp;KDE Frameworks 6
+        第&nbsp;30&nbsp;章&nbsp;KDE Frameworks 6
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="kf6-intro.html" title=
-          "KDE Frameworks 6 Pre-installation Configuration">Prev</a>
+          "KDE Frameworks 6 Pre-installation Configuration">上一页</a>
           <p>
             KDE Frameworks 6 Pre-installation Configuration
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="kf-apps.html" title=
-          "KDE Frameworks 6 Based Applications">Next</a>
+          "KDE Frameworks 6 Based Applications">下一页</a>
           <p>
             KDE Frameworks 6 Based Applications
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="kf6.html" title=
-          "Chapter&nbsp;30.&nbsp;KDE Frameworks 6">Up</a>
+          "第&nbsp;30&nbsp;章&nbsp;KDE Frameworks 6">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
@@ -50,16 +50,16 @@
       <a id="kf6-frameworks" name="kf6-frameworks"></a>Building KDE
       Frameworks 6.26.0 (KF6)
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
         KDE Frameworks is a collection of libraries based on top of Qt6 and
         QML derived from the previous KDE libraries. They can be used
         independent of the KDE Display Environment (Plasma 6).
       </p>
       <div class="admon note">
-        <img alt="[Note]" src="../images/note.png" />
+        <img alt="[注意]" src="../images/note.png" />
         <h3>
-          Note
+          注意
         </h3>
         <p>
           Development versions of BLFS may not build or run some packages
@@ -246,7 +246,7 @@
         <a class="ulink" href=
         "https://hunspell.sourceforge.net/">Hunspell</a>
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Downloading KDE Frameworks
         </h2>
@@ -266,7 +266,7 @@ The options used here are:
   -A '*.xz'     just get the *.xz files
   -np           don't get parent directories</code></pre>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Setting Package Order
         </h2>
@@ -361,7 +361,7 @@ EOF</kbd></pre>
                 The extra-cmake-modules entry has been commented out because
                 it was built earlier in the <a class="xref" href=
                 "introduction.html" title=
-                "Chapter&nbsp;29.&nbsp;Introduction to KDE">Introduction to
+                "第&nbsp;29&nbsp;章&nbsp;Introduction to KDE">Introduction to
                 KDE</a>.
               </p>
             </li>
@@ -381,14 +381,14 @@ EOF</kbd></pre>
           </ul>
         </div>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of KDE Frameworks
         </h2>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             When installing multiple packages in a script, the installation
@@ -436,9 +436,9 @@ EOF</kbd></pre>
 export -f as_root</kbd></pre>
         </div>
         <div class="admon caution">
-          <img alt="[Caution]" src="../images/caution.png" />
+          <img alt="[小心]" src="../images/caution.png" />
           <h3>
-            Caution
+            小心
           </h3>
           <p>
             If installing in <code class="filename">/opt</code> and there is
@@ -509,9 +509,9 @@ done &lt; frameworks-6.26.0.md5
 
 exit</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Any modules that have been omitted can be installed later by
@@ -528,7 +528,7 @@ exit</kbd></pre>
         <pre class="root"><kbd class="command">mv -v /opt/kf6 /opt/kf6-6.26.0
 ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -554,7 +554,7 @@ ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
           dependencies.
         </p>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -949,25 +949,25 @@ ln -sfvn kf6-6.26.0 /opt/kf6</kbd></pre>
       <ul>
         <li class="prev">
           <a accesskey="p" href="kf6-intro.html" title=
-          "KDE Frameworks 6 Pre-installation Configuration">Prev</a>
+          "KDE Frameworks 6 Pre-installation Configuration">上一页</a>
           <p>
             KDE Frameworks 6 Pre-installation Configuration
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="kf-apps.html" title=
-          "KDE Frameworks 6 Based Applications">Next</a>
+          "KDE Frameworks 6 Based Applications">下一页</a>
           <p>
             KDE Frameworks 6 Based Applications
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="kf6.html" title=
-          "Chapter&nbsp;30.&nbsp;KDE Frameworks 6">Up</a>
+          "第&nbsp;30&nbsp;章&nbsp;KDE Frameworks 6">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

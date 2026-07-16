@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="php.html" title="PHP-8.5.7">Prev</a>
+          <a accesskey="p" href="php.html" title="PHP-8.5.7">上一页</a>
           <p>
             PHP-8.5.7
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="python311.html" title=
-          "Python-3.11.1">Next</a>
+          "Python-3.11.1">下一页</a>
           <p>
             Python-3.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="python3" name="python3"></a>Python-3.14.6
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Python 3
         </h2>
@@ -60,9 +60,9 @@
           prototyping large programs or developing entire applications.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             <span class="application">Python 3</span> was installed in LFS.
@@ -71,9 +71,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -82,9 +82,9 @@
           </p>
         </div>
         <div class="admon important">
-          <img alt="[Important]" src="../images/important.png" />
+          <img alt="[重要]" src="../images/important.png" />
           <h3>
-            Important
+            重要
           </h3>
           <p>
             If upgrading to a new Python-3 minor version (for example, from
@@ -175,8 +175,8 @@
             <li class="listitem">
               <p>
                 Required patch: <a class="ulink" href=
-                "https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.6-openssl_4-1.patch">
-                https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.6-openssl_4-1.patch</a>
+                "https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.6-consolidated_fixes-1.patch">
+                https://www.linuxfromscratch.org/patches/blfs/svn/Python-3.14.6-consolidated_fixes-1.patch</a>
               </p>
             </li>
           </ul>
@@ -209,10 +209,9 @@
         <p class="optional">
           <a class="xref" href="bluez.html" title=
           "BlueZ-5.87">BlueZ-5.87</a>, <a class="xref" href="gdb.html" title=
-          "GDB-17.2">GDB-17.2</a> (required for some tests), <a class="xref"
-          href="valgrind.html" title="Valgrind-3.27.1">Valgrind-3.27.1</a>,
-          and <a class="ulink" href=
-          "https://www.bytereef.org/mpdecimal/">libmpdec</a>
+          "GDB-17.2">GDB-17.2</a> (required for some tests), and <a class=
+          "xref" href="valgrind.html" title=
+          "Valgrind-3.27.1">Valgrind-3.27.1</a>
         </p>
         <h4>
           Optional (For Additional Modules)
@@ -225,9 +224,9 @@
           DB</a> (deprecated)
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             An Internet connection is needed for some tests of this package.
@@ -241,15 +240,16 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/Python3">https://wiki.linuxfromscratch.org/blfs/wiki/Python3</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Python 3
         </h2>
         <p>
-          First, apply a patch adapting this package to OpenSSL-4:
+          First, apply a patch adapting this package to OpenSSL-4 and to fix
+          three security issues:
         </p>
         <pre class="userinput"><kbd class=
-        "command">patch -Np1 -i ../Python-3.14.6-openssl_4-1.patch</kbd></pre>
+        "command">patch -Np1 -i ../Python-3.14.6-consolidated_fixes-1.patch</kbd></pre>
         <p>
           Install <span class="application">Python 3</span> by running the
           following commands:
@@ -292,7 +292,7 @@ tar --strip-components=1  \
     -C /usr/share/doc/python-3.14.6/html \
     -xvf ../python-3.14.6-docs-html.tar.bz2</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -320,7 +320,7 @@ tar --strip-components=1  \
           any benefit from doing this.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Python 3
         </h2>
@@ -338,7 +338,7 @@ tar --strip-components=1  \
         <pre class="root"><kbd class=
         "command">export PYTHONDOCS=/usr/share/doc/python-3/html</kbd></pre>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -443,25 +443,25 @@ tar --strip-components=1  \
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="php.html" title="PHP-8.5.7">Prev</a>
+          <a accesskey="p" href="php.html" title="PHP-8.5.7">上一页</a>
           <p>
             PHP-8.5.7
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="python311.html" title=
-          "Python-3.11.1">Next</a>
+          "Python-3.11.1">下一页</a>
           <p>
             Python-3.11.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,169 +5,137 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      About Devices
+      关于设备
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="firmware.html" title=
-          "About Firmware">Prev</a>
+          <a accesskey="p" href="firmware.html" title="关于固件">上一页</a>
           <p>
-            About Firmware
+            关于固件
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="skel.html" title=
-          "Configuring for Adding Users">Next</a>
+          <a accesskey="n" href="skel.html" title="为添加用户进行配置">下一页</a>
           <p>
-            Configuring for Adding Users
+            为添加用户进行配置
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-devices" name="postlfs-devices"></a>About Devices
+      <a id="postlfs-devices" name="postlfs-devices"></a>关于设备
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        Although most devices needed by packages in BLFS and beyond are set
-        up properly by <span class="application">udev</span> using the
-        default rules installed by LFS in <code class=
-        "filename">/etc/udev/rules.d</code>, there are cases where the rules
-        must be modified or augmented.
+        尽管 BLFS 及更高版本中包所需的大多数设备都由 <span class="application">udev</span> 使用
+        LFS 在 <code class="filename">/etc/udev/rules.d</code>
+        中安装的默认规则正确设置，但在某些情况下必须修改或扩充规则。
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Multiple Sound Cards
+          多个声卡
         </h2>
         <p>
-          If there are multiple sound cards in a system, the "default" sound
-          card becomes random. The method to establish sound card order
-          depends on whether the drivers are modules or not. If the sound
-          card drivers are compiled into the kernel, control is via kernel
-          command line parameters in <code class=
-          "filename">/boot/grub/grub.cfg</code>. For example, if a system has
-          both an FM801 card and a SoundBlaster PCI card, the following can
-          be appended to the command line:
+          如果系统中有多个声卡，“默认”声卡会变为随机。建立声卡顺序的方法取决于驱动程序是否为模块。如果声卡驱动程序编译进内核，则通过
+          <code class="filename">/boot/grub/grub.cfg</code>
+          中的内核命令行参数进行控制。例如，如果系统同时拥有 FM801 卡和 SoundBlaster PCI
+          卡，则可以将以下内容附加到命令行：
         </p>
         <pre class="screen"><code class=
         "literal">snd-fm801.index=0 snd-ens1371.index=1</code></pre>
         <p>
-          If the sound card drivers are built as modules, the order can be
-          established in the <code class="filename">/etc/modprobe.conf</code>
-          file with:
+          如果声卡驱动程序构建为模块，则可以在 <code class="filename">/etc/modprobe.conf</code>
+          文件中通过以下方式建立顺序：
         </p>
         <pre class="screen"><code class="literal">options snd-fm801 index=0
 options snd-ens1371 index=1</code></pre>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="usb-device-issues" name="usb-device-issues"></a>USB Device
-          Issues
+          <a id="usb-device-issues" name="usb-device-issues"></a>USB 设备问题
         </h2>
         <p>
-          USB devices usually have two kinds of device nodes associated with
-          them.
+          USB 设备通常有两种与之关联的设备节点。
         </p>
         <p>
-          The first kind is created by device-specific drivers (e.g.,
-          usb_storage/sd_mod or usblp) in the kernel. For example, a USB mass
-          storage device would be /dev/sdb, and a USB printer would be
-          /dev/usb/lp0. These device nodes exist only when the
-          device-specific driver is loaded.
+          第一种由内核中的设备特定驱动程序（例如 usb_storage/sd_mod 或 usblp）创建。例如，USB 大容量存储设备为
+          /dev/sdb，USB 打印机为 /dev/usb/lp0。这些设备节点仅在设备特定驱动程序加载时才存在。
         </p>
         <p>
-          The second kind of device nodes (/dev/bus/usb/BBB/DDD, where BBB is
-          the bus number and DDD is the device number) are created even if
-          the device doesn't have a kernel driver. By using these "raw" USB
-          device nodes, an application can exchange arbitrary USB packets
-          with the device, i.e., bypass the possibly-existing kernel driver.
+          第二种设备节点（/dev/bus/usb/BBB/DDD，其中 BBB 是总线编号，DDD
+          是设备编号）即使设备没有内核驱动程序也会被创建。通过使用这些“原始”USB 设备节点，应用程序可以与设备交换任意 USB
+          数据包，即绕过可能存在的内核驱动程序。
         </p>
         <p>
-          Access to raw USB device nodes is needed when a userspace program
-          is acting as a device driver. However, for the program to open the
-          device successfully, the permissions have to be set correctly. By
-          default, due to security concerns, all raw USB devices are owned by
-          user root and group root, and have 0664 permissions (the read
-          access is needed, e.g., for lsusb to work and for programs to
-          access USB hubs). Packages (such as SANE and libgphoto2) containing
-          userspace USB device drivers also ship udev rules that change the
-          permissions of the controlled raw USB devices. That is, rules
-          installed by SANE change permissions for known scanners, but not
-          printers. If a package maintainer forgot to write a rule for your
-          device, report a bug to both BLFS (if the package is there) and
-          upstream, and you will need to write your own rule.
+          当用户空间程序充当设备驱动程序时，需要访问原始 USB
+          设备节点。但是，要使程序成功打开设备，必须正确设置权限。默认情况下，出于安全考虑，所有原始 USB 设备由用户 root 和组
+          root 拥有，权限为 0664（需要读取权限，例如，使 lsusb 工作以及程序访问 USB 集线器）。包含用户空间 USB
+          设备驱动程序的包（例如 SANE 和 libgphoto2）也会附带 udev 规则，更改受控原始 USB
+          设备的权限。也就是说，SANE 安装的规则会更改已知扫描仪的权限，但不会更改打印机的。如果包维护者忘记为您的设备编写规则，请向
+          BLFS（如果该包在其中）和上游报告错误，并且您将需要编写自己的规则。
         </p>
         <p>
-          Before Linux-2.6.15, raw USB device access was performed not with
-          /dev/bus/usb/BBB/DDD device nodes, but with /proc/bus/usb/BBB/DDD
-          pseudofiles. Some applications still use only this deprecated
-          technique and can't use the new device nodes. They cannot work with
-          Linux kernel version 3.5 or newer. If you need to run such an
-          application, contact the developer of it for a fix.
+          在 Linux-2.6.15 之前，原始 USB 设备访问不是通过 /dev/bus/usb/BBB/DDD 设备节点进行的，而是通过
+          /proc/bus/usb/BBB/DDD 伪文件进行的。某些应用程序仍然仅使用这种已弃用的技术，并且无法使用新的设备节点。它们无法与
+          Linux 内核 3.5 或更高版本一起工作。如果您需要运行此类应用程序，请联系其开发人员以获取修复。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          Udev Device Attributes
+          Udev 设备属性
         </h2>
         <p>
-          Fine-tuning of device attributes such as group name and permissions
-          is possible by creating extra <span class="application">udev</span>
-          rules, matching on something like this. The vendor and product can
-          be found by searching the <code class=
-          "filename">/sys/devices</code> directory entries or using
-          <span class="command"><strong>udevadm info</strong></span> after
-          the device has been attached. See the documentation in the current
-          <span class="application">udev</span> directory of <code class=
-          "filename">/usr/share/doc</code> for details.
+          可以通过创建额外的 <span class="application">udev</span>
+          规则来微调设备属性（例如组名和权限），匹配类似以下内容。供应商和产品可以通过搜索 <code class=
+          "filename">/sys/devices</code> 目录条目或在设备连接后使用 <span class=
+          "command"><strong>udevadm info</strong></span> 找到。有关详细信息，请参阅当前
+          <span class="application">udev</span> 目录中 <code class=
+          "filename">/usr/share/doc</code> 的文档。
         </p>
         <pre class="screen"><code class=
         "literal">SUBSYSTEM=="usb_device", SYSFS{idVendor}=="05d8", SYSFS{idProduct}=="4002", \
   GROUP:="scanner", MODE:="0660"</code></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
-            The above line is used for descriptive purposes only. The scanner
-            <span class="application">udev</span> rules are put into place
-            when installing <a class="xref" href="../pst/sane.html" title=
-            "SANE-1.4.0">SANE-1.4.0</a>.
+            上面一行仅用于描述目的。扫描仪 <span class="application">udev</span> 规则在安装
+            <a class="xref" href="../pst/sane.html" title=
+            "SANE-1.4.0">SANE-1.4.0</a> 时会被放置到位。
           </p>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="dev-dvd" name="dev-dvd"></a>Devices for DVD Drives
+          <a id="dev-dvd" name="dev-dvd"></a>DVD 驱动器的设备
         </h2>
         <p>
-          If the initial boot process does not set up the <code class=
-          "systemitem">/dev/dvd</code> device properly, it can be installed
-          using the following modification to the default udev rules. As the
-          <code class="systemitem">root</code> user, run:
+          如果初始启动过程未正确设置 <code class="systemitem">/dev/dvd</code> 设备，可以通过对默认
+          udev 规则进行以下修改来安装它。以 <code class="systemitem">root</code> 用户身份运行：
         </p>
         <pre class="userinput"><kbd class=
         "command">sed '1d;/SYMLINK.*cdrom/ a\
@@ -178,26 +146,24 @@ KERNEL=="sr0", ENV{ID_CDROM_DVD}=="1", SYMLINK+="dvd", OPTIONS+="link_priority=-
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="firmware.html" title=
-          "About Firmware">Prev</a>
+          <a accesskey="p" href="firmware.html" title="关于固件">上一页</a>
           <p>
-            About Firmware
+            关于固件
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="skel.html" title=
-          "Configuring for Adding Users">Next</a>
+          <a accesskey="n" href="skel.html" title="为添加用户进行配置">下一页</a>
           <p>
-            Configuring for Adding Users
+            为添加用户进行配置
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

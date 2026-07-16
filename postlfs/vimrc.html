@@ -5,84 +5,74 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      The /etc/vimrc and ~/.vimrc Files
+      /etc/vimrc 和 ~/.vimrc 文件
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
           <a accesskey="p" href="profile.html" title=
-          "The Bash Shell Startup Files">Prev</a>
+          "Bash Shell 启动文件">上一页</a>
           <p>
-            The Bash Shell Startup Files
+            Bash Shell 启动文件
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="logon.html" title=
-          "Customizing your Logon with /etc/issue">Next</a>
+          "使用 /etc/issue 自定义登录界面">下一页</a>
           <p>
-            Customizing your Logon with /etc/issue
+            使用 /etc/issue 自定义登录界面
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-config-vimrc" name="postlfs-config-vimrc"></a>The
-      /etc/vimrc and ~/.vimrc Files
+      <a id="postlfs-config-vimrc" name="postlfs-config-vimrc"></a>/etc/vimrc
+      和 ~/.vimrc 文件
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        The LFS book installs <span class="application">Vim</span> as its
-        text editor. At this point it should be noted that there are a
-        <span class="emphasis"><em>lot</em></span> of different editing
-        applications out there including <span class=
-        "application">Emacs</span>, <span class="application">nano</span>,
-        <span class="application">Joe</span> and many more. Anyone who has
-        been around the Internet (especially usenet) for a short time will
-        certainly have observed at least one flame war, usually involving
-        <span class="application">Vim</span> and <span class=
-        "application">Emacs</span> users!
+        LFS 手册将 <span class="application">Vim</span> 安装为其文本编辑器。此时应注意，存在
+        <span class="emphasis"><em>很多</em></span> 不同的编辑应用程序，包括 <span class=
+        "application">Emacs</span>、<span class=
+        "application">nano</span>、<span class="application">Joe</span>
+        等等。任何在网上（尤其是新闻组）待过一段时间的人，肯定至少见过一次争论，通常涉及 <span class=
+        "application">Vim</span> 和 <span class="application">Emacs</span> 用户！
       </p>
       <p>
-        The LFS book creates a basic <code class="filename">vimrc</code>
-        file. In this section you'll find an attempt to enhance this file. At
-        startup, <span class="command"><strong>vim</strong></span> reads the
-        global configuration file (<code class="filename">/etc/vimrc</code>)
-        as well as a user-specific file (<code class=
-        "filename">~/.vimrc</code>). Either or both can be tailored to suit
-        the needs of your particular system.
+        LFS 手册创建了一个基本的 <code class="filename">vimrc</code>
+        文件。在本节中，我们将尝试增强此文件。启动时，<span class=
+        "command"><strong>vim</strong></span> 会读取全局配置文件（<code class=
+        "filename">/etc/vimrc</code>）以及用户特定的文件（<code class=
+        "filename">~/.vimrc</code>）。可以调整其中一个或两者，以适应您特定系统的需求。
       </p>
       <p>
-        Here is a slightly expanded <code class="filename">.vimrc</code> that
-        you can put in <code class="filename">~/.vimrc</code> to provide user
-        specific effects. Of course, if you put it into <code class=
-        "filename">/etc/skel/.vimrc</code> instead, it will be made available
-        to users you add to the system later. You can also copy the file from
-        <code class="filename">/etc/skel/.vimrc</code> to the home directory
-        of users already on the system, such as <code class=
-        "systemitem">root</code>. Be sure to set permissions, owner, and
-        group if you do copy anything directly from <code class=
-        "filename">/etc/skel</code>.
+        以下是一个稍微扩展的 <code class="filename">.vimrc</code>，您可以将其放入 <code class=
+        "filename">~/.vimrc</code> 中以提供用户特定的效果。当然，如果您将其放入 <code class=
+        "filename">/etc/skel/.vimrc</code>，则以后添加到系统的用户都将获得它。您也可以将文件从
+        <code class="filename">/etc/skel/.vimrc</code> 复制到系统上已有用户（如
+        <code class="systemitem">root</code>）的家目录中。如果您直接从 <code class=
+        "filename">/etc/skel</code> 复制任何内容，请务必设置权限、所有者和组。
       </p>
       <pre class="screen"><code class="literal">" Begin .vimrc
 
@@ -92,74 +82,66 @@ set ruler
 
 " End .vimrc</code></pre>
       <p>
-        Note that the comment tags are " instead of the more usual # or //.
-        This is correct, the syntax for <code class="filename">vimrc</code>
-        is slightly unusual.
+        请注意，注释标记是 " 而不是更常见的 # 或 //。这是正确的，<code class="filename">vimrc</code>
+        的语法略有不同。
       </p>
       <p>
-        Below you'll find a quick explanation of what each of the options in
-        this example file means here:
+        以下是对此示例文件中每个选项含义的快速说明：
       </p>
       <div class="itemizedlist">
         <ul>
           <li class="listitem">
             <p>
-              <code class="option">set columns=80</code>: This simply sets
-              the number of columns used on the screen.
+              <code class="option">set columns=80</code>：这只是设置屏幕上使用的列数。
             </p>
           </li>
           <li class="listitem">
             <p>
-              <code class="option">set wrapmargin=8</code>: This is the
-              number of characters from the right window border where
-              wrapping starts.
+              <code class="option">set wrapmargin=8</code>：这是从右窗口边框开始换行的字符数。
             </p>
           </li>
           <li class="listitem">
             <p>
-              <code class="option">set ruler</code>: This makes <span class=
-              "command"><strong>vim</strong></span> show the current row and
-              column at the bottom right of the screen.
+              <code class="option">set ruler</code>：这会使 <span class=
+              "command"><strong>vim</strong></span> 在屏幕右下角显示当前行号和列号。
             </p>
           </li>
         </ul>
       </div>
       <p>
-        More information on the <span class="emphasis"><em>many</em></span>
-        <span class="command"><strong>vim</strong></span> options can be
-        found by reading the help inside <span class=
-        "command"><strong>vim</strong></span> itself. Do this by typing
-        <span class="command"><strong>:</strong></span><code class=
-        "option">help</code> in <span class=
-        "command"><strong>vim</strong></span> to get the general help, or by
-        typing <span class="command"><strong>:</strong></span><code class=
-        "option">help usr_toc.txt</code> to view the User Manual Table of
-        Contents.
+        关于 <span class="command"><strong>vim</strong></span> <span class=
+        "emphasis"><em>众多</em></span> 选项的更多信息，可以在 <span class=
+        "command"><strong>vim</strong></span> 内部阅读帮助。在 <span class=
+        "command"><strong>vim</strong></span> 中键入 <span class=
+        "command"><strong>:</strong></span><code class="option">help</code>
+        获取通用帮助，或键入 <span class=
+        "command"><strong>:</strong></span><code class="option">help
+        usr_toc.txt</code> 查看用户手册目录。
       </p>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
           <a accesskey="p" href="profile.html" title=
-          "The Bash Shell Startup Files">Prev</a>
+          "Bash Shell 启动文件">上一页</a>
           <p>
-            The Bash Shell Startup Files
+            Bash Shell 启动文件
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="logon.html" title=
-          "Customizing your Logon with /etc/issue">Next</a>
+          "使用 /etc/issue 自定义登录界面">下一页</a>
           <p>
-            Customizing your Logon with /etc/issue
+            使用 /etc/issue 自定义登录界面
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

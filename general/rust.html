@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="ruby.html" title="Ruby-4.0.5">Prev</a>
+          <a accesskey="p" href="ruby.html" title="Ruby-4.0.6">上一页</a>
           <p>
-            Ruby-4.0.5
+            Ruby-4.0.6
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="rust-bindgen.html" title=
-          "rust-bindgen-0.72.1">Next</a>
+          "rust-bindgen-0.72.1">下一页</a>
           <p>
             rust-bindgen-0.72.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="rust" name="rust"></a>Rustc-1.96.0
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Rust
         </h2>
@@ -64,9 +64,9 @@
           connection to build this package.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Although BLFS usually installs in <code class=
@@ -111,17 +111,17 @@
           core), that might be an alternative to taking CPUs offline. Read
           <a class="xref" href=
           "../introduction/notes-on-building.html#build-in-cgroup" title=
-          "使用 Linux cgroup 限制资源使用">the section called “使用 Linux cgroup
-          限制资源使用”</a> for information on how to use a cgroup.
+          "使用 Linux cgroup 限制资源使用">“使用 Linux cgroup 限制资源使用”一节</a> for
+          information on how to use a cgroup.
         </p>
         <p>
           At the moment, <span class="application">Rust</span> does not
           provide any guarantees of a stable ABI.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Rustc defaults to building for ALL supported architectures, using
@@ -137,9 +137,9 @@
           </p>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -203,9 +203,9 @@
           </ul>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             On GitHub we've forked the upstream repository into our own
@@ -231,9 +231,9 @@
           "../basicnet/curl.html" title="cURL-8.21.0">cURL-8.21.0</a>
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             An Internet connection is needed for building this package. The
@@ -253,9 +253,9 @@
           installed version of LLVM instead of building its shipped version)
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If a recommended dependency is not installed, you will need to
@@ -267,7 +267,7 @@
             If using the instructions for installing in <code class=
             "filename">/opt</code>, it is assumed that you have configured
             <a class="xref" href="../postlfs/profile.html" title=
-            "The Bash Shell Startup Files">The Bash Shell Startup Files</a>.
+            "Bash Shell 启动文件">Bash Shell 启动文件</a>.
           </p>
         </div>
         <h4>
@@ -289,7 +289,7 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/rust">https://wiki.linuxfromscratch.org/blfs/wiki/rust</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Rust
         </h2>
@@ -304,9 +304,9 @@
         "command">mkdir -pv /opt/rustc-1.96.0      &amp;&amp;
 ln -svfn rustc-1.96.0 /opt/rustc</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If multiple versions of <span class="application">Rust</span> are
@@ -341,7 +341,7 @@ link-shared = true
 targets = "X86"
 
 [build]
-description = "for BLFS g57e8800"
+description = "for BLFS gee59845"
 
 # Omit the documentation to save time and space (the default is to build them).
 docs = false
@@ -399,9 +399,9 @@ sed -ri src/tools/cargo/Cargo.lock \
 export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
 ./x.py build</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The test suite will generate some messages in the <span class=
@@ -462,9 +462,9 @@ export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
           package:
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If <span class="command"><strong>sudo</strong></span> or
@@ -507,7 +507,7 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
         <pre class="userinput"><kbd class=
         "command">unset LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -565,11 +565,11 @@ mv -v /etc/bash_completion.d/cargo /usr/share/bash-completion/completions</kbd><
           ensures that the test suite will not stop at the first error.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Rust
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="rustc-config" name="rustc-config"></a>Configuration
             Information
@@ -601,7 +601,7 @@ EOF</kbd></pre>
           "command">source /etc/profile.d/rustc.sh</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -803,25 +803,25 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="ruby.html" title="Ruby-4.0.5">Prev</a>
+          <a accesskey="p" href="ruby.html" title="Ruby-4.0.6">上一页</a>
           <p>
-            Ruby-4.0.5
+            Ruby-4.0.6
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="rust-bindgen.html" title=
-          "rust-bindgen-0.72.1">Next</a>
+          "rust-bindgen-0.72.1">下一页</a>
           <p>
             rust-bindgen-0.72.1
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -5,190 +5,156 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      About RAID
+      关于 RAID
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;5.&nbsp;File Systems and Disk Management
+        第&nbsp;5&nbsp;章&nbsp;文件系统与磁盘管理
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="aboutlvm.html" title=
-          "About Logical Volume Management (LVM)">Prev</a>
+          <a accesskey="p" href="aboutlvm.html" title="关于逻辑卷管理（LVM）">上一页</a>
           <p>
-            About Logical Volume Management (LVM)
+            关于逻辑卷管理（LVM）
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mdadm.html" title="mdadm-4.6">Next</a>
+          <a accesskey="n" href="mdadm.html" title="mdadm-4.6">下一页</a>
           <p>
             mdadm-4.6
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="filesystems.html" title=
-          "Chapter&nbsp;5.&nbsp;File Systems and Disk Management">Up</a>
+          "第&nbsp;5&nbsp;章&nbsp;文件系统与磁盘管理">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="raid" name="raid"></a>About RAID
+      <a id="raid" name="raid"></a>关于 RAID
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        The storage technology known as RAID (Redundant Array of Independent
-        Disks) combines multiple physical disks into a logical unit. The
-        drives can generally be combined to provide data redundancy or to
-        extend the size of logical units beyond the capability of the
-        physical disks or both. The technology also allows for providing
-        hardware maintenance without powering down the system.
+        被称为
+        RAID（独立磁盘冗余阵列）的存储技术将多个物理磁盘组合成一个逻辑单元。通常可以将驱动器组合起来以提供数据冗余，或将逻辑单元的大小扩展到超出物理磁盘的能力范围，或两者兼而有之。该技术还允许在不关闭系统的情况下进行硬件维护。
       </p>
       <p>
-        The types of RAID organization are described in the <a class="ulink"
-        href=
+        RAID 组织的类型在 <a class="ulink" href=
         "https://raid.wiki.kernel.org/index.php/Overview#The_RAID_levels">RAID
-        Wiki</a>.
+        Wiki</a> 中有描述。
       </p>
       <p>
-        Note that while RAID provides protection against disk failures, it is
-        not a substitute for backups. A file deleted is still deleted on all
-        the disks of a RAID array. Modern backups are generally done via
+        请注意，虽然 RAID 可防范磁盘故障，但它不能替代备份。删除的文件在 RAID 阵列的所有磁盘上仍会被删除。现代备份通常通过
         <a class="xref" href="../basicnet/rsync.html" title=
-        "rsync-3.4.4">rsync-3.4.4</a>.
+        "rsync-3.4.4">rsync-3.4.4</a> 完成。
       </p>
       <p>
-        There are three major types of RAID implementation: Hardware RAID,
-        BIOS-based RAID, and Software RAID.
+        RAID 实现有三种主要类型：硬件 RAID、基于 BIOS 的 RAID 和软件 RAID。
       </p>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="hwraid" name="hwraid"></a>Hardware RAID
+          <a id="hwraid" name="hwraid"></a>硬件 RAID
         </h2>
         <p>
-          Hardware based RAID provides capability through proprietary
-          hardware and data layouts. The control and configuration is
-          generally done via firmware in conjunction with executable programs
-          made available by the device manufacturer. The capabilities are
-          generally supplied via a PCI card, although there are some
-          instances of RAID components integrated in to the motherboard.
-          Hardware RAID may also be available in a stand-alone enclosure.
+          基于硬件的 RAID 通过专有硬件和数据布局提供功能。控制和配置通常通过固件以及设备制造商提供的可执行程序来完成。这些功能通常通过
+          PCI 卡提供，但也有部分 RAID 组件集成在主板上。硬件 RAID 也可以以独立机箱的形式提供。
         </p>
         <p>
-          One advantage of hardware-based RAID is that the drives are offered
-          to the operating system as a logical drive and no operating system
-          dependent configuration is needed.
+          基于硬件的 RAID 的一个优点是，驱动器作为逻辑驱动器提供给操作系统，无需依赖操作系统的配置。
         </p>
         <p>
-          Disadvantages include difficulties in transferring drives from one
-          system to another, updating firmware, or replacing failed RAID
-          hardware.
+          缺点包括将驱动器从一个系统转移到另一个系统、更新固件或更换发生故障的 RAID 硬件时存在困难。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="biosraid" name="biosraid"></a>BIOS-based RAID
+          <a id="biosraid" name="biosraid"></a>基于 BIOS 的 RAID
         </h2>
         <p>
-          Some computers offer a hardware-like RAID implementation in the
-          system BIOS. Sometime this is referred to as 'fake' RAID as the
-          capabilities are generally incorporated into firmware without any
-          hardware acceleration.
+          某些计算机在系统 BIOS 中提供类似硬件的 RAID
+          实现。有时这被称为“伪”RAID，因为其功能通常集成在固件中，没有任何硬件加速。
         </p>
         <p>
-          The advantages and disadvantages of BIOS-based RAID are generally
-          the same as hardware RAID with the additional disadvantage that
-          there is no hardware acceleration.
+          基于 BIOS 的 RAID 的优点和缺点通常与硬件 RAID 相同，但额外缺点是没有硬件加速。
         </p>
         <p>
-          In some cases, BIOS-based RAID firmware is enabled by default (e.g.
-          some DELL systems). If software RAID is desired, this option must
-          be explicitly disabled in the BIOS.
+          在某些情况下，基于 BIOS 的 RAID 固件默认启用（例如某些 DELL 系统）。如果需要软件 RAID，则必须在 BIOS
+          中明确禁用此选项。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="swraid" name="swraid"></a>Software RAID
+          <a id="swraid" name="swraid"></a>软件 RAID
         </h2>
         <p>
-          Software based RAID is the most flexible form of RAID. It is easy
-          to install and update and provides full capability on all or part
-          of any drives available to the system. In BLFS, the RAID software
-          is found in <a class="xref" href="mdadm.html" title=
-          "mdadm-4.6">mdadm-4.6</a>.
+          基于软件的 RAID 是最灵活的 RAID 形式。它易于安装和更新，并且对系统中可用任何驱动器的全部或部分提供完整功能。在 BLFS
+          中，RAID 软件位于 <a class="xref" href="mdadm.html" title=
+          "mdadm-4.6">mdadm-4.6</a>。
         </p>
         <p>
-          Configuring a RAID device is straightforward using <span class=
-          "application">mdadm</span>. Generally devices are created in the
-          <code class="filename">/dev</code> directory as <code class=
-          "filename">/dev/mdx</code> where <span class=
-          "emphasis"><em>x</em></span> is an integer.
+          使用 <span class="application">mdadm</span> 配置 RAID 设备非常简单。通常，设备在
+          <code class="filename">/dev</code> 目录中创建为 <code class=
+          "filename">/dev/mdx</code>，其中 <span class=
+          "emphasis"><em>x</em></span> 是一个整数。
         </p>
         <p>
-          The first step in creating a RAID array is to use partitioning
-          software such as <strong class=
-          "userinput"><code>fdisk</code></strong> or <a class="xref" href=
-          "parted.html" title="parted-3.7">parted-3.7</a> to define the
-          partitions needed for the array. Usually, there will be one
-          partition on each drive participating in the RAID array, but that
-          is not strictly necessary. For this example, there will be four
-          disk drives: <code class="filename">/dev/sda</code>, <code class=
-          "filename">/dev/sdb</code>, <code class="filename">/dev/sdc</code>,
-          and <code class="filename">/dev/sdd</code>. They will be
-          partitioned as follows:
+          创建 RAID 阵列的第一步是使用分区软件（如 <strong class=
+          "userinput"><code>fdisk</code></strong> 或 <a class="xref" href=
+          "parted.html" title="parted-3.7">parted-3.7</a>）定义阵列所需的分区。通常，参与
+          RAID 阵列的每个驱动器上会有一个分区，但这并非严格必要。在本示例中，将有四个磁盘驱动器： <code class=
+          "filename">/dev/sda</code>、 <code class="filename">/dev/sdb</code>、
+          <code class="filename">/dev/sdc</code> 和 <code class=
+          "filename">/dev/sdd</code>。它们的分区如下：
         </p>
         <pre class="screen"><code class=
-        "literal">Partition Size     Type                Use
-sda1:     100 MB   fd Linux raid auto  /boot    (RAID 1) /dev/md0
-sda2:      10 GB   fd Linux raid auto  /        (RAID 1) /dev/md1
-sda3:       2 GB   83 Linux swap       swap
-sda4      300 GB   fd Linux raid auto  /home    (RAID 5) /dev/md2
+        "literal">分区       大小     类型               用途
+sda1:      100 MB   fd Linux raid auto  /boot    （RAID 1）/dev/md0
+sda2:       10 GB   fd Linux raid auto  /        （RAID 1）/dev/md1
+sda3:        2 GB   83 Linux swap       swap
+sda4       300 GB   fd Linux raid auto  /home    （RAID 5）/dev/md2
 
-sdb1:     100 MB   fd Linux raid auto  /boot    (RAID 1) /dev/md0
-sdb2:      10 GB   fd Linux raid auto  /        (RAID 1) /dev/md1
-sdb3:       2 GB   83 Linux swap       swap
-sdb4      300 GB   fd Linux raid auto  /home    (RAID 5) /dev/md2
+sdb1:      100 MB   fd Linux raid auto  /boot    （RAID 1）/dev/md0
+sdb2:       10 GB   fd Linux raid auto  /        （RAID 1）/dev/md1
+sdb3:        2 GB   83 Linux swap       swap
+sdb4       300 GB   fd Linux raid auto  /home    （RAID 5）/dev/md2
 
-sdc1:      12 GB   fd Linux raid auto  /usr/src (RAID 0) /dev/md3
-sdc2:     300 GB   fd Linux raid auto  /home    (RAID 5) /dev/md2
+sdc1:       12 GB   fd Linux raid auto  /usr/src （RAID 0）/dev/md3
+sdc2:      300 GB   fd Linux raid auto  /home    （RAID 5）/dev/md2
 
-sdd1:      12 GB   fd Linux raid auto  /usr/src (RAID 0) /dev/md3
-sdd2:     300 GB   fd Linux raid auto  /home    (RAID 5) /dev/md2 </code></pre>
+sdd1:       12 GB   fd Linux raid auto  /usr/src （RAID 0）/dev/md3
+sdd2:      300 GB   fd Linux raid auto  /home    （RAID 5）/dev/md2 </code></pre>
         <p>
-          In this arrangement, a separate boot partition is created as the
-          first small RAID array and a root filesystem as the secong RAID
-          array, both mirrored. The third partition is a large (about 1TB)
-          array for the <code class="filename">/home</code> directory. This
-          provides an ability to stripe data across multiple devices,
-          improving speed for both reading and writing large files. Finally,
-          a fourth array is created that concatenates two partitions into a
-          larger device.
+          在这种安排中，创建了一个单独的引导分区作为第一个小型 RAID 阵列，以及一个根文件系统作为第二个 RAID
+          阵列，两者都是镜像。第三个分区是一个大型（约 1 TB）阵列，用于 <code class=
+          "filename">/home</code>
+          目录。这提供了跨多个设备条带化数据的能力，提高了读写大文件的速度。最后，创建了第四个阵列，将两个分区连接成一个更大的设备。
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
-            All <span class="application">mdadm</span> commands must be run
-            as the <code class="systemitem">root</code> user.
+            所有 <span class="application">mdadm</span> 命令都必须以 <code class=
+            "systemitem">root</code> 用户身份运行。
           </p>
         </div>
         <p>
-          To create these RAID arrays the commands are:
+          要创建这些 RAID 阵列，命令为：
         </p>
         <pre class="userinput"><kbd class=
         "command">/sbin/mdadm -Cv /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1
@@ -197,10 +163,9 @@ sdd2:     300 GB   fd Linux raid auto  /home    (RAID 5) /dev/md2 </code></pre>
 /sbin/mdadm -Cv /dev/md2 --level=5 --raid-devices=4 \
         /dev/sda4 /dev/sdb4 /dev/sdc2 /dev/sdd2 </kbd></pre>
         <p>
-          The devices created can be examined by device. For example, to see
-          the details of <code class="filename">/dev/md1</code>, use
-          <strong class="userinput"><code>/sbin/mdadm --detail
-          /dev/md1</code></strong>:
+          创建的设备可以按设备进行检查。例如，要查看 <code class="filename">/dev/md1</code>
+          的详细信息，请使用 <strong class="userinput"><code>/sbin/mdadm --detail
+          /dev/md1</code></strong>：
         </p>
         <pre class="screen"><code class="literal">        Version : 1.2
   Creation Time : Tue Feb  7 17:08:45 2012
@@ -226,61 +191,55 @@ Working Devices : 2
        0       8        1        0      active sync   /dev/sda1
        1       8       17        1      active sync   /dev/sdb1</code></pre>
         <p>
-          From this point, the partitions can be formatted with the
-          filesystem of choice (e.g. ext3, ext4, <a class="xref" href=
-          "xfsprogs.html" title="xfsprogs-7.0.1">xfsprogs-7.0.1</a>, etc).
-          The formatted partitions can then be mounted. The <code class=
-          "filename">/etc/fstab</code> file can use the devices created for
-          mounting at boot time and the linux command line in <code class=
-          "filename">/boot/grub/grub.cfg</code> can specify <code class=
-          "option">root=/dev/md1</code>.
+          至此，可以使用所选的文件系统（例如 ext3、ext4、<a class="xref" href="xfsprogs.html"
+          title="xfsprogs-7.0.1">xfsprogs-7.0.1</a>
+          等）格式化这些分区。然后可以挂载格式化后的分区。<code class="filename">/etc/fstab</code>
+          文件可以使用创建的设备在启动时挂载，并且 <code class=
+          "filename">/boot/grub/grub.cfg</code> 中的 Linux 命令行可以指定 <code class=
+          "option">root=/dev/md1</code>。
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
-            The swap devices should be specified in the <code class=
-            "filename">/etc/fstab</code> file as normal. The kernel normally
-            stripes swap data across multiple swap files and should not be
-            made part of a RAID array.
+            交换设备应照常在 <code class="filename">/etc/fstab</code>
+            文件中指定。内核通常将交换数据条带化到多个交换文件上，因此不应将其作为 RAID 阵列的一部分。
           </p>
         </div>
         <p>
-          For further options and management details of RAID devices, refer
-          to <strong class="userinput"><code>man mdadm</code></strong>.
+          有关 RAID 设备的更多选项和管理细节，请参阅 <strong class="userinput"><code>man
+          mdadm</code></strong>。
         </p>
         <p>
-          Additional details for monitoring RAID arrays and dealing with
-          problems can be found at the <a class="ulink" href=
+          有关监控 RAID 阵列和处理问题的更多详细信息，请参见 <a class="ulink" href=
           "https://raid.wiki.kernel.org/index.php/Linux_Raid">Linux RAID
-          Wiki</a>.
+          Wiki</a>。
         </p>
       </div>
     </div>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="aboutlvm.html" title=
-          "About Logical Volume Management (LVM)">Prev</a>
+          <a accesskey="p" href="aboutlvm.html" title="关于逻辑卷管理（LVM）">上一页</a>
           <p>
-            About Logical Volume Management (LVM)
+            关于逻辑卷管理（LVM）
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="mdadm.html" title="mdadm-4.6">Next</a>
+          <a accesskey="n" href="mdadm.html" title="mdadm-4.6">下一页</a>
           <p>
             mdadm-4.6
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="filesystems.html" title=
-          "Chapter&nbsp;5.&nbsp;File Systems and Disk Management">Up</a>
+          "第&nbsp;5&nbsp;章&nbsp;文件系统与磁盘管理">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

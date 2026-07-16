@@ -5,86 +5,79 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      Advanced Network Setup
+      高级网络设置
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;14.&nbsp;Connecting to a Network
+        第&nbsp;14&nbsp;章&nbsp;连接到网络
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="connect.html" title=
-          "Connecting to a Network">Prev</a>
+          <a accesskey="p" href="connect.html" title="连接到网络">上一页</a>
           <p>
-            Connecting to a Network
+            连接到网络
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="netprogs.html" title=
-          "Networking Programs">Next</a>
+          <a accesskey="n" href="netprogs.html" title="网络程序">下一页</a>
           <p>
-            Networking Programs
+            网络程序
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="connect.html" title=
-          "Chapter&nbsp;14.&nbsp;Connecting to a Network">Up</a>
+          "第&nbsp;14&nbsp;章&nbsp;连接到网络">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="advanced-network" name="advanced-network"></a>Advanced Network
-      Setup
+      <a id="advanced-network" name="advanced-network"></a>高级网络设置
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="sect2" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="network-bridge" name="network-bridge"></a>Network Bridge
+          <a id="network-bridge" name="network-bridge"></a>网络桥接
         </h2>
-        <div class="kernel" lang="en" xml:lang="en">
+        <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="advanced-network-bridge-kernel" name=
-            "advanced-network-bridge-kernel"></a>Kernel Configuration
+            "advanced-network-bridge-kernel"></a>内核配置
           </h3>
           <p>
-            Enable the following options in the kernel configuration and
-            recompile the kernel if necessary:
+            在内核配置中启用以下选项，如有必要则重新编译内核：
           </p>
           <pre class="screen"><code class="literal">Networking support: Y
   Networking options:
     802.1d Ethernet Bridging: M or Y</code></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            Setting up a Network Bridge
+            设置网络桥接
           </h3>
           <p>
-            In this section we are going to discuss how to set up a network
-            bridge using <span class=
-            "command"><strong>systemd-networkd</strong></span>. In the
-            examples below, <em class="replaceable"><code>eth0</code></em>
-            represents the external interface that is being bridged, while
-            <em class="replaceable"><code>br0</code></em> represents the
-            bridge interface.
+            本节将讨论如何使用 <span class=
+            "command"><strong>systemd-networkd</strong></span>
+            设置网络桥接。在以下示例中，<em class="replaceable"><code>eth0</code></em>
+            表示被桥接的外部接口，而 <em class="replaceable"><code>br0</code></em>
+            表示桥接接口。
           </p>
           <p>
-            To create a bridge interface, create the following configuration
-            file by running the following command as the <code class=
-            "systemitem">root</code> user:
+            要创建桥接接口，请以 <code class="systemitem">root</code>
+            用户身份运行以下命令来创建配置文件：
           </p>
           <pre class="root"><kbd class=
           "command">cat &gt; /etc/systemd/network/50-br0.netdev &lt;&lt; EOF
@@ -93,9 +86,8 @@ Name=<em class="replaceable"><code>br0</code></em>
 Kind=bridge</code>
 EOF</kbd></pre>
           <p>
-            To assign a network interface to a bridge, create the following
-            configuration file by running the following command as the
-            <code class="systemitem">root</code> user:
+            要将网络接口分配给桥接，请以 <code class="systemitem">root</code>
+            用户身份运行以下命令来创建配置文件：
           </p>
           <pre class="root"><kbd class=
           "command">cat &gt; /etc/systemd/network/51-eth0.network &lt;&lt; EOF
@@ -106,19 +98,14 @@ Name=<em class="replaceable"><code>eth0</code></em>
 Bridge=<em class="replaceable"><code>br0</code></em></code>
 EOF</kbd></pre>
           <p>
-            Repeat the process for any other interfaces that need to be
-            bridged. Note that it is important that nothing assigns any
-            addresses to the bridged interfaces. If you are using <a class=
+            对需要桥接的其他任何接口重复此过程。请注意，务必不要让任何程序为被桥接的接口分配地址。如果您正在使用 <a class=
             "xref" href="networkmanager.html" title=
-            "NetworkManager-1.56.1">NetworkManager-1.56.1</a>, make sure you
-            configure them to ignore the bridged interfaces, as well as the
-            bridge interface itself.
+            "NetworkManager-1.56.1">NetworkManager-1.56.1</a>，
+            请确保将其配置为忽略被桥接的接口，以及桥接接口本身。
           </p>
           <p>
-            If you are on a network which uses DHCP for assigning ip
-            addresses, create the following configuration file by running the
-            following command as the <code class="systemitem">root</code>
-            user:
+            如果您所在网络使用 DHCP 分配 IP 地址，请以 <code class="systemitem">root</code>
+            用户身份运行以下命令来创建配置文件：
           </p>
           <pre class="root"><kbd class=
           "command">cat &gt; /etc/systemd/network/60-br0.network &lt;&lt; EOF
@@ -129,9 +116,8 @@ Name=<em class="replaceable"><code>br0</code></em>
 DHCP=yes</code>
 EOF</kbd></pre>
           <p>
-            Alternatively, if using a static ip setup, create the following
-            configuration file by running the following command as the
-            <code class="systemitem">root</code> user:
+            或者，如果使用静态 IP 设置，请以 <code class="systemitem">root</code>
+            用户身份运行以下命令来创建配置文件：
           </p>
           <pre class="root"><kbd class=
           "command">cat &gt; /etc/systemd/network/60-br0.network &lt;&lt; EOF
@@ -144,18 +130,15 @@ Gateway=192.168.0.1
 DNS=192.168.0.1</code>
 EOF</kbd></pre>
           <p>
-            If you want to contact another system connected to the bridge,
-            for example a qemu instance, then you also need to enable IP
-            forwarding. Again as the <code class="systemitem">root</code>
-            user, do:
+            如果您希望与连接到桥接的其他系统通信，例如 qemu 实例，则还需要启用 IP 转发。同样以 <code class=
+            "systemitem">root</code> 用户身份执行：
           </p>
           <pre class="root"><kbd class=
           "command">echo 'IPForward=ipv4' &gt;&gt; /etc/systemd/network/60-br0.network</kbd></pre>
           <p>
-            To bring up the bridge interface, simply restart the <span class=
-            "command"><strong>systemd-networkd</strong></span> daemon by
-            running the following command as the <code class=
-            "systemitem">root</code> user:
+            要启用桥接接口，只需以 <code class="systemitem">root</code> 用户身份运行以下命令重启
+            <span class="command"><strong>systemd-networkd</strong></span>
+            守护进程：
           </p>
           <pre class="root"><kbd class=
           "command">systemctl restart systemd-networkd</kbd></pre>
@@ -165,26 +148,24 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="connect.html" title=
-          "Connecting to a Network">Prev</a>
+          <a accesskey="p" href="connect.html" title="连接到网络">上一页</a>
           <p>
-            Connecting to a Network
+            连接到网络
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="netprogs.html" title=
-          "Networking Programs">Next</a>
+          <a accesskey="n" href="netprogs.html" title="网络程序">下一页</a>
           <p>
-            Networking Programs
+            网络程序
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="connect.html" title=
-          "Chapter&nbsp;14.&nbsp;Connecting to a Network">Up</a>
+          "第&nbsp;14&nbsp;章&nbsp;连接到网络">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

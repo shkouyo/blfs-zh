@@ -12,44 +12,44 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;47.&nbsp;Scanning
+        第&nbsp;47&nbsp;章&nbsp;Scanning
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="scanning.html" title="Scanning">Prev</a>
+          <a accesskey="p" href="scanning.html" title="Scanning">上一页</a>
           <p>
             Scanning
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="simple-scan.html" title=
-          "Simple-scan-50.0">Next</a>
+          "Simple-scan-50.0">下一页</a>
           <p>
             Simple-scan-50.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="scanning.html" title=
-          "Chapter&nbsp;47.&nbsp;Scanning">Up</a>
+          "第&nbsp;47&nbsp;章&nbsp;Scanning">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="sane" name="sane"></a>SANE-1.4.0
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to SANE
         </h2>
@@ -69,9 +69,9 @@
           backends.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -115,9 +115,9 @@
           </ul>
         </div>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The upstream location for this file is at <a class="ulink" href=
@@ -151,7 +151,7 @@
           href="tl-installer.html" title="install-tl-unx">install-tl-unx</a>)
         </p>
       </div>
-      <div class="kernel" lang="en" xml:lang="en">
+      <div class="kernel" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="sane-kernel" name="sane-kernel"></a>Kernel Configuration,
           Drivers and Additional Packages
@@ -171,11 +171,11 @@
           the devices.
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of SANE
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installation of SANE Backends
           </h3>
@@ -187,9 +187,9 @@
           <pre class="root"><kbd class=
           "command">groupadd -g 70 scanner</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               <span class="command"><strong>configure</strong></span> assumes
@@ -246,7 +246,7 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -268,11 +268,11 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
           "filename">/usr/etc/sane.d</code>.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring SANE
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="sane-config" name="sane-config"></a>Config Files
           </h3>
@@ -280,7 +280,7 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
             <code class="filename">/etc/sane.d/*.conf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -289,7 +289,7 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id101956" name="id101956"></a>Backend
+                    <a id="id101419" name="id101419"></a>Backend
                     Configuration
                   </h5>
                 </div>
@@ -309,9 +309,9 @@ chgrp -v scanner  /run/lock/sane</kbd></pre>
               "systemitem">scanner</code> group.
             </p>
             <div class="admon note">
-              <img alt="[Note]" src="../images/note.png" />
+              <img alt="[注意]" src="../images/note.png" />
               <h3>
-                Note
+                注意
               </h3>
               <p>
                 If you plan on using the scanner client <a class="xref" href=
@@ -344,7 +344,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id101976" name="id101976"></a>General Information
+                    <a id="id101439" name="id101439"></a>General Information
                   </h5>
                 </div>
               </div>
@@ -364,7 +364,7 @@ EOF</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id101983" name="id101983"></a>Configuration and
+                    <a id="id101446" name="id101446"></a>Configuration and
                     setup of the 'saned' daemon
                   </h5>
                 </div>
@@ -374,11 +374,10 @@ EOF</kbd></pre>
               The <span class="command"><strong>saned</strong></span> daemon
               is not meant to be used for untrusted clients. You should
               provide <a class="xref" href="../postlfs/firewall.html" title=
-              "Setting Up a Network Firewall">Firewalling</a> protection to
-              ensure only trusted clients access the daemon. Due to the
-              complex security requirements to ensure only trusted clients
-              access the daemon, BLFS does not provide instructions to
-              configure the <span class=
+              "设置网络防火墙">防火墙</a> protection to ensure only trusted clients
+              access the daemon. Due to the complex security requirements to
+              ensure only trusted clients access the daemon, BLFS does not
+              provide instructions to configure the <span class=
               "command"><strong>saned</strong></span> daemon. Some good (but
               outdated) information for setting up and securing the
               <span class="command"><strong>saned</strong></span> daemon can
@@ -388,7 +387,7 @@ EOF</kbd></pre>
           </div>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -559,25 +558,25 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="scanning.html" title="Scanning">Prev</a>
+          <a accesskey="p" href="scanning.html" title="Scanning">上一页</a>
           <p>
             Scanning
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="simple-scan.html" title=
-          "Simple-scan-50.0">Next</a>
+          "Simple-scan-50.0">下一页</a>
           <p>
             Simple-scan-50.0
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="scanning.html" title=
-          "Chapter&nbsp;47.&nbsp;Scanning">Up</a>
+          "第&nbsp;47&nbsp;章&nbsp;Scanning">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

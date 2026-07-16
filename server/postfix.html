@@ -12,43 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;21.&nbsp;Mail Server Software
+        第&nbsp;21&nbsp;章&nbsp;邮件服务器软件
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="exim.html" title="Exim-4.99.4">Prev</a>
+          <a accesskey="p" href="exim.html" title="Exim-4.99.4">上一页</a>
           <p>
             Exim-4.99.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="databases.html" title="Databases">Next</a>
+          <a accesskey="n" href="databases.html" title="数据库">下一页</a>
           <p>
-            Databases
+            数据库
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">Up</a>
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="postfix" name="postfix"></a>Postfix-3.11.4
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Postfix
         </h2>
@@ -60,9 +60,9 @@
           mail delivery agent to your local Internet Service Provider.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -146,11 +146,11 @@
           "https://wiki.linuxfromscratch.org/blfs/wiki/postfix">https://wiki.linuxfromscratch.org/blfs/wiki/postfix</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Postfix
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Adding Users and Groups
           </h3>
@@ -167,7 +167,7 @@ useradd -c "Postfix Daemon User" -d /var/spool/postfix -g postfix \
         -s /bin/false -u 32 postfix &amp;&amp;
 chown -v postfix:postfix /var/mail</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuring the Build
           </h3>
@@ -192,9 +192,9 @@ chown -v postfix:postfix /var/mail</kbd></pre>
             settings listed below.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               For all variants of the CCARGS you should ensure that
@@ -230,7 +230,7 @@ AUXLIBS=""</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62699" name="id62699"></a>Cyrus-SASL
+                    <a id="id62162" name="id62162"></a>Cyrus-SASL
                   </h5>
                 </div>
               </div>
@@ -251,7 +251,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62706" name="id62706"></a>LMDB
+                    <a id="id62169" name="id62169"></a>LMDB
                   </h5>
                 </div>
               </div>
@@ -271,7 +271,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62713" name="id62713"></a>OpenLDAP
+                    <a id="id62176" name="id62176"></a>OpenLDAP
                   </h5>
                 </div>
               </div>
@@ -292,7 +292,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62720" name="id62720"></a>Sqlite
+                    <a id="id62183" name="id62183"></a>Sqlite
                   </h5>
                 </div>
               </div>
@@ -313,7 +313,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62727" name="id62727"></a>MySQL or MariaDB
+                    <a id="id62190" name="id62190"></a>MySQL or MariaDB
                   </h5>
                 </div>
               </div>
@@ -334,7 +334,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62735" name="id62735"></a>PostgreSQL
+                    <a id="id62198" name="id62198"></a>PostgreSQL
                   </h5>
                 </div>
               </div>
@@ -355,7 +355,7 @@ fi</kbd></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62742" name="id62742"></a>CDB/TinyCDB
+                    <a id="id62205" name="id62205"></a>CDB/TinyCDB
                   </h5>
                 </div>
               </div>
@@ -377,7 +377,7 @@ fi</code></pre>
               <div>
                 <div>
                   <h5 class="title">
-                    <a id="id62752" name="id62752"></a>StartTLS
+                    <a id="id62215" name="id62215"></a>StartTLS
                     Authentication
                   </h5>
                 </div>
@@ -400,7 +400,7 @@ fi</kbd></pre>
             </p>
           </div>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Installing Postfix
           </h3>
@@ -434,7 +434,7 @@ make</kbd></pre>
    readme_directory=/usr/share/doc/postfix-3.11.4/readme</kbd></pre>
         </div>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -470,11 +470,11 @@ make</kbd></pre>
           creating the makefiles.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Postfix
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="postfix-config" name="postfix-config"></a>Config Files
           </h3>
@@ -484,7 +484,7 @@ make</kbd></pre>
             "filename">/etc/postfix/master.cf</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -544,9 +544,9 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             encoded in the LMDB format.
           </p>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               The <code class="filename">/etc/postfix/main.cf</code> and
@@ -559,9 +559,9 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
             </p>
           </div>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               <span class="application">Postfix</span> can also be set up to
@@ -595,7 +595,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
           "command">/usr/sbin/postfix check &amp;&amp;
 /usr/sbin/postfix start</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="postfix-init" name="postfix-init"></a> Systemd Unit
           </h3>
@@ -610,7 +610,7 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
           "command">make install-postfix</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -880,24 +880,24 @@ echo 'smtpd_forbid_bare_newline_exclusions = $mynetworks' &gt;&gt; /etc/postfix/
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="exim.html" title="Exim-4.99.4">Prev</a>
+          <a accesskey="p" href="exim.html" title="Exim-4.99.4">上一页</a>
           <p>
             Exim-4.99.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="databases.html" title="Databases">Next</a>
+          <a accesskey="n" href="databases.html" title="数据库">下一页</a>
           <p>
-            Databases
+            数据库
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">Up</a>
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

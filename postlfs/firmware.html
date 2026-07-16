@@ -5,484 +5,366 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      About Firmware
+      关于固件
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="console-fonts.html" title=
-          "About Console Fonts">Prev</a>
+          <a accesskey="p" href="console-fonts.html" title="关于控制台字体">上一页</a>
           <p>
-            About Console Fonts
+            关于控制台字体
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="devices.html" title="About Devices">Next</a>
+          <a accesskey="n" href="devices.html" title="关于设备">下一页</a>
           <p>
-            About Devices
+            关于设备
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-firmware" name="postlfs-firmware"></a>About Firmware
+      <a id="postlfs-firmware" name="postlfs-firmware"></a>关于固件
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        On some recent PCs it can be necessary, or desirable, to load
-        firmware to make them work at their best. The kernel or kernel
-        drivers look for firmware images in <code class=
-        "filename">/lib/firmware</code>. But in LFS <code class=
-        "filename">/lib</code> is a symlink to <code class=
-        "filename">usr/lib</code>, so the directory containing the firmware
-        files is actually <code class="filename">/usr/lib/firmware</code>.
+        在某些较新的 PC 上，可能需要或希望加载固件以使其发挥最佳性能。内核或内核驱动程序在 <code class=
+        "filename">/lib/firmware</code> 中查找固件映像。但在 LFS 中，<code class=
+        "filename">/lib</code> 是指向 <code class="filename">usr/lib</code>
+        的符号链接，因此实际包含固件文件的目录是 <code class="filename">/usr/lib/firmware</code>。
       </p>
       <p>
-        Currently, most firmware can be found at a <strong class=
-        "userinput"><code>git</code></strong> repository which can be viewed
-        in the browser with the URL <a class="ulink" href=
+        目前，大多数固件可以在 <strong class="userinput"><code>git</code></strong>
+        仓库中找到，可通过 URL <a class="ulink" href=
         "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain">
-        https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain</a>.
-        For convenience, the LFS Project has created a mirror, updated daily,
-        where these firmware files can be accessed via <strong class=
-        "userinput"><code>wget</code></strong> or a web browser at <a class=
-        "ulink" href=
-        "https://anduin.linuxfromscratch.org/BLFS/linux-firmware/">https://anduin.linuxfromscratch.org/BLFS/linux-firmware/</a>.
+        https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/plain</a>
+        在浏览器中查看。为了方便，LFS 项目创建了一个每日更新的镜像，这些固件文件可以通过 <strong class=
+        "userinput"><code>wget</code></strong> 或 Web 浏览器在 <a class="ulink"
+        href=
+        "https://anduin.linuxfromscratch.org/BLFS/linux-firmware/">https://anduin.linuxfromscratch.org/BLFS/linux-firmware/</a>
+        访问。
       </p>
       <p>
-        To get the firmware, point a browser to one of the above repositories
-        and then download the item(s) which you need. If you want all these
-        firmware files (for example you are distributing the system onto
-        multiple hardware systems), either install <a class="xref" href=
-        "../general/git.html" title="Git-2.55.0">git-2.55.0</a> and clone
-        <a class="ulink" href=
+        要获取固件，请将浏览器指向上述仓库之一，然后下载您需要的项目。如果您想要所有这些固件文件（例如，您要将系统分发到多个硬件系统上），可以安装
+        <a class="xref" href="../general/git.html" title=
+        "Git-2.55.0">git-2.55.0</a> 并克隆 <a class="ulink" href=
         "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git">
-        https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git</a>,
-        or open this URL in a browser and download the latest snapshot listed
-        in the <code class="literal">Tag</code> table.
+        https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git</a>，或者在浏览器中打开此
+        URL，并下载 <code class="literal">Tag</code> 表中列出的最新快照。
       </p>
       <div class="admon important">
-        <img alt="[Important]" src="../images/important.png" />
+        <img alt="[重要]" src="../images/important.png" />
         <h3>
-          Important
+          重要
         </h3>
         <p>
           <a id="linux-firmware-symlink" name="linux-firmware-symlink"></a>
-          Note that some required firmware files (and directories) are
-          actually symlinks to other files (or directories). Those symlinks
-          are not stored in the Git repository, instead they are documented
-          in the <code class="filename">WHENCE</code> file. Each line
-          beginning with <code class="literal">Link:</code> describes a
-          symlink. If you are downloading an item you need and it's such a
-          symlink (or in a directory which is such a symlink), you need to
-          create the symlink manually and download the target. On the other
-          hand, if you want all the firmware files, use the <span class=
-          "command"><strong>./copy-firmware.sh
-          /usr/lib/firmware</strong></span> command which will copy the
-          firmware files and create all the symlinks in the <code class=
-          "filename">WHENCE</code> file, instead of a plain copy command like
-          <span class="command"><strong>cp -r *
-          /usr/lib/firmware/</strong></span>.
+          请注意，某些所需的固件文件（和目录）实际上是指向其他文件（或目录）的符号链接。这些符号链接并不存储在 Git 仓库中，而是在
+          <code class="filename">WHENCE</code> 文件中予以说明。每行以 <code class=
+          "literal">Link:</code>
+          开头的行描述一个符号链接。如果您正在下载所需项目，且它是一个这样的符号链接（或位于这样的符号链接目录中），您需要手动创建符号链接并下载目标。另一方面，如果您想要所有固件文件，请使用
+          <span class="command"><strong>./copy-firmware.sh
+          /usr/lib/firmware</strong></span> 命令，该命令将复制固件文件并创建 <code class=
+          "filename">WHENCE</code> 文件中的所有符号链接，而不是使用像 <span class=
+          "command"><strong>cp -r * /usr/lib/firmware/</strong></span>
+          这样的普通复制命令。
         </p>
       </div>
       <p>
-        For some other firmware, particularly for Intel microcode and certain
-        wifi devices, the needed firmware is not available in the above
-        repository. Some of this will be addressed below, but a search of the
-        Internet for needed firmware is sometimes necessary.
+        对于某些其他固件，特别是 Intel 微码和某些 Wi-Fi
+        设备，所需的固件不在上述仓库中。下面将讨论其中一些，但有时需要在互联网上搜索所需固件。
       </p>
       <p>
-        Firmware files are conventionally referred to as blobs because you
-        cannot determine what they will do. Note that firmware is distributed
-        under various different licenses which do not permit disassembly or
-        reverse-engineering.
+        固件文件通常被称为 blob，因为您无法确定它们会做什么。请注意，固件是在各种不同许可证下分发的，这些许可证不允许反编译或逆向工程。
       </p>
       <p>
-        Firmware for PCs falls into four categories:
+        PC 的固件分为四类：
       </p>
       <div class="itemizedlist">
         <ul class="compact">
           <li class="listitem">
             <p>
-              Updates to the CPU to work around errata, usually referred to
-              as microcode.
+              用于解决勘误表的 CPU 更新，通常称为微码（microcode）。
             </p>
           </li>
           <li class="listitem">
             <p>
-              Firmware for video controllers. On x86 machines this is
-              required for ATI devices (Radeon and AMDGPU chips) and may be
-              useful for Intel (Skylake and later) and NVIDIA (Kepler and
-              later) GPUs.
+              视频控制器的固件。在 x86 机器上，ATI 设备（Radeon 和 AMDGPU 芯片）需要此固件，对于
+              Intel（Skylake 及更新）和 NVIDIA（Kepler 及更新）GPU 也可能有用。
             </p>
             <p>
-              ATI Radeon and AMDGPU devices all require firmware to be able
-              to use KMS (kernel modesetting - the preferred option) as well
-              as for Xorg.
+              ATI Radeon 和 AMDGPU 设备都需要固件才能使用 KMS（内核模式设置——首选选项）以及 Xorg。
             </p>
             <p>
-              Intel integrated GPUs from Skylake onwards can use firmware for
-              GuC (the Graphics microcontroller), and also for the HuC
-              (HEVC/H265 microcontroller which offloads to the GPU) and the
-              DMC (Display Microcontroller) to provide additional low-power
-              states. The GuC and HuC have had a chequered history in the
-              kernel and updated firmware may be disabled by default,
-              depending on your kernel version. Further details may be found
-              at <a class="ulink" href=
-              "https://01.org/linuxgraphics/downloads/firmware/">01.org</a>
-              and <a class="ulink" href=
+              从 Skylake 开始的 Intel 集成 GPU 可以使用 GuC（图形微控制器）的固件，以及 HuC（HEVC/H265
+              微控制器，将任务卸载到 GPU）和 DMC（显示微控制器）的固件，以提供额外的低功耗状态。GuC 和 HuC
+              在内核中的历史有些曲折，根据您的内核版本，更新的固件可能默认被禁用。更多详细信息可在 <a class="ulink"
+              href=
+              "https://01.org/linuxgraphics/downloads/firmware/">01.org</a> 和
+              <a class="ulink" href=
               "https://wiki.archlinux.org/index.php/intel_graphics">Arch
-              linux</a>.
+              Linux</a> 找到。
             </p>
             <p>
-              NVIDIA GPUs from Kepler onwards require signed firmware,
-              otherwise the nouveau driver is unable to provide hardware
-              acceleration. NVIDIA has now released firmware up to Ada
-              Lovelace (GeForce 40 series) to linux-firmware.
+              从 Kepler 开始的 NVIDIA GPU 需要签名的固件，否则 nouveau 驱动程序无法提供硬件加速。NVIDIA
+              现已将最高至 Ada Lovelace（GeForce 40 系列）的固件发布到 linux-firmware。
             </p>
           </li>
           <li class="listitem">
             <p>
-              Firmware updates for wired network ports. Most of them work
-              even without the updates, but they will probably work better
-              with the updated firmware. For some modern laptops, firmware
-              for both wired ethernet (e.g. rtl_nic) and also for bluetooth
-              devices (e.g. qca) is <span class=
-              "emphasis"><em>required</em></span> before the wired network
-              can be used.
+              有线网络端口的固件更新。即使没有更新，大多数也能工作，但更新后可能会工作得更好。对于某些现代笔记本电脑，有线以太网（例如
+              rtl_nic）和蓝牙设备（例如 qca）的固件在使用有线网络之前是 <span class=
+              "emphasis"><em>必需</em></span> 的。
             </p>
           </li>
           <li class="listitem">
             <p>
-              Firmware for other devices, such as wireless NICs. These
-              devices are not required for the PC to boot, but need the
-              firmware before these devices can be used.
+              其他设备的固件，例如无线网卡。这些设备不是 PC 启动所必需的，但在这些设备可用之前需要固件。
             </p>
           </li>
         </ul>
       </div>
       <div class="admon note">
-        <img alt="[Note]" src="../images/note.png" />
+        <img alt="[注意]" src="../images/note.png" />
         <h3>
-          Note
+          注意
         </h3>
         <p>
-          Although not needed to load a firmware blob, the following tools
-          may be useful for determining, obtaining, or preparing the needed
-          firmware in order to load it into the system: <a class="xref" href=
-          "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> (or
-          <a class="xref" href="../general/libarchive.html" title=
-          "libarchive-3.8.8">libarchive-3.8.8</a>), <a class="xref" href=
-          "../general/git.html" title="Git-2.55.0">git-2.55.0</a>, <a class=
+          虽然加载固件 blob 本身不需要，但以下工具可能有助于确定、获取或准备所需固件，以便将其加载到系统中： <a class=
+          "xref" href="../general/cpio.html" title=
+          "cpio-2.15">cpio-2.15</a>（或 <a class="xref" href=
+          "../general/libarchive.html" title=
+          "libarchive-3.8.8">libarchive-3.8.8</a>）、 <a class="xref" href=
+          "../general/git.html" title="Git-2.55.0">git-2.55.0</a>、 <a class=
           "xref" href="../general/pciutils.html" title=
-          "pciutils-3.15.0">pciutils-3.15.0</a>, and <a class="xref" href=
+          "pciutils-3.15.0">pciutils-3.15.0</a> 和 <a class="xref" href=
           "../basicnet/wget.html" title="Wget-1.25.0">Wget-1.25.0</a>
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="cpu-microcode" name="cpu-microcode"></a>Microcode updates
-          for CPUs
+          <a id="cpu-microcode" name="cpu-microcode"></a>CPU 的微码更新
         </h2>
         <p>
-          In general, microcode can be loaded by the BIOS or UEFI, and it
-          might be updated by upgrading to a newer version of those. On
-          linux, you can also load the microcode from the kernel if you are
-          using an AMD family 10h or later processor (first introduced late
-          2007), or an Intel processor from 1998 and later (Pentium4, Core,
-          etc), if updated microcode has been released. These updates only
-          last until the machine is powered off, so they need to be applied
-          on every boot.
+          通常，微码可以由 BIOS 或 UEFI 加载，并且可以通过升级到这些的新版本进行更新。在 Linux 上，如果您使用的是 AMD
+          10h 或更高版本的处理器（于 2007 年末首次推出），或者使用的是 1998 年及以后的 Intel
+          处理器（Pentium4、Core
+          等），并且已发布更新的微码，则您也可以从内核加载微码。这些更新仅在机器断电前有效，因此需要在每次启动时应用。
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
-            In some rare cases a microcode update from the kernel can be
-            ineffective. For example, despite intel-microcode-20241029
-            contains the Raptor Lake microcode revision 0x12b which is
-            intended to fix a notorious excessive voltage issue causing
-            stability issues and even permanent CPU damages, when the kernel
-            boots it's already <a class="ulink" href=
+            在极少数情况下，来自内核的微码更新可能无效。例如，尽管 intel-microcode-20241029
+            包含旨在修复臭名昭著的过度电压问题的 Raptor Lake 微码修订版 0x12b（该问题会导致稳定性问题甚至永久性 CPU
+            损坏），但当内核启动时，微码已经 <a class="ulink" href=
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/issues/78#issuecomment-2286857023">
-            too late</a> for the microcode to fix the issue. The only way to
-            fix this issue is updating the BIOS.
+            为时已晚</a>，无法修复该问题。解决此问题的唯一方法是更新 BIOS。
           </p>
         </div>
         <p>
-          Intel provide updates of their microcode for Skylake and later
-          processors as new vulnerabilities come to light, and have in the
-          past provided updates for processors from SandyBridge onwards,
-          although those are no-longer supported for new fixes. New versions
-          of AMD firmware are rare and usually only apply to a few models,
-          although motherboard manufacturers get AGESA (AMD Generic
-          Encapsulated Software Architecture) updates to change BIOS values,
-          e.g. to support more memory variants, new vulnerability fixes or
-          newer CPUs.
+          随着新漏洞的出现，Intel 为其 Skylake 及更新处理器提供微码更新，并且过去也为 SandyBridge
+          及更新处理器提供更新，尽管这些处理器不再支持新的修复。新版本的 AMD 固件很少见，通常仅适用于少数型号，尽管主板制造商会获得
+          AGESA（AMD 通用封装软件架构）更新以更改 BIOS 值，例如支持更多内存变体、新的漏洞修复或更新的 CPU。
         </p>
         <p>
-          There were two ways of loading the microcode, described as 'early'
-          and 'late'. Early loading happens before userspace has been
-          started, late loading happens after userspace has started. However,
-          late loading is known to be problematic and not supported anymore
-          (see the kernel commit <a class="ulink" href=
+          加载微码有两种方式，称为“早期”和“晚期”。早期加载在用户空间启动之前进行，晚期加载在用户空间启动之后进行。然而，晚期加载已知存在问题且不再受支持（参见内核提交
+          <a class="ulink" href=
           "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d23d33e">
-          x86/microcode: Taint and warn on late loading</a>). Indeed, early
-          loading is needed to work around one particular erratum in early
-          Intel Haswell processors which had TSX enabled. (See <a class=
-          "ulink" href=
+          x86/microcode: Taint and warn on late loading</a>）。事实上，早期加载是为了解决早期
+          Intel Haswell 处理器中一个特定的勘误表（该处理器启用了 TSX）所必需的（参见 <a class="ulink"
+          href=
           "https://www.anandtech.com/show/8376/intel-disables-tsx-instructions-erratum-found-in-haswell-haswelleep-broadwelly/">
           Intel Disables TSX Instructions: Erratum Found in Haswell,
-          Haswell-E/EP, Broadwell-Y</a>.) Without this update glibc can do
-          the wrong thing in uncommon situations.
+          Haswell-E/EP, Broadwell-Y</a>）。如果没有此更新，glibc 在异常情况下可能会执行错误操作。
         </p>
         <p>
-          In previous versions of this book, late loading of microcode to see
-          if it gets applied was recommended, followed by using an initrd to
-          force early loading. But now that the contents of the Intel
-          microcode tarball is documented, and AMD microcode can be read by a
-          Python script to determine which machines it covers, there is no
-          real reason to use late loading.
+          在本书的先前版本中，建议晚期加载微码以查看其是否被应用，然后使用 initrd 强制早期加载。但现在 Intel
+          微码压缩包的内容已有文档记录，并且 AMD 微码可以通过 Python 脚本读取以确定其适用的机器，因此没有真正的理由使用晚期加载。
         </p>
         <p>
-          It might be still possible to manually force late loading of
-          microcode. But it may cause kernel malfunction and you should take
-          the risk yourself. You will need to reconfigure your kernel for
-          late loading, but early loading is always supported by Linux kernel
-          version 6.6 or later on a x86 (no matter 32-bit or 64-bit) system.
-          The instructions here will show you how to create an initrd for
-          early loading. It is also possible to build the same microcode bin
-          file into the kernel, which allows early loading but requires the
-          kernel to be recompiled to update the microcode.
+          仍有可能手动强制晚期加载微码。但这可能导致内核故障，您应自行承担风险。您需要重新配置内核以支持晚期加载，但早期加载始终受 x86（无论
+          32 位还是 64 位）系统上的 Linux 内核 6.6 或更高版本支持。此处的说明将向您展示如何为早期加载创建
+          initrd。也可以将相同的微码 bin 文件构建到内核中，这允许早期加载，但需要重新编译内核才能更新微码。
         </p>
         <p>
-          To confirm what processor(s) you have (if more than one, they will
-          be identical) look in /proc/cpuinfo. Determine the decimal values
-          of the cpu family, model and stepping by running the following
-          command (it will also report the current microcode version):
+          要确认您拥有的处理器（如果不止一个，它们将相同），请查看 /proc/cpuinfo。通过运行以下命令确定 cpu
+          family、model 和 stepping 的十进制值（它还将报告当前的微码版本）：
         </p>
         <pre class="userinput"><kbd class=
         "command">head -n7 /proc/cpuinfo</kbd></pre>
         <p>
-          Convert the cpu family, model and stepping to pairs of hexadecimal
-          digits, and remember the value of the <span class=
-          "quote">“<span class="quote">microcode</span>”</span> field. You
-          can now check if there is any microcode available.
+          将 cpu family、model 和 stepping 转换为十六进制数字对，并记住 <span class=
+          "quote">“<span class="quote">microcode</span>”</span>
+          字段的值。现在您可以检查是否有任何可用的微码。
         </p>
         <p>
-          If you are creating an initrd to update firmware for different
-          machines, as a distro would do, go down to 'Early loading of
-          microcode' and cat all the Intel blobs to GenuineIntel.bin or cat
-          all the AMD blobs to AuthenticAMD.bin. This creates a larger initrd
-          - for all Intel machines in the 20200609 update the size was 3.0 MB
-          compared to typically 24 KB for one machine.
+          如果您正在为不同机器创建 initrd 以更新固件（如发行版所做的那样），请转到“微码的早期加载”并将所有 Intel blob
+          连接到 GenuineIntel.bin，或将所有 AMD blob 连接到 AuthenticAMD.bin。这会创建更大的
+          initrd——对于 20200609 更新中的所有 Intel 机器，大小为 3.0 MB，而单台机器通常为 24 KB。
         </p>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            <a id="intel-microcode" name="intel-microcode"></a>Intel
-            Microcode for the CPU
+            <a id="intel-microcode" name="intel-microcode"></a>Intel 的 CPU 微码
           </h3>
           <p>
-            The first step is to get the most recent version of the Intel
-            microcode. This must be done by navigating to <a class="ulink"
-            href=
+            第一步是获取最新版本的 Intel 微码。这必须通过导航到 <a class="ulink" href=
             "https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/">
             https://github.com/intel/Intel-Linux-Processor-Microcode-Data-Files/releases/</a>
-            and downloading the latest file there. As of this writing the
-            most secure version of the microcode is microcode-20260227.
-            Extract this file in the normal way, the microcode is in the
-            <code class="filename">intel-ucode</code> directory, containing
-            various blobs with names in the form XX-YY-ZZ. There are also
-            various other files, and a release note.
+            并下载其中的最新文件来完成。在撰写本文时，最安全的微码版本是 microcode-20260227。以正常方式解压此文件，微码位于
+            <code class="filename">intel-ucode</code> 目录中，包含各种形式为 XX-YY-ZZ 的
+            blob。还有其他各种文件和一个发行说明。
           </p>
           <p>
-            In the past, intel did not provide any details of which blobs had
-            changed versions, but now the release note details this. You can
-            compare the microcode version in <code class=
-            "filename">/proc/cpuinfo</code> with the version for your CPU
-            model in the releasenote to know if there is an update.
+            过去，Intel 没有提供哪些 blob 更改了版本的详细信息，但现在发行说明详细说明了这一点。您可以将 <code class=
+            "filename">/proc/cpuinfo</code> 中的微码版本与发行说明中您的 CPU
+            型号的版本进行比较，以了解是否有更新。
           </p>
           <p>
-            The recent firmware for older processors is provided to deal with
-            vulnerabilities which have now been made public, and for some of
-            these such as Microarchitectural Data Sampling (MDS) you might
-            wish to increase the protection by disabling hyperthreading, or
-            alternatively to disable the kernel's default mitigation because
-            of its impact on compile times. Please read the online
-            documentation at <a class="ulink" href=
+            为较旧处理器提供的最新固件用于处理现已公开的漏洞，对于其中一些漏洞，例如微架构数据采样（MDS），您可能希望通过禁用超线程来增强保护，或者由于其对编译时间的影响而禁用内核的默认缓解措施。请阅读
+            <a class="ulink" href=
             "https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/index.html">
-            https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/index.html</a>.
+            https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/index.html</a>
+            上的在线文档。
           </p>
           <p>
-            For a Meteor Lake mobile (described as Intel(R) Core(TM) Ultra 5
-            125H CPU) the relevant values are cpu family 6, model 140,
-            stepping 4 so in this case the required identification is
-            06-aa-04. The releasenote says the latest microcode for it is
-            versioned 0x25. If the value of the <span class=
-            "quote">“<span class="quote">microcode</span>”</span> field in
-            <code class="filename">/proc/cpuinfo</code> is 0x25 or greater,
-            it indicates the microcode update is already applied by the BIOS.
-            Otherwise, proceed to <a class="xref" href=
-            "firmware.html#early-microcode" title=
-            "Early loading of microcode">the section called “Early loading of
-            microcode”</a>.
+            对于 Meteor Lake 移动版（描述为 Intel(R) Core(TM) Ultra 5 125H CPU），相关值为
+            cpu family 6、model 140、stepping 4，因此在这种情况下所需的标识为
+            06-aa-04。发行说明称其最新微码版本为 0x25。如果 <code class=
+            "filename">/proc/cpuinfo</code> 中 <span class=
+            "quote">“<span class="quote">microcode</span>”</span> 字段的值为 0x25
+            或更大，则表示 BIOS 已应用微码更新。否则，请继续执行 <a class="xref" href=
+            "firmware.html#early-microcode" title="微码的早期加载">“微码的早期加载”一节</a>。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            <a id="amd-microcode" name="amd-microcode"></a>AMD Microcode for
-            the CPU
+            <a id="amd-microcode" name="amd-microcode"></a>AMD 的 CPU 微码
           </h3>
           <p>
-            Begin by downloading a container of firmware for your CPU family
-            from <a class="ulink" href=
+            首先从 <a class="ulink" href=
             "https://anduin.linuxfromscratch.org/BLFS/linux-firmware/amd-ucode/">
-            https://anduin.linuxfromscratch.org/BLFS/linux-firmware/amd-ucode/</a>.
-            The family is always specified in hex. Families 10h to 14h (16 to
-            20) are in microcode_amd.bin. Families 15h, 16h, 17h (Zen, Zen+,
-            Zen2) and 19h (Zen3) have their own containers, but very few
-            machines are likely to get updated microcode. Instead, AMD
-            provide an updated AGESA to the motherboard makers, who may
-            provide an updated BIOS using this. There is a Python3 script at
-            <a class="ulink" href=
+            https://anduin.linuxfromscratch.org/BLFS/linux-firmware/amd-ucode/</a>
+            下载适用于您 CPU 系列的固件容器。系列始终以十六进制指定。10h 至 14h（16 至 20）系列位于
+            microcode_amd.bin 中。15h、16h、17h（Zen、Zen+、Zen2）和
+            19h（Zen3）系列有自己的容器，但很少有机器能获得更新的微码。相反，AMD 向主板制造商提供更新的
+            AGESA，制造商可能会据此提供更新的 BIOS。在 <a class="ulink" href=
             "https://github.com/AMDESE/amd_ucode_info/blob/master/amd_ucode_info.py">
-            https://github.com/AMDESE/amd_ucode_info/blob/master/amd_ucode_info.py</a>.
-            Download that script and run it against the bin file to check
-            which processors have updates.
+            https://github.com/AMDESE/amd_ucode_info/blob/master/amd_ucode_info.py</a>
+            有一个 Python3 脚本。下载该脚本并针对 bin 文件运行，以检查哪些处理器有更新。
           </p>
           <p>
-            For the very old Athlon(tm) II X2 in these examples the values
-            were cpu family 16, model 5, stepping 3 giving an identification
-            of Family=0x10 Model=0x05 Stepping=0x03. One line of the
-            <span class="command"><strong>amd_ucode_info.py</strong></span>
-            script output describes the microcode version for it:
+            对于这些示例中非常老的 Athlon(tm) II X2，其值为 cpu family 16、model 5、stepping
+            3，标识为 Family=0x10 Model=0x05 Stepping=0x03。<span class=
+            "command"><strong>amd_ucode_info.py</strong></span>
+            脚本输出的一行描述了其微码版本：
           </p>
           <pre class="screen"><code class=
           "computeroutput">Family=0x10 Model=0x05 Stepping=0x03: Patch=0x010000c8 Length=960 bytes</code></pre>
           <p>
-            If the value of the <span class="quote">“<span class=
-            "quote">microcode</span>”</span> field in <code class=
-            "filename">/proc/cpuinfo</code> is 0x10000c8 or greater, it
-            indicates the BIOS has already applied the microcode update.
-            Otherwise, proceed to <a class="xref" href=
-            "firmware.html#early-microcode" title=
-            "Early loading of microcode">the section called “Early loading of
-            microcode”</a>.
+            如果 <code class="filename">/proc/cpuinfo</code> 中 <span class=
+            "quote">“<span class="quote">microcode</span>”</span> 字段的值为
+            0x10000c8 或更大，则表示 BIOS 已应用微码更新。否则，请继续执行 <a class="xref" href=
+            "firmware.html#early-microcode" title="微码的早期加载">“微码的早期加载”一节</a>。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            <a id="early-microcode" name="early-microcode"></a>Early loading
-            of microcode
+            <a id="early-microcode" name="early-microcode"></a>微码的早期加载
           </h3>
           <p>
-            If you have established that updated microcode is available for
-            your system, it is time to prepare it for early loading. This
-            requires an additional package, <a class="xref" href=
-            "../general/cpio.html" title="cpio-2.15">cpio-2.15</a> (or
+            如果您已确定您的系统有可用的更新微码，那么是时候准备进行早期加载了。这需要额外的包 <a class="xref" href=
+            "../general/cpio.html" title="cpio-2.15">cpio-2.15</a>（或
             <a class="xref" href="../general/libarchive.html" title=
-            "libarchive-3.8.8">libarchive-3.8.8</a>) and the creation of an
-            initrd which will need to be added to grub.cfg.
+            "libarchive-3.8.8">libarchive-3.8.8</a>）并创建 initrd，然后需要将其添加到
+            grub.cfg 中。
           </p>
           <p>
-            It does not matter where you prepare the initrd, and once it is
-            working you can apply the same initrd to later LFS systems or
-            newer kernels on this same machine, at least until any newer
-            microcode is released. Use the following commands:
+            在何处准备 initrd 无关紧要，一旦它正常工作，您可以将相同的 initrd 应用于此机器上的后续 LFS
+            系统或更新内核，至少在发布任何更新的微码之前。使用以下命令：
           </p>
           <pre class="userinput"><kbd class=
           "command">mkdir -p initrd/kernel/x86/microcode
 cd initrd</kbd></pre>
           <p>
-            For an AMD machine, use the following command (replace
-            &lt;MYCONTAINER&gt; with the name of the container for your CPU's
-            family):
+            对于 AMD 机器，使用以下命令（将 &lt;MYCONTAINER&gt; 替换为您的 CPU 系列容器的名称）：
           </p>
           <pre class="userinput"><kbd class=
           "command">cp -v ../&lt;MYCONTAINER&gt; kernel/x86/microcode/AuthenticAMD.bin</kbd></pre>
           <p>
-            Or for an Intel machine copy the appropriate blob using this
-            command:
+            或者对于 Intel 机器，使用以下命令复制适当的 blob：
           </p>
           <pre class="userinput"><kbd class=
           "command">cp -v ../intel-ucode/&lt;XX-YY-ZZ&gt; kernel/x86/microcode/GenuineIntel.bin</kbd></pre>
           <p>
-            Now prepare the initrd (you may also use <span class=
-            "command"><strong>bsdcpio</strong></span> from <a class="xref"
-            href="../general/libarchive.html" title=
-            "libarchive-3.8.8">libarchive-3.8.8</a> instead of <span class=
-            "command"><strong>cpio</strong></span>):
+            现在准备 initrd（您也可以使用 <a class="xref" href=
+            "../general/libarchive.html" title=
+            "libarchive-3.8.8">libarchive-3.8.8</a> 中的 <span class=
+            "command"><strong>bsdcpio</strong></span> 代替 <span class=
+            "command"><strong>cpio</strong></span>）：
           </p>
           <pre class="userinput"><kbd class=
           "command">find * | cpio -o -H newc &gt; /boot/microcode.img</kbd></pre>
           <p>
-            You now need to add a new entry to /boot/grub/grub.cfg and here
-            you should add a new line after the linux line within the stanza.
-            If /boot is a separate mountpoint:
+            现在您需要在 /boot/grub/grub.cfg 中添加一个新条目，并且应该在节内的 linux 行之后添加一行新行。如果
+            /boot 是一个单独挂载点：
           </p>
           <pre class="userinput"><kbd class=
           "command">initrd /microcode.img</kbd></pre>
           <p>
-            or this if it is not:
+            如果不是，则：
           </p>
           <pre class="userinput"><kbd class=
           "command">initrd /boot/microcode.img</kbd></pre>
           <p>
-            If you are already booting with an initrd (see <a class="xref"
-            href="initramfs.html" title="About initramfs">the section called
-            “About initramfs”</a>), you should run <span class=
-            "command"><strong>mkinitramfs</strong></span> again after putting
-            the appropriate blob or container into <code class=
-            "filename">/usr/lib/firmware</code>. More precisely, put an intel
-            blob in a <code class=
-            "filename">/usr/lib/firmware/intel-ucode</code> directory or an
-            AMD container in a <code class=
-            "filename">/usr/lib/firmware/amd-ucode</code> directory before
-            running <span class=
-            "command"><strong>mkinitramfs</strong></span>. Alternatively, you
-            can have both initrd on the same line, such as <strong class=
+            如果您已经使用 initrd 启动（参见 <a class="xref" href="initramfs.html" title=
+            "关于 initramfs">“关于 initramfs”一节</a>），则应将适当的 blob 或容器放入
+            <code class="filename">/usr/lib/firmware</code> 后，再次运行
+            <span class=
+            "command"><strong>mkinitramfs</strong></span>。更准确地说，在运行
+            <span class="command"><strong>mkinitramfs</strong></span> 之前，将
+            Intel blob 放入 <code class=
+            "filename">/usr/lib/firmware/intel-ucode</code> 目录，或将 AMD 容器放入
+            <code class="filename">/usr/lib/firmware/amd-ucode</code>
+            目录。或者，您可以将两个 initrd 放在同一行，如 <strong class=
             "userinput"><code>initrd /microcode.img
-            /other-initrd.img</code></strong> (adapt that as above if /boot
-            is not a separate mountpoint).
+            /other-initrd.img</code></strong>（如果 /boot 不是单独挂载点，请按上述方式调整）。
           </p>
           <p>
-            You can now reboot with the added initrd, and then use the
-            following command to check that the early load worked:
+            现在您可以使用添加的 initrd 重新启动，然后使用以下命令检查早期加载是否成功：
           </p>
           <pre class="userinput"><kbd class=
           "command">dmesg | grep -e 'microcode' -e 'Linux version' -e 'Command line'</kbd></pre>
           <p>
-            If you updated to address vulnerabilities, you can look at the
-            output of the <span class="command"><strong>lscpu</strong></span>
-            command to see what is now reported.
+            如果您更新以解决漏洞，可以查看 <span class=
+            "command"><strong>lscpu</strong></span> 命令的输出，以了解现在报告的内容。
           </p>
           <p>
-            The places and times where early loading happens are very
-            different in AMD and Intel machines. First, an example of an
-            Intel (Meteor Lake mobile) with early loading:
+            在 AMD 和 Intel 机器上，早期加载发生的位置和时间有很大不同。首先，一个 Intel（Meteor Lake
+            移动版）早期加载的示例：
           </p>
           <pre class="screen"><code class=
           "literal">[    0.000000] Linux version 6.17.6 (xry111@stargazer) (gcc (GCC) 15.2.0, GNU ld (GNU Binutils) 2.45) #1 SMP PREEMPT_DYNAMIC Sun Nov  9 21:03:48 CST 2025
@@ -490,7 +372,7 @@ cd initrd</kbd></pre>
 [    1.459687] microcode: Current revision: 0x00000025
 [    1.459699] microcode: Updated early from: 0x00000024</code></pre>
           <p>
-            A historic AMD example:
+            一个历史悠久的 AMD 示例：
           </p>
           <pre class="screen"><code class=
           "literal">[    0.000000] Linux version 4.15.3 (ken@testserver) (gcc version 7.3.0 (GCC))
@@ -502,166 +384,118 @@ cd initrd</kbd></pre>
 [    0.307795] microcode: Microcode Update Driver: v2.2.</code></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="video-firmware" name="video-firmware"></a>Firmware for Video
-          Cards
+          <a id="video-firmware" name="video-firmware"></a>显卡的固件
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
-            <a id="ati-video-firmware" name="ati-video-firmware"></a>Firmware
-            for ATI Radeon video chips
+            <a id="ati-video-firmware" name="ati-video-firmware"></a>ATI
+            Radeon 视频芯片的固件
           </h3>
           <p>
-            Early radeon devices only needed a single 2K blob of firmware.
-            Recent devices need several different blobs, and some of them are
-            much bigger. The total size of the radeon firmware directory is
-            over 500K — on a large modern system you can probably spare the
-            space, but it is still redundant to install all the unused files
-            each time you build a system.
+            早期的 radeon 设备仅需要一个 2 KB 的固件 blob。较新的设备需要几个不同的 blob，其中一些更大。radeon
+            固件目录的总大小超过 500 KB——在大型现代系统上，您可能可以腾出空间，但每次构建系统时安装所有未使用的文件仍然是一种冗余。
           </p>
           <p>
-            A better approach is to install <a class="xref" href=
-            "../general/pciutils.html" title=
-            "pciutils-3.15.0">pciutils-3.15.0</a> and then use <strong class=
-            "userinput"><code>lspci</code></strong> to identify which VGA
-            controller is installed.
+            更好的方法是安装 <a class="xref" href="../general/pciutils.html" title=
+            "pciutils-3.15.0">pciutils-3.15.0</a>，然后使用 <strong class=
+            "userinput"><code>lspci</code></strong> 识别安装的 VGA 控制器。
           </p>
           <p>
-            With that information, check the RadeonFeature page of the Xorg
-            wiki for <a class="ulink" href=
+            有了这些信息，请查看 Xorg 维基的 RadeonFeature 页面，了解 <a class="ulink" href=
             "https://wiki.x.org/wiki/RadeonFeature/#index5h2">Decoder ring
-            for engineering vs marketing names</a> to identify the family
-            (you may need to know this for the Xorg driver in BLFS — Southern
-            Islands and Sea Islands use the radeonsi driver) and the specific
-            model.
+            for engineering vs marketing names</a> 以识别系列（您可能需要了解此信息以用于 BLFS
+            中的 Xorg 驱动程序——Southern Islands 和 Sea Islands 使用 radeonsi
+            驱动程序）和具体型号。
           </p>
           <p>
-            Now that you know which controller you are using, consult the
-            <a class="ulink" href=
-            "https://wiki.gentoo.org/wiki/Radeon#Firmware">Radeon</a> page of
-            the Gentoo wiki which has a table listing the required firmware
-            blobs for the various chipsets. Note that Southern Islands and
-            Sea Islands chips use different firmware for kernel 3.17 and
-            later compared to earlier kernels. Identify and download the
-            required blobs then install them:
+            既然您知道使用的控制器，请查阅 Gentoo 维基的 <a class="ulink" href=
+            "https://wiki.gentoo.org/wiki/Radeon#Firmware">Radeon</a>
+            页面，其中有一个表格列出了各种芯片组所需的固件 blob。请注意，Southern Islands 和 Sea Islands
+            芯片在 3.17 及更新内核上使用的固件与旧内核不同。识别并下载所需的 blob，然后安装它们：
           </p>
           <pre class="userinput"><kbd class=
           "command">mkdir -pv /usr/lib/firmware/radeon
 cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/radeon</kbd></pre>
           <p>
-            Building the kernel amdgpu driver as a module is recommended
-            because the firmware files need to be accessible at the time it
-            is loaded. If you are building it as a part of the kernel image
-            for any reason, you need to either include the firmware files in
-            the initramfs (read <a class="xref" href="initramfs.html" title=
-            "About initramfs">the section called “About initramfs”</a> for
-            details), or include them in the kernel image itself (read
+            建议将内核 amdgpu
+            驱动程序构建为模块，因为固件文件在加载时需要可访问。如果出于任何原因将其构建为内核映像的一部分，您需要将固件文件包含在
+            initramfs 中（详细信息请阅读 <a class="xref" href="initramfs.html" title=
+            "关于 initramfs">“关于 initramfs”一节</a>），或将它们包含在内核映像本身中（详细信息请阅读
             <a class="xref" href="firmware.html#firmware-in-kernel-image"
-            title="Include Firmware Blobs in the Kernel Image">the section
-            called “Include Firmware Blobs in the Kernel Image”</a> for
-            details).
+            title="在内核映像中包含固件 Blob">“在内核映像中包含固件 Blob”一节</a>）。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="amdgpu-video-firmware" name=
-            "amdgpu-video-firmware"></a>Firmware for AMD/ATI amdgpu video
-            chips
+            "amdgpu-video-firmware"></a>AMD/ATI amdgpu 视频芯片的固件
           </h3>
           <p>
-            All video controllers using the amdgpu kernel driver require
-            firmware, whether you will be using the xorg amdgpu driver, the
-            xserver's modesetting driver, or just kernel modesetting to get a
-            console framebuffer larger than 80x25.
+            所有使用 amdgpu 内核驱动程序的视频控制器都需要固件，无论您将使用 xorg amdgpu 驱动程序、xserver 的
+            modesetting 驱动程序，还是仅使用内核模式设置来获得大于 80x25 的控制台帧缓冲。
           </p>
           <p>
-            Install <a class="xref" href="../general/pciutils.html" title=
-            "pciutils-3.15.0">pciutils-3.15.0</a> and use that to check the
-            model name (look for 'VGA compatible controller:'). If you have
-            an APU (Accelerated Processing Unit, i.e. CPU and video on the
-            same chip) that will probably tell you the name. If you have a
-            separate amdgpu video card you will need to search to determine
-            which name it uses (e.g. a card described as Advanced Micro
-            Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550 640SP / RX
-            560/560X] needs Polaris11 firmware. There is a table of "Family,
-            Chipset name, Product name and Firmware" at the end of the Kernel
-            sections in <a class="ulink" href=
+            安装 <a class="xref" href="../general/pciutils.html" title=
+            "pciutils-3.15.0">pciutils-3.15.0</a> 并使用它检查型号名称（查找“VGA
+            compatible controller:”）。如果您有 APU（加速处理单元，即 CPU
+            和视频在同一芯片上），那可能会告诉您名称。如果您有单独的 amdgpu 视频卡，则需要搜索以确定它使用的名称（例如，描述为
+            Advanced Micro Devices, Inc. [AMD/ATI] Baffin [Radeon RX 550
+            640SP / RX 560/560X] 的卡需要 Polaris11 固件）。在 Gentoo 维基的 <a class=
+            "ulink" href=
             "https://wiki.gentoo.org/wiki/AMDGPU#Known_firmware_blobs">AMDGPU</a>
-            page of the Gentoo wiki.
+            页面末尾的内核部分有一个“Family, Chipset name, Product name and Firmware”表。
           </p>
           <p>
-            Once you have identified the firmware name, install all the
-            relevant files for it. For example, the Baffin card mentioned
-            above has 21 different polaris11* files, APUs such as renoir and
-            picasso have at least 12 files and might gain more in future
-            updates (e.g. the raven APU now has a 13th file, raven_ta.bin).
+            一旦确定了固件名称，请安装其所有相关文件。例如，上面提到的 Baffin 卡有 21 个不同的 polaris11* 文件，诸如
+            renoir 和 picasso 之类的 APU 至少有 12 个文件，并且在未来的更新中可能会增加更多（例如，raven APU
+            现在有第 13 个文件 raven_ta.bin）。
           </p>
           <pre class="userinput"><kbd class=
           "command">mkdir -pv /usr/lib/firmware/amdgpu
 cp -v &lt;YOUR_BLOBS&gt; /usr/lib/firmware/amdgpu</kbd></pre>
           <p>
-            If disk space is not a problem, you could install all the current
-            amdgpu firmware files and not worry about exactly which chipset
-            is installed.
+            如果磁盘空间不是问题，您可以安装所有当前的 amdgpu 固件文件，而不必担心具体安装的是哪个芯片组。
           </p>
           <p>
-            Building the kernel amdgpu driver as a module is recommended
-            because the firmware files need to be accessible at the time it
-            is loaded. If you are building it as a part of the kernel image
-            for any reason, you need to either include the firmware files in
-            the initramfs (read <a class="xref" href="initramfs.html" title=
-            "About initramfs">the section called “About initramfs”</a> for
-            details), or include them in the kernel image itself (read
+            建议将内核 amdgpu
+            驱动程序构建为模块，因为固件文件在加载时需要可访问。如果出于任何原因将其构建为内核映像的一部分，您需要将固件文件包含在
+            initramfs 中（详细信息请阅读 <a class="xref" href="initramfs.html" title=
+            "关于 initramfs">“关于 initramfs”一节</a>），或将它们包含在内核映像本身中（详细信息请阅读
             <a class="xref" href="firmware.html#firmware-in-kernel-image"
-            title="Include Firmware Blobs in the Kernel Image">the section
-            called “Include Firmware Blobs in the Kernel Image”</a> for
-            details).
+            title="在内核映像中包含固件 Blob">“在内核映像中包含固件 Blob”一节</a>）。
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="nvidia-video-firmware" name=
-            "nvidia-video-firmware"></a>Firmware for NVIDIA video chips
+            "nvidia-video-firmware"></a>NVIDIA 视频芯片的固件
           </h3>
           <p>
-            Some NVIDIA GPUs from Kepler onwards (including all NVIDIA
-            GeForce RTX GPUs and GTX 9xx series onwards) require firmware
-            signed by NVIDIA to work. For the Nouveau driver, NVIDIA has
-            released the signed firmware files in the <code class=
-            "filename">nvidia/</code> directory of linux-firmware. Read
-            <a class="ulink" href=
-            "https://nouveau.freedesktop.org/CodeNames.html">the CodeNames
-            page of the Nouveau wiki</a> to figure out the code name of your
-            NVIDIA GPU (for example, the code name of GeForce RTX 5080 is
-            GB203). The directory for the firmware files you need is named as
-            the result converting the code name to lower case (<code class=
-            "filename">gb203</code> for the example). The directory (or some
-            of its contents) may be actually a symlink to another directory
-            (or some files in another directory) and you'll then need to
+            从 Kepler 开始的一些 NVIDIA GPU（包括所有 NVIDIA GeForce RTX GPU 和 GTX 9xx
+            系列及更新）需要 NVIDIA 签名的固件才能工作。对于 Nouveau 驱动程序，NVIDIA 已在
+            linux-firmware 的 <code class="filename">nvidia/</code>
+            目录中发布了签名的固件文件。阅读 <a class="ulink" href=
+            "https://nouveau.freedesktop.org/CodeNames.html">Nouveau 维基的
+            CodeNames 页面</a> 以找出您的 NVIDIA GPU 的代号（例如，GeForce RTX 5080 的代号为
+            GB203）。您需要的固件文件目录名称是将代号转换为小写的结果（例如 <code class=
+            "filename">gb203</code>）。该目录（或其某些内容）可能实际上是指向另一个目录（或另一个目录中的某些文件）的符号链接，然后您需要自己
             <a class="xref" href=
-            "firmware.html#linux-firmware-symlink">create the symlink and
-            download its target</a> yourself (for example, <code class=
-            "filename">gb207</code> is a symlink to <code class=
-            "filename">gb202</code>).
+            "firmware.html#linux-firmware-symlink">创建符号链接并下载其目标</a>（例如，<code class="filename">gb207</code>
+            是指向 <code class="filename">gb202</code> 的符号链接）。
           </p>
           <p>
-            If you can find the directory for your GPU in neither the
-            linux-firmware tree nor the <code class="filename">WHENCE</code>
-            file (as a symlink), it means either your GPU does not need any
-            firmware, or it's newer than Blackwell (RTX 50xx series) and the
-            firmware for it isn't released yet (as at mid 2025).
+            如果您在 linux-firmware 树或 <code class="filename">WHENCE</code>
+            文件（作为符号链接）中都找不到 GPU 的目录，则意味着您的 GPU 不需要任何固件，或者它比 Blackwell（RTX
+            50xx 系列）更新，并且其固件尚未发布（截至 2025 年中）。
           </p>
           <p>
-            For the NVIDIA GPUs from Tesla to Kepler, the Nouveau driver
-            requires some extra firmware to support video decoding
-            acceleration. These firmware files are not released by NVIDIA but
-            they can be extracted from the NVIDIA binary driver. For more
-            exact information about which chips need extracted firmware, see
-            <a class="ulink" href=
-            "https://nouveau.freedesktop.org/VideoAcceleration.html">the
-            VideoAcceleration of the Nouveau wiki</a>. To extract and install
-            these firmware files, issue:
+            对于从 Tesla 到 Kepler 的 NVIDIA GPU，Nouveau
+            驱动程序需要一些额外的固件来支持视频解码加速。这些固件文件未由 NVIDIA 发布，但可以从 NVIDIA
+            二进制驱动程序中提取。关于哪些芯片需要提取的固件，更准确的信息请参见 <a class="ulink" href=
+            "https://nouveau.freedesktop.org/VideoAcceleration.html">Nouveau
+            维基的 VideoAcceleration</a>。要提取并安装这些固件文件，请执行：
           </p>
           <pre class="userinput"><kbd class=
           "command">wget https://anduin.linuxfromscratch.org/BLFS/nvidia-firmware/extract_firmware.py
@@ -672,149 +506,110 @@ mkdir -p /usr/lib/firmware/nouveau
 cp -d nv* vuc-* /usr/lib/firmware/nouveau/</kbd></pre>
         </div>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="nic-firmware" name="nic-firmware"></a>Firmware for Network
-          Interfaces
+          <a id="nic-firmware" name="nic-firmware"></a>网络接口的固件
         </h2>
         <p>
-          The kernel likes to load firmware for some network drivers,
-          particularly those from Realtek (the <code class=
-          "filename">/usr/lib/linux-firmware/rtl_nic/</code> directory), but
-          they generally appear to work without it. Therefore, you can boot
-          the kernel, check dmesg for messages about this missing firmware,
-          and if necessary download the firmware and put it in the specified
-          directory in <code class="filename">/usr/lib/firmware</code> so
-          that it will be found on subsequent boots. Note that with current
-          kernels this works whether or not the driver is compiled in or
-          built as a module, there is no need to build this firmware into the
-          kernel. Here is an example where the R8169 driver has been compiled
-          in but the firmware was not made available. Once the firmware had
-          been provided, there was no mention of it on later boots.
+          内核喜欢为某些网络驱动程序加载固件，尤其是 Realtek 的驱动程序（<code class=
+          "filename">/usr/lib/linux-firmware/rtl_nic/</code>
+          目录），但它们通常在没有固件的情况下也能工作。因此，您可以启动内核，检查 dmesg
+          中有关此缺失固件的消息，如有必要，下载固件并将其放在 <code class=
+          "filename">/usr/lib/firmware</code>
+          中的指定目录中，以便在后续启动时找到它。请注意，对于当前内核，无论驱动程序是编译进内核还是构建为模块，这都有效，无需将此固件构建到内核中。以下是一个示例，其中
+          R8169 驱动程序已编译进内核，但固件未提供。一旦提供了固件，后续启动中就不会再提到它。
         </p>
         <pre class="screen"><code class=
         "literal">dmesg | grep firmware | grep r8169
 [    7.018028] r8169 0000:01:00.0: Direct firmware load for rtl_nic/rtl8168g-2.fw failed with error -2
 [    7.018036] r8169 0000:01:00.0 eth0: unable to load firmware patch rtl_nic/rtl8168g-2.fw (-2)</code></pre>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="regulatory-db" name="regulatory-db"></a>Firmware for
-          Regulatory Database of Wireless Devices
+          <a id="regulatory-db" name="regulatory-db"></a>无线设备监管数据库的固件
         </h2>
         <p>
-          Different countries have different regulations on the radio
-          spectrum usage of wireless devices. You can install a firmware to
-          make the wireless devices obey local spectrum regulations, so you
-          won't be inquired by local authority or find your wireless NIC
-          jamming the frequencies of other devices (for example, remote
-          controllers). The regulatory database firmware can be downloaded
-          from <a class="ulink" href=
-          "https://kernel.org/pub/software/network/wireless-regdb/">https://kernel.org/pub/software/network/wireless-regdb/</a>.
-          To install it, simply extract <code class=
-          "filename">regulatory.db</code> and <code class=
-          "filename">regulatory.db.p7s</code> from the tarball into
-          <code class="filename">/usr/lib/firmware</code>. Note that either
-          the <code class="option">cfg80211</code> driver needs to be
-          selected as a module for the <code class=
-          "filename">regulatory.*</code> files to be loaded, or those files
-          need to be included as firmware into the kernel, as explained above
-          in <a class="xref" href="firmware.html#video-firmware" title=
-          "Firmware for Video Cards">the section called “Firmware for Video
-          Cards”</a>.
+          不同国家对无线设备的无线电频谱使用有不同的规定。您可以安装固件，使无线设备遵守当地的频谱法规，这样您就不会被当地机构询问，也不会发现您的无线网卡干扰其他设备（例如遥控器）的频率。监管数据库固件可以从
+          <a class="ulink" href=
+          "https://kernel.org/pub/software/network/wireless-regdb/">https://kernel.org/pub/software/network/wireless-regdb/</a>
+          下载。要安装它，只需从压缩包中提取 <code class="filename">regulatory.db</code> 和
+          <code class="filename">regulatory.db.p7s</code> 到 <code class=
+          "filename">/usr/lib/firmware</code>。请注意，<code class=
+          "option">cfg80211</code> 驱动程序需要被选为模块，才能加载 <code class=
+          "filename">regulatory.*</code> 文件，或者这些文件需要作为固件包含在内核中，如上文 <a class=
+          "xref" href="firmware.html#video-firmware" title=
+          "显卡的固件">“显卡的固件”一节</a> 所述。
         </p>
         <p>
-          The access point (AP) would send a country code to your wireless
-          NIC, and <a class="xref" href="../basicnet/wpa_supplicant.html"
-          title="wpa_supplicant-2.11">wpa_supplicant-2.11</a> would tell the
-          kernel to load the regulation of this country from <code class=
-          "filename">regulatory.db</code>, and enforce it. Note that several
-          AP don't send this country code, so you may be locked to a rather
-          restricted usage (specially if you want to use your interface as an
-          AP).
+          接入点（AP）会向您的无线网卡发送国家代码，<a class="xref" href=
+          "../basicnet/wpa_supplicant.html" title=
+          "wpa_supplicant-2.11">wpa_supplicant-2.11</a> 会告诉内核从 <code class=
+          "filename">regulatory.db</code> 加载该国家的法规并强制执行。请注意，有些 AP
+          不发送此国家代码，因此您可能被限制在相当受限的使用范围内（特别是如果您想将接口用作 AP）。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="sound-open-firmware" name="sound-open-firmware"></a>Sound
-          Open Firmware
+          <a id="sound-open-firmware" name=
+          "sound-open-firmware"></a>音频开放固件（Sound Open Firmware）
         </h2>
         <p>
-          Some systems (especially laptops with a recent Intel CPU) utilize a
-          DSP shipped with the CPU for connection with the audio codec. The
-          Sound Open Firmware must be loaded onto the DSP to make it
-          functional. These firmware files can be downloaded from <a class=
-          "ulink" href=
-          "https://github.com/thesofproject/sof-bin/releases">https://github.com/thesofproject/sof-bin/releases</a>.
-          Extract the tarball and changing into the extracted directory, then
-          as the <code class="systemitem">root</code> user install the
-          firmware:
+          某些系统（尤其是配备最新 Intel CPU 的笔记本电脑）利用 CPU 附带的 DSP 与音频编解码器连接。必须将 Sound
+          Open Firmware 加载到 DSP 上才能使其正常工作。这些固件文件可以从 <a class="ulink" href=
+          "https://github.com/thesofproject/sof-bin/releases">https://github.com/thesofproject/sof-bin/releases</a>
+          下载。解压压缩包并进入解压后的目录，然后以 <code class="systemitem">root</code>
+          用户身份安装固件：
         </p>
         <pre class="userinput"><kbd class=
         "command">install -vdm755 /usr/lib/firmware/intel &amp;&amp;
 cp -rv sof* /usr/lib/firmware/intel/</kbd></pre>
         <p>
           <a class="xref" href="../multimedia/alsa-lib.html" title=
-          "alsa-lib-1.2.16.1">alsa-lib-1.2.16.1</a> needs Use Case Manager
-          configuration files for the systems using Sound Open Firmware as
-          well. Read the <a class="xref" href="../multimedia/alsa-lib.html"
-          title="alsa-lib-1.2.16.1">alsa-lib-1.2.16.1</a> page for the
-          instructions to install them. Once the firmware is loaded (you may
-          need a reboot so the kernel will load them) and the UCM
-          configuration files are installed, following <a class="xref" href=
-          "../multimedia/alsa-utils.html#alsa-utils-config-sect" title=
-          "Configuring ALSA Utilities">the section called “Configuring ALSA
-          Utilities”</a> to set up your sound card for ALSA properly.
+          "alsa-lib-1.2.16.1">alsa-lib-1.2.16.1</a> 还需要使用 Sound Open Firmware
+          的系统的 Use Case Manager 配置文件。请阅读 <a class="xref" href=
+          "../multimedia/alsa-lib.html" title=
+          "alsa-lib-1.2.16.1">alsa-lib-1.2.16.1</a>
+          页面以获取安装说明。一旦固件被加载（您可能需要重新启动以便内核加载它们）并且 UCM 配置文件安装完毕，按照 <a class=
+          "xref" href="../multimedia/alsa-utils.html#alsa-utils-config-sect"
+          title="Configuring ALSA Utilities">“Configuring ALSA
+          Utilities”一节</a> 为 ALSA 正确设置您的声卡。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
-          <a id="other-firmware" name="other-firmware"></a>Firmware for Other
-          Devices
+          <a id="other-firmware" name="other-firmware"></a>其他设备的固件
         </h2>
         <p>
-          Identifying the correct firmware will typically require you to
-          install <a class="xref" href="../general/pciutils.html" title=
-          "pciutils-3.15.0">pciutils-3.15.0</a>, and then use <strong class=
-          "userinput"><code>lspci</code></strong> to identify the device. You
-          should then search online to check which module it uses, which
-          firmware, and where to obtain the firmware — not all of it is in
-          linux-firmware.
+          识别正确的固件通常需要您安装 <a class="xref" href="../general/pciutils.html"
+          title="pciutils-3.15.0">pciutils-3.15.0</a>，然后使用 <strong class=
+          "userinput"><code>lspci</code></strong>
+          识别设备。然后您应该在线搜索以检查它使用哪个模块、哪个固件以及从哪里获取固件——并非所有固件都在 linux-firmware 中。
         </p>
         <p>
-          If possible, you should begin by using a wired connection when you
-          first boot your LFS system. To use a wireless connection you will
-          need to use a network tools such as <a class="xref" href=
-          "../basicnet/iw.html" title="iw-6.17">iw-6.17</a>, <a class="xref"
-          href="../basicnet/wireless_tools.html" title=
-          "Wireless Tools-29">Wireless Tools-29</a>, or <a class="xref" href=
+          如果可能，您应该在首次启动 LFS 系统时使用有线连接。要使用无线连接，您需要使用网络工具，例如 <a class="xref"
+          href="../basicnet/iw.html" title="iw-6.17">iw-6.17</a>、<a class=
+          "xref" href="../basicnet/wireless_tools.html" title=
+          "Wireless Tools-29">Wireless Tools-29</a> 或 <a class="xref" href=
           "../basicnet/wpa_supplicant.html" title=
-          "wpa_supplicant-2.11">wpa_supplicant-2.11</a>.
+          "wpa_supplicant-2.11">wpa_supplicant-2.11</a>。
         </p>
         <p>
-          Firmware may also be needed for other devices such as some SCSI
-          controllers, bluetooth adaptors, or TV recorders. The same
-          principles apply.
+          其他设备（例如某些 SCSI 控制器、蓝牙适配器或电视录像机）也可能需要固件。同样的原则适用。
         </p>
       </div>
-      <div class="sect2" lang="en" xml:lang="en">
+      <div class="sect2" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="firmware-in-kernel-image" name=
-          "firmware-in-kernel-image"></a>Include Firmware Blobs in the Kernel
-          Image
+          "firmware-in-kernel-image"></a>在内核映像中包含固件 Blob
         </h2>
         <p>
-          Some drivers, notably the drivers for ATI or AMD GPU, requires the
-          firmware files accessible at the time it is loaded. The easiest
-          method to handle these drivers is building them as a kernel module.
-          An alternative method is creating an initramfs (read <a class=
-          "xref" href="initramfs.html" title="About initramfs">the section
-          called “About initramfs”</a> for details) including the firmware
-          files. If you don't want to use either methods, you may include the
-          firmware files in the kernel image itself. Install the needed
-          firmware files into <code class="filename">/usr/lib/firmware</code>
-          first, then set the following kernel configuration and rebuild the
-          kernel:
+          某些驱动程序，尤其是 ATI 或 AMD GPU
+          的驱动程序，要求固件文件在加载时可访问。处理这些驱动程序的最简单方法是将其构建为内核模块。另一种方法是创建包含固件文件的
+          initramfs（详细信息请阅读 <a class="xref" href="initramfs.html" title=
+          "关于 initramfs">“关于
+          initramfs”一节</a>）。如果您不想使用这两种方法，可以将固件文件包含在内核映像本身中。首先将所需的固件文件安装到
+          <code class="filename">/usr/lib/firmware</code>
+          中，然后设置以下内核配置并重新构建内核：
         </p>
         <pre class="screen"><span class="blue">D</span>evice Drivers ---&gt;
   <span class="blue">G</span>eneric Driver Options ---&gt;
@@ -827,27 +622,24 @@ cp -rv sof* /usr/lib/firmware/intel/</kbd></pre>
       (/lib/firmware)         <span class=
 "blue">F</span>irmware blobs root directory [EXTRA_FIRMWARE_DIR]</pre>
         <p>
-          Replace <em class="replaceable"><code>xx/aa.bin
-          xx/bb.bin</code></em> with a whitespace-separated list of paths to
-          the needed firmware files, relative to <code class=
-          "filename">/usr/lib/firmware</code>. A method easier than manually
-          typing the list (it may be long) is running the following command:
+          将 <em class="replaceable"><code>xx/aa.bin xx/bb.bin</code></em>
+          替换为所需固件文件相对于 <code class="filename">/usr/lib/firmware</code>
+          的路径列表，以空格分隔。一种比手动输入列表（可能很长）更容易的方法是运行以下命令：
         </p>
         <pre class="userinput"><kbd class=
         "command">echo CONFIG_EXTRA_FIRMWARE='"'$({ cd /usr/lib/firmware; echo <em class="replaceable"><code>amdgpu/*</code></em> })'"' &gt;&gt; .config
 make oldconfig</kbd></pre>
         <p>
-          Replace <em class="replaceable"><code>amdgpu/*</code></em> with a
-          shell pattern matching the needed firmware files.
+          将 <em class="replaceable"><code>amdgpu/*</code></em> 替换为匹配所需固件文件的
+          shell 模式。
         </p>
         <div class="admon warning">
-          <img alt="[Warning]" src="../images/warning.png" />
+          <img alt="[警告]" src="../images/warning.png" />
           <h3>
-            Warning
+            警告
           </h3>
           <p>
-            Do not distribute a kernel image containing the firmware to
-            others or you may violate the GPL.
+            请勿将包含固件的内核映像分发给他⼈，否则可能违反 GPL。
           </p>
         </div>
       </div>
@@ -855,25 +647,24 @@ make oldconfig</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="console-fonts.html" title=
-          "About Console Fonts">Prev</a>
+          <a accesskey="p" href="console-fonts.html" title="关于控制台字体">上一页</a>
           <p>
-            About Console Fonts
+            关于控制台字体
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="devices.html" title="About Devices">Next</a>
+          <a accesskey="n" href="devices.html" title="关于设备">下一页</a>
           <p>
-            About Devices
+            关于设备
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

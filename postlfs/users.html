@@ -5,94 +5,81 @@
   <head>
     <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
     <title>
-      About System Users and Groups
+      关于系统用户和组
     </title>
     <link rel="stylesheet" type="text/css" href="../stylesheets/lfs.css" />
     <meta name="generator" content="DocBook XSL Stylesheets Vsnapshot" />
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;3.&nbsp;After LFS Configuration Issues
+        第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="skel.html" title=
-          "Configuring for Adding Users">Prev</a>
+          <a accesskey="p" href="skel.html" title="为添加用户进行配置">上一页</a>
           <p>
-            Configuring for Adding Users
+            为添加用户进行配置
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="profile.html" title=
-          "The Bash Shell Startup Files">Next</a>
+          "Bash Shell 启动文件">下一页</a>
           <p>
-            The Bash Shell Startup Files
+            Bash Shell 启动文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
-      <a id="postlfs-users-groups" name="postlfs-users-groups"></a>About
-      System Users and Groups
+      <a id="postlfs-users-groups" name="postlfs-users-groups"></a>关于系统用户和组
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
       <p>
-        Throughout BLFS, many packages install programs that run as daemons
-        or in some way should have a user or group name assigned. Generally
-        these names are used to map a user ID (uid) or group ID (gid) for
-        system use. Generally the specific uid or gid numbers used by these
-        applications are not significant. The exception of course, is that
-        <code class="systemitem">root</code> has a uid and gid of 0 (zero)
-        that is indeed special. The uid values are stored in <code class=
-        "filename">/etc/passwd</code> and the gid values are found in
-        <code class="filename">/etc/group</code>.
+        在整个 BLFS 中，许多包会安装以守护进程方式运行的程序，或者在某种程度上应分配有用户或组名称。通常这些名称用于映射系统使用的用户
+        ID（uid）或组 ID（gid）。通常这些应用程序使用的具体 uid 或 gid 编号并不重要。当然，例外的是 <code class=
+        "systemitem">root</code> 的 uid 和 gid 为 0（零），这确实是特殊的。uid 值存储在
+        <code class="filename">/etc/passwd</code> 中，gid 值在 <code class=
+        "filename">/etc/group</code> 中。
       </p>
       <p>
-        Customarily, Unix systems classify users and groups into two
-        categories: system users and regular users. The system users and
-        groups are given low numbers and regular users and groups have
-        numeric values greater than all the system values. The cutoff for
-        these numbers is found in two parameters in the <code class=
-        "filename">/etc/login.defs</code> configuration file. The default
-        UID_MIN value is 1000 and the default GID_MIN value is 1000. If a
-        specific uid or gid value is not specified when creating a user with
-        <span class="command"><strong>useradd</strong></span> or a group with
-        <span class="command"><strong>groupadd</strong></span> the values
-        assigned will always be above these cutoff values.
+        按照惯例，Unix
+        系统将用户和组分为两类：系统用户和普通用户。系统用户和组被赋予较小的编号，而普通用户和组的数值大于所有系统值。这些编号的界限在
+        <code class="filename">/etc/login.defs</code> 配置文件中的两个参数中定义。默认的
+        UID_MIN 值为 1000，默认的 GID_MIN 值为 1000。如果在使用 <span class=
+        "command"><strong>useradd</strong></span> 创建用户或使用 <span class=
+        "command"><strong>groupadd</strong></span> 创建组时未指定特定的 uid 或 gid
+        值，则分配的值将始终高于这些界限值。
       </p>
       <p>
-        Additionally, the <a class="ulink" href=
-        "https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
-        Linux Standard Base</a> recommends that system uid and gid values
-        should be below 100.
+        此外，<a class="ulink" href=
+        "https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">Linux
+        标准规范</a> 建议系统 uid 和 gid 值应低于 100。
       </p>
       <p>
-        Below is a table of suggested uid/gid values used in BLFS beyond
-        those defined in a base LFS installation. These can be changed as
-        desired, but provide a suggested set of consistent values.
+        下表列出了 BLFS 中在基础 LFS 安装所定义值之外建议使用的 uid/gid 值。这些值可以根据需要更改，但提供了一组建议的一致值。
       </p>
       <div class="table">
         <a id="uidgid" name="uidgid"></a>
         <p class="title">
-          <strong>Table&nbsp;3.1.&nbsp;UID/GID Suggested Values</strong>
+          <strong>表&nbsp;3.1.&nbsp;UID/GID 建议值</strong>
         </p>
         <div class="table-contents">
-          <table class="table" summary="UID/GID Suggested Values" border="1">
+          <table class="table" summary="UID/GID 建议值" border="1">
             <colgroup>
               <col width="1.2in" />
               <col width=".4in" />
@@ -101,7 +88,7 @@
             <thead>
               <tr>
                 <th>
-                  Name
+                  名称
                 </th>
                 <th>
                   uid
@@ -790,26 +777,25 @@
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="skel.html" title=
-          "Configuring for Adding Users">Prev</a>
+          <a accesskey="p" href="skel.html" title="为添加用户进行配置">上一页</a>
           <p>
-            Configuring for Adding Users
+            为添加用户进行配置
           </p>
         </li>
         <li class="next">
           <a accesskey="n" href="profile.html" title=
-          "The Bash Shell Startup Files">Next</a>
+          "Bash Shell 启动文件">下一页</a>
           <p>
-            The Bash Shell Startup Files
+            Bash Shell 启动文件
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="config.html" title=
-          "Chapter&nbsp;3.&nbsp;After LFS Configuration Issues">Up</a>
+          "第&nbsp;3&nbsp;章&nbsp;后续 LFS 配置问题">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

@@ -12,44 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;21.&nbsp;Mail Server Software
+        第&nbsp;21&nbsp;章&nbsp;邮件服务器软件
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dovecot.html" title="Dovecot-2.4.4">Prev</a>
+          <a accesskey="p" href="dovecot.html" title="Dovecot-2.4.4">上一页</a>
           <p>
             Dovecot-2.4.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="postfix.html" title=
-          "Postfix-3.11.4">Next</a>
+          <a accesskey="n" href="postfix.html" title="Postfix-3.11.4">下一页</a>
           <p>
             Postfix-3.11.4
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">Up</a>
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="exim" name="exim"></a>Exim-4.99.4
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to Exim
         </h2>
@@ -59,9 +58,9 @@
           under the GNU Public License.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -149,7 +148,7 @@
           <a class="xref" href="postgresql.html" title=
           "PostgreSQL-18.4">PostgreSQL-18.4</a>, <a class="xref" href=
           "../x/installing.html" title=
-          "Chapter&nbsp;24.&nbsp;Graphical Environments">a graphical
+          "第&nbsp;24&nbsp;章&nbsp;Graphical Environments">a graphical
           environment</a>, <a class="ulink" href=
           "https://github.com/heimdal/heimdal">Heimdal GSSAPI</a>, <a class=
           "ulink" href="https://github.com/shevek/libspf2/">libspf2</a>, and
@@ -157,7 +156,7 @@
           "http://www.trusteddomain.org/opendmarc/">OpenDMARC</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of Exim
         </h2>
@@ -210,7 +209,7 @@ cp      -Rv doc/*   /usr/share/doc/exim-4.99.4 &amp;&amp;
 ln -sfv exim /usr/sbin/sendmail                 &amp;&amp;
 install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -280,7 +279,7 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
           around, it is created manually.
         </p>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Adding Additional Functionality
         </h2>
@@ -371,11 +370,11 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
           href="https://github.com/Exim/exim/wiki">Exim Wiki</a>.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Configuring Exim
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="exim-config" name="exim-config"></a>Config Files
           </h3>
@@ -384,7 +383,7 @@ install -v -d -m750 -o exim -g exim /var/spool/exim</kbd></pre>
             "filename">/etc/aliases</code>
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -412,9 +411,9 @@ MAILER-DAEMON: root</code>
 EOF
 /usr/sbin/exim -bd -q15m</kbd></pre>
           <div class="admon note">
-            <img alt="[Note]" src="../images/note.png" />
+            <img alt="[注意]" src="../images/note.png" />
             <h3>
-              Note
+              注意
             </h3>
             <p>
               To protect an existing <code class=
@@ -431,7 +430,7 @@ EOF
             desires.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Linux PAM Configuration
           </h3>
@@ -457,7 +456,7 @@ session include system-session
 # End /etc/pam.d/exim</code>
 EOF</kbd></pre>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             <a id="exim-init" name="exim-init"></a> Systemd Unit
           </h3>
@@ -473,7 +472,7 @@ EOF</kbd></pre>
           "command">make install-exim</kbd></pre>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -815,25 +814,24 @@ EOF</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="dovecot.html" title="Dovecot-2.4.4">Prev</a>
+          <a accesskey="p" href="dovecot.html" title="Dovecot-2.4.4">上一页</a>
           <p>
             Dovecot-2.4.4
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="postfix.html" title=
-          "Postfix-3.11.4">Next</a>
+          <a accesskey="n" href="postfix.html" title="Postfix-3.11.4">下一页</a>
           <p>
             Postfix-3.11.4
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="mail.html" title=
-          "Chapter&nbsp;21.&nbsp;Mail Server Software">Up</a>
+          "第&nbsp;21&nbsp;章&nbsp;邮件服务器软件">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>

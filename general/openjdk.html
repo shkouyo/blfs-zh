@@ -12,44 +12,43 @@
     <link rel="stylesheet" href="../stylesheets/lfs-print.css" type=
     "text/css" media="print" />
   </head>
-  <body class="blfs" id="blfs-g57e8800">
+  <body class="blfs" id="blfs-gee59845">
     <div class="navheader">
       <h4>
         Beyond Linux<sup>®</sup> From Scratch <span class=
-        "phrase">（systemd</span> 版） - 版本 g57e8800
+        "phrase">（systemd</span> 版） - 版本 gee59845
       </h4>
       <h3>
-        Chapter&nbsp;13.&nbsp;Programming
+        第&nbsp;13&nbsp;章&nbsp;编程
       </h3>
       <ul>
         <li class="prev">
-          <a accesskey="p" href="java.html" title="Java-21.0.10">Prev</a>
+          <a accesskey="p" href="java.html" title="Java-21.0.10">上一页</a>
           <p>
             Java-21.0.10
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ojdk-conf.html" title=
-          "Configuring the Java environment">Next</a>
+          <a accesskey="n" href="ojdk-conf.html" title="配置 Java 环境">下一页</a>
           <p>
-            Configuring the Java environment
+            配置 Java 环境
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
     <h1 class="sect1">
       <a id="openjdk" name="openjdk"></a>OpenJDK-21.0.10
     </h1>
-    <div class="sect1" lang="en" xml:lang="en">
-      <div class="package" lang="en" xml:lang="en">
+    <div class="sect1" lang="zh-cn" xml:lang="zh-cn">
+      <div class="package" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Introduction to OpenJDK
         </h2>
@@ -62,9 +61,9 @@
           "application">Java</span> programs.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Development versions of BLFS may not build or run some packages
@@ -85,9 +84,9 @@
           third party application, must also be made freely available.
         </p>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             The <span class="application">OpenJDK</span> source includes a
@@ -195,10 +194,8 @@
           An existing binary (<a class="xref" href="java.html" title=
           "Java-21.0.10">Java-21.0.10</a> or an earlier built version of this
           package. The instructions below assume that you are using <a class=
-          "xref" href="ojdk-conf.html" title=
-          "Configuring the Java environment">Configuring the Java
-          environment</a>), <a class="xref" href=
-          "../multimedia/alsa-lib.html" title=
+          "xref" href="ojdk-conf.html" title="配置 Java 环境">配置 Java 环境</a>),
+          <a class="xref" href="../multimedia/alsa-lib.html" title=
           "alsa-lib-1.2.16.1">alsa-lib-1.2.16.1</a>, <a class="xref" href=
           "cpio.html" title="cpio-2.15">cpio-2.15</a>, <a class="xref" href=
           "../pst/cups.html" title="Cups-2.4.19">Cups-2.4.19</a>, <a class=
@@ -238,7 +235,7 @@
           href="https://zlib.net/pigz">pigz</a>
         </p>
       </div>
-      <div class="installation" lang="en" xml:lang="en">
+      <div class="installation" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Installation of OpenJDK
         </h2>
@@ -248,9 +245,9 @@
         <pre class="userinput"><kbd class=
         "command">tar -xf ../jtreg-8.2.1+1.tar.gz</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             Before proceeding, you should ensure that your environment
@@ -332,9 +329,9 @@ for s in 16 24 32 48; do
                   /usr/share/icons/hicolor/${s}x${s}/apps/java.png
 done</kbd></pre>
         <div class="admon note">
-          <img alt="[Note]" src="../images/note.png" />
+          <img alt="[注意]" src="../images/note.png" />
           <h3>
-            Note
+            注意
           </h3>
           <p>
             If you only wish to install the Java Runtime Environment, you can
@@ -400,7 +397,7 @@ Icon=java
 Categories=Application;System;</code>
 EOF</kbd></pre>
       </div>
-      <div class="commands" lang="en" xml:lang="en">
+      <div class="commands" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Command Explanations
         </h2>
@@ -481,12 +478,12 @@ EOF</kbd></pre>
           "envar">PATH</code>.
         </p>
       </div>
-      <div class="configuration" lang="en" xml:lang="en">
+      <div class="configuration" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           <a id="openjdk-config" name="openjdk-config"></a>Configuring
           OpenJDK
         </h2>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Configuration Information
           </h3>
@@ -494,9 +491,8 @@ EOF</kbd></pre>
             Normally, the Java environment has been configured after
             installing the binary version, and can be used with the just
             built package as well. Review <a class="xref" href=
-            "ojdk-conf.html" title=
-            "Configuring the Java environment">Configuring the Java
-            environment</a> in case you want to modify something.
+            "ojdk-conf.html" title="配置 Java 环境">配置 Java 环境</a> in case you
+            want to modify something.
           </p>
           <p>
             To test if the man pages are correctly installed, issue
@@ -505,7 +501,7 @@ EOF</kbd></pre>
             display the respective man page.
           </p>
         </div>
-        <div class="sect3" lang="en" xml:lang="en">
+        <div class="sect3" lang="zh-cn" xml:lang="zh-cn">
           <h3 class="sect3">
             Setting up the JRE Certificate Authority Certificates (cacerts)
             file
@@ -537,7 +533,7 @@ bin/keytool -list -cacerts</kbd></pre>
           </p>
         </div>
       </div>
-      <div class="content" lang="en" xml:lang="en">
+      <div class="content" lang="zh-cn" xml:lang="zh-cn">
         <h2 class="sect2">
           Contents
         </h2>
@@ -1009,25 +1005,24 @@ bin/keytool -list -cacerts</kbd></pre>
     <div class="navfooter">
       <ul>
         <li class="prev">
-          <a accesskey="p" href="java.html" title="Java-21.0.10">Prev</a>
+          <a accesskey="p" href="java.html" title="Java-21.0.10">上一页</a>
           <p>
             Java-21.0.10
           </p>
         </li>
         <li class="next">
-          <a accesskey="n" href="ojdk-conf.html" title=
-          "Configuring the Java environment">Next</a>
+          <a accesskey="n" href="ojdk-conf.html" title="配置 Java 环境">下一页</a>
           <p>
-            Configuring the Java environment
+            配置 Java 环境
           </p>
         </li>
         <li class="up">
           <a accesskey="u" href="prog.html" title=
-          "Chapter&nbsp;13.&nbsp;Programming">Up</a>
+          "第&nbsp;13&nbsp;章&nbsp;编程">上一级</a>
         </li>
         <li class="home">
           <a accesskey="h" href="../index.html" title=
-          "Beyond Linux® From Scratch  （systemd  版） - 版本 g57e8800">Home</a>
+          "Beyond Linux® From Scratch  （systemd  版） - 版本 gee59845">起始页</a>
         </li>
       </ul>
     </div>
