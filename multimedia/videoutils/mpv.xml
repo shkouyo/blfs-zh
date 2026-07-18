@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mpv-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mpv-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mpv-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mpv-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mpv-md5sum;
+          MD5 校验和：&mpv-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mpv-size;
+          大小：&mpv-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mpv-buildsize;
+          预计所需磁盘空间：&mpv-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mpv-time;
+          预计构建时间：&mpv-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,8 +9,8 @@
   <!ENTITY libppd-download-ftp  " ">
   <!ENTITY libppd-md5sum        "65accc86f9956a1160937b14e0f516a6">
   <!ENTITY libppd-size          "576 KB">
-  <!ENTITY libppd-buildsize     "13 MB (with tests)">
-  <!ENTITY libppd-time          "less than 0.1 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libppd-buildsize     "13 MB（含测试）">
+  <!ENTITY libppd-time          "小于 0.1 SBU（并行度=4；包含测试）">
 ]>
 
 <sect1 id="libppd" xreflabel="libppd-&libppd-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libppd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libppd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libppd-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libppd-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libppd-md5sum;
+          MD5 校验和：&libppd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libppd-size;
+          大小：&libppd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libppd-buildsize;
+          预计所需磁盘空间：&libppd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libppd-time;
+          预计构建时间：&libppd-time;
         </para>
       </listitem>
     </itemizedlist>

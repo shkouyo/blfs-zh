@@ -8,8 +8,8 @@
   <!ENTITY libseccomp-download-ftp  " ">
   <!ENTITY libseccomp-md5sum        "33a3a5d4c526a739515ff4dc53cdc192">
   <!ENTITY libseccomp-size          "644 KB">
-  <!ENTITY libseccomp-buildsize     "13 MB (with tests)">
-  <!ENTITY libseccomp-time          "less than 0.1 SBU (additional 1.7 SBU for tests)">
+  <!ENTITY libseccomp-buildsize     "13 MB（含测试）">
+  <!ENTITY libseccomp-time          "小于 0.1 SBU（测试将额外增加 1.7 SBU）">
 <!-- EDITORS NOTE:
    This library is heavily dependent on system calls at the time of it's release.
    This should be tested with every new minor (v4.13, v4.14, etc.) release
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libseccomp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libseccomp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libseccomp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libseccomp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libseccomp-md5sum;
+          MD5 校验和：&libseccomp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libseccomp-size;
+          大小：&libseccomp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libseccomp-buildsize;
+          预计所需磁盘空间：&libseccomp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libseccomp-time;
+          预计构建时间：&libseccomp-time;
         </para>
       </listitem>
     </itemizedlist>

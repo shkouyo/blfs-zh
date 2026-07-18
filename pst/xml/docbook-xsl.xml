@@ -11,7 +11,7 @@
   <!ENTITY docbook-xsl-md5sum        "2666d1488d6ced1551d15f31d7ed8c38">
   <!ENTITY docbook-xsl-size          "22 MB">
   <!ENTITY docbook-xsl-buildsize     "58 MB (includes installing optional documentation)">
-  <!ENTITY docbook-xsl-time          "less than 0.1 SBU">
+  <!ENTITY docbook-xsl-time          "小于 0.1 SBU">
 
   <!ENTITY docbook-xsl-doc-download  "&path;/&docbook-xsl-version;/docbook-xsl-doc-&docbook-xsl-version;.tar.bz2">
   <!ENTITY docbook-xsl-doc-md5sum    "62375ca864fc198cb2b17d98209d0b8c">
@@ -45,32 +45,32 @@ xreflabel="docbook-xsl-nons-&docbook-xsl-version;">
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&docbook-xsl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&docbook-xsl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&docbook-xsl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&docbook-xsl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &docbook-xsl-md5sum;
+          MD5 校验和：&docbook-xsl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &docbook-xsl-size;
+          大小：&docbook-xsl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &docbook-xsl-buildsize;
+          预计所需磁盘空间：&docbook-xsl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &docbook-xsl-time;
+          预计构建时间：&docbook-xsl-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -89,17 +89,17 @@ xreflabel="docbook-xsl-nons-&docbook-xsl-version;">
       <title>Optional documentation</title>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&docbook-xsl-doc-download;"/>
+          下载地址（HTTP）：<ulink url="&docbook-xsl-doc-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &docbook-xsl-doc-md5sum;
+          MD5 校验和：&docbook-xsl-doc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &docbook-xsl-doc-size;
+          大小：&docbook-xsl-doc-size;
         </para>
       </listitem>
     </itemizedlist>

@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&yasm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&yasm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&yasm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&yasm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &yasm-md5sum;
+          MD5 校验和：&yasm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &yasm-size;
+          大小：&yasm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &yasm-buildsize;
+          预计所需磁盘空间：&yasm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &yasm-time;
+          预计构建时间：&yasm-time;
         </para>
       </listitem>
     </itemizedlist>

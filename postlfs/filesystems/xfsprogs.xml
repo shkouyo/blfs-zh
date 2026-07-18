@@ -9,7 +9,7 @@
   <!ENTITY xfsprogs-md5sum        "9a275597276da2958d3d2fcb4525f8c6">
   <!ENTITY xfsprogs-size          "1.5 MB">
   <!ENTITY xfsprogs-buildsize     "74 MB">
-  <!ENTITY xfsprogs-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY xfsprogs-time          "0.3 SBU（并行度=4）">
 ]>
 
 <sect1 id="xfsprogs" xreflabel="xfsprogs-&xfsprogs-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfsprogs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfsprogs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfsprogs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfsprogs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfsprogs-md5sum;
+          MD5 校验和：&xfsprogs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfsprogs-size;
+          大小：&xfsprogs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfsprogs-buildsize;
+          预计所需磁盘空间：&xfsprogs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfsprogs-time;
+          预计构建时间：&xfsprogs-time;
         </para>
       </listitem>
     </itemizedlist>

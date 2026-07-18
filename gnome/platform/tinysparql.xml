@@ -9,8 +9,8 @@
   <!ENTITY tinysparql-download-ftp  " ">
   <!ENTITY tinysparql-md5sum        "aa793424c64c06b50248969f3e9d553d">
   <!ENTITY tinysparql-size          "2.3 MB">
-  <!ENTITY tinysparql-buildsize     "61 MB (with tests)">
-  <!ENTITY tinysparql-time          "0.4 SBU (with tests)">
+  <!ENTITY tinysparql-buildsize     "61 MB（含测试）">
+  <!ENTITY tinysparql-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="tinysparql" xreflabel="tinysparql-&tinysparql-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tinysparql-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tinysparql-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tinysparql-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tinysparql-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &tinysparql-md5sum;
+          MD5 校验和：&tinysparql-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tinysparql-size;
+          大小：&tinysparql-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tinysparql-buildsize;
+          预计所需磁盘空间：&tinysparql-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tinysparql-time;
+          预计构建时间：&tinysparql-time;
         </para>
       </listitem>
     </itemizedlist>

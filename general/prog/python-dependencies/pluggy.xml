@@ -9,7 +9,7 @@
   <!ENTITY pluggy-md5sum        "&pluggy-md5sum;">
   <!ENTITY pluggy-size          "68 KB">
   <!ENTITY pluggy-buildsize     "588 KB (add 18 MB for tests)">
-  <!ENTITY pluggy-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY pluggy-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="pluggy" xreflabel="pluggy-&pluggy-version;">
@@ -38,32 +38,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pluggy-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pluggy-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pluggy-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pluggy-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pluggy-md5sum;
+            MD5 校验和：&pluggy-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pluggy-size;
+            大小：&pluggy-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pluggy-buildsize;
+            预计所需磁盘空间：&pluggy-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pluggy-time;
+            预计构建时间：&pluggy-time;
           </para>
         </listitem>
       </itemizedlist>

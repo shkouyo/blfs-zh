@@ -8,7 +8,7 @@
   <!ENTITY vte-download-ftp  " ">
   <!ENTITY vte-md5sum        "08b2325001d5ad09f8dd63201abfee7c">
   <!ENTITY vte-size          "856 KB">
-  <!ENTITY vte-buildsize     "31 MB (with tests)">
+  <!ENTITY vte-buildsize     "31 MB（含测试）">
   <!ENTITY vte-time          "0.7 SBU (using parallelism=4; with tests)">
 
   <!-- For "Contents" and "Short Descriptions" sections -->
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&vte-download-http;"/>
+          下载地址（HTTP）：<ulink url="&vte-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&vte-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&vte-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &vte-md5sum;
+          MD5 校验和：&vte-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &vte-size;
+          大小：&vte-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &vte-buildsize;
+          预计所需磁盘空间：&vte-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &vte-time;
+          预计构建时间：&vte-time;
         </para>
       </listitem>
     </itemizedlist>

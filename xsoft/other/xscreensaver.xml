@@ -9,7 +9,7 @@
   <!ENTITY xscreensaver-md5sum        "65cd8d94841019763e1246df097612ff">
   <!ENTITY xscreensaver-size          "32 MB">
   <!ENTITY xscreensaver-buildsize     "379 MB">
-  <!ENTITY xscreensaver-time          "0.4 SBU (Using parallelism=4)">
+  <!ENTITY xscreensaver-time          "0.4 SBU（并行度=4）">
 ]>
 
 <sect1 id="xscreensaver" xreflabel="XScreenSaver-&xscreensaver-version;">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xscreensaver-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xscreensaver-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xscreensaver-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xscreensaver-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xscreensaver-md5sum;
+          MD5 校验和：&xscreensaver-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xscreensaver-size;
+          大小：&xscreensaver-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xscreensaver-buildsize;
+          预计所需磁盘空间：&xscreensaver-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xscreensaver-time;
+          预计构建时间：&xscreensaver-time;
         </para>
       </listitem>
     </itemizedlist>

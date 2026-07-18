@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&freetype2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&freetype2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&freetype2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&freetype2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &freetype2-md5sum;
+          MD5 校验和：&freetype2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &freetype2-size;
+          大小：&freetype2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &freetype2-buildsize;
+          预计所需磁盘空间：&freetype2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &freetype2-time;
+          预计构建时间：&freetype2-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -78,17 +78,17 @@
       <title>Additional Documentation</title>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&freetype2-doc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&freetype2-doc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &freetype2-doc-md5sum;
+          MD5 校验和：&freetype2-doc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &freetype2-doc-size;
+          大小：&freetype2-doc-size;
         </para>
       </listitem>
     </itemizedlist>

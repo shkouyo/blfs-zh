@@ -8,8 +8,8 @@
   <!ENTITY patchelf-download-ftp  " ">
   <!ENTITY patchelf-md5sum        "c11eaf4dcab682e1f9748b72b4e4d12b">
   <!ENTITY patchelf-size          "476 KB">
-  <!ENTITY patchelf-buildsize     "27 MB (with tests)">
-  <!ENTITY patchelf-time          "0.1 SBU (with tests)">
+  <!ENTITY patchelf-buildsize     "27 MB（含测试）">
+  <!ENTITY patchelf-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="patchelf" xreflabel="patchelf-&patchelf-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&patchelf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&patchelf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&patchelf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&patchelf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &patchelf-md5sum;
+          MD5 校验和：&patchelf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &patchelf-size;
+          大小：&patchelf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &patchelf-buildsize;
+          预计所需磁盘空间：&patchelf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &patchelf-time;
+          预计构建时间：&patchelf-time;
         </para>
       </listitem>
     </itemizedlist>

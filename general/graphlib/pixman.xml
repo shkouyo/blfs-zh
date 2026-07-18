@@ -8,7 +8,7 @@
   <!ENTITY pixman-download-ftp  " ">
   <!ENTITY pixman-md5sum        "c08173c8e1d2cc79428d931c13ffda59">
   <!ENTITY pixman-size          "808 KB">
-  <!ENTITY pixman-buildsize     "28 MB (With tests)">
+  <!ENTITY pixman-buildsize     "28 MB（含测试）">
   <!ENTITY pixman-time          "0.1 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pixman-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pixman-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pixman-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pixman-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pixman-md5sum;
+          MD5 校验和：&pixman-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pixman-size;
+          大小：&pixman-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pixman-buildsize;
+          预计所需磁盘空间：&pixman-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pixman-time;
+          预计构建时间：&pixman-time;
         </para>
       </listitem>
     </itemizedlist>

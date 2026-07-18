@@ -9,7 +9,7 @@
   <!ENTITY pyserial-md5sum        "&pyserial-md5sum;">
   <!ENTITY pyserial-size          "156 KB">
   <!ENTITY pyserial-buildsize     "2.1 MB (add 0.2 MB for tests)">
-  <!ENTITY pyserial-time          "less than 0.1 SBU">
+  <!ENTITY pyserial-time          "小于 0.1 SBU">
 ]>
 
   <!-- capitalization as in https://pythonhosted.org/pyserial/ -->
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pyserial-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pyserial-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pyserial-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pyserial-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pyserial-md5sum;
+            MD5 校验和：&pyserial-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pyserial-size;
+            大小：&pyserial-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pyserial-buildsize;
+            预计所需磁盘空间：&pyserial-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pyserial-time;
+            预计构建时间：&pyserial-time;
           </para>
         </listitem>
       </itemizedlist>

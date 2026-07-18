@@ -9,7 +9,7 @@
   <!ENTITY libsoup3-download-ftp  " ">
   <!ENTITY libsoup3-md5sum        "9e07742595800ecf301eafb52300dd89">
   <!ENTITY libsoup3-size          "1.5 MB">
-  <!ENTITY libsoup3-buildsize     "42 MB (with tests)">
+  <!ENTITY libsoup3-buildsize     "42 MB（含测试）">
   <!ENTITY libsoup3-time          "0.4 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsoup3-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsoup3-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsoup3-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsoup3-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsoup3-md5sum;
+          MD5 校验和：&libsoup3-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsoup3-size;
+          大小：&libsoup3-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsoup3-buildsize;
+          预计所需磁盘空间：&libsoup3-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsoup3-time;
+          预计构建时间：&libsoup3-time;
         </para>
       </listitem>
     </itemizedlist>

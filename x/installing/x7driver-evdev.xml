@@ -11,7 +11,7 @@
   <!ENTITY xorg-evdev-driver-md5sum        "faa89be0ef86aebd6fd0a03eed23839c">
   <!ENTITY xorg-evdev-driver-size          "344 KB">
   <!ENTITY xorg-evdev-driver-buildsize     "3.7 MB">
-  <!ENTITY xorg-evdev-driver-time          "less than 0.1 SBU">
+  <!ENTITY xorg-evdev-driver-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin Xorg Evdev Driver -->
@@ -43,32 +43,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&xorg-evdev-driver-download-http;"/>
+            下载地址（HTTP）：<ulink url="&xorg-evdev-driver-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&xorg-evdev-driver-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&xorg-evdev-driver-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &xorg-evdev-driver-md5sum;
+            MD5 校验和：&xorg-evdev-driver-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &xorg-evdev-driver-size;
+            大小：&xorg-evdev-driver-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &xorg-evdev-driver-buildsize;
+            预计所需磁盘空间：&xorg-evdev-driver-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &xorg-evdev-driver-time;
+            预计构建时间：&xorg-evdev-driver-time;
           </para>
         </listitem>
       </itemizedlist>

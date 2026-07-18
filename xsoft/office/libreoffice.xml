@@ -92,22 +92,22 @@
       </listitem>
       <listitem>
         <para>
-          Core Download MD5 sum: &libreoffice-core-md5sum;
+          Core MD5 校验和：&libreoffice-core-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Core Download size: &libreoffice-core-size;
+          Core 大小：&libreoffice-core-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libreoffice-buildsize;
+          预计所需磁盘空间：&libreoffice-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libreoffice-time;
+          预计构建时间：&libreoffice-time;
         </para>
       </listitem>
     </itemizedlist>

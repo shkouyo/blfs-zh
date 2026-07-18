@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgsf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgsf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgsf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgsf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgsf-md5sum;
+          MD5 校验和：&libgsf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgsf-size;
+          大小：&libgsf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgsf-buildsize;
+          预计所需磁盘空间：&libgsf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgsf-time;
+          预计构建时间：&libgsf-time;
         </para>
       </listitem>
     </itemizedlist>

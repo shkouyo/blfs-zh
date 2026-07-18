@@ -9,7 +9,7 @@
   <!ENTITY newt-md5sum        "cca66ed1d8774fb9e3f6a33525de416d">
   <!ENTITY newt-size          "176 KB">
   <!ENTITY newt-buildsize     "3.0 MB">
-  <!ENTITY newt-time          "less than 0.1 SBU">
+  <!ENTITY newt-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="newt" xreflabel="newt-&newt-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&newt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&newt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&newt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&newt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &newt-md5sum;
+          MD5 校验和：&newt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &newt-size;
+          大小：&newt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &newt-buildsize;
+          预计所需磁盘空间：&newt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &newt-time;
+          预计构建时间：&newt-time;
         </para>
       </listitem>
     </itemizedlist>

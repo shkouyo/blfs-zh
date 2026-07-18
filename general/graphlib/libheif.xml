@@ -7,7 +7,7 @@
   <!ENTITY libheif-download-http "https://github.com/strukturag/libheif/releases/download/v&libheif-version;/libheif-&libheif-version;.tar.gz">
   <!ENTITY libheif-md5sum        "26fd31d0591ab927ef1a638de64cb2da">
   <!ENTITY libheif-size          "2.0 MB">
-  <!ENTITY libheif-buildsize     "49 MB (with tests)">
+  <!ENTITY libheif-buildsize     "49 MB（含测试）">
   <!ENTITY libheif-time          "0.6 SBU (with tests, parallelism=4)">
 ]>
 
@@ -36,27 +36,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libheif-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libheif-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libheif-md5sum;
+          MD5 校验和：&libheif-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libheif-size;
+          大小：&libheif-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libheif-buildsize;
+          预计所需磁盘空间：&libheif-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libheif-time;
+          预计构建时间：&libheif-time;
         </para>
       </listitem>
     </itemizedlist>

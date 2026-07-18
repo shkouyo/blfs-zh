@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&smartmontools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&smartmontools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&smartmontools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&smartmontools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &smartmontools-md5sum;
+          MD5 校验和：&smartmontools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &smartmontools-size;
+          大小：&smartmontools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &smartmontools-buildsize;
+          预计所需磁盘空间：&smartmontools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &smartmontools-time;
+          预计构建时间：&smartmontools-time;
         </para>
       </listitem>
     </itemizedlist>

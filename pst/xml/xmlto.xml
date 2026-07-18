@@ -8,8 +8,8 @@
   <!ENTITY xmlto-download-ftp  " ">
   <!ENTITY xmlto-md5sum        "556f2642cdcd005749bd4c08bc621c37">
   <!ENTITY xmlto-size          "64 KB">
-  <!ENTITY xmlto-buildsize     "1.9 MB (with tests)">
-  <!ENTITY xmlto-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY xmlto-buildsize     "1.9 MB（含测试）">
+  <!ENTITY xmlto-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="xmlto" xreflabel="xmlto-&xmlto-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xmlto-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xmlto-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xmlto-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xmlto-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xmlto-md5sum;
+          MD5 校验和：&xmlto-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xmlto-size;
+          大小：&xmlto-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xmlto-buildsize;
+          预计所需磁盘空间：&xmlto-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xmlto-time;
+          预计构建时间：&xmlto-time;
         </para>
       </listitem>
     </itemizedlist>

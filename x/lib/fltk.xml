@@ -10,7 +10,7 @@
   <!ENTITY fltk-md5sum        "75b2fd1aa2433e13abcbb311043eaee0">
   <!ENTITY fltk-size          "5.3 MB">
   <!ENTITY fltk-buildsize     "73 MB">
-  <!ENTITY fltk-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY fltk-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="fltk" xreflabel="FLTK-&fltk-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fltk-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fltk-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fltk-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fltk-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fltk-md5sum;
+          MD5 校验和：&fltk-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fltk-size;
+          大小：&fltk-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fltk-buildsize;
+          预计所需磁盘空间：&fltk-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fltk-time;
+          预计构建时间：&fltk-time;
         </para>
       </listitem>
     </itemizedlist>

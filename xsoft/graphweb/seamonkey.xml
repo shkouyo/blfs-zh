@@ -48,32 +48,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&seamonkey-download-http;"/>
+          下载地址（HTTP）：<ulink url="&seamonkey-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&seamonkey-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&seamonkey-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &seamonkey-md5sum;
+          MD5 校验和：&seamonkey-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &seamonkey-size;
+          大小：&seamonkey-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &seamonkey-buildsize;
+          预计所需磁盘空间：&seamonkey-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &seamonkey-time;
+          预计构建时间：&seamonkey-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY gtk-doc-md5sum        "819b11aa730cf5108f1df3f0eec91cf9">
   <!ENTITY gtk-doc-size          "584 KB">
   <!ENTITY gtk-doc-buildsize     "16 MB (add 2.2 MB for tests)">
-  <!ENTITY gtk-doc-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY gtk-doc-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="gtk-doc" xreflabel="GTK-Doc-&gtk-doc-version;">
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gtk-doc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gtk-doc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gtk-doc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gtk-doc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gtk-doc-md5sum;
+          MD5 校验和：&gtk-doc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gtk-doc-size;
+          大小：&gtk-doc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gtk-doc-buildsize;
+          预计所需磁盘空间：&gtk-doc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gtk-doc-time;
+          预计构建时间：&gtk-doc-time;
         </para>
       </listitem>
     </itemizedlist>

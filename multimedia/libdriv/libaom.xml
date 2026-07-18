@@ -10,7 +10,7 @@
   <!ENTITY libaom-size          "6.1 MB">
   <!ENTITY libaom-buildsize     "124 MB">  <!-- (add 1 GB for tests)" -->
 <!--  <!ENTITY libaom-time          "0.8 SBU (with parallelism=4, add 128 SBU for tests)"> -->
-  <!ENTITY libaom-time          "0.8 SBU (with parallelism=4)">
+  <!ENTITY libaom-time          "0.8 SBU（并行度=4）">
 ]>
 
 <!-- Tests not run for version 3.6.1. -->
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libaom-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libaom-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libaom-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libaom-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libaom-md5sum;
+          MD5 校验和：&libaom-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libaom-size;
+          大小：&libaom-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libaom-buildsize;
+          预计所需磁盘空间：&libaom-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libaom-time;
+          预计构建时间：&libaom-time;
         </para>
       </listitem>
     </itemizedlist>

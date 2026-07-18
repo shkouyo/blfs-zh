@@ -9,7 +9,7 @@
   <!ENTITY dvd-rw-tools-md5sum        "8acb3c885c87f6838704a0025e435871">
   <!ENTITY dvd-rw-tools-size          "138 KB">
   <!ENTITY dvd-rw-tools-buildsize     "1.7 MB">
-  <!ENTITY dvd-rw-tools-time          "less than 0.1 SBU">
+  <!ENTITY dvd-rw-tools-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="dvd-rw-tools" xreflabel="dvd+rw-tools-&dvd-rw-tools-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dvd-rw-tools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dvd-rw-tools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dvd-rw-tools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dvd-rw-tools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dvd-rw-tools-md5sum;
+          MD5 校验和：&dvd-rw-tools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dvd-rw-tools-size;
+          大小：&dvd-rw-tools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dvd-rw-tools-buildsize;
+          预计所需磁盘空间：&dvd-rw-tools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dvd-rw-tools-time;
+          预计构建时间：&dvd-rw-tools-time;
         </para>
       </listitem>
     </itemizedlist>

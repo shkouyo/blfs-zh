@@ -8,7 +8,7 @@
   <!ENTITY libjxl-md5sum        "a0fd3ac7b474525dadb99bbcb5d814f9">
   <!ENTITY libjxl-size          "1.7 MB">
   <!ENTITY libjxl-buildsize     "67 MB">
-  <!ENTITY libjxl-time          "1.0 SBU (with parallelism=4)">
+  <!ENTITY libjxl-time          "1.0 SBU（并行度=4）">
 
 ]>
 
@@ -35,27 +35,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libjxl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libjxl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libjxl-md5sum;
+          MD5 校验和：&libjxl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libjxl-size;
+          大小：&libjxl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libjxl-buildsize;
+          预计所需磁盘空间：&libjxl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libjxl-time;
+          预计构建时间：&libjxl-time;
         </para>
       </listitem>
     </itemizedlist>

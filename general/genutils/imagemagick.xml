@@ -75,27 +75,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&imagemagick-download-http;"/></para>
+          下载地址（HTTP）：<ulink url="&imagemagick-download-http;"/></para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
+          下载地址（FTP）：<ulink url="&imagemagick-download-ftp;"/></para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &imagemagick-md5sum;</para>
+          MD5 校验和：&imagemagick-md5sum;</para>
       </listitem>
       <listitem>
         <para>
-          Download size: &imagemagick-size;</para>
+          大小：&imagemagick-size;</para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &imagemagick-buildsize;</para>
+          预计所需磁盘空间：&imagemagick-buildsize;</para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &imagemagick-time;</para>
+          预计构建时间：&imagemagick-time;</para>
       </listitem>
     </itemizedlist>
 

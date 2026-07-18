@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libpwquality-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libpwquality-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libpwquality-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libpwquality-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libpwquality-md5sum;
+          MD5 校验和：&libpwquality-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libpwquality-size;
+          大小：&libpwquality-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libpwquality-buildsize;
+          预计所需磁盘空间：&libpwquality-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libpwquality-time;
+          预计构建时间：&libpwquality-time;
         </para>
       </listitem>
     </itemizedlist>

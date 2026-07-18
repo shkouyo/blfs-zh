@@ -9,7 +9,7 @@
   <!ENTITY libdisplay-info-md5sum        "f2a15697f6e8c66722b7760ceccbed60">
   <!ENTITY libdisplay-info-size          "112 KB">
   <!ENTITY libdisplay-info-buildsize     "3.3 MB">
-  <!ENTITY libdisplay-info-time          "less than 0.1 SBU">
+  <!ENTITY libdisplay-info-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libdisplay-info" xreflabel="libdisplay-info-&libdisplay-info-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdisplay-info-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdisplay-info-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdisplay-info-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdisplay-info-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdisplay-info-md5sum;
+          MD5 校验和：&libdisplay-info-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdisplay-info-size;
+          大小：&libdisplay-info-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdisplay-info-buildsize;
+          预计所需磁盘空间：&libdisplay-info-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdisplay-info-time;
+          预计构建时间：&libdisplay-info-time;
         </para>
       </listitem>
     </itemizedlist>

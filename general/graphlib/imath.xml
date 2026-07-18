@@ -8,7 +8,7 @@
   <!ENTITY Imath-download-ftp  " ">
   <!ENTITY Imath-md5sum        "7389e3bb124012e7dbbb99c3b2a5323c">
   <!ENTITY Imath-size          "668 KB">
-  <!ENTITY Imath-buildsize     "162 MB (with tests)">
+  <!ENTITY Imath-buildsize     "162 MB（含测试）">
   <!ENTITY Imath-time          "1.2 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&Imath-download-http;"/>
+          下载地址（HTTP）：<ulink url="&Imath-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&Imath-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&Imath-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &Imath-md5sum;
+          MD5 校验和：&Imath-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &Imath-size;
+          大小：&Imath-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &Imath-buildsize;
+          预计所需磁盘空间：&Imath-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &Imath-time;
+          预计构建时间：&Imath-time;
         </para>
       </listitem>
     </itemizedlist>

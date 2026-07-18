@@ -8,8 +8,8 @@
   <!ENTITY wayland-download-ftp  " ">
   <!ENTITY wayland-md5sum        "bdc1ad361f85cc41b85be99a3bf3d002">
   <!ENTITY wayland-size          "596 KB">
-  <!ENTITY wayland-buildsize     "9.0 MB (with tests)">
-  <!ENTITY wayland-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY wayland-buildsize     "9.0 MB（含测试）">
+  <!ENTITY wayland-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="wayland" xreflabel="Wayland-&wayland-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wayland-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wayland-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wayland-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wayland-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wayland-md5sum;
+          MD5 校验和：&wayland-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wayland-size;
+          大小：&wayland-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wayland-buildsize;
+          预计所需磁盘空间：&wayland-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wayland-time;
+          预计构建时间：&wayland-time;
         </para>
       </listitem>
     </itemizedlist>

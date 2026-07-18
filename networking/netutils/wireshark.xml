@@ -9,7 +9,7 @@
   <!ENTITY wireshark-md5sum        "435ae3d7595a2d82b1187eee3ff3774e">
   <!ENTITY wireshark-size          "54 MB">
   <!ENTITY wireshark-buildsize     "1.1 GB (188 MB installed)">
-  <!ENTITY wireshark-time          "2.5 SBU (with parallelism=4)">
+  <!ENTITY wireshark-time          "2.5 SBU（并行度=4）">
 ]>
 
 <!-- Gentle reminder: many Wireshark releases contain vulnerability fixes,
@@ -54,32 +54,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wireshark-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wireshark-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wireshark-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wireshark-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wireshark-md5sum;
+          MD5 校验和：&wireshark-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wireshark-size;
+          大小：&wireshark-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wireshark-buildsize;
+          预计所需磁盘空间：&wireshark-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wireshark-time;
+          预计构建时间：&wireshark-time;
         </para>
       </listitem>
     </itemizedlist>

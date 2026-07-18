@@ -8,8 +8,8 @@
   <!ENTITY lua-download-ftp  " ">
   <!ENTITY lua-md5sum        "81cf5265b8634967d8a7480d238168ce">
   <!ENTITY lua-size          "368 KB">
-  <!ENTITY lua-buildsize     "3.7 MB (with Basic tests)">
-  <!ENTITY lua-time          "less than 0.1 SBU (with Basic tests)">
+  <!ENTITY lua-buildsize     "3.7 MB（含基本测试）">
+  <!ENTITY lua-time          "小于 0.1 SBU（含基本测试）">
 
   <!ENTITY lua-tests-download-http "https://www.lua.org/tests/lua-&lua-version;-tests.tar.gz">
   <!ENTITY lua-tests-download-ftp  " ">
@@ -47,32 +47,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lua-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lua-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lua-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lua-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lua-md5sum;
+          MD5 校验和：&lua-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lua-size;
+          大小：&lua-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lua-buildsize;
+          预计所需磁盘空间：&lua-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lua-time;
+          预计构建时间：&lua-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -87,22 +87,22 @@
       </listitem>
       <listitem>
         <para>
-          Optional Test Suite Download (HTTP): <ulink url="&lua-tests-download-http;"/>
+          可选测试套件下载地址（HTTP）：<ulink url="&lua-tests-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Optional Test Suite Download (FTP): <ulink url="&lua-tests-download-ftp;"/>
+          可选测试套件下载地址（FTP）：<ulink url="&lua-tests-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Optional Test Suite Download MD5 sum: &lua-tests-md5sum;
+          可选测试套件 MD5 校验和：&lua-tests-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Optional Test Suite Download size: &lua-tests-size;
+          可选测试套件大小：&lua-tests-size;
         </para>
       </listitem>
     </itemizedlist>

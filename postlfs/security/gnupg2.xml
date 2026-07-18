@@ -8,7 +8,7 @@
   <!ENTITY gnupg2-download-ftp  " ">
   <!ENTITY gnupg2-md5sum        "39311d55044c9548b5eb8f53466a86b5">
   <!ENTITY gnupg2-size          "8.0 MB">
-  <!ENTITY gnupg2-buildsize     "181 MB (with tests)">
+  <!ENTITY gnupg2-buildsize     "181 MB（含测试）">
   <!ENTITY gnupg2-time          "0.7 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnupg2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnupg2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnupg2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnupg2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnupg2-md5sum;
+          MD5 校验和：&gnupg2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnupg2-size;
+          大小：&gnupg2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnupg2-buildsize;
+          预计所需磁盘空间：&gnupg2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnupg2-time;
+          预计构建时间：&gnupg2-time;
         </para>
       </listitem>
     </itemizedlist>

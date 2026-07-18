@@ -9,7 +9,7 @@
   <!ENTITY xcb-util-md5sum        "34d749eab0fd0ffd519ac64798d79847">
   <!ENTITY xcb-util-size          "261 KB">
   <!ENTITY xcb-util-buildsize     "2.6 MB">
-  <!ENTITY xcb-util-time          "less than 0.1 SBU">
+  <!ENTITY xcb-util-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xcb-util" xreflabel="xcb-util-&xcb-util-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xcb-util-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xcb-util-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xcb-util-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xcb-util-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xcb-util-md5sum;
+          MD5 校验和：&xcb-util-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xcb-util-size;
+          大小：&xcb-util-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xcb-util-buildsize;
+          预计所需磁盘空间：&xcb-util-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xcb-util-time;
+          预计构建时间：&xcb-util-time;
         </para>
       </listitem>
     </itemizedlist>

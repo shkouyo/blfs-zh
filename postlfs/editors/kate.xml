@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kate-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kate-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kate-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kate-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kate-md5sum;
+          MD5 校验和：&kate-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kate-size;
+          大小：&kate-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kate-buildsize;
+          预计所需磁盘空间：&kate-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kate-time;
+          预计构建时间：&kate-time;
         </para>
       </listitem>
     </itemizedlist>

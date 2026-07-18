@@ -8,7 +8,7 @@
   <!ENTITY ModemManager-download-ftp  " ">
   <!ENTITY ModemManager-md5sum        "b72860c54670f362e947edba160fa98e">
   <!ENTITY ModemManager-size          "2.0 MB">
-  <!ENTITY ModemManager-buildsize     "59 MB (with tests)">
+  <!ENTITY ModemManager-buildsize     "59 MB（含测试）">
   <!ENTITY ModemManager-time          "0.3 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ModemManager-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ModemManager-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ModemManager-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ModemManager-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ModemManager-md5sum;
+          MD5 校验和：&ModemManager-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ModemManager-size;
+          大小：&ModemManager-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ModemManager-buildsize;
+          预计所需磁盘空间：&ModemManager-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ModemManager-time;
+          预计构建时间：&ModemManager-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,8 +9,8 @@
   <!ENTITY at-spi2-core-download-ftp  " ">
   <!ENTITY at-spi2-core-md5sum        "03182f227685e6d5ead5f255294f6675">
   <!ENTITY at-spi2-core-size          "588 KB">
-  <!ENTITY at-spi2-core-buildsize     "22 MB (with tests)">
-  <!ENTITY at-spi2-core-time          "0.2 SBU (with tests)">
+  <!ENTITY at-spi2-core-buildsize     "22 MB（含测试）">
+  <!ENTITY at-spi2-core-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="at-spi2-core" xreflabel="at-spi2-core-&at-spi2-core-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&at-spi2-core-download-http;"/>
+          下载地址（HTTP）：<ulink url="&at-spi2-core-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&at-spi2-core-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&at-spi2-core-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &at-spi2-core-md5sum;
+          MD5 校验和：&at-spi2-core-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &at-spi2-core-size;
+          大小：&at-spi2-core-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &at-spi2-core-buildsize;
+          预计所需磁盘空间：&at-spi2-core-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &at-spi2-core-time;
+          预计构建时间：&at-spi2-core-time;
         </para>
       </listitem>
     </itemizedlist>

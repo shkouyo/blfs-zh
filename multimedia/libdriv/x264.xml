@@ -9,7 +9,7 @@
   <!ENTITY x264-md5sum        "a4adb6f7d2644043765885e54abc3955">
   <!ENTITY x264-size          "732 KB">
   <!ENTITY x264-buildsize     "15 MB">
-  <!ENTITY x264-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY x264-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="x264" xreflabel="x264-&x264-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&x264-download-http;"/>
+          下载地址（HTTP）：<ulink url="&x264-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&x264-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&x264-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &x264-md5sum;
+          MD5 校验和：&x264-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &x264-size;
+          大小：&x264-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &x264-buildsize;
+          预计所需磁盘空间：&x264-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &x264-time;
+          预计构建时间：&x264-time;
         </para>
       </listitem>
     </itemizedlist>

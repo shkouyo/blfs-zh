@@ -8,7 +8,7 @@
   <!ENTITY libqmi-download-ftp  " ">
   <!ENTITY libqmi-md5sum        "4ed2c13150611007f56f84b896449d46">
   <!ENTITY libqmi-size          "4.2 MB">
-  <!ENTITY libqmi-buildsize     "75 MB (with tests)">
+  <!ENTITY libqmi-buildsize     "75 MB（含测试）">
   <!ENTITY libqmi-time          "0.4 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libqmi-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libqmi-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libqmi-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libqmi-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libqmi-md5sum;
+          MD5 校验和：&libqmi-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libqmi-size;
+          大小：&libqmi-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libqmi-buildsize;
+          预计所需磁盘空间：&libqmi-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libqmi-time;
+          预计构建时间：&libqmi-time;
         </para>
       </listitem>
     </itemizedlist>

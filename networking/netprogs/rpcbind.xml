@@ -9,7 +9,7 @@
   <!ENTITY rpcbind-md5sum        "f4c2d1f279aadee20871c9d7c0fc9fc5">
   <!ENTITY rpcbind-size          "128 KB">
   <!ENTITY rpcbind-buildsize     "1.6 MB">
-  <!ENTITY rpcbind-time          "less than 0.1 SBU">
+  <!ENTITY rpcbind-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="rpcbind" xreflabel="rpcbind-&rpcbind-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rpcbind-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rpcbind-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&rpcbind-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&rpcbind-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rpcbind-md5sum;
+          MD5 校验和：&rpcbind-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rpcbind-size;
+          大小：&rpcbind-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rpcbind-buildsize;
+          预计所需磁盘空间：&rpcbind-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rpcbind-time;
+          预计构建时间：&rpcbind-time;
         </para>
       </listitem>
     </itemizedlist>

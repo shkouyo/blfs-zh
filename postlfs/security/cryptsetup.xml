@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cryptsetup-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cryptsetup-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cryptsetup-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cryptsetup-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cryptsetup-md5sum;
+          MD5 校验和：&cryptsetup-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cryptsetup-size;
+          大小：&cryptsetup-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cryptsetup-buildsize;
+          预计所需磁盘空间：&cryptsetup-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cryptsetup-time;
+          预计构建时间：&cryptsetup-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY colord-gtk-md5sum        "d436740c06e42af421384f16b2a9a0a7">
   <!ENTITY colord-gtk-size          "24 KB">
   <!ENTITY colord-gtk-buildsize     "2.1 MB">
-  <!ENTITY colord-gtk-time          "less than 0.1 SBU">
+  <!ENTITY colord-gtk-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="colord-gtk" xreflabel="colord-gtk-&colord-gtk-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&colord-gtk-download-http;"/>
+          下载地址（HTTP）：<ulink url="&colord-gtk-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&colord-gtk-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&colord-gtk-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &colord-gtk-md5sum;
+          MD5 校验和：&colord-gtk-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &colord-gtk-size;
+          大小：&colord-gtk-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &colord-gtk-buildsize;
+          预计所需磁盘空间：&colord-gtk-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &colord-gtk-time;
+          预计构建时间：&colord-gtk-time;
         </para>
       </listitem>
     </itemizedlist>

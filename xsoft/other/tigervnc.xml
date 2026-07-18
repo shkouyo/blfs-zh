@@ -9,7 +9,7 @@
   <!ENTITY tigervnc-md5sum        "61c6b4af2bc925c7ef4110b8a52d3d2f">
   <!ENTITY tigervnc-size          "2.1 MB">
   <!ENTITY tigervnc-buildsize     "154 MB">
-  <!ENTITY tigervnc-time          "0.6 SBU (Using parallelism=4)">
+  <!ENTITY tigervnc-time          "0.6 SBU（并行度=4）">
 ]>
 
 <sect1 id="tigervnc" xreflabel="tigervnc-&tigervnc-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tigervnc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tigervnc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tigervnc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tigervnc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &tigervnc-md5sum;
+          MD5 校验和：&tigervnc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tigervnc-size;
+          大小：&tigervnc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tigervnc-buildsize;
+          预计所需磁盘空间：&tigervnc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tigervnc-time;
+          预计构建时间：&tigervnc-time;
         </para>
       </listitem>
     </itemizedlist>

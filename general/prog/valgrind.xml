@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&valgrind-download-http;"/>
+          下载地址（HTTP）：<ulink url="&valgrind-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&valgrind-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&valgrind-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &valgrind-md5sum;
+          MD5 校验和：&valgrind-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &valgrind-size;
+          大小：&valgrind-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &valgrind-buildsize;
+          预计所需磁盘空间：&valgrind-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &valgrind-time;
+          预计构建时间：&valgrind-time;
         </para>
       </listitem>
     </itemizedlist>

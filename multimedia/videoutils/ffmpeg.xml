@@ -63,32 +63,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ffmpeg-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ffmpeg-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ffmpeg-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ffmpeg-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ffmpeg-md5sum;
+          MD5 校验和：&ffmpeg-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ffmpeg-size;
+          大小：&ffmpeg-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ffmpeg-buildsize;
+          预计所需磁盘空间：&ffmpeg-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ffmpeg-time;
+          预计构建时间：&ffmpeg-time;
         </para>
       </listitem>
     </itemizedlist>

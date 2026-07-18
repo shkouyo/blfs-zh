@@ -8,8 +8,8 @@
   <!ENTITY libtasn1-download-ftp  " ">
   <!ENTITY libtasn1-md5sum        "2ee1d9f3aa66f1e308c46a283aa9a8c2">
   <!ENTITY libtasn1-size          "1.7 MB">
-  <!ENTITY libtasn1-buildsize     "16 MB (with tests)">
-  <!ENTITY libtasn1-time          "0.5 SBU (with tests)">
+  <!ENTITY libtasn1-buildsize     "16 MB（含测试）">
+  <!ENTITY libtasn1-time          "0.5 SBU（含测试）">
 ]>
 
 <sect1 id="libtasn1" xreflabel="libtasn1-&libtasn1-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libtasn1-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libtasn1-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libtasn1-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libtasn1-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libtasn1-md5sum;
+          MD5 校验和：&libtasn1-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libtasn1-size;
+          大小：&libtasn1-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libtasn1-buildsize;
+          预计所需磁盘空间：&libtasn1-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libtasn1-time;
+          预计构建时间：&libtasn1-time;
         </para>
       </listitem>
     </itemizedlist>

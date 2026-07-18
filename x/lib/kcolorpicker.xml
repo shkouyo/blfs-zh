@@ -9,7 +9,7 @@
   <!ENTITY kcolorpicker-md5sum        "1efc91252446af0d7e5c467ea7d517e7">
   <!ENTITY kcolorpicker-size          "16 KB">
   <!ENTITY kcolorpicker-buildsize     "2.4 MB">
-  <!ENTITY kcolorpicker-time          "less than 0.1 SBU">
+  <!ENTITY kcolorpicker-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="kcolorpicker" xreflabel="kcolorpicker-&kcolorpicker-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kcolorpicker-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kcolorpicker-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kcolorpicker-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kcolorpicker-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kcolorpicker-md5sum;
+          MD5 校验和：&kcolorpicker-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kcolorpicker-size;
+          大小：&kcolorpicker-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kcolorpicker-buildsize;
+          预计所需磁盘空间：&kcolorpicker-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kcolorpicker-time;
+          预计构建时间：&kcolorpicker-time;
         </para>
       </listitem>
     </itemizedlist>

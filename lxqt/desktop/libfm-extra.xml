@@ -9,7 +9,7 @@
   <!ENTITY libfm-md5sum        "c87a0ff41ae77825079b2f785ec0741e">
   <!ENTITY libfm-size          "924 KB">
   <!ENTITY libfm-buildsize     "11 MB">
-  <!ENTITY libfm-time          "less than 0.1 SBU">
+  <!ENTITY libfm-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libfm-extra" xreflabel="libfm-extra-&libfm-extra-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libfm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libfm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libfm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libfm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libfm-md5sum;
+          MD5 校验和：&libfm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libfm-size;
+          大小：&libfm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libfm-buildsize;
+          预计所需磁盘空间：&libfm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libfm-time;
+          预计构建时间：&libfm-time;
         </para>
       </listitem>
     </itemizedlist>

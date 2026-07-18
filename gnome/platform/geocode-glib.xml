@@ -9,8 +9,8 @@
   <!ENTITY geocode-glib-download-ftp  " ">
   <!ENTITY geocode-glib-md5sum        "4c0dcdb7ee1222435b20acd3d7b68cd1">
   <!ENTITY geocode-glib-size          "76 KB">
-  <!ENTITY geocode-glib-buildsize     "4.6 MB (with tests)">
-  <!ENTITY geocode-glib-time          "0.1 SBU (with tests)">
+  <!ENTITY geocode-glib-buildsize     "4.6 MB（含测试）">
+  <!ENTITY geocode-glib-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="geocode-glib" xreflabel="geocode-glib-&geocode-glib-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&geocode-glib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&geocode-glib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&geocode-glib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&geocode-glib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &geocode-glib-md5sum;
+          MD5 校验和：&geocode-glib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &geocode-glib-size;
+          大小：&geocode-glib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &geocode-glib-buildsize;
+          预计所需磁盘空间：&geocode-glib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &geocode-glib-time;
+          预计构建时间：&geocode-glib-time;
         </para>
       </listitem>
     </itemizedlist>

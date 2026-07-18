@@ -46,32 +46,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xine-ui-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xine-ui-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xine-ui-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xine-ui-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xine-ui-md5sum;
+          MD5 校验和：&xine-ui-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xine-ui-size;
+          大小：&xine-ui-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xine-ui-buildsize;
+          预计所需磁盘空间：&xine-ui-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xine-ui-time;
+          预计构建时间：&xine-ui-time;
         </para>
       </listitem>
     </itemizedlist>

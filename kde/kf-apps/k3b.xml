@@ -55,31 +55,31 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&k3b-download-http;"/></para>
+          下载地址（HTTP）：<ulink url="&k3b-download-http;"/></para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&k3b-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&k3b-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &k3b-md5sum;
+          MD5 校验和：&k3b-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &k3b-size;
+          大小：&k3b-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &k3b-buildsize;
+          预计所需磁盘空间：&k3b-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &k3b-time;
+          预计构建时间：&k3b-time;
         </para>
       </listitem>
     </itemizedlist>

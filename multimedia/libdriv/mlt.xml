@@ -9,7 +9,7 @@
   <!ENTITY mlt-md5sum        "259266dc466af040f33a8019a82b9936">
   <!ENTITY mlt-size          "6.5 MB">
   <!ENTITY mlt-buildsize     "49 MB">
-  <!ENTITY mlt-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY mlt-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="mlt" xreflabel="MLT-&mlt-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mlt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mlt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mlt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mlt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mlt-md5sum;
+          MD5 校验和：&mlt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mlt-size;
+          大小：&mlt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mlt-buildsize;
+          预计所需磁盘空间：&mlt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mlt-time;
+          预计构建时间：&mlt-time;
         </para>
       </listitem>
     </itemizedlist>

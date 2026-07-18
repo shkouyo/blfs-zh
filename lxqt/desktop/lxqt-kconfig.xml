@@ -9,7 +9,7 @@
   <!ENTITY kconfig-md5sum        "d184d34f565a550a57f894775d334031">
   <!ENTITY kconfig-size          "376 KB">
   <!ENTITY kconfig-buildsize     "29 MB">
-  <!ENTITY kconfig-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY kconfig-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-kconfig" xreflabel="kconfig-&kf6-version; for lxqt">
@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kconfig-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kconfig-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kconfig-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kconfig-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kconfig-md5sum;
+          MD5 校验和：&kconfig-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kconfig-size;
+          大小：&kconfig-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kconfig-buildsize;
+          预计所需磁盘空间：&kconfig-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kconfig-time;
+          预计构建时间：&kconfig-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY gmime3-download-ftp  " ">
   <!ENTITY gmime3-md5sum        "f7d6b4ad3253e73c72237fde5bced617">
   <!ENTITY gmime3-size          "2.1 MB">
-  <!ENTITY gmime3-buildsize     "23 MB (with tests)">
-  <!ENTITY gmime3-time          "0.2 SBU (with tests)">
+  <!ENTITY gmime3-buildsize     "23 MB（含测试）">
+  <!ENTITY gmime3-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="gmime3" xreflabel="GMime-&gmime3-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gmime3-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gmime3-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gmime3-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gmime3-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gmime3-md5sum;
+          MD5 校验和：&gmime3-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gmime3-size;
+          大小：&gmime3-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gmime3-buildsize;
+          预计所需磁盘空间：&gmime3-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gmime3-time;
+          预计构建时间：&gmime3-time;
         </para>
       </listitem>
     </itemizedlist>

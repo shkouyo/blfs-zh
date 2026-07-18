@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libkscreen-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libkscreen-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libkscreen-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libkscreen-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libkscreen-md5sum;
+          MD5 校验和：&libkscreen-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libkscreen-size;
+          大小：&libkscreen-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libkscreen-buildsize;
+          预计所需磁盘空间：&libkscreen-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libkscreen-time;
+          预计构建时间：&libkscreen-time;
         </para>
       </listitem>
     </itemizedlist>

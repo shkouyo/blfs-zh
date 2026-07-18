@@ -9,7 +9,7 @@
   <!ENTITY rsync-md5sum        "7357ebabdfc2802a280ee79b94c97cd2">
   <!ENTITY rsync-size          "1.2 MB">
   <!ENTITY rsync-buildsize     "13 MB (with tests; add 52 MB for HTML API documentation)">
-  <!ENTITY rsync-time          "0.6 SBU (with tests)">
+  <!ENTITY rsync-time          "0.6 SBU（含测试）">
 ]>
 
 <sect1 id="rsync" xreflabel="rsync-&rsync-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rsync-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rsync-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&rsync-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&rsync-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rsync-md5sum;
+          MD5 校验和：&rsync-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rsync-size;
+          大小：&rsync-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rsync-buildsize;
+          预计所需磁盘空间：&rsync-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rsync-time;
+          预计构建时间：&rsync-time;
         </para>
       </listitem>
     </itemizedlist>

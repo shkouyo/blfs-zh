@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libblockdev-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libblockdev-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libblockdev-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libblockdev-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libblockdev-md5sum;
+          MD5 校验和：&libblockdev-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libblockdev-size;
+          大小：&libblockdev-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libblockdev-buildsize;
+          预计所需磁盘空间：&libblockdev-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libblockdev-time;
+          预计构建时间：&libblockdev-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY linux-pam-download-ftp  " ">
   <!ENTITY linux-pam-md5sum        "934c26eca3fada956356a30489e86291">
   <!ENTITY linux-pam-size          "500 KB">
-  <!ENTITY linux-pam-buildsize     "16 MB (with tests)">
-  <!ENTITY linux-pam-time          "0.3 SBU (with tests)">
+  <!ENTITY linux-pam-buildsize     "16 MB（含测试）">
+  <!ENTITY linux-pam-time          "0.3 SBU（含测试）">
 
   <!ENTITY linux-pam-docs-download "&sources-anduin-http;/Linux-PAM/Linux-PAM-&linux-pam-docs-version;-docs.tar.xz">
   <!ENTITY linux-pam-docs-md5sum   "8b0c69931e4805ee5c297192c46d0e28">
@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&linux-pam-download-http;"/>
+          下载地址（HTTP）：<ulink url="&linux-pam-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&linux-pam-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&linux-pam-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &linux-pam-md5sum;
+          MD5 校验和：&linux-pam-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &linux-pam-size;
+          大小：&linux-pam-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &linux-pam-buildsize;
+          预计所需磁盘空间：&linux-pam-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &linux-pam-time;
+          预计构建时间：&linux-pam-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -79,17 +79,17 @@
     <title>Optional Documentation</title>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&linux-pam-docs-download;"/>
+          下载地址（HTTP）：<ulink url="&linux-pam-docs-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &linux-pam-docs-md5sum;
+          MD5 校验和：&linux-pam-docs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &linux-pam-docs-size;
+          大小：&linux-pam-docs-size;
         </para>
       </listitem>
     </itemizedlist>

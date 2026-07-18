@@ -8,8 +8,8 @@
   <!ENTITY libsigsegv-download-ftp  " ">
   <!ENTITY libsigsegv-md5sum        "c2885785b3e5d1c94b1adb22b3002ccc">
   <!ENTITY libsigsegv-size          "484 KB">
-  <!ENTITY libsigsegv-buildsize     "3.7 MB (with tests)">
-  <!ENTITY libsigsegv-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libsigsegv-buildsize     "3.7 MB（含测试）">
+  <!ENTITY libsigsegv-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libsigsegv" xreflabel="libsigsegv-&libsigsegv-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsigsegv-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsigsegv-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsigsegv-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsigsegv-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsigsegv-md5sum;
+          MD5 校验和：&libsigsegv-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsigsegv-size;
+          大小：&libsigsegv-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsigsegv-buildsize;
+          预计所需磁盘空间：&libsigsegv-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsigsegv-time;
+          预计构建时间：&libsigsegv-time;
         </para>
       </listitem>
     </itemizedlist>

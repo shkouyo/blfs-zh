@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libspiro-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libspiro-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libspiro-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libspiro-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libspiro-md5sum;
+          MD5 校验和：&libspiro-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libspiro-size;
+          大小：&libspiro-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libspiro-buildsize;
+          预计所需磁盘空间：&libspiro-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libspiro-time;
+          预计构建时间：&libspiro-time;
         </para>
       </listitem>
     </itemizedlist>

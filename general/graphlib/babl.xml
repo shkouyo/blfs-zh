@@ -8,7 +8,7 @@
   <!ENTITY babl-download-ftp  " ">
   <!ENTITY babl-md5sum        "bfe3e2aecbbd419494723495aec586de">
   <!ENTITY babl-size          "320 KB">
-  <!ENTITY babl-buildsize     "17 MB (with tests)">
+  <!ENTITY babl-buildsize     "17 MB（含测试）">
   <!ENTITY babl-time          "0.1 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&babl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&babl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&babl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&babl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &babl-md5sum;
+          MD5 校验和：&babl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &babl-size;
+          大小：&babl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &babl-buildsize;
+          预计所需磁盘空间：&babl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &babl-time;
+          预计构建时间：&babl-time;
         </para>
       </listitem>
     </itemizedlist>

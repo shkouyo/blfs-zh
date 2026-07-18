@@ -10,7 +10,7 @@
   <!ENTITY sassc-md5sum        "4c3b06ce2979f2a9f0a35093e501d8bb">
   <!ENTITY sassc-size          "28 KB">
   <!ENTITY sassc-buildsize     "5.1 MB">
-  <!ENTITY sassc-time          "less than 0.1 SBU">
+  <!ENTITY sassc-time          "小于 0.1 SBU">
 
   <!ENTITY libsass-download-http
            "https://github.com/sass/libsass/archive/&libsass-version;/libsass-&libsass-version;.tar.gz">
@@ -18,7 +18,7 @@
   <!ENTITY libsass-md5sum        "afda97284d75a030cabadf5b9f998a3b">
   <!ENTITY libsass-size          "336 KB">
   <!ENTITY libsass-buildsize     "135 MB">
-  <!ENTITY libsass-time          "0.4 SBU (Using parallelism=4)">
+  <!ENTITY libsass-time          "0.4 SBU（并行度=4）">
 ]>
 
 <sect1 id="sassc" xreflabel="sassc-&sassc-version;">
@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sassc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sassc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sassc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sassc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sassc-md5sum;
+          MD5 校验和：&sassc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sassc-size;
+          大小：&sassc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sassc-buildsize;
+          预计所需磁盘空间：&sassc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sassc-time;
+          预计构建时间：&sassc-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -78,32 +78,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsass-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsass-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsass-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsass-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsass-md5sum;
+          MD5 校验和：&libsass-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsass-size;
+          大小：&libsass-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsass-buildsize;
+          预计所需磁盘空间：&libsass-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsass-time;
+          预计构建时间：&libsass-time;
         </para>
       </listitem>
     </itemizedlist>

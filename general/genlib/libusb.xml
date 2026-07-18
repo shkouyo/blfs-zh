@@ -9,7 +9,7 @@
   <!ENTITY libusb-md5sum        "b0b0bacc2c6919515db8e863f0517db8">
   <!ENTITY libusb-size          "644 KB">
   <!ENTITY libusb-buildsize     "7.8 MB">
-  <!ENTITY libusb-time          "less than 0.1 SBU">
+  <!ENTITY libusb-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libusb" xreflabel="libusb-&libusb-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libusb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libusb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libusb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libusb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libusb-md5sum;
+          MD5 校验和：&libusb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libusb-size;
+          大小：&libusb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libusb-buildsize;
+          预计所需磁盘空间：&libusb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libusb-time;
+          预计构建时间：&libusb-time;
         </para>
       </listitem>
     </itemizedlist>

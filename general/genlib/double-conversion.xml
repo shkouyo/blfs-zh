@@ -8,8 +8,8 @@
   <!ENTITY double-conversion-download-ftp  " ">
   <!ENTITY double-conversion-md5sum        "cb2e555c32614f680ba928e962dda9be">
   <!ENTITY double-conversion-size          "6.7 MB">
-  <!ENTITY double-conversion-buildsize     "62 MB (with tests)">
-  <!ENTITY double-conversion-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY double-conversion-buildsize     "62 MB（含测试）">
+  <!ENTITY double-conversion-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="double-conversion" xreflabel="double-conversion-&double-conversion-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&double-conversion-download-http;"/>
+          下载地址（HTTP）：<ulink url="&double-conversion-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&double-conversion-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&double-conversion-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &double-conversion-md5sum;
+          MD5 校验和：&double-conversion-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &double-conversion-size;
+          大小：&double-conversion-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &double-conversion-buildsize;
+          预计所需磁盘空间：&double-conversion-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &double-conversion-time;
+          预计构建时间：&double-conversion-time;
         </para>
       </listitem>
     </itemizedlist>

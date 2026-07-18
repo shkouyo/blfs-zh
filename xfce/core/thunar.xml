@@ -10,7 +10,7 @@
   <!ENTITY thunar-md5sum        "6c6b958d96de74b5f0369e8b1ff999c1">
   <!ENTITY thunar-size          "4.4 MB">
   <!ENTITY thunar-buildsize     "84 MB">
-  <!ENTITY thunar-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY thunar-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="thunar" xreflabel="thunar-&thunar-version;">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&thunar-download-http;"/>
+          下载地址（HTTP）：<ulink url="&thunar-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&thunar-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&thunar-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &thunar-md5sum;
+          MD5 校验和：&thunar-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &thunar-size;
+          大小：&thunar-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &thunar-buildsize;
+          预计所需磁盘空间：&thunar-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &thunar-time;
+          预计构建时间：&thunar-time;
         </para>
       </listitem>
     </itemizedlist>

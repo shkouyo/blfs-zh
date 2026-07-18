@@ -8,8 +8,8 @@
   <!ENTITY jansson-download-ftp  " ">
   <!ENTITY jansson-md5sum        "d78dc70210ed2052fe1f97cf3fd3ed72">
   <!ENTITY jansson-size          "480 KB">
-  <!ENTITY jansson-buildsize     "8.6 MB (with tests)">
-  <!ENTITY jansson-time          "0.1 SBU (with tests)">
+  <!ENTITY jansson-buildsize     "8.6 MB（含测试）">
+  <!ENTITY jansson-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="jansson" xreflabel="jansson-&jansson-version;">
@@ -34,32 +34,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&jansson-download-http;"/>
+          下载地址（HTTP）：<ulink url="&jansson-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&jansson-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&jansson-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &jansson-md5sum;
+          MD5 校验和：&jansson-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &jansson-size;
+          大小：&jansson-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &jansson-buildsize;
+          预计所需磁盘空间：&jansson-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &jansson-time;
+          预计构建时间：&jansson-time;
         </para>
       </listitem>
     </itemizedlist>

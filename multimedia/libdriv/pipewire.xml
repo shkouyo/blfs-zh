@@ -8,7 +8,7 @@
   <!ENTITY pipewire-download-ftp  " ">
   <!ENTITY pipewire-md5sum        "b6be00b8f901ba8e59d2b4fea100207d">
   <!ENTITY pipewire-size          "2.0 MB">
-  <!ENTITY pipewire-buildsize     "110 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "110 MB（含测试）">
   <!ENTITY pipewire-time          "0.7 SBU (with tests, both using parallelism=4)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pipewire-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pipewire-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pipewire-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pipewire-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pipewire-md5sum;
+          MD5 校验和：&pipewire-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pipewire-size;
+          大小：&pipewire-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pipewire-buildsize;
+          预计所需磁盘空间：&pipewire-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pipewire-time;
+          预计构建时间：&pipewire-time;
         </para>
       </listitem>
     </itemizedlist>

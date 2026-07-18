@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&alsa-utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&alsa-utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&alsa-utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&alsa-utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &alsa-utils-md5sum;
+          MD5 校验和：&alsa-utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &alsa-utils-size;
+          大小：&alsa-utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &alsa-utils-buildsize;
+          预计所需磁盘空间：&alsa-utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &alsa-utils-time;
+          预计构建时间：&alsa-utils-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY glib2-download-ftp  " ">
   <!ENTITY glib2-md5sum        "361297f61b0d1c43dfcce87da8d68703">
   <!ENTITY glib2-size          "5.6 MB">
-  <!ENTITY glib2-buildsize     "430 MB (with tests and documentation)">
+  <!ENTITY glib2-buildsize     "430 MB（包括测试和文档）">
   <!ENTITY glib2-time          "0.7 SBU (add 0.5 SBU for tests; both using parallelism=4)">
 
   <!ENTITY gobject-introspection-download-http
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glib2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glib2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glib2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glib2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glib2-md5sum;
+          MD5 校验和：&glib2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glib2-size;
+          大小：&glib2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glib2-buildsize;
+          预计所需磁盘空间：&glib2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glib2-time;
+          预计构建时间：&glib2-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -86,12 +86,12 @@
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gobject-introspection-md5sum;
+          MD5 校验和：&gobject-introspection-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gobject-introspection-size;
+          大小：&gobject-introspection-size;
         </para>
       </listitem>
     </itemizedlist>

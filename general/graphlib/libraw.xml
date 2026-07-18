@@ -9,7 +9,7 @@
   <!ENTITY libraw-md5sum        "ddd10d171c3517bb5218c1a61ac64ff7">
   <!ENTITY libraw-size          "1.6 MB">
   <!ENTITY libraw-buildsize     "42 MB">
-  <!ENTITY libraw-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY libraw-time          "0.1 SBU（并行度=4）">
   <!ENTITY dcraw-manpage-url    "https://linux.die.net/man/1/dcraw">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libraw-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libraw-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libraw-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libraw-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libraw-md5sum;
+          MD5 校验和：&libraw-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libraw-size;
+          大小：&libraw-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libraw-buildsize;
+          预计所需磁盘空间：&libraw-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libraw-time;
+          预计构建时间：&libraw-time;
         </para>
       </listitem>
     </itemizedlist>

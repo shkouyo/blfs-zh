@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libcdio-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libcdio-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libcdio-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libcdio-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libcdio-md5sum;
+          MD5 校验和：&libcdio-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libcdio-size;
+          大小：&libcdio-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libcdio-buildsize;
+          预计所需磁盘空间：&libcdio-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libcdio-time;
+          预计构建时间：&libcdio-time;
         </para>
       </listitem>
     </itemizedlist>

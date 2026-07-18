@@ -15,7 +15,7 @@
   <!ENTITY nss-download-ftp  " ">
   <!ENTITY nss-md5sum        "b60ca976dbb369fadec72e9a451b2334">
   <!ENTITY nss-size          "75 MB">
-  <!ENTITY nss-buildsize     "399 MB (with tests)">
+  <!ENTITY nss-buildsize     "399 MB（含测试）">
   <!ENTITY nss-time          "0.8 SBU (with parallelism=4, add 8.4 SBU for tests)">
   <!-- Don't know why but I got 27 (i9-10900) - rahul -->
   <!-- On my system, I got 64.2 SBU, but Bruce gets 18 SBU. -renodr -->
@@ -81,32 +81,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nss-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nss-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nss-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nss-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nss-md5sum;
+          MD5 校验和：&nss-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nss-size;
+          大小：&nss-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nss-buildsize;
+          预计所需磁盘空间：&nss-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nss-time;
+          预计构建时间：&nss-time;
         </para>
       </listitem>
     </itemizedlist>

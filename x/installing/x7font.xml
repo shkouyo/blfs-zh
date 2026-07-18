@@ -66,27 +66,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&x7fonts-download-http;"/>
+          下载地址（HTTP）：<ulink url="&x7fonts-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&x7fonts-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&x7fonts-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &x7fonts-size;
+          大小：&x7fonts-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &x7fonts-buildsize;
+          预计所需磁盘空间：&x7fonts-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &x7fonts-time;
+          预计构建时间：&x7fonts-time;
         </para>
       </listitem>
     </itemizedlist>

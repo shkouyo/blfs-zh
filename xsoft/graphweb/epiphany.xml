@@ -9,7 +9,7 @@
   <!ENTITY epiphany-download-ftp  " ">
   <!ENTITY epiphany-md5sum        "7c7f76f6c3ecfa6a4e09b7576d68d172">
   <!ENTITY epiphany-size          "4.3 MB">
-  <!ENTITY epiphany-buildsize     "100 MB (with tests)">
+  <!ENTITY epiphany-buildsize     "100 MB（含测试）">
   <!ENTITY epiphany-time          "0.2 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&epiphany-download-http;"/>
+          下载地址（HTTP）：<ulink url="&epiphany-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&epiphany-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&epiphany-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &epiphany-md5sum;
+          MD5 校验和：&epiphany-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &epiphany-size;
+          大小：&epiphany-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &epiphany-buildsize;
+          预计所需磁盘空间：&epiphany-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &epiphany-time;
+          预计构建时间：&epiphany-time;
         </para>
       </listitem>
     </itemizedlist>

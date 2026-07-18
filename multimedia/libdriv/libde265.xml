@@ -36,27 +36,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libde265-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libde265-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libde265-md5sum;
+          MD5 校验和：&libde265-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libde265-size;
+          大小：&libde265-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libde265-buildsize;
+          预计所需磁盘空间：&libde265-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libde265-time;
+          预计构建时间：&libde265-time;
         </para>
       </listitem>
     </itemizedlist>

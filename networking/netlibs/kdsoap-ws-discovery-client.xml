@@ -35,27 +35,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kdsoap-ws-discovery-client-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kdsoap-ws-discovery-client-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kdsoap-ws-discovery-client-md5sum;
+          MD5 校验和：&kdsoap-ws-discovery-client-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kdsoap-ws-discovery-client-size;
+          大小：&kdsoap-ws-discovery-client-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kdsoap-ws-discovery-client-buildsize;
+          预计所需磁盘空间：&kdsoap-ws-discovery-client-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kdsoap-ws-discovery-client-time;
+          预计构建时间：&kdsoap-ws-discovery-client-time;
         </para>
       </listitem>
     </itemizedlist>

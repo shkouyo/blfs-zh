@@ -51,27 +51,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gst-plugins-rs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gst-plugins-rs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gst-plugins-rs-md5sum;
+          MD5 校验和：&gst-plugins-rs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gst-plugins-rs-size;
+          大小：&gst-plugins-rs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gst-plugins-rs-buildsize;
+          预计所需磁盘空间：&gst-plugins-rs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gst-plugins-rs-time;
+          预计构建时间：&gst-plugins-rs-time;
         </para>
       </listitem>
 <!--

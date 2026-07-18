@@ -8,8 +8,8 @@
   <!ENTITY sc-devhelp-download-ftp  " ">
   <!ENTITY sc-devhelp-md5sum        "&sc-devhelp-md5sum;">
   <!ENTITY sc-devhelp-size          "16 KB">
-  <!ENTITY sc-devhelp-buildsize     "984 MB (with tests)">
-  <!ENTITY sc-devhelp-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY sc-devhelp-buildsize     "984 MB（含测试）">
+  <!ENTITY sc-devhelp-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="sc-devhelp" xreflabel="sphinxcontrib-devhelp-&sc-devhelp-version;">
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&sc-devhelp-download-http;"/>
+            下载地址（HTTP）：<ulink url="&sc-devhelp-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&sc-devhelp-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&sc-devhelp-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &sc-devhelp-md5sum;
+            MD5 校验和：&sc-devhelp-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &sc-devhelp-size;
+            大小：&sc-devhelp-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &sc-devhelp-buildsize;
+            预计所需磁盘空间：&sc-devhelp-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &sc-devhelp-time;
+            预计构建时间：&sc-devhelp-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -97,17 +97,17 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ojdk-download;"/>
+          下载地址（HTTP）：<ulink url="&ojdk-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url=" "/>
+          下载地址（FTP）：<ulink url=" "/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ojdk-md5sum;
+          MD5 校验和：&ojdk-md5sum;
         </para>
       </listitem>
       <listitem>
@@ -117,12 +117,12 @@
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ojdk-bdsize;
+          预计所需磁盘空间：&ojdk-bdsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ojdk-time;
+          预计构建时间：&ojdk-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -141,7 +141,7 @@
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &jtreg-md5sum;
+          MD5 校验和：&jtreg-md5sum;
         </para>
       </listitem>
       <listitem>

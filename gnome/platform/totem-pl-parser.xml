@@ -9,8 +9,8 @@
   <!ENTITY totem-pl-parser-download-ftp  " ">
   <!ENTITY totem-pl-parser-md5sum        "5ec24e9d41984c50f84453a5fc92bafe">
   <!ENTITY totem-pl-parser-size          "1.5 MB">
-  <!ENTITY totem-pl-parser-buildsize     "14 MB (with tests)">
-  <!ENTITY totem-pl-parser-time          "0.1 SBU (with tests)">
+  <!ENTITY totem-pl-parser-buildsize     "14 MB（含测试）">
+  <!ENTITY totem-pl-parser-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="totem-pl-parser" xreflabel="totem-pl-parser-&totem-pl-parser-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&totem-pl-parser-download-http;"/>
+          下载地址（HTTP）：<ulink url="&totem-pl-parser-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&totem-pl-parser-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&totem-pl-parser-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &totem-pl-parser-md5sum;
+          MD5 校验和：&totem-pl-parser-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &totem-pl-parser-size;
+          大小：&totem-pl-parser-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &totem-pl-parser-buildsize;
+          预计所需磁盘空间：&totem-pl-parser-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &totem-pl-parser-time;
+          预计构建时间：&totem-pl-parser-time;
         </para>
       </listitem>
     </itemizedlist>

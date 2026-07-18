@@ -8,8 +8,8 @@
   <!ENTITY libxkbcommon-download-ftp  " ">
   <!ENTITY libxkbcommon-md5sum        "07f838f575d62c267cfc53eaf5ee739b">
   <!ENTITY libxkbcommon-size          "1.2 MB">
-  <!ENTITY libxkbcommon-buildsize     "45 MB (with tests)">
-  <!ENTITY libxkbcommon-time          "0.4 SBU (with tests)">
+  <!ENTITY libxkbcommon-buildsize     "45 MB（含测试）">
+  <!ENTITY libxkbcommon-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="libxkbcommon" xreflabel="libxkbcommon-&libxkbcommon-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxkbcommon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxkbcommon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxkbcommon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxkbcommon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxkbcommon-md5sum;
+          MD5 校验和：&libxkbcommon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxkbcommon-size;
+          大小：&libxkbcommon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxkbcommon-buildsize;
+          预计所需磁盘空间：&libxkbcommon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxkbcommon-time;
+          预计构建时间：&libxkbcommon-time;
         </para>
       </listitem>
     </itemizedlist>

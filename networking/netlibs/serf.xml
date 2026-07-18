@@ -9,7 +9,7 @@
   <!ENTITY serf-md5sum        "5320087299084c297eff8e1dacfab1af">
   <!ENTITY serf-size          "148 KB">
   <!ENTITY serf-buildsize     "2.4 MB">
-  <!ENTITY serf-time          "less than 0.1 SBU">
+  <!ENTITY serf-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="serf" xreflabel="Serf-&serf-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&serf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&serf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&serf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&serf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &serf-md5sum;
+          MD5 校验和：&serf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &serf-size;
+          大小：&serf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &serf-buildsize;
+          预计所需磁盘空间：&serf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &serf-time;
+          预计构建时间：&serf-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnvme-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnvme-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnvme-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnvme-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnvme-md5sum;
+          MD5 校验和：&libnvme-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnvme-size;
+          大小：&libnvme-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnvme-buildsize;
+          预计所需磁盘空间：&libnvme-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnvme-time;
+          预计构建时间：&libnvme-time;
         </para>
       </listitem>
     </itemizedlist>

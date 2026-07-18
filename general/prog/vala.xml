@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&vala-download-http;"/>
+          下载地址（HTTP）：<ulink url="&vala-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&vala-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&vala-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &vala-md5sum;
+          MD5 校验和：&vala-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &vala-size;
+          大小：&vala-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &vala-buildsize;
+          预计所需磁盘空间：&vala-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &vala-time;
+          预计构建时间：&vala-time;
         </para>
       </listitem>
     </itemizedlist>

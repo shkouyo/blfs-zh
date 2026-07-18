@@ -8,8 +8,8 @@
   <!ENTITY chardet-download-ftp  " ">
   <!ENTITY chardet-md5sum        "&chardet-md5sum;">
   <!ENTITY chardet-size          "768 KB">
-  <!ENTITY chardet-buildsize     "63 MB (add 12 MB for tests)">
-  <!ENTITY chardet-time          "less than 0.1 SBU (0.8 SBU for tests)">
+  <!ENTITY chardet-buildsize     "63 MB（测试将额外增加 12 MB）">
+  <!ENTITY chardet-time          "小于 0.1 SBU（测试将额外增加 0.8 SBU）">
 ]>
 
   <sect2 id="chardet" xreflabel="chardet-&chardet-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&chardet-download-http;"/>
+            下载地址（HTTP）：<ulink url="&chardet-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&chardet-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&chardet-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &chardet-md5sum;
+            MD5 校验和：&chardet-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &chardet-size;
+            大小：&chardet-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &chardet-buildsize;
+            预计所需磁盘空间：&chardet-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &chardet-time;
+            预计构建时间：&chardet-time;
           </para>
         </listitem>
       </itemizedlist>

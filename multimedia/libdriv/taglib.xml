@@ -9,7 +9,7 @@
   <!ENTITY taglib-md5sum        "5c38962970c698f8d18beddef0df7f9a">
   <!ENTITY taglib-size          "1.6 MB">
   <!ENTITY taglib-buildsize     "25 MB">
-  <!ENTITY taglib-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY taglib-time          "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="taglib" xreflabel="taglib-&taglib-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&taglib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&taglib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&taglib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&taglib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &taglib-md5sum;
+          MD5 校验和：&taglib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &taglib-size;
+          大小：&taglib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &taglib-buildsize;
+          预计所需磁盘空间：&taglib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &taglib-time;
+          预计构建时间：&taglib-time;
         </para>
       </listitem>
     </itemizedlist>

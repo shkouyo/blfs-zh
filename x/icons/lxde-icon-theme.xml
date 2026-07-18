@@ -9,7 +9,7 @@
   <!ENTITY lxde-icon-theme-md5sum        "7467133275edbbcc79349379235d4411">
   <!ENTITY lxde-icon-theme-size          "4.3 MB">
   <!ENTITY lxde-icon-theme-buildsize     "18 MB">
-  <!ENTITY lxde-icon-theme-time          "less than 0.1 SBU">
+  <!ENTITY lxde-icon-theme-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxde-icon-theme" xreflabel="lxde-icon-theme-&lxde-icon-theme-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxde-icon-theme-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxde-icon-theme-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxde-icon-theme-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxde-icon-theme-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxde-icon-theme-md5sum;
+          MD5 校验和：&lxde-icon-theme-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxde-icon-theme-size;
+          大小：&lxde-icon-theme-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxde-icon-theme-buildsize;
+          预计所需磁盘空间：&lxde-icon-theme-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxde-icon-theme-time;
+          预计构建时间：&lxde-icon-theme-time;
         </para>
       </listitem>
     </itemizedlist>

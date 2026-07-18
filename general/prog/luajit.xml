@@ -35,27 +35,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&luajit-download-http;"/>
+          下载地址（HTTP）：<ulink url="&luajit-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &luajit-md5sum;
+          MD5 校验和：&luajit-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &luajit-size;
+          大小：&luajit-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &luajit-buildsize;
+          预计所需磁盘空间：&luajit-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &luajit-time;
+          预计构建时间：&luajit-time;
         </para>
       </listitem>
     </itemizedlist>

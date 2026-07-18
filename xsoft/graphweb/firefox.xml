@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&firefox-download-http;"/>
+          下载地址（HTTP）：<ulink url="&firefox-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&firefox-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&firefox-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &firefox-md5sum;
+          MD5 校验和：&firefox-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &firefox-size;
+          大小：&firefox-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &firefox-buildsize;
+          预计所需磁盘空间：&firefox-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &firefox-time;
+          预计构建时间：&firefox-time;
         </para>
       </listitem>
     </itemizedlist>

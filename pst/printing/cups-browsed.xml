@@ -10,7 +10,7 @@
   <!ENTITY cups-browsed-md5sum        "293948973ebfc7ef4d5d8242d5733181">
   <!ENTITY cups-browsed-size          "412 KB">
   <!ENTITY cups-browsed-buildsize     "5.3 MB">
-  <!ENTITY cups-browsed-time          "less than 0.1 SBU (Using parallelism=4)">
+  <!ENTITY cups-browsed-time          "小于 0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="cups-browsed" xreflabel="cups-browsed-&cups-browsed-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cups-browsed-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cups-browsed-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cups-browsed-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cups-browsed-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cups-browsed-md5sum;
+          MD5 校验和：&cups-browsed-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cups-browsed-size;
+          大小：&cups-browsed-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cups-browsed-buildsize;
+          预计所需磁盘空间：&cups-browsed-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cups-browsed-time;
+          预计构建时间：&cups-browsed-time;
         </para>
       </listitem>
     </itemizedlist>

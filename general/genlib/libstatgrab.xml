@@ -8,7 +8,7 @@
   <!ENTITY libstatgrab-download-ftp  " ">
   <!ENTITY libstatgrab-md5sum        "af685494e985229e0ac46365bc0cd50e">
   <!ENTITY libstatgrab-size          "800 KB">
-  <!ENTITY libstatgrab-buildsize     "7.6 MB (with tests)">
+  <!ENTITY libstatgrab-buildsize     "7.6 MB（含测试）">
   <!ENTITY libstatgrab-time          "0.1 SBU (add 1.5 SBU for tests)">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libstatgrab-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libstatgrab-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libstatgrab-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libstatgrab-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libstatgrab-md5sum;
+          MD5 校验和：&libstatgrab-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libstatgrab-size;
+          大小：&libstatgrab-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libstatgrab-buildsize;
+          预计所需磁盘空间：&libstatgrab-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libstatgrab-time;
+          预计构建时间：&libstatgrab-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY libssh2-download-ftp  " ">
   <!ENTITY libssh2-md5sum        "38857d10b5c5deb198d6989dacace2e6">
   <!ENTITY libssh2-size          "1.0 MB">
-  <!ENTITY libssh2-buildsize     "15 MB (with tests)">
-  <!ENTITY libssh2-time          "0.2 SBU (with tests)">
+  <!ENTITY libssh2-buildsize     "15 MB（含测试）">
+  <!ENTITY libssh2-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="libssh2" xreflabel="libssh2-&libssh2-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libssh2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libssh2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libssh2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libssh2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libssh2-md5sum;
+          MD5 校验和：&libssh2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libssh2-size;
+          大小：&libssh2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libssh2-buildsize;
+          预计所需磁盘空间：&libssh2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libssh2-time;
+          预计构建时间：&libssh2-time;
         </para>
       </listitem>
     </itemizedlist>

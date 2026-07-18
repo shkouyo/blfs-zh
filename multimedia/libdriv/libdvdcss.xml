@@ -9,7 +9,7 @@
   <!ENTITY libdvdcss-md5sum        "ebfde11e35a0975d900bfb03f0297fc7">
   <!ENTITY libdvdcss-size          "80 KB">
   <!ENTITY libdvdcss-buildsize     "1.0 MB">
-  <!ENTITY libdvdcss-time          "less than 0.1 SBU">
+  <!ENTITY libdvdcss-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libdvdcss" xreflabel="libdvdcss-&libdvdcss-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdvdcss-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdvdcss-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdvdcss-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdvdcss-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdvdcss-md5sum;
+          MD5 校验和：&libdvdcss-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdvdcss-size;
+          大小：&libdvdcss-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdvdcss-buildsize;
+          预计所需磁盘空间：&libdvdcss-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdvdcss-time;
+          预计构建时间：&libdvdcss-time;
         </para>
       </listitem>
     </itemizedlist>

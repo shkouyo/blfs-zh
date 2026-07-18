@@ -9,7 +9,7 @@
   <!ENTITY sgml-dtd-md5sum        "07c581f4bbcba6d3aac85360a19f95f7">
   <!ENTITY sgml-dtd-size          "70 KB">
   <!ENTITY sgml-dtd-buildsize     "784 KB">
-  <!ENTITY sgml-dtd-time          "less than 0.1 SBU">
+  <!ENTITY sgml-dtd-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="sgml-dtd" xreflabel="docbook-&docbook-4.5-dtd-version;-dtd">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sgml-dtd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sgml-dtd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sgml-dtd-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sgml-dtd-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sgml-dtd-md5sum;
+          MD5 校验和：&sgml-dtd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sgml-dtd-size;
+          大小：&sgml-dtd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sgml-dtd-buildsize;
+          预计所需磁盘空间：&sgml-dtd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sgml-dtd-time;
+          预计构建时间：&sgml-dtd-time;
         </para>
       </listitem>
     </itemizedlist>

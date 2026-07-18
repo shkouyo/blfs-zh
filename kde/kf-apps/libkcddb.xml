@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libkcddb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libkcddb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libkcddb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libkcddb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libkcddb-md5sum;
+          MD5 校验和：&libkcddb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libkcddb-size;
+          大小：&libkcddb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libkcddb-buildsize;
+          预计所需磁盘空间：&libkcddb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libkcddb-time;
+          预计构建时间：&libkcddb-time;
         </para>
       </listitem>
     </itemizedlist>

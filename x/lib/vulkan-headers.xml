@@ -9,7 +9,7 @@
   <!ENTITY vulkan-headers-md5sum        "169324193a80736af5764b5ba470a0c9">
   <!ENTITY vulkan-headers-size          "3.2 MB">
   <!ENTITY vulkan-headers-buildsize     "80 MB">
-  <!ENTITY vulkan-headers-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY vulkan-headers-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="vulkan-headers" xreflabel="Vulkan-Headers-&vulkan-headers-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&vulkan-headers-download-http;"/>
+          下载地址（HTTP）：<ulink url="&vulkan-headers-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&vulkan-headers-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&vulkan-headers-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &vulkan-headers-md5sum;
+          MD5 校验和：&vulkan-headers-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &vulkan-headers-size;
+          大小：&vulkan-headers-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &vulkan-headers-buildsize;
+          预计所需磁盘空间：&vulkan-headers-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &vulkan-headers-time;
+          预计构建时间：&vulkan-headers-time;
         </para>
       </listitem>
     </itemizedlist>

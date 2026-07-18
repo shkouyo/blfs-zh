@@ -9,7 +9,7 @@
   <!ENTITY balsa-md5sum        "c1039c22e8c2544c6a357626d71b6220">
   <!ENTITY balsa-size          "6.0 MB">
   <!ENTITY balsa-buildsize     "44 MB">
-  <!ENTITY balsa-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY balsa-time          "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="balsa" xreflabel="Balsa-&balsa-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&balsa-download-http;"/>
+          下载地址（HTTP）：<ulink url="&balsa-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&balsa-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&balsa-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &balsa-md5sum;
+          MD5 校验和：&balsa-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &balsa-size;
+          大小：&balsa-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &balsa-buildsize;
+          预计所需磁盘空间：&balsa-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &balsa-time;
+          预计构建时间：&balsa-time;
         </para>
       </listitem>
     </itemizedlist>

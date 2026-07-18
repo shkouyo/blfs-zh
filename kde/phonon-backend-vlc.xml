@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&phonon-backend-vlc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&phonon-backend-vlc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&phonon-backend-vlc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&phonon-backend-vlc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &phonon-backend-vlc-md5sum;
+          MD5 校验和：&phonon-backend-vlc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &phonon-backend-vlc-size;
+          大小：&phonon-backend-vlc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &phonon-backend-vlc-buildsize;
+          预计所需磁盘空间：&phonon-backend-vlc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &phonon-backend-vlc-time;
+          预计构建时间：&phonon-backend-vlc-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&screengrab-download-http;"/>
+          下载地址（HTTP）：<ulink url="&screengrab-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&screengrab-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&screengrab-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &screengrab-md5sum;
+          MD5 校验和：&screengrab-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &screengrab-size;
+          大小：&screengrab-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &screengrab-buildsize;
+          预计所需磁盘空间：&screengrab-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &screengrab-time;
+          预计构建时间：&screengrab-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY protobuf-md5sum        "8d1f93c3aa115cd14ab4dc00a93567c5">
   <!ENTITY protobuf-size          "6.9 MB">
   <!ENTITY protobuf-buildsize     "116 MB">
-  <!ENTITY protobuf-time          "1.2 SBU (with parallelism=4)">
+  <!ENTITY protobuf-time          "1.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="protobuf" xreflabel="Protobuf-&protobuf-version;">
@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&protobuf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&protobuf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &protobuf-md5sum;
+          MD5 校验和：&protobuf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &protobuf-size;
+          大小：&protobuf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &protobuf-buildsize;
+          预计所需磁盘空间：&protobuf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &protobuf-time;
+          预计构建时间：&protobuf-time;
         </para>
       </listitem>
     </itemizedlist>

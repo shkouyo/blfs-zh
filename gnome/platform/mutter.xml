@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mutter-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mutter-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mutter-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mutter-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mutter-md5sum;
+          MD5 校验和：&mutter-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mutter-size;
+          大小：&mutter-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mutter-buildsize;
+          预计所需磁盘空间：&mutter-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mutter-time;
+          预计构建时间：&mutter-time;
         </para>
       </listitem>
     </itemizedlist>

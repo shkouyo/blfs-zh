@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&zsh-download-http;"/>
+          下载地址（HTTP）：<ulink url="&zsh-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&zsh-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&zsh-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &zsh-md5sum;
+          MD5 校验和：&zsh-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &zsh-size;
+          大小：&zsh-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &zsh-buildsize;
+          预计所需磁盘空间：&zsh-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &zsh-time;
+          预计构建时间：&zsh-time;
         </para>
       </listitem>
     </itemizedlist>

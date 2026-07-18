@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lximage-qt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lximage-qt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lximage-qt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lximage-qt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lximage-qt-md5sum;
+          MD5 校验和：&lximage-qt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lximage-qt-size;
+          大小：&lximage-qt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lximage-qt-buildsize;
+          预计所需磁盘空间：&lximage-qt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lximage-qt-time;
+          预计构建时间：&lximage-qt-time;
         </para>
       </listitem>
     </itemizedlist>

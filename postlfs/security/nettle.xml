@@ -8,7 +8,7 @@
   <!ENTITY nettle-download-ftp  " ">
   <!ENTITY nettle-md5sum        "144401453f9f35e53938bcacfc59800e">
   <!ENTITY nettle-size          "2.5 MB">
-  <!ENTITY nettle-buildsize     "106 MB (with tests)">
+  <!ENTITY nettle-buildsize     "106 MB（含测试）">
   <!ENTITY nettle-time          "0.3 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nettle-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nettle-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nettle-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nettle-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nettle-md5sum;
+          MD5 校验和：&nettle-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nettle-size;
+          大小：&nettle-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nettle-buildsize;
+          预计所需磁盘空间：&nettle-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nettle-time;
+          预计构建时间：&nettle-time;
         </para>
       </listitem>
     </itemizedlist>

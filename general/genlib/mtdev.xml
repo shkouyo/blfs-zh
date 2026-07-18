@@ -9,7 +9,7 @@
   <!ENTITY mtdev-md5sum        "483ed7fdf7c1e7b7375c05a62848cce7">
   <!ENTITY mtdev-size          "296 KB">
   <!ENTITY mtdev-buildsize     "2.5 MB">
-  <!ENTITY mtdev-time          "less than 0.1 SBU">
+  <!ENTITY mtdev-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="mtdev" xreflabel="mtdev-&mtdev-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mtdev-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mtdev-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mtdev-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mtdev-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mtdev-md5sum;
+          MD5 校验和：&mtdev-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mtdev-size;
+          大小：&mtdev-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mtdev-buildsize;
+          预计所需磁盘空间：&mtdev-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mtdev-time;
+          预计构建时间：&mtdev-time;
         </para>
       </listitem>
     </itemizedlist>

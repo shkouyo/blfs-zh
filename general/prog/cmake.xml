@@ -8,7 +8,7 @@
   <!ENTITY cmake-download-ftp  " ">
   <!ENTITY cmake-md5sum        "971d5af514d207cd383e47499d2c6f79">
   <!ENTITY cmake-size          "13 MB">
-  <!ENTITY cmake-buildsize     "2.2 GB (with tests)">
+  <!ENTITY cmake-buildsize     "2.2 GB（含测试）">
   <!ENTITY cmake-time          "2.2 SBU (add 4.3 SBU for tests, both using parallelism=4)">
 ]>
 
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cmake-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cmake-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cmake-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cmake-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cmake-md5sum;
+          MD5 校验和：&cmake-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cmake-size;
+          大小：&cmake-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cmake-buildsize;
+          预计所需磁盘空间：&cmake-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cmake-time;
+          预计构建时间：&cmake-time;
         </para>
       </listitem>
     </itemizedlist>

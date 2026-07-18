@@ -9,7 +9,7 @@
   <!ENTITY json-c-md5sum        "5678f1373ba51e0041b574c0411c696b">
   <!ENTITY json-c-size          "452 KB">
   <!ENTITY json-c-buildsize     "12 MB">
-  <!ENTITY json-c-time          "0.2 SBU (with tests)">
+  <!ENTITY json-c-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="json-c" xreflabel="json-c-&json-c-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&json-c-download-http;"/>
+          下载地址（HTTP）：<ulink url="&json-c-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&json-c-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&json-c-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &json-c-md5sum;
+          MD5 校验和：&json-c-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &json-c-size;
+          大小：&json-c-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &json-c-buildsize;
+          预计所需磁盘空间：&json-c-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &json-c-time;
+          预计构建时间：&json-c-time;
         </para>
       </listitem>
     </itemizedlist>

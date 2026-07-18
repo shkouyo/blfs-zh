@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgxps-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgxps-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgxps-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgxps-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgxps-md5sum;
+          MD5 校验和：&libgxps-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgxps-size;
+          大小：&libgxps-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgxps-buildsize;
+          预计所需磁盘空间：&libgxps-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgxps-time;
+          预计构建时间：&libgxps-time;
         </para>
       </listitem>
     </itemizedlist>

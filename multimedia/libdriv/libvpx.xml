@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libvpx-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libvpx-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libvpx-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libvpx-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libvpx-md5sum;
+          MD5 校验和：&libvpx-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libvpx-size;
+          大小：&libvpx-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libvpx-buildsize;
+          预计所需磁盘空间：&libvpx-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libvpx-time;
+          预计构建时间：&libvpx-time;
         </para>
       </listitem>
     </itemizedlist>

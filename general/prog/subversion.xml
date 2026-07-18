@@ -48,32 +48,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&subversion-download-http;"/>
+          下载地址（HTTP）：<ulink url="&subversion-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&subversion-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&subversion-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &subversion-md5sum;
+          MD5 校验和：&subversion-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &subversion-size;
+          大小：&subversion-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &subversion-buildsize;
+          预计所需磁盘空间：&subversion-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &subversion-time;
+          预计构建时间：&subversion-time;
         </para>
       </listitem>
     </itemizedlist>

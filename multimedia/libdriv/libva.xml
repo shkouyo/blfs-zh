@@ -11,7 +11,7 @@
   <!ENTITY libva-md5sum        "5245939ad4dc55017a34ec2e82bccd59">
   <!ENTITY libva-size          "300 KB">
   <!ENTITY libva-buildsize     "4.6 MB">
-  <!ENTITY libva-time          "less than 0.1 SBU">
+  <!ENTITY libva-time          "小于 0.1 SBU">
 ]>
 
   <sect1 id="libva" xreflabel="libva-&libva-version;">
@@ -49,32 +49,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&libva-download-http;"/>
+            下载地址（HTTP）：<ulink url="&libva-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&libva-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&libva-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &libva-md5sum;
+            MD5 校验和：&libva-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &libva-size;
+            大小：&libva-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &libva-buildsize;
+            预计所需磁盘空间：&libva-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &libva-time;
+            预计构建时间：&libva-time;
           </para>
         </listitem>
       </itemizedlist>

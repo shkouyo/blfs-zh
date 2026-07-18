@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&imlib2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&imlib2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&imlib2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&imlib2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &imlib2-md5sum;
+          MD5 校验和：&imlib2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &imlib2-size;
+          大小：&imlib2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &imlib2-buildsize;
+          预计所需磁盘空间：&imlib2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &imlib2-time;
+          预计构建时间：&imlib2-time;
         </para>
       </listitem>
     </itemizedlist>

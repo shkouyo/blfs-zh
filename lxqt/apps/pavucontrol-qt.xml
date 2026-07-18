@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pavucontrol-qt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pavucontrol-qt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pavucontrol-qt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pavucontrol-qt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pavucontrol-qt-md5sum;
+          MD5 校验和：&pavucontrol-qt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pavucontrol-qt-size;
+          大小：&pavucontrol-qt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pavucontrol-qt-buildsize;
+          预计所需磁盘空间：&pavucontrol-qt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pavucontrol-qt-time;
+          预计构建时间：&pavucontrol-qt-time;
         </para>
       </listitem>
     </itemizedlist>

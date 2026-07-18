@@ -39,27 +39,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wlroots-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wlroots-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wlroots-md5sum;
+          MD5 校验和：&wlroots-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wlroots-size;
+          大小：&wlroots-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wlroots-buildsize;
+          预计所需磁盘空间：&wlroots-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wlroots-time;
+          预计构建时间：&wlroots-time;
         </para>
       </listitem>
     </itemizedlist>

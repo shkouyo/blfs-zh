@@ -9,7 +9,7 @@
   <!ENTITY nspr-md5sum        "a1062dbc7d0fa524f0db6f254b747e45">
   <!ENTITY nspr-size          "992 KB">
   <!ENTITY nspr-buildsize     "11 MB">
-  <!ENTITY nspr-time          "less than 0.1 SBU">
+  <!ENTITY nspr-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="nspr" xreflabel="NSPR-&nspr-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nspr-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nspr-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nspr-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nspr-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nspr-md5sum;
+          MD5 校验和：&nspr-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-         Download size: &nspr-size;
+         大小：&nspr-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nspr-buildsize;
+          预计所需磁盘空间：&nspr-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nspr-time;
+          预计构建时间：&nspr-time;
         </para>
       </listitem>
     </itemizedlist>

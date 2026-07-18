@@ -8,7 +8,7 @@
   <!ENTITY highway-md5sum        "9d335797777e17f827c7980b8313a34b">
   <!ENTITY highway-size          "3.6 MB">
   <!ENTITY highway-buildsize     "41 MB">
-  <!ENTITY highway-time          "0.6 SBU (with parallelism=4)">
+  <!ENTITY highway-time          "0.6 SBU（并行度=4）">
 ]>
 
 <sect1 id="highway" xreflabel="highway-&highway-version;">
@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&highway-download-http;"/>
+          下载地址（HTTP）：<ulink url="&highway-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &highway-md5sum;
+          MD5 校验和：&highway-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &highway-size;
+          大小：&highway-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &highway-buildsize;
+          预计所需磁盘空间：&highway-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &highway-time;
+          预计构建时间：&highway-time;
         </para>
       </listitem>
     </itemizedlist>

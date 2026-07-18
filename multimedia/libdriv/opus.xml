@@ -8,8 +8,8 @@
   <!ENTITY opus-download-ftp  " ">
   <!ENTITY opus-md5sum        "67cafc438c430aa74eeb605eef670886">
   <!ENTITY opus-size          "10 MB">
-  <!ENTITY opus-buildsize     "41 MB (with tests)">
-  <!ENTITY opus-time          "0.5 SBU (with tests)">
+  <!ENTITY opus-buildsize     "41 MB（含测试）">
+  <!ENTITY opus-time          "0.5 SBU（含测试）">
 ]>
 
 <sect1 id="opus" xreflabel="Opus-&opus-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&opus-download-http;"/>
+          下载地址（HTTP）：<ulink url="&opus-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&opus-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&opus-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &opus-md5sum;
+          MD5 校验和：&opus-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &opus-size;
+          大小：&opus-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &opus-buildsize;
+          预计所需磁盘空间：&opus-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &opus-time;
+          预计构建时间：&opus-time;
         </para>
       </listitem>
     </itemizedlist>

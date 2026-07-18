@@ -8,8 +8,8 @@
   <!ENTITY dbus-glib-download-ftp  " ">
   <!ENTITY dbus-glib-md5sum        "188792077e880a8c0359288d7819dab3">
   <!ENTITY dbus-glib-size          "724 KB">
-  <!ENTITY dbus-glib-buildsize     "11 MB (with tests)">
-  <!ENTITY dbus-glib-time          "0.1 SBU (with tests)">
+  <!ENTITY dbus-glib-buildsize     "11 MB（含测试）">
+  <!ENTITY dbus-glib-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="dbus-glib" xreflabel="dbus-glib-&dbus-glib-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dbus-glib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dbus-glib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dbus-glib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dbus-glib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dbus-glib-md5sum;
+          MD5 校验和：&dbus-glib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dbus-glib-size;
+          大小：&dbus-glib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dbus-glib-buildsize;
+          预计所需磁盘空间：&dbus-glib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dbus-glib-time;
+          预计构建时间：&dbus-glib-time;
         </para>
       </listitem>
     </itemizedlist>

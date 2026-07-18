@@ -10,7 +10,7 @@
   <!ENTITY evince-md5sum        "5df36228e83ac93a5860f013af50c5c8">
   <!ENTITY evince-size          "2.9 MB">
   <!ENTITY evince-buildsize     "90 MB">
-  <!ENTITY evince-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY evince-time          "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="evince" xreflabel="Evince-&evince-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&evince-download-http;"/>
+          下载地址（HTTP）：<ulink url="&evince-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&evince-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&evince-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &evince-md5sum;
+          MD5 校验和：&evince-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &evince-size;
+          大小：&evince-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &evince-buildsize;
+          预计所需磁盘空间：&evince-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &evince-time;
+          预计构建时间：&evince-time;
         </para>
       </listitem>
     </itemizedlist>

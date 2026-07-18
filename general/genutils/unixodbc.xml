@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&unixodbc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&unixodbc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&unixodbc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&unixodbc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &unixodbc-md5sum;
+          MD5 校验和：&unixodbc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &unixodbc-size;
+          大小：&unixodbc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &unixodbc-buildsize;
+          预计所需磁盘空间：&unixodbc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &unixodbc-time;
+          预计构建时间：&unixodbc-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -10,7 +10,7 @@
   <!ENTITY ristretto-md5sum        "63b94c3e3fab28c4533697f36ee6caa2">
   <!ENTITY ristretto-size          "280 KB">
   <!ENTITY ristretto-buildsize     "5.5 MB">
-  <!ENTITY ristretto-time          "less than 0.1 SBU">
+  <!ENTITY ristretto-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="ristretto" xreflabel="ristretto-&ristretto-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ristretto-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ristretto-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ristretto-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ristretto-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ristretto-md5sum;
+          MD5 校验和：&ristretto-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ristretto-size;
+          大小：&ristretto-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ristretto-buildsize;
+          预计所需磁盘空间：&ristretto-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ristretto-time;
+          预计构建时间：&ristretto-time;
         </para>
       </listitem>
     </itemizedlist>

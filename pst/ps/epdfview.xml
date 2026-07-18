@@ -9,7 +9,7 @@
   <!ENTITY epdfview-md5sum        "d222a3dc26c2faf6f862018bb478fb36">
   <!ENTITY epdfview-size          "184 KB">
   <!ENTITY epdfview-buildsize     "3.5 MB">
-  <!ENTITY epdfview-time          "less than 0.1 SBU (using parallelism=4)">
+  <!ENTITY epdfview-time          "小于 0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="epdfview" xreflabel="epdfview-&epdfview-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&epdfview-download-http;"/>
+          下载地址（HTTP）：<ulink url="&epdfview-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&epdfview-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&epdfview-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &epdfview-md5sum;
+          MD5 校验和：&epdfview-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &epdfview-size;
+          大小：&epdfview-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &epdfview-buildsize;
+          预计所需磁盘空间：&epdfview-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &epdfview-time;
+          预计构建时间：&epdfview-time;
         </para>
       </listitem>
     </itemizedlist>

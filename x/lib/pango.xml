@@ -8,8 +8,8 @@
   <!ENTITY pango-download-ftp  " ">
   <!ENTITY pango-md5sum        "077834dd91c98fe4638deb99515c20d2">
   <!ENTITY pango-size          "2.5 MB">
-  <!ENTITY pango-buildsize     "65 MB (with tests)">
-  <!ENTITY pango-time          "less than 0.1 SBU (Using parallelism=4; with tests)">
+  <!ENTITY pango-buildsize     "65 MB（含测试）">
+  <!ENTITY pango-time          "小于 0.1 SBU（并行度=4；包含测试）">
 ]>
 
 <sect1 id="pango" xreflabel="Pango-&pango-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pango-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pango-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pango-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pango-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pango-md5sum;
+          MD5 校验和：&pango-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pango-size;
+          大小：&pango-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pango-buildsize;
+          预计所需磁盘空间：&pango-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pango-time;
+          预计构建时间：&pango-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -44,32 +44,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&libinput-download-http;"/>
+            下载地址（HTTP）：<ulink url="&libinput-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&libinput-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&libinput-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &libinput-md5sum;
+            MD5 校验和：&libinput-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &libinput-size;
+            大小：&libinput-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &libinput-buildsize;
+            预计所需磁盘空间：&libinput-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &libinput-time;
+            预计构建时间：&libinput-time;
           </para>
         </listitem>
       </itemizedlist>

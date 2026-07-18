@@ -9,7 +9,7 @@
   <!ENTITY gnome-control-center-download-ftp  " ">
   <!ENTITY gnome-control-center-md5sum        "0b7cad81105fde1027d0bd64cd9fb00a">
   <!ENTITY gnome-control-center-size          "6.8 MB">
-  <!ENTITY gnome-control-center-buildsize     "140 MB (with tests)">
+  <!ENTITY gnome-control-center-buildsize     "140 MB（含测试）">
   <!ENTITY gnome-control-center-time          "0.6 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-control-center-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-control-center-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-control-center-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-control-center-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-control-center-md5sum;
+          MD5 校验和：&gnome-control-center-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-control-center-size;
+          大小：&gnome-control-center-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-control-center-buildsize;
+          预计所需磁盘空间：&gnome-control-center-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-control-center-time;
+          预计构建时间：&gnome-control-center-time;
         </para>
       </listitem>
     </itemizedlist>

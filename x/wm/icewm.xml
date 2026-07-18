@@ -9,7 +9,7 @@
   <!ENTITY icewm-md5sum        "acf29c16cd20dc0cc8585215a3e63e5f">
   <!ENTITY icewm-size          "2.5 MB">
   <!ENTITY icewm-buildsize     "53 MB">
-  <!ENTITY icewm-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY icewm-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="icewm" xreflabel="IceWM-&icewm-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&icewm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&icewm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&icewm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&icewm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &icewm-md5sum;
+          MD5 校验和：&icewm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &icewm-size;
+          大小：&icewm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &icewm-buildsize;
+          预计所需磁盘空间：&icewm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &icewm-time;
+          预计构建时间：&icewm-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lvm2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lvm2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lvm2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lvm2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lvm2-md5sum;
+          MD5 校验和：&lvm2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lvm2-size;
+          大小：&lvm2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lvm2-buildsize;
+          预计所需磁盘空间：&lvm2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lvm2-time;
+          预计构建时间：&lvm2-time;
         </para>
       </listitem>
     </itemizedlist>

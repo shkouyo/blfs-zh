@@ -38,27 +38,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&openbox-download-http;"/>
+          下载地址（HTTP）：<ulink url="&openbox-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &openbox-md5sum;
+          MD5 校验和：&openbox-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &openbox-size;
+          大小：&openbox-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &openbox-buildsize;
+          预计所需磁盘空间：&openbox-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &openbox-time;
+          预计构建时间：&openbox-time;
         </para>
       </listitem>
     </itemizedlist>

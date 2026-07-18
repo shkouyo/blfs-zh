@@ -9,7 +9,7 @@
   <!ENTITY lxqt-menu-data-md5sum        "bfb146f255c3c670f2b2c56c2515ce3c">
   <!ENTITY lxqt-menu-data-size          "56 KB">
   <!ENTITY lxqt-menu-data-buildsize     "1.8 MB">
-  <!ENTITY lxqt-menu-data-time          "less than 0.1 SBU">
+  <!ENTITY lxqt-menu-data-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxqt-menu-data" xreflabel="lxqt-menu-data-&lxqt-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-menu-data-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-menu-data-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-menu-data-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-menu-data-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-menu-data-md5sum;
+          MD5 校验和：&lxqt-menu-data-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-menu-data-size;
+          大小：&lxqt-menu-data-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-menu-data-buildsize;
+          预计所需磁盘空间：&lxqt-menu-data-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-menu-data-time;
+          预计构建时间：&lxqt-menu-data-time;
         </para>
       </listitem>
     </itemizedlist>

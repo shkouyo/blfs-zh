@@ -8,8 +8,8 @@
   <!ENTITY docutils-download-ftp  " ">
   <!ENTITY docutils-md5sum        "39d10acfd1fc81b87f5de84418b88be9">
   <!ENTITY docutils-size          "2.2 MB">
-  <!ENTITY docutils-buildsize     "15 MB (with tests)">
-  <!ENTITY docutils-time          "less than 0.1 SBU">
+  <!ENTITY docutils-buildsize     "15 MB（含测试）">
+  <!ENTITY docutils-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin docutils -->
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&docutils-download-http;"/>
+            下载地址（HTTP）：<ulink url="&docutils-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&docutils-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&docutils-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &docutils-md5sum;
+            MD5 校验和：&docutils-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &docutils-size;
+            大小：&docutils-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &docutils-buildsize;
+            预计所需磁盘空间：&docutils-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &docutils-time;
+            预计构建时间：&docutils-time;
           </para>
         </listitem>
       </itemizedlist>

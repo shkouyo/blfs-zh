@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-autoar-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-autoar-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-autoar-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-autoar-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-autoar-md5sum;
+          MD5 校验和：&gnome-autoar-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-autoar-size;
+          大小：&gnome-autoar-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-autoar-buildsize;
+          预计所需磁盘空间：&gnome-autoar-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-autoar-time;
+          预计构建时间：&gnome-autoar-time;
         </para>
       </listitem>
     </itemizedlist>

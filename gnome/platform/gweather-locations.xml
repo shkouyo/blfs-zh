@@ -10,7 +10,7 @@
   <!ENTITY gweather-locations-md5sum        "6d600c6af383b611a17e5828adca81a9">
   <!ENTITY gweather-locations-size          "2.5 MB">
   <!ENTITY gweather-locations-buildsize     "65 MB">
-  <!ENTITY gweather-locations-time          "less than 0.1 SBU">
+  <!ENTITY gweather-locations-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gweather-locations" xreflabel="gweather-locations-&gweather-locations-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gweather-locations-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gweather-locations-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gweather-locations-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gweather-locations-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gweather-locations-md5sum;
+          MD5 校验和：&gweather-locations-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gweather-locations-size;
+          大小：&gweather-locations-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gweather-locations-buildsize;
+          预计所需磁盘空间：&gweather-locations-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gweather-locations-time;
+          预计构建时间：&gweather-locations-time;
         </para>
       </listitem>
     </itemizedlist>

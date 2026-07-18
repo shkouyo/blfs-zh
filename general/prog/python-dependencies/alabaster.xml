@@ -9,7 +9,7 @@
   <!ENTITY alabaster-md5sum        "&alabaster-md5sum;">
   <!ENTITY alabaster-size          "24 KB">
   <!ENTITY alabaster-buildsize     "160 KB">
-  <!ENTITY alabaster-time          "less than 0.1 SBU">
+  <!ENTITY alabaster-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="alabaster" xreflabel="alabaster-&alabaster-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&alabaster-download-http;"/>
+            下载地址（HTTP）：<ulink url="&alabaster-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&alabaster-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&alabaster-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &alabaster-md5sum;
+            MD5 校验和：&alabaster-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &alabaster-size;
+            大小：&alabaster-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &alabaster-buildsize;
+            预计所需磁盘空间：&alabaster-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &alabaster-time;
+            预计构建时间：&alabaster-time;
           </para>
         </listitem>
       </itemizedlist>

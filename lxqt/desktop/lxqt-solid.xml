@@ -9,7 +9,7 @@
   <!ENTITY solid-md5sum        "dc8d2c5864ace71f21fd4283014d9bf1">
   <!ENTITY solid-size          "308 KB">
   <!ENTITY solid-buildsize     "38 MB">
-  <!ENTITY solid-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY solid-time          "0.5 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-solid" xreflabel="solid-&kf6-solid-version; for lxqt">
@@ -46,32 +46,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&solid-download-http;"/>
+          下载地址（HTTP）：<ulink url="&solid-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&solid-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&solid-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &solid-md5sum;
+          MD5 校验和：&solid-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &solid-size;
+          大小：&solid-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &solid-buildsize;
+          预计所需磁盘空间：&solid-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &solid-time;
+          预计构建时间：&solid-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -10,7 +10,7 @@
   <!ENTITY adwaita-icon-theme-md5sum        "a03d8d68377a88fcf06e090ba6a6ec2f">
   <!ENTITY adwaita-icon-theme-size          "4.3 MB">
   <!ENTITY adwaita-icon-theme-buildsize     "31 MB">
-  <!ENTITY adwaita-icon-theme-time          "less than 0.1 SBU">
+  <!ENTITY adwaita-icon-theme-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="adwaita-icon-theme" xreflabel="adwaita-icon-theme-&adwaita-icon-theme-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&adwaita-icon-theme-download-http;"/>
+          下载地址（HTTP）：<ulink url="&adwaita-icon-theme-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&adwaita-icon-theme-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&adwaita-icon-theme-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &adwaita-icon-theme-md5sum;
+          MD5 校验和：&adwaita-icon-theme-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &adwaita-icon-theme-size;
+          大小：&adwaita-icon-theme-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &adwaita-icon-theme-buildsize;
+          预计所需磁盘空间：&adwaita-icon-theme-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &adwaita-icon-theme-time;
+          预计构建时间：&adwaita-icon-theme-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libical-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libical-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libical-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libical-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libical-md5sum;
+          MD5 校验和：&libical-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libical-size;
+          大小：&libical-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libical-buildsize;
+          预计所需磁盘空间：&libical-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libical-time;
+          预计构建时间：&libical-time;
         </para>
       </listitem>
     </itemizedlist>

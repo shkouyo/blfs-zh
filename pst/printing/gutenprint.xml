@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gutenprint-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gutenprint-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gutenprint-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gutenprint-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gutenprint-md5sum;
+          MD5 校验和：&gutenprint-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gutenprint-size;
+          大小：&gutenprint-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gutenprint-buildsize;
+          预计所需磁盘空间：&gutenprint-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gutenprint-time;
+          预计构建时间：&gutenprint-time;
         </para>
       </listitem>
     </itemizedlist>

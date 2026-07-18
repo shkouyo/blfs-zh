@@ -9,7 +9,7 @@
   <!ENTITY docbook-utils-md5sum        "6b41b18c365c01f225bc417cf632d81c">
   <!ENTITY docbook-utils-size          "124 KB">
   <!ENTITY docbook-utils-buildsize     "1.44 MB">
-  <!ENTITY docbook-utils-time          "less than 0.1 SBU">
+  <!ENTITY docbook-utils-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="docbook-utils" xreflabel="DocBook-utils-&docbook-utils-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&docbook-utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&docbook-utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&docbook-utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&docbook-utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &docbook-utils-md5sum;
+          MD5 校验和：&docbook-utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &docbook-utils-size;
+          大小：&docbook-utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &docbook-utils-buildsize;
+          预计所需磁盘空间：&docbook-utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &docbook-utils-time;
+          预计构建时间：&docbook-utils-time;
         </para>
       </listitem>
     </itemizedlist>

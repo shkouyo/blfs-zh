@@ -11,7 +11,7 @@
   <!ENTITY evolution-md5sum        "4ec00dcb2c280798f61642746fcbdf49">
   <!ENTITY evolution-size          "13 MB">
   <!ENTITY evolution-buildsize     "297 MB">
-  <!ENTITY evolution-time          "0.7 SBU (Using parallelism=4)">
+  <!ENTITY evolution-time          "0.7 SBU（并行度=4）">
 ]>
 
 <sect1 id="evolution" xreflabel="Evolution-&evolution-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&evolution-download-http;"/>
+          下载地址（HTTP）：<ulink url="&evolution-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&evolution-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&evolution-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &evolution-md5sum;
+          MD5 校验和：&evolution-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &evolution-size;
+          大小：&evolution-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &evolution-buildsize;
+          预计所需磁盘空间：&evolution-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &evolution-time;
+          预计构建时间：&evolution-time;
         </para>
       </listitem>
     </itemizedlist>

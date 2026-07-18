@@ -9,7 +9,7 @@
   <!ENTITY dash-md5sum        "73542f54554f478ed1d1470c262706a4">
   <!ENTITY dash-size          "256 KB">
   <!ENTITY dash-buildsize     "3.1 MB">
-  <!ENTITY dash-time          "less than 0.1 SBU">
+  <!ENTITY dash-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="dash" xreflabel="Dash-&dash-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dash-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dash-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dash-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dash-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dash-md5sum;
+          MD5 校验和：&dash-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dash-size;
+          大小：&dash-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dash-buildsize;
+          预计所需磁盘空间：&dash-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dash-time;
+          预计构建时间：&dash-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY libcddb-download-ftp  " ">
   <!ENTITY libcddb-md5sum        "8bb4a6f542197e8e9648ae597cd6bc8a">
   <!ENTITY libcddb-size          "384 KB">
-  <!ENTITY libcddb-buildsize     "3.9 MB (with tests)">
-  <!ENTITY libcddb-time          "0.2 SBU (with tests)">
+  <!ENTITY libcddb-buildsize     "3.9 MB（含测试）">
+  <!ENTITY libcddb-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="libcddb" xreflabel="libcddb-&libcddb-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libcddb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libcddb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libcddb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libcddb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libcddb-md5sum;
+          MD5 校验和：&libcddb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libcddb-size;
+          大小：&libcddb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libcddb-buildsize;
+          预计所需磁盘空间：&libcddb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libcddb-time;
+          预计构建时间：&libcddb-time;
         </para>
       </listitem>
     </itemizedlist>

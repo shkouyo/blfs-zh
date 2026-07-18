@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qpdf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qpdf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qpdf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qpdf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qpdf-md5sum;
+          MD5 校验和：&qpdf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qpdf-size;
+          大小：&qpdf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qpdf-buildsize;
+          预计所需磁盘空间：&qpdf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qpdf-time;
+          预计构建时间：&qpdf-time;
         </para>
       </listitem>
     </itemizedlist>

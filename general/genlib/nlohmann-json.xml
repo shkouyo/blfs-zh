@@ -8,8 +8,8 @@
     "https://github.com/nlohmann/json/archive/v&nlohmann-json-version;/json-&nlohmann-json-version;.tar.gz">
   <!ENTITY nlohmann-json-md5sum        "c2528c3e04faccaaee44f1f8f3d30d99">
   <!ENTITY nlohmann-json-size          "9.3 MB">
-  <!ENTITY nlohmann-json-buildsize     "21 MB (add 477 MB for tests)">
-  <!ENTITY nlohmann-json-time          "less than 0.1 SBU (add 5.8 SBU for tests)">
+  <!ENTITY nlohmann-json-buildsize     "21 MB（测试将额外增加 477 MB）">
+  <!ENTITY nlohmann-json-time          "小于 0.1 SBU（测试将额外增加 5.8 SBU）">
 ]>
 
 <sect1 id="nlohmann-json" xreflabel="nlohmann-json-&nlohmann-json-version;">
@@ -37,27 +37,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nlohmann-json-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nlohmann-json-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nlohmann-json-md5sum;
+          MD5 校验和：&nlohmann-json-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nlohmann-json-size;
+          大小：&nlohmann-json-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nlohmann-json-buildsize;
+          预计所需磁盘空间：&nlohmann-json-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nlohmann-json-time;
+          预计构建时间：&nlohmann-json-time;
         </para>
       </listitem>
     </itemizedlist>

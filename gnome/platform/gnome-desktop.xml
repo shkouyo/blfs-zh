@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-desktop-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-desktop-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-desktop-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-desktop-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-desktop-md5sum;
+          MD5 校验和：&gnome-desktop-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-desktop-size;
+          大小：&gnome-desktop-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-desktop-buildsize;
+          预计所需磁盘空间：&gnome-desktop-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-desktop-time;
+          预计构建时间：&gnome-desktop-time;
         </para>
       </listitem>
     </itemizedlist>

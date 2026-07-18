@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&thunderbird-download-http;"/>
+          下载地址（HTTP）：<ulink url="&thunderbird-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&thunderbird-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&thunderbird-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &thunderbird-md5sum;
+          MD5 校验和：&thunderbird-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &thunderbird-size;
+          大小：&thunderbird-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &thunderbird-buildsize;
+          预计所需磁盘空间：&thunderbird-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &thunderbird-time;
+          预计构建时间：&thunderbird-time;
         </para>
       </listitem>
     </itemizedlist>

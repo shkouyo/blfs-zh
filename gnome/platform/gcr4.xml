@@ -8,7 +8,7 @@
   <!ENTITY gcr4-download-ftp  " ">
   <!ENTITY gcr4-md5sum        "01da4445b5b16801c6dcc7d8945b4cc4">
   <!ENTITY gcr4-size          "728 KB">
-  <!ENTITY gcr4-buildsize     "26 MB (with tests)">
+  <!ENTITY gcr4-buildsize     "26 MB（含测试）">
   <!ENTITY gcr4-time          "0.1 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gcr4-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gcr4-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gcr4-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gcr4-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gcr4-md5sum;
+          MD5 校验和：&gcr4-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gcr4-size;
+          大小：&gcr4-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gcr4-buildsize;
+          预计所需磁盘空间：&gcr4-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gcr4-time;
+          预计构建时间：&gcr4-time;
         </para>
       </listitem>
     </itemizedlist>

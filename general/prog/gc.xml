@@ -8,8 +8,8 @@
   <!ENTITY gc-download-ftp  " ">
   <!ENTITY gc-md5sum        "5e7c74f8bd57f64d3f86673ff3c17230">
   <!ENTITY gc-size          "1.2 MB">
-  <!ENTITY gc-buildsize     "9.4 MB (with tests)">
-  <!ENTITY gc-time          "0.1 SBU (with tests)">
+  <!ENTITY gc-buildsize     "9.4 MB（含测试）">
+  <!ENTITY gc-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="gc" xreflabel="GC-&gc-version;">
@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gc-md5sum;
+          MD5 校验和：&gc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gc-size;
+          大小：&gc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gc-buildsize;
+          预计所需磁盘空间：&gc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gc-time;
+          预计构建时间：&gc-time;
         </para>
       </listitem>
     </itemizedlist>

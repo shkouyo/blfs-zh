@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&maturin-download-http;"/>
+            下载地址（HTTP）：<ulink url="&maturin-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&maturin-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&maturin-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &maturin-md5sum;
+            MD5 校验和：&maturin-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &maturin-size;
+            大小：&maturin-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &maturin-buildsize;
+            预计所需磁盘空间：&maturin-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &maturin-time;
+            预计构建时间：&maturin-time;
           </para>
         </listitem>
       </itemizedlist>

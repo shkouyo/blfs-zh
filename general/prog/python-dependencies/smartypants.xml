@@ -9,7 +9,7 @@
   <!ENTITY smartypants-md5sum        "3149badecd0771c80ee9db4d09695edd">
   <!ENTITY smartypants-size          "17 KB">
   <!ENTITY smartypants-buildsize     "344 KB">
-  <!ENTITY smartypants-time          "less than 0.1 SBU">
+  <!ENTITY smartypants-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="smartypants" xreflabel="smartypants-&smartypants-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&smartypants-download-http;"/>
+            下载地址（HTTP）：<ulink url="&smartypants-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&smartypants-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&smartypants-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &smartypants-md5sum;
+            MD5 校验和：&smartypants-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &smartypants-size;
+            大小：&smartypants-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &smartypants-buildsize;
+            预计所需磁盘空间：&smartypants-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &smartypants-time;
+            预计构建时间：&smartypants-time;
           </para>
         </listitem>
       </itemizedlist>

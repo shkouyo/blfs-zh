@@ -9,7 +9,7 @@
   <!ENTITY gst10-libav-md5sum        "fce422d2a95bf21c815caa7b197178ba">
   <!ENTITY gst10-libav-size          "212 KB">
   <!ENTITY gst10-libav-buildsize     "11 MB">
-  <!ENTITY gst10-libav-time          "less than 0.1 SBU">
+  <!ENTITY gst10-libav-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gst10-libav" xreflabel="gst-libav-&gst10-libav-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gst10-libav-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gst10-libav-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gst10-libav-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gst10-libav-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gst10-libav-md5sum;
+          MD5 校验和：&gst10-libav-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gst10-libav-size;
+          大小：&gst10-libav-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gst10-libav-buildsize;
+          预计所需磁盘空间：&gst10-libav-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gst10-libav-time;
+          预计构建时间：&gst10-libav-time;
         </para>
       </listitem>
     </itemizedlist>

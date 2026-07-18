@@ -9,7 +9,7 @@
   <!ENTITY libxcvt-md5sum        "7fb9c51d33a680f724f34da41768b1d0">
   <!ENTITY libxcvt-size          "12 KB">
   <!ENTITY libxcvt-buildsize     "440 KB">
-  <!ENTITY libxcvt-time          "less than 0.1 SBU">
+  <!ENTITY libxcvt-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libxcvt" xreflabel="libxcvt-&libxcvt-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxcvt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxcvt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxcvt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxcvt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxcvt-md5sum;
+          MD5 校验和：&libxcvt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxcvt-size;
+          大小：&libxcvt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxcvt-buildsize;
+          预计所需磁盘空间：&libxcvt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxcvt-time;
+          预计构建时间：&libxcvt-time;
         </para>
       </listitem>
     </itemizedlist>

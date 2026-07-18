@@ -9,7 +9,7 @@
   <!ENTITY six-md5sum        "&six-md5sum;">
   <!ENTITY six-size          "36 KB">
   <!ENTITY six-buildsize     "300 KB">
-  <!ENTITY six-time          "less than 0.1 SBU">
+  <!ENTITY six-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin six -->
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&six-download-http;"/>
+            下载地址（HTTP）：<ulink url="&six-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&six-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&six-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &six-md5sum;
+            MD5 校验和：&six-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &six-size;
+            大小：&six-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &six-buildsize;
+            预计所需磁盘空间：&six-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &six-time;
+            预计构建时间：&six-time;
           </para>
         </listitem>
       </itemizedlist>

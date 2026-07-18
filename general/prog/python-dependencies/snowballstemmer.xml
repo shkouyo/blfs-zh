@@ -9,7 +9,7 @@
   <!ENTITY snowballstemmer-md5sum        "&snowballstemmer-md5sum;">
   <!ENTITY snowballstemmer-size          "124 KB">
   <!ENTITY snowballstemmer-buildsize     "2.0 MB">
-  <!ENTITY snowballstemmer-time          "less than 0.1 SBU">
+  <!ENTITY snowballstemmer-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="snowballstemmer" xreflabel="snowballstemmer-&snowballstemmer-version;">
@@ -43,32 +43,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&snowballstemmer-download-http;"/>
+            下载地址（HTTP）：<ulink url="&snowballstemmer-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&snowballstemmer-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&snowballstemmer-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &snowballstemmer-md5sum;
+            MD5 校验和：&snowballstemmer-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &snowballstemmer-size;
+            大小：&snowballstemmer-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &snowballstemmer-buildsize;
+            预计所需磁盘空间：&snowballstemmer-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &snowballstemmer-time;
+            预计构建时间：&snowballstemmer-time;
           </para>
         </listitem>
       </itemizedlist>

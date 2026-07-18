@@ -9,7 +9,7 @@
   <!ENTITY libnsl-md5sum        "fb178645dfa85ebab0f1e42e219b42ae">
   <!ENTITY libnsl-size          "276 KB">
   <!ENTITY libnsl-buildsize     "3.1 MB">
-  <!ENTITY libnsl-time          "less than 0.1 SBU">
+  <!ENTITY libnsl-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libnsl" xreflabel="libnsl-&libnsl-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnsl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnsl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnsl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnsl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnsl-md5sum;
+          MD5 校验和：&libnsl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnsl-size;
+          大小：&libnsl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnsl-buildsize;
+          预计所需磁盘空间：&libnsl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnsl-time;
+          预计构建时间：&libnsl-time;
         </para>
       </listitem>
     </itemizedlist>

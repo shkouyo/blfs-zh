@@ -9,7 +9,7 @@
    <!ENTITY extra-cmake-modules-md5sum        "05432f3fcbc3ee0de5765413f5c8b436">
    <!ENTITY extra-cmake-modules-size          "332 KB">
    <!ENTITY extra-cmake-modules-buildsize     "5.4 MB">
-   <!ENTITY extra-cmake-modules-time          "less than 0.1 SBU">
+   <!ENTITY extra-cmake-modules-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="extra-cmake-modules" xreflabel="Extra-CMake-Modules-&kf6-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&extra-cmake-modules-download-http;"/>
+          下载地址（HTTP）：<ulink url="&extra-cmake-modules-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&extra-cmake-modules-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&extra-cmake-modules-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &extra-cmake-modules-md5sum;
+          MD5 校验和：&extra-cmake-modules-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &extra-cmake-modules-size;
+          大小：&extra-cmake-modules-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &extra-cmake-modules-buildsize;
+          预计所需磁盘空间：&extra-cmake-modules-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &extra-cmake-modules-time;
+          预计构建时间：&extra-cmake-modules-time;
         </para>
       </listitem>
     </itemizedlist>

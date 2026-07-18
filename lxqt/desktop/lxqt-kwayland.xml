@@ -9,7 +9,7 @@
   <!ENTITY kwayland-md5sum        "bdb0b9f18478d16b31246882fdcbc458">
   <!ENTITY kwayland-size          "132 KB">
   <!ENTITY kwayland-buildsize     "11 MB">
-  <!ENTITY kwayland-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY kwayland-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-kwayland" xreflabel="kwayland-&plasma-version; for lxqt">
@@ -46,32 +46,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kwayland-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kwayland-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kwayland-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kwayland-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kwayland-md5sum;
+          MD5 校验和：&kwayland-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kwayland-size;
+          大小：&kwayland-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kwayland-buildsize;
+          预计所需磁盘空间：&kwayland-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kwayland-time;
+          预计构建时间：&kwayland-time;
         </para>
       </listitem>
     </itemizedlist>

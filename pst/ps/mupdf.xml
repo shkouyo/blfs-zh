@@ -11,7 +11,7 @@ can be found there, no need to change directory -->
   <!ENTITY mupdf-md5sum        "d10eb7e1ef0f4a44f5c14a29b9d6f906">
   <!ENTITY mupdf-size          "62 MB">
   <!ENTITY mupdf-buildsize     "295 MB">
-  <!ENTITY mupdf-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY mupdf-time          "0.2 SBU（并行度=4）">
   <!ENTITY mupdf-lib-major     "26.12">
   <!ENTITY mupdf-lib-minor     "26">
 ]>
@@ -38,32 +38,32 @@ can be found there, no need to change directory -->
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mupdf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mupdf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mupdf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mupdf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mupdf-md5sum;
+          MD5 校验和：&mupdf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mupdf-size;
+          大小：&mupdf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mupdf-buildsize;
+          预计所需磁盘空间：&mupdf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mupdf-time;
+          预计构建时间：&mupdf-time;
         </para>
       </listitem>
     </itemizedlist>

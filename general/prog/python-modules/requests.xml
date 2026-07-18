@@ -8,8 +8,8 @@
   <!ENTITY requests-download-ftp  " ">
   <!ENTITY requests-md5sum        "&requests-md5sum;">
   <!ENTITY requests-size          "140 KB">
-  <!ENTITY requests-buildsize     "89 MB (with tests)">
-  <!ENTITY requests-time          "less than 0.1 SBU (0.9 SBU for tests)">
+  <!ENTITY requests-buildsize     "89 MB（含测试）">
+  <!ENTITY requests-time          "小于 0.1 SBU（测试将额外增加 0.9 SBU）">
 ]>
 
   <sect2 id="requests" xreflabel="requests-&requests-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&requests-download-http;"/>
+            下载地址（HTTP）：<ulink url="&requests-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&requests-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&requests-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &requests-md5sum;
+            MD5 校验和：&requests-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &requests-size;
+            大小：&requests-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &requests-buildsize;
+            预计所需磁盘空间：&requests-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &requests-time;
+            预计构建时间：&requests-time;
           </para>
         </listitem>
       </itemizedlist>

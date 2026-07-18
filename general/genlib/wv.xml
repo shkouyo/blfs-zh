@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wv-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wv-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wv-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wv-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wv-md5sum;
+          MD5 校验和：&wv-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wv-size;
+          大小：&wv-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wv-buildsize;
+          预计所需磁盘空间：&wv-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wv-time;
+          预计构建时间：&wv-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY popt-md5sum        "eaa2135fddb6eb03f2c87ee1823e5a78">
   <!ENTITY popt-size          "584 KB">
   <!ENTITY popt-buildsize     "6.9 MB (includes installing documentation and tests)">
-  <!ENTITY popt-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY popt-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="popt" xreflabel="popt-&popt-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&popt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&popt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&popt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&popt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &popt-md5sum;
+          MD5 校验和：&popt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &popt-size;
+          大小：&popt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &popt-buildsize;
+          预计所需磁盘空间：&popt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &popt-time;
+          预计构建时间：&popt-time;
         </para>
       </listitem>
     </itemizedlist>

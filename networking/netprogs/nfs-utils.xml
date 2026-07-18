@@ -9,8 +9,8 @@
   <!ENTITY nfs-utils-download-ftp  " ">
   <!ENTITY nfs-utils-md5sum        "cbe69cd70cf81c99d6f3172613b2d250">
   <!ENTITY nfs-utils-size          "748 KB">
-  <!ENTITY nfs-utils-buildsize     "20 MB (with tests)">
-  <!ENTITY nfs-utils-time          "0.2 SBU (with tests)">
+  <!ENTITY nfs-utils-buildsize     "20 MB（含测试）">
+  <!ENTITY nfs-utils-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="nfs-utils" xreflabel="nfs-utils-&nfs-utils-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nfs-utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nfs-utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nfs-utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nfs-utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nfs-utils-md5sum;
+          MD5 校验和：&nfs-utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nfs-utils-size;
+          大小：&nfs-utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nfs-utils-buildsize;
+          预计所需磁盘空间：&nfs-utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nfs-utils-time;
+          预计构建时间：&nfs-utils-time;
         </para>
       </listitem>
     </itemizedlist>

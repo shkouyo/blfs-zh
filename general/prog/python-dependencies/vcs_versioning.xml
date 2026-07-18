@@ -9,7 +9,7 @@
   <!ENTITY vcs_versioning-md5sum        "&vcs_versioning-md5sum;">
   <!ENTITY vcs_versioning-size          "132 KB">
   <!ENTITY vcs_versioning-buildsize     "2.8 MB">
-  <!ENTITY vcs_versioning-time          "less than 0.1 SBU (add 1.2 SBU for tests)">
+  <!ENTITY vcs_versioning-time          "小于 0.1 SBU（测试将额外增加 1.2 SBU）">
 ]>
 
   <sect2 id="vcs_versioning" xreflabel="vcs_versioning-&vcs_versioning-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&vcs_versioning-download-http;"/>
+            下载地址（HTTP）：<ulink url="&vcs_versioning-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&vcs_versioning-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&vcs_versioning-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &vcs_versioning-md5sum;
+            MD5 校验和：&vcs_versioning-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &vcs_versioning-size;
+            大小：&vcs_versioning-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &vcs_versioning-buildsize;
+            预计所需磁盘空间：&vcs_versioning-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &vcs_versioning-time;
+            预计构建时间：&vcs_versioning-time;
           </para>
         </listitem>
       </itemizedlist>

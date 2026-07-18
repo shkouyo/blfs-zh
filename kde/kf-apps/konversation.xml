@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&konversation-download-http;"/>
+          下载地址（HTTP）：<ulink url="&konversation-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&konversation-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&konversation-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &konversation-md5sum;
+          MD5 校验和：&konversation-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &konversation-size;
+          大小：&konversation-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &konversation-buildsize;
+          预计所需磁盘空间：&konversation-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &konversation-time;
+          预计构建时间：&konversation-time;
         </para>
       </listitem>
     </itemizedlist>

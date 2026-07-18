@@ -8,7 +8,7 @@
   <!ENTITY libjpeg-download-ftp  " ">
   <!ENTITY libjpeg-md5sum        "a80f9f1c735b57d3cdd66daed1ba6bb4">
   <!ENTITY libjpeg-size          "2.5 MB">
-  <!ENTITY libjpeg-buildsize     "59 MB (with tests)">
+  <!ENTITY libjpeg-buildsize     "59 MB（含测试）">
   <!ENTITY libjpeg-time          "0.6 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libjpeg-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libjpeg-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libjpeg-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libjpeg-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libjpeg-md5sum;
+          MD5 校验和：&libjpeg-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libjpeg-size;
+          大小：&libjpeg-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libjpeg-buildsize;
+          预计所需磁盘空间：&libjpeg-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libjpeg-time;
+          预计构建时间：&libjpeg-time;
         </para>
       </listitem>
     </itemizedlist>

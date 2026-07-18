@@ -9,8 +9,8 @@
   <!ENTITY dconf-download-ftp  " ">
   <!ENTITY dconf-md5sum        "1a3ff8a464a4d9ebbaf112005bfed95a">
   <!ENTITY dconf-size          "124 KB">
-  <!ENTITY dconf-buildsize     "9.7 MB (with tests)">
-  <!ENTITY dconf-time          "0.1 SBU (with tests)">
+  <!ENTITY dconf-buildsize     "9.7 MB（含测试）">
+  <!ENTITY dconf-time          "0.1 SBU（含测试）">
 
 <!-- DConf-Editor -->
   <!ENTITY dconf-editor-download-http "&gnome-download-http;/dconf-editor/&gnome-49;/dconf-editor-&dconf-editor-version;.tar.xz">
@@ -56,32 +56,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dconf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dconf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dconf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dconf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dconf-md5sum;
+          MD5 校验和：&dconf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dconf-size;
+          大小：&dconf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dconf-buildsize;
+          预计所需磁盘空间：&dconf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dconf-time;
+          预计构建时间：&dconf-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -90,32 +90,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dconf-editor-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dconf-editor-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dconf-editor-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dconf-editor-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dconf-editor-md5sum;
+          MD5 校验和：&dconf-editor-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dconf-editor-size;
+          大小：&dconf-editor-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dconf-editor-buildsize;
+          预计所需磁盘空间：&dconf-editor-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dconf-editor-time;
+          预计构建时间：&dconf-editor-time;
         </para>
       </listitem>
     </itemizedlist>

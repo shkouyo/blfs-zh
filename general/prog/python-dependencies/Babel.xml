@@ -8,8 +8,8 @@
   <!ENTITY babel-download-ftp  " ">
   <!ENTITY babel-md5sum        "&babel-md5sum;">
   <!ENTITY babel-size          "9.5 MB">
-  <!ENTITY babel-buildsize     "129 MB (with tests)">
-  <!ENTITY babel-time          "0.1 SBU (with tests)">
+  <!ENTITY babel-buildsize     "129 MB（含测试）">
+  <!ENTITY babel-time          "0.1 SBU（含测试）">
 ]>
 
   <sect2 id="babel" xreflabel="babel-&babel-version;">
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&babel-download-http;"/>
+            下载地址（HTTP）：<ulink url="&babel-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&babel-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&babel-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &babel-md5sum;
+            MD5 校验和：&babel-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &babel-size;
+            大小：&babel-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &babel-buildsize;
+            预计所需磁盘空间：&babel-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &babel-time;
+            预计构建时间：&babel-time;
           </para>
         </listitem>
       </itemizedlist>

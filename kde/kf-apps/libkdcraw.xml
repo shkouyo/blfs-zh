@@ -9,7 +9,7 @@
   <!ENTITY libkdcraw-md5sum        "17bdcb0897ab7791f9a10db7f2e642c3">
   <!ENTITY libkdcraw-size          "40 KB">
   <!ENTITY libkdcraw-buildsize     "2.1 MB">
-  <!ENTITY libkdcraw-time          "less than 0.1 SBU">
+  <!ENTITY libkdcraw-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libkdcraw" xreflabel="libkdcraw-&kf6apps-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libkdcraw-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libkdcraw-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libkdcraw-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libkdcraw-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libkdcraw-md5sum;
+          MD5 校验和：&libkdcraw-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libkdcraw-size;
+          大小：&libkdcraw-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libkdcraw-buildsize;
+          预计所需磁盘空间：&libkdcraw-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libkdcraw-time;
+          预计构建时间：&libkdcraw-time;
         </para>
       </listitem>
     </itemizedlist>

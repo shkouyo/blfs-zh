@@ -9,7 +9,7 @@
   <!ENTITY mypaint-brushes-md5sum        "ce965cd5d75947b7beca5ed3ee4521d2">
   <!ENTITY mypaint-brushes-size          "1.5 MB">
   <!ENTITY mypaint-brushes-buildsize     "4.1 MB">
-  <!ENTITY mypaint-brushes-time          "less than 0.1 SBU">
+  <!ENTITY mypaint-brushes-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="mypaint-brushes" xreflabel="mypaint-brushes-&mypaint-brushes-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mypaint-brushes-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mypaint-brushes-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mypaint-brushes-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mypaint-brushes-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mypaint-brushes-md5sum;
+          MD5 校验和：&mypaint-brushes-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mypaint-brushes-size;
+          大小：&mypaint-brushes-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mypaint-brushes-buildsize;
+          预计所需磁盘空间：&mypaint-brushes-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mypaint-brushes-time;
+          预计构建时间：&mypaint-brushes-time;
         </para>
       </listitem>
     </itemizedlist>

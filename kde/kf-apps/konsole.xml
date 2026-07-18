@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&konsole-download-http;"/>
+          下载地址（HTTP）：<ulink url="&konsole-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&konsole-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&konsole-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &konsole-md5sum;
+          MD5 校验和：&konsole-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &konsole-size;
+          大小：&konsole-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &konsole-buildsize;
+          预计所需磁盘空间：&konsole-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &konsole-time;
+          预计构建时间：&konsole-time;
         </para>
       </listitem>
     </itemizedlist>

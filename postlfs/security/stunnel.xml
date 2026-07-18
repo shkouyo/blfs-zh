@@ -9,7 +9,7 @@
   <!ENTITY stunnel-md5sum        "bf7b58e41fc738f6646b48c81532c346">
   <!ENTITY stunnel-size          "908 KB">
   <!ENTITY stunnel-buildsize     "9.1 MB">
-  <!ENTITY stunnel-time          "less than 0.1 SBU">
+  <!ENTITY stunnel-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="stunnel" xreflabel="stunnel-&stunnel-version;">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&stunnel-download-http;"/>
+          下载地址（HTTP）：<ulink url="&stunnel-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&stunnel-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&stunnel-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &stunnel-md5sum;
+          MD5 校验和：&stunnel-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &stunnel-size;
+          大小：&stunnel-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &stunnel-buildsize;
+          预计所需磁盘空间：&stunnel-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &stunnel-time;
+          预计构建时间：&stunnel-time;
         </para>
       </listitem>
     </itemizedlist>

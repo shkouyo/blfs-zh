@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fontforge-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fontforge-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fontforge-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fontforge-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fontforge-md5sum;
+          MD5 校验和：&fontforge-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fontforge-size;
+          大小：&fontforge-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fontforge-buildsize;
+          预计所需磁盘空间：&fontforge-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fontforge-time;
+          预计构建时间：&fontforge-time;
         </para>
       </listitem>
     </itemizedlist>

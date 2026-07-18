@@ -8,7 +8,7 @@
   <!ENTITY exiv2-download-ftp  " ">
   <!ENTITY exiv2-md5sum        "3f3b2d9c3e73880ea8e6bd78c67ea56a">
   <!ENTITY exiv2-size          "45 MB">
-  <!ENTITY exiv2-buildsize     "134 MB (with tests)">
+  <!ENTITY exiv2-buildsize     "134 MB（含测试）">
   <!ENTITY exiv2-time          "0.4 SBU (Using parallelism=4, with tests)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&exiv2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&exiv2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&exiv2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&exiv2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &exiv2-md5sum;
+          MD5 校验和：&exiv2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &exiv2-size;
+          大小：&exiv2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &exiv2-buildsize;
+          预计所需磁盘空间：&exiv2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &exiv2-time;
+          预计构建时间：&exiv2-time;
         </para>
       </listitem>
     </itemizedlist>

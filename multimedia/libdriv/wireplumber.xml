@@ -8,8 +8,8 @@
   <!ENTITY wireplumber-download-ftp  " ">
   <!ENTITY wireplumber-md5sum        "dba978afa67ba317d99ef03285ad4733">
   <!ENTITY wireplumber-size          "464 KB">
-  <!ENTITY wireplumber-buildsize     "100 MB (with tests)">
-  <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
+  <!ENTITY wireplumber-buildsize     "100 MB（含测试）">
+  <!ENTITY wireplumber-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="wireplumber" xreflabel="Wireplumber-&wireplumber-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wireplumber-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wireplumber-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wireplumber-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wireplumber-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wireplumber-md5sum;
+          MD5 校验和：&wireplumber-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wireplumber-size;
+          大小：&wireplumber-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wireplumber-buildsize;
+          预计所需磁盘空间：&wireplumber-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wireplumber-time;
+          预计构建时间：&wireplumber-time;
         </para>
       </listitem>
     </itemizedlist>

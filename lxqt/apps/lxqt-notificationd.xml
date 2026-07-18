@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-notificationd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-notificationd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-notificationd-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-notificationd-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-notificationd-md5sum;
+          MD5 校验和：&lxqt-notificationd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-notificationd-size;
+          大小：&lxqt-notificationd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-notificationd-buildsize;
+          预计所需磁盘空间：&lxqt-notificationd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-notificationd-time;
+          预计构建时间：&lxqt-notificationd-time;
         </para>
       </listitem>
     </itemizedlist>

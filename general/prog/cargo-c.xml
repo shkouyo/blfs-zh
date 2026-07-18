@@ -8,7 +8,7 @@
   <!ENTITY cargoc-download-ftp  " ">
   <!ENTITY cargoc-md5sum        "e9af606a4a2d0c60c9f825250e1bc013">
   <!ENTITY cargoc-size          "40 KB">
-  <!ENTITY cargoc-buildsize     "1.4 GB (with tests)">
+  <!ENTITY cargoc-buildsize     "1.4 GB（含测试）">
   <!ENTITY cargoc-time          "0.7 SBU (add 5.2 SBU for tests)">
 
   <!ENTITY cargoc-lock-md5sum   "9c2c93fe7da6d1d10bc50bbd95a49d1d">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cargoc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cargoc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cargoc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cargoc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cargoc-md5sum;
+          MD5 校验和：&cargoc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cargoc-size;
+          大小：&cargoc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cargoc-buildsize;
+          预计所需磁盘空间：&cargoc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cargoc-time;
+          预计构建时间：&cargoc-time;
         </para>
       </listitem>
     </itemizedlist>

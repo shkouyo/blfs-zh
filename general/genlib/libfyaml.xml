@@ -10,7 +10,7 @@
     "&libfyaml-dl-root;/libfyaml-&libfyaml-version;.tar.gz">
   <!ENTITY libfyaml-md5sum        "f6d3756a80cb1ff99714e510cf4ce13d">
   <!ENTITY libfyaml-size          "1.1 MB">
-  <!ENTITY libfyaml-buildsize     "280 MB (with tests)">
+  <!ENTITY libfyaml-buildsize     "280 MB（含测试）">
   <!ENTITY libfyaml-time          "0.4 SBU (add 1.8 SBU for tests)">
 ]>
 
@@ -38,27 +38,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libfyaml-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libfyaml-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libfyaml-md5sum;
+          MD5 校验和：&libfyaml-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libfyaml-size;
+          大小：&libfyaml-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libfyaml-buildsize;
+          预计所需磁盘空间：&libfyaml-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libfyaml-time;
+          预计构建时间：&libfyaml-time;
         </para>
       </listitem>
     </itemizedlist>

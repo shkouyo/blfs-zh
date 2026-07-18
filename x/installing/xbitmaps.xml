@@ -9,7 +9,7 @@
   <!ENTITY xbitmaps-md5sum        "793992635c45250028eaec226af416fc">
   <!ENTITY xbitmaps-size          "112 KB">
   <!ENTITY xbitmaps-buildsize     "1.4 MB">
-  <!ENTITY xbitmaps-time          "less than 0.1 SBU">
+  <!ENTITY xbitmaps-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xbitmaps" xreflabel="xbitmaps-&xbitmaps-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xbitmaps-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xbitmaps-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xbitmaps-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xbitmaps-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xbitmaps-md5sum;
+          MD5 校验和：&xbitmaps-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xbitmaps-size;
+          大小：&xbitmaps-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xbitmaps-buildsize;
+          预计所需磁盘空间：&xbitmaps-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xbitmaps-time;
+          预计构建时间：&xbitmaps-time;
         </para>
       </listitem>
     </itemizedlist>

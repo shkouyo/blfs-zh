@@ -8,7 +8,7 @@
   <!ENTITY glibmm-download-ftp  " ">
   <!ENTITY glibmm-md5sum        "6111fd5a4a2fdd9d613d73b714369494">
   <!ENTITY glibmm-size          "9.9 MB">
-  <!ENTITY glibmm-buildsize     "98 MB (with tests)">
+  <!ENTITY glibmm-buildsize     "98 MB（含测试）">
   <!ENTITY glibmm-time          "0.4 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glibmm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glibmm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glibmm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glibmm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glibmm-md5sum;
+          MD5 校验和：&glibmm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glibmm-size;
+          大小：&glibmm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glibmm-buildsize;
+          预计所需磁盘空间：&glibmm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glibmm-time;
+          预计构建时间：&glibmm-time;
         </para>
       </listitem>
     </itemizedlist>

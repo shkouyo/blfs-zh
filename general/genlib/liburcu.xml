@@ -8,8 +8,8 @@
   <!ENTITY liburcu-download-ftp  " ">
   <!ENTITY liburcu-md5sum        "08ad35d135f3797d572bc2aa9129abf5">
   <!ENTITY liburcu-size          "672 KB">
-  <!ENTITY liburcu-buildsize     "26 MB (with tests)">
-  <!ENTITY liburcu-time          "0.3 SBU (with tests)">
+  <!ENTITY liburcu-buildsize     "26 MB（含测试）">
+  <!ENTITY liburcu-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="liburcu" xreflabel="liburcu-&liburcu-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&liburcu-download-http;"/>
+          下载地址（HTTP）：<ulink url="&liburcu-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&liburcu-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&liburcu-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &liburcu-md5sum;
+          MD5 校验和：&liburcu-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &liburcu-size;
+          大小：&liburcu-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &liburcu-buildsize;
+          预计所需磁盘空间：&liburcu-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &liburcu-time;
+          预计构建时间：&liburcu-time;
         </para>
       </listitem>
     </itemizedlist>

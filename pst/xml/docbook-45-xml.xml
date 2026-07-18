@@ -9,7 +9,7 @@
   <!ENTITY DocBook-md5sum        "03083e288e87a7e829e437358da7ef9e">
   <!ENTITY DocBook-size          "96 KB">
   <!ENTITY DocBook-buildsize     "1.2 MB">
-  <!ENTITY DocBook-time          "less than 0.1 SBU">
+  <!ENTITY DocBook-time          "小于 0.1 SBU">
 
   <!-- To align backslashes in the configuration it is tricky because we have a 
        long entity name in the xml - docBook-45-xml-version - that resolves
@@ -48,32 +48,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&DocBook-download-http;"/>
+          下载地址（HTTP）：<ulink url="&DocBook-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&DocBook-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&DocBook-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &DocBook-md5sum;
+          MD5 校验和：&DocBook-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &DocBook-size;
+          大小：&DocBook-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &DocBook-buildsize;
+          预计所需磁盘空间：&DocBook-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &DocBook-time;
+          预计构建时间：&DocBook-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY xdotool-md5sum        "fc6864ebb381f8b50c37e2d46dbd37b1">
   <!ENTITY xdotool-size          "116 KB">
   <!ENTITY xdotool-buildsize     "1.3 MB">
-  <!ENTITY xdotool-time          "less than 0.1 SBU (add 0.5 SBU for tests)">
+  <!ENTITY xdotool-time          "小于 0.1 SBU（测试将额外增加 0.5 SBU）">
 ]>
 
 <sect1 id="xdotool" xreflabel="xdotool-&xdotool-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xdotool-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xdotool-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xdotool-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xdotool-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xdotool-md5sum;
+          MD5 校验和：&xdotool-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xdotool-size;
+          大小：&xdotool-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xdotool-buildsize;
+          预计所需磁盘空间：&xdotool-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xdotool-time;
+          预计构建时间：&xdotool-time;
         </para>
       </listitem>
     </itemizedlist>

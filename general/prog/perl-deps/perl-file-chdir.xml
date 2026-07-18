@@ -38,12 +38,12 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&my-download-http;"/>
+            下载地址（HTTP）：<ulink url="&my-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &my-md5sum;
+            MD5 校验和：&my-md5sum;
           </para>
         </listitem>
       </itemizedlist>

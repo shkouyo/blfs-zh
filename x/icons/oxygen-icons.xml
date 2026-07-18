@@ -9,7 +9,7 @@
   <!ENTITY oxygen-icons-md5sum        "b04f533b89d0412e9583ce70229c7077">
   <!ENTITY oxygen-icons-size          "233 MB">
   <!ENTITY oxygen-icons-buildsize     "454 MB">
-  <!ENTITY oxygen-icons-time          "less than 0.1 SBU">
+  <!ENTITY oxygen-icons-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="oxygen-icons" xreflabel="oxygen-icons-&oxygen-icons-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&oxygen-icons-download-http;"/>
+          下载地址（HTTP）：<ulink url="&oxygen-icons-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&oxygen-icons-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&oxygen-icons-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &oxygen-icons-md5sum;
+          MD5 校验和：&oxygen-icons-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &oxygen-icons-size;
+          大小：&oxygen-icons-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &oxygen-icons-buildsize;
+          预计所需磁盘空间：&oxygen-icons-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &oxygen-icons-time;
+          预计构建时间：&oxygen-icons-time;
         </para>
       </listitem>
     </itemizedlist>

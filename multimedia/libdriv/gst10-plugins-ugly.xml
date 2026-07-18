@@ -9,8 +9,8 @@
   <!ENTITY gst10-plugins-ugly-download-ftp  " ">
   <!ENTITY gst10-plugins-ugly-md5sum        "7659a0b5afbe3ac6f7ef22096ecf1357">
   <!ENTITY gst10-plugins-ugly-size          "236 KB">
-  <!ENTITY gst10-plugins-ugly-buildsize     "7.0 MB (with tests)">
-  <!ENTITY gst10-plugins-ugly-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY gst10-plugins-ugly-buildsize     "7.0 MB（含测试）">
+  <!ENTITY gst10-plugins-ugly-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="gst10-plugins-ugly" xreflabel="gst-plugins-ugly-&gst10-plugins-ugly-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gst10-plugins-ugly-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gst10-plugins-ugly-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gst10-plugins-ugly-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gst10-plugins-ugly-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gst10-plugins-ugly-md5sum;
+          MD5 校验和：&gst10-plugins-ugly-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gst10-plugins-ugly-size;
+          大小：&gst10-plugins-ugly-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gst10-plugins-ugly-buildsize;
+          预计所需磁盘空间：&gst10-plugins-ugly-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gst10-plugins-ugly-time;
+          预计构建时间：&gst10-plugins-ugly-time;
         </para>
       </listitem>
     </itemizedlist>

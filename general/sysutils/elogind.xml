@@ -8,7 +8,7 @@
   <!ENTITY elogind-download-ftp  " ">
   <!ENTITY elogind-md5sum        "d3b4ee9288ea4a3826706f2b1495000e">
   <!ENTITY elogind-size          "2.6 MB">
-  <!ENTITY elogind-buildsize     "67 MB (with tests)">
+  <!ENTITY elogind-buildsize     "67 MB（含测试）">
   <!ENTITY elogind-time          "0.3 SBU (with parallelism=4; with tests)">
 ]>
 
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&elogind-download-http;"/>
+          下载地址（HTTP）：<ulink url="&elogind-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&elogind-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&elogind-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &elogind-md5sum;
+          MD5 校验和：&elogind-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &elogind-size;
+          大小：&elogind-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &elogind-buildsize;
+          预计所需磁盘空间：&elogind-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &elogind-time;
+          预计构建时间：&elogind-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -10,7 +10,7 @@
   <!ENTITY gnome-session-md5sum        "0c02fd88e93b89b8cf09f80637356ca8">
   <!ENTITY gnome-session-size          "396 KB">
   <!ENTITY gnome-session-buildsize     "7.6 MB">
-  <!ENTITY gnome-session-time          "less than 0.1 SBU">
+  <!ENTITY gnome-session-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-session" xreflabel="gnome-session-&gnome-session-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-session-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-session-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-session-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-session-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-session-md5sum;
+          MD5 校验和：&gnome-session-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-session-size;
+          大小：&gnome-session-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-session-buildsize;
+          预计所需磁盘空间：&gnome-session-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-session-time;
+          预计构建时间：&gnome-session-time;
         </para>
       </listitem>
     </itemizedlist>

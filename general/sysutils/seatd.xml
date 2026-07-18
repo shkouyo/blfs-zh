@@ -11,8 +11,8 @@
     "https://github.com/kennylevinsen/seatd/archive/&seatd-version;/seatd-&seatd-version;.tar.gz">
   <!ENTITY seatd-md5sum        "c1cc200188d31214b88af015b1f19f7b">
   <!ENTITY seatd-size          "44 KB">
-  <!ENTITY seatd-buildsize     "4 MB (with tests)">
-  <!ENTITY seatd-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY seatd-buildsize     "4 MB（含测试）">
+  <!ENTITY seatd-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="seatd" xreflabel="seatd-&seatd-version;">
@@ -43,27 +43,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&seatd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&seatd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &seatd-md5sum;
+          MD5 校验和：&seatd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &seatd-size;
+          大小：&seatd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &seatd-buildsize;
+          预计所需磁盘空间：&seatd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &seatd-time;
+          预计构建时间：&seatd-time;
         </para>
       </listitem>
     </itemizedlist>

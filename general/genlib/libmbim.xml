@@ -8,8 +8,8 @@
   <!ENTITY libmbim-download-ftp  " ">
   <!ENTITY libmbim-md5sum        "e5c2b38c6a79a047b93cb0c9510bd91f">
   <!ENTITY libmbim-size          "292 KB">
-  <!ENTITY libmbim-buildsize     "23 MB (with tests)">
-  <!ENTITY libmbim-time          "0.2 SBU (with tests)">
+  <!ENTITY libmbim-buildsize     "23 MB（含测试）">
+  <!ENTITY libmbim-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="libmbim" xreflabel="libmbim-&libmbim-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libmbim-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libmbim-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libmbim-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libmbim-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libmbim-md5sum;
+          MD5 校验和：&libmbim-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libmbim-size;
+          大小：&libmbim-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libmbim-buildsize;
+          预计所需磁盘空间：&libmbim-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libmbim-time;
+          预计构建时间：&libmbim-time;
         </para>
       </listitem>
     </itemizedlist>

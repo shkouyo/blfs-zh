@@ -10,7 +10,7 @@
   <!ENTITY libgudev-md5sum        "46da30a1c69101c3a13fa660d9ab7b73">
   <!ENTITY libgudev-size          "32 KB">
   <!ENTITY libgudev-buildsize     "2.0 MB">
-  <!ENTITY libgudev-time          "less than 0.1 SBU">
+  <!ENTITY libgudev-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libgudev" xreflabel="libgudev-&libgudev-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgudev-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgudev-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgudev-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgudev-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgudev-md5sum;
+          MD5 校验和：&libgudev-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgudev-size;
+          大小：&libgudev-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgudev-buildsize;
+          预计所需磁盘空间：&libgudev-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgudev-time;
+          预计构建时间：&libgudev-time;
         </para>
       </listitem>
     </itemizedlist>

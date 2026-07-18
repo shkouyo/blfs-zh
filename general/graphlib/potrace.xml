@@ -8,8 +8,8 @@
   <!ENTITY potrace-download-ftp  " ">
   <!ENTITY potrace-md5sum        "5f0bd87ddd9a620b0c4e65652ef93d69">
   <!ENTITY potrace-size          "644 KB">
-  <!ENTITY potrace-buildsize     "7.1 MB (including tests)">
-  <!ENTITY potrace-time          "less than 0.1 SBU (including tests)">
+  <!ENTITY potrace-buildsize     "7.1 MB（含测试）">
+  <!ENTITY potrace-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="potrace" xreflabel="Potrace-&potrace-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&potrace-download-http;"/>
+          下载地址（HTTP）：<ulink url="&potrace-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&potrace-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&potrace-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &potrace-md5sum;
+          MD5 校验和：&potrace-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &potrace-size;
+          大小：&potrace-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &potrace-buildsize;
+          预计所需磁盘空间：&potrace-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &potrace-time;
+          预计构建时间：&potrace-time;
         </para>
       </listitem>
     </itemizedlist>

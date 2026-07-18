@@ -8,7 +8,7 @@
   <!ENTITY gpgme-download-ftp  " ">
   <!ENTITY gpgme-md5sum        "58448073da13a22e878adfb22a988d4d">
   <!ENTITY gpgme-size          "1.4 MB">
-  <!ENTITY gpgme-buildsize     "29 MB (with tests)">
+  <!ENTITY gpgme-buildsize     "29 MB（含测试）">
   <!ENTITY gpgme-time          "0.2 SBU (with tests and parallelism=4)">
 ]>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gpgme-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gpgme-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gpgme-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gpgme-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gpgme-md5sum;
+          MD5 校验和：&gpgme-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gpgme-size;
+          大小：&gpgme-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gpgme-buildsize;
+          预计所需磁盘空间：&gpgme-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gpgme-time;
+          预计构建时间：&gpgme-time;
         </para>
       </listitem>
     </itemizedlist>

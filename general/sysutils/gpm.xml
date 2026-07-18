@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gpm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gpm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gpm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gpm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gpm-md5sum;
+          MD5 校验和：&gpm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gpm-size;
+          大小：&gpm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gpm-buildsize;
+          预计所需磁盘空间：&gpm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gpm-time;
+          预计构建时间：&gpm-time;
         </para>
       </listitem>
     </itemizedlist>

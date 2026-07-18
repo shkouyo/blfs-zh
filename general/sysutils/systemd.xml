@@ -9,7 +9,7 @@
   <!ENTITY systemd-download-ftp  " ">
   <!ENTITY systemd-md5sum        "e8c18dba4d0b12dfbffa1ec2a75ae83b">
   <!ENTITY systemd-size          "18 MB">
-  <!ENTITY systemd-buildsize     "402 MB (with tests)">
+  <!ENTITY systemd-buildsize     "402 MB（含测试）">
   <!ENTITY systemd-time          "1.1 SBU (with tests using 4 cores)">
 
 ]>
@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&systemd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&systemd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&systemd-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&systemd-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &systemd-md5sum;
+          MD5 校验和：&systemd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &systemd-size;
+          大小：&systemd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &systemd-buildsize;
+          预计所需磁盘空间：&systemd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &systemd-time;
+          预计构建时间：&systemd-time;
         </para>
       </listitem>
     </itemizedlist>

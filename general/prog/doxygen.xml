@@ -8,7 +8,7 @@
   <!ENTITY doxygen-download-ftp  " ">
   <!ENTITY doxygen-md5sum        "7b721b8733c63d6751019da0d01d018b">
   <!ENTITY doxygen-size          "9.0 MB">
-  <!ENTITY doxygen-buildsize     "428 MB (with tests)">
+  <!ENTITY doxygen-buildsize     "428 MB（含测试）">
   <!ENTITY doxygen-time          "1.2 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -52,32 +52,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&doxygen-download-http;"/>
+          下载地址（HTTP）：<ulink url="&doxygen-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&doxygen-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&doxygen-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &doxygen-md5sum;
+          MD5 校验和：&doxygen-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &doxygen-size;
+          大小：&doxygen-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &doxygen-buildsize;
+          预计所需磁盘空间：&doxygen-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &doxygen-time;
+          预计构建时间：&doxygen-time;
         </para>
       </listitem>
     </itemizedlist>

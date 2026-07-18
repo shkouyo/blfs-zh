@@ -10,7 +10,7 @@
   <!ENTITY pygments-md5sum        "&pygments-md5sum;">
   <!ENTITY pygments-size          "4.8 MB">
   <!ENTITY pygments-buildsize     "84 MB">
-  <!ENTITY pygments-time          "less than 0.1 SBU">
+  <!ENTITY pygments-time          "小于 0.1 SBU">
 ]>
 
  <!-- Begin Pygments -->
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pygments-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pygments-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pygments-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pygments-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pygments-md5sum;
+            MD5 校验和：&pygments-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pygments-size;
+            大小：&pygments-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pygments-buildsize;
+            预计所需磁盘空间：&pygments-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pygments-time;
+            预计构建时间：&pygments-time;
           </para>
         </listitem>
       </itemizedlist>

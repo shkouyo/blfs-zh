@@ -10,7 +10,7 @@
   <!ENTITY ssh-askpass-md5sum        "&openssh-md5sum;">
   <!ENTITY ssh-askpass-size          "1.9 MB">
   <!ENTITY ssh-askpass-buildsize     "11 MB">
-  <!ENTITY ssh-askpass-time          "less than 0.1 SBU">
+  <!ENTITY ssh-askpass-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="ssh-askpass" xreflabel="ssh-askpass-&ssh-askpass-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ssh-askpass-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ssh-askpass-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ssh-askpass-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ssh-askpass-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ssh-askpass-md5sum;
+          MD5 校验和：&ssh-askpass-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ssh-askpass-size;
+          大小：&ssh-askpass-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ssh-askpass-buildsize;
+          预计所需磁盘空间：&ssh-askpass-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ssh-askpass-time;
+          预计构建时间：&ssh-askpass-time;
         </para>
       </listitem>
     </itemizedlist>

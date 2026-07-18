@@ -8,8 +8,8 @@
   <!ENTITY libunwind-download-ftp  " ">
   <!ENTITY libunwind-md5sum        "13bc7b41462ac6ea157d350eaf6c1503">
   <!ENTITY libunwind-size          "960 KB">
-  <!ENTITY libunwind-buildsize     "22 MB (with tests)">
-  <!ENTITY libunwind-time          "0.4 SBU (with tests)">
+  <!ENTITY libunwind-buildsize     "22 MB（含测试）">
+  <!ENTITY libunwind-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="libunwind" xreflabel="libunwind-&libunwind-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libunwind-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libunwind-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libunwind-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libunwind-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libunwind-md5sum;
+          MD5 校验和：&libunwind-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libunwind-size;
+          大小：&libunwind-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libunwind-buildsize;
+          预计所需磁盘空间：&libunwind-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libunwind-time;
+          预计构建时间：&libunwind-time;
         </para>
       </listitem>
     </itemizedlist>

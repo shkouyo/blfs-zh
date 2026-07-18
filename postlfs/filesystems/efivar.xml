@@ -9,7 +9,7 @@
   <!ENTITY efivar-md5sum        "a8fc3e79336cd6e738ab44f9bc96a5aa">
   <!ENTITY efivar-size          "456 KB">
   <!ENTITY efivar-buildsize     "21 MB">
-  <!ENTITY efivar-time          "less than 0.1 SBU">
+  <!ENTITY efivar-time          "小于 0.1 SBU">
   <!ENTITY mandoc "<ulink url='https://mandoc.bsd.lv/'>mandoc</ulink>">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&efivar-download-http;"/>
+          下载地址（HTTP）：<ulink url="&efivar-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&efivar-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&efivar-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &efivar-md5sum;
+          MD5 校验和：&efivar-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &efivar-size;
+          大小：&efivar-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &efivar-buildsize;
+          预计所需磁盘空间：&efivar-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &efivar-time;
+          预计构建时间：&efivar-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY editables-md5sum        "&editables-md5sum;">
   <!ENTITY editables-size          "20 KB">
   <!ENTITY editables-buildsize     "196 KB">
-  <!ENTITY editables-time          "less than 0.1 SBU">
+  <!ENTITY editables-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="editables" xreflabel="editables-&editables-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&editables-download-http;"/>
+            下载地址（HTTP）：<ulink url="&editables-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&editables-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&editables-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &editables-md5sum;
+            MD5 校验和：&editables-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &editables-size;
+            大小：&editables-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &editables-buildsize;
+            预计所需磁盘空间：&editables-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &editables-time;
+            预计构建时间：&editables-time;
           </para>
         </listitem>
       </itemizedlist>

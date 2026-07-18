@@ -9,7 +9,7 @@
   <!ENTITY dbusmock-md5sum        "e90b10618f5a0c7f5dcc4d4a56c6ce07">
   <!ENTITY dbusmock-size          "108 KB">
   <!ENTITY dbusmock-buildsize     "2.4 MB">
-  <!ENTITY dbusmock-time          "less than 0.1 SBU">
+  <!ENTITY dbusmock-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin dbusmock -->
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&dbusmock-download-http;"/>
+            下载地址（HTTP）：<ulink url="&dbusmock-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&dbusmock-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&dbusmock-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &dbusmock-md5sum;
+            MD5 校验和：&dbusmock-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &dbusmock-size;
+            大小：&dbusmock-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &dbusmock-buildsize;
+            预计所需磁盘空间：&dbusmock-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &dbusmock-time;
+            预计构建时间：&dbusmock-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY fmt-download-ftp  " ">
   <!ENTITY fmt-md5sum        "7be257d8bfad55bc9eabb1288ad895be">
   <!ENTITY fmt-size          "724 KB">
-  <!ENTITY fmt-buildsize     "48 MB (with tests)">
+  <!ENTITY fmt-buildsize     "48 MB（含测试）">
   <!ENTITY fmt-time          "0.4 SBU (using parallelism=4; with tests)">
 ]>
 
@@ -34,32 +34,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fmt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fmt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fmt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fmt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fmt-md5sum;
+          MD5 校验和：&fmt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fmt-size;
+          大小：&fmt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fmt-buildsize;
+          预计所需磁盘空间：&fmt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fmt-time;
+          预计构建时间：&fmt-time;
         </para>
       </listitem>
     </itemizedlist>

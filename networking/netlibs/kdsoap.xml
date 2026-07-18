@@ -10,7 +10,7 @@
   <!ENTITY kdsoap-md5sum        "fba550a6bd3b7f2e5da606f039e3e470">
   <!ENTITY kdsoap-size          "1.1 MB">
   <!ENTITY kdsoap-buildsize     "27 MB">
-  <!ENTITY kdsoap-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY kdsoap-time          "0.3 SBU（并行度=4）">
 ]>
 
 <sect1 id="kdsoap" xreflabel="kdsoap-&kdsoap-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kdsoap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kdsoap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kdsoap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kdsoap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kdsoap-md5sum;
+          MD5 校验和：&kdsoap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kdsoap-size;
+          大小：&kdsoap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kdsoap-buildsize;
+          预计所需磁盘空间：&kdsoap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kdsoap-time;
+          预计构建时间：&kdsoap-time;
         </para>
       </listitem>
     </itemizedlist>

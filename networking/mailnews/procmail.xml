@@ -10,7 +10,7 @@
   <!ENTITY procmail-md5sum        "e38b8739e5c6400e3586c5fd9810c1e0">
   <!ENTITY procmail-size          "296 KB">
   <!ENTITY procmail-buildsize     "2.1 MB">
-  <!ENTITY procmail-time          "less than 0.1 SBU">
+  <!ENTITY procmail-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="procmail" xreflabel="Procmail-&procmail-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&procmail-download-http;"/>
+          下载地址（HTTP）：<ulink url="&procmail-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&procmail-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&procmail-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &procmail-md5sum;
+          MD5 校验和：&procmail-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &procmail-size;
+          大小：&procmail-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &procmail-buildsize;
+          预计所需磁盘空间：&procmail-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &procmail-time;
+          预计构建时间：&procmail-time;
         </para>
       </listitem>
     </itemizedlist>

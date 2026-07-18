@@ -9,7 +9,7 @@
   <!ENTITY doxypypy-md5sum        "&doxypypy-md5sum;">
   <!ENTITY doxypypy-size          "45 KB">
   <!ENTITY doxypypy-buildsize     "2.1 MB">
-  <!ENTITY doxypypy-time          "less than 0.1 SBU">
+  <!ENTITY doxypypy-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="doxypypy" xreflabel="doxypypy-&doxypypy-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&doxypypy-download-http;"/>
+            下载地址（HTTP）：<ulink url="&doxypypy-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&doxypypy-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&doxypypy-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &doxypypy-md5sum;
+            MD5 校验和：&doxypypy-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &doxypypy-size;
+            大小：&doxypypy-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &doxypypy-buildsize;
+            预计所需磁盘空间：&doxypypy-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &doxypypy-time;
+            预计构建时间：&doxypypy-time;
           </para>
         </listitem>
       </itemizedlist>

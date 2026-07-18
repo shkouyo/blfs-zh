@@ -8,8 +8,8 @@
   <!ENTITY udisks2-download-ftp  " ">
   <!ENTITY udisks2-md5sum        "55f9f7bbb7986244bb4905c04f8c1542">
   <!ENTITY udisks2-size          "1.9 MB">
-  <!ENTITY udisks2-buildsize     "68 MB (with tests)">
-  <!ENTITY udisks2-time          "0.2 SBU (with tests)">
+  <!ENTITY udisks2-buildsize     "68 MB（含测试）">
+  <!ENTITY udisks2-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="udisks2" xreflabel="UDisks-&udisks2-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&udisks2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&udisks2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&udisks2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&udisks2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &udisks2-md5sum;
+          MD5 校验和：&udisks2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &udisks2-size;
+          大小：&udisks2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &udisks2-buildsize;
+          预计所需磁盘空间：&udisks2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &udisks2-time;
+          预计构建时间：&udisks2-time;
         </para>
       </listitem>
     </itemizedlist>

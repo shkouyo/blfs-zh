@@ -8,7 +8,7 @@
   <!ENTITY libgcrypt-download-ftp  " ">
   <!ENTITY libgcrypt-md5sum        "4e98430cfc16d842a7231026c32418da">
   <!ENTITY libgcrypt-size          "4.3 MB">
-  <!ENTITY libgcrypt-buildsize     "159 MB (with tests)">
+  <!ENTITY libgcrypt-buildsize     "159 MB（含测试）">
   <!ENTITY libgcrypt-time          "0.2 SBU (with documentation; add 0.9 SBU for tests)">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgcrypt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgcrypt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgcrypt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgcrypt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgcrypt-md5sum;
+          MD5 校验和：&libgcrypt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgcrypt-size;
+          大小：&libgcrypt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgcrypt-buildsize;
+          预计所需磁盘空间：&libgcrypt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgcrypt-time;
+          预计构建时间：&libgcrypt-time;
         </para>
       </listitem>
     </itemizedlist>

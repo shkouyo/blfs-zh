@@ -8,8 +8,8 @@
   <!ENTITY pytest-download-ftp  " ">
   <!ENTITY pytest-md5sum        "&pytest-md5sum;">
   <!ENTITY pytest-size          "1.6 MB">
-  <!ENTITY pytest-buildsize     "49 MB (with tests)">
-  <!ENTITY pytest-time          "1.3 SBU (with tests)">
+  <!ENTITY pytest-buildsize     "49 MB（含测试）">
+  <!ENTITY pytest-time          "1.3 SBU（含测试）">
 ]>
 
   <sect2 id="pytest" xreflabel="pytest-&pytest-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pytest-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pytest-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pytest-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pytest-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pytest-md5sum;
+            MD5 校验和：&pytest-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pytest-size;
+            大小：&pytest-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pytest-buildsize;
+            预计所需磁盘空间：&pytest-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pytest-time;
+            预计构建时间：&pytest-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -36,27 +36,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&simdutf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&simdutf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &simdutf-md5sum;
+          MD5 校验和：&simdutf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &simdutf-size;
+          大小：&simdutf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &simdutf-buildsize;
+          预计所需磁盘空间：&simdutf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &simdutf-time;
+          预计构建时间：&simdutf-time;
         </para>
       </listitem>
     </itemizedlist>

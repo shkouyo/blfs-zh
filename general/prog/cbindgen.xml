@@ -8,7 +8,7 @@
   <!ENTITY cbindgen-download-ftp  " ">
   <!ENTITY cbindgen-md5sum        "7e790e024bc678ad1b4431b0350679e9">
   <!ENTITY cbindgen-size          "248 KB">
-  <!ENTITY cbindgen-buildsize     "255 MB (with tests)">
+  <!ENTITY cbindgen-buildsize     "255 MB（含测试）">
   <!ENTITY cbindgen-time          "0.4 SBU (add 0.2 SBU for tests), both on a 4-core machine">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cbindgen-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cbindgen-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cbindgen-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cbindgen-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cbindgen-md5sum;
+          MD5 校验和：&cbindgen-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cbindgen-size;
+          大小：&cbindgen-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cbindgen-buildsize;
+          预计所需磁盘空间：&cbindgen-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cbindgen-time;
+          预计构建时间：&cbindgen-time;
         </para>
       </listitem>
     </itemizedlist>

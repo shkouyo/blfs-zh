@@ -8,8 +8,8 @@
   <!ENTITY setuptools_rust-download-ftp  " ">
   <!ENTITY setuptools_rust-md5sum        "&setuptools_rust-md5sum;">
   <!ENTITY setuptools_rust-size          "304 KB">
-  <!ENTITY setuptools_rust-buildsize     "3.9 MB (with tests)">
-  <!ENTITY setuptools_rust-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY setuptools_rust-buildsize     "3.9 MB（含测试）">
+  <!ENTITY setuptools_rust-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="setuptools_rust" xreflabel="setuptools_rust-&setuptools_rust-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&setuptools_rust-download-http;"/>
+            下载地址（HTTP）：<ulink url="&setuptools_rust-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&setuptools_rust-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&setuptools_rust-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &setuptools_rust-md5sum;
+            MD5 校验和：&setuptools_rust-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &setuptools_rust-size;
+            大小：&setuptools_rust-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &setuptools_rust-buildsize;
+            预计所需磁盘空间：&setuptools_rust-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &setuptools_rust-time;
+            预计构建时间：&setuptools_rust-time;
           </para>
         </listitem>
       </itemizedlist>

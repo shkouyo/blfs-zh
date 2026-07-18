@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnumeric-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnumeric-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnumeric-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnumeric-md5sum;
+          MD5 校验和：&gnumeric-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnumeric-size;
+          大小：&gnumeric-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnumeric-buildsize;
+          预计所需磁盘空间：&gnumeric-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnumeric-time;
+          预计构建时间：&gnumeric-time;
         </para>
       </listitem>
     </itemizedlist>

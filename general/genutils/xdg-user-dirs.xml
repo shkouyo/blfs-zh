@@ -10,7 +10,7 @@
   <!ENTITY xdg-user-dirs-md5sum        "a80c6f2cc9fd3d9870fcda76d73ce3e6">
   <!ENTITY xdg-user-dirs-size          "68 KB">
   <!ENTITY xdg-user-dirs-buildsize     "3.6 MB">
-  <!ENTITY xdg-user-dirs-time          "less than 0.1 SBU">
+  <!ENTITY xdg-user-dirs-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xdg-user-dirs" xreflabel="Xdg-user-dirs-&xdg-user-dirs-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xdg-user-dirs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xdg-user-dirs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xdg-user-dirs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xdg-user-dirs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xdg-user-dirs-md5sum;
+          MD5 校验和：&xdg-user-dirs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xdg-user-dirs-size;
+          大小：&xdg-user-dirs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xdg-user-dirs-buildsize;
+          预计所需磁盘空间：&xdg-user-dirs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xdg-user-dirs-time;
+          预计构建时间：&xdg-user-dirs-time;
         </para>
       </listitem>
     </itemizedlist>

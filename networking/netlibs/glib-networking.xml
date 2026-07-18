@@ -9,8 +9,8 @@
   <!ENTITY glib-networking-download-ftp  " ">
   <!ENTITY glib-networking-md5sum        "405e6c058723217a1307ba8415615f9d">
   <!ENTITY glib-networking-size          "288 KB">
-  <!ENTITY glib-networking-buildsize     "5.9 MB (with tests)">
-  <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY glib-networking-buildsize     "5.9 MB（含测试）">
+  <!ENTITY glib-networking-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="glib-networking" xreflabel="glib-networking-&glib-networking-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glib-networking-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glib-networking-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glib-networking-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glib-networking-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glib-networking-md5sum;
+          MD5 校验和：&glib-networking-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glib-networking-size;
+          大小：&glib-networking-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glib-networking-buildsize;
+          预计所需磁盘空间：&glib-networking-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glib-networking-time;
+          预计构建时间：&glib-networking-time;
         </para>
       </listitem>
     </itemizedlist>

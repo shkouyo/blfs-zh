@@ -9,7 +9,7 @@
   <!ENTITY xdg-desktop-portal-wlr-md5sum    "4a02f0350b69df8168b235994df0e43c">
   <!ENTITY xdg-desktop-portal-wlr-size      "44 KB">
   <!ENTITY xdg-desktop-portal-wlr-buildsize "4 MB">
-  <!ENTITY xdg-desktop-portal-wlr-time      "less than 0.1 SBU">
+  <!ENTITY xdg-desktop-portal-wlr-time      "小于 0.1 SBU">
 ]>
 
 <sect1 id="xdg-desktop-portal-wlr" xreflabel="xdg-desktop-portal-wlr-&xdg-desktop-portal-wlr-version;">
@@ -37,27 +37,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xdg-desktop-portal-wlr-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xdg-desktop-portal-wlr-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xdg-desktop-portal-wlr-md5sum;
+          MD5 校验和：&xdg-desktop-portal-wlr-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xdg-desktop-portal-wlr-size;
+          大小：&xdg-desktop-portal-wlr-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xdg-desktop-portal-wlr-buildsize;
+          预计所需磁盘空间：&xdg-desktop-portal-wlr-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xdg-desktop-portal-wlr-time;
+          预计构建时间：&xdg-desktop-portal-wlr-time;
         </para>
       </listitem>
     </itemizedlist>

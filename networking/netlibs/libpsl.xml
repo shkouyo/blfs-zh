@@ -9,7 +9,7 @@
   <!ENTITY libpsl-md5sum        "01d6c6252b51554812103b64cbd90002">
   <!ENTITY libpsl-size          "7.5 MB">
   <!ENTITY libpsl-buildsize     "51 MB">
-  <!ENTITY libpsl-time          "less than 0.1 SBU (including tests)">
+  <!ENTITY libpsl-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libpsl" xreflabel="libpsl-&libpsl-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libpsl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libpsl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libpsl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libpsl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libpsl-md5sum;
+          MD5 校验和：&libpsl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libpsl-size;
+          大小：&libpsl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libpsl-buildsize;
+          预计所需磁盘空间：&libpsl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libpsl-time;
+          预计构建时间：&libpsl-time;
         </para>
       </listitem>
     </itemizedlist>

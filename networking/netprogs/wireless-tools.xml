@@ -9,7 +9,7 @@
   <!ENTITY wireless-md5sum        "e06c222e186f7cc013fd272d023710cb">
   <!ENTITY wireless-size          "288 KB">
   <!ENTITY wireless-buildsize     "2.0 MB">
-  <!ENTITY wireless-time          "less than 0.1 SBU">
+  <!ENTITY wireless-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="wireless_tools" xreflabel="Wireless Tools-&wireless-tools-version;">
@@ -46,32 +46,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wireless-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wireless-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wireless-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wireless-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wireless-md5sum;
+          MD5 校验和：&wireless-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wireless-size;
+          大小：&wireless-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wireless-buildsize;
+          预计所需磁盘空间：&wireless-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wireless-time;
+          预计构建时间：&wireless-time;
         </para>
       </listitem>
     </itemizedlist>

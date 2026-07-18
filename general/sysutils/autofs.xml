@@ -9,7 +9,7 @@
   <!ENTITY autofs-md5sum        "06fb59a03c82364a0d788435b6853d70">
   <!ENTITY autofs-size          "328 KB">
   <!ENTITY autofs-buildsize     "5.7 MB">
-  <!ENTITY autofs-time          "less than 0.1 SBU">
+  <!ENTITY autofs-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="autofs" xreflabel="Autofs-&autofs-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&autofs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&autofs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&autofs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&autofs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &autofs-md5sum;
+          MD5 校验和：&autofs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &autofs-size;
+          大小：&autofs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &autofs-buildsize;
+          预计所需磁盘空间：&autofs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &autofs-time;
+          预计构建时间：&autofs-time;
         </para>
       </listitem>
     </itemizedlist>

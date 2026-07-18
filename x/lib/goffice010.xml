@@ -9,7 +9,7 @@
   <!ENTITY goffice010-download-ftp  " ">
   <!ENTITY goffice010-md5sum        "a8477240f8c358bd0add4abca40e3208">
   <!ENTITY goffice010-size          "2.5 MB">
-  <!ENTITY goffice010-buildsize     "83 MB (with tests)">
+  <!ENTITY goffice010-buildsize     "83 MB（含测试）">
   <!ENTITY goffice010-time          "0.5 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&goffice010-download-http;"/>
+          下载地址（HTTP）：<ulink url="&goffice010-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&goffice010-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&goffice010-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &goffice010-md5sum;
+          MD5 校验和：&goffice010-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &goffice010-size;
+          大小：&goffice010-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &goffice010-buildsize;
+          预计所需磁盘空间：&goffice010-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &goffice010-time;
+          预计构建时间：&goffice010-time;
         </para>
       </listitem>
     </itemizedlist>

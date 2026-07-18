@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-themes-extra-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-themes-extra-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-themes-extra-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-themes-extra-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-themes-extra-md5sum;
+          MD5 校验和：&gnome-themes-extra-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-themes-extra-size;
+          大小：&gnome-themes-extra-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-themes-extra-buildsize;
+          预计所需磁盘空间：&gnome-themes-extra-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-themes-extra-time;
+          预计构建时间：&gnome-themes-extra-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY asciidoc-md5sum        "&asciidoc-md5sum;">
   <!ENTITY asciidoc-size          "228 KB">
   <!ENTITY asciidoc-buildsize     "2.6 MB">
-  <!ENTITY asciidoc-time          "less than 0.1 SBU">
+  <!ENTITY asciidoc-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="asciidoc" xreflabel="asciidoc-&asciidoc-version;">
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&asciidoc-download-http;"/>
+            下载地址（HTTP）：<ulink url="&asciidoc-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&asciidoc-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&asciidoc-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &asciidoc-md5sum;
+            MD5 校验和：&asciidoc-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &asciidoc-size;
+            大小：&asciidoc-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &asciidoc-buildsize;
+            预计所需磁盘空间：&asciidoc-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &asciidoc-time;
+            预计构建时间：&asciidoc-time;
           </para>
         </listitem>
       </itemizedlist>

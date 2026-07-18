@@ -9,7 +9,7 @@
   <!ENTITY glew-md5sum        "923ac4437518cc7cd323adde8a4091ae">
   <!ENTITY glew-size          "848 KB">
   <!ENTITY glew-buildsize     "18 MB">
-  <!ENTITY glew-time          "less than 0.1 SBU">
+  <!ENTITY glew-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="glew" xreflabel="GLEW-&glew-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glew-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glew-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glew-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glew-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glew-md5sum;
+          MD5 校验和：&glew-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glew-size;
+          大小：&glew-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glew-buildsize;
+          预计所需磁盘空间：&glew-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glew-time;
+          预计构建时间：&glew-time;
         </para>
       </listitem>
     </itemizedlist>

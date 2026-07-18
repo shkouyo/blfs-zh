@@ -9,7 +9,7 @@
   <!ENTITY libndp-md5sum        "9d486750569e7025e5d0afdcc509b93c">
   <!ENTITY libndp-size          "368 KB">
   <!ENTITY libndp-buildsize     "2.5 MB">
-  <!ENTITY libndp-time          "less than 0.1 SBU">
+  <!ENTITY libndp-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libndp" xreflabel="libndp-&libndp-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libndp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libndp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libndp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libndp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libndp-md5sum;
+          MD5 校验和：&libndp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libndp-size;
+          大小：&libndp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libndp-buildsize;
+          预计所需磁盘空间：&libndp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libndp-time;
+          预计构建时间：&libndp-time;
         </para>
       </listitem>
     </itemizedlist>

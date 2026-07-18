@@ -8,8 +8,8 @@
   <!ENTITY bubblewrap-download-ftp  " ">
   <!ENTITY bubblewrap-md5sum        "6376255e2e505100e01b20c2dafa7faf">
   <!ENTITY bubblewrap-size          "116 KB">
-  <!ENTITY bubblewrap-buildsize     "3.8 MB (with tests)">
-  <!ENTITY bubblewrap-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY bubblewrap-buildsize     "3.8 MB（含测试）">
+  <!ENTITY bubblewrap-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="bubblewrap" xreflabel="bubblewrap-&bubblewrap-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bubblewrap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&bubblewrap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bubblewrap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&bubblewrap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bubblewrap-md5sum;
+          MD5 校验和：&bubblewrap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bubblewrap-size;
+          大小：&bubblewrap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bubblewrap-buildsize;
+          预计所需磁盘空间：&bubblewrap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bubblewrap-time;
+          预计构建时间：&bubblewrap-time;
         </para>
       </listitem>
     </itemizedlist>

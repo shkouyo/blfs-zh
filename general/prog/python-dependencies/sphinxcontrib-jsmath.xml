@@ -8,8 +8,8 @@
   <!ENTITY sc-jsmath-download-ftp  " ">
   <!ENTITY sc-jsmath-md5sum        "&sc-jsmath-md5sum;">
   <!ENTITY sc-jsmath-size          "5.7 KB">
-  <!ENTITY sc-jsmath-buildsize     "324 KB (with tests)">
-  <!ENTITY sc-jsmath-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY sc-jsmath-buildsize     "324 KB（含测试）">
+  <!ENTITY sc-jsmath-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="sc-jsmath" xreflabel="sphinxcontrib-jsmath-&sc-jsmath-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&sc-jsmath-download-http;"/>
+            下载地址（HTTP）：<ulink url="&sc-jsmath-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&sc-jsmath-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&sc-jsmath-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &sc-jsmath-md5sum;
+            MD5 校验和：&sc-jsmath-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &sc-jsmath-size;
+            大小：&sc-jsmath-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &sc-jsmath-buildsize;
+            预计所需磁盘空间：&sc-jsmath-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &sc-jsmath-time;
+            预计构建时间：&sc-jsmath-time;
           </para>
         </listitem>
       </itemizedlist>

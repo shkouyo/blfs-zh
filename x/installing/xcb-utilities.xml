@@ -54,27 +54,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xcb-utilities-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xcb-utilities-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xcb-utilities-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xcb-utilities-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xcb-utilities-size;
+          大小：&xcb-utilities-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xcb-utilities-buildsize;
+          预计所需磁盘空间：&xcb-utilities-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xcb-utilities-time;
+          预计构建时间：&xcb-utilities-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&proftpd-download-http;"/>
+          下载地址（HTTP）：<ulink url="&proftpd-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&proftpd-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&proftpd-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &proftpd-md5sum;
+          MD5 校验和：&proftpd-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &proftpd-size;
+          大小：&proftpd-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &proftpd-buildsize;
+          预计所需磁盘空间：&proftpd-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &proftpd-time;
+          预计构建时间：&proftpd-time;
         </para>
       </listitem>
     </itemizedlist>

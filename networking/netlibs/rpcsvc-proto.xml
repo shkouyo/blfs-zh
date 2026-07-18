@@ -9,7 +9,7 @@
   <!ENTITY rpcsvc-proto-md5sum        "bf908de360308d909e9cc469402ff2ef">
   <!ENTITY rpcsvc-proto-size          "168 KB">
   <!ENTITY rpcsvc-proto-buildsize     "2.2 MB">
-  <!ENTITY rpcsvc-proto-time          "less than 0.1 SBU">
+  <!ENTITY rpcsvc-proto-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="rpcsvc-proto" xreflabel="rpcsvc-proto-&rpcsvc-proto-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rpcsvc-proto-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rpcsvc-proto-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&rpcsvc-proto-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&rpcsvc-proto-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rpcsvc-proto-md5sum;
+          MD5 校验和：&rpcsvc-proto-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rpcsvc-proto-size;
+          大小：&rpcsvc-proto-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rpcsvc-proto-buildsize;
+          预计所需磁盘空间：&rpcsvc-proto-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rpcsvc-proto-time;
+          预计构建时间：&rpcsvc-proto-time;
         </para>
       </listitem>
     </itemizedlist>

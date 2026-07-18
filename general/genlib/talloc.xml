@@ -8,8 +8,8 @@
   <!ENTITY talloc-download-ftp  " ">
   <!ENTITY talloc-md5sum        "a385dd581b4b588873338d182294cf36">
   <!ENTITY talloc-size          "672 KB">
-  <!ENTITY talloc-buildsize     "11 MB (with tests)">
-  <!ENTITY talloc-time          "0.4 SBU (with tests)">
+  <!ENTITY talloc-buildsize     "11 MB（含测试）">
+  <!ENTITY talloc-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="talloc" xreflabel="Talloc-&talloc-version;">
@@ -37,31 +37,31 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&talloc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&talloc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&talloc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&talloc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &talloc-md5sum;
+          MD5 校验和：&talloc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &talloc-size;</para>
+          大小：&talloc-size;</para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &talloc-buildsize;
+          预计所需磁盘空间：&talloc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &talloc-time;
+          预计构建时间：&talloc-time;
         </para>
       </listitem>
     </itemizedlist>

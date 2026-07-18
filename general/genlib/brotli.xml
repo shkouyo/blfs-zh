@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&brotli-download-http;"/>
+          下载地址（HTTP）：<ulink url="&brotli-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&brotli-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&brotli-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &brotli-md5sum;
+          MD5 校验和：&brotli-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &brotli-size;
+          大小：&brotli-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &brotli-buildsize;
+          预计所需磁盘空间：&brotli-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &brotli-time;
+          预计构建时间：&brotli-time;
         </para>
       </listitem>
     </itemizedlist>

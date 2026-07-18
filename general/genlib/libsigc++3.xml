@@ -8,8 +8,8 @@
   <!ENTITY libsigc-download-ftp  " ">
   <!ENTITY libsigc-md5sum        "b7205d5465ac15fbc0c781d39b4011be">
   <!ENTITY libsigc-size          "972 KB">
-  <!ENTITY libsigc-buildsize     "12 MB (with tests)">
-  <!ENTITY libsigc-time          "0.4 SBU (with tests)">
+  <!ENTITY libsigc-buildsize     "12 MB（含测试）">
+  <!ENTITY libsigc-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="libsigc3" xreflabel="libsigc++-&libsigc3-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsigc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsigc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsigc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsigc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsigc-md5sum;
+          MD5 校验和：&libsigc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsigc-size;
+          大小：&libsigc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsigc-buildsize;
+          预计所需磁盘空间：&libsigc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsigc-time;
+          预计构建时间：&libsigc-time;
         </para>
       </listitem>
     </itemizedlist>

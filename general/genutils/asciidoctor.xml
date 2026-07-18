@@ -9,7 +9,7 @@
   <!ENTITY asciidoctor-md5sum        "2bfb3830092af1dc213a99e785688372">
   <!ENTITY asciidoctor-size          "1.6 MB">
   <!ENTITY asciidoctor-buildsize     "5.5 MB">
-  <!ENTITY asciidoctor-time          "less than 0.1 SBU">
+  <!ENTITY asciidoctor-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="asciidoctor" xreflabel="asciidoctor-&asciidoctor-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&asciidoctor-download-http;"/>
+          下载地址（HTTP）：<ulink url="&asciidoctor-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&asciidoctor-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&asciidoctor-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &asciidoctor-md5sum;
+          MD5 校验和：&asciidoctor-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &asciidoctor-size;
+          大小：&asciidoctor-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &asciidoctor-buildsize;
+          预计所需磁盘空间：&asciidoctor-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &asciidoctor-time;
+          预计构建时间：&asciidoctor-time;
         </para>
       </listitem>
     </itemizedlist>

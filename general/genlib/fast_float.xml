@@ -8,8 +8,8 @@
   <!ENTITY fast_float-download-ftp  " ">
   <!ENTITY fast_float-md5sum        "ddcf64ffe15f1e1ed964a355db7a04f3">
   <!ENTITY fast_float-size          "140 KB">
-  <!ENTITY fast_float-buildsize     "1.5 MB (add 620 MB for tests)">
-  <!ENTITY fast_float-time          "less than 0.1 SBU (add 0.3 SBU for tests, depending on network connection)">
+  <!ENTITY fast_float-buildsize     "1.5 MB（测试将额外增加 620 MB）">
+  <!ENTITY fast_float-time          "小于 0.1 SBU （测试将额外耗费 0.3 SBU，取决于网络）">
 ]>
 
 <sect1 id="fast_float" xreflabel="Fast_float-&fast_float-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fast_float-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fast_float-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fast_float-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fast_float-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fast_float-md5sum;
+          MD5 校验和：&fast_float-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fast_float-size;
+          大小：&fast_float-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fast_float-buildsize;
+          预计所需磁盘空间：&fast_float-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fast_float-time;
+          预计构建时间：&fast_float-time;
         </para>
       </listitem>
     </itemizedlist>

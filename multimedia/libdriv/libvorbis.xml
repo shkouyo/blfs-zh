@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libvorbis-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libvorbis-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libvorbis-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libvorbis-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libvorbis-md5sum;
+          MD5 校验和：&libvorbis-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libvorbis-size;
+          大小：&libvorbis-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libvorbis-buildsize;
+          预计所需磁盘空间：&libvorbis-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libvorbis-time;
+          预计构建时间：&libvorbis-time;
         </para>
       </listitem>
     </itemizedlist>

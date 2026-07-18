@@ -7,7 +7,7 @@
   <!ENTITY gedit-download-http "&gnome-download-http;/gedit/&gedit-major-version;/gedit-&gedit-version;.tar.xz">
   <!ENTITY gedit-md5sum        "1aa72a59d51be4597490220af3ad0421">
   <!ENTITY gedit-size          "2.7 MB">
-  <!ENTITY gedit-buildsize     "112 MB (with tests)">
+  <!ENTITY gedit-buildsize     "112 MB（含测试）">
   <!ENTITY gedit-time          "0.3 SBU (using parallelism=4; with tests)">
 
   <!ENTITY gedit-lib-root      "https://gitlab.gnome.org/World/gedit">
@@ -64,22 +64,22 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gedit-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gedit-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gedit-size;
+          大小：&gedit-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gedit-buildsize;
+          预计所需磁盘空间：&gedit-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gedit-time;
+          预计构建时间：&gedit-time;
         </para>
       </listitem>
     </itemizedlist>

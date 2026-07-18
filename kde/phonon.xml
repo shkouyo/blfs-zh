@@ -9,7 +9,7 @@
   <!ENTITY phonon-md5sum        "e80e9c73967080016bdb3c0ee514ceab">
   <!ENTITY phonon-size          "400 KB">
   <!ENTITY phonon-buildsize     "23 MB">
-  <!ENTITY phonon-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY phonon-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="phonon" xreflabel="phonon-&phonon-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&phonon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&phonon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&phonon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&phonon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &phonon-md5sum;
+          MD5 校验和：&phonon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &phonon-size;
+          大小：&phonon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &phonon-buildsize;
+          预计所需磁盘空间：&phonon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &phonon-time;
+          预计构建时间：&phonon-time;
         </para>
       </listitem>
     </itemizedlist>

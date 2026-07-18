@@ -9,7 +9,7 @@
   <!ENTITY hicolor-icon-theme-md5sum        "ef14f3af03bcde9ed134aad626bdbaad">
   <!ENTITY hicolor-icon-theme-size          "32 KB">
   <!ENTITY hicolor-icon-theme-buildsize     "644 KB">
-  <!ENTITY hicolor-icon-theme-time          "less than 0.1 SBU">
+  <!ENTITY hicolor-icon-theme-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="hicolor-icon-theme"
@@ -38,32 +38,32 @@ xreflabel="hicolor-icon-theme-&hicolor-icon-theme-version;">
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&hicolor-icon-theme-download-http;"/>
+          下载地址（HTTP）：<ulink url="&hicolor-icon-theme-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&hicolor-icon-theme-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&hicolor-icon-theme-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &hicolor-icon-theme-md5sum;
+          MD5 校验和：&hicolor-icon-theme-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &hicolor-icon-theme-size;
+          大小：&hicolor-icon-theme-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &hicolor-icon-theme-buildsize;
+          预计所需磁盘空间：&hicolor-icon-theme-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &hicolor-icon-theme-time;
+          预计构建时间：&hicolor-icon-theme-time;
         </para>
       </listitem>
     </itemizedlist>

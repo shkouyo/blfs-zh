@@ -8,8 +8,8 @@
   <!ENTITY cssselect-download-ftp  " ">
   <!ENTITY cssselect-md5sum        "&cssselect-md5sum;">
   <!ENTITY cssselect-size          "40 KB">
-  <!ENTITY cssselect-buildsize     "1.1 MB (with tests)">
-  <!ENTITY cssselect-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY cssselect-buildsize     "1.1 MB（含测试）">
+  <!ENTITY cssselect-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="cssselect" xreflabel="cssselect-&cssselect-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&cssselect-download-http;"/>
+            下载地址（HTTP）：<ulink url="&cssselect-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&cssselect-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&cssselect-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &cssselect-md5sum;
+            MD5 校验和：&cssselect-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &cssselect-size;
+            大小：&cssselect-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &cssselect-buildsize;
+            预计所需磁盘空间：&cssselect-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &cssselect-time;
+            预计构建时间：&cssselect-time;
           </para>
         </listitem>
       </itemizedlist>

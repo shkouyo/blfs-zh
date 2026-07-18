@@ -8,8 +8,8 @@
   <!ENTITY libidn-download-ftp  " ">
   <!ENTITY libidn-md5sum        "4ee07cf7f960679b2872d5c15c0a5ed5">
   <!ENTITY libidn-size          "2.5 MB">
-  <!ENTITY libidn-buildsize     "24 MB (with tests)">
-  <!ENTITY libidn-time          "0.2 SBU (with tests)">
+  <!ENTITY libidn-buildsize     "24 MB（含测试）">
+  <!ENTITY libidn-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="libidn" xreflabel="libidn-&libidn-version;">
@@ -47,32 +47,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libidn-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libidn-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libidn-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libidn-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libidn-md5sum;
+          MD5 校验和：&libidn-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libidn-size;
+          大小：&libidn-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libidn-buildsize;
+          预计所需磁盘空间：&libidn-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libidn-time;
+          预计构建时间：&libidn-time;
         </para>
       </listitem>
     </itemizedlist>

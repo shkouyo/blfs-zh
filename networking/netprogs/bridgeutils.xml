@@ -9,7 +9,7 @@
   <!ENTITY bridge-md5sum        "3e1fee4dc22cac5457c2f6ffb990a518">
   <!ENTITY bridge-size          "29 KB">
   <!ENTITY bridge-buildsize     "1.1 MB">
-  <!ENTITY bridge-time          "less than 0.1 SBU">
+  <!ENTITY bridge-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="bridgeutils" xreflabel="bridge-utils-&bridgeutils-version;" revision="sysv">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bridge-download-http;"/>
+          下载地址（HTTP）：<ulink url="&bridge-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bridge-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&bridge-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bridge-md5sum;
+          MD5 校验和：&bridge-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bridge-size;
+          大小：&bridge-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bridge-buildsize;
+          预计所需磁盘空间：&bridge-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bridge-time;
+          预计构建时间：&bridge-time;
         </para>
       </listitem>
     </itemizedlist>

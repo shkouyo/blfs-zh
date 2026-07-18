@@ -9,7 +9,7 @@
   <!ENTITY fcron-md5sum "8a5f4845f9f40165336e53cc16433b19">
   <!ENTITY fcron-size "612 KB">
   <!ENTITY fcron-buildsize "5.8 MB">
-  <!ENTITY fcron-time "less than 0.1 SBU">
+  <!ENTITY fcron-time "小于 0.1 SBU">
 ]>
 
 <sect1 id="fcron" xreflabel="Fcron-&fcron-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fcron-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fcron-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fcron-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fcron-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fcron-md5sum;
+          MD5 校验和：&fcron-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fcron-size;
+          大小：&fcron-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fcron-buildsize;
+          预计所需磁盘空间：&fcron-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fcron-time;
+          预计构建时间：&fcron-time;
         </para>
       </listitem>
     </itemizedlist>

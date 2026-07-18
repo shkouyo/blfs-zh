@@ -9,7 +9,7 @@
   <!ENTITY cachecontrol-md5sum        "&cachecontrol-md5sum;">
   <!ENTITY cachecontrol-size          "112 KB">
   <!ENTITY cachecontrol-buildsize     "348 KB (add 97 MB for the tests)">
-  <!ENTITY cachecontrol-time          "less than 0.1 SBU">
+  <!ENTITY cachecontrol-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="cachecontrol" xreflabel="cachecontrol-&cachecontrol-version;">
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&cachecontrol-download-http;"/>
+            下载地址（HTTP）：<ulink url="&cachecontrol-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&cachecontrol-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&cachecontrol-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &cachecontrol-md5sum;
+            MD5 校验和：&cachecontrol-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &cachecontrol-size;
+            大小：&cachecontrol-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &cachecontrol-buildsize;
+            预计所需磁盘空间：&cachecontrol-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &cachecontrol-time;
+            预计构建时间：&cachecontrol-time;
           </para>
         </listitem>
       </itemizedlist>

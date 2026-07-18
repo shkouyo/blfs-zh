@@ -9,7 +9,7 @@
   <!ENTITY pyproject-metadata-md5sum        "&pyproject-metadata-md5sum;">
   <!ENTITY pyproject-metadata-size          "44 KB">
   <!ENTITY pyproject-metadata-buildsize     "700 KB">
-  <!ENTITY pyproject-metadata-time          "less than 0.1 SBU">
+  <!ENTITY pyproject-metadata-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="pyproject-metadata" xreflabel="pyproject-metadata-&pyproject-metadata-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pyproject-metadata-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pyproject-metadata-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pyproject-metadata-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pyproject-metadata-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pyproject-metadata-md5sum;
+            MD5 校验和：&pyproject-metadata-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pyproject-metadata-size;
+            大小：&pyproject-metadata-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pyproject-metadata-buildsize;
+            预计所需磁盘空间：&pyproject-metadata-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pyproject-metadata-time;
+            预计构建时间：&pyproject-metadata-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -10,7 +10,7 @@
   <!ENTITY gnome-nettool-md5sum        "ba99489e9e3a1af03e9f2719acac7beb">
   <!ENTITY gnome-nettool-size          "413 KB">
   <!ENTITY gnome-nettool-buildsize     "12 MB">
-  <!ENTITY gnome-nettool-time          "less than 0.1 SBU">
+  <!ENTITY gnome-nettool-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-nettool" xreflabel="gnome-nettool-&gnome-nettool-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-nettool-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-nettool-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-nettool-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-nettool-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-nettool-md5sum;
+          MD5 校验和：&gnome-nettool-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-nettool-size;
+          大小：&gnome-nettool-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-nettool-buildsize;
+          预计所需磁盘空间：&gnome-nettool-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-nettool-time;
+          预计构建时间：&gnome-nettool-time;
         </para>
       </listitem>
     </itemizedlist>

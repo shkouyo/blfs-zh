@@ -9,8 +9,8 @@
   <!ENTITY network-manager-applet-download-ftp " ">
   <!ENTITY network-manager-applet-md5sum    "83ff059aff3a691766d5f0079209e5af">
   <!ENTITY network-manager-applet-size      "1.9 MB">
-  <!ENTITY network-manager-applet-buildsize "46 MB (with tests)">
-  <!ENTITY network-manager-applet-time      "0.4 SBU (with tests)">
+  <!ENTITY network-manager-applet-buildsize "46 MB（含测试）">
+  <!ENTITY network-manager-applet-time      "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="network-manager-applet" xreflabel="network-manager-applet-&network-manager-applet-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&network-manager-applet-download-http;"/>
+          下载地址（HTTP）：<ulink url="&network-manager-applet-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&network-manager-applet-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&network-manager-applet-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &network-manager-applet-md5sum;
+          MD5 校验和：&network-manager-applet-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &network-manager-applet-size;
+          大小：&network-manager-applet-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &network-manager-applet-buildsize;
+          预计所需磁盘空间：&network-manager-applet-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &network-manager-applet-time;
+          预计构建时间：&network-manager-applet-time;
         </para>
       </listitem>
     </itemizedlist>

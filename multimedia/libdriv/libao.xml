@@ -9,7 +9,7 @@
   <!ENTITY libao-md5sum        "9f5dd20d7e95fd0dd72df5353829f097">
   <!ENTITY libao-size          "456 KB">
   <!ENTITY libao-buildsize     "3.9 MB">
-  <!ENTITY libao-time          "less than 0.1 SBU">
+  <!ENTITY libao-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libao" xreflabel="libao-&libao-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libao-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libao-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libao-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libao-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libao-md5sum;
+          MD5 校验和：&libao-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libao-size;
+          大小：&libao-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libao-buildsize;
+          预计所需磁盘空间：&libao-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libao-time;
+          预计构建时间：&libao-time;
         </para>
       </listitem>
     </itemizedlist>

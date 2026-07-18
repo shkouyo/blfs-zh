@@ -9,7 +9,7 @@
   <!ENTITY gimp-md5sum        "4a5a233cf24e599bbf73084a3583e29f">
   <!ENTITY gimp-size          "34 MB">
   <!ENTITY gimp-buildsize     "639 MB (173 MB installed)">
-  <!ENTITY gimp-time          "1.4 SBU (Using parallelism=4)">
+  <!ENTITY gimp-time          "1.4 SBU（并行度=4）">
 
   <!ENTITY gimp-help-download   "https://download.gimp.org/pub/gimp/help/gimp-help-&gimp-help-version;.tar.bz2">
   <!ENTITY gimp-help-md5sum     "a9afbeea7d55bb8655f91e2b0ca1d7a8">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gimp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gimp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gimp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gimp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gimp-md5sum;
+          MD5 校验和：&gimp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gimp-size;
+          大小：&gimp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gimp-buildsize;
+          预计所需磁盘空间：&gimp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gimp-time;
+          预计构建时间：&gimp-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -95,27 +95,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gimp-help-download;"/>
+          下载地址（HTTP）：<ulink url="&gimp-help-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gimp-help-size;
+          大小：&gimp-help-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gimp-help-md5sum;
+          MD5 校验和：&gimp-help-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gimp-help-buildsize;
+          预计所需磁盘空间：&gimp-help-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gimp-help-time;
+          预计构建时间：&gimp-help-time;
         </para>
       </listitem>
     </itemizedlist>

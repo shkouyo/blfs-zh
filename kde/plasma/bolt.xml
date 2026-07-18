@@ -8,8 +8,8 @@
   <!ENTITY bolt-download-ftp  " ">
   <!ENTITY bolt-md5sum        "6fade22d3875b3ff480e26058571b534">
   <!ENTITY bolt-size          "252 KB">
-  <!ENTITY bolt-buildsize     "9.8 MB (with tests)">
-  <!ENTITY bolt-time          "0.2 SBU (with tests)">
+  <!ENTITY bolt-buildsize     "9.8 MB（含测试）">
+  <!ENTITY bolt-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="bolt" xreflabel="bolt-&bolt-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bolt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&bolt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bolt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&bolt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bolt-md5sum;
+          MD5 校验和：&bolt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bolt-size;
+          大小：&bolt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bolt-buildsize;
+          预计所需磁盘空间：&bolt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bolt-time;
+          预计构建时间：&bolt-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,8 +9,8 @@
   <!ENTITY gdk-pixbuf-download-ftp  " ">
   <!ENTITY gdk-pixbuf-md5sum        "2a12da2133476b7b36fbfcadd7133315">
   <!ENTITY gdk-pixbuf-size          "5.8 MB">
-  <!ENTITY gdk-pixbuf-buildsize     "68 MB (with tests)">
-  <!ENTITY gdk-pixbuf-time          "0.2 SBU (with tests)">
+  <!ENTITY gdk-pixbuf-buildsize     "68 MB（含测试）">
+  <!ENTITY gdk-pixbuf-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="gdk-pixbuf" xreflabel="gdk-pixbuf-&gdk-pixbuf-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gdk-pixbuf-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gdk-pixbuf-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gdk-pixbuf-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gdk-pixbuf-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gdk-pixbuf-md5sum;
+          MD5 校验和：&gdk-pixbuf-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gdk-pixbuf-size;
+          大小：&gdk-pixbuf-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gdk-pixbuf-buildsize;
+          预计所需磁盘空间：&gdk-pixbuf-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gdk-pixbuf-time;
+          预计构建时间：&gdk-pixbuf-time;
         </para>
       </listitem>
     </itemizedlist>

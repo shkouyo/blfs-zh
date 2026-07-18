@@ -10,7 +10,7 @@
   <!ENTITY sound-theme-freedesktop-md5sum        "d7387912cfd275282d1ec94483cb2f62">
   <!ENTITY sound-theme-freedesktop-size          "472 KB">
   <!ENTITY sound-theme-freedesktop-buildsize     "2 MB">
-  <!ENTITY sound-theme-freedesktop-time          "less than 0.1 SBU">
+  <!ENTITY sound-theme-freedesktop-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="sound-theme-freedesktop" xreflabel="sound-theme-freedesktop-&sound-theme-freedesktop-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sound-theme-freedesktop-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sound-theme-freedesktop-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sound-theme-freedesktop-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sound-theme-freedesktop-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sound-theme-freedesktop-md5sum;
+          MD5 校验和：&sound-theme-freedesktop-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sound-theme-freedesktop-size;
+          大小：&sound-theme-freedesktop-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sound-theme-freedesktop-buildsize;
+          预计所需磁盘空间：&sound-theme-freedesktop-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sound-theme-freedesktop-time;
+          预计构建时间：&sound-theme-freedesktop-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-runner-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-runner-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-runner-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-runner-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-runner-md5sum;
+          MD5 校验和：&lxqt-runner-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-runner-size;
+          大小：&lxqt-runner-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-runner-buildsize;
+          预计所需磁盘空间：&lxqt-runner-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-runner-time;
+          预计构建时间：&lxqt-runner-time;
         </para>
       </listitem>
     </itemizedlist>

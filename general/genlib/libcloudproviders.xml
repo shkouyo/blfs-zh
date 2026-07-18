@@ -9,7 +9,7 @@
   <!ENTITY libcloudproviders-md5sum        "f0f994bdc36fdfe9b31e3655b8071599">
   <!ENTITY libcloudproviders-size          "24 KB">
   <!ENTITY libcloudproviders-buildsize     "1.4 MB">
-  <!ENTITY libcloudproviders-time          "less than 0.1 SBU">
+  <!ENTITY libcloudproviders-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libcloudproviders" xreflabel="libcloudproviders-&libcloudproviders-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libcloudproviders-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libcloudproviders-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libcloudproviders-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libcloudproviders-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libcloudproviders-md5sum;
+          MD5 校验和：&libcloudproviders-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libcloudproviders-size;
+          大小：&libcloudproviders-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libcloudproviders-buildsize;
+          预计所需磁盘空间：&libcloudproviders-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libcloudproviders-time;
+          预计构建时间：&libcloudproviders-time;
         </para>
       </listitem>
     </itemizedlist>

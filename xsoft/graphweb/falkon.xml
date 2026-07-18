@@ -47,32 +47,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&falkon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&falkon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&falkon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&falkon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &falkon-md5sum;
+          MD5 校验和：&falkon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &falkon-size;
+          大小：&falkon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &falkon-buildsize;
+          预计所需磁盘空间：&falkon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &falkon-time;
+          预计构建时间：&falkon-time;
         </para>
       </listitem>
     </itemizedlist>

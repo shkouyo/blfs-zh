@@ -111,32 +111,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&python3-download-http;"/>
+          下载地址（HTTP）：<ulink url="&python3-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&python3-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&python3-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &python3-md5sum;
+          MD5 校验和：&python3-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &python3-size;
+          大小：&python3-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &python3-buildsize;
+          预计所需磁盘空间：&python3-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &python3-time;
+          预计构建时间：&python3-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -155,12 +155,12 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&python3htmldoc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&python3htmldoc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &python3-docs-md5sum;
+          MD5 校验和：&python3-docs-md5sum;
         </para>
       </listitem>
     </itemizedlist>

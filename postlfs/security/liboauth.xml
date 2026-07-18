@@ -9,7 +9,7 @@
   <!ENTITY liboauth-md5sum        "689b46c2b3ab1a39735ac33f714c4f7f">
   <!ENTITY liboauth-size          "496 KB">
   <!ENTITY liboauth-buildsize     "3.5 MB">
-  <!ENTITY liboauth-time          "less than 0.1 SBU">
+  <!ENTITY liboauth-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="liboauth" xreflabel="liboauth-&liboauth-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&liboauth-download-http;"/>
+          下载地址（HTTP）：<ulink url="&liboauth-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&liboauth-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&liboauth-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &liboauth-md5sum;
+          MD5 校验和：&liboauth-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &liboauth-size;
+          大小：&liboauth-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &liboauth-buildsize;
+          预计所需磁盘空间：&liboauth-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &liboauth-time;
+          预计构建时间：&liboauth-time;
         </para>
       </listitem>
     </itemizedlist>

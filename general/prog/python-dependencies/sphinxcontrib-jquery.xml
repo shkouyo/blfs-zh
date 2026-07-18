@@ -9,7 +9,7 @@
   <!ENTITY sc-jquery-md5sum        "&sc-jquery-md5sum;">
   <!ENTITY sc-jquery-size          "120 KB">
   <!ENTITY sc-jquery-buildsize     "552 KB">
-  <!ENTITY sc-jquery-time          "less than 0.1 SBU">
+  <!ENTITY sc-jquery-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="sc-jquery" xreflabel="sphinxcontrib-jquery-&sc-jquery-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&sc-jquery-download-http;"/>
+            下载地址（HTTP）：<ulink url="&sc-jquery-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&sc-jquery-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&sc-jquery-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &sc-jquery-md5sum;
+            MD5 校验和：&sc-jquery-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &sc-jquery-size;
+            大小：&sc-jquery-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &sc-jquery-buildsize;
+            预计所需磁盘空间：&sc-jquery-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &sc-jquery-time;
+            预计构建时间：&sc-jquery-time;
           </para>
         </listitem>
       </itemizedlist>

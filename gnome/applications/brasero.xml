@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&brasero-download-http;"/>
+          下载地址（HTTP）：<ulink url="&brasero-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&brasero-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&brasero-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &brasero-md5sum;
+          MD5 校验和：&brasero-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &brasero-size;
+          大小：&brasero-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &brasero-buildsize;
+          预计所需磁盘空间：&brasero-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &brasero-time;
+          预计构建时间：&brasero-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY gstreamer10-download-ftp  " ">
   <!ENTITY gstreamer10-md5sum        "f808a2e2d9836b9b6347b3ea377a085c">
   <!ENTITY gstreamer10-size          "1.9 MB">
-  <!ENTITY gstreamer10-buildsize     "73 MB (with tests)">
+  <!ENTITY gstreamer10-buildsize     "73 MB（含测试）">
   <!ENTITY gstreamer10-time          "0.3 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gstreamer10-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gstreamer10-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gstreamer10-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gstreamer10-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gstreamer10-md5sum;
+          MD5 校验和：&gstreamer10-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gstreamer10-size;
+          大小：&gstreamer10-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gstreamer10-buildsize;
+          预计所需磁盘空间：&gstreamer10-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gstreamer10-time;
+          预计构建时间：&gstreamer10-time;
         </para>
       </listitem>
     </itemizedlist>

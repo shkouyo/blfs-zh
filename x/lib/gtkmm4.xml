@@ -8,7 +8,7 @@
   <!ENTITY gtkmm4-download-ftp  " ">
   <!ENTITY gtkmm4-md5sum        "a1c76be0b7cd6156b269832e6a0bc660">
   <!ENTITY gtkmm4-size          "17 MB">
-  <!ENTITY gtkmm4-buildsize     "217 MB (with tests)">
+  <!ENTITY gtkmm4-buildsize     "217 MB（含测试）">
   <!ENTITY gtkmm4-time          "0.8 SBU (With tests; both using parallelism=4)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gtkmm4-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gtkmm4-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gtkmm4-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gtkmm4-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gtkmm4-md5sum;
+          MD5 校验和：&gtkmm4-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gtkmm4-size;
+          大小：&gtkmm4-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gtkmm4-buildsize;
+          预计所需磁盘空间：&gtkmm4-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gtkmm4-time;
+          预计构建时间：&gtkmm4-time;
         </para>
       </listitem>
     </itemizedlist>

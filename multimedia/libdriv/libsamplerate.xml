@@ -9,8 +9,8 @@
   <!ENTITY libsamplerate-download-ftp  " ">
   <!ENTITY libsamplerate-md5sum        "97c010fc25156c33cddc272c1935afab">
   <!ENTITY libsamplerate-size          "3.2 MB">
-  <!ENTITY libsamplerate-buildsize     "15 MB (add 2 MB for tests)">
-  <!ENTITY libsamplerate-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
+  <!ENTITY libsamplerate-buildsize     "15 MB（测试将额外增加 2 MB）">
+  <!ENTITY libsamplerate-time          "小于 0.1 SBU（测试将额外增加 0.3 SBU）">
 ]>
 
 <sect1 id="libsamplerate" xreflabel="libsamplerate-&libsamplerate-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsamplerate-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsamplerate-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsamplerate-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsamplerate-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsamplerate-md5sum;
+          MD5 校验和：&libsamplerate-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsamplerate-size;
+          大小：&libsamplerate-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsamplerate-buildsize;
+          预计所需磁盘空间：&libsamplerate-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsamplerate-time;
+          预计构建时间：&libsamplerate-time;
         </para>
       </listitem>
     </itemizedlist>

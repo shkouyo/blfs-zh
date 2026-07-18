@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bogofilter-download-http;"/>
+          下载地址（HTTP）：<ulink url="&bogofilter-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bogofilter-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&bogofilter-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bogofilter-md5sum;
+          MD5 校验和：&bogofilter-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bogofilter-size;
+          大小：&bogofilter-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bogofilter-buildsize;
+          预计所需磁盘空间：&bogofilter-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bogofilter-time;
+          预计构建时间：&bogofilter-time;
         </para>
       </listitem>
     </itemizedlist>

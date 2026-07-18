@@ -10,8 +10,8 @@
   <!ENTITY libxml2-download-ftp  " ">
   <!ENTITY libxml2-md5sum        "b7b0123654f86ebf630a5cbedaafdece">
   <!ENTITY libxml2-size          "3.1 MB">
-  <!ENTITY libxml2-buildsize     "64 MB (add 27 MB for documentation and 17 MB for tests)">
-  <!ENTITY libxml2-time          "less than 0.1 SBU (Using parallelism=4; with tests and documentation)">
+  <!ENTITY libxml2-buildsize     "64 MB（文档增加 27 MB，测试增加 17 MB）">
+  <!ENTITY libxml2-time          "小于 0.1 SBU（并行度=4；包含测试和文档）">
   <!ENTITY testsuite-version     "20130923">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxml2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxml2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxml2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxml2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxml2-md5sum;
+          MD5 校验和：&libxml2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxml2-size;
+          大小：&libxml2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxml2-buildsize;
+          预计所需磁盘空间：&libxml2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxml2-time;
+          预计构建时间：&libxml2-time;
         </para>
       </listitem>
     </itemizedlist>

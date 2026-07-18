@@ -11,7 +11,7 @@
   <!ENTITY docbook-xsl-ns-md5sum        "4a400f0264a19329c7f95f69e098744a">
   <!ENTITY docbook-xsl-ns-size          "23 MB">
   <!ENTITY docbook-xsl-ns-buildsize     "49 MB">
-  <!ENTITY docbook-xsl-ns-time          "less than 0.1 SBU">
+  <!ENTITY docbook-xsl-ns-time          "小于 0.1 SBU">
 
   <!-- Used for spacing below. -->
   <!ENTITY docbook-xsl-spacing "      ">
@@ -44,32 +44,32 @@ xreflabel="docbook-xsl-ns-&docbook-xsl-version;">
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&docbook-xsl-ns-download-http;"/>
+          下载地址（HTTP）：<ulink url="&docbook-xsl-ns-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&docbook-xsl-ns-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&docbook-xsl-ns-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &docbook-xsl-ns-md5sum;
+          MD5 校验和：&docbook-xsl-ns-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &docbook-xsl-ns-size;
+          大小：&docbook-xsl-ns-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &docbook-xsl-ns-buildsize;
+          预计所需磁盘空间：&docbook-xsl-ns-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &docbook-xsl-ns-time;
+          预计构建时间：&docbook-xsl-ns-time;
         </para>
       </listitem>
     </itemizedlist>

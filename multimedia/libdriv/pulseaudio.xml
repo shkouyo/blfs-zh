@@ -9,7 +9,7 @@
   <!ENTITY pulseaudio-download-ftp  " ">
   <!ENTITY pulseaudio-md5sum        "c4a3596a26ff4b9dcd0c394dd1d4f8ee">
   <!ENTITY pulseaudio-size          "1.5 MB">
-  <!ENTITY pulseaudio-buildsize     "42 MB (with tests)">
+  <!ENTITY pulseaudio-buildsize     "42 MB（含测试）">
   <!ENTITY pulseaudio-time          "0.2 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 ]>
 
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pulseaudio-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pulseaudio-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pulseaudio-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pulseaudio-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pulseaudio-md5sum;
+          MD5 校验和：&pulseaudio-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pulseaudio-size;
+          大小：&pulseaudio-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pulseaudio-buildsize;
+          预计所需磁盘空间：&pulseaudio-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pulseaudio-time;
+          预计构建时间：&pulseaudio-time;
         </para>
       </listitem>
     </itemizedlist>

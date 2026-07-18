@@ -10,7 +10,7 @@
   <!ENTITY gnome-maps-md5sum        "a67f49c5f45863c504329dc6580c0759">
   <!ENTITY gnome-maps-size          "1.2 MB">
   <!ENTITY gnome-maps-buildsize     "18 MB">
-  <!ENTITY gnome-maps-time          "less than 0.1 SBU">
+  <!ENTITY gnome-maps-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-maps" xreflabel="gnome-maps-&gnome-maps-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-maps-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-maps-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-maps-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-maps-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-maps-md5sum;
+          MD5 校验和：&gnome-maps-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-maps-size;
+          大小：&gnome-maps-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-maps-buildsize;
+          预计所需磁盘空间：&gnome-maps-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-maps-time;
+          预计构建时间：&gnome-maps-time;
         </para>
       </listitem>
     </itemizedlist>

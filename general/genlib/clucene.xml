@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&clucene-download-http;"/>
+          下载地址（HTTP）：<ulink url="&clucene-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&clucene-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&clucene-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &clucene-md5sum;
+          MD5 校验和：&clucene-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &clucene-size;
+          大小：&clucene-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &clucene-buildsize;
+          预计所需磁盘空间：&clucene-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &clucene-time;
+          预计构建时间：&clucene-time;
         </para>
       </listitem>
     </itemizedlist>

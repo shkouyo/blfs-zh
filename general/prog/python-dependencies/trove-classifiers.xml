@@ -9,7 +9,7 @@
   <!ENTITY trove-classifiers-md5sum        "&trove-classifiers-md5sum;">
   <!ENTITY trove-classifiers-size          "20 KB">
   <!ENTITY trove-classifiers-buildsize     "540 KB">
-  <!ENTITY trove-classifiers-time          "less than 0.1 SBU">
+  <!ENTITY trove-classifiers-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="trove-classifiers" xreflabel="trove-classifiers-&trove-classifiers-version;">
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&trove-classifiers-download-http;"/>
+            下载地址（HTTP）：<ulink url="&trove-classifiers-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&trove-classifiers-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&trove-classifiers-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &trove-classifiers-md5sum;
+            MD5 校验和：&trove-classifiers-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &trove-classifiers-size;
+            大小：&trove-classifiers-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &trove-classifiers-buildsize;
+            预计所需磁盘空间：&trove-classifiers-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &trove-classifiers-time;
+            预计构建时间：&trove-classifiers-time;
           </para>
         </listitem>
       </itemizedlist>

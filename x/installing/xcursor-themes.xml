@@ -9,7 +9,7 @@
   <!ENTITY xcursor-themes-md5sum        "070993be1f010b09447ea24bab2c9846">
   <!ENTITY xcursor-themes-size          "1.4 MB">
   <!ENTITY xcursor-themes-buildsize     "15 MB">
-  <!ENTITY xcursor-themes-time          "less than 0.1 SBU">
+  <!ENTITY xcursor-themes-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xcursor-themes" xreflabel="xcursor-themes-&xcursor-themes-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xcursor-themes-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xcursor-themes-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xcursor-themes-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xcursor-themes-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xcursor-themes-md5sum;
+          MD5 校验和：&xcursor-themes-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xcursor-themes-size;
+          大小：&xcursor-themes-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xcursor-themes-buildsize;
+          预计所需磁盘空间：&xcursor-themes-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xcursor-themes-time;
+          预计构建时间：&xcursor-themes-time;
         </para>
       </listitem>
     </itemizedlist>

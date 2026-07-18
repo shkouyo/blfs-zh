@@ -38,32 +38,32 @@
   <itemizedlist spacing="compact">
     <listitem>
       <para>
-        Download (HTTP): <ulink url="&plasma-download-http;"/>
+        下载地址（HTTP）：<ulink url="&plasma-download-http;"/>
       </para>
     </listitem>
     <listitem>
       <para>
-        Download (FTP): <ulink url="&plasma-download-ftp;"/>
+        下载地址（FTP）：<ulink url="&plasma-download-ftp;"/>
       </para>
     </listitem>
     <listitem>
       <para>
-        Download MD5 sum: &plasma-md5sum;
+        MD5 校验和：&plasma-md5sum;
       </para>
     </listitem>
     <listitem>
       <para>
-        Download size: &plasma-size;
+        大小：&plasma-size;
       </para>
     </listitem>
     <listitem>
       <para>
-        Estimated disk space required: &plasma-buildsize;
+        预计所需磁盘空间：&plasma-buildsize;
       </para>
     </listitem>
     <listitem>
       <para>
-        Estimated build time: &plasma-time;
+        预计构建时间：&plasma-time;
       </para>
     </listitem>
   </itemizedlist>

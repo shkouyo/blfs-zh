@@ -9,7 +9,7 @@
   <!ENTITY liblinear-md5sum        "53ffb394295c7f766adc200a603d6e0d">
   <!ENTITY liblinear-size          "76 KB">
   <!ENTITY liblinear-buildsize     "712 KB">
-  <!ENTITY liblinear-time          "less than 0.1 SBU">
+  <!ENTITY liblinear-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="liblinear" xreflabel="liblinear-&liblinear-version;">
@@ -48,32 +48,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&liblinear-download-http;"/>
+          下载地址（HTTP）：<ulink url="&liblinear-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&liblinear-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&liblinear-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &liblinear-md5sum;
+          MD5 校验和：&liblinear-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &liblinear-size;
+          大小：&liblinear-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &liblinear-buildsize;
+          预计所需磁盘空间：&liblinear-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &liblinear-time;
+          预计构建时间：&liblinear-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY alsa-firmware-md5sum        "ee6c1d24a1a4ac1d86992b408ed710a2">
   <!ENTITY alsa-firmware-size          "4.9 MB">
   <!ENTITY alsa-firmware-buildsize     "39 MB">
-  <!ENTITY alsa-firmware-time          "less than 0.1 SBU">
+  <!ENTITY alsa-firmware-time          "小于 0.1 SBU">
 ]>
 <sect1 id="alsa-firmware" xreflabel="alsa-firmware-&alsa-firmware-version;">
   <?dbhtml filename="alsa-firmware.html"?>
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&alsa-firmware-download-http;"/>
+          下载地址（HTTP）：<ulink url="&alsa-firmware-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&alsa-firmware-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&alsa-firmware-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &alsa-firmware-md5sum;
+          MD5 校验和：&alsa-firmware-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &alsa-firmware-size;
+          大小：&alsa-firmware-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &alsa-firmware-buildsize;
+          预计所需磁盘空间：&alsa-firmware-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &alsa-firmware-time;
+          预计构建时间：&alsa-firmware-time;
         </para>
       </listitem>
     </itemizedlist>

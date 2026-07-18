@@ -11,7 +11,7 @@
   <!ENTITY cracklib-md5sum        "e8ea2b86de774fc09fdd0f2829680b19">
   <!ENTITY cracklib-size          "456 KB">
   <!ENTITY cracklib-buildsize     "5.0 MB">
-  <!ENTITY cracklib-time          "less than 0.1 SBU">
+  <!ENTITY cracklib-time          "小于 0.1 SBU">
 
   <!ENTITY crackdict-download     "&cracklib-url;/v&cracklib-version;/cracklib-words-&cracklib-version;.xz">
   <!ENTITY crackdict-size         "4.0 MB">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cracklib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cracklib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cracklib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cracklib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cracklib-md5sum;
+          MD5 校验和：&cracklib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cracklib-size;
+          大小：&cracklib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cracklib-buildsize;
+          预计所需磁盘空间：&cracklib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cracklib-time;
+          预计构建时间：&cracklib-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -78,17 +78,17 @@
       <para>Recommended word list for English-speaking countries:</para>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&crackdict-download;"/>
+          下载地址（HTTP）：<ulink url="&crackdict-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-           Download MD5 sum: &crackdict-md5sum;
+           MD5 校验和：&crackdict-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-            Download size:  &crackdict-size;
+            大小： &crackdict-size;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY gjs-download-ftp  " ">
   <!ENTITY gjs-md5sum        "851963b653cbcf8534dff8b9e719592e">
   <!ENTITY gjs-size          "788 KB">
-  <!ENTITY gjs-buildsize     "336 MB (with tests)">
+  <!ENTITY gjs-buildsize     "336 MB（含测试）">
   <!ENTITY gjs-time          "0.3 SBU (with tests; with parallelism=4)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gjs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gjs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gjs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gjs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gjs-md5sum;
+          MD5 校验和：&gjs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gjs-size;
+          大小：&gjs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gjs-buildsize;
+          预计所需磁盘空间：&gjs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gjs-time;
+          预计构建时间：&gjs-time;
         </para>
       </listitem>
     </itemizedlist>

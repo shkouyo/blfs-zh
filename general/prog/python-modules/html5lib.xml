@@ -9,7 +9,7 @@
   <!ENTITY html5lib-md5sum        "&html5lib-md5sum;">
   <!ENTITY html5lib-size          "268 KB">
   <!ENTITY html5lib-buildsize     "3.9 MB">
-  <!ENTITY html5lib-time          "less than 0.1 SBU">
+  <!ENTITY html5lib-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin html5lib -->
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&html5lib-download-http;"/>
+            下载地址（HTTP）：<ulink url="&html5lib-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&html5lib-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&html5lib-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &html5lib-md5sum;
+            MD5 校验和：&html5lib-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &html5lib-size;
+            大小：&html5lib-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &html5lib-buildsize;
+            预计所需磁盘空间：&html5lib-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &html5lib-time;
+            预计构建时间：&html5lib-time;
           </para>
         </listitem>
       </itemizedlist>

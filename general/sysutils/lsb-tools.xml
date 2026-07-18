@@ -8,7 +8,7 @@
   <!ENTITY lsb-tools-md5sum        "1e6ef8cdfddb55035a6c36757e6313f9">
   <!ENTITY lsb-tools-size          "20 KB">
   <!ENTITY lsb-tools-buildsize     "412 KB">
-  <!ENTITY lsb-tools-time          "less than 0.1 SBU">
+  <!ENTITY lsb-tools-time          "小于 0.1 SBU">
 
   %general-entities;
 ]>
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lsb-tools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lsb-tools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lsb-tools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lsb-tools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lsb-tools-md5sum;
+          MD5 校验和：&lsb-tools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lsb-tools-size;
+          大小：&lsb-tools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lsb-tools-buildsize;
+          预计所需磁盘空间：&lsb-tools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lsb-tools-time;
+          预计构建时间：&lsb-tools-time;
         </para>
       </listitem>
     </itemizedlist>

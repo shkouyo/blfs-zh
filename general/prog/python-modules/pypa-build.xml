@@ -8,8 +8,8 @@
   <!ENTITY pypa-build-download-ftp  " ">
   <!ENTITY pypa-build-md5sum        "&pypa-build-md5sum;">
   <!ENTITY pypa-build-size          "88 KB">
-  <!ENTITY pypa-build-buildsize     "1.1 MB (add 128 MB for tests)">
-  <!ENTITY pypa-build-time          "less than 0.1 SBU (add 0.6 SBU (with tests)">
+  <!ENTITY pypa-build-buildsize     "1.1 MB（测试将额外增加 128 MB）">
+  <!ENTITY pypa-build-time          "小于 0.1 SBU（测试将额外增加 0.6 SBU）">
 ]>
 
   <!-- Begin pypa-build -->
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pypa-build-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pypa-build-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pypa-build-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pypa-build-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pypa-build-md5sum;
+            MD5 校验和：&pypa-build-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pypa-build-size;
+            大小：&pypa-build-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pypa-build-buildsize;
+            预计所需磁盘空间：&pypa-build-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pypa-build-time;
+            预计构建时间：&pypa-build-time;
           </para>
         </listitem>
       </itemizedlist>

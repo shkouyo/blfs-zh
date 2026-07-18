@@ -10,7 +10,7 @@
   <!ENTITY xfce4-panel-md5sum        "b24103b17c0acb902ad32137e40e5198">
   <!ENTITY xfce4-panel-size          "2.3 MB">
   <!ENTITY xfce4-panel-buildsize     "60 MB">
-  <!ENTITY xfce4-panel-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY xfce4-panel-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="xfce4-panel" xreflabel="xfce4-panel-&xfce4-panel-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfce4-panel-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfce4-panel-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfce4-panel-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfce4-panel-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfce4-panel-md5sum;
+          MD5 校验和：&xfce4-panel-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfce4-panel-size;
+          大小：&xfce4-panel-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfce4-panel-buildsize;
+          预计所需磁盘空间：&xfce4-panel-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfce4-panel-time;
+          预计构建时间：&xfce4-panel-time;
         </para>
       </listitem>
     </itemizedlist>

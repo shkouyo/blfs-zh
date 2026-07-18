@@ -15,7 +15,7 @@
   <!ENTITY libexif-md5sum        "d659a750d1be6330105de54eb3bf627a">
   <!ENTITY libexif-size          "2.0 MB">
   <!ENTITY libexif-buildsize     "24 MB">
-  <!ENTITY libexif-time          "less than 0.1 SBU">
+  <!ENTITY libexif-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libexif" xreflabel="libexif-&libexif-version;">
@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libexif-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libexif-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libexif-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libexif-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libexif-md5sum;
+          MD5 校验和：&libexif-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libexif-size;
+          大小：&libexif-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libexif-buildsize;
+          预计所需磁盘空间：&libexif-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libexif-time;
+          预计构建时间：&libexif-time;
         </para>
       </listitem>
     </itemizedlist>

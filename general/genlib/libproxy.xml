@@ -9,7 +9,7 @@
   <!ENTITY libproxy-md5sum        "db615bbae5c20eb209a2cdbfe62e0fa3">
   <!ENTITY libproxy-size          "60 KB">
   <!ENTITY libproxy-buildsize     "3.7 MB">
-  <!ENTITY libproxy-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libproxy-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libproxy" xreflabel="libproxy-&libproxy-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libproxy-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libproxy-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libproxy-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libproxy-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libproxy-md5sum;
+          MD5 校验和：&libproxy-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libproxy-size;
+          大小：&libproxy-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libproxy-buildsize;
+          预计所需磁盘空间：&libproxy-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libproxy-time;
+          预计构建时间：&libproxy-time;
         </para>
       </listitem>
     </itemizedlist>

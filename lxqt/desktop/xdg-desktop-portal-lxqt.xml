@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xdg-desktop-portal-lxqt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xdg-desktop-portal-lxqt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xdg-desktop-portal-lxqt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xdg-desktop-portal-lxqt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xdg-desktop-portal-lxqt-md5sum;
+          MD5 校验和：&xdg-desktop-portal-lxqt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xdg-desktop-portal-lxqt-size;
+          大小：&xdg-desktop-portal-lxqt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xdg-desktop-portal-lxqt-buildsize;
+          预计所需磁盘空间：&xdg-desktop-portal-lxqt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xdg-desktop-portal-lxqt-time;
+          预计构建时间：&xdg-desktop-portal-lxqt-time;
         </para>
       </listitem>
     </itemizedlist>

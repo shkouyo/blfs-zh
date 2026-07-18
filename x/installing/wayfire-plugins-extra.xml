@@ -9,7 +9,7 @@
   <!ENTITY wayfire-plugins-extra-md5sum    "5bdbc8254fda405ac82d2dae51494c22">
   <!ENTITY wayfire-plugins-extra-size      "96 KB">
   <!ENTITY wayfire-plugins-extra-buildsize "16 MB">
-  <!ENTITY wayfire-plugins-extra-time      "0.1 SBU (with parallelism=4)">
+  <!ENTITY wayfire-plugins-extra-time      "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="wayfire-plugins-extra" xreflabel="wayfire-plugins-extra-&wayfire-plugins-extra-version;">
@@ -37,27 +37,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wayfire-plugins-extra-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wayfire-plugins-extra-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wayfire-plugins-extra-md5sum;
+          MD5 校验和：&wayfire-plugins-extra-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wayfire-plugins-extra-size;
+          大小：&wayfire-plugins-extra-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wayfire-plugins-extra-buildsize;
+          预计所需磁盘空间：&wayfire-plugins-extra-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wayfire-plugins-extra-time;
+          预计构建时间：&wayfire-plugins-extra-time;
         </para>
       </listitem>
     </itemizedlist>

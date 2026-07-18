@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libburn-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libburn-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libburn-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libburn-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libburn-md5sum;
+          MD5 校验和：&libburn-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libburn-size;
+          大小：&libburn-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libburn-buildsize;
+          预计所需磁盘空间：&libburn-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libburn-time;
+          预计构建时间：&libburn-time;
         </para>
       </listitem>
     </itemizedlist>

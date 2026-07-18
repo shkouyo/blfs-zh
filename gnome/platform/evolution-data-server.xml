@@ -9,7 +9,7 @@
   <!ENTITY evolution-data-server-download-ftp  " ">
   <!ENTITY evolution-data-server-md5sum        "933c4804d9d2ba99f93fc26005282a3f">
   <!ENTITY evolution-data-server-size          "5.0 MB">
-  <!ENTITY evolution-data-server-buildsize     "150 (with tests)">
+  <!ENTITY evolution-data-server-buildsize     "150（含测试）">
   <!ENTITY evolution-data-server-time          "0.7 SBU (With tests; both using parallelism=4)">
 ]>
 
@@ -41,32 +41,32 @@ xreflabel="evolution-data-server-&evolution-data-server-version;">
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&evolution-data-server-download-http;"/>
+          下载地址（HTTP）：<ulink url="&evolution-data-server-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&evolution-data-server-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&evolution-data-server-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &evolution-data-server-md5sum;
+          MD5 校验和：&evolution-data-server-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &evolution-data-server-size;
+          大小：&evolution-data-server-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &evolution-data-server-buildsize;
+          预计所需磁盘空间：&evolution-data-server-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &evolution-data-server-time;
+          预计构建时间：&evolution-data-server-time;
         </para>
       </listitem>
     </itemizedlist>

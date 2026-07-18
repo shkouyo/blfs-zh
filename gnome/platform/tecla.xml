@@ -9,7 +9,7 @@
   <!ENTITY tecla-md5sum        "cc5ae49bae10abcb02040a20e63ef26b">
   <!ENTITY tecla-size          "84 KB">
   <!ENTITY tecla-buildsize     "2.1 MB">
-  <!ENTITY tecla-time          "less than 0.1 SBU">
+  <!ENTITY tecla-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="tecla" xreflabel="Tecla-&tecla-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tecla-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tecla-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tecla-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tecla-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &tecla-md5sum;
+          MD5 校验和：&tecla-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tecla-size;
+          大小：&tecla-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tecla-buildsize;
+          预计所需磁盘空间：&tecla-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tecla-time;
+          预计构建时间：&tecla-time;
         </para>
       </listitem>
     </itemizedlist>

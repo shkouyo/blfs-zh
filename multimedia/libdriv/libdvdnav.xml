@@ -9,7 +9,7 @@
   <!ENTITY libdvdnav-md5sum        "e9e9f137cdd52828abc0c61b727ea579">
   <!ENTITY libdvdnav-size          "84 KB">
   <!ENTITY libdvdnav-buildsize     "1.4 MB">
-  <!ENTITY libdvdnav-time          "less than 0.1 SBU">
+  <!ENTITY libdvdnav-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libdvdnav" xreflabel="libdvdnav-&libdvdnav-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdvdnav-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdvdnav-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdvdnav-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdvdnav-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdvdnav-md5sum;
+          MD5 校验和：&libdvdnav-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdvdnav-size;
+          大小：&libdvdnav-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdvdnav-buildsize;
+          预计所需磁盘空间：&libdvdnav-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdvdnav-time;
+          预计构建时间：&libdvdnav-time;
         </para>
       </listitem>
     </itemizedlist>

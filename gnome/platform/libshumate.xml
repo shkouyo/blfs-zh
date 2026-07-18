@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libshumate-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libshumate-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libshumate-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libshumate-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libshumate-md5sum;
+          MD5 校验和：&libshumate-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libshumate-size;
+          大小：&libshumate-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libshumate-buildsize;
+          预计所需磁盘空间：&libshumate-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libshumate-time;
+          预计构建时间：&libshumate-time;
         </para>
       </listitem>
     </itemizedlist>

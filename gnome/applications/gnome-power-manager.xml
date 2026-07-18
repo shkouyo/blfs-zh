@@ -10,7 +10,7 @@
   <!ENTITY gnome-power-manager-md5sum        "541c76d6000fced2a3cc6bcc88f1d860">
   <!ENTITY gnome-power-manager-size          "376 KB">
   <!ENTITY gnome-power-manager-buildsize     "5.2 MB">
-  <!ENTITY gnome-power-manager-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY gnome-power-manager-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="gnome-power-manager" xreflabel="gnome-power-manager-&gnome-power-manager-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-power-manager-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-power-manager-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-power-manager-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-power-manager-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-power-manager-md5sum;
+          MD5 校验和：&gnome-power-manager-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-power-manager-size;
+          大小：&gnome-power-manager-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-power-manager-buildsize;
+          预计所需磁盘空间：&gnome-power-manager-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-power-manager-time;
+          预计构建时间：&gnome-power-manager-time;
         </para>
       </listitem>
     </itemizedlist>

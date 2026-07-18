@@ -9,7 +9,7 @@
   <!ENTITY libplacebo-md5sum        "e0fa1b52f8d7b7ba51373e9a639ca966">
   <!ENTITY libplacebo-size          "844 KB">
   <!ENTITY libplacebo-buildsize     "38 MB">
-  <!ENTITY libplacebo-time          "0.2 SBU (With tests)">
+  <!ENTITY libplacebo-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="libplacebo" xreflabel="libplacebo-&libplacebo-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libplacebo-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libplacebo-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libplacebo-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libplacebo-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libplacebo-md5sum;
+          MD5 校验和：&libplacebo-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libplacebo-size;
+          大小：&libplacebo-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libplacebo-buildsize;
+          预计所需磁盘空间：&libplacebo-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libplacebo-time;
+          预计构建时间：&libplacebo-time;
         </para>
       </listitem>
     </itemizedlist>

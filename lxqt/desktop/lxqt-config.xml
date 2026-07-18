@@ -9,7 +9,7 @@
   <!ENTITY lxqt-config-md5sum        "7bb4cc66ce5fc8cd5bc53127643888a1">
   <!ENTITY lxqt-config-size          "408 KB">
   <!ENTITY lxqt-config-buildsize     "27 MB">
-  <!ENTITY lxqt-config-time          "0.4 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-config-time          "0.4 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-config" xreflabel="lxqt-config-&lxqt-config-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-config-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-config-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-config-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-config-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-config-md5sum;
+          MD5 校验和：&lxqt-config-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-config-size;
+          大小：&lxqt-config-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-config-buildsize;
+          预计所需磁盘空间：&lxqt-config-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-config-time;
+          预计构建时间：&lxqt-config-time;
         </para>
       </listitem>
     </itemizedlist>

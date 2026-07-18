@@ -9,7 +9,7 @@
   <!ENTITY plasma-wayland-protocols-md5sum        "9a2f58d154a6cb514f60c59311e14559">
   <!ENTITY plasma-wayland-protocols-size          "52 KB">
   <!ENTITY plasma-wayland-protocols-buildsize     "1.2 MB">
-  <!ENTITY plasma-wayland-protocols-time          "less than 0.1 SBU">
+  <!ENTITY plasma-wayland-protocols-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="plasma-wayland-protocols" xreflabel="plasma-wayland-protocols-&plasma-wayland-protocols-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&plasma-wayland-protocols-download-http;"/>
+          下载地址（HTTP）：<ulink url="&plasma-wayland-protocols-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&plasma-wayland-protocols-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&plasma-wayland-protocols-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &plasma-wayland-protocols-md5sum;
+          MD5 校验和：&plasma-wayland-protocols-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &plasma-wayland-protocols-size;
+          大小：&plasma-wayland-protocols-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &plasma-wayland-protocols-buildsize;
+          预计所需磁盘空间：&plasma-wayland-protocols-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &plasma-wayland-protocols-time;
+          预计构建时间：&plasma-wayland-protocols-time;
         </para>
       </listitem>
     </itemizedlist>

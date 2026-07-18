@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&apache-ant-download-http;"/>
+          下载地址（HTTP）：<ulink url="&apache-ant-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&apache-ant-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&apache-ant-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &apache-ant-md5sum;
+          MD5 校验和：&apache-ant-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &apache-ant-size;
+          大小：&apache-ant-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &apache-ant-buildsize;
+          预计所需磁盘空间：&apache-ant-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &apache-ant-time;
+          预计构建时间：&apache-ant-time;
         </para>
       </listitem>
     </itemizedlist>

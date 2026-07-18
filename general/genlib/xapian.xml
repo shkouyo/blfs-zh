@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xapian-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xapian-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xapian-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xapian-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xapian-md5sum;
+          MD5 校验和：&xapian-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xapian-size;
+          大小：&xapian-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xapian-buildsize;
+          预计所需磁盘空间：&xapian-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xapian-time;
+          预计构建时间：&xapian-time;
         </para>
       </listitem>
     </itemizedlist>

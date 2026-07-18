@@ -108,7 +108,7 @@
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &openjdk-bin-md5sum-x86;
+          MD5 校验和：&openjdk-bin-md5sum-x86;
         </para>
       </listitem>
       <listitem>
@@ -118,7 +118,7 @@
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &openjdk-bin-buildsize-x86;
+          预计所需磁盘空间：&openjdk-bin-buildsize-x86;
         </para>
       </listitem>
     </itemizedlist>
@@ -130,7 +130,7 @@
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &openjdk-bin-md5sum-x64;
+          MD5 校验和：&openjdk-bin-md5sum-x64;
         </para>
       </listitem>
       <listitem>
@@ -140,7 +140,7 @@
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &openjdk-bin-buildsize-x64;
+          预计所需磁盘空间：&openjdk-bin-buildsize-x64;
         </para>
       </listitem>
     </itemizedlist>

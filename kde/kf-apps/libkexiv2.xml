@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libkexiv2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libkexiv2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libkexiv2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libkexiv2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libkexiv2-md5sum;
+          MD5 校验和：&libkexiv2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libkexiv2-size;
+          大小：&libkexiv2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libkexiv2-buildsize;
+          预计所需磁盘空间：&libkexiv2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libkexiv2-time;
+          预计构建时间：&libkexiv2-time;
         </para>
       </listitem>
     </itemizedlist>

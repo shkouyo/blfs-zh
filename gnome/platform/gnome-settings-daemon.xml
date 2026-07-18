@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-settings-daemon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-settings-daemon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-settings-daemon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-settings-daemon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-settings-daemon-md5sum;
+          MD5 校验和：&gnome-settings-daemon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-settings-daemon-size;
+          大小：&gnome-settings-daemon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-settings-daemon-buildsize;
+          预计所需磁盘空间：&gnome-settings-daemon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-settings-daemon-time;
+          预计构建时间：&gnome-settings-daemon-time;
         </para>
       </listitem>
     </itemizedlist>

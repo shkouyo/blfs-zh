@@ -8,8 +8,8 @@
   <!ENTITY accountsservice-download-ftp  " ">
   <!ENTITY accountsservice-md5sum        "61f56055b9d4564ad29bab799222e386">
   <!ENTITY accountsservice-size          "660 KB">
-  <!ENTITY accountsservice-buildsize     "11 MB (with tests)">
-  <!ENTITY accountsservice-time          "0.4 SBU (with tests)">
+  <!ENTITY accountsservice-buildsize     "11 MB（含测试）">
+  <!ENTITY accountsservice-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="accountsservice" xreflabel="AccountsService-&accountsservice-version;">
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&accountsservice-download-http;"/>
+          下载地址（HTTP）：<ulink url="&accountsservice-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&accountsservice-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&accountsservice-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &accountsservice-md5sum;
+          MD5 校验和：&accountsservice-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &accountsservice-size;
+          大小：&accountsservice-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &accountsservice-buildsize;
+          预计所需磁盘空间：&accountsservice-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &accountsservice-time;
+          预计构建时间：&accountsservice-time;
         </para>
       </listitem>
     </itemizedlist>

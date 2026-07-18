@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gpgmepp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gpgmepp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gpgmepp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gpgmepp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gpgmepp-md5sum;
+          MD5 校验和：&gpgmepp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gpgmepp-size;
+          大小：&gpgmepp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gpgmepp-buildsize;
+          预计所需磁盘空间：&gpgmepp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gpgmepp-time;
+          预计构建时间：&gpgmepp-time;
         </para>
       </listitem>
     </itemizedlist>

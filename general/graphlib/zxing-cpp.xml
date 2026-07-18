@@ -9,7 +9,7 @@
   <!ENTITY zxing-cpp-md5sum        "7690dcbad9fd76fb4f6cacf8036f1293">
   <!ENTITY zxing-cpp-size          "1.5 MB">
   <!ENTITY zxing-cpp-buildsize     "85 MB">
-  <!ENTITY zxing-cpp-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY zxing-cpp-time          "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="zxing-cpp" xreflabel="zxing-cpp-&zxing-cpp-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&zxing-cpp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&zxing-cpp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&zxing-cpp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&zxing-cpp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &zxing-cpp-md5sum;
+          MD5 校验和：&zxing-cpp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &zxing-cpp-size;
+          大小：&zxing-cpp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &zxing-cpp-buildsize;
+          预计所需磁盘空间：&zxing-cpp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &zxing-cpp-time;
+          预计构建时间：&zxing-cpp-time;
         </para>
       </listitem>
     </itemizedlist>

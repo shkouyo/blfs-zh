@@ -8,8 +8,8 @@
   <!ENTITY libogg-download-ftp  " ">
   <!ENTITY libogg-md5sum        "529275432dff072f63d4ed0f1f961384">
   <!ENTITY libogg-size          "432 KB">
-  <!ENTITY libogg-buildsize     "3.5 MB (with tests)">
-  <!ENTITY libogg-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libogg-buildsize     "3.5 MB（含测试）">
+  <!ENTITY libogg-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libogg" xreflabel="libogg-&libogg-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libogg-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libogg-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libogg-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libogg-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libogg-md5sum;
+          MD5 校验和：&libogg-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libogg-size;
+          大小：&libogg-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libogg-buildsize;
+          预计所需磁盘空间：&libogg-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libogg-time;
+          预计构建时间：&libogg-time;
         </para>
       </listitem>
     </itemizedlist>

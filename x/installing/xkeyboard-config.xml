@@ -10,7 +10,7 @@
   <!ENTITY xkeyboard-config-md5sum        "575106aff79b589abe4aff6c4bff4782">
   <!ENTITY xkeyboard-config-size          "932 KB">
   <!ENTITY xkeyboard-config-buildsize     "35 MB">
-  <!ENTITY xkeyboard-config-time          "0.1 SBU (with tests)">
+  <!ENTITY xkeyboard-config-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="xkeyboard-config" xreflabel="xkeyboard-config-&xkeyboard-config-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xkeyboard-config-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xkeyboard-config-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xkeyboard-config-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xkeyboard-config-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xkeyboard-config-md5sum;
+          MD5 校验和：&xkeyboard-config-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xkeyboard-config-size;
+          大小：&xkeyboard-config-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xkeyboard-config-buildsize;
+          预计所需磁盘空间：&xkeyboard-config-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xkeyboard-config-time;
+          预计构建时间：&xkeyboard-config-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY ed-md5sum        "be4d48fec1535162059b9416d913e531">
   <!ENTITY ed-size          "72 KB">
   <!ENTITY ed-buildsize     "1.4 MB">
-  <!ENTITY ed-time          "less than 0.1 SBU">
+  <!ENTITY ed-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="ed" xreflabel="Ed-&ed-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ed-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ed-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ed-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ed-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ed-md5sum;
+          MD5 校验和：&ed-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ed-size;
+          大小：&ed-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ed-buildsize;
+          预计所需磁盘空间：&ed-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ed-time;
+          预计构建时间：&ed-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdaemon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdaemon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdaemon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdaemon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdaemon-md5sum;
+          MD5 校验和：&libdaemon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdaemon-size;
+          大小：&libdaemon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdaemon-buildsize;
+          预计所需磁盘空间：&libdaemon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdaemon-time;
+          预计构建时间：&libdaemon-time;
         </para>
       </listitem>
     </itemizedlist>

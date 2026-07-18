@@ -9,7 +9,7 @@
   <!ENTITY iso-codes-md5sum        "a8f16a62662ec13e55ca255a7c036ee3">
   <!ENTITY iso-codes-size          "16 MB">
   <!ENTITY iso-codes-buildsize     "114 MB">
-  <!ENTITY iso-codes-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY iso-codes-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="iso-codes" xreflabel="ISO Codes-&iso-codes-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&iso-codes-download-http;"/>
+          下载地址（HTTP）：<ulink url="&iso-codes-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&iso-codes-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&iso-codes-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &iso-codes-md5sum;
+          MD5 校验和：&iso-codes-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &iso-codes-size;
+          大小：&iso-codes-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &iso-codes-buildsize;
+          预计所需磁盘空间：&iso-codes-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &iso-codes-time;
+          预计构建时间：&iso-codes-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY dosfstools-download-ftp  " ">
   <!ENTITY dosfstools-md5sum        "49c8e457327dc61efab5b115a27b087a">
   <!ENTITY dosfstools-size          "314 KB">
-  <!ENTITY dosfstools-buildsize     "4.5 MB (with tests)">
-  <!ENTITY dosfstools-time          "less than 0.1 SBU">
+  <!ENTITY dosfstools-buildsize     "4.5 MB（含测试）">
+  <!ENTITY dosfstools-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="dosfstools" xreflabel="dosfstools-&dosfstools-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dosfstools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dosfstools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dosfstools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dosfstools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dosfstools-md5sum;
+          MD5 校验和：&dosfstools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dosfstools-size;
+          大小：&dosfstools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dosfstools-buildsize;
+          预计所需磁盘空间：&dosfstools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dosfstools-time;
+          预计构建时间：&dosfstools-time;
         </para>
       </listitem>
     </itemizedlist>

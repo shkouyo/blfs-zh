@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&seven-zip-download-http;"/>
+          下载地址（HTTP）：<ulink url="&seven-zip-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&seven-zip-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&seven-zip-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &seven-zip-md5sum;
+          MD5 校验和：&seven-zip-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &seven-zip-size;
+          大小：&seven-zip-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &seven-zip-buildsize;
+          预计所需磁盘空间：&seven-zip-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &seven-zip-time;
+          预计构建时间：&seven-zip-time;
         </para>
       </listitem>
     </itemizedlist>

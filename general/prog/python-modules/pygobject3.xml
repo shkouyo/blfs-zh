@@ -9,8 +9,8 @@
   <!ENTITY pygobject3-download-ftp  " ">
   <!ENTITY pygobject3-md5sum        "7fe8fa9ff801a010eca0f0c79f59232b">
   <!ENTITY pygobject3-size          "1.4 MB">
-  <!ENTITY pygobject3-buildsize     "15 MB (with tests)">
-  <!ENTITY pygobject3-time          "0.2 SBU (with tests)">
+  <!ENTITY pygobject3-buildsize     "15 MB（含测试）">
+  <!ENTITY pygobject3-time          "0.2 SBU（含测试）">
 ]>
 
  <!-- Begin PyGObject3 -->
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pygobject3-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pygobject3-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pygobject3-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pygobject3-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pygobject3-md5sum;
+            MD5 校验和：&pygobject3-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pygobject3-size;
+            大小：&pygobject3-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pygobject3-buildsize;
+            预计所需磁盘空间：&pygobject3-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pygobject3-time;
+            预计构建时间：&pygobject3-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY freerdp-md5sum        "3a1f1040f2844f29eb62af3c83d97388">
   <!ENTITY freerdp-size          "11 MB">
   <!ENTITY freerdp-buildsize     "141 MB">
-  <!ENTITY freerdp-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY freerdp-time          "0.3 SBU（并行度=4）">
 ]>
 
 <sect1 id="freerdp" xreflabel="FreeRDP-&freerdp-version;">
@@ -37,27 +37,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&freerdp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&freerdp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &freerdp-md5sum;
+          MD5 校验和：&freerdp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &freerdp-size;
+          大小：&freerdp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &freerdp-buildsize;
+          预计所需磁盘空间：&freerdp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &freerdp-time;
+          预计构建时间：&freerdp-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY lxqt-panel-md5sum        "bd2273c99d752fe36a013993cd68d060">
   <!ENTITY lxqt-panel-size          "816 KB">
   <!ENTITY lxqt-panel-buildsize     "74 MB">
-  <!ENTITY lxqt-panel-time          "0.9 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-panel-time          "0.9 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-panel" xreflabel="lxqt-panel-&lxqt-panel-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-panel-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-panel-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-panel-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-panel-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-panel-md5sum;
+          MD5 校验和：&lxqt-panel-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-panel-size;
+          大小：&lxqt-panel-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-panel-buildsize;
+          预计所需磁盘空间：&lxqt-panel-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-panel-time;
+          预计构建时间：&lxqt-panel-time;
         </para>
       </listitem>
     </itemizedlist>

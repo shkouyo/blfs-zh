@@ -9,7 +9,7 @@
   <!ENTITY wayfire-md5sum        "326874a57bb11d3e5cdfa1eb21c2e468">
   <!ENTITY wayfire-size          "920 KB">
   <!ENTITY wayfire-buildsize     "221 MB">
-  <!ENTITY wayfire-time          "0.5 SBU (with parallelism=4)">
+  <!ENTITY wayfire-time          "0.5 SBU（并行度=4）">
 ]>
 
 <sect1 id="wayfire" xreflabel="wayfire-&wayfire-version;">
@@ -39,27 +39,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wayfire-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wayfire-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wayfire-md5sum;
+          MD5 校验和：&wayfire-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wayfire-size;
+          大小：&wayfire-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wayfire-buildsize;
+          预计所需磁盘空间：&wayfire-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wayfire-time;
+          预计构建时间：&wayfire-time;
         </para>
       </listitem>
     </itemizedlist>

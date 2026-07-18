@@ -8,7 +8,7 @@
   <!ENTITY postgresql-download-ftp  " ">
   <!ENTITY postgresql-md5sum        "f985597ebb8e71f338beb2bef974b6ed">
   <!ENTITY postgresql-size          "22 MB">
-  <!ENTITY postgresql-buildsize     "348 MB (with tests)">
+  <!ENTITY postgresql-buildsize     "348 MB（含测试）">
   <!ENTITY postgresql-time          "1.0 SBU (with parallelism=4, add 0.1 SBU for tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&postgresql-download-http;"/>
+          下载地址（HTTP）：<ulink url="&postgresql-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&postgresql-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&postgresql-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &postgresql-md5sum;
+          MD5 校验和：&postgresql-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &postgresql-size;
+          大小：&postgresql-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &postgresql-buildsize;
+          预计所需磁盘空间：&postgresql-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &postgresql-time;
+          预计构建时间：&postgresql-time;
         </para>
       </listitem>
     </itemizedlist>

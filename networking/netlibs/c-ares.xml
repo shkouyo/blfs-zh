@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&c-ares-download-http;"/>
+          下载地址（HTTP）：<ulink url="&c-ares-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&c-ares-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&c-ares-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &c-ares-md5sum;
+          MD5 校验和：&c-ares-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &c-ares-size;
+          大小：&c-ares-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &c-ares-buildsize;
+          预计所需磁盘空间：&c-ares-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &c-ares-time;
+          预计构建时间：&c-ares-time;
         </para>
       </listitem>
     </itemizedlist>

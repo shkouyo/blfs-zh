@@ -9,7 +9,7 @@
   <!ENTITY nautilus-download-ftp  " ">
   <!ENTITY nautilus-md5sum        "b8a2330c5ac165178b4775e70435a473">
   <!ENTITY nautilus-size          "3.2 MB">
-  <!ENTITY nautilus-buildsize     "96 MB (with tests)">
+  <!ENTITY nautilus-buildsize     "96 MB（含测试）">
   <!ENTITY nautilus-time          "0.4 SBU (with tests, both using parallelism=4)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nautilus-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nautilus-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nautilus-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nautilus-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nautilus-md5sum;
+          MD5 校验和：&nautilus-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nautilus-size;
+          大小：&nautilus-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nautilus-buildsize;
+          预计所需磁盘空间：&nautilus-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nautilus-time;
+          预计构建时间：&nautilus-time;
         </para>
       </listitem>
     </itemizedlist>

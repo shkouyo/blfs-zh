@@ -9,7 +9,7 @@
   <!ENTITY lxqt-build-tools-md5sum        "a480ab7ffadf032340d7b0a705585101">
   <!ENTITY lxqt-build-tools-size          "28 KB">
   <!ENTITY lxqt-build-tools-buildsize     "932 KB">
-  <!ENTITY lxqt-build-tools-time          "less than 0.1 SBU">
+  <!ENTITY lxqt-build-tools-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxqt-build-tools" xreflabel="lxqt-build-tools-&lxqt-build-tools-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-build-tools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-build-tools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-build-tools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-build-tools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-build-tools-md5sum;
+          MD5 校验和：&lxqt-build-tools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-build-tools-size;
+          大小：&lxqt-build-tools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-build-tools-buildsize;
+          预计所需磁盘空间：&lxqt-build-tools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-build-tools-time;
+          预计构建时间：&lxqt-build-tools-time;
         </para>
       </listitem>
     </itemizedlist>

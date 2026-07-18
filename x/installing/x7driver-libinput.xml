@@ -10,8 +10,8 @@
   <!ENTITY xorg-libinput-driver-download-ftp  " ">
   <!ENTITY xorg-libinput-driver-md5sum        "f8d0fb6987d843e688d597c2b66ec824">
   <!ENTITY xorg-libinput-driver-size          "324 KB">
-  <!ENTITY xorg-libinput-driver-buildsize     "3.9 MB (with tests)">
-  <!ENTITY xorg-libinput-driver-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY xorg-libinput-driver-buildsize     "3.9 MB（含测试）">
+  <!ENTITY xorg-libinput-driver-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <!-- Begin Xorg input-libinput Driver -->
@@ -43,32 +43,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&xorg-libinput-driver-download-http;"/>
+            下载地址（HTTP）：<ulink url="&xorg-libinput-driver-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&xorg-libinput-driver-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&xorg-libinput-driver-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &xorg-libinput-driver-md5sum;
+            MD5 校验和：&xorg-libinput-driver-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &xorg-libinput-driver-size;
+            大小：&xorg-libinput-driver-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &xorg-libinput-driver-buildsize;
+            预计所需磁盘空间：&xorg-libinput-driver-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &xorg-libinput-driver-time;
+            预计构建时间：&xorg-libinput-driver-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -49,32 +49,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gs-md5sum;
+          MD5 校验和：&gs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gs-size;
+          大小：&gs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gs-buildsize;
+          预计所需磁盘空间：&gs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gs-time;
+          预计构建时间：&gs-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -104,17 +104,17 @@
       <title>Standard Fonts</title>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gs-standard-fonts-download;"/>
+          下载地址（HTTP）：<ulink url="&gs-standard-fonts-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gs-standard-fonts-md5sum;
+          MD5 校验和：&gs-standard-fonts-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gs-standard-fonts-size;
+          大小：&gs-standard-fonts-size;
         </para>
       </listitem>
     </itemizedlist>
@@ -123,17 +123,17 @@
       <title>Other Fonts</title>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gs-other-fonts-download;"/>
+          下载地址（HTTP）：<ulink url="&gs-other-fonts-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gs-other-fonts-md5sum;
+          MD5 校验和：&gs-other-fonts-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gs-other-fonts-size;
+          大小：&gs-other-fonts-size;
         </para>
       </listitem>
     </itemizedlist>

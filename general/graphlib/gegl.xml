@@ -8,7 +8,7 @@
   <!ENTITY gegl-download-ftp  " ">
   <!ENTITY gegl-md5sum        "2442d5f0cb97bcc1b50d2082e29c9375">
   <!ENTITY gegl-size          "5.9 MB">
-  <!ENTITY gegl-buildsize     "159 MB (With tests)">
+  <!ENTITY gegl-buildsize     "159 MB（含测试）">
   <!ENTITY gegl-time          "0.9 SBU (with tests, both with parallelism=4)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gegl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gegl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gegl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gegl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gegl-md5sum;
+          MD5 校验和：&gegl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gegl-size;
+          大小：&gegl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gegl-buildsize;
+          预计所需磁盘空间：&gegl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gegl-time;
+          预计构建时间：&gegl-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&iptables-download-http;"/>
+          下载地址（HTTP）：<ulink url="&iptables-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&iptables-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&iptables-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &iptables-md5sum;
+          MD5 校验和：&iptables-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &iptables-size;
+          大小：&iptables-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &iptables-buildsize;
+          预计所需磁盘空间：&iptables-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &iptables-time;
+          预计构建时间：&iptables-time;
         </para>
       </listitem>
     </itemizedlist>

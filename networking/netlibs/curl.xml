@@ -8,7 +8,7 @@
   <!ENTITY curl-download-ftp  " ">
   <!ENTITY curl-md5sum        "230131079987135cbe1eadb77a04af57">
   <!ENTITY curl-size          "2.8 MB">
-  <!ENTITY curl-buildsize     "51  64 MB (with tests)">
+  <!ENTITY curl-buildsize     "51  64 MB（含测试）">
   <!ENTITY curl-time          "0.3 SBU (add 4.1 SBU for tests (without valgrind, add 17 SBU with valgrind) all using parallelism=4)">
 ]>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&curl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&curl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&curl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&curl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &curl-md5sum;
+          MD5 校验和：&curl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &curl-size;
+          大小：&curl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &curl-buildsize;
+          预计所需磁盘空间：&curl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &curl-time;
+          预计构建时间：&curl-time;
         </para>
       </listitem>
     </itemizedlist>

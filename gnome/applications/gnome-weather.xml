@@ -10,7 +10,7 @@
   <!ENTITY gnome-weather-md5sum        "35858b4f07ede013a835033b0b258d19">
   <!ENTITY gnome-weather-size          "252 KB">
   <!ENTITY gnome-weather-buildsize     "4.7 MB">
-  <!ENTITY gnome-weather-time          "less than 0.1 SBU">
+  <!ENTITY gnome-weather-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-weather" xreflabel="gnome-weather-&gnome-weather-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-weather-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-weather-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-weather-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-weather-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-weather-md5sum;
+          MD5 校验和：&gnome-weather-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-weather-size;
+          大小：&gnome-weather-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-weather-buildsize;
+          预计所需磁盘空间：&gnome-weather-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-weather-time;
+          预计构建时间：&gnome-weather-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&intel-gmmlib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&intel-gmmlib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&intel-gmmlib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&intel-gmmlib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &intel-gmmlib-md5sum;
+          MD5 校验和：&intel-gmmlib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &intel-gmmlib-size;
+          大小：&intel-gmmlib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &intel-gmmlib-buildsize;
+          预计所需磁盘空间：&intel-gmmlib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &intel-gmmlib-time;
+          预计构建时间：&intel-gmmlib-time;
         </para>
       </listitem>
     </itemizedlist>

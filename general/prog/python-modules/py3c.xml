@@ -8,8 +8,8 @@
            "https://github.com/encukou/py3c/archive/v&py3c-version;/py3c-&py3c-version;.tar.gz">
   <!ENTITY py3c-md5sum        "53029afde7e0cf8672a2d69d378a0cfc">
   <!ENTITY py3c-size          "47 KB">
-  <!ENTITY py3c-buildsize     "608 KB (with tests)">
-  <!ENTITY py3c-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY py3c-buildsize     "608 KB（含测试）">
+  <!ENTITY py3c-time          "小于 0.1 SBU（含测试）">
 ]>
 
    <!-- Begin Py3c -->
@@ -36,34 +36,34 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&py3c-download-http;"/>
+            下载地址（HTTP）：<ulink url="&py3c-download-http;"/>
           </para>
         </listitem>
 <!--
         <listitem>
           <para>
-            Download (FTP): <ulink url="&py3c-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&py3c-download-ftp;"/>
           </para>
         </listitem>
 -->
         <listitem>
           <para>
-            Download MD5 sum: &py3c-md5sum;
+            MD5 校验和：&py3c-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &py3c-size;
+            大小：&py3c-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &py3c-buildsize;
+            预计所需磁盘空间：&py3c-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &py3c-time;
+            预计构建时间：&py3c-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libmad-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libmad-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libmad-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libmad-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libmad-md5sum;
+          MD5 校验和：&libmad-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libmad-size;
+          大小：&libmad-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libmad-buildsize;
+          预计所需磁盘空间：&libmad-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libmad-time;
+          预计构建时间：&libmad-time;
         </para>
       </listitem>
     </itemizedlist>

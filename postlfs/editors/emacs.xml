@@ -9,7 +9,7 @@
   <!ENTITY emacs-md5sum        "0adba4843ac864ba8c3c9b2a7deea176">
   <!ENTITY emacs-size          "53 MB">
   <!ENTITY emacs-buildsize     "556 MB">
-  <!ENTITY emacs-time          "0.6 SBU (Using parallelism=4)">
+  <!ENTITY emacs-time          "0.6 SBU（并行度=4）">
 ]>
 
 <sect1 id="emacs" xreflabel="Emacs-&emacs-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&emacs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&emacs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&emacs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&emacs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &emacs-md5sum;
+          MD5 校验和：&emacs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &emacs-size;
+          大小：&emacs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &emacs-buildsize;
+          预计所需磁盘空间：&emacs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &emacs-time;
+          预计构建时间：&emacs-time;
         </para>
       </listitem>
     </itemizedlist>

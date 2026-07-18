@@ -9,7 +9,7 @@
   <!ENTITY pciutils-md5sum        "20b8e936cce9784444961088c8801f68">
   <!ENTITY pciutils-size          "724 KB">
   <!ENTITY pciutils-buildsize     "5.4 MB">
-  <!ENTITY pciutils-time          "less than 0.1 SBU">
+  <!ENTITY pciutils-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="pciutils" xreflabel="pciutils-&pciutils-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pciutils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pciutils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pciutils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pciutils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pciutils-md5sum;
+          MD5 校验和：&pciutils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pciutils-size;
+          大小：&pciutils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pciutils-buildsize;
+          预计所需磁盘空间：&pciutils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pciutils-time;
+          预计构建时间：&pciutils-time;
         </para>
       </listitem>
     </itemizedlist>

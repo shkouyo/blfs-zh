@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfwm4-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfwm4-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfwm4-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfwm4-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfwm4-md5sum;
+          MD5 校验和：&xfwm4-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfwm4-size;
+          大小：&xfwm4-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfwm4-buildsize;
+          预计所需磁盘空间：&xfwm4-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfwm4-time;
+          预计构建时间：&xfwm4-time;
         </para>
       </listitem>
     </itemizedlist>

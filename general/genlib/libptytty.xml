@@ -9,7 +9,7 @@
   <!ENTITY libptytty-md5sum        "2a7f3f3c0d3ef71902da745dc7959529">
   <!ENTITY libptytty-size          "48 KB">
   <!ENTITY libptytty-buildsize     "1.4 MB">
-  <!ENTITY libptytty-time          "less than 0.1 SBU">
+  <!ENTITY libptytty-time          "小于 0.1 SBU">
 
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libptytty-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libptytty-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libptytty-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libptytty-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libptytty-md5sum;
+          MD5 校验和：&libptytty-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libptytty-size;
+          大小：&libptytty-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libptytty-buildsize;
+          预计所需磁盘空间：&libptytty-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libptytty-time;
+          预计构建时间：&libptytty-time;
         </para>
       </listitem>
     </itemizedlist>

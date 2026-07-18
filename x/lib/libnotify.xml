@@ -9,7 +9,7 @@
   <!ENTITY libnotify-md5sum        "35bef24dc1e9a336394556d09345e078">
   <!ENTITY libnotify-size          "116 KB">
   <!ENTITY libnotify-buildsize     "2.2 MB">
-  <!ENTITY libnotify-time          "less than 0.1 SBU">
+  <!ENTITY libnotify-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libnotify" xreflabel="libnotify-&libnotify-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnotify-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnotify-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnotify-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnotify-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnotify-md5sum;
+          MD5 校验和：&libnotify-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnotify-size;
+          大小：&libnotify-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnotify-buildsize;
+          预计所需磁盘空间：&libnotify-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnotify-time;
+          预计构建时间：&libnotify-time;
         </para>
       </listitem>
     </itemizedlist>

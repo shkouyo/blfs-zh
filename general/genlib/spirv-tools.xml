@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&spirv-tools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&spirv-tools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&spirv-tools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&spirv-tools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &spirv-tools-md5sum;
+          MD5 校验和：&spirv-tools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &spirv-tools-size;
+          大小：&spirv-tools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &spirv-tools-buildsize;
+          预计所需磁盘空间：&spirv-tools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &spirv-tools-time;
+          预计构建时间：&spirv-tools-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY xdg-dbus-proxy-md5sum        "f79f2de6c6667762ff4ab11f6927d5b7">
   <!ENTITY xdg-dbus-proxy-size          "44 KB">
   <!ENTITY xdg-dbus-proxy-buildsize     "996 KB">
-  <!ENTITY xdg-dbus-proxy-time          "less than 0.1 SBU">
+  <!ENTITY xdg-dbus-proxy-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xdg-dbus-proxy" xreflabel="xdg-dbus-proxy-&xdg-dbus-proxy-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xdg-dbus-proxy-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xdg-dbus-proxy-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xdg-dbus-proxy-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xdg-dbus-proxy-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xdg-dbus-proxy-md5sum;
+          MD5 校验和：&xdg-dbus-proxy-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xdg-dbus-proxy-size;
+          大小：&xdg-dbus-proxy-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xdg-dbus-proxy-buildsize;
+          预计所需磁盘空间：&xdg-dbus-proxy-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xdg-dbus-proxy-time;
+          预计构建时间：&xdg-dbus-proxy-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY gi-docgen-download-ftp  " ">
   <!ENTITY gi-docgen-md5sum        "&gi-docgen-md5sum;">
   <!ENTITY gi-docgen-size          "2.5 MB">
-  <!ENTITY gi-docgen-buildsize     "20 MB (with tests)">
-  <!ENTITY gi-docgen-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY gi-docgen-buildsize     "20 MB（含测试）">
+  <!ENTITY gi-docgen-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="gi-docgen" xreflabel="Gi-DocGen-&gi-docgen-version;">
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&gi-docgen-download-http;"/>
+            下载地址（HTTP）：<ulink url="&gi-docgen-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&gi-docgen-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&gi-docgen-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &gi-docgen-md5sum;
+            MD5 校验和：&gi-docgen-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &gi-docgen-size;
+            大小：&gi-docgen-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &gi-docgen-buildsize;
+            预计所需磁盘空间：&gi-docgen-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &gi-docgen-time;
+            预计构建时间：&gi-docgen-time;
           </para>
         </listitem>
       </itemizedlist>

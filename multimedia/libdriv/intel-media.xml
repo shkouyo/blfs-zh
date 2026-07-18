@@ -40,32 +40,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&intel-media-download-http;"/>
+            下载地址（HTTP）：<ulink url="&intel-media-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&intel-media-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&intel-media-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &intel-media-md5sum;
+            MD5 校验和：&intel-media-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &intel-media-size;
+            大小：&intel-media-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &intel-media-buildsize;
+            预计所需磁盘空间：&intel-media-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &intel-media-time;
+            预计构建时间：&intel-media-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY glm-md5sum        "2192069d8d0091ff1cca041cdcdc85fe">
   <!ENTITY glm-size          "4.4 MB">
   <!ENTITY glm-buildsize     "25 MB">
-  <!ENTITY glm-time          "less than 0.1 SBU">
+  <!ENTITY glm-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="glm" xreflabel="GLM-&glm-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glm-md5sum;
+          MD5 校验和：&glm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glm-size;
+          大小：&glm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glm-buildsize;
+          预计所需磁盘空间：&glm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glm-time;
+          预计构建时间：&glm-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY nmap-download-ftp  " ">
   <!ENTITY nmap-md5sum        "187db52073c5a1bcbc579e0efbc2c0bd">
   <!ENTITY nmap-size          "13 MB">
-  <!ENTITY nmap-buildsize     "190 MB (with tests)">
+  <!ENTITY nmap-buildsize     "190 MB（含测试）">
   <!ENTITY nmap-time          "0.5 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nmap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nmap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nmap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nmap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nmap-md5sum;
+          MD5 校验和：&nmap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nmap-size;
+          大小：&nmap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nmap-buildsize;
+          预计所需磁盘空间：&nmap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nmap-time;
+          预计构建时间：&nmap-time;
         </para>
       </listitem>
     </itemizedlist>

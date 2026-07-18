@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gsl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gsl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gsl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gsl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gsl-md5sum;
+          MD5 校验和：&gsl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gsl-size;
+          大小：&gsl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gsl-buildsize;
+          预计所需磁盘空间：&gsl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gsl-time;
+          预计构建时间：&gsl-time;
         </para>
       </listitem>
     </itemizedlist>

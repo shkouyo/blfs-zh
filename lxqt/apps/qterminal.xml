@@ -9,7 +9,7 @@
   <!ENTITY qterminal-md5sum        "d381d0aad8d9eb44368c5ddcd22dade5">
   <!ENTITY qterminal-size          "412 KB">
   <!ENTITY qterminal-buildsize     "12 MB">
-  <!ENTITY qterminal-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY qterminal-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="qterminal" xreflabel="qterminal-&qterminal-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qterminal-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qterminal-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qterminal-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qterminal-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qterminal-md5sum;
+          MD5 校验和：&qterminal-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qterminal-size;
+          大小：&qterminal-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qterminal-buildsize;
+          预计所需磁盘空间：&qterminal-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qterminal-time;
+          预计构建时间：&qterminal-time;
         </para>
       </listitem>
     </itemizedlist>

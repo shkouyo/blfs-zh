@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wget-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wget-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wget-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wget-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wget-md5sum;
+          MD5 校验和：&wget-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wget-size;
+          大小：&wget-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wget-buildsize;
+          预计所需磁盘空间：&wget-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wget-time;
+          预计构建时间：&wget-time;
         </para>
       </listitem>
     </itemizedlist>

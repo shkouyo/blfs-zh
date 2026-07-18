@@ -9,7 +9,7 @@
   <!ENTITY xclock-md5sum        "c753661188716eb68641a3965b9a9037">
   <!ENTITY xclock-size          "176 KB">
   <!ENTITY xclock-buildsize     "2.0 MB">
-  <!ENTITY xclock-time          "less than 0.1 SBU">
+  <!ENTITY xclock-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xclock" xreflabel="xclock-&xclock-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xclock-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xclock-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xclock-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xclock-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xclock-md5sum;
+          MD5 校验和：&xclock-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xclock-size;
+          大小：&xclock-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xclock-buildsize;
+          预计所需磁盘空间：&xclock-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xclock-time;
+          预计构建时间：&xclock-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfce4-settings-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfce4-settings-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfce4-settings-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfce4-settings-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfce4-settings-md5sum;
+          MD5 校验和：&xfce4-settings-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfce4-settings-size;
+          大小：&xfce4-settings-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfce4-settings-buildsize;
+          预计所需磁盘空间：&xfce4-settings-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfce4-settings-time;
+          预计构建时间：&xfce4-settings-time;
         </para>
       </listitem>
     </itemizedlist>

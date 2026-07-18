@@ -8,8 +8,8 @@
   <!ENTITY json-glib-download-ftp  " ">
   <!ENTITY json-glib-md5sum        "95c3d5dd56d4ada808480739889b75bc">
   <!ENTITY json-glib-size          "1.2 MB">
-  <!ENTITY json-glib-buildsize     "15 MB (with tests)">
-  <!ENTITY json-glib-time          "0.1 SBU (with tests)">
+  <!ENTITY json-glib-buildsize     "15 MB（含测试）">
+  <!ENTITY json-glib-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="json-glib" xreflabel="json-glib-&json-glib-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&json-glib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&json-glib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&json-glib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&json-glib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &json-glib-md5sum;
+          MD5 校验和：&json-glib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &json-glib-size;
+          大小：&json-glib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &json-glib-buildsize;
+          预计所需磁盘空间：&json-glib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &json-glib-time;
+          预计构建时间：&json-glib-time;
         </para>
       </listitem>
     </itemizedlist>

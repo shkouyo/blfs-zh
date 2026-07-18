@@ -9,7 +9,7 @@
   <!ENTITY roman-numerals-md5sum        "&roman-numerals-md5sum;">
   <!ENTITY roman-numerals-size          "12 KB">
   <!ENTITY roman-numerals-buildsize     "320 KB">
-  <!ENTITY roman-numerals-time          "less than 0.1 SBU">
+  <!ENTITY roman-numerals-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="roman-numerals" xreflabel="roman-numerals-&roman-numerals-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&roman-numerals-download-http;"/>
+            下载地址（HTTP）：<ulink url="&roman-numerals-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&roman-numerals-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&roman-numerals-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &roman-numerals-md5sum;
+            MD5 校验和：&roman-numerals-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &roman-numerals-size;
+            大小：&roman-numerals-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &roman-numerals-buildsize;
+            预计所需磁盘空间：&roman-numerals-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &roman-numerals-time;
+            预计构建时间：&roman-numerals-time;
           </para>
         </listitem>
       </itemizedlist>

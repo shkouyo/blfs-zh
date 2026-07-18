@@ -8,8 +8,8 @@
     "https://github.com/ibireme/yyjson/archive/&yyjson-version;/yyjson-&yyjson-version;.tar.gz">
   <!ENTITY yyjson-md5sum        "a0a4fe2ae717277125fdebc60630ddf1">
   <!ENTITY yyjson-size          "1.6 MB">
-  <!ENTITY yyjson-buildsize     "22 MB (with tests)">
-  <!ENTITY yyjson-time          "0.4 SBU (with tests)">
+  <!ENTITY yyjson-buildsize     "22 MB（含测试）">
+  <!ENTITY yyjson-time          "0.4 SBU（含测试）">
 ]>
 
 <sect1 id="yyjson" xreflabel="yyjson-&yyjson-version;">
@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&yyjson-download-http;"/>
+          下载地址（HTTP）：<ulink url="&yyjson-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &yyjson-md5sum;
+          MD5 校验和：&yyjson-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &yyjson-size;
+          大小：&yyjson-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &yyjson-buildsize;
+          预计所需磁盘空间：&yyjson-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &yyjson-time;
+          预计构建时间：&yyjson-time;
         </para>
       </listitem>
     </itemizedlist>

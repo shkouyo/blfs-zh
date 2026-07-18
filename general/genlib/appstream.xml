@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&appstream-download-http;"/>
+          下载地址（HTTP）：<ulink url="&appstream-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&appstream-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&appstream-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &appstream-md5sum;
+          MD5 校验和：&appstream-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &appstream-size;
+          大小：&appstream-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &appstream-buildsize;
+          预计所需磁盘空间：&appstream-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &appstream-time;
+          预计构建时间：&appstream-time;
         </para>
       </listitem>
     </itemizedlist>

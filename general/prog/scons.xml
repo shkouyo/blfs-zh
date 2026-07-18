@@ -9,7 +9,7 @@
   <!ENTITY scons-md5sum        "8decd1df686532bc0bf7d50c5f12a678">
   <!ENTITY scons-size          "3.1 MB">
   <!ENTITY scons-buildsize     "50 MB">
-  <!ENTITY scons-time          "less than 0.1 SBU">
+  <!ENTITY scons-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="scons" xreflabel="SCons-&scons-version;">
@@ -43,32 +43,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&scons-download-http;"/>
+          下载地址（HTTP）：<ulink url="&scons-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&scons-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&scons-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &scons-md5sum;
+          MD5 校验和：&scons-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &scons-size;
+          大小：&scons-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &scons-buildsize;
+          预计所需磁盘空间：&scons-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &scons-time;
+          预计构建时间：&scons-time;
         </para>
       </listitem>
     </itemizedlist>

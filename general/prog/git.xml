@@ -53,32 +53,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&git-download-http;"/>
+          下载地址（HTTP）：<ulink url="&git-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&git-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&git-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &git-md5sum;
+          MD5 校验和：&git-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &git-size;
+          大小：&git-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &git-buildsize;
+          预计所需磁盘空间：&git-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &git-time;
+          预计构建时间：&git-time;
         </para>
       </listitem>
     </itemizedlist>

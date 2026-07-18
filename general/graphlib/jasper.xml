@@ -8,8 +8,8 @@
   <!ENTITY jasper-download-ftp  " ">
   <!ENTITY jasper-md5sum        "5c84b0c41b6b3363124f8bc7f8881f53">
   <!ENTITY jasper-size          "1.9 MB">
-  <!ENTITY jasper-buildsize     "10 MB (with tests)">
-  <!ENTITY jasper-time          "0.3 SBU (with tests)">
+  <!ENTITY jasper-buildsize     "10 MB（含测试）">
+  <!ENTITY jasper-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="jasper" xreflabel="jasper-&jasper-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&jasper-download-http;"/>
+          下载地址（HTTP）：<ulink url="&jasper-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&jasper-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&jasper-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &jasper-md5sum;
+          MD5 校验和：&jasper-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &jasper-size;
+          大小：&jasper-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &jasper-buildsize;
+          预计所需磁盘空间：&jasper-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &jasper-time;
+          预计构建时间：&jasper-time;
         </para>
       </listitem>
     </itemizedlist>

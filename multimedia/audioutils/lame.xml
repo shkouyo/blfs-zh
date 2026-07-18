@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lame-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lame-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lame-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lame-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lame-md5sum;
+          MD5 校验和：&lame-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lame-size;
+          大小：&lame-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lame-buildsize;
+          预计所需磁盘空间：&lame-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lame-time;
+          预计构建时间：&lame-time;
         </para>
       </listitem>
     </itemizedlist>

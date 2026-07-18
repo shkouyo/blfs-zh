@@ -97,33 +97,33 @@ and it might have been removed by next year. -->
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tl-installer-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tl-installer-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tl-installer-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tl-installer-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          <!--Download MD5 sum: &tl-installer-md5sum; (for &tl-installer-date;)-->
-          Download MD5 sum: Varies frequently
+          <!--MD5 校验和：&tl-installer-md5sum; (for &tl-installer-date;)-->
+          MD5 校验和：Varies frequently
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tl-installer-size;
+          大小：&tl-installer-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tl-installer-buildsize;
+          预计所需磁盘空间：&tl-installer-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tl-installer-time;
+          预计构建时间：&tl-installer-time;
         </para>
       </listitem>
     </itemizedlist>

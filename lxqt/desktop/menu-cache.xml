@@ -9,7 +9,7 @@
   <!ENTITY menu-cache-md5sum        "a15e0de38188622a6b9e63433a6d616f">
   <!ENTITY menu-cache-size          "68 KB">
   <!ENTITY menu-cache-buildsize     "3.8 MB">
-  <!ENTITY menu-cache-time          "less than 0.1 SBU">
+  <!ENTITY menu-cache-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="menu-cache" xreflabel="menu-cache-&menu-cache-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&menu-cache-download-http;"/>
+          下载地址（HTTP）：<ulink url="&menu-cache-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&menu-cache-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&menu-cache-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &menu-cache-md5sum;
+          MD5 校验和：&menu-cache-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &menu-cache-size;
+          大小：&menu-cache-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &menu-cache-buildsize;
+          预计所需磁盘空间：&menu-cache-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &menu-cache-time;
+          预计构建时间：&menu-cache-time;
         </para>
       </listitem>
     </itemizedlist>

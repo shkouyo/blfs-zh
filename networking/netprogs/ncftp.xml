@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ncftp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ncftp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ncftp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ncftp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ncftp-md5sum;
+          MD5 校验和：&ncftp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ncftp-size;
+          大小：&ncftp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ncftp-buildsize;
+          预计所需磁盘空间：&ncftp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ncftp-time;
+          预计构建时间：&ncftp-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY libsysstat-md5sum        "b21e0facd325c1d8e177121e2ac71e78">
   <!ENTITY libsysstat-size          "20 KB">
   <!ENTITY libsysstat-buildsize     "1.9 MB">
-  <!ENTITY libsysstat-time          "less than 0.1 SBU">
+  <!ENTITY libsysstat-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libsysstat" xreflabel="libsysstat-&libsysstat-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libsysstat-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libsysstat-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libsysstat-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libsysstat-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libsysstat-md5sum;
+          MD5 校验和：&libsysstat-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libsysstat-size;
+          大小：&libsysstat-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libsysstat-buildsize;
+          预计所需磁盘空间：&libsysstat-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libsysstat-time;
+          预计构建时间：&libsysstat-time;
         </para>
       </listitem>
     </itemizedlist>

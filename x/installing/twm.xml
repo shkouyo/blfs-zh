@@ -9,7 +9,7 @@
   <!ENTITY twm-md5sum        "2a337b776c904eab5b874eddc0124d4f">
   <!ENTITY twm-size          "268 KB">
   <!ENTITY twm-buildsize     "3.8 MB">
-  <!ENTITY twm-time          "less than 0.1 SBU">
+  <!ENTITY twm-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="twm" xreflabel="twm-&twm-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&twm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&twm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&twm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&twm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &twm-md5sum;
+          MD5 校验和：&twm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &twm-size;
+          大小：&twm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &twm-buildsize;
+          预计所需磁盘空间：&twm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &twm-time;
+          预计构建时间：&twm-time;
         </para>
       </listitem>
     </itemizedlist>

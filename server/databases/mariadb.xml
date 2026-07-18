@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mariadb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mariadb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mariadb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mariadb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mariadb-md5sum;
+          MD5 校验和：&mariadb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mariadb-size;
+          大小：&mariadb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mariadb-buildsize;
+          预计所需磁盘空间：&mariadb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mariadb-time;
+          预计构建时间：&mariadb-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wpa_supplicant-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wpa_supplicant-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wpa_supplicant-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wpa_supplicant-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wpa_supplicant-md5sum;
+          MD5 校验和：&wpa_supplicant-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wpa_supplicant-size;
+          大小：&wpa_supplicant-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wpa_supplicant-buildsize;
+          预计所需磁盘空间：&wpa_supplicant-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wpa_supplicant-time;
+          预计构建时间：&wpa_supplicant-time;
         </para>
       </listitem>
     </itemizedlist>

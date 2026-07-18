@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxfce4ui-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxfce4ui-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxfce4ui-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxfce4ui-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxfce4ui-md5sum;
+          MD5 校验和：&libxfce4ui-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxfce4ui-size;
+          大小：&libxfce4ui-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxfce4ui-buildsize;
+          预计所需磁盘空间：&libxfce4ui-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxfce4ui-time;
+          预计构建时间：&libxfce4ui-time;
         </para>
       </listitem>
     </itemizedlist>

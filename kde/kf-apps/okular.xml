@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&okular-download-http;"/>
+          下载地址（HTTP）：<ulink url="&okular-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&okular-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&okular-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &okular-md5sum;
+          MD5 校验和：&okular-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &okular-size;
+          大小：&okular-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &okular-buildsize;
+          预计所需磁盘空间：&okular-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &okular-time;
+          预计构建时间：&okular-time;
         </para>
       </listitem>
     </itemizedlist>

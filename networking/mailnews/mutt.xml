@@ -37,32 +37,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mutt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mutt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mutt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mutt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mutt-md5sum;
+          MD5 校验和：&mutt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mutt-size;
+          大小：&mutt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mutt-buildsize;
+          预计所需磁盘空间：&mutt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mutt-time;
+          预计构建时间：&mutt-time;
         </para>
       </listitem>
     </itemizedlist>

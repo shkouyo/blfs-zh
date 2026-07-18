@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&spidermonkey-download-http;"/>
+          下载地址（HTTP）：<ulink url="&spidermonkey-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&spidermonkey-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&spidermonkey-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &spidermonkey-md5sum;
+          MD5 校验和：&spidermonkey-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &spidermonkey-size;
+          大小：&spidermonkey-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &spidermonkey-buildsize;
+          预计所需磁盘空间：&spidermonkey-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &spidermonkey-time;
+          预计构建时间：&spidermonkey-time;
         </para>
       </listitem>
     </itemizedlist>

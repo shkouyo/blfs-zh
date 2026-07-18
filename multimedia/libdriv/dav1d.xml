@@ -10,7 +10,7 @@
   <!ENTITY dav1d-download-ftp  " ">
   <!ENTITY dav1d-md5sum        "e22d5377b91936ef0b43662364c8973e">
   <!ENTITY dav1d-size          "1.7 MB">
-  <!ENTITY dav1d-buildsize     "23 MB (with tests)">
+  <!ENTITY dav1d-buildsize     "23 MB（含测试）">
   <!ENTITY dav1d-time          "0.3 SBU (using parallelism=4; with tests)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dav1d-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dav1d-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dav1d-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dav1d-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dav1d-md5sum;
+          MD5 校验和：&dav1d-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dav1d-size;
+          大小：&dav1d-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dav1d-buildsize;
+          预计所需磁盘空间：&dav1d-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dav1d-time;
+          预计构建时间：&dav1d-time;
         </para>
       </listitem>
     </itemizedlist>

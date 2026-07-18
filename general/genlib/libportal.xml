@@ -8,8 +8,8 @@
   <!ENTITY libportal-download-ftp  " ">
   <!ENTITY libportal-md5sum        "0c63ee25d2e2986ce4df544fe8149046">
   <!ENTITY libportal-size          "108 KB">
-  <!ENTITY libportal-buildsize     "4.0 MB (with tests; add 9 MB for docs)">
-  <!ENTITY libportal-time          "less than 0.1 SBU (add 0.6 SBU for tests)">
+  <!ENTITY libportal-buildsize     "4.0 MB（含测试；文档将额外增加 9 MB）">
+  <!ENTITY libportal-time          "小于 0.1 SBU（测试将额外增加 0.6 SBU）">
 ]>
 
 <sect1 id="libportal" xreflabel="libportal-&libportal-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libportal-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libportal-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libportal-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libportal-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libportal-md5sum;
+          MD5 校验和：&libportal-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libportal-size;
+          大小：&libportal-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libportal-buildsize;
+          预计所需磁盘空间：&libportal-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libportal-time;
+          预计构建时间：&libportal-time;
         </para>
       </listitem>
     </itemizedlist>

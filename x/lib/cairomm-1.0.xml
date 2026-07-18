@@ -8,8 +8,8 @@
   <!ENTITY cairomm-1.0-download-ftp  " ">
   <!ENTITY cairomm-1.0-md5sum        "634242bb797fb6e9d7cfae1a83474d11">
   <!ENTITY cairomm-1.0-size          "620 KB">
-  <!ENTITY cairomm-1.0-buildsize     "12 MB (with tests)">
-  <!ENTITY cairomm-1.0-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY cairomm-1.0-buildsize     "12 MB（含测试）">
+  <!ENTITY cairomm-1.0-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="cairomm-1.0" xreflabel="libcairomm-&cairomm-1.0-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cairomm-1.0-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cairomm-1.0-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cairomm-1.0-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cairomm-1.0-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cairomm-1.0-md5sum;
+          MD5 校验和：&cairomm-1.0-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cairomm-1.0-size;
+          大小：&cairomm-1.0-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cairomm-1.0-buildsize;
+          预计所需磁盘空间：&cairomm-1.0-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cairomm-1.0-time;
+          预计构建时间：&cairomm-1.0-time;
         </para>
       </listitem>
     </itemizedlist>

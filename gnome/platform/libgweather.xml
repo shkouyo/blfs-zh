@@ -9,8 +9,8 @@
   <!ENTITY libgweather-download-ftp  " ">
   <!ENTITY libgweather-md5sum        "c52f40f2e6d6708763f15eb17ce45b97">
   <!ENTITY libgweather-size          "340 KB">
-  <!ENTITY libgweather-buildsize     "13 MB (with tests)">
-  <!ENTITY libgweather-time          "0.1 SBU (with tests)">
+  <!ENTITY libgweather-buildsize     "13 MB（含测试）">
+  <!ENTITY libgweather-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libgweather" xreflabel="libgweather-&libgweather-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgweather-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgweather-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgweather-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgweather-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgweather-md5sum;
+          MD5 校验和：&libgweather-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgweather-size;
+          大小：&libgweather-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgweather-buildsize;
+          预计所需磁盘空间：&libgweather-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgweather-time;
+          预计构建时间：&libgweather-time;
         </para>
       </listitem>
     </itemizedlist>

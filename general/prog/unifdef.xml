@@ -9,7 +9,7 @@
   <!ENTITY unifdef-md5sum        "b225312c110cd2600ca7166bd0419751">
   <!ENTITY unifdef-size          "88 KB">
   <!ENTITY unifdef-buildsize     "1.9 MB">
-  <!ENTITY unifdef-time          "less than 0.1 SBU">
+  <!ENTITY unifdef-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="unifdef" xreflabel="unifdef-&unifdef-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&unifdef-download-http;"/>
+          下载地址（HTTP）：<ulink url="&unifdef-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&unifdef-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&unifdef-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &unifdef-md5sum;
+          MD5 校验和：&unifdef-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &unifdef-size;
+          大小：&unifdef-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &unifdef-buildsize;
+          预计所需磁盘空间：&unifdef-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &unifdef-time;
+          预计构建时间：&unifdef-time;
         </para>
       </listitem>
     </itemizedlist>

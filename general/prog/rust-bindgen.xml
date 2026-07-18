@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rust-bindgen-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rust-bindgen-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rust-bindgen-md5sum;
+          MD5 校验和：&rust-bindgen-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rust-bindgen-size;
+          大小：&rust-bindgen-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rust-bindgen-buildsize;
+          预计所需磁盘空间：&rust-bindgen-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rust-bindgen-time;
+          预计构建时间：&rust-bindgen-time;
         </para>
       </listitem>
     </itemizedlist>

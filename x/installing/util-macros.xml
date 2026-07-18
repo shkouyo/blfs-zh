@@ -9,7 +9,7 @@
   <!ENTITY util-macros-md5sum        "5f683a1966834b0a6ae07b3680bcb863">
   <!ENTITY util-macros-size          "84 KB">
   <!ENTITY util-macros-buildsize     "524 KB">
-  <!ENTITY util-macros-time          "less than 0.1 SBU">
+  <!ENTITY util-macros-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="util-macros" xreflabel="util-macros-&util-macros-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&util-macros-download-http;"/>
+          下载地址（HTTP）：<ulink url="&util-macros-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&util-macros-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&util-macros-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &util-macros-md5sum;
+          MD5 校验和：&util-macros-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &util-macros-size;
+          大小：&util-macros-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &util-macros-buildsize;
+          预计所需磁盘空间：&util-macros-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &util-macros-time;
+          预计构建时间：&util-macros-time;
         </para>
       </listitem>
     </itemizedlist>

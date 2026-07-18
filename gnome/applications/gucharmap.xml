@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gucharmap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gucharmap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gucharmap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gucharmap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gucharmap-md5sum;
+          MD5 校验和：&gucharmap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gucharmap-size;
+          大小：&gucharmap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gucharmap-buildsize;
+          预计所需磁盘空间：&gucharmap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gucharmap-time;
+          预计构建时间：&gucharmap-time;
         </para>
       </listitem>
     </itemizedlist>

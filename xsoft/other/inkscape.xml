@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&inkscape-download-http;"/>
+          下载地址（HTTP）：<ulink url="&inkscape-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&inkscape-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&inkscape-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &inkscape-md5sum;
+          MD5 校验和：&inkscape-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &inkscape-size;
+          大小：&inkscape-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &inkscape-buildsize;
+          预计所需磁盘空间：&inkscape-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &inkscape-time;
+          预计构建时间：&inkscape-time;
         </para>
       </listitem>
     </itemizedlist>

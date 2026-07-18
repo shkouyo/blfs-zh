@@ -8,7 +8,7 @@
   <!ENTITY xorg-server-download-ftp  " ">
   <!ENTITY xorg-server-md5sum        "3af3db8a16142f86490b17349beab67f">
   <!ENTITY xorg-server-size          "4.8 MB">
-  <!ENTITY xorg-server-buildsize     "153 MB (with tests)">
+  <!ENTITY xorg-server-buildsize     "153 MB（含测试）">
   <!ENTITY xorg-server-time          "0.3 SBU (using parallelism=4; with tests)">
   <!ENTITY modesetting_drv
            "<filename class='libraryfile'>modesetting_drv</filename>">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xorg-server-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xorg-server-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xorg-server-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xorg-server-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xorg-server-md5sum;
+          MD5 校验和：&xorg-server-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xorg-server-size;
+          大小：&xorg-server-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xorg-server-buildsize;
+          预计所需磁盘空间：&xorg-server-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xorg-server-time;
+          预计构建时间：&xorg-server-time;
         </para>
       </listitem>
     </itemizedlist>

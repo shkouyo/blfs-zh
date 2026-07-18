@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libwnck-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libwnck-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libwnck-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libwnck-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libwnck-md5sum;
+          MD5 校验和：&libwnck-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libwnck-size;
+          大小：&libwnck-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libwnck-buildsize;
+          预计所需磁盘空间：&libwnck-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libwnck-time;
+          预计构建时间：&libwnck-time;
         </para>
       </listitem>
     </itemizedlist>

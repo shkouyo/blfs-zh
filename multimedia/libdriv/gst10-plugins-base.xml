@@ -9,7 +9,7 @@
   <!ENTITY gst10-plugins-base-download-ftp  " ">
   <!ENTITY gst10-plugins-base-md5sum        "531d150ec40929a5a831942fcbe141a5">
   <!ENTITY gst10-plugins-base-size          "2.5 MB">
-  <!ENTITY gst10-plugins-base-buildsize     "124 MB (with tests)">
+  <!ENTITY gst10-plugins-base-buildsize     "124 MB（含测试）">
   <!ENTITY gst10-plugins-base-time          "0.9 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gst10-plugins-base-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gst10-plugins-base-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gst10-plugins-base-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gst10-plugins-base-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gst10-plugins-base-md5sum;
+          MD5 校验和：&gst10-plugins-base-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gst10-plugins-base-size;
+          大小：&gst10-plugins-base-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gst10-plugins-base-buildsize;
+          预计所需磁盘空间：&gst10-plugins-base-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gst10-plugins-base-time;
+          预计构建时间：&gst10-plugins-base-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&librsvg-download-http;"/>
+          下载地址（HTTP）：<ulink url="&librsvg-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&librsvg-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&librsvg-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &librsvg-md5sum;
+          MD5 校验和：&librsvg-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &librsvg-size;
+          大小：&librsvg-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &librsvg-buildsize;
+          预计所需磁盘空间：&librsvg-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &librsvg-time;
+          预计构建时间：&librsvg-time;
         </para>
       </listitem>
     </itemizedlist>

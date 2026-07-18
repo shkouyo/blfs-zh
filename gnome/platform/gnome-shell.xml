@@ -9,7 +9,7 @@
   <!ENTITY gnome-shell-download-ftp  " ">
   <!ENTITY gnome-shell-md5sum        "e3864e7b048ac53f644ab416c0f38a52">
   <!ENTITY gnome-shell-size          "2.2 MB">
-  <!ENTITY gnome-shell-buildsize     "64 MB (with tests)">
+  <!ENTITY gnome-shell-buildsize     "64 MB（含测试）">
   <!ENTITY gnome-shell-time          "0.5 SBU (Using parallelism=4; with tests)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-shell-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-shell-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-shell-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-shell-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-shell-md5sum;
+          MD5 校验和：&gnome-shell-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-shell-size;
+          大小：&gnome-shell-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-shell-buildsize;
+          预计所需磁盘空间：&gnome-shell-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-shell-time;
+          预计构建时间：&gnome-shell-time;
         </para>
       </listitem>
     </itemizedlist>

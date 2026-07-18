@@ -8,8 +8,8 @@
   <!ENTITY giflib-download-ftp  " ">
   <!ENTITY giflib-http-md5sum   "a70e90ff780e9ebee9cb84b82bbd46a7">
   <!ENTITY giflib-http-size     "460 KB">
-  <!ENTITY giflib-buildsize     "4.2 MB (with documentation)">
-  <!ENTITY giflib-time          "less than 0.1 SBU (with documentation)">
+  <!ENTITY giflib-buildsize     "4.2 MB（含文档）">
+  <!ENTITY giflib-time          "小于 0.1 SBU（含文档）">
 ]>
 
 <sect1 id="giflib" xreflabel="giflib-&giflib-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&giflib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&giflib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&giflib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&giflib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &giflib-http-md5sum;
+          MD5 校验和：&giflib-http-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &giflib-http-size;
+          大小：&giflib-http-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &giflib-buildsize;
+          预计所需磁盘空间：&giflib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &giflib-time;
+          预计构建时间：&giflib-time;
         </para>
       </listitem>
     </itemizedlist>

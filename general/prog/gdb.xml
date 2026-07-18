@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gdb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gdb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gdb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gdb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gdb-md5sum;
+          MD5 校验和：&gdb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gdb-size;
+          大小：&gdb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gdb-buildsize;
+          预计所需磁盘空间：&gdb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gdb-time;
+          预计构建时间：&gdb-time;
         </para>
       </listitem>
     </itemizedlist>

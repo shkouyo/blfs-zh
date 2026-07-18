@@ -9,7 +9,7 @@
   <!ENTITY libmnl-md5sum        "0bbb70573119ec5d49435114583e7a49">
   <!ENTITY libmnl-size          "308 KB">
   <!ENTITY libmnl-buildsize     "2.9 MB">
-  <!ENTITY libmnl-time          "less than 0.1 SBU">
+  <!ENTITY libmnl-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libmnl" xreflabel="libmnl-&libmnl-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libmnl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libmnl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libmnl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libmnl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libmnl-md5sum;
+          MD5 校验和：&libmnl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libmnl-size;
+          大小：&libmnl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libmnl-buildsize;
+          预计所需磁盘空间：&libmnl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libmnl-time;
+          预计构建时间：&libmnl-time;
         </para>
       </listitem>
     </itemizedlist>

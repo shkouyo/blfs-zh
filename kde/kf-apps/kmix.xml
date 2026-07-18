@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kmix-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kmix-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kmix-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kmix-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kmix-md5sum;
+          MD5 校验和：&kmix-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kmix-size;
+          大小：&kmix-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kmix-buildsize;
+          预计所需磁盘空间：&kmix-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kmix-time;
+          预计构建时间：&kmix-time;
         </para>
       </listitem>
     </itemizedlist>

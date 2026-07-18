@@ -8,8 +8,8 @@
   <!ENTITY libpeas-download-ftp  " ">
   <!ENTITY libpeas-md5sum        "5e2388cd39322cd121be67ef398297d6">
   <!ENTITY libpeas-size          "192 KB">
-  <!ENTITY libpeas-buildsize     "13 MB (with tests)">
-  <!ENTITY libpeas-time          "0.1 SBU (with tests)">
+  <!ENTITY libpeas-buildsize     "13 MB（含测试）">
+  <!ENTITY libpeas-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libpeas" xreflabel="libpeas-&libpeas-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libpeas-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libpeas-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libpeas-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libpeas-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libpeas-md5sum;
+          MD5 校验和：&libpeas-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libpeas-size;
+          大小：&libpeas-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libpeas-buildsize;
+          预计所需磁盘空间：&libpeas-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libpeas-time;
+          预计构建时间：&libpeas-time;
         </para>
       </listitem>
     </itemizedlist>

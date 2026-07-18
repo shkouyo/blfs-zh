@@ -8,7 +8,7 @@
   <!ENTITY nodejs-download-ftp  " ">
   <!ENTITY nodejs-md5sum        "9a1b90cd75e549d6455ad03aaa636208">
   <!ENTITY nodejs-size          "53 MB">
-  <!ENTITY nodejs-buildsize     "1.5 GB (with tests)">
+  <!ENTITY nodejs-buildsize     "1.5 GB（含测试）">
   <!ENTITY nodejs-time          "16 SBU (add 4.3 SBU for tests: both using
                                  parallelism=8 and 8 CPUs online, parts of the
                                  tests will use all online CPUs)">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&nodejs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&nodejs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&nodejs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&nodejs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &nodejs-md5sum;
+          MD5 校验和：&nodejs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &nodejs-size;
+          大小：&nodejs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &nodejs-buildsize;
+          预计所需磁盘空间：&nodejs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &nodejs-time;
+          预计构建时间：&nodejs-time;
         </para>
       </listitem>
     </itemizedlist>

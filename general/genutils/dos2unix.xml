@@ -8,8 +8,8 @@
 <!ENTITY dos2unix-download-ftp  " ">
 <!ENTITY dos2unix-md5sum        "0cda65d5e461b1d8162bf1194a669531">
 <!ENTITY dos2unix-size          "976 KB">
-<!ENTITY dos2unix-buildsize     "8.9 MB (with tests)">
-<!ENTITY dos2unix-time          "less than 0.1 SBU (with tests)">
+<!ENTITY dos2unix-buildsize     "8.9 MB（含测试）">
+<!ENTITY dos2unix-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="dos2unix" xreflabel="dos2unix-&dos2unix-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dos2unix-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dos2unix-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dos2unix-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dos2unix-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dos2unix-md5sum;
+          MD5 校验和：&dos2unix-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dos2unix-size;
+          大小：&dos2unix-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dos2unix-buildsize;
+          预计所需磁盘空间：&dos2unix-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dos2unix-time;
+          预计构建时间：&dos2unix-time;
         </para>
       </listitem>
     </itemizedlist>

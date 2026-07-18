@@ -9,7 +9,7 @@
   <!ENTITY sentry-sdk-md5sum        "92cc3e1f9b54e7cd670e82ec7aa48dcd">
   <!ENTITY sentry-sdk-size          "404 KB">
   <!ENTITY sentry-sdk-buildsize     "4.8 MB">
-  <!ENTITY sentry-sdk-time          "less than 0.1 SBU">
+  <!ENTITY sentry-sdk-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="sentry-sdk" xreflabel="sentry-sdk-&sentry-sdk-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&sentry-sdk-download-http;"/>
+            下载地址（HTTP）：<ulink url="&sentry-sdk-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&sentry-sdk-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&sentry-sdk-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &sentry-sdk-md5sum;
+            MD5 校验和：&sentry-sdk-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &sentry-sdk-size;
+            大小：&sentry-sdk-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &sentry-sdk-buildsize;
+            预计所需磁盘空间：&sentry-sdk-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &sentry-sdk-time;
+            预计构建时间：&sentry-sdk-time;
           </para>
         </listitem>
       </itemizedlist>

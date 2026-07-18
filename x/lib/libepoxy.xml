@@ -8,8 +8,8 @@
   <!ENTITY libepoxy-download-ftp  " ">
   <!ENTITY libepoxy-md5sum        "10c635557904aed5239a4885a7c4efb7">
   <!ENTITY libepoxy-size          "220 KB">
-  <!ENTITY libepoxy-buildsize     "13 MB (with tests)">
-  <!ENTITY libepoxy-time          "0.1 SBU (with tests)">
+  <!ENTITY libepoxy-buildsize     "13 MB（含测试）">
+  <!ENTITY libepoxy-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libepoxy" xreflabel="libepoxy-&libepoxy-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libepoxy-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libepoxy-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libepoxy-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libepoxy-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libepoxy-md5sum;
+          MD5 校验和：&libepoxy-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libepoxy-size;
+          大小：&libepoxy-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libepoxy-buildsize;
+          预计所需磁盘空间：&libepoxy-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libepoxy-time;
+          预计构建时间：&libepoxy-time;
         </para>
       </listitem>
     </itemizedlist>

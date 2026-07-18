@@ -9,7 +9,7 @@
   <!ENTITY efibootmgr-md5sum        "e170147da25e1d5f72721ffc46fe4e06">
   <!ENTITY efibootmgr-size          "48 KB">
   <!ENTITY efibootmgr-buildsize     "1.1 MB">
-  <!ENTITY efibootmgr-time          "less than 0.1 SBU">
+  <!ENTITY efibootmgr-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="efibootmgr" xreflabel="efibootmgr-&efibootmgr-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&efibootmgr-download-http;"/>
+          下载地址（HTTP）：<ulink url="&efibootmgr-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&efibootmgr-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&efibootmgr-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &efibootmgr-md5sum;
+          MD5 校验和：&efibootmgr-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &efibootmgr-size;
+          大小：&efibootmgr-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &efibootmgr-buildsize;
+          预计所需磁盘空间：&efibootmgr-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &efibootmgr-time;
+          预计构建时间：&efibootmgr-time;
         </para>
       </listitem>
     </itemizedlist>

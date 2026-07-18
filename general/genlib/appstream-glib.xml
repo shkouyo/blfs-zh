@@ -13,8 +13,8 @@
   <!ENTITY appstream-glib-download-ftp  " ">
   <!ENTITY appstream-glib-md5sum        "2ffd46eff1c16f31e435849b706c2287">
   <!ENTITY appstream-glib-size          "2.2 MB">
-  <!ENTITY appstream-glib-buildsize     "15 MB (with tests)">
-  <!ENTITY appstream-glib-time          "0.1 SBU (with tests)">
+  <!ENTITY appstream-glib-buildsize     "15 MB（含测试）">
+  <!ENTITY appstream-glib-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="appstream-glib" xreflabel="appstream-glib-&appstream-glib-version;">
@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&appstream-glib-download-http;"/>
+          下载地址（HTTP）：<ulink url="&appstream-glib-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&appstream-glib-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&appstream-glib-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &appstream-glib-md5sum;
+          MD5 校验和：&appstream-glib-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &appstream-glib-size;
+          大小：&appstream-glib-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &appstream-glib-buildsize;
+          预计所需磁盘空间：&appstream-glib-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &appstream-glib-time;
+          预计构建时间：&appstream-glib-time;
         </para>
       </listitem>
     </itemizedlist>

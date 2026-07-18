@@ -8,8 +8,8 @@
   <!ENTITY fribidi-download-ftp  " ">
   <!ENTITY fribidi-md5sum        "333ad150991097a627755b752b87f9ff">
   <!ENTITY fribidi-size          "1.1 MB">
-  <!ENTITY fribidi-buildsize     "22 MB (with tests)">
-  <!ENTITY fribidi-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY fribidi-buildsize     "22 MB（含测试）">
+  <!ENTITY fribidi-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="fribidi" xreflabel="FriBidi-&fribidi-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fribidi-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fribidi-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fribidi-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fribidi-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fribidi-md5sum;
+          MD5 校验和：&fribidi-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fribidi-size;
+          大小：&fribidi-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fribidi-buildsize;
+          预计所需磁盘空间：&fribidi-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fribidi-time;
+          预计构建时间：&fribidi-time;
         </para>
       </listitem>
     </itemizedlist>

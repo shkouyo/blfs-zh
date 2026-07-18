@@ -9,7 +9,7 @@
   <!ENTITY NetworkManager-download-ftp  " ">
   <!ENTITY NetworkManager-md5sum        "e21ec74b24f72a044e75c0ae92a9bb62">
   <!ENTITY NetworkManager-size          "6.0 MB">
-  <!ENTITY NetworkManager-buildsize     "365 MB (with tests and documentation)">
+  <!ENTITY NetworkManager-buildsize     "365 MB（包括测试和文档）">
   <!ENTITY NetworkManager-time          "0.8 SBU (with tests, using parallelism=4)">
 ]>
 
@@ -49,32 +49,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&NetworkManager-download-http;"/>
+          下载地址（HTTP）：<ulink url="&NetworkManager-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&NetworkManager-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&NetworkManager-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &NetworkManager-md5sum;
+          MD5 校验和：&NetworkManager-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &NetworkManager-size;
+          大小：&NetworkManager-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &NetworkManager-buildsize;
+          预计所需磁盘空间：&NetworkManager-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &NetworkManager-time;
+          预计构建时间：&NetworkManager-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY lxqt-wayland-session-md5sum        "677cb8d34f2c2b7e16d5c7c62e0cea37">
   <!ENTITY lxqt-wayland-session-size          "360 KB">
   <!ENTITY lxqt-wayland-session-buildsize     "2.1 MB">
-  <!ENTITY lxqt-wayland-session-time          "less than 0.1 SBU">
+  <!ENTITY lxqt-wayland-session-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxqt-wayland-session" xreflabel="lxqt-wayland-session-&lxqt-session-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-wayland-session-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-wayland-session-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-wayland-session-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-wayland-session-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-wayland-session-md5sum;
+          MD5 校验和：&lxqt-wayland-session-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-wayland-session-size;
+          大小：&lxqt-wayland-session-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-wayland-session-buildsize;
+          预计所需磁盘空间：&lxqt-wayland-session-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-wayland-session-time;
+          预计构建时间：&lxqt-wayland-session-time;
         </para>
       </listitem>
     </itemizedlist>

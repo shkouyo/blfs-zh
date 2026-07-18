@@ -8,8 +8,8 @@
   <!ENTITY hatch-vcs-download-ftp  " ">
   <!ENTITY hatch-vcs-md5sum        "&hatch-vcs-md5sum;">
   <!ENTITY hatch-vcs-size          "9.9 KB">
-  <!ENTITY hatch-vcs-buildsize     "436 KB (with tests)">
-  <!ENTITY hatch-vcs-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY hatch-vcs-buildsize     "436 KB（含测试）">
+  <!ENTITY hatch-vcs-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="hatch-vcs" xreflabel="hatch_vcs-&hatch-vcs-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&hatch-vcs-download-http;"/>
+            下载地址（HTTP）：<ulink url="&hatch-vcs-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&hatch-vcs-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&hatch-vcs-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &hatch-vcs-md5sum;
+            MD5 校验和：&hatch-vcs-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &hatch-vcs-size;
+            大小：&hatch-vcs-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &hatch-vcs-buildsize;
+            预计所需磁盘空间：&hatch-vcs-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &hatch-vcs-time;
+            预计构建时间：&hatch-vcs-time;
           </para>
         </listitem>
       </itemizedlist>

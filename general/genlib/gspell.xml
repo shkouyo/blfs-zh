@@ -8,8 +8,8 @@
   <!ENTITY gspell-download-ftp  " ">
   <!ENTITY gspell-md5sum        "f2baf4a418c57e0dc044d50ffc0dcf62">
   <!ENTITY gspell-size          "120 KB">
-  <!ENTITY gspell-buildsize     "7.0 MB (with tests)">
-  <!ENTITY gspell-time          "0.1 SBU (with tests)">
+  <!ENTITY gspell-buildsize     "7.0 MB（含测试）">
+  <!ENTITY gspell-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="gspell" xreflabel="gspell-&gspell-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gspell-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gspell-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gspell-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gspell-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gspell-md5sum;
+          MD5 校验和：&gspell-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gspell-size;
+          大小：&gspell-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gspell-buildsize;
+          预计所需磁盘空间：&gspell-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gspell-time;
+          预计构建时间：&gspell-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -10,7 +10,7 @@
   <!ENTITY notification-daemon-md5sum        "2de7f4075352831f1d98d8851b642124">
   <!ENTITY notification-daemon-size          "336 KB">
   <!ENTITY notification-daemon-buildsize     "4.1 MB">
-  <!ENTITY notification-daemon-time          "less than 0.1 SBU">
+  <!ENTITY notification-daemon-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="notification-daemon" xreflabel="notification-daemon-&notification-daemon-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&notification-daemon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&notification-daemon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&notification-daemon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&notification-daemon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &notification-daemon-md5sum;
+          MD5 校验和：&notification-daemon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &notification-daemon-size;
+          大小：&notification-daemon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &notification-daemon-buildsize;
+          预计所需磁盘空间：&notification-daemon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &notification-daemon-time;
+          预计构建时间：&notification-daemon-time;
         </para>
       </listitem>
     </itemizedlist>

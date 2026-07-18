@@ -10,7 +10,7 @@
   <!ENTITY apache-md5sum        "f2f3121e9f1fb4838d433dbd494543f9">
   <!ENTITY apache-size          "7.4 MB">
   <!ENTITY apache-buildsize     "133 MB">
-  <!ENTITY apache-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY apache-time          "0.3 SBU（并行度=4）">
 ]>
 
 <sect1 id="apache" xreflabel="Apache-&apache-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&apache-download-http;"/>
+          下载地址（HTTP）：<ulink url="&apache-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&apache-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&apache-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &apache-md5sum;
+          MD5 校验和：&apache-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &apache-size;
+          大小：&apache-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &apache-buildsize;
+          预计所需磁盘空间：&apache-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &apache-time;
+          预计构建时间：&apache-time;
         </para>
       </listitem>
     </itemizedlist>

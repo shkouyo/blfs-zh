@@ -13,7 +13,7 @@
   <!ENTITY pax-md5sum        "9a723154a4201a0892b7ff815b6753b5">
   <!ENTITY pax-size          "180 KB">
   <!ENTITY pax-buildsize     "1.6 MB">
-  <!ENTITY pax-time          "less than 0.1 SBU">
+  <!ENTITY pax-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="pax" xreflabel="Pax-&pax-version;">
@@ -55,32 +55,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pax-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pax-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pax-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pax-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pax-md5sum;
+          MD5 校验和：&pax-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pax-size;
+          大小：&pax-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pax-buildsize;
+          预计所需磁盘空间：&pax-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pax-time;
+          预计构建时间：&pax-time;
         </para>
       </listitem>
     </itemizedlist>

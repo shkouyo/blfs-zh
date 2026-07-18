@@ -8,8 +8,8 @@
   <!ENTITY idna-download-ftp  " ">
   <!ENTITY idna-md5sum        "&idna-md5sum;">
   <!ENTITY idna-size          "196 KB">
-  <!ENTITY idna-buildsize     "4.8 MB (with tests)">
-  <!ENTITY idna-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY idna-buildsize     "4.8 MB（含测试）">
+  <!ENTITY idna-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="idna" xreflabel="idna-&idna-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&idna-download-http;"/>
+            下载地址（HTTP）：<ulink url="&idna-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&idna-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&idna-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &idna-md5sum;
+            MD5 校验和：&idna-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &idna-size;
+            大小：&idna-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &idna-buildsize;
+            预计所需磁盘空间：&idna-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &idna-time;
+            预计构建时间：&idna-time;
           </para>
         </listitem>
       </itemizedlist>

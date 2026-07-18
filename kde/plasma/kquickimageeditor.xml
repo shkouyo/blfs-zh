@@ -9,7 +9,7 @@
   <!ENTITY kquickimageeditor-md5sum        "26e15ed5f8da5b938c8db52b63830588">
   <!ENTITY kquickimageeditor-size          "4.3 MB">
   <!ENTITY kquickimageeditor-buildsize     "22 MB">
-  <!ENTITY kquickimageeditor-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY kquickimageeditor-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="kquickimageeditor" xreflabel="kquickimageeditor-&kquickimageeditor-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kquickimageeditor-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kquickimageeditor-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kquickimageeditor-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kquickimageeditor-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kquickimageeditor-md5sum;
+          MD5 校验和：&kquickimageeditor-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kquickimageeditor-size;
+          大小：&kquickimageeditor-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kquickimageeditor-buildsize;
+          预计所需磁盘空间：&kquickimageeditor-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kquickimageeditor-time;
+          预计构建时间：&kquickimageeditor-time;
         </para>
       </listitem>
     </itemizedlist>

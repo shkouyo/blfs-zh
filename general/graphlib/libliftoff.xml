@@ -8,8 +8,8 @@
     "https://gitlab.freedesktop.org/emersion/libliftoff/-/archive/v&libliftoff-version;/libliftoff-v&libliftoff-version;.tar.gz">
   <!ENTITY libliftoff-md5sum        "e26483537eea0db5469b71c783189f74">
   <!ENTITY libliftoff-size          "40 KB">
-  <!ENTITY libliftoff-buildsize     "9 MB (with tests)">
-  <!ENTITY libliftoff-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libliftoff-buildsize     "9 MB（含测试）">
+  <!ENTITY libliftoff-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libliftoff" xreflabel="libliftoff-&libliftoff-version;">
@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libliftoff-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libliftoff-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libliftoff-md5sum;
+          MD5 校验和：&libliftoff-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libliftoff-size;
+          大小：&libliftoff-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libliftoff-buildsize;
+          预计所需磁盘空间：&libliftoff-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libliftoff-time;
+          预计构建时间：&libliftoff-time;
         </para>
       </listitem>
     </itemizedlist>

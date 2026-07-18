@@ -8,7 +8,7 @@
   <!ENTITY numpy-download-ftp  " ">
   <!ENTITY numpy-md5sum        "&numpy-md5sum;">
   <!ENTITY numpy-size          "20 MB">
-  <!ENTITY numpy-buildsize     "340 MB (with tests)">
+  <!ENTITY numpy-buildsize     "340 MB（含测试）">
   <!ENTITY numpy-time          "0.8 SBU (add 0.9 SBU for tests)">
 ]>
 
@@ -54,32 +54,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&numpy-download-http;"/>
+            下载地址（HTTP）：<ulink url="&numpy-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&numpy-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&numpy-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &numpy-md5sum;
+            MD5 校验和：&numpy-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &numpy-size;
+            大小：&numpy-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &numpy-buildsize;
+            预计所需磁盘空间：&numpy-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &numpy-time;
+            预计构建时间：&numpy-time;
           </para>
         </listitem>
       </itemizedlist>

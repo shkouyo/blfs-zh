@@ -8,8 +8,8 @@
   <!ENTITY pyparsing-download-ftp  " ">
   <!ENTITY pyparsing-md5sum        "&pyparsing-md5sum;">
   <!ENTITY pyparsing-size          "6.6 MB">
-  <!ENTITY pyparsing-buildsize     "113 MB (with tests)">
-  <!ENTITY pyparsing-time          "0.4 SBU (with tests)">
+  <!ENTITY pyparsing-buildsize     "113 MB（含测试）">
+  <!ENTITY pyparsing-time          "0.4 SBU（含测试）">
 ]>
 
   <sect2 id="pyparsing" xreflabel="pyparsing-&pyparsing-version;">
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pyparsing-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pyparsing-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pyparsing-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pyparsing-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pyparsing-md5sum;
+            MD5 校验和：&pyparsing-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pyparsing-size;
+            大小：&pyparsing-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pyparsing-buildsize;
+            预计所需磁盘空间：&pyparsing-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pyparsing-time;
+            预计构建时间：&pyparsing-time;
           </para>
         </listitem>
       </itemizedlist>

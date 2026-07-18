@@ -8,8 +8,8 @@
   <!ENTITY blocaled-download-ftp  " ">
   <!ENTITY blocaled-md5sum        "cb3edd8c96539fb1042b68cb63e45e12">
   <!ENTITY blocaled-size          "269 KB">
-  <!ENTITY blocaled-buildsize     "4.3 MB (with tests)">
-  <!ENTITY blocaled-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY blocaled-buildsize     "4.3 MB（含测试）">
+  <!ENTITY blocaled-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="blocaled" revision="sysv" xreflabel="blocaled-&blocaled-version;">
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&blocaled-download-http;"/>
+          下载地址（HTTP）：<ulink url="&blocaled-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&blocaled-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&blocaled-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &blocaled-md5sum;
+          MD5 校验和：&blocaled-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &blocaled-size;
+          大小：&blocaled-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &blocaled-buildsize;
+          预计所需磁盘空间：&blocaled-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &blocaled-time;
+          预计构建时间：&blocaled-time;
         </para>
       </listitem>
     </itemizedlist>

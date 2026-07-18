@@ -8,7 +8,7 @@
   <!ENTITY lxqt-themes-md5sum        "5f7a80bc279fc8063ecd077653f3731b">
   <!ENTITY lxqt-themes-size          "26 MB">
   <!ENTITY lxqt-themes-buildsize     "29 MB">
-  <!ENTITY lxqt-themes-time          "less than 0.1 SBU">
+  <!ENTITY lxqt-themes-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxqt-themes" xreflabel="lxqt-themes-&lxqt-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-themes-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-themes-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-themes-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-themes-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-themes-md5sum;
+          MD5 校验和：&lxqt-themes-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-themes-size;
+          大小：&lxqt-themes-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-themes-buildsize;
+          预计所需磁盘空间：&lxqt-themes-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-themes-time;
+          预计构建时间：&lxqt-themes-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY traceroute-md5sum        "94b41044978f4f57c373adc5a32c42d7">
   <!ENTITY traceroute-size          "76 KB">
   <!ENTITY traceroute-buildsize     "624 KB">
-  <!ENTITY traceroute-time          "less than 0.1 SBU">
+  <!ENTITY traceroute-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="traceroute" xreflabel="Traceroute-&traceroute-version;">
@@ -47,32 +47,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&traceroute-download-http;"/>
+          下载地址（HTTP）：<ulink url="&traceroute-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&traceroute-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&traceroute-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &traceroute-md5sum;
+          MD5 校验和：&traceroute-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &traceroute-size;
+          大小：&traceroute-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &traceroute-buildsize;
+          预计所需磁盘空间：&traceroute-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &traceroute-time;
+          预计构建时间：&traceroute-time;
         </para>
       </listitem>
     </itemizedlist>

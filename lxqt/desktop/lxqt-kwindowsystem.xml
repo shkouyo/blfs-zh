@@ -9,7 +9,7 @@
   <!ENTITY kwindowsystem-md5sum        "0f4bbe9d04716d96cd53aada98699f5a">
   <!ENTITY kwindowsystem-size          "2.2 MB">
   <!ENTITY kwindowsystem-buildsize     "74 MB">
-  <!ENTITY kwindowsystem-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY kwindowsystem-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-kwindowsystem" xreflabel="kwindowsystem-&kf6-version; for lxqt">
@@ -47,32 +47,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kwindowsystem-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kwindowsystem-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kwindowsystem-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kwindowsystem-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kwindowsystem-md5sum;
+          MD5 校验和：&kwindowsystem-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kwindowsystem-size;
+          大小：&kwindowsystem-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kwindowsystem-buildsize;
+          预计所需磁盘空间：&kwindowsystem-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kwindowsystem-time;
+          预计构建时间：&kwindowsystem-time;
         </para>
       </listitem>
     </itemizedlist>

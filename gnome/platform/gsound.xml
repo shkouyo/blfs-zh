@@ -9,7 +9,7 @@
   <!ENTITY gsound-md5sum        "7338c295034432a6e782fd20b3d04b68">
   <!ENTITY gsound-size          "24 KB">
   <!ENTITY gsound-buildsize     "864 KB">
-  <!ENTITY gsound-time          "less than 0.1 SBU">
+  <!ENTITY gsound-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gsound" xreflabel="gsound-&gsound-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gsound-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gsound-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gsound-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gsound-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gsound-md5sum;
+          MD5 校验和：&gsound-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gsound-size;
+          大小：&gsound-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gsound-buildsize;
+          预计所需磁盘空间：&gsound-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gsound-time;
+          预计构建时间：&gsound-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -131,27 +131,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&x7libs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&x7libs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&x7libs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&x7libs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &x7libs-size;
+          大小：&x7libs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &x7libs-buildsize;
+          预计所需磁盘空间：&x7libs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &x7libs-time;
+          预计构建时间：&x7libs-time;
         </para>
       </listitem>
     </itemizedlist>

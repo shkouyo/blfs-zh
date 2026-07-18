@@ -12,7 +12,7 @@
   <!ENTITY postfix-md5sum        "5de0ba49ef4915eae5083a3139acb4f8">
   <!ENTITY postfix-size          "5.1 MB">
   <!ENTITY postfix-buildsize     "218 MB (59 MB installed)">
-  <!ENTITY postfix-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY postfix-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="postfix" xreflabel="Postfix-&postfix-version;">
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&postfix-download-http;"/>
+          下载地址（HTTP）：<ulink url="&postfix-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&postfix-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&postfix-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &postfix-md5sum;
+          MD5 校验和：&postfix-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &postfix-size;
+          大小：&postfix-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &postfix-buildsize;
+          预计所需磁盘空间：&postfix-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &postfix-time;
+          预计构建时间：&postfix-time;
         </para>
       </listitem>
     </itemizedlist>

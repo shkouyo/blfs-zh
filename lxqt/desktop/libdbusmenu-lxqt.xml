@@ -9,7 +9,7 @@
   <!ENTITY libdbusmenu-lxqt-md5sum        "f2aef1535a2ed37da8e5983d001ec194">
   <!ENTITY libdbusmenu-lxqt-size          "40 KB">
   <!ENTITY libdbusmenu-lxqt-buildsize     "8.5 MB">
-  <!ENTITY libdbusmenu-lxqt-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY libdbusmenu-lxqt-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="libdbusmenu-lxqt" xreflabel="libdbusmenu-lxqt-&libdbusmenu-lxqt-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdbusmenu-lxqt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdbusmenu-lxqt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdbusmenu-lxqt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdbusmenu-lxqt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdbusmenu-lxqt-md5sum;
+          MD5 校验和：&libdbusmenu-lxqt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdbusmenu-lxqt-size;
+          大小：&libdbusmenu-lxqt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdbusmenu-lxqt-buildsize;
+          预计所需磁盘空间：&libdbusmenu-lxqt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdbusmenu-lxqt-time;
+          预计构建时间：&libdbusmenu-lxqt-time;
         </para>
       </listitem>
     </itemizedlist>

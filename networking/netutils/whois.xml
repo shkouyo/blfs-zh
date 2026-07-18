@@ -9,7 +9,7 @@
   <!ENTITY whois-md5sum        "a2a62d1184603d4f32e9934c7642b0ad">
   <!ENTITY whois-size          "108 KB">
   <!ENTITY whois-buildsize     "2.0 MB">
-  <!ENTITY whois-time          "less than 0.1 SBU">
+  <!ENTITY whois-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="whois" xreflabel="Whois-&whois-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&whois-download-http;"/>
+          下载地址（HTTP）：<ulink url="&whois-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&whois-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&whois-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &whois-md5sum;
+          MD5 校验和：&whois-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &whois-size;
+          大小：&whois-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &whois-buildsize;
+          预计所需磁盘空间：&whois-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &whois-time;
+          预计构建时间：&whois-time;
         </para>
       </listitem>
     </itemizedlist>

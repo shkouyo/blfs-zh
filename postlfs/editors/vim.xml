@@ -56,32 +56,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&vim-download-http;"/>
+          下载地址（HTTP）：<ulink url="&vim-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&vim-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&vim-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &vim-md5sum;
+          MD5 校验和：&vim-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &vim-size;
+          大小：&vim-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &vim-buildsize;
+          预计所需磁盘空间：&vim-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &vim-time;
+          预计构建时间：&vim-time;
         </para>
       </listitem>
     </itemizedlist>

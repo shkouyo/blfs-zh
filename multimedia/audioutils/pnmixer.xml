@@ -9,7 +9,7 @@
   <!ENTITY pnmixer-md5sum        "e9f17f56c50de39393030a96e343427b">
   <!ENTITY pnmixer-size          "236 KB">
   <!ENTITY pnmixer-buildsize     "2.5 MB">
-  <!ENTITY pnmixer-time          "less than 0.1 SBU">
+  <!ENTITY pnmixer-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="pnmixer" xreflabel="pnmixer-&pnmixer-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&pnmixer-download-http;"/>
+          下载地址（HTTP）：<ulink url="&pnmixer-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&pnmixer-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&pnmixer-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &pnmixer-md5sum;
+          MD5 校验和：&pnmixer-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &pnmixer-size;
+          大小：&pnmixer-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &pnmixer-buildsize;
+          预计所需磁盘空间：&pnmixer-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &pnmixer-time;
+          预计构建时间：&pnmixer-time;
         </para>
       </listitem>
     </itemizedlist>

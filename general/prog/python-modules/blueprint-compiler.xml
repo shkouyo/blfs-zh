@@ -9,8 +9,8 @@
   <!ENTITY blueprint-compiler-download-ftp  " ">
   <!ENTITY blueprint-compiler-md5sum        "&blueprint-compiler-md5sum;">
   <!ENTITY blueprint-compiler-size          "124 KB">
-  <!ENTITY blueprint-compiler-buildsize     "7.4 MB (with tests)">
-  <!ENTITY blueprint-compiler-time          "less than 0.1 SBU"><!-- (with tests)-->
+  <!ENTITY blueprint-compiler-buildsize     "7.4 MB（含测试）">
+  <!ENTITY blueprint-compiler-time          "小于 0.1 SBU"><!--（含测试）-->
 ]>
 
   <!-- Begin blueprint-compiler -->
@@ -37,32 +37,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&blueprint-compiler-download-http;"/>
+            下载地址（HTTP）：<ulink url="&blueprint-compiler-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&blueprint-compiler-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&blueprint-compiler-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &blueprint-compiler-md5sum;
+            MD5 校验和：&blueprint-compiler-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &blueprint-compiler-size;
+            大小：&blueprint-compiler-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &blueprint-compiler-buildsize;
+            预计所需磁盘空间：&blueprint-compiler-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &blueprint-compiler-time;
+            预计构建时间：&blueprint-compiler-time;
           </para>
         </listitem>
       </itemizedlist>

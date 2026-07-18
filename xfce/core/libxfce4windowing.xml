@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxfce4windowing-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxfce4windowing-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxfce4windowing-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxfce4windowing-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxfce4windowing-md5sum;
+          MD5 校验和：&libxfce4windowing-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxfce4windowing-size;
+          大小：&libxfce4windowing-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxfce4windowing-buildsize;
+          预计所需磁盘空间：&libxfce4windowing-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxfce4windowing-time;
+          预计构建时间：&libxfce4windowing-time;
         </para>
       </listitem>
     </itemizedlist>

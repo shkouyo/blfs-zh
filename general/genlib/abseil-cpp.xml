@@ -8,7 +8,7 @@
   <!ENTITY abseil-cpp-md5sum        "a8a8a3de136df18dbe87b47c174e7c16">
   <!ENTITY abseil-cpp-size          "2.3 MB">
   <!ENTITY abseil-cpp-buildsize     "35 MB">
-  <!ENTITY abseil-cpp-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY abseil-cpp-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="abseil-cpp" xreflabel="Abseil-cpp-&abseil-cpp-version;">
@@ -34,27 +34,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&abseil-cpp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&abseil-cpp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &abseil-cpp-md5sum;
+          MD5 校验和：&abseil-cpp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &abseil-cpp-size;
+          大小：&abseil-cpp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &abseil-cpp-buildsize;
+          预计所需磁盘空间：&abseil-cpp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &abseil-cpp-time;
+          预计构建时间：&abseil-cpp-time;
         </para>
       </listitem>
     </itemizedlist>

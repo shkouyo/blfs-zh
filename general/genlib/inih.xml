@@ -10,7 +10,7 @@
   <!ENTITY inih-md5sum        "c0c6982525958a0376a3cb5bfbee14a0">
   <!ENTITY inih-size          "24 KB">
   <!ENTITY inih-buildsize     "2 MB">
-  <!ENTITY inih-time          "less than 0.1 SBU">
+  <!ENTITY inih-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="inih" xreflabel="inih-&inih-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&inih-download-http;"/>
+          下载地址（HTTP）：<ulink url="&inih-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&inih-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&inih-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &inih-md5sum;
+          MD5 校验和：&inih-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &inih-size;
+          大小：&inih-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &inih-buildsize;
+          预计所需磁盘空间：&inih-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &inih-time;
+          预计构建时间：&inih-time;
         </para>
       </listitem>
     </itemizedlist>

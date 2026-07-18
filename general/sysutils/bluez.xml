@@ -8,7 +8,7 @@
   <!ENTITY bluez-download-ftp  " ">
   <!ENTITY bluez-md5sum        "6c6f8445ec3d2fa3cc570a671ccea9fa">
   <!ENTITY bluez-size          "2.3 MB">
-  <!ENTITY bluez-buildsize     "146 MB (with tests)">
+  <!ENTITY bluez-buildsize     "146 MB（含测试）">
   <!ENTITY bluez-time          "0.8 SBU (using parallelism=4; with tests)">
 ]>
 
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&bluez-download-http;"/>
+          下载地址（HTTP）：<ulink url="&bluez-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&bluez-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&bluez-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &bluez-md5sum;
+          MD5 校验和：&bluez-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &bluez-size;
+          大小：&bluez-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &bluez-buildsize;
+          预计所需磁盘空间：&bluez-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &bluez-time;
+          预计构建时间：&bluez-time;
         </para>
       </listitem>
     </itemizedlist>

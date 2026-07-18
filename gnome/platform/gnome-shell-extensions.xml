@@ -10,7 +10,7 @@
   <!ENTITY gnome-shell-extensions-md5sum        "3a9305d5925c0ed257b92ccbced01999">
   <!ENTITY gnome-shell-extensions-size          "240 KB">
   <!ENTITY gnome-shell-extensions-buildsize     "6.2 MB">
-  <!ENTITY gnome-shell-extensions-time          "less than 0.1 SBU">
+  <!ENTITY gnome-shell-extensions-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-shell-extensions" xreflabel="gnome-shell-extensions-&gnome-shell-extensions-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-shell-extensions-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-shell-extensions-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-shell-extensions-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-shell-extensions-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-shell-extensions-md5sum;
+          MD5 校验和：&gnome-shell-extensions-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-shell-extensions-size;
+          大小：&gnome-shell-extensions-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-shell-extensions-buildsize;
+          预计所需磁盘空间：&gnome-shell-extensions-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-shell-extensions-time;
+          预计构建时间：&gnome-shell-extensions-time;
         </para>
       </listitem>
     </itemizedlist>

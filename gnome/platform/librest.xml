@@ -8,8 +8,8 @@
   <!ENTITY librest-download-ftp  " ">
   <!ENTITY librest-md5sum        "32b0ecf86932cd45b4e7078690c8306f">
   <!ENTITY librest-size          "72 KB">
-  <!ENTITY librest-buildsize     "4.0 MB (with tests)">
-  <!ENTITY librest-time          "0.2 SBU (with tests)">
+  <!ENTITY librest-buildsize     "4.0 MB（含测试）">
+  <!ENTITY librest-time          "0.2 SBU（含测试）">
 ]>
 
 <sect1 id="librest" xreflabel="librest-&librest-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&librest-download-http;"/>
+          下载地址（HTTP）：<ulink url="&librest-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&librest-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&librest-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &librest-md5sum;
+          MD5 校验和：&librest-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &librest-size;
+          大小：&librest-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &librest-buildsize;
+          预计所需磁盘空间：&librest-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &librest-time;
+          预计构建时间：&librest-time;
         </para>
       </listitem>
     </itemizedlist>

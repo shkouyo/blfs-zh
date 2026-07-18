@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&log4cplus-download-http;"/>
+          下载地址（HTTP）：<ulink url="&log4cplus-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&log4cplus-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&log4cplus-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &log4cplus-md5sum;
+          MD5 校验和：&log4cplus-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &log4cplus-size;
+          大小：&log4cplus-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &log4cplus-buildsize;
+          预计所需磁盘空间：&log4cplus-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &log4cplus-time;
+          预计构建时间：&log4cplus-time;
         </para>
       </listitem>
     </itemizedlist>

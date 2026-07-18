@@ -9,7 +9,7 @@
   <!ENTITY dbus-python-md5sum        "edca335d1c80f338e3255455eb876b72">
   <!ENTITY dbus-python-size          "168 KB">
   <!ENTITY dbus-python-buildsize     "1.7 MB" >
-  <!ENTITY dbus-python-time          "less than 0.1 SBU">
+  <!ENTITY dbus-python-time          "小于 0.1 SBU">
   <!ENTITY dbus-python-egg-info      "&python3-site;/dbus_python-&dbus-python-version;.egg-info">
 ]>
 
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&dbus-python-download-http;"/>
+            下载地址（HTTP）：<ulink url="&dbus-python-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&dbus-python-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&dbus-python-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &dbus-python-md5sum;
+            MD5 校验和：&dbus-python-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &dbus-python-size;
+            大小：&dbus-python-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &dbus-python-buildsize;
+            预计所需磁盘空间：&dbus-python-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &dbus-python-time;
+            预计构建时间：&dbus-python-time;
           </para>
         </listitem>
       </itemizedlist>

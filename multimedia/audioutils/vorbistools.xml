@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&vorbistools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&vorbistools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&vorbistools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&vorbistools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &vorbistools-md5sum;
+          MD5 校验和：&vorbistools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &vorbistools-size;
+          大小：&vorbistools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &vorbistools-buildsize;
+          预计所需磁盘空间：&vorbistools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &vorbistools-time;
+          预计构建时间：&vorbistools-time;
         </para>
       </listitem>
     </itemizedlist>

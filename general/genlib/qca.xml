@@ -8,7 +8,7 @@
   <!ENTITY qca-download-ftp  " ">
   <!ENTITY qca-md5sum        "c3ed3262c83c43bdeb610836769b1534">
   <!ENTITY qca-size          "748 KB">
-  <!ENTITY qca-buildsize     "56 MB (with tests)">
+  <!ENTITY qca-buildsize     "56 MB（含测试）">
   <!ENTITY qca-time          "0.7 SBU (using parallelism=4; with tests)">
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qca-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qca-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qca-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qca-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qca-md5sum;
+          MD5 校验和：&qca-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qca-size;
+          大小：&qca-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qca-buildsize;
+          预计所需磁盘空间：&qca-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qca-time;
+          预计构建时间：&qca-time;
         </para>
       </listitem>
     </itemizedlist>

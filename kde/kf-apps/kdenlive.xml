@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&kdenlive-download-http;"/>
+          下载地址（HTTP）：<ulink url="&kdenlive-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&kdenlive-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&kdenlive-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &kdenlive-md5sum;
+          MD5 校验和：&kdenlive-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &kdenlive-size;
+          大小：&kdenlive-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &kdenlive-buildsize;
+          预计所需磁盘空间：&kdenlive-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &kdenlive-time;
+          预计构建时间：&kdenlive-time;
         </para>
       </listitem>
     </itemizedlist>

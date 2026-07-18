@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-disk-utility-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-disk-utility-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-disk-utility-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-disk-utility-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-disk-utility-md5sum;
+          MD5 校验和：&gnome-disk-utility-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-disk-utility-size;
+          大小：&gnome-disk-utility-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-disk-utility-buildsize;
+          预计所需磁盘空间：&gnome-disk-utility-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-disk-utility-time;
+          预计构建时间：&gnome-disk-utility-time;
         </para>
       </listitem>
     </itemizedlist>

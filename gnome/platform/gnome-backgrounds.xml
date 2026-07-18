@@ -10,7 +10,7 @@
   <!ENTITY gnome-backgrounds-md5sum        "d44377b504366839bc17a70820d78413">
   <!ENTITY gnome-backgrounds-size          "38 MB">
   <!ENTITY gnome-backgrounds-buildsize     "41 MB">
-  <!ENTITY gnome-backgrounds-time          "less than 0.1 SBU">
+  <!ENTITY gnome-backgrounds-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-backgrounds" xreflabel="gnome-backgrounds-&gnome-backgrounds-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-backgrounds-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-backgrounds-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-backgrounds-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-backgrounds-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-backgrounds-md5sum;
+          MD5 校验和：&gnome-backgrounds-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-backgrounds-size;
+          大小：&gnome-backgrounds-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-backgrounds-buildsize;
+          预计所需磁盘空间：&gnome-backgrounds-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-backgrounds-time;
+          预计构建时间：&gnome-backgrounds-time;
         </para>
       </listitem>
     </itemizedlist>

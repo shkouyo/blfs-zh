@@ -9,14 +9,14 @@
   <!ENTITY speex-md5sum        "fe7bf610883ff202092b92c72fe0fe3e">
   <!ENTITY speex-size          "1020 KB">
   <!ENTITY speex-buildsize     "7.8 MB">
-  <!ENTITY speex-time          "less than 0.1 SBU">
+  <!ENTITY speex-time          "小于 0.1 SBU">
 
   <!ENTITY speexdsp-download-http "https://downloads.xiph.org/releases/speex/speexdsp-&speexdsp-version;.tar.gz">
   <!ENTITY speexdsp-download-ftp  " ">
   <!ENTITY speexdsp-md5sum        "e6eb5ddef743a362c8018f260b91dca5">
   <!ENTITY speexdsp-size          "904 KB">
   <!ENTITY speexdsp-buildsize     "5.5 MB">
-  <!ENTITY speexdsp-time          "less than 0.1 SBU">
+  <!ENTITY speexdsp-time          "小于 0.1 SBU">
 
 ]>
 
@@ -46,32 +46,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&speex-download-http;"/>
+          下载地址（HTTP）：<ulink url="&speex-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&speex-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&speex-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &speex-md5sum;
+          MD5 校验和：&speex-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &speex-size;
+          大小：&speex-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &speex-buildsize;
+          预计所需磁盘空间：&speex-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &speex-time;
+          预计构建时间：&speex-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -80,32 +80,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&speexdsp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&speexdsp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&speexdsp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&speexdsp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &speexdsp-md5sum;
+          MD5 校验和：&speexdsp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &speexdsp-size;
+          大小：&speexdsp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &speexdsp-buildsize;
+          预计所需磁盘空间：&speexdsp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &speexdsp-time;
+          预计构建时间：&speexdsp-time;
         </para>
       </listitem>
     </itemizedlist>

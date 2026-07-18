@@ -8,8 +8,8 @@
   <!ENTITY wayland-protocols-download-ftp  " ">
   <!ENTITY wayland-protocols-md5sum        "5685f769a227f2d4143d983ad07edaba">
   <!ENTITY wayland-protocols-size          "148 KB">
-  <!ENTITY wayland-protocols-buildsize     "16 MB (with tests)">
-  <!ENTITY wayland-protocols-time          "0.1 SBU (with tests)">
+  <!ENTITY wayland-protocols-buildsize     "16 MB（含测试）">
+  <!ENTITY wayland-protocols-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="wayland-protocols" xreflabel="wayland-protocols-&wayland-protocols-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&wayland-protocols-download-http;"/>
+          下载地址（HTTP）：<ulink url="&wayland-protocols-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&wayland-protocols-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&wayland-protocols-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &wayland-protocols-md5sum;
+          MD5 校验和：&wayland-protocols-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &wayland-protocols-size;
+          大小：&wayland-protocols-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &wayland-protocols-buildsize;
+          预计所需磁盘空间：&wayland-protocols-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &wayland-protocols-time;
+          预计构建时间：&wayland-protocols-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY mitkrb-download-ftp  " ">
   <!ENTITY mitkrb-md5sum        "42472b11771d074329e0cc776d2eb5fd">
   <!ENTITY mitkrb-size          "8.4 MB">
-  <!ENTITY mitkrb-buildsize     "149 MB (with tests)">
+  <!ENTITY mitkrb-buildsize     "149 MB（含测试）">
   <!ENTITY mitkrb-time          "0.4 SBU (Using parallelism=4; add 3.8 SBU for tests)">
 ]>
 
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mitkrb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mitkrb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mitkrb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mitkrb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mitkrb-md5sum;
+          MD5 校验和：&mitkrb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mitkrb-size;
+          大小：&mitkrb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mitkrb-buildsize;
+          预计所需磁盘空间：&mitkrb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mitkrb-time;
+          预计构建时间：&mitkrb-time;
         </para>
       </listitem>
     </itemizedlist>

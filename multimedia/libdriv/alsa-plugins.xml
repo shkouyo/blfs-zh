@@ -9,7 +9,7 @@
   <!ENTITY alsa-plugins-md5sum        "71fce75baa38efab4e32e40db0a33716">
   <!ENTITY alsa-plugins-size          "400 KB">
   <!ENTITY alsa-plugins-buildsize     "5.1 MB">
-  <!ENTITY alsa-plugins-time          "less than 0.1 SBU">
+  <!ENTITY alsa-plugins-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="alsa-plugins" xreflabel="alsa-plugins-&alsa-plugins-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&alsa-plugins-download-http;"/>
+          下载地址（HTTP）：<ulink url="&alsa-plugins-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&alsa-plugins-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&alsa-plugins-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &alsa-plugins-md5sum;
+          MD5 校验和：&alsa-plugins-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &alsa-plugins-size;
+          大小：&alsa-plugins-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &alsa-plugins-buildsize;
+          预计所需磁盘空间：&alsa-plugins-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &alsa-plugins-time;
+          预计构建时间：&alsa-plugins-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY pytz-download-ftp  " ">
   <!ENTITY pytz-md5sum        "&pytz-md5sum;">
   <!ENTITY pytz-size          "316 KB">
-  <!ENTITY pytz-buildsize     "6.3 MB (with tests)">
-  <!ENTITY pytz-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY pytz-buildsize     "6.3 MB（含测试）">
+  <!ENTITY pytz-time          "小于 0.1 SBU（含测试）">
 ]>
 
   <sect2 id="pytz" xreflabel="pytz-&pytz-version;">
@@ -35,32 +35,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pytz-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pytz-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pytz-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pytz-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pytz-md5sum;
+            MD5 校验和：&pytz-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pytz-size;
+            大小：&pytz-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pytz-buildsize;
+            预计所需磁盘空间：&pytz-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pytz-time;
+            预计构建时间：&pytz-time;
           </para>
         </listitem>
       </itemizedlist>

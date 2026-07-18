@@ -8,7 +8,7 @@
   <!ENTITY fuse3-download-ftp  " ">
   <!ENTITY fuse3-md5sum        "43c6f6cd2c1368d916f6fb080eb39cbb">
   <!ENTITY fuse3-size          "4.8 MB">
-  <!ENTITY fuse3-buildsize     "97 MB (with tests and documentation)">
+  <!ENTITY fuse3-buildsize     "97 MB（包括测试和文档）">
   <!ENTITY fuse3-time          "0.1 SBU (add 1.0 SBU for tests)">
 ]>
 
@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fuse3-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fuse3-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fuse3-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fuse3-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fuse3-md5sum;
+          MD5 校验和：&fuse3-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fuse3-size;
+          大小：&fuse3-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fuse3-buildsize;
+          预计所需磁盘空间：&fuse3-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fuse3-time;
+          预计构建时间：&fuse3-time;
         </para>
       </listitem>
     </itemizedlist>

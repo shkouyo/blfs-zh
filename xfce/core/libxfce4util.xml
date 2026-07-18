@@ -10,7 +10,7 @@
   <!ENTITY libxfce4util-md5sum        "8e30b7735333f74d80c379e15d9da145">
   <!ENTITY libxfce4util-size          "624 KB">
   <!ENTITY libxfce4util-buildsize     "6.8 MB">
-  <!ENTITY libxfce4util-time          "less than 0.1 SBU">
+  <!ENTITY libxfce4util-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libxfce4util" xreflabel="libxfce4util-&libxfce4util-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxfce4util-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxfce4util-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxfce4util-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxfce4util-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxfce4util-md5sum;
+          MD5 校验和：&libxfce4util-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxfce4util-size;
+          大小：&libxfce4util-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxfce4util-buildsize;
+          预计所需磁盘空间：&libxfce4util-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxfce4util-time;
+          预计构建时间：&libxfce4util-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&openjpeg2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&openjpeg2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&openjpeg2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&openjpeg2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &openjpeg2-md5sum;
+          MD5 校验和：&openjpeg2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &openjpeg2-size;
+          大小：&openjpeg2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &openjpeg2-buildsize;
+          预计所需磁盘空间：&openjpeg2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &openjpeg2-time;
+          预计构建时间：&openjpeg2-time;
         </para>
       </listitem>
     </itemizedlist>

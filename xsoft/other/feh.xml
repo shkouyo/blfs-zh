@@ -8,8 +8,8 @@
   <!ENTITY feh-download-ftp  " ">
   <!ENTITY feh-md5sum        "6cc0868b091ea3a73617be64c0a85e27">
   <!ENTITY feh-size          "2.0 MB">
-  <!ENTITY feh-buildsize     "5.5 MB (with tests)">
-  <!ENTITY feh-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY feh-buildsize     "5.5 MB（含测试）">
+  <!ENTITY feh-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="feh" xreflabel="feh-&feh-version;">
@@ -52,32 +52,32 @@
 -->
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&feh-download-http;"/>
+          下载地址（HTTP）：<ulink url="&feh-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&feh-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&feh-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &feh-md5sum;
+          MD5 校验和：&feh-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &feh-size;
+          大小：&feh-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &feh-buildsize;
+          预计所需磁盘空间：&feh-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &feh-time;
+          预计构建时间：&feh-time;
         </para>
       </listitem>
     </itemizedlist>

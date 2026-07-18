@@ -10,7 +10,7 @@
   <!ENTITY desktop-file-utils-md5sum        "dec5d7265c802db1fde3980356931b7b">
   <!ENTITY desktop-file-utils-size          "80 KB">
   <!ENTITY desktop-file-utils-buildsize     "1.2 MB">
-  <!ENTITY desktop-file-utils-time          "less than 0.1 SBU">
+  <!ENTITY desktop-file-utils-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="desktop-file-utils" xreflabel="desktop-file-utils-&desktop-file-utils-version;">
@@ -42,32 +42,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&desktop-file-utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&desktop-file-utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&desktop-file-utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&desktop-file-utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &desktop-file-utils-md5sum;
+          MD5 校验和：&desktop-file-utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &desktop-file-utils-size;
+          大小：&desktop-file-utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &desktop-file-utils-buildsize;
+          预计所需磁盘空间：&desktop-file-utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &desktop-file-utils-time;
+          预计构建时间：&desktop-file-utils-time;
         </para>
       </listitem>
     </itemizedlist>

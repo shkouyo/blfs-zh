@@ -39,32 +39,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tumbler-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tumbler-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tumbler-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tumbler-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &tumbler-md5sum;
+          MD5 校验和：&tumbler-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tumbler-size;
+          大小：&tumbler-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tumbler-buildsize;
+          预计所需磁盘空间：&tumbler-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tumbler-time;
+          预计构建时间：&tumbler-time;
         </para>
       </listitem>
     </itemizedlist>

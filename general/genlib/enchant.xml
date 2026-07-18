@@ -8,7 +8,7 @@
   <!ENTITY enchant-download-ftp  " ">
   <!ENTITY enchant-md5sum        "747c983067261821224e73d5657d2dd9">
   <!ENTITY enchant-size          "1.3 MB">
-  <!ENTITY enchant-buildsize     "67 MB (with tests)">
+  <!ENTITY enchant-buildsize     "67 MB（含测试）">
   <!ENTITY enchant-time          "0.2 SBU (add 0.8 SBU for tests)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&enchant-download-http;"/>
+          下载地址（HTTP）：<ulink url="&enchant-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&enchant-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&enchant-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &enchant-md5sum;
+          MD5 校验和：&enchant-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &enchant-size;
+          大小：&enchant-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &enchant-buildsize;
+          预计所需磁盘空间：&enchant-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &enchant-time;
+          预计构建时间：&enchant-time;
          </para>
       </listitem>
     </itemizedlist>

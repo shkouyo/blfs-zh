@@ -7,8 +7,8 @@
   <!ENTITY dtc-download-http "https://kernel.org/pub/software/utils/dtc/dtc-&dtc-version;.tar.xz">
   <!ENTITY dtc-md5sum        "9753bdbf18763efef1f5ae8c0cecb5f6">
   <!ENTITY dtc-size          "176 KB">
-  <!ENTITY dtc-buildsize     "14 MB (with tests)">
-  <!ENTITY dtc-time          "0.2 SBU (with tests)">
+  <!ENTITY dtc-buildsize     "14 MB（含测试）">
+  <!ENTITY dtc-time          "0.2 SBU（含测试）">
 ]>
 
 <!-- Try to keep the indentation used in this file-->
@@ -38,27 +38,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dtc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dtc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dtc-md5sum;
+          MD5 校验和：&dtc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dtc-size;
+          大小：&dtc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dtc-buildsize;
+          预计所需磁盘空间：&dtc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dtc-time;
+          预计构建时间：&dtc-time;
         </para>
       </listitem>
     </itemizedlist>

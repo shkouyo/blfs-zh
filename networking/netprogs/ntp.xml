@@ -8,7 +8,7 @@
   <!ENTITY ntp-download-ftp  " ">
   <!ENTITY ntp-md5sum        "516bdabd94ab7c824e9771390761a46c">
   <!ENTITY ntp-size          "6.8 MB">
-  <!ENTITY ntp-buildsize     "99 MB (with tests)">
+  <!ENTITY ntp-buildsize     "99 MB（含测试）">
   <!ENTITY ntp-time          "0.8 SBU (With tests; both using parallelism=4)">
 ]>
 
@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ntp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ntp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ntp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ntp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ntp-md5sum;
+          MD5 校验和：&ntp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ntp-size;
+          大小：&ntp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ntp-buildsize;
+          预计所需磁盘空间：&ntp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ntp-time;
+          预计构建时间：&ntp-time;
         </para>
       </listitem>
     </itemizedlist>

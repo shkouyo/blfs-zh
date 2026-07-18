@@ -8,8 +8,8 @@
   <!ENTITY libpaper-download-ftp  " ">
   <!ENTITY libpaper-md5sum        "6ec14207927c291631062338e148bf27">
   <!ENTITY libpaper-size          "1.3 MB">
-  <!ENTITY libpaper-buildsize     "12 MB (with tests)">
-  <!ENTITY libpaper-time          "0.1 SBU (with tests)">
+  <!ENTITY libpaper-buildsize     "12 MB（含测试）">
+  <!ENTITY libpaper-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libpaper" xreflabel="libpaper-&libpaper-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libpaper-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libpaper-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libpaper-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libpaper-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libpaper-md5sum;
+          MD5 校验和：&libpaper-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libpaper-size;
+          大小：&libpaper-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libpaper-buildsize;
+          预计所需磁盘空间：&libpaper-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libpaper-time;
+          预计构建时间：&libpaper-time;
         </para>
       </listitem>
     </itemizedlist>

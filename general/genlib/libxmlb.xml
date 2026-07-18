@@ -8,8 +8,8 @@
   <!ENTITY libxmlb-download-ftp  " ">
   <!ENTITY libxmlb-md5sum        "202ed428fdb7a1ac747d690a39bcafd7">
   <!ENTITY libxmlb-size          "108 KB">
-  <!ENTITY libxmlb-buildsize     "5.6 MB (with tests)">
-  <!ENTITY libxmlb-time          "0.1 SBU (With tests)">
+  <!ENTITY libxmlb-buildsize     "5.6 MB（含测试）">
+  <!ENTITY libxmlb-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libxmlb" xreflabel="libxmlb-&libxmlb-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxmlb-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxmlb-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxmlb-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxmlb-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxmlb-md5sum;
+          MD5 校验和：&libxmlb-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxmlb-size;
+          大小：&libxmlb-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxmlb-buildsize;
+          预计所需磁盘空间：&libxmlb-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxmlb-time;
+          预计构建时间：&libxmlb-time;
         </para>
       </listitem>
     </itemizedlist>

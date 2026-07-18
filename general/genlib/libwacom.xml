@@ -8,8 +8,8 @@
   <!ENTITY libwacom-download-ftp  " ">
   <!ENTITY libwacom-md5sum        "471f8da9fc4ff7adc5463d34cc657e4f">
   <!ENTITY libwacom-size          "184 KB">
-  <!ENTITY libwacom-buildsize     "12 MB (with tests)">
-  <!ENTITY libwacom-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libwacom-buildsize     "12 MB（含测试）">
+  <!ENTITY libwacom-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libwacom" xreflabel="libwacom-&libwacom-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libwacom-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libwacom-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libwacom-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libwacom-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libwacom-md5sum;
+          MD5 校验和：&libwacom-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libwacom-size;
+          大小：&libwacom-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libwacom-buildsize;
+          预计所需磁盘空间：&libwacom-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libwacom-time;
+          预计构建时间：&libwacom-time;
         </para>
       </listitem>
     </itemizedlist>

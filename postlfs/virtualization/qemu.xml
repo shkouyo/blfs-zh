@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qemu-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qemu-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qemu-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qemu-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qemu-md5sum;
+          MD5 校验和：&qemu-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qemu-size;
+          大小：&qemu-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qemu-buildsize;
+          预计所需磁盘空间：&qemu-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qemu-time;
+          预计构建时间：&qemu-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -18,7 +18,7 @@
   <!ENTITY lightdm-gtk-greeter-md5sum        "35752d730f39293c2bbe884ef6963830">
   <!ENTITY lightdm-gtk-greeter-size          "592 KB">
   <!ENTITY lightdm-gtk-greeter-buildsize     "5.2 MB">
-  <!ENTITY lightdm-gtk-greeter-time          "less than 0.1 SBU ">
+  <!ENTITY lightdm-gtk-greeter-time          "小于 0.1 SBU ">
 ]>
 
 <sect1 id="lightdm" xreflabel="lightdm-&lightdm-version;">
@@ -45,32 +45,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lightdm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lightdm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lightdm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lightdm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lightdm-md5sum;
+          MD5 校验和：&lightdm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lightdm-size;
+          大小：&lightdm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lightdm-buildsize;
+          预计所需磁盘空间：&lightdm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lightdm-time;
+          预计构建时间：&lightdm-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -89,32 +89,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lightdm-gtk-greeter-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lightdm-gtk-greeter-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lightdm-gtk-greeter-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lightdm-gtk-greeter-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lightdm-gtk-greeter-md5sum;
+          MD5 校验和：&lightdm-gtk-greeter-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lightdm-gtk-greeter-size;
+          大小：&lightdm-gtk-greeter-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lightdm-gtk-greeter-buildsize;
+          预计所需磁盘空间：&lightdm-gtk-greeter-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lightdm-gtk-greeter-time;
+          预计构建时间：&lightdm-gtk-greeter-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libdv-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libdv-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libdv-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libdv-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libdv-md5sum;
+          MD5 校验和：&libdv-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libdv-size;
+          大小：&libdv-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libdv-buildsize;
+          预计所需磁盘空间：&libdv-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libdv-time;
+          预计构建时间：&libdv-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY libxklavier-md5sum        "13af74dcb6011ecedf1e3ed122bd31fa">
   <!ENTITY libxklavier-size          "384 KB">
   <!ENTITY libxklavier-buildsize     "5.2 MB">
-  <!ENTITY libxklavier-time          "less than 0.1 SBU">
+  <!ENTITY libxklavier-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libxklavier" xreflabel="libxklavier-&libxklavier-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxklavier-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxklavier-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxklavier-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxklavier-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxklavier-md5sum;
+          MD5 校验和：&libxklavier-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxklavier-size;
+          大小：&libxklavier-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxklavier-buildsize;
+          预计所需磁盘空间：&libxklavier-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxklavier-time;
+          预计构建时间：&libxklavier-time;
         </para>
       </listitem>
     </itemizedlist>

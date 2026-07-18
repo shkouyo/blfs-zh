@@ -9,8 +9,8 @@
   <!ENTITY fontconfig-download-ftp  " ">
   <!ENTITY fontconfig-md5sum        "7c28095f89559d9bdef9d2e5d9d882f6">
   <!ENTITY fontconfig-size          "1.3 MB">
-  <!ENTITY fontconfig-buildsize     "18 MB (with tests)">
-  <!ENTITY fontconfig-time          "0.3 SBU (with tests)">
+  <!ENTITY fontconfig-buildsize     "18 MB（含测试）">
+  <!ENTITY fontconfig-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="fontconfig" xreflabel="Fontconfig-&fontconfig-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fontconfig-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fontconfig-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fontconfig-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fontconfig-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fontconfig-md5sum;
+          MD5 校验和：&fontconfig-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fontconfig-size;
+          大小：&fontconfig-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fontconfig-buildsize;
+          预计所需磁盘空间：&fontconfig-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fontconfig-time;
+          预计构建时间：&fontconfig-time;
         </para>
       </listitem>
     </itemizedlist>

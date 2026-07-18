@@ -8,8 +8,8 @@
   <!ENTITY gexiv2-download-ftp  " ">
   <!ENTITY gexiv2-md5sum        "ae68cf5c9a73170d06c614b2423151b6">
   <!ENTITY gexiv2-size          "428 KB">
-  <!ENTITY gexiv2-buildsize     "6.5 MB (with tests)">
-  <!ENTITY gexiv2-time          "less than 0.1 SBU (with tests; both with parallelism=4)">
+  <!ENTITY gexiv2-buildsize     "6.5 MB（含测试）">
+  <!ENTITY gexiv2-time          "小于 0.1 SBU（并行度=4；包含测试）">
 ]>
 
 <sect1 id="gexiv2" xreflabel="gexiv2-&gexiv2-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gexiv2-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gexiv2-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gexiv2-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gexiv2-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gexiv2-md5sum;
+          MD5 校验和：&gexiv2-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gexiv2-size;
+          大小：&gexiv2-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gexiv2-buildsize;
+          预计所需磁盘空间：&gexiv2-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gexiv2-time;
+          预计构建时间：&gexiv2-time;
         </para>
       </listitem>
     </itemizedlist>

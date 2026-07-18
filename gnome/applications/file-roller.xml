@@ -10,7 +10,7 @@
   <!ENTITY file-roller-md5sum        "7b3d5dc3c7557ed82659dc25292e642e">
   <!ENTITY file-roller-size          "1.0 MB">
   <!ENTITY file-roller-buildsize     "22 MB">
-  <!ENTITY file-roller-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY file-roller-time          "0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="file-roller" xreflabel="File-Roller-&file-roller-version;">
@@ -46,32 +46,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&file-roller-download-http;"/>
+          下载地址（HTTP）：<ulink url="&file-roller-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&file-roller-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&file-roller-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &file-roller-md5sum;
+          MD5 校验和：&file-roller-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &file-roller-size;
+          大小：&file-roller-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &file-roller-buildsize;
+          预计所需磁盘空间：&file-roller-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &file-roller-time;
+          预计构建时间：&file-roller-time;
         </para>
       </listitem>
     </itemizedlist>

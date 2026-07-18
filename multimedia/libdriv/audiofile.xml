@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&audiofile-download-http;"/>
+          下载地址（HTTP）：<ulink url="&audiofile-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&audiofile-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&audiofile-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &audiofile-md5sum;
+          MD5 校验和：&audiofile-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &audiofile-size;
+          大小：&audiofile-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &audiofile-buildsize;
+          预计所需磁盘空间：&audiofile-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &audiofile-time;
+          预计构建时间：&audiofile-time;
         </para>
       </listitem>
     </itemizedlist>

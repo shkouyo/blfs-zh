@@ -9,7 +9,7 @@
   <!ENTITY icon-naming-utils-md5sum        "dd8108b56130b9eedc4042df634efa66">
   <!ENTITY icon-naming-utils-size          "57 KB">
   <!ENTITY icon-naming-utils-buildsize     "440 KB">
-  <!ENTITY icon-naming-utils-time          "less than 0.1 SBU">
+  <!ENTITY icon-naming-utils-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="icon-naming-utils"
@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&icon-naming-utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&icon-naming-utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&icon-naming-utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&icon-naming-utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &icon-naming-utils-md5sum;
+          MD5 校验和：&icon-naming-utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &icon-naming-utils-size;
+          大小：&icon-naming-utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &icon-naming-utils-buildsize;
+          预计所需磁盘空间：&icon-naming-utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &icon-naming-utils-time;
+          预计构建时间：&icon-naming-utils-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY umockdev-download-ftp  " ">
   <!ENTITY umockdev-md5sum        "c673fd819d8850d28692736956feea79">
   <!ENTITY umockdev-size          "488 KB">
-  <!ENTITY umockdev-buildsize     "8.0 MB (with tests)">
-  <!ENTITY umockdev-time          "0.1 SBU (with tests)">
+  <!ENTITY umockdev-buildsize     "8.0 MB（含测试）">
+  <!ENTITY umockdev-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="umockdev" xreflabel="umockdev-&umockdev-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&umockdev-download-http;"/>
+          下载地址（HTTP）：<ulink url="&umockdev-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&umockdev-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&umockdev-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &umockdev-md5sum;
+          MD5 校验和：&umockdev-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &umockdev-size;
+          大小：&umockdev-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &umockdev-buildsize;
+          预计所需磁盘空间：&umockdev-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &umockdev-time;
+          预计构建时间：&umockdev-time;
         </para>
       </listitem>
     </itemizedlist>

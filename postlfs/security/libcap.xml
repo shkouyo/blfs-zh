@@ -9,7 +9,7 @@
   <!ENTITY libcap-md5sum        "0ff11419aa4813c0a0f84fe67bf3b39e">
   <!ENTITY libcap-size          "200 KB">
   <!ENTITY libcap-buildsize     "2.3 MB">
-  <!ENTITY libcap-time          "less than 0.1 SBU">
+  <!ENTITY libcap-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libcap-pam" xreflabel="libcap-&libcap-version; with PAM">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libcap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libcap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libcap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libcap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libcap-md5sum;
+          MD5 校验和：&libcap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libcap-size;
+          大小：&libcap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libcap-buildsize;
+          预计所需磁盘空间：&libcap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libcap-time;
+          预计构建时间：&libcap-time;
         </para>
       </listitem>
     </itemizedlist>

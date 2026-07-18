@@ -8,8 +8,8 @@
   <!ENTITY libxslt-download-ftp  " ">
   <!ENTITY libxslt-md5sum        "84bb3f6ba7f5ee98af5dcd72e828c73e">
   <!ENTITY libxslt-size          "1.5 MB">
-  <!ENTITY libxslt-buildsize     "33 MB (with tests)">
-  <!ENTITY libxslt-time          "0.1 SBU (with tests)">
+  <!ENTITY libxslt-buildsize     "33 MB（含测试）">
+  <!ENTITY libxslt-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libxslt" xreflabel="libxslt-&libxslt-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libxslt-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libxslt-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libxslt-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libxslt-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libxslt-md5sum;
+          MD5 校验和：&libxslt-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libxslt-size;
+          大小：&libxslt-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libxslt-buildsize;
+          预计所需磁盘空间：&libxslt-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libxslt-time;
+          预计构建时间：&libxslt-time;
         </para>
       </listitem>
     </itemizedlist>

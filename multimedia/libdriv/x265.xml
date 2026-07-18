@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&x265-download-http;"/>
+          下载地址（HTTP）：<ulink url="&x265-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&x265-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&x265-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &x265-md5sum;
+          MD5 校验和：&x265-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &x265-size;
+          大小：&x265-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &x265-buildsize;
+          预计所需磁盘空间：&x265-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &x265-time;
+          预计构建时间：&x265-time;
         </para>
       </listitem>
     </itemizedlist>

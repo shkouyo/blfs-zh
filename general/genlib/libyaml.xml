@@ -8,8 +8,8 @@
   <!ENTITY yaml-download-ftp  " ">
   <!ENTITY yaml-md5sum        "bb15429d8fb787e7d3f1c83ae129a999">
   <!ENTITY yaml-size          "596 KB">
-  <!ENTITY yaml-buildsize     "6.4 MB (with tests)">
-  <!ENTITY yaml-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY yaml-buildsize     "6.4 MB（含测试）">
+  <!ENTITY yaml-time          "小于 0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libyaml" xreflabel="libyaml-&yaml-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&yaml-download-http;"/>
+          下载地址（HTTP）：<ulink url="&yaml-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&yaml-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&yaml-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &yaml-md5sum;
+          MD5 校验和：&yaml-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &yaml-size;
+          大小：&yaml-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &yaml-buildsize;
+          预计所需磁盘空间：&yaml-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &yaml-time;
+          预计构建时间：&yaml-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY fdk-aac-md5sum        "f43e593991caefdce509ad837d3301bd">
   <!ENTITY fdk-aac-size          "2.8 MB">
   <!ENTITY fdk-aac-buildsize     "39 MB">
-  <!ENTITY fdk-aac-time          "0.6 SBU (Using parallelism=4)">
+  <!ENTITY fdk-aac-time          "0.6 SBU（并行度=4）">
 ]>
 
 <sect1 id="fdk-aac" xreflabel="fdk-aac-&fdk-aac-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fdk-aac-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fdk-aac-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fdk-aac-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fdk-aac-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fdk-aac-md5sum;
+          MD5 校验和：&fdk-aac-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fdk-aac-size;
+          大小：&fdk-aac-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fdk-aac-buildsize;
+          预计所需磁盘空间：&fdk-aac-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fdk-aac-time;
+          预计构建时间：&fdk-aac-time;
         </para>
       </listitem>
     </itemizedlist>

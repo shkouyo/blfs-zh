@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&samba-download-http;"/>
+          下载地址（HTTP）：<ulink url="&samba-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&samba-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&samba-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &samba-md5sum;
+          MD5 校验和：&samba-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &samba-size;
+          大小：&samba-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &samba-buildsize;
+          预计所需磁盘空间：&samba-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &samba-time;
+          预计构建时间：&samba-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,8 +8,8 @@
   <!ENTITY uchardet-download-ftp  " ">
   <!ENTITY uchardet-md5sum        "9e267be7aee81417e5875086dd9d44fd">
   <!ENTITY uchardet-size          "217 KB">
-  <!ENTITY uchardet-buildsize     "4.6 MB (with test)">
-  <!ENTITY uchardet-time          "less than 0.1 SBU (with test)">
+  <!ENTITY uchardet-buildsize     "4.6 MB（含测试）">
+  <!ENTITY uchardet-time          "小于 0.1 SBU（含测试）">
 
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&uchardet-download-http;"/>
+          下载地址（HTTP）：<ulink url="&uchardet-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&uchardet-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&uchardet-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &uchardet-md5sum;
+          MD5 校验和：&uchardet-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &uchardet-size;
+          大小：&uchardet-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &uchardet-buildsize;
+          预计所需磁盘空间：&uchardet-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &uchardet-time;
+          预计构建时间：&uchardet-time;
         </para>
       </listitem>
     </itemizedlist>

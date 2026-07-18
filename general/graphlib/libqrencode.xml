@@ -9,8 +9,8 @@
   <!ENTITY qrencode-download-ftp  " ">
   <!ENTITY qrencode-md5sum        "486f879d1638d3fb58a4a5d45a88c600">
   <!ENTITY qrencode-size          "188 KB">
-  <!ENTITY qrencode-buildsize     "6.6 MB (with documentation, add 5 MB for tests)">
-  <!ENTITY qrencode-time          "less than 0.1 SBU, add 0.1 SBU for tests">
+  <!ENTITY qrencode-buildsize     "6.6 MB（含文档；测试将额外增加 5 MB）">
+  <!ENTITY qrencode-time          "小于 0.1 SBU（测试将额外增加 0.1 SBU）">
 ]>
 
 <sect1 id="qrencode" xreflabel="libqrencode-&qrencode-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qrencode-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qrencode-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qrencode-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qrencode-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qrencode-md5sum;
+          MD5 校验和：&qrencode-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qrencode-size;
+          大小：&qrencode-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qrencode-buildsize;
+          预计所需磁盘空间：&qrencode-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qrencode-time;
+          预计构建时间：&qrencode-time;
         </para>
       </listitem>
     </itemizedlist>

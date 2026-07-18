@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rasqal-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rasqal-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&rasqal-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&rasqal-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rasqal-md5sum;
+          MD5 校验和：&rasqal-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rasqal-size;
+          大小：&rasqal-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rasqal-buildsize;
+          预计所需磁盘空间：&rasqal-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rasqal-time;
+          预计构建时间：&rasqal-time;
         </para>
       </listitem>
     </itemizedlist>

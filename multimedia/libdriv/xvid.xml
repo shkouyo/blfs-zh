@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xvid-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xvid-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xvid-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xvid-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xvid-md5sum;
+          MD5 校验和：&xvid-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xvid-size;
+          大小：&xvid-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xvid-buildsize;
+          预计所需磁盘空间：&xvid-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xvid-time;
+          预计构建时间：&xvid-time;
         </para>
       </listitem>
     </itemizedlist>

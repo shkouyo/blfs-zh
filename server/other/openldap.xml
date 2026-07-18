@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&openldap-download-http;"/>
+          下载地址（HTTP）：<ulink url="&openldap-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&openldap-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&openldap-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &openldap-md5sum;
+          MD5 校验和：&openldap-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &openldap-size;
+          大小：&openldap-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &openldap-buildsize;
+          预计所需磁盘空间：&openldap-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &openldap-time;
+          预计构建时间：&openldap-time;
         </para>
       </listitem>
     </itemizedlist>

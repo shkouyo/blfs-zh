@@ -8,8 +8,8 @@
   <!ENTITY upower-download-ftp  " ">
   <!ENTITY upower-md5sum        "bf09da2eb695224e249e38077460414c">
   <!ENTITY upower-size          "168 KB">
-  <!ENTITY upower-buildsize     "12 MB (with tests)">
-  <!ENTITY upower-time          "less than 0.1 SBU (add 0.8 SBU for tests)">
+  <!ENTITY upower-buildsize     "12 MB（含测试）">
+  <!ENTITY upower-time          "小于 0.1 SBU（测试将额外增加 0.8 SBU）">
 ]>
 
 <sect1 id="upower" xreflabel="UPower-&upower-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&upower-download-http;"/>
+          下载地址（HTTP）：<ulink url="&upower-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&upower-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&upower-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &upower-md5sum;
+          MD5 校验和：&upower-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &upower-size;
+          大小：&upower-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &upower-buildsize;
+          预计所需磁盘空间：&upower-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &upower-time;
+          预计构建时间：&upower-time;
         </para>
       </listitem>
     </itemizedlist>

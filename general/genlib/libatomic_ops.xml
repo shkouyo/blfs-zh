@@ -8,8 +8,8 @@
   <!ENTITY libatomic_ops-download-ftp  " ">
   <!ENTITY libatomic_ops-md5sum        "1de9631daa0781a8c5a8457053d57cf0">
   <!ENTITY libatomic_ops-size          "532 KB">
-  <!ENTITY libatomic_ops-buildsize     "6.2 MB (with tests)">
-  <!ENTITY libatomic_ops-time          "0.1 SBU (with tests)">
+  <!ENTITY libatomic_ops-buildsize     "6.2 MB（含测试）">
+  <!ENTITY libatomic_ops-time          "0.1 SBU（含测试）">
 ]>
 
 <sect1 id="libatomic_ops" xreflabel="libatomic_ops-&libatomic_ops-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libatomic_ops-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libatomic_ops-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libatomic_ops-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libatomic_ops-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libatomic_ops-md5sum;
+          MD5 校验和：&libatomic_ops-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libatomic_ops-size;
+          大小：&libatomic_ops-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libatomic_ops-buildsize;
+          预计所需磁盘空间：&libatomic_ops-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libatomic_ops-time;
+          预计构建时间：&libatomic_ops-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY xterm-md5sum        "29b43931004f812483db02964865cbc9">
   <!ENTITY xterm-size          "1.6 MB">
   <!ENTITY xterm-buildsize     "19 MB">
-  <!ENTITY xterm-time          "0.2 SBU (with parallelism=4)">
+  <!ENTITY xterm-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="xterm2" xreflabel="xterm-&xterm-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xterm-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xterm-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xterm-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xterm-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xterm-md5sum;
+          MD5 校验和：&xterm-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xterm-size;
+          大小：&xterm-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xterm-buildsize;
+          预计所需磁盘空间：&xterm-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xterm-time;
+          预计构建时间：&xterm-time;
         </para>
       </listitem>
     </itemizedlist>

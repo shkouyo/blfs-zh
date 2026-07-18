@@ -10,7 +10,7 @@
   <!ENTITY gnome-tweaks-md5sum        "6c8dbfcefcc5dbab6605cc6f0df1ba62">
   <!ENTITY gnome-tweaks-size          "680 KB">
   <!ENTITY gnome-tweaks-buildsize     "4.5 MB">
-  <!ENTITY gnome-tweaks-time          "less than 0.1 SBU">
+  <!ENTITY gnome-tweaks-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="gnome-tweaks" xreflabel="gnome-tweaks-&gnome-tweaks-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-tweaks-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-tweaks-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-tweaks-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-tweaks-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-tweaks-md5sum;
+          MD5 校验和：&gnome-tweaks-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-tweaks-size;
+          大小：&gnome-tweaks-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-tweaks-buildsize;
+          预计所需磁盘空间：&gnome-tweaks-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-tweaks-time;
+          预计构建时间：&gnome-tweaks-time;
         </para>
       </listitem>
     </itemizedlist>

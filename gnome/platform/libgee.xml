@@ -8,8 +8,8 @@
   <!ENTITY libgee-download-ftp  " ">
   <!ENTITY libgee-md5sum        "e8e37df1c7a93aa5ba08be12ae7e7cad">
   <!ENTITY libgee-size          "676 KB">
-  <!ENTITY libgee-buildsize     "32 MB (with tests)">
-  <!ENTITY libgee-time          "0.3 SBU (with tests)">
+  <!ENTITY libgee-buildsize     "32 MB（含测试）">
+  <!ENTITY libgee-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="libgee" xreflabel="libgee-&libgee-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libgee-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libgee-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libgee-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libgee-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libgee-md5sum;
+          MD5 校验和：&libgee-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libgee-size;
+          大小：&libgee-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libgee-buildsize;
+          预计所需磁盘空间：&libgee-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libgee-time;
+          预计构建时间：&libgee-time;
         </para>
       </listitem>
     </itemizedlist>

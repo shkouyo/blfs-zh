@@ -9,7 +9,7 @@
   <!ENTITY acpid-md5sum        "988c2e3fd5ba0ea4492d3ba7273af295">
   <!ENTITY acpid-size          "160 KB">
   <!ENTITY acpid-buildsize     "1.9 MB">
-  <!ENTITY acpid-time          "less than 0.1 SBU">
+  <!ENTITY acpid-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="acpid" xreflabel="acpid-&acpid-version;">
@@ -60,32 +60,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&acpid-download-http;"/>
+          下载地址（HTTP）：<ulink url="&acpid-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&acpid-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&acpid-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &acpid-md5sum;
+          MD5 校验和：&acpid-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &acpid-size;
+          大小：&acpid-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &acpid-buildsize;
+          预计所需磁盘空间：&acpid-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &acpid-time;
+          预计构建时间：&acpid-time;
         </para>
       </listitem>
     </itemizedlist>

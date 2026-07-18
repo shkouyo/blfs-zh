@@ -9,7 +9,7 @@
   <!ENTITY rnnoise-md5sum        "0e795b2d2b4730fc5ee6e38b77699e91">
   <!ENTITY rnnoise-size          "2.2 MB">
   <!ENTITY rnnoise-buildsize     "16 MB">
-  <!ENTITY rnnoise-time          "less than 0.1 SBU">
+  <!ENTITY rnnoise-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="rnnoise" xreflabel="rnnoise-&rnnoise-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&rnnoise-download-http;"/>
+          下载地址（HTTP）：<ulink url="&rnnoise-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&rnnoise-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&rnnoise-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &rnnoise-md5sum;
+          MD5 校验和：&rnnoise-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &rnnoise-size;
+          大小：&rnnoise-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &rnnoise-buildsize;
+          预计所需磁盘空间：&rnnoise-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &rnnoise-time;
+          预计构建时间：&rnnoise-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libisofs-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libisofs-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libisofs-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libisofs-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libisofs-md5sum;
+          MD5 校验和：&libisofs-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libisofs-size;
+          大小：&libisofs-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libisofs-buildsize;
+          预计所需磁盘空间：&libisofs-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libisofs-time;
+          预计构建时间：&libisofs-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,8 +9,8 @@
   <!ENTITY tiff-download-ftp  " ">
   <!ENTITY tiff-md5sum        "a2a65ea450b8f469c667128848ffebfc">
   <!ENTITY tiff-size          "3.9 MB">
-  <!ENTITY tiff-buildsize     "56 MB (with tests)">
-  <!ENTITY tiff-time          "0.3 SBU (with tests)">
+  <!ENTITY tiff-buildsize     "56 MB（含测试）">
+  <!ENTITY tiff-time          "0.3 SBU（含测试）">
 ]>
 
 <sect1 id="tiff" xreflabel="tiff-&tiff-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&tiff-download-http;"/>
+          下载地址（HTTP）：<ulink url="&tiff-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&tiff-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&tiff-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &tiff-md5sum;
+          MD5 校验和：&tiff-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &tiff-size;
+          大小：&tiff-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &tiff-buildsize;
+          预计所需磁盘空间：&tiff-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &tiff-time;
+          预计构建时间：&tiff-time;
         </para>
       </listitem>
     </itemizedlist>

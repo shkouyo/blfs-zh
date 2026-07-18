@@ -10,7 +10,7 @@
   <!ENTITY freeglut-md5sum        "ca8361b5b6a64b07795b41bd24f6a23e">
   <!ENTITY freeglut-size          "528 KB">
   <!ENTITY freeglut-buildsize     "6.5 MB">
-  <!ENTITY freeglut-time          "less than 0.1 SBU">
+  <!ENTITY freeglut-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="freeglut" xreflabel="Freeglut-&freeglut-version;">
@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&freeglut-download-http;"/>
+          下载地址（HTTP）：<ulink url="&freeglut-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&freeglut-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&freeglut-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &freeglut-md5sum;
+          MD5 校验和：&freeglut-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &freeglut-size;
+          大小：&freeglut-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &freeglut-buildsize;
+          预计所需磁盘空间：&freeglut-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &freeglut-time;
+          预计构建时间：&freeglut-time;
         </para>
       </listitem>
     </itemizedlist>

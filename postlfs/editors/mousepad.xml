@@ -10,7 +10,7 @@
   <!ENTITY mousepad-md5sum        "96c09736fd02da599ffedf215313328f">
   <!ENTITY mousepad-size          "456 KB">
   <!ENTITY mousepad-buildsize     "9.2 MB">
-  <!ENTITY mousepad-time          "less than 0.1 SBU">
+  <!ENTITY mousepad-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="mousepad" xreflabel="mousepad-&mousepad-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&mousepad-download-http;"/>
+          下载地址（HTTP）：<ulink url="&mousepad-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&mousepad-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&mousepad-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &mousepad-md5sum;
+          MD5 校验和：&mousepad-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &mousepad-size;
+          大小：&mousepad-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &mousepad-buildsize;
+          预计所需磁盘空间：&mousepad-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &mousepad-time;
+          预计构建时间：&mousepad-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY glslc-md5sum        "3a6c42c237a3a6f40f076c7ee366ec29">
   <!ENTITY glslc-size          "224 KB">
   <!ENTITY glslc-buildsize     "3.8 MB">
-  <!ENTITY glslc-time          "less than 0.1 SBU">
+  <!ENTITY glslc-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="glslc" xreflabel="glslc from shaderc-&shaderc-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&glslc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&glslc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&glslc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&glslc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &glslc-md5sum;
+          MD5 校验和：&glslc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &glslc-size;
+          大小：&glslc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &glslc-buildsize;
+          预计所需磁盘空间：&glslc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &glslc-time;
+          预计构建时间：&glslc-time;
         </para>
       </listitem>
     </itemizedlist>

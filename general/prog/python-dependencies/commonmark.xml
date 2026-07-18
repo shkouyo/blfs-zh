@@ -8,8 +8,8 @@
   <!ENTITY commonmark-download-ftp  " ">
   <!ENTITY commonmark-md5sum        "&commonmark-md5sum;">
   <!ENTITY commonmark-size          "96 KB">
-  <!ENTITY commonmark-buildsize     "1.3 MB (add 30 MB for tests)">
-  <!ENTITY commonmark-time          "less than 0.1 SBU (0.1 SBU for tests)">
+  <!ENTITY commonmark-buildsize     "1.3 MB（测试将额外增加 30 MB）">
+  <!ENTITY commonmark-time          "小于 0.1 SBU（测试将额外增加 0.1 SBU）">
 ]>
 
   <sect2 id="commonmark" xreflabel="commonmark-&commonmark-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&commonmark-download-http;"/>
+            下载地址（HTTP）：<ulink url="&commonmark-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&commonmark-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&commonmark-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &commonmark-md5sum;
+            MD5 校验和：&commonmark-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &commonmark-size;
+            大小：&commonmark-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &commonmark-buildsize;
+            预计所需磁盘空间：&commonmark-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &commonmark-time;
+            预计构建时间：&commonmark-time;
           </para>
         </listitem>
       </itemizedlist>

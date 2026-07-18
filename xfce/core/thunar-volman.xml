@@ -10,7 +10,7 @@
   <!ENTITY thunar-volman-md5sum        "34c8e0af77ea3894db7e3d164998f9bf">
   <!ENTITY thunar-volman-size          "624 KB">
   <!ENTITY thunar-volman-buildsize     "7.0 MB">
-  <!ENTITY thunar-volman-time          "less than 0.1 SBU">
+  <!ENTITY thunar-volman-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="thunar-volman" xreflabel="thunar-volman-&thunar-volman-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&thunar-volman-download-http;"/>
+          下载地址（HTTP）：<ulink url="&thunar-volman-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&thunar-volman-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&thunar-volman-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &thunar-volman-md5sum;
+          MD5 校验和：&thunar-volman-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &thunar-volman-size;
+          大小：&thunar-volman-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &thunar-volman-buildsize;
+          预计所需磁盘空间：&thunar-volman-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &thunar-volman-time;
+          预计构建时间：&thunar-volman-time;
         </para>
       </listitem>
     </itemizedlist>

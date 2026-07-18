@@ -10,7 +10,7 @@
   <!ENTITY keybinder3-md5sum        "97260321fda721fce799174ea6ba10cf">
   <!ENTITY keybinder3-size          "370 KB">
   <!ENTITY keybinder3-buildsize     "2.6 MB">
-  <!ENTITY keybinder3-time          "less than 0.1 SBU">
+  <!ENTITY keybinder3-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="keybinder3" xreflabel="keybinder-3.0-&keybinder3-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&keybinder3-download-http;"/>
+          下载地址（HTTP）：<ulink url="&keybinder3-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&keybinder3-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&keybinder3-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &keybinder3-md5sum;
+          MD5 校验和：&keybinder3-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &keybinder3-size;
+          大小：&keybinder3-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &keybinder3-buildsize;
+          预计所需磁盘空间：&keybinder3-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &keybinder3-time;
+          预计构建时间：&keybinder3-time;
         </para>
       </listitem>
     </itemizedlist>

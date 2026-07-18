@@ -9,7 +9,7 @@
   <!ENTITY libslirp-md5sum        "bf2162cee75eef0faf0eb3fe60ec0da3">
   <!ENTITY libslirp-size          "132 KB">
   <!ENTITY libslirp-buildsize     "2.4 MB">
-  <!ENTITY libslirp-time          "less than 0.1 SBU">
+  <!ENTITY libslirp-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libslirp" xreflabel="libslirp-&libslirp-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libslirp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libslirp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libslirp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libslirp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libslirp-md5sum;
+          MD5 校验和：&libslirp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libslirp-size;
+          大小：&libslirp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libslirp-buildsize;
+          预计所需磁盘空间：&libslirp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libslirp-time;
+          预计构建时间：&libslirp-time;
         </para>
       </listitem>
     </itemizedlist>

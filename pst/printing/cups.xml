@@ -8,7 +8,7 @@
   <!ENTITY cups-download-ftp  " ">
   <!ENTITY cups-md5sum        "06b7a3921812988cdb3198ff74ae381d">
   <!ENTITY cups-size          "7.6 MB">
-  <!ENTITY cups-buildsize     "134 MB (with tests)">
+  <!ENTITY cups-buildsize     "134 MB（含测试）">
   <!ENTITY cups-time          "0.4 SBU (Add 1.4 SBU for tests)">
 ]>
 
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cups-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cups-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cups-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cups-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cups-md5sum;
+          MD5 校验和：&cups-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cups-size;
+          大小：&cups-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cups-buildsize;
+          预计所需磁盘空间：&cups-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cups-time;
+          预计构建时间：&cups-time;
         </para>
       </listitem>
     </itemizedlist>

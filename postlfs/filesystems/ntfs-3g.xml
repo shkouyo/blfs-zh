@@ -65,32 +65,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&ntfs-3g-download-http;"/>
+          下载地址（HTTP）：<ulink url="&ntfs-3g-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&ntfs-3g-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&ntfs-3g-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &ntfs-3g-md5sum;
+          MD5 校验和：&ntfs-3g-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &ntfs-3g-size;
+          大小：&ntfs-3g-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &ntfs-3g-buildsize;
+          预计所需磁盘空间：&ntfs-3g-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &ntfs-3g-time;
+          预计构建时间：&ntfs-3g-time;
         </para>
       </listitem>
     </itemizedlist>

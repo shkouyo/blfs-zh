@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnma-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnma-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnma-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnma-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnma-md5sum;
+          MD5 校验和：&libnma-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnma-size;
+          大小：&libnma-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnma-buildsize;
+          预计所需磁盘空间：&libnma-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnma-time;
+          预计构建时间：&libnma-time;
         </para>
       </listitem>
     </itemizedlist>

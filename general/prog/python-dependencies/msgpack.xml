@@ -9,7 +9,7 @@
   <!ENTITY msgpack-md5sum        "&msgpack-md5sum;">
   <!ENTITY msgpack-size          "180 KB">
   <!ENTITY msgpack-buildsize     "4.1 MB (add 0.3 MB for tests)">
-  <!ENTITY msgpack-time          "less than 0.1 SBU">
+  <!ENTITY msgpack-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="msgpack" xreflabel="msgpack-&msgpack-version;">
@@ -36,32 +36,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&msgpack-download-http;"/>
+            下载地址（HTTP）：<ulink url="&msgpack-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&msgpack-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&msgpack-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &msgpack-md5sum;
+            MD5 校验和：&msgpack-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &msgpack-size;
+            大小：&msgpack-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &msgpack-buildsize;
+            预计所需磁盘空间：&msgpack-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &msgpack-time;
+            预计构建时间：&msgpack-time;
           </para>
         </listitem>
       </itemizedlist>

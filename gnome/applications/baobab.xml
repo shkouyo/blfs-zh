@@ -9,7 +9,7 @@
   <!ENTITY baobab-md5sum        "f6f4649a945ca419d8261236fa2c7de2">
   <!ENTITY baobab-size          "604 KB">
   <!ENTITY baobab-buildsize     "10 MB">
-  <!ENTITY baobab-time          "less than 0.1 SBU (Using parallelism=4)">
+  <!ENTITY baobab-time          "小于 0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="baobab" xreflabel="Baobab-&baobab-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&baobab-download-http;"/>
+          下载地址（HTTP）：<ulink url="&baobab-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&baobab-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&baobab-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &baobab-md5sum;
+          MD5 校验和：&baobab-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &baobab-size;
+          大小：&baobab-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &baobab-buildsize;
+          预计所需磁盘空间：&baobab-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &baobab-time;
+          预计构建时间：&baobab-time;
         </para>
       </listitem>
     </itemizedlist>

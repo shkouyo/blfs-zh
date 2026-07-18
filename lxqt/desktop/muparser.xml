@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&muparser-download-http;"/>
+          下载地址（HTTP）：<ulink url="&muparser-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&muparser-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&muparser-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &muparser-md5sum;
+          MD5 校验和：&muparser-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &muparser-size;
+          大小：&muparser-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &muparser-buildsize;
+          预计所需磁盘空间：&muparser-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &muparser-time;
+          预计构建时间：&muparser-time;
         </para>
       </listitem>
     </itemizedlist>

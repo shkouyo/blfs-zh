@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qt6-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qt6-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qt6-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qt6-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qt6-md5sum;
+          MD5 校验和：&qt6-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qt6-size;
+          大小：&qt6-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qt6-buildsize;
+          预计所需磁盘空间：&qt6-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qt6-time;
+          预计构建时间：&qt6-time;
         </para>
       </listitem>
     </itemizedlist>

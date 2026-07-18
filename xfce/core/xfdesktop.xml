@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfdesktop-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfdesktop-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfdesktop-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfdesktop-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfdesktop-md5sum;
+          MD5 校验和：&xfdesktop-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfdesktop-size;
+          大小：&xfdesktop-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfdesktop-buildsize;
+          预计所需磁盘空间：&xfdesktop-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfdesktop-time;
+          预计构建时间：&xfdesktop-time;
         </para>
       </listitem>
     </itemizedlist>

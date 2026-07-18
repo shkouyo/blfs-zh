@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&yelp-download-http;"/>
+          下载地址（HTTP）：<ulink url="&yelp-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&yelp-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&yelp-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &yelp-md5sum;
+          MD5 校验和：&yelp-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &yelp-size;
+          大小：&yelp-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &yelp-buildsize;
+          预计所需磁盘空间：&yelp-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &yelp-time;
+          预计构建时间：&yelp-time;
         </para>
       </listitem>
     </itemizedlist>

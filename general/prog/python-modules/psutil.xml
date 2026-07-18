@@ -8,8 +8,8 @@
   <!ENTITY psutil-download-ftp  " ">
   <!ENTITY psutil-md5sum        "&psutil-md5sum;">
   <!ENTITY psutil-size          "484 KB">
-  <!ENTITY psutil-buildsize     "94 MB (with tests)">
-  <!ENTITY psutil-time          "0.2 SBU (with tests) ">
+  <!ENTITY psutil-buildsize     "94 MB（含测试）">
+  <!ENTITY psutil-time          "0.2 SBU（含测试） ">
 ]>
 
   <!-- Begin psutil -->
@@ -40,32 +40,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&psutil-download-http;"/>
+            下载地址（HTTP）：<ulink url="&psutil-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&psutil-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&psutil-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &psutil-md5sum;
+            MD5 校验和：&psutil-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &psutil-size;
+            大小：&psutil-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &psutil-buildsize;
+            预计所需磁盘空间：&psutil-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &psutil-time;
+            预计构建时间：&psutil-time;
           </para>
         </listitem>
       </itemizedlist>

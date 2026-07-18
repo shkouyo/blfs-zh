@@ -8,7 +8,7 @@
   <!ENTITY libqalculate-download-ftp  " ">
   <!ENTITY libqalculate-md5sum        "46f93f638b6ce747f17dba955f95c9cf">
   <!ENTITY libqalculate-size          "3.5 MB">
-  <!ENTITY libqalculate-buildsize     "240 MB (with tests)">
+  <!ENTITY libqalculate-buildsize     "240 MB（含测试）">
   <!ENTITY libqalculate-time          "0.6 SBU (With tests; both using parallelism=8)">
 ]>
 
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libqalculate-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libqalculate-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libqalculate-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libqalculate-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libqalculate-md5sum;
+          MD5 校验和：&libqalculate-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libqalculate-size;
+          大小：&libqalculate-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libqalculate-buildsize;
+          预计所需磁盘空间：&libqalculate-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libqalculate-time;
+          预计构建时间：&libqalculate-time;
         </para>
       </listitem>
     </itemizedlist>

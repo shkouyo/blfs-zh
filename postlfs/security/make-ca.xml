@@ -6,8 +6,8 @@
 
   <!ENTITY certhost              "https://hg-edge.mozilla.org/">
   <!ENTITY certpath              "/lib/ckfw/builtins/certdata.txt">
-  <!ENTITY make-ca-buildsize     "164 KB (with all runtime deps)">
-  <!ENTITY make-ca-time          "less than 0.1 SBU (with all runtime deps)">
+  <!ENTITY make-ca-buildsize     "164 KB（包括所有运行时依赖项）">
+  <!ENTITY make-ca-time          "小于 0.1 SBU（包括所有运行时依赖项）">
 
   <!ENTITY make-ca-download      "https://github.com/lfs-book/make-ca/archive/v&make-ca-version;/make-ca-&make-ca-version;.tar.gz">
   <!ENTITY make-ca-size          "40 KB">
@@ -54,27 +54,27 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&make-ca-download;"/>
+          下载地址（HTTP）：<ulink url="&make-ca-download;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &make-ca-size;
+          大小：&make-ca-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 Sum: &make-ca-md5sum;
+          MD5 校验和：&make-ca-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &make-ca-buildsize;
+          预计所需磁盘空间：&make-ca-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &make-ca-time;
+          预计构建时间：&make-ca-time;
         </para>
       </listitem>
     </itemizedlist>

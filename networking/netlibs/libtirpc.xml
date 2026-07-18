@@ -9,7 +9,7 @@
   <!ENTITY libtirpc-md5sum        "74f97df306b8d6149d3d9898a1d44c6e">
   <!ENTITY libtirpc-size          "560 KB">
   <!ENTITY libtirpc-buildsize     "6.8 MB">
-  <!ENTITY libtirpc-time          "less than 0.1 SBU">
+  <!ENTITY libtirpc-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="libtirpc" xreflabel="libtirpc-&libtirpc-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libtirpc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libtirpc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libtirpc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libtirpc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libtirpc-md5sum;
+          MD5 校验和：&libtirpc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libtirpc-size;
+          大小：&libtirpc-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libtirpc-buildsize;
+          预计所需磁盘空间：&libtirpc-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libtirpc-time;
+          预计构建时间：&libtirpc-time;
         </para>
       </listitem>
     </itemizedlist>

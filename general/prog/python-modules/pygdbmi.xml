@@ -9,7 +9,7 @@
   <!ENTITY pygdbmi-md5sum        "&pygdbmi-md5sum;">
   <!ENTITY pygdbmi-size          "28 KB">
   <!ENTITY pygdbmi-buildsize     "280 MB">
-  <!ENTITY pygdbmi-time          "less than 0.1 SBU">
+  <!ENTITY pygdbmi-time          "小于 0.1 SBU">
 ]>
 
   <!-- Begin pygdbmi -->
@@ -38,32 +38,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&pygdbmi-download-http;"/>
+            下载地址（HTTP）：<ulink url="&pygdbmi-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&pygdbmi-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&pygdbmi-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &pygdbmi-md5sum;
+            MD5 校验和：&pygdbmi-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &pygdbmi-size;
+            大小：&pygdbmi-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &pygdbmi-buildsize;
+            预计所需磁盘空间：&pygdbmi-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &pygdbmi-time;
+            预计构建时间：&pygdbmi-time;
           </para>
         </listitem>
       </itemizedlist>

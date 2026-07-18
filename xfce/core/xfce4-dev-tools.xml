@@ -10,7 +10,7 @@
   <!ENTITY xfce4-dev-tools-md5sum        "bea58046e67b4274c022fcff893fa350">
   <!ENTITY xfce4-dev-tools-size          "372 KB">
   <!ENTITY xfce4-dev-tools-buildsize     "2.7 MB">
-  <!ENTITY xfce4-dev-tools-time          "less than 0.1 SBU">
+  <!ENTITY xfce4-dev-tools-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xfce4-dev-tools" xreflabel="xfce4-dev-tools-&xfce4-dev-tools-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfce4-dev-tools-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfce4-dev-tools-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfce4-dev-tools-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfce4-dev-tools-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfce4-dev-tools-md5sum;
+          MD5 校验和：&xfce4-dev-tools-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfce4-dev-tools-size;
+          大小：&xfce4-dev-tools-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfce4-dev-tools-buildsize;
+          预计所需磁盘空间：&xfce4-dev-tools-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfce4-dev-tools-time;
+          预计构建时间：&xfce4-dev-tools-time;
         </para>
       </listitem>
     </itemizedlist>

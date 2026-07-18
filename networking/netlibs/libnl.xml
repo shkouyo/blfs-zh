@@ -41,32 +41,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnl-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnl-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnl-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnl-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnl-md5sum;
+          MD5 校验和：&libnl-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnl-size;
+          大小：&libnl-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libnl-buildsize;
+          预计所需磁盘空间：&libnl-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libnl-time;
+          预计构建时间：&libnl-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -75,22 +75,22 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libnl-doc-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libnl-doc-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libnl-doc-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libnl-doc-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libnl-doc-md5sum;
+          MD5 校验和：&libnl-doc-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libnl-doc-size;
+          大小：&libnl-doc-size;
         </para>
       </listitem>
     </itemizedlist>

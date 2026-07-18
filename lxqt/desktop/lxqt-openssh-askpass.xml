@@ -9,7 +9,7 @@
   <!ENTITY lxqt-openssh-askpass-md5sum        "33cc903f04f9bf36b40074dd6c261e15">
   <!ENTITY lxqt-openssh-askpass-size          "20 KB">
   <!ENTITY lxqt-openssh-askpass-buildsize     "2.7 MB">
-  <!ENTITY lxqt-openssh-askpass-time          "less than 0.1 SBU">
+  <!ENTITY lxqt-openssh-askpass-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="lxqt-openssh-askpass" xreflabel="lxqt-openssh-askpass-&lxqt-askpass-version;">
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-openssh-askpass-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-openssh-askpass-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-openssh-askpass-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-openssh-askpass-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-openssh-askpass-md5sum;
+          MD5 校验和：&lxqt-openssh-askpass-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-openssh-askpass-size;
+          大小：&lxqt-openssh-askpass-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-openssh-askpass-buildsize;
+          预计所需磁盘空间：&lxqt-openssh-askpass-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-openssh-askpass-time;
+          预计构建时间：&lxqt-openssh-askpass-time;
         </para>
       </listitem>
     </itemizedlist>

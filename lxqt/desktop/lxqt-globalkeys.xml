@@ -9,7 +9,7 @@
   <!ENTITY lxqt-globalkeys-md5sum        "bc6d90bfaed073da2fa9c8aa976e7f79">
   <!ENTITY lxqt-globalkeys-size          "80 KB">
   <!ENTITY lxqt-globalkeys-buildsize     "12 MB">
-  <!ENTITY lxqt-globalkeys-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-globalkeys-time          "0.2 SBU（并行度=4）">
 ]>
 
 <sect1 id="lxqt-globalkeys" xreflabel="lxqt-globalkeys-&lxqt-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&lxqt-globalkeys-download-http;"/>
+          下载地址（HTTP）：<ulink url="&lxqt-globalkeys-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&lxqt-globalkeys-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&lxqt-globalkeys-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &lxqt-globalkeys-md5sum;
+          MD5 校验和：&lxqt-globalkeys-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &lxqt-globalkeys-size;
+          大小：&lxqt-globalkeys-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &lxqt-globalkeys-buildsize;
+          预计所需磁盘空间：&lxqt-globalkeys-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &lxqt-globalkeys-time;
+          预计构建时间：&lxqt-globalkeys-time;
         </para>
       </listitem>
     </itemizedlist>

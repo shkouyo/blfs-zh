@@ -9,7 +9,7 @@
   <!ENTITY xorgproto-md5sum        "15534fa6fb13a6a70afe7561c1424f3c">
   <!ENTITY xorgproto-size          "752 KB">
   <!ENTITY xorgproto-buildsize     "8.4 MB">
-  <!ENTITY xorgproto-time          "less than 0.1 SBU">
+  <!ENTITY xorgproto-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="xorgproto" xreflabel="xorgproto-&xorgproto-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xorgproto-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xorgproto-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xorgproto-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xorgproto-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xorgproto-md5sum;
+          MD5 校验和：&xorgproto-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xorgproto-size;
+          大小：&xorgproto-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xorgproto-buildsize;
+          预计所需磁盘空间：&xorgproto-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xorgproto-time;
+          预计构建时间：&xorgproto-time;
         </para>
       </listitem>
     </itemizedlist>

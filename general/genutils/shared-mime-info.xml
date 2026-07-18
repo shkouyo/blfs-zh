@@ -9,8 +9,8 @@
   <!ENTITY shared-mime-info-download-ftp  " ">
   <!ENTITY shared-mime-info-md5sum        "5f8baa7bac254ea9e65782f754a2880b">
   <!ENTITY shared-mime-info-size          "8.5 MB">
-  <!ENTITY shared-mime-info-buildsize     "32 MB (with tests)">
-  <!ENTITY shared-mime-info-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY shared-mime-info-buildsize     "32 MB（含测试）">
+  <!ENTITY shared-mime-info-time          "小于 0.1 SBU（含测试）">
 
 <!--  <!ENTITY xdgmime-download-http "&sources-anduin-http;/xdgmime/xdgmime.tar.xz">
   <!ENTITY xdgmime-md5sum        "7dfb4446705d345d3acd672024049e86">
@@ -43,32 +43,32 @@ xreflabel="shared-mime-info-&shared-mime-info-version;">
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&shared-mime-info-download-http;"/>
+          下载地址（HTTP）：<ulink url="&shared-mime-info-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&shared-mime-info-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&shared-mime-info-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &shared-mime-info-md5sum;
+          MD5 校验和：&shared-mime-info-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &shared-mime-info-size;
+          大小：&shared-mime-info-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &shared-mime-info-buildsize;
+          预计所需磁盘空间：&shared-mime-info-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &shared-mime-info-time;
+          预计构建时间：&shared-mime-info-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY at-md5sum        "ca3657a1c90d7c3d252e0bc17feddc6e">
   <!ENTITY at-size          "130 KB">
   <!ENTITY at-buildsize     "1.9 MB (including tests)">
-  <!ENTITY at-time          "less than 0.1 SBU">
+  <!ENTITY at-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="at" xreflabel="At-&at-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&at-download-http;"/>
+          下载地址（HTTP）：<ulink url="&at-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&at-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&at-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &at-md5sum;
+          MD5 校验和：&at-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &at-size;
+          大小：&at-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &at-buildsize;
+          预计所需磁盘空间：&at-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &at-time;
+          预计构建时间：&at-time;
         </para>
       </listitem>
     </itemizedlist>

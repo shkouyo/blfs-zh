@@ -9,7 +9,7 @@
   <!ENTITY spirv-headers-md5sum        "4e4950419823d8fbd932edcc5299d54d">
   <!ENTITY spirv-headers-size          "556 KB">
   <!ENTITY spirv-headers-buildsize     "4.7 MB">
-  <!ENTITY spirv-headers-time          "less than 0.1 SBU">
+  <!ENTITY spirv-headers-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="spirv-headers" xreflabel="SPIRV-Headers-&spirv-headers-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&spirv-headers-download-http;"/>
+          下载地址（HTTP）：<ulink url="&spirv-headers-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&spirv-headers-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&spirv-headers-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &spirv-headers-md5sum;
+          MD5 校验和：&spirv-headers-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &spirv-headers-size;
+          大小：&spirv-headers-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &spirv-headers-buildsize;
+          预计所需磁盘空间：&spirv-headers-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &spirv-headers-time;
+          预计构建时间：&spirv-headers-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -17,7 +17,7 @@
   <!ENTITY sane-fe-md5sum        "c63bf7b0bb5f530cf3c08715db721cd3">
   <!ENTITY sane-fe-size          "231 KB">
   <!ENTITY sane-fe-buildsize     "3.0 MB">
-  <!ENTITY sane-fe-time          "less than 0.1 SBU">
+  <!ENTITY sane-fe-time          "小于 0.1 SBU">
 -->
 ]>
 
@@ -55,32 +55,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sane-be-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sane-be-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sane-be-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sane-be-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sane-be-md5sum;
+          MD5 校验和：&sane-be-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sane-be-size;
+          大小：&sane-be-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sane-be-buildsize;
+          预计所需磁盘空间：&sane-be-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sane-be-time;
+          预计构建时间：&sane-be-time;
         </para>
       </listitem>
     </itemizedlist>
@@ -90,32 +90,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sane-fe-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sane-fe-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sane-fe-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sane-fe-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sane-fe-md5sum;
+          MD5 校验和：&sane-fe-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sane-fe-size;
+          大小：&sane-fe-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sane-fe-buildsize;
+          预计所需磁盘空间：&sane-fe-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sane-fe-time;
+          预计构建时间：&sane-fe-time;
         </para>
       </listitem>
     </itemizedlist>

@@ -8,7 +8,7 @@
   <!ENTITY gparted-download-ftp  " ">
   <!ENTITY gparted-md5sum        "3805a43eafd08277f12dc6c2e0de97c2">
   <!ENTITY gparted-size          "5.7 MB">
-  <!ENTITY gparted-buildsize     "193 MB (with tests)">
+  <!ENTITY gparted-buildsize     "193 MB（含测试）">
   <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.3 SBU for tests)">
 ]>
 
@@ -36,32 +36,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gparted-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gparted-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gparted-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gparted-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gparted-md5sum;
+          MD5 校验和：&gparted-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gparted-size;
+          大小：&gparted-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gparted-buildsize;
+          预计所需磁盘空间：&gparted-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gparted-time;
+          预计构建时间：&gparted-time;
         </para>
       </listitem>
     </itemizedlist>

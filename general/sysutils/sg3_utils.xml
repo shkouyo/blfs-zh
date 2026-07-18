@@ -40,32 +40,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&sg3_utils-download-http;"/>
+          下载地址（HTTP）：<ulink url="&sg3_utils-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&sg3_utils-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&sg3_utils-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &sg3_utils-md5sum;
+          MD5 校验和：&sg3_utils-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &sg3_utils-size;
+          大小：&sg3_utils-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &sg3_utils-buildsize;
+          预计所需磁盘空间：&sg3_utils-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &sg3_utils-time;
+          预计构建时间：&sg3_utils-time;
         </para>
       </listitem>
     </itemizedlist>

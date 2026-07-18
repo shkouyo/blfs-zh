@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&dolphin-plugins-download-http;"/>
+          下载地址（HTTP）：<ulink url="&dolphin-plugins-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&dolphin-plugins-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&dolphin-plugins-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &dolphin-plugins-md5sum;
+          MD5 校验和：&dolphin-plugins-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &dolphin-plugins-size;
+          大小：&dolphin-plugins-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &dolphin-plugins-buildsize;
+          预计所需磁盘空间：&dolphin-plugins-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &dolphin-plugins-time;
+          预计构建时间：&dolphin-plugins-time;
         </para>
       </listitem>
     </itemizedlist>

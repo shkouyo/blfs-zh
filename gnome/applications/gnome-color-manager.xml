@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&gnome-color-manager-download-http;"/>
+          下载地址（HTTP）：<ulink url="&gnome-color-manager-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&gnome-color-manager-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&gnome-color-manager-download-ftp;"/>
          </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &gnome-color-manager-md5sum;
+          MD5 校验和：&gnome-color-manager-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &gnome-color-manager-size;
+          大小：&gnome-color-manager-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &gnome-color-manager-buildsize;
+          预计所需磁盘空间：&gnome-color-manager-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &gnome-color-manager-time;
+          预计构建时间：&gnome-color-manager-time;
         </para>
       </listitem>
     </itemizedlist>

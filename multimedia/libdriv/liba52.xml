@@ -9,7 +9,7 @@
   <!ENTITY liba52-md5sum        "4debeed0257f5312e84d92711a5cfcec">
   <!ENTITY liba52-size          "448 KB">
   <!ENTITY liba52-buildsize     "3.7 MB">
-  <!ENTITY liba52-time          "less than 0.1 SBU">
+  <!ENTITY liba52-time          "小于 0.1 SBU">
 ]>
 
 <sect1 id="liba52" xreflabel="liba52-&liba52-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&liba52-download-http;"/>
+          下载地址（HTTP）：<ulink url="&liba52-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&liba52-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&liba52-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &liba52-md5sum;
+          MD5 校验和：&liba52-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &liba52-size;
+          大小：&liba52-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &liba52-buildsize;
+          预计所需磁盘空间：&liba52-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &liba52-time;
+          预计构建时间：&liba52-time;
         </para>
       </listitem>
     </itemizedlist>

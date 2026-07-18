@@ -8,8 +8,8 @@
   <!ENTITY libpng-download-ftp  " ">
   <!ENTITY libpng-md5sum        "c6c372a9d7754c66e0b77a8d34987a3b">
   <!ENTITY libpng-size          "1.1 MB">
-  <!ENTITY libpng-buildsize     "17 MB (with tests)">
-  <!ENTITY libpng-time          "0.4 SBU (with tests)">
+  <!ENTITY libpng-buildsize     "17 MB（含测试）">
+  <!ENTITY libpng-time          "0.4 SBU（含测试）">
 
   <!ENTITY apng-version "1.6.58">
   <!ENTITY apng-md5sum  "1eef1ddd6def88814d1a65ce1f4dceb9">
@@ -48,32 +48,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&libpng-download-http;"/>
+          下载地址（HTTP）：<ulink url="&libpng-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&libpng-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&libpng-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &libpng-md5sum;
+          MD5 校验和：&libpng-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &libpng-size;
+          大小：&libpng-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &libpng-buildsize;
+          预计所需磁盘空间：&libpng-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &libpng-time;
+          预计构建时间：&libpng-time;
         </para>
       </listitem>
     </itemizedlist>

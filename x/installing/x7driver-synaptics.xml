@@ -11,7 +11,7 @@
   <!ENTITY xorg-synaptics-driver-md5sum        "017383c13a0d0f4cb320be477ab25513">
   <!ENTITY xorg-synaptics-driver-size          "424 KB">
   <!ENTITY xorg-synaptics-driver-buildsize     "5.3 MB">
-  <!ENTITY xorg-synaptics-driver-time          "less than 0.1 SBU">
+  <!ENTITY xorg-synaptics-driver-time          "小于 0.1 SBU">
 ]>
 
 <!-- Begin Xorg Synaptics Driver -->
@@ -45,32 +45,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&xorg-synaptics-driver-download-http;"/>
+            下载地址（HTTP）：<ulink url="&xorg-synaptics-driver-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&xorg-synaptics-driver-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&xorg-synaptics-driver-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &xorg-synaptics-driver-md5sum;
+            MD5 校验和：&xorg-synaptics-driver-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &xorg-synaptics-driver-size;
+            大小：&xorg-synaptics-driver-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &xorg-synaptics-driver-buildsize;
+            预计所需磁盘空间：&xorg-synaptics-driver-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &xorg-synaptics-driver-time;
+            预计构建时间：&xorg-synaptics-driver-time;
           </para>
         </listitem>
       </itemizedlist>

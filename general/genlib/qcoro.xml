@@ -8,7 +8,7 @@
   <!ENTITY qcoro-download-ftp  " ">
   <!ENTITY qcoro-md5sum        "1cc2b522b90d8d0842523f751e75c99b">
   <!ENTITY qcoro-size          "160 KB">
-  <!ENTITY qcoro-buildsize     "31 MB (with tests)">
+  <!ENTITY qcoro-buildsize     "31 MB（含测试）">
   <!ENTITY qcoro-time          "0.4 SBU (Using parallelism=4; add 0.6 SBU for tests)">
 ]>
 
@@ -34,32 +34,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&qcoro-download-http;"/>
+          下载地址（HTTP）：<ulink url="&qcoro-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&qcoro-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&qcoro-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &qcoro-md5sum;
+          MD5 校验和：&qcoro-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &qcoro-size;
+          大小：&qcoro-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &qcoro-buildsize;
+          预计所需磁盘空间：&qcoro-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &qcoro-time;
+          预计构建时间：&qcoro-time;
         </para>
       </listitem>
     </itemizedlist>

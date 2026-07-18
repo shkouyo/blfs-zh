@@ -9,8 +9,8 @@
   <!ENTITY neon-download-ftp  " ">
   <!ENTITY neon-md5sum        "5e661a69b52d26d8baab0e61a783d419">
   <!ENTITY neon-size          "960 KB">
-  <!ENTITY neon-buildsize     "84 MB (with tests)">
-  <!ENTITY neon-time          "less than 0.1 SBU (add 0.4 SBU for tests)">
+  <!ENTITY neon-buildsize     "84 MB（含测试）">
+  <!ENTITY neon-time          "小于 0.1 SBU（测试将额外增加 0.4 SBU）">
 ]>
 
 <sect1 id="neon" xreflabel="neon-&neon-version;">
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&neon-download-http;"/>
+          下载地址（HTTP）：<ulink url="&neon-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&neon-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&neon-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &neon-md5sum;
+          MD5 校验和：&neon-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &neon-size;
+          大小：&neon-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &neon-buildsize;
+          预计所需磁盘空间：&neon-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &neon-time;
+          预计构建时间：&neon-time;
         </para>
       </listitem>
     </itemizedlist>

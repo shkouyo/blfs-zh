@@ -8,7 +8,7 @@
   <!ENTITY php-download-ftp  " ">
   <!ENTITY php-md5sum        "0b723190602265ef6fa45696294dff3a">
   <!ENTITY php-size          "14 MB">
-  <!ENTITY php-buildsize     "650 MB (with tests)"> <!-- with and without are the same -->
+  <!ENTITY php-buildsize     "650 MB（含测试）"> <!-- with and without are the same -->
   <!ENTITY php-time          "1.5 SBU (add 2.5 SBU for tests; both with parallelism=4)">
   
 <!-- 
@@ -103,32 +103,32 @@ Time taken      : 214.336 seconds
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&php-download-http;"/>
+          下载地址（HTTP）：<ulink url="&php-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&php-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&php-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &php-md5sum;
+          MD5 校验和：&php-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &php-size;
+          大小：&php-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &php-buildsize;
+          预计所需磁盘空间：&php-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &php-time;
+          预计构建时间：&php-time;
         </para>
       </listitem>
     </itemizedlist>

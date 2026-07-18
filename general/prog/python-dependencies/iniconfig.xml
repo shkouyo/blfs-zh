@@ -9,7 +9,7 @@
   <!ENTITY iniconfig-md5sum        "&iniconfig-md5sum;">
   <!ENTITY iniconfig-size          "24 KB">
   <!ENTITY iniconfig-buildsize     "304 KB">
-  <!ENTITY iniconfig-time          "less than 0.1 SBU">
+  <!ENTITY iniconfig-time          "小于 0.1 SBU">
 ]>
 
   <sect2 id="iniconfig" xreflabel="iniconfig-&iniconfig-version;">
@@ -34,32 +34,32 @@
       <itemizedlist spacing="compact">
         <listitem>
           <para>
-            Download (HTTP): <ulink url="&iniconfig-download-http;"/>
+            下载地址（HTTP）：<ulink url="&iniconfig-download-http;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download (FTP): <ulink url="&iniconfig-download-ftp;"/>
+            下载地址（FTP）：<ulink url="&iniconfig-download-ftp;"/>
           </para>
         </listitem>
         <listitem>
           <para>
-            Download MD5 sum: &iniconfig-md5sum;
+            MD5 校验和：&iniconfig-md5sum;
           </para>
         </listitem>
         <listitem>
           <para>
-            Download size: &iniconfig-size;
+            大小：&iniconfig-size;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated disk space required: &iniconfig-buildsize;
+            预计所需磁盘空间：&iniconfig-buildsize;
           </para>
         </listitem>
         <listitem>
           <para>
-            Estimated build time: &iniconfig-time;
+            预计构建时间：&iniconfig-time;
           </para>
         </listitem>
       </itemizedlist>

@@ -9,7 +9,7 @@
   <!ENTITY harfbuzz-download-ftp  " ">
   <!ENTITY harfbuzz-md5sum        "dda477eb1b44ac816ec1a8e4effee1af">
   <!ENTITY harfbuzz-size          "19 MB">
-  <!ENTITY harfbuzz-buildsize     "164 MB (with tests)">
+  <!ENTITY harfbuzz-buildsize     "164 MB（含测试）">
   <!ENTITY harfbuzz-time          "0.9 SBU (with tests; both using parallelism=4)">
 ]>
 
@@ -37,32 +37,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&harfbuzz-download-http;"/>
+          下载地址（HTTP）：<ulink url="&harfbuzz-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&harfbuzz-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&harfbuzz-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &harfbuzz-md5sum;
+          MD5 校验和：&harfbuzz-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &harfbuzz-size;
+          大小：&harfbuzz-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &harfbuzz-buildsize;
+          预计所需磁盘空间：&harfbuzz-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &harfbuzz-time;
+          预计构建时间：&harfbuzz-time;
         </para>
       </listitem>
     </itemizedlist>

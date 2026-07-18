@@ -38,32 +38,32 @@
     <itemizedlist spacing='compact'>
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&fetchmail-download-http;"/>
+          下载地址（HTTP）：<ulink url="&fetchmail-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&fetchmail-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&fetchmail-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &fetchmail-md5sum;
+          MD5 校验和：&fetchmail-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &fetchmail-size;
+          大小：&fetchmail-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &fetchmail-buildsize;
+          预计所需磁盘空间：&fetchmail-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &fetchmail-time;
+          预计构建时间：&fetchmail-time;
         </para>
       </listitem>
     </itemizedlist>

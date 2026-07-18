@@ -10,7 +10,7 @@
   <!ENTITY cups-filters-md5sum        "b40d0f135af414666e1c3917983a1bb3">
   <!ENTITY cups-filters-size          "440 KB">
   <!ENTITY cups-filters-buildsize     "9.0 MB">
-  <!ENTITY cups-filters-time          "less than 0.1 SBU (Using parallelism=4)">
+  <!ENTITY cups-filters-time          "小于 0.1 SBU（并行度=4）">
 ]>
 
 <sect1 id="cups-filters" xreflabel="cups-filters-&cups-filters-version;">
@@ -38,32 +38,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&cups-filters-download-http;"/>
+          下载地址（HTTP）：<ulink url="&cups-filters-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&cups-filters-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&cups-filters-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &cups-filters-md5sum;
+          MD5 校验和：&cups-filters-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &cups-filters-size;
+          大小：&cups-filters-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &cups-filters-buildsize;
+          预计所需磁盘空间：&cups-filters-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &cups-filters-time;
+          预计构建时间：&cups-filters-time;
         </para>
       </listitem>
     </itemizedlist>

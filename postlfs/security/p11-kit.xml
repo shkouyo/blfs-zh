@@ -8,8 +8,8 @@
   <!ENTITY p11-kit-download-ftp  " ">
   <!ENTITY p11-kit-md5sum        "4c0d2f26fd93278f5b0d22ec917cf030">
   <!ENTITY p11-kit-size          "1.1 MB">
-  <!ENTITY p11-kit-buildsize     "117 MB (with tests)">
-  <!ENTITY p11-kit-time          "0.5 SBU (with tests)">
+  <!ENTITY p11-kit-buildsize     "117 MB（含测试）">
+  <!ENTITY p11-kit-time          "0.5 SBU（含测试）">
 ]>
 
 <sect1 id="p11-kit" xreflabel="p11-kit-&p11-kit-version;">
@@ -35,32 +35,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&p11-kit-download-http;"/>
+          下载地址（HTTP）：<ulink url="&p11-kit-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&p11-kit-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&p11-kit-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &p11-kit-md5sum;
+          MD5 校验和：&p11-kit-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &p11-kit-size;
+          大小：&p11-kit-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &p11-kit-buildsize;
+          预计所需磁盘空间：&p11-kit-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &p11-kit-time;
+          预计构建时间：&p11-kit-time;
         </para>
       </listitem>
     </itemizedlist>

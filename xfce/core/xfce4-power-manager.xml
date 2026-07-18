@@ -44,32 +44,32 @@
     <itemizedlist spacing="compact">
       <listitem>
         <para>
-          Download (HTTP): <ulink url="&xfce4-power-manager-download-http;"/>
+          下载地址（HTTP）：<ulink url="&xfce4-power-manager-download-http;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download (FTP): <ulink url="&xfce4-power-manager-download-ftp;"/>
+          下载地址（FTP）：<ulink url="&xfce4-power-manager-download-ftp;"/>
         </para>
       </listitem>
       <listitem>
         <para>
-          Download MD5 sum: &xfce4-power-manager-md5sum;
+          MD5 校验和：&xfce4-power-manager-md5sum;
         </para>
       </listitem>
       <listitem>
         <para>
-          Download size: &xfce4-power-manager-size;
+          大小：&xfce4-power-manager-size;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated disk space required: &xfce4-power-manager-buildsize;
+          预计所需磁盘空间：&xfce4-power-manager-buildsize;
         </para>
       </listitem>
       <listitem>
         <para>
-          Estimated build time: &xfce4-power-manager-time;
+          预计构建时间：&xfce4-power-manager-time;
         </para>
       </listitem>
     </itemizedlist>
