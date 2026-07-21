@@ -5,11 +5,11 @@ on:
       - main
   workflow_dispatch:
 
+enable-openid-connect: true
+
 jobs:
   build:
     runs-on: codeberg-medium
-    permissions:
-      contents: write
     concurrency:
       group: build-html-${{ matrix.branch }}
       cancel-in-progress: true
@@ -26,18 +26,36 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - name: install dependencies
         run: |
           apt-get update
-          apt-get install -y git make libxml2-utils xsltproc docbook-xsl docbook-xml tidy
+          apt-get install -y git make libxml2-utils xsltproc docbook-xsl docbook-xml tidy curl jq
       - name: build book
         run: |
           mkdir -p /tmp/blfs-output/${{ matrix.subdir }}
           REV=${{ matrix.rev }} BASEDIR=/tmp/blfs-output/${{ matrix.subdir }} make
+      - name: fetch jwt
+        id: jwt
+        env:
+          AUD: u:437698:62f41714-943e-4400-8506-cecf0ece10ab
+        run: |
+          jwt=$( \
+            curl --fail \
+            -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=$AUD" \
+            | jq -r ".value" \
+          )
+          echo "::add-mask::$jwt"
+          echo "jwt=$jwt" >> $FORGEJO_OUTPUT
       - name: deploy book
+        env:
+          JWT: ${{ steps.jwt.outputs.jwt }}
         run: |
           git config user.name "Codeberg Actions"
           git config user.email "actions@codeberg.org"
+          git config http.extraHeader "Authorization: Bearer $JWT"
           git fetch origin ${{ matrix.branch }}:${{ matrix.branch }} || true
           git checkout ${{ matrix.branch }} 2>/dev/null || git checkout --orphan ${{ matrix.branch }}
           git rm -rf .
@@ -45,4 +63,3 @@ jobs:
           git add -A
           git commit -m "chore: build $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
           git push origin ${{ matrix.branch }}
-
